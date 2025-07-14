@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../images/Buf lite (1) (1).png';
-import img2 from '../images/Buf lite (2) (1).png';
+import img1 from '../images/Buf lite1.png';
+import img2 from '../images/Buf lite-2-1.png';
 
 import related1 from '../images/Copy of Old 1.png';
 import related2 from '../images/1.png'
@@ -32,7 +32,7 @@ function Product() {
     { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
     { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series", link: "/product-detail/detail3" },
     { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-    { img: related3, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
 
      
   ];
