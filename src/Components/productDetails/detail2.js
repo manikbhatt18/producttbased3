@@ -5,7 +5,7 @@ import img1 from '../../images/Copy of Old 1.png';
 import img2 from '../../images/Copy of Old 2.png';
 import img3 from '../../images/Copy of Old 3.png';
 
-import related1 from '../../images/Buf lite (1) (1).png';
+import related1 from '../../images/Buf lite1.png';
 import related2 from '../../images/1.png';
 import related3 from '../../images/1.png';
 import related4 from '../../images/1.png';
