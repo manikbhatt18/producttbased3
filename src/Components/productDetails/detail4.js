@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import img1 from '../../images/1 (2).png';
-import img1 from '../../images/1 (3).png';
-import img1 from '../../images/3 (1).png';
+import img2 from '../../images/1 (3).png';
+import img3 from '../../images/3 (1).png';
+
 
 
 import related2 from '../../images/img3.jpg';
@@ -14,7 +15,7 @@ import related4 from '../../images/img4.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4];
+  const images = [img1, img2,img3];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
