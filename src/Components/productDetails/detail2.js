@@ -5,10 +5,10 @@ import img1 from '../../images/Copy of Old 1.png';
 import img2 from '../../images/Copy of Old 2.png';
 import img3 from '../../images/Copy of Old 3.png';
 
-import related1 from '../../images/img3.jpg';
-import related2 from '../../images/img5.jpg';
-import related3 from '../../images/img4.jpg';
-import related4 from '../../images/img4.jpg';
+import related1 from '../../images/Buf lite (1) (1).png';
+import related2 from '../../images/1.png';
+import related3 from '../../images/1.png';
+import related4 from '../../images/1.png';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,10 +28,11 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-     { img: related1, title: "JS Smart C+ (up to R160)", link: "/product-detail/detail1" },
-    { img: related2, title: "JS Smart D+ (up to R200)", link: "/product-detail/detail2" },
-    { img: related3, title: "JS Smart+ (up to R100)", link: "/product-detail/detail3" },
-    { img: related4, title: "JS Master C+ (up to R160)", link: "/product-detail/detail4" },
+    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/Components/product.js" },
+    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
+    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    
   ];
 
   return (
@@ -41,7 +42,7 @@ function ProductDetail() {
         <div className="row">
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Ultrasonic water meters</p>
+            <p className="text-muted">Water meters</p>
             <h3 className="fw-semibold"> INLINE ULTRASONIC ROBUST Series </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>

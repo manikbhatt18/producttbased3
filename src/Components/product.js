@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../images/m1.png';
-import img2 from '../images/m2.png';
+import img1 from '../images/Buf lite (1) (1).png';
+import img2 from '../images/Buf lite (2) (1).png';
 
-import related1 from '../images/img2.jpg';
-import related2 from '../images/img3.jpg';
-import related3 from '../images/img5.jpg';
-import related4 from '../images/img4.jpg';
+import related1 from '../images/Copy of Old 1.png';
+import related2 from '../images/1.png'
+import related3 from '../images/1.png';
+import related4 from '../images/1.png';
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,10 +28,12 @@ function Product() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { img: related1, title: "JS Smart C+ (up to R160)", link: "/product-detail/detail1" },
-    { img: related2, title: "JS Smart D+ (up to R200)", link: "/product-detail/detail2" },
-    { img: related3, title: "JS Smart+ (up to R100)", link: "/product-detail/detail3" },
-    { img: related4, title: "JS Master C+ (up to R160)", link: "/product-detail/detail4" },
+    
+    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
+    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series", link: "/product-detail/detail3" },
+    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
+    { img: related3, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+
      
   ];
 
@@ -75,8 +79,8 @@ function Product() {
 
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Ultrasonic water meters</p>
-            <h3 className="fw-semibold">High-quality Ultrimis ultrasonic water meters</h3>
+            <p className="text-muted">Water Meters</p>
+            <h3 className="fw-semibold">Domestic Ultrasonic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Many patented design and technological features</li>
               <li className="mb-2">&#9679; The lightest and smallest ultrasonic water meter available to our customers</li>
@@ -137,21 +141,36 @@ function Product() {
           )}
 
           {activeTab === "Technical data" && (
-            <ul className="list-group">
-              <li className="list-group-item">Pipe Range: DN15 - DN25</li>
-              <li className="list-group-item"> Maximum permissible error Q1 &lt; Q &lt; Q2: 5%</li>
-              <li className="list-group-item"> Nominal Pressure: 16 Bar</li>
-              <li className="list-group-item"> Temperature Range: T30, T50, T90</li>
-              <li className="list-group-item"> Hydraulic Part Material: Brass</li>
-              <li className="list-group-item"> Installation: Horizontal/Vertical, Return flow/Forward flow</li>
-              <li className="list-group-item"> Protection: IP65 (IP68 optional)</li>
-              <li className="list-group-item"> End Connection: Threaded (ANSI Flanged Optional)</li>
-              <li className="list-group-item"> Display: LCD, 8 digits + icons, Units in m³</li>
-              <li className="list-group-item"> Interfaces: Pulse, M-BUS, Wireless M-BUS, RS485, Optical, RF Ultra Narrow Band</li>
-              <li className="list-group-item"> In-Built LoRaWAN: Optional</li>
-              <li className="list-group-item"> Power Supply: Battery Operated 3.6 V Lithium (12 years)</li>
-              <li className="list-group-item"> Date History in EEPROM: 60 Months, 184 Days, 1488 Hours</li>
-            </ul>
+            <ul>
+  <li>Pipe Range: DN15 - DN25</li>
+  <li>Maximum Permissible Error: Q1 &lt; Q &lt; Q2 - 5%</li>
+  <li>Nominal Pressure: 16 Bar</li>
+  <li>Temperature Range: T30, T50, T90 (°C)</li>
+  <li>Hydraulic Part Material: Brass</li>
+  <li>Installation: Return flow / forward flow, horizontal / vertical</li>
+  <li>Protection: IP65 (IP68 optional)</li>
+  <li>End Connection: Threaded (ANSI Flanged optional)</li>
+  <li>Display: LCD, 8 digits + icons, Units m³</li>
+  <li>Interfaces:
+    <ul>
+      <li>Pulse</li>
+      <li>M-BUS</li>
+      <li>Wireless M-BUS</li>
+      <li>RS485</li>
+      <li>Optical</li>
+      <li>RF ultra narrow band</li>
+    </ul>
+  </li>
+  <li>In-Built LoraWAN: Optional</li>
+  <li>Power Supply: Battery operated (3.6 V, Lithium), 12 years life</li>
+  <li>Data History in EEPROM Memory:
+    <ul>
+      <li>60 Months</li>
+      <li>184 Days</li>
+      <li>1488 Hours</li>
+    </ul>
+  </li>
+</ul>
           )}
 
           {activeTab === "Features" && (
