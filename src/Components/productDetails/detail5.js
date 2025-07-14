@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';//no image given
 import { Link } from 'react-router-dom';
 
 import img1 from '../../images/1 (2).png';
@@ -41,7 +41,7 @@ function ProductDetail() {
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Ultrasonic water meters</p>
-            <h3 className="fw-semibold"> Clamp-ON (Fixed) ULTRASONIC UF 1500 Series </h3>
+            <h3 className="fw-semibold"> Clamp-ON (Portable) ULTRASONIC PF 222/333 </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>
               <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
@@ -151,34 +151,48 @@ function ProductDetail() {
 
           {activeTab === "Technical data" && (
            <ul>
-  <li>Nominal Diameter of the Pipeline: DN 15–6000</li>
-  <li>Principle: Transit Time</li>
-  <li>Probe: V206 (For difficult applications)</li>
-  <li>Measuring Channels: 1 to 4 (Single Track | Dual Track | Four Track)</li>
-  <li>Clamp-on PEA Accuracy (%), with flowrate range from 1:100:
+  <li>Principle: Transit Time (CE Approved)</li>
+  <li>Pipe Range: 13 mm ID to 10,000 mm OD</li>
+  <li>Transducer Operating Temperature:
     <ul>
-      <li>Single-beam sounding: ±2%</li>
-      <li>Two-beam sounding: ±1%</li>
-      <li>Four-beam sounding: ±0.5%</li>
+      <li>Standard: –20°C to +135°C</li>
+      <li>Optional Hi-Temp: –20°C to +200°C</li>
     </ul>
   </li>
-  <li>Flow Velocity Range: 0.1–20 m/s</li>
-  <li>Fluid Temperature Range: –30°C to +160°C (Ambient)</li>
-  <li>Ambient Temperature for Transmitter: 0°C to +50°C (Maximum)</li>
-  <li>Pipeline Pressure: 2.5 MPa / 25 bar</li>
-  <li>Transmitter/Transducers Protection: IP54 / IP68</li>
-  <li>Measurement Data Logging:
+  <li>Display Features: Flow rate, total flow, signal level, battery level</li>
+  <li>Sensing Type: Non-invasive</li>
+  <li>Language Options: English, French, German, Spanish</li>
+  <li>Carrying Case Protection: IP67 Rated</li>
+  <li>Power Operation:
     <ul>
-      <li>Hourly Log: 1440</li>
-      <li>Daily Log: 60</li>
-      <li>Monthly Log: Programmable 14400</li>
-      <li>Batching Log: 512</li>
+      <li>Battery Life: 14 Hours</li>
+      <li>Charging Time: 2.5 Hours</li>
+      <li>Battery or Mains Operated</li>
     </ul>
   </li>
-  <li>Power Supply: 24VDC</li>
-  <li>Power Consumption: &lt;12W</li>
-  <li>Transmitter Weight: &lt;3 kg</li>
-  <li>Transmitter Dimensions: 250×132×90 mm</li>
+  <li>Accuracy: ±0.5% to ±3% (Dependent on flow and pipe size)</li>
+  <li>Turn Down Ratio: 100:1</li>
+  <li>Data Communications: USB (Supports most USB 2.0 BOM drives)</li>
+  <li>Output:
+    <ul>
+      <li>3 × Pulse Output</li>
+      <li>4–20 mA Output</li>
+    </ul>
+  </li>
+  <li>Data Logging:
+    <ul>
+      <li>Capacity: 100,000,000 data points</li>
+      <li>Named Sites: 12</li>
+      <li>Download Format: CSV via USB, exportable to Excel</li>
+    </ul>
+  </li>
+  <li>Temperature Sensors: Clamp-on PT100 Class B, 4-wire
+    <ul>
+      <li>Range: 0°C to 200°C (32°F to 392°F)</li>
+      <li>Resolution: 0.1°C (0.18°F)</li>
+      <li>Minimum delta T: 0.3°C (Optional)</li>
+    </ul>
+  </li>
 </ul>
           )}
 
