@@ -5,8 +5,9 @@ import img1 from '../../images/Copy of Old 1.png';
 import img2 from '../../images/Copy of Old 2.png';
 import img3 from '../../images/Copy of Old 3.png';
 
-import related2 from '../../images/img3.jpg';
-import related3 from '../../images/img5.jpg';
+import related1 from '../../images/img3.jpg';
+import related2 from '../../images/img5.jpg';
+import related3 from '../../images/img4.jpg';
 import related4 from '../../images/img4.jpg';
 
 
@@ -27,9 +28,10 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
+     { img: related1, title: "JS Smart C+ (up to R160)", link: "/product-detail/detail1" },
+    { img: related2, title: "JS Smart D+ (up to R200)", link: "/product-detail/detail2" },
+    { img: related3, title: "JS Smart+ (up to R100)", link: "/product-detail/detail3" },
+    { img: related4, title: "JS Master C+ (up to R160)", link: "/product-detail/detail4" },
   ];
 
   return (
@@ -128,15 +130,7 @@ function ProductDetail() {
              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quae.
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
-                    title="JS Smart C+ video"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+              
             </div>
           )}
 
@@ -185,7 +179,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.id} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{

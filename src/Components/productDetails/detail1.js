@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import img1 from '../../images/img2.jpg';
 import img2 from '../../images/img2-3.jpg';
+
 import related2 from '../../images/img3.jpg';
 import related3 from '../../images/img5.jpg';
 import related4 from '../../images/img4.jpg';
