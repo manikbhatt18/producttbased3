@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../../images/img2.jpg';
-import img2 from '../../images/img2-3.jpg';
+import img1 from '../../images/Copy of Old 1.png';
+import img2 from '../../images/Copy of Old 2.png';
+import img3 from '../../images/Copy of Old 3.png';
+
 import related2 from '../../images/img3.jpg';
 import related3 from '../../images/img5.jpg';
 import related4 from '../../images/img4.jpg';
@@ -11,7 +13,7 @@ import related4 from '../../images/img4.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2];
+  const images = [img1, img2,img3];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
@@ -38,7 +40,7 @@ function ProductDetail() {
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Ultrasonic water meters</p>
-            <h3 className="fw-semibold">High-quality JS Smart C+ ultrasonic meters</h3>
+            <h3 className="fw-semibold"> INLINE ULTRASONIC ROBUST Series </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>
               <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
@@ -128,7 +130,11 @@ function ProductDetail() {
               </div>
               <div className="col-md-6">
                 <div className="ratio ratio-16x9">
-                
+                  <iframe
+                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
+                    title="JS Smart C+ video"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -143,13 +149,27 @@ function ProductDetail() {
           )}
 
           {activeTab === "Technical data" && (
-            <ul className="list-group">
-              <li className="list-group-item">Nominal Pressure: 16 Bar</li>
-              <li className="list-group-item">Temperature Range: T30, T50</li>
-              <li className="list-group-item">Display: LCD, m³ Units</li>
-              <li className="list-group-item">IP Protection: IP65/IP68</li>
-              <li className="list-group-item">Battery Life: 12 Years</li>
-            </ul>
+            <ul>
+  <li>Pipe Range: DN32 – DN300 / up to DN1000</li>
+  <li>NFC Communication Enabled</li>
+  <li>Accuracy: ± 2.0 of MV</li>
+  <li>Maximum Pipeline Pressure: 2.5 MPa / 25 bar</li>
+  <li>Fluid Temperature Range: 50°C / 130°C (For Hot Water)</li>
+  <li>Ambient Temperature Range: 5 - 65°C</li>
+  <li>Protection: IP67 (IP68 optional)</li>
+  <li>End Connection: ASME/ANSI B16.5 Class 150, Tri-Clover, PN16</li>
+  <li>Compliance: ISO 4064</li>
+  <li>Interfaces: Pulse, RS485, Analog 4-20mA (Optional), In-Built LoRaWAN (optional)</li>
+  <li>Power Supply: Battery Operated 3.6V Lithium (10 years), Power Operated (Optional)</li>
+  <li>Measurement Data Logging:
+    <ul>
+      <li>1440 Hourly log</li>
+      <li>460 Daily log</li>
+      <li>48 Monthly log</li>
+    </ul>
+  </li>
+  <li>CE, MID Certified</li>
+</ul>
           )}
 
           {activeTab === "Downloads" && (
