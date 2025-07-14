@@ -25,9 +25,9 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
+    { img: related2, title: "JS Smart D+ (up to R200)", link: "/product-detail/detail2" },
+    { img: related3, title: "JS Smart+ (up to R100)", link: "/product-detail/detail3" },
+    { img: related4, title: "JS Master C+ (up to R160)", link: "/product-detail/detail4" },
   ];
 
   return (
@@ -169,7 +169,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{
