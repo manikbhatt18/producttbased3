@@ -13,6 +13,10 @@ import img9 from '../../images/product11(9).png';
 import img10 from '../../images/RPD png.png';
 import img11 from '../../images/RPD SERIES FLOW METER.png';
 import img12 from '../../images/product11(12).png';
+import img13 from '../../images/contoil (2).png';
+import img14 from '../../images/contoil (3).png';
+import img15 from '../../images/contoil.png';
+
 
 
 import related2 from '../../images/img3.jpg';
@@ -23,7 +27,7 @@ import related4 from '../../images/img4.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12];
+  const images = [img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
@@ -135,7 +139,27 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <p>
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quae.
+             Contoil® Oil Flow Meters are precision-engineered for accurate measurement of fuel and lubrication oil in the most demanding industrial environments. Built for reliability and flexibility, these meters offer consistent performance regardless of fluid temperature or viscosity. Their compact design allows for easy installation in space-restricted systems, making them ideal for integration with power generators, boilers, burners, and closed-loop lubrication systems.
+Applications Across Industries:
+Fuel Consumption Measurement for:
+
+
+Oil burners in heating systems and industrial furnaces, Unloading Applications
+Ships, diesel locomotives, and emergency power units
+Combined heat and power (CHP) systems
+
+
+Lubrication Monitoring in:
+
+
+Closed-loop systems for machinery bearings and motors
+Machine test benches and engine testing labs
+
+
+Remote Integration:
+
+
+Optional digital output for integration into superior control systems and remote monitoring platforms
                 </p>
               </div>
               <div className="col-md-6">
@@ -152,26 +176,38 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>Compact electronic body, no moving parts</li>
-              <li>Maintenance-free design</li>
-              <li>Wired/Wireless communication options</li>
-            </ul>
+  <li>Unmatched Accuracy (0.5%): Reliable fuel consumption monitoring with temperature- and viscosity-independent readings</li>
+  <li>Flexible Installation: Mount horizontally, vertically, or at an incline — even in space-constrained systems without the need for straight inlet/outlet runs</li>
+  <li>Supports batching, dosing, and filling operations</li>
+  <li>Dual-Side Pump Compatibility: Install on either the pressure or suction side of pumps</li>
+  <li>Operational Simplicity: Mechanical display with a resettable counter and optional limiting value switch for flow rate control</li>
+  <li>Built-In Diagnostics: Easy function checks, fast fault analysis, and on-site repairability reduce downtime and costs</li>
+  <li>Compact Design: Optimized for tight enclosures and complex piping systems</li>
+</ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Turbine Mechanical Water Meter with Magnetic Transmission</li>
-  <li>Pipe Range: DN50 - DN500</li>
-  <li>Removable mechanism, 360° rotatable</li>
-  <li>Accuracy: Class B as per ISO 4064, suitable for Cold Water (50°C) / Hot Water (90°C & 130°C versions)</li>
-  <li>Body: Cast Iron or Stainless Steel with an epoxy outer coating</li>
-  <li>Display Parameters: flow rate / total / resettable total</li>
-  <li>Relay Output: based on flow rate</li>
+<ul>
+  <li>Pipe Range: DN4 - DN80</li>
   <li>Outputs:
     <ul>
-      <li>Pulse output for AMR communication</li>
-      <li>Analog (4 ~ 20 mA) output, 24 VDC input (in digital option)</li>
-      <li>In-built battery (life 1.5 ~ 2 years) – optional</li>
+      <li>Pulse</li>
+      <li>Analog 4–20 mA (continuous for remote monitoring)</li>
+    </ul>
+  </li>
+  <li>External Power Supply: Battery back-up option</li>
+  <li>End Connections: Flange (DIN, ANSI, JIS), threaded ends</li>
+  <li>Accuracy: 0.5% to 1%</li>
+  <li>Performance: Independent of viscosity and temperature</li>
+  <li>Display: Mechanical with resettable totalizer</li>
+  <li>Installation: No straight run required</li>
+  <li>Temperature Range: 130°C and 180°C</li>
+  <li>Nominal Pressure: PN 16, PN 25, and PN 40</li>
+  <li>Suitable Applications:
+    <ul>
+      <li>Heating fuel (extra light / light)</li>
+      <li>Medium and heavy naphtha</li>
+      <li>Diesel, petrol, and other lubricating liquids (oils)</li>
     </ul>
   </li>
 </ul>

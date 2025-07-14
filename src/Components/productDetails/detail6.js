@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';//no image given
 import { Link } from 'react-router-dom';
 
 import img1 from '../../images/7600 (1) Enhanced.png';
-import img2 from '../../7600 enhanced.png';
+import img2 from '../../images/7600 enhanced.png';
 
 
 
