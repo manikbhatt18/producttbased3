@@ -13,11 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Product />} />
        <Route path="/product-detail/detail1" element={<Detail1 />} />
-{/* <Route path="/product-detail/detail2" element={<Detail2 />} />
-<Route path="/product-detail/detail3" element={<Detail3 />} />
-<Route path="/product-detail/detail4" element={<Detail4 />} /> */}
-
-      </Routes>
+       <Route path="/product-detail/detail2" element={<Detail2 />} />
+       <Route path="/product-detail/detail3" element={<Detail3 />} />
+       <Route path="/product-detail/detail4" element={<Detail4 />} />
+     </Routes>
     </Router>
   );
 }

@@ -30,6 +30,7 @@ function Product() {
     { img: related2, title: "JS Smart D+ (up to R200)", link: "/product-detail/detail2" },
     { img: related3, title: "JS Smart+ (up to R100)", link: "/product-detail/detail3" },
     { img: related4, title: "JS Master C+ (up to R160)", link: "/product-detail/detail4" },
+     
   ];
 
   return (
