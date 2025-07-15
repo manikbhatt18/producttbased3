@@ -14,7 +14,7 @@ import img4 from '../../images/Woltman 2.png';
 import related1 from '../../images/7600 (1) Enhanced.png';
 import related2 from '../../images/1 with iota enhance.png';
 import related3 from '../../images/vn-eng-1.3.png';
-import related4 from '../../images/Enhanced.png';
+import related4 from '../../images/product11(1).png';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,7 +37,7 @@ const relatedProducts = [
                  { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes )", link: "/product-detail/detail6" },
                  { img: related2, title: " Electromagnetic Flow Meter (EMF Standard) ", link: "/product-detail/detail7" },
                  { img: related3, title: " CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters ", link: "/product-detail/detail8" },
-                 { img: related4, title: "Multijet Water Meters, Aqua-Re Series", link: "/product-detail/detail9" },
+                 { img: related4, title: "Contoil / RPD Flow Meters", link: "/product-detail/detail11" },
                  
                ];
 

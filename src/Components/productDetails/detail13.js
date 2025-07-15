@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from 'of-z_h146.png';
+import img1 from '../../images/of-z_h146.png';
 
 
 

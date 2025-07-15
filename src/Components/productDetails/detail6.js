@@ -1,20 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../../images/1 with iota enhance.png';
-import img2 from '../../images/2 With Iota Enhanced.png';
-import img3 from '../../images/3 with Iota enhanced.png';
+import img1 from '../../images/7600 (1) Enhanced.png';
+import img2 from '../../images/7600 enhanced.png';
 
 
-import related2 from '../../images/img3.jpg';
-import related3 from '../../images/img5.jpg';
-import related4 from '../../images/img4.jpg';
+
+import related1 from '../../images/1 with iota enhance.png';
+import related2 from '../../images/vn-eng-1.3.png';
+import related3 from '../../images/Enhanced.png';
+import related4 from '../../images/Untitled design (32) Enhanced.png';
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2,img3];
+  const images = [img1, img2];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
@@ -28,10 +30,12 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
-  ];
+                 { img: related1, title: "Electromagnetic Flow Meter (EMF Standard)", link: "/product-detail/detail7" },
+                 { img: related2, title: " CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters ", link: "/product-detail/detail8" },
+                 { img: related3, title: "  Multijet Water Meters, Aqua-Re Series ", link: "/product-detail/detail9" },
+                 { img: related4, title: "Woltmann Water Meters, Aqua-Re Series", link: "/product-detail/detail10" },
+                 
+               ];
 
   return (
     <div className="text-dark">
@@ -41,7 +45,7 @@ function ProductDetail() {
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Ultrasonic water meters</p>
-            <h3 className="fw-semibold">Electromagnetic Flow Meter (EMF Standard)  </h3>
+            <h3 className="fw-semibold"> Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>
               <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
@@ -143,44 +147,47 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>Compact electronic body, no moving parts</li>
-              <li>Maintenance-free design</li>
-              <li>Wired/Wireless communication options</li>
+              
             </ul>
           )}
 
           {activeTab === "Technical data" && (
            <ul>
-  <li>Pipe Range: DN10 – DN2000 mm</li>
-  <li>Nominal Pressure: 0.6–4.0 MPa</li>
-  <li>Accuracy: ±0.5% of displayed value (±0.3% or ±0.2% optional)</li>
-  <li>Liner Material: Teflon, PFA, F46, Neoprene, Polyurethane</li>
-  <li>Electrode Type: General type, Scraper type, Replaceable type</li>
-  <li>Electrode Material: 
+  <li>Ideal for open channels and partially filled pipes</li>
+  <li>Measures flow velocity and level simultaneously</li>
+  <li>Sensor Cable: 7.6 m / 25 ft, submersible, shielded 3-coaxial pairs</li>
+  <li>Flow Rate Range:
     <ul>
-      <li>SS316</li>
-      <li>Hastelloy B</li>
-      <li>Hastelloy C</li>
-      <li>Titanium</li>
-      <li>Tantalum</li>
-      <li>Platinum-iridium</li>
-      <li>Stainless steel covered with tungsten</li>
+      <li>Forward: 0.1 to 20 ft/sec</li>
+      <li>Reverse: up to –5 ft/sec</li>
     </ul>
   </li>
-  <li>Ambient Temperature: –25°C to +60°C</li>
-  <li>Medium Electrical Conductivity: ≥5.0 s/cm</li>
-  <li>Measuring Range: 500:1, Flow rate 10 m/s</li>
-  <li>Structure Type: Integral type, Remote type, Submersible type, Ex Proof type</li>
-  <li>Protection Class: IP68 (Dustproof and submersible for long duration — only for remote type)</li>
-  <li>Ex-proof Mark: Exd II BT4</li>
-  <li>Suitable Applications:
+  <li>Accuracy:
     <ul>
-      <li>Slurries</li>
-      <li>Chemicals (Acids & Alkalis)</li>
-      <li>Raw / Sewage Water</li>
+      <li>Velocity: ±2% of reading or ±0.04 ft/sec (whichever is greater)</li>
+      <li>Level: ±0.25% of reading or ±0.08" (whichever is greater)</li>
     </ul>
   </li>
-  <li>*Insertion Electromagnetic available for pipes DN200 and above</li>
+  <li>Enclosure: Watertight, NEMA4X (IP66), polycarbonate</li>
+  <li>Totalizer: 14-digit display</li>
+  <li>Calibration: Built-in 5-key programmer</li>
+  <li>Outputs (Isolated):
+    <ul>
+      <li>4–20 mA</li>
+      <li>0–5 V</li>
+      <li>Flow, Level, and Velocity channels</li>
+    </ul>
+  </li>
+  <li>Control Relays: Two SPDT relays (5 amp), programmable for:
+    <ul>
+      <li>Flow proportional pulse output</li>
+      <li>Flow and/or level alarms</li>
+    </ul>
+  </li>
+  <li>Datalogger: 128 MB storage (6.5 million points)</li>
+  <li>Power Input: 100–240 VAC, 50/60 Hz, 10 VA max</li>
+  <li>Certifications: CE, UL/SCA/EN 61010-1</li>
+  <li>Note: Portable Doppler Effect (D550 Series) also available</li>
 </ul>
           )}
 

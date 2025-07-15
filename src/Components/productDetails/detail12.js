@@ -20,7 +20,7 @@ import related4 from '../../images/p152.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4,img5,img6];
+  const images = [img1, img2,img3,img4,img5];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
