@@ -167,15 +167,7 @@ Remote Integration:
 Optional digital output for integration into superior control systems and remote monitoring platforms
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
-                    title="JS Smart C+ video"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+              
             </div>
           )}
 

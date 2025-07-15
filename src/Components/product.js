@@ -128,15 +128,7 @@ function Product() {
                   temperature of 50°C or 70°C using a closed-loop system...
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
-                    title="Ultrimis video"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+              
             </div>
           )}
 

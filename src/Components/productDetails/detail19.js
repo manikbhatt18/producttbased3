@@ -172,15 +172,7 @@ Rural & Remote Industrial Clusters
 
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
-                    title="JS Smart C+ video"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+              
             </div>
           )}
 
