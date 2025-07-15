@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';//no image given
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import img1 from '../../images/7600 (1) Enhanced.png';
@@ -6,9 +6,11 @@ import img2 from '../../images/7600 enhanced.png';
 
 
 
-import related2 from '../../images/img3.jpg';
-import related3 from '../../images/img5.jpg';
-import related4 from '../../images/img4.jpg';
+import related1 from '../../images/1 with iota enhance.png';
+import related2 from '../../images/vn-eng-1.3.png';
+import related3 from '../../images/Enhanced.png';
+import related4 from '../../images/Untitled design (32) Enhanced.png';
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,10 +30,12 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
-  ];
+                 { img: related1, title: "Electromagnetic Flow Meter (EMF Standard)", link: "/product-detail/detail7" },
+                 { img: related2, title: " CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters ", link: "/product-detail/detail8" },
+                 { img: related3, title: "  Multijet Water Meters, Aqua-Re Series ", link: "/product-detail/detail9" },
+                 { img: related4, title: "Woltmann Water Meters, Aqua-Re Series", link: "/product-detail/detail10" },
+                 
+               ];
 
   return (
     <div className="text-dark">
@@ -143,56 +147,47 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>Compact electronic body, no moving parts</li>
-              <li>Maintenance-free design</li>
-              <li>Wired/Wireless communication options</li>
+              
             </ul>
           )}
 
           {activeTab === "Technical data" && (
            <ul>
-  <li>Principle: Transit Time (CE Approved)</li>
-  <li>Pipe Range: 13 mm ID to 10,000 mm OD</li>
-  <li>Transducer Operating Temperature:
+  <li>Ideal for open channels and partially filled pipes</li>
+  <li>Measures flow velocity and level simultaneously</li>
+  <li>Sensor Cable: 7.6 m / 25 ft, submersible, shielded 3-coaxial pairs</li>
+  <li>Flow Rate Range:
     <ul>
-      <li>Standard: –20°C to +135°C</li>
-      <li>Optional Hi-Temp: –20°C to +200°C</li>
+      <li>Forward: 0.1 to 20 ft/sec</li>
+      <li>Reverse: up to –5 ft/sec</li>
     </ul>
   </li>
-  <li>Display Features: Flow rate, total flow, signal level, battery level</li>
-  <li>Sensing Type: Non-invasive</li>
-  <li>Language Options: English, French, German, Spanish</li>
-  <li>Carrying Case Protection: IP67 Rated</li>
-  <li>Power Operation:
+  <li>Accuracy:
     <ul>
-      <li>Battery Life: 14 Hours</li>
-      <li>Charging Time: 2.5 Hours</li>
-      <li>Battery or Mains Operated</li>
+      <li>Velocity: ±2% of reading or ±0.04 ft/sec (whichever is greater)</li>
+      <li>Level: ±0.25% of reading or ±0.08" (whichever is greater)</li>
     </ul>
   </li>
-  <li>Accuracy: ±0.5% to ±3% (Dependent on flow and pipe size)</li>
-  <li>Turn Down Ratio: 100:1</li>
-  <li>Data Communications: USB (Supports most USB 2.0 BOM drives)</li>
-  <li>Output:
+  <li>Enclosure: Watertight, NEMA4X (IP66), polycarbonate</li>
+  <li>Totalizer: 14-digit display</li>
+  <li>Calibration: Built-in 5-key programmer</li>
+  <li>Outputs (Isolated):
     <ul>
-      <li>3 × Pulse Output</li>
-      <li>4–20 mA Output</li>
+      <li>4–20 mA</li>
+      <li>0–5 V</li>
+      <li>Flow, Level, and Velocity channels</li>
     </ul>
   </li>
-  <li>Data Logging:
+  <li>Control Relays: Two SPDT relays (5 amp), programmable for:
     <ul>
-      <li>Capacity: 100,000,000 data points</li>
-      <li>Named Sites: 12</li>
-      <li>Download Format: CSV via USB, exportable to Excel</li>
+      <li>Flow proportional pulse output</li>
+      <li>Flow and/or level alarms</li>
     </ul>
   </li>
-  <li>Temperature Sensors: Clamp-on PT100 Class B, 4-wire
-    <ul>
-      <li>Range: 0°C to 200°C (32°F to 392°F)</li>
-      <li>Resolution: 0.1°C (0.18°F)</li>
-      <li>Minimum delta T: 0.3°C (Optional)</li>
-    </ul>
-  </li>
+  <li>Datalogger: 128 MB storage (6.5 million points)</li>
+  <li>Power Input: 100–240 VAC, 50/60 Hz, 10 VA max</li>
+  <li>Certifications: CE, UL/SCA/EN 61010-1</li>
+  <li>Note: Portable Doppler Effect (D550 Series) also available</li>
 </ul>
           )}
 
@@ -209,7 +204,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{
