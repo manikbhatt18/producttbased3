@@ -132,15 +132,7 @@ function ProductDetail() {
              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quae.
                 </p>
               </div>
-              <div className="col-md-6">
-                <div className="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/WgR0zWmuPaQ"
-                    title="JS Smart C+ video"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+              
             </div>
           )}
 
@@ -202,7 +194,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={product.id} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{
