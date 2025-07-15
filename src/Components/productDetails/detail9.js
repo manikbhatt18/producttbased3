@@ -10,10 +10,10 @@ import img5 from '../../images/Multijet water meter.png';
 
 
 
-
-import related2 from '../../images/img3.jpg';
-import related3 from '../../images/img5.jpg';
-import related4 from '../../images/img4.jpg';
+import related1 from '../../images/7600 (1) Enhanced.png';
+import related2 from '../../images/1 with iota enhance.png';
+import related3 from '../../images/vn-eng-1.3.png';
+import related4 from '../../images/Untitled design (32) Enhanced.png';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,10 +33,12 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
-  ];
+                 { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes )", link: "/product-detail/detail6" },
+                 { img: related2, title: " Electromagnetic Flow Meter (EMF Standard) ", link: "/product-detail/detail7" },
+                 { img: related3, title: " CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters ", link: "/product-detail/detail8" },
+                 { img: related4, title: "Woltmann Water Meters, Aqua-Re Series", link: "/product-detail/detail10" },
+                 
+               ];
 
   return (
     <div className="text-dark">
@@ -148,9 +150,7 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>Compact electronic body, no moving parts</li>
-              <li>Maintenance-free design</li>
-              <li>Wired/Wireless communication options</li>
+           
             </ul>
           )}
 
@@ -186,7 +186,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{

@@ -152,26 +152,7 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <p>
-             Ultrasonic Air Flow Meter (TRX/TRZ Series)
-Accurate. Efficient. Maintenance-Free.
-The Ultrasonic Air Meter TRX Series is a high-precision, non-invasive flow measurement solution designed for compressed air and industrial gas applications. Engineered with advanced ultrasonic sensing technology, the TRX delivers long-term stability, zero pressure drop, and exceptional resistance to oil, moisture, and dust—making it the ideal choice for today's demanding production environments.
-📈 Applications
-Compressed Air Energy Audits
-
-
-Factory Air Leakage Detection Systems
-
-
-Industrial Gas Consumption Monitoring
-
-
-HVAC and Pneumatic System Optimization
-
-
-Multi-Factory Air Transfer Analysis
-
-🔑 Why Choose the TRX Ultrasonic Air Flow Meter?
-Whether you’re looking to reduce compressed air costs, monitor compressor efficiency, or implement predictive maintenance, the TRX Series provides unmatched performance, reliability, and cost-efficiency—all without system interruptions or pressure loss.
+             
                 </p>
               </div>
               <div className="col-md-6">
@@ -188,13 +169,6 @@ Whether you’re looking to reduce compressed air costs, monitor compressor effi
 
           {activeTab === "Features" && (
 <ul>
-  <li>No Pressure Loss: Designed with a clear flow path and no moving parts, ensuring zero pressure drop and energy loss for improved system efficiency</li>
-  <li>Long-Term Accuracy & Maintenance-Free Operation: High-accuracy air flow measurement with no degradation over time — no recalibration, filter replacements, or scheduled maintenance for up to 10 years</li>
-  <li>Exceptional Durability in Harsh Environments: Robust construction resists oil mist, moisture, and dust, ensuring reliable performance in contaminated or unfiltered compressed air lines</li>
-  <li>Leak Detection & Low Flow Sensitivity: Wide turndown ratio (1:60) allows precise detection of low flow rates and air leaks, enabling proactive maintenance and energy savings</li>
-  <li>Reverse Flow Measurement: Bi-directional flow monitoring supports loop piping systems and inter-factory air distribution</li>
-  <li>Multiple Gas Compatibility: Works with air, nitrogen, and inert gases; includes multiple output options such as RS485 Modbus, analog (4–20 mA), pulse, and alarm signals</li>
-  <li>Energy Optimization Ready: When paired with a watt-hour meter, calculates air/power ratio (kW/m³) for real-time compressor efficiency and operational cost insights</li>
 </ul>
           )}
 

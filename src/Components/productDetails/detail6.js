@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';//no image given
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../../images/7600 (1) Enhanced.png';
-import img2 from '../../images/7600 enhanced.png';
-
+import img1 from '../../images/1 with iota enhance.png';
+import img2 from '../../images/2 With Iota Enhanced.png';
+import img3 from '../../images/3 with Iota enhanced.png';
 
 
 import related2 from '../../images/img3.jpg';
@@ -14,7 +14,7 @@ import related4 from '../../images/img4.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2];
+  const images = [img1, img2,img3];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
@@ -41,7 +41,7 @@ function ProductDetail() {
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Ultrasonic water meters</p>
-            <h3 className="fw-semibold"> Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes </h3>
+            <h3 className="fw-semibold">Electromagnetic Flow Meter (EMF Standard)  </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>
               <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
@@ -151,48 +151,36 @@ function ProductDetail() {
 
           {activeTab === "Technical data" && (
            <ul>
-  <li>Principle: Transit Time (CE Approved)</li>
-  <li>Pipe Range: 13 mm ID to 10,000 mm OD</li>
-  <li>Transducer Operating Temperature:
+  <li>Pipe Range: DN10 – DN2000 mm</li>
+  <li>Nominal Pressure: 0.6–4.0 MPa</li>
+  <li>Accuracy: ±0.5% of displayed value (±0.3% or ±0.2% optional)</li>
+  <li>Liner Material: Teflon, PFA, F46, Neoprene, Polyurethane</li>
+  <li>Electrode Type: General type, Scraper type, Replaceable type</li>
+  <li>Electrode Material: 
     <ul>
-      <li>Standard: –20°C to +135°C</li>
-      <li>Optional Hi-Temp: –20°C to +200°C</li>
+      <li>SS316</li>
+      <li>Hastelloy B</li>
+      <li>Hastelloy C</li>
+      <li>Titanium</li>
+      <li>Tantalum</li>
+      <li>Platinum-iridium</li>
+      <li>Stainless steel covered with tungsten</li>
     </ul>
   </li>
-  <li>Display Features: Flow rate, total flow, signal level, battery level</li>
-  <li>Sensing Type: Non-invasive</li>
-  <li>Language Options: English, French, German, Spanish</li>
-  <li>Carrying Case Protection: IP67 Rated</li>
-  <li>Power Operation:
+  <li>Ambient Temperature: –25°C to +60°C</li>
+  <li>Medium Electrical Conductivity: ≥5.0 s/cm</li>
+  <li>Measuring Range: 500:1, Flow rate 10 m/s</li>
+  <li>Structure Type: Integral type, Remote type, Submersible type, Ex Proof type</li>
+  <li>Protection Class: IP68 (Dustproof and submersible for long duration — only for remote type)</li>
+  <li>Ex-proof Mark: Exd II BT4</li>
+  <li>Suitable Applications:
     <ul>
-      <li>Battery Life: 14 Hours</li>
-      <li>Charging Time: 2.5 Hours</li>
-      <li>Battery or Mains Operated</li>
+      <li>Slurries</li>
+      <li>Chemicals (Acids & Alkalis)</li>
+      <li>Raw / Sewage Water</li>
     </ul>
   </li>
-  <li>Accuracy: ±0.5% to ±3% (Dependent on flow and pipe size)</li>
-  <li>Turn Down Ratio: 100:1</li>
-  <li>Data Communications: USB (Supports most USB 2.0 BOM drives)</li>
-  <li>Output:
-    <ul>
-      <li>3 × Pulse Output</li>
-      <li>4–20 mA Output</li>
-    </ul>
-  </li>
-  <li>Data Logging:
-    <ul>
-      <li>Capacity: 100,000,000 data points</li>
-      <li>Named Sites: 12</li>
-      <li>Download Format: CSV via USB, exportable to Excel</li>
-    </ul>
-  </li>
-  <li>Temperature Sensors: Clamp-on PT100 Class B, 4-wire
-    <ul>
-      <li>Range: 0°C to 200°C (32°F to 392°F)</li>
-      <li>Resolution: 0.1°C (0.18°F)</li>
-      <li>Minimum delta T: 0.3°C (Optional)</li>
-    </ul>
-  </li>
+  <li>*Insertion Electromagnetic available for pipes DN200 and above</li>
 </ul>
           )}
 
@@ -209,7 +197,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{

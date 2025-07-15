@@ -1,33 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../../images/product11(1).png';
-import img2 from '../../images/product11(2).png';
-import img3 from '../../images/product11(3).png';
-import img4 from '../../images/product11(4).png';
-import img5 from '../../images/product11(5).png';
-import img6 from '../../images/product11(6).png';
-import img7 from '../../images/product11(7).png';
-import img8 from '../../images/product11(8).png';
-import img9 from '../../images/product11(9).png';
-import img10 from '../../images/RPD png.png';
-import img11 from '../../images/RPD SERIES FLOW METER.png';
-import img12 from '../../images/product11(12).png';
-import img13 from '../../images/contoil (2).png';
-import img14 from '../../images/contoil (3).png';
-import img15 from '../../images/contoil.png';
+import img1 from '../../images/p121.png';
+import img2 from '../../images/p122.png';
+import img3 from '../../images/p123.png';
+import img4 from '../../images/p124.png';
+import img5 from '../../images/p125.png';
 
 
 
-import related2 from '../../images/img3.jpg';
-import related3 from '../../images/img5.jpg';
-import related4 from '../../images/img4.jpg';
+
+
+import related1 from '../../images/product11(1).png';
+import related2 from '../../images/of-z_h146.png';
+import related3 from '../../images/TRX 1.png';
+import related4 from '../../images/p152.png';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15];
+  const images = [img1, img2,img3,img4,img5,img6];
   const [mainImage, setMainImage] = useState(images[0]);
   const [activeTab, setActiveTab] = useState("Description");
   const tabContentRef = useRef(null);
@@ -41,11 +34,13 @@ function ProductDetail() {
   }, [activeTab]);
 
   const relatedProducts = [
-    { id: 2, img: related2, title: "JS Smart D+ (up to R200)" },
-    { id: 3, img: related3, title: "JS Smart+ (up to R100)" },
-    { id: 4, img: related4, title: "JS Master C+ (up to R160)" },
-  ];
-
+                 
+                 { img: related1, title: " Contoil / RPD Flow Meters ", link: "/product-detail/detail11" },
+                 { img: related2, title: " Micro Stream Flow Sensor OFZ Series", link: "/product-detail/detail13" },
+                 { img: related3, title: "TRX Ultrasonic Air Meters", link: "/product-detail/detail14" },
+                 { img: related4, title: "Thermal Mass Flow Sensors (Insertion)", link: "/product-detail/detail15" },
+                 
+               ];
   return (
     <div className="text-dark">
       {/* Swapped: Product Info LEFT and Image RIGHT */}
@@ -54,7 +49,7 @@ function ProductDetail() {
           {/* Product Info */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Positive Displacement Oil Meters</p>
-            <h3 className="fw-semibold"> Contoil / RPD Flow Meters </h3>
+            <h3 className="fw-semibold"> Oval Gear Flow Meters (OGM) </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Compact size with durable materials</li>
               <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
@@ -156,26 +151,24 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>Compact electronic body, no moving parts</li>
-              <li>Maintenance-free design</li>
-              <li>Wired/Wireless communication options</li>
+              
             </ul>
           )}
 
           {activeTab === "Technical data" && (
            <ul>
-  <li>Turbine Mechanical Water Meter with Magnetic Transmission</li>
-  <li>Pipe Range: DN50 - DN500</li>
-  <li>Removable mechanism, 360° rotatable</li>
-  <li>Accuracy: Class B as per ISO 4064, suitable for Cold Water (50°C) / Hot Water (90°C & 130°C versions)</li>
-  <li>Body: Cast Iron or Stainless Steel with an epoxy outer coating</li>
-  <li>Display Parameters: flow rate / total / resettable total</li>
-  <li>Relay Output: based on flow rate</li>
-  <li>Outputs:
+  <li>Pipe Range: DN10 – DN200</li>
+  <li>Application: High temperature and high viscosity fluids</li>
+  <li>Accuracy: 0.5% or 0.2%</li>
+  <li>Standard Viscosity: Up to 5,000 cP (centipoise = MPa·s)</li>
+  <li>Flow Range: 0.04 – 340 m³/h (18 – 37,396 GPM)</li>
+  <li>Operating Environment: –20°C to +280°C</li>
+  <li>Material Options: Cast Iron, Cast Steel, Stainless Steel</li>
+  <li>Optional Features:
     <ul>
-      <li>Pulse output for AMR communication</li>
-      <li>Analog (4 ~ 20 mA) output, 24 VDC input (in digital option)</li>
-      <li>In-built battery (life 1.5 ~ 2 years) – optional</li>
+      <li>LC display</li>
+      <li>Transmitter</li>
+      <li>MCU flow process controller</li>
     </ul>
   </li>
 </ul>
@@ -194,7 +187,7 @@ function ProductDetail() {
           <div className="row justify-content-center">
             {relatedProducts.map((product) => (
               <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={`/product/${product.id}`} className="text-decoration-none text-dark">
+                <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="d-flex flex-column align-items-center p-3 shadow-sm"
                     style={{
