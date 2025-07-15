@@ -32,7 +32,7 @@ import img24 from '../../images/Flow-Sensor-SS-23-700-EX-Deckel.png.png';
 import related1 from '../../images/product11(1).png';
 import related2 from '../../images/p121.png';
 import related3 from '../../images/of-z_h146.png';
-import related4 from '../../images/TRX 1.png';
+import related4 from '../../images/VFM 1.png';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -55,7 +55,7 @@ function ProductDetail() {
                  { img: related1, title: "Contoil / RPD Flow Meters", link: "/product-detail/detail11" },
                  { img: related2, title: " Oval Gear Flow Meters (OGM) ", link: "/product-detail/detail12" },
                  { img: related3, title: " Micro Stream Flow Sensor OFZ Series", link: "/product-detail/detail13" },
-                 { img: related4, title: "TRX Ultrasonic Air Meters", link: "/product-detail/detail14" },
+                 { img: related4, title: "VFM Vortex Flow Meters", link: "/product-detail/detail15" },
                  
                ];
 
