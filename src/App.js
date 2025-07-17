@@ -1,3 +1,25 @@
+// import React from 'react';
+// import Navbar from './Components/Home/Navbar';
+// import HeroSection from './Components/Home/HeroSection';
+// import ProductsSection from './Components/Home/ProductsSection';
+// import WhyChooseUs from './Components/Home/WhyChooseUs';
+// import './App.css';
+
+// function App() {
+//   return (
+//     <>
+//       <Navbar />
+//       <HeroSection />
+//       <ProductsSection />
+//       <WhyChooseUs />
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
