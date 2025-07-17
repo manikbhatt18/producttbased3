@@ -232,12 +232,8 @@ function Product() {
 .btn-enquiry {
   position: relative;
   overflow: hidden;
-  background-color: #ffcc00;
-  color: black;
-  border: none;
-  padding: 8px 20px;
-  font-weight: 500;
-  cursor: pointer;
+  background-color: yellow; /* Default button background color */
+  /* Add other button styles as needed */
 }
 
 .btn-enquiry::before {
@@ -249,12 +245,33 @@ function Product() {
   height: 100%;
   background-color: black;
   transform: translateX(-100%);
-  transition: transform 0.4s ease;
   z-index: 1;
 }
 
 .btn-enquiry:hover::before {
-  transform: translateX(0);
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.btn-enquiry:not(:hover)::before {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .btn-enquiry span {
@@ -265,6 +282,12 @@ function Product() {
 
 .btn-enquiry:hover span {
   color: white;
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
 }
 
 
