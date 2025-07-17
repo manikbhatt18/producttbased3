@@ -73,9 +73,9 @@ function Product() {
             <p className="text-muted">Water Meters</p>
             <h3 className="fw-semibold">Domestic Ultrasonic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; Many patented design and technological features</li>
-              <li className="mb-2">&#9679; The lightest and smallest ultrasonic water meter available to our customers</li>
-              <li className="mb-2">&#9679; None of the materials in contact with water used for the construction of this meter contain heavy metals</li>
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
             </ul>
             <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
           </div>
@@ -105,15 +105,14 @@ function Product() {
             <div className="row">
               <div className="col-md-6">
                 <p>
-                  Our ultrasonic water meters measure the flow and volume of water up to a max.
-                  temperature of 50°C or 70°C using a closed-loop system...
+                 
                 </p>
               </div>
               
             </div>
           )}
           {activeTab === "Features" && (
-            <p>Compact ultrasonic water meter with electronic measurement of water consumption, no moving parts...</p>
+            <p></p>
           )}
           {activeTab === "Technical data" && (
             <ul>

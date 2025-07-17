@@ -40,216 +40,287 @@ const relatedProducts = [
                ];
 
   return (
-    <div className="text-dark">
-      {/* Swapped: Product Info LEFT and Image RIGHT */}
-      <div className="container py-5">
-        <div className="row">
-          {/* Product Info */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Air Flow Meters</p>
-            <h3 className="fw-semibold"> TRX Ultrasonic Air Meters </h3>
-            <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; Compact size with durable materials</li>
-              <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
-              <li className="mb-2">&#9679; Advanced features with long battery life</li>
-            </ul>
-            <button className='my-2 rounded'>Enquiry Now</button>
+      <div className="text-dark">
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-6 d-flex flex-column align-items-center">
+              <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
+                <img src={mainImage} alt="Main Meter" className="img-fluid" />
+              </div>
+              <div className="d-flex gap-3 mt-3">
+                {images.map((img, i) => (
+                  <div key={i} className="d-flex flex-column align-items-center">
+                    <img
+                      src={img}
+                      alt={`thumb-${i}`}
+                      onClick={() => setMainImage(img)}
+                      className="img-thumbnail"
+                      style={{
+                        width: '60px',
+                        height: '60px',
+                        cursor: 'pointer',
+                        objectFit: 'cover',
+                        border: mainImage === img ? '2px solid #black' : '1px solid #yellow',
+                        borderRadius: '0px'
+                      }}
+                    />
+                    <div
+                      style={{
+                        height: '3px',
+                        width: '60%',
+                        backgroundColor: mainImage === img ? '#ffcc00' : 'transparent',  // Yellow
+                        marginTop: '3px',
+                        borderRadius: '2px',
+                      }}
+                    ></div>
+  
+                  </div>
+                ))}
+              </div>
+            </div>
+  
+            <div className="col-lg-6 mt-5 mt-lg-0">
+              <p className="text-muted">Air Flow Meters</p>
+              <h3 className="fw-semibold">TRX Ultrasonic Air Meters </h3>
+              <ul className="list-unstyled mt-3">
+                <li className="mb-2">&#9679; </li>
+                <li className="mb-2">&#9679; </li>
+                <li className="mb-2">&#9679; </li>
+              </ul>
+              <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
+            </div>
           </div>
+        </div>
+  
+        <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
+          <ul className="nav nav-tabs border-0 justify-content-center">
+            {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
+              <li className="nav-item" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? 'active-tab' : ''}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab}
+                </button>
+  
+  
+              </li>
+            ))}
+          </ul>
+        </div>
+  
+        <div className="container">
+          <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
+            {activeTab === "Description" && (
+              <div className="row">
+                <div className="col-md-6">
+                  <ul>
+  <li><strong>Product Overview:</strong>
+    <ul>
+      <li>TRX Series Ultrasonic Air Flow Meter</li>
+      <li>High-precision, non-invasive flow monitoring for compressed air and industrial gas systems</li>
+      <li>Advanced ultrasonic sensing ensures long-term measurement stability</li>
+      <li>Zero pressure drop and resistant to oil, moisture, and dust</li>
+      <li>Engineered for demanding production environments</li>
+    </ul>
+  </li>
 
-          {/* Image Section */}
-          <div className="col-lg-6 d-flex flex-column align-items-center">
-            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '300px' }}>
-  <img
-    src={mainImage}
-    alt="Main Meter"
-    className="img-fluid"
-    style={{
-      maxHeight: '220px',       // Controls height
-      width: '100%',            // Keep width responsive
-      objectFit: 'contain',     // Prevents stretching
-    }}
-  />
-</div>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li>Compressed air energy audits</li>
+      <li>Factory air leakage detection systems</li>
+      <li>Industrial gas consumption monitoring</li>
+      <li>HVAC and pneumatic system optimization</li>
+      <li>Multi-factory air transfer analysis</li>
+    </ul>
+  </li>
 
-            <div className="d-flex gap-3 mt-3">
-              {images.map((img, i) => (
-                <div key={i} className="d-flex flex-column align-items-center">
-                  <img
-                    src={img}
-                    alt={`thumb-${i}`}
-                    onClick={() => setMainImage(img)}
-                    className="img-thumbnail"
-                    style={{
-                      width: '60px',
-                      height: '60px',
-                      cursor: 'pointer',
-                      objectFit: 'cover',
-                      border: mainImage === img ? '2px solid #003e7e' : '1px solid #ddd',
-                      borderRadius: '0px'
-                    }}
-                  />
-                  <div
-                    style={{
-                      height: '3px',
-                      width: '60%',
-                      backgroundColor: mainImage === img ? '#cc0033' : 'transparent',
-                      marginTop: '3px',
-                      borderRadius: '2px',
-                    }}
-                  ></div>
+  <li><strong>Key Benefits:</strong>
+    <ul>
+      <li>Helps reduce compressed air costs and energy waste</li>
+      <li>Enables real-time monitoring of compressor performance</li>
+      <li>Supports predictive maintenance strategies</li>
+      <li>No flow interruption and no pressure loss during operation</li>
+      <li>Reliable, cost-efficient performance across diverse industrial settings</li>
+    </ul>
+  </li>
+</ul>
+                </div>
+                
+              </div>
+            )}
+            {activeTab === "Features" && (
+<ul>
+  <li><strong>No Pressure Loss:</strong> Engineered with a clear flow path and no moving parts, the TRX ensures zero pressure drop and energy loss, boosting system efficiency.</li>
+  <li><strong>Long-Term Accuracy & Maintenance-Free Operation:</strong> High-accuracy measurement with no degradation over time — no recalibration, filters, or scheduled maintenance for up to 10 years.</li>
+  <li><strong>Exceptional Durability in Harsh Environments:</strong> Robust build resists oil mist, moisture, and dust; ideal for contaminated or unfiltered compressed air systems.</li>
+  <li><strong>Leak Detection & Low Flow Sensitivity:</strong> Wide turndown ratio (1:60) enables precise detection of low flow and air leakage, supporting proactive maintenance and energy conservation.</li>
+  <li><strong>Reverse Flow Measurement:</strong> Capable of bi-directional flow monitoring, suitable for loop piping and inter-factory air distribution setups.</li>
+  <li><strong>Multiple Gas Compatibility:</strong> Supports air, nitrogen, and inert gases, with outputs including RS485 Modbus, analog (4–20 mA), pulse, and alarm signals.</li>
+  <li><strong>Energy Optimization Ready:</strong> When paired with a watt-hour meter, enables calculation of air/power ratio (kW/m³) for real-time compressor performance insights.</li>
+</ul>            )}
+            {activeTab === "Technical data" && (
+              <ul>
+  <li><strong>Pipe Range:</strong> DN25 to DN80</li>
+  <li><strong>Accuracy:</strong> ±1.3%RD (at 0.5 MPa, ordinary temperature, dry air or nitrogen)</li>
+  <li><strong>Fluid Temperature Range:</strong> –10°C to +60°C</li>
+  <li><strong>Working Pressure:</strong> 0 to &lt;1 MPa (Gauge pressure)</li>
+  <li><strong>Compensation Features:</strong> Built-in temperature and pressure compensation</li>
+  <li><strong>Power Supply:</strong> External 24VDC ±10%</li>
+  <li><strong>Output Interfaces:</strong> 4–20 mA (±0.5%FS), RS485</li>
+  <li><strong>Measurable Fluids:</strong> Compressed Air, Nitrogen</li>
+  <li><strong>Certifications:</strong> RoHS, CE, UKCA</li>
+</ul>
+            )}
+            {activeTab === "Downloads" && (
+              <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
+            )}
+          </div>
+        </div>
+  
+        <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
+          <div className="container">
+            <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
+            <div className="row justify-content-center">
+              {relatedProducts.map((product, idx) => (
+                <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
+                  <Link to={product.link} className="text-decoration-none text-dark">
+                    <div
+                      className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
+                      style={{
+                        backgroundColor: '#fff',
+                        width: '180px',
+                        height: '180px',
+                        border: '1px solid #ddd',
+                        borderRadius: '4px',
+                        transition: 'transform 0.3s',
+                      }}
+                    >
+                      <img
+                        src={product.img}
+                        alt={product.title}
+                        style={{
+                          maxHeight: '100%',
+                          maxWidth: '100%',
+                          objectFit: 'contain',
+                        }}
+                      />
+                    </div>
+                    <p className="fw-semibold mt-2" style={{ fontSize: '14px' }}>{product.title}</p>
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
         </div>
+  
+        <style jsx>{`
+    .fade-in {
+      animation: fadeIn 0.2s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    /* Active Tab Style */
+    .nav-tabs .nav-link {
+      color: black;
+      border: none;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+      background-color: white;
+    }
+  
+    .nav-tabs .nav-link:hover {
+      background-color: #ffcc00; /* Yellow hover */
+      color: black;
+    }
+  
+    .nav-tabs .nav-link.active-tab {
+      border-bottom: 3px solid #ffcc00;
+      color: black;
+      background-color: white;
+    }
+  
+    /* Hover Scale for Cards/Images */
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+  
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  
+    /* Enquiry Button Style */
+  .btn-enquiry {
+    position: relative;
+    overflow: hidden;
+    background-color: yellow; /* Default button background color */
+    /* Add other button styles as needed */
+  }
+  
+  .btn-enquiry::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-100%);
+    z-index: 1;
+  }
+  
+  .btn-enquiry:hover::before {
+    animation: slideInLeft 0.4s ease forwards;
+  }
+  
+  .btn-enquiry:not(:hover)::before {
+    animation: slideOutRight 0.4s ease forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .btn-enquiry span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s ease;
+  }
+  
+  .btn-enquiry:hover span {
+    color: white;
+  }
+  
+  .btn-enquiry span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s ease;
+  }
+  
+  
+  
+  `}</style>
+  
       </div>
-
-      {/* Sticky Tabs */}
-      <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0">
-          {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
-            <li className="nav-item" key={tab}>
-              <button
-                className={`nav-link border-0 ${activeTab === tab ? 'bg-dark text-white' : 'text-dark'}`}
-                onClick={() => setActiveTab(tab)}
-                style={{
-                  borderRadius: '0px',
-                  padding: '12px 20px',
-                  fontWeight: '500'
-                }}
-              >
-                {tab}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Tab Content */}
-      <div className="container">
-        <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
-          {activeTab === "Description" && (
-            <div className="row">
-              <div className="col-md-6">
-                <p>
-             Ultrasonic Air Flow Meter (TRX/TRZ Series)
-Accurate. Efficient. Maintenance-Free.
-The Ultrasonic Air Meter TRX Series is a high-precision, non-invasive flow measurement solution designed for compressed air and industrial gas applications. Engineered with advanced ultrasonic sensing technology, the TRX delivers long-term stability, zero pressure drop, and exceptional resistance to oil, moisture, and dust—making it the ideal choice for today's demanding production environments.
-📈 Applications
-Compressed Air Energy Audits
-
-
-Factory Air Leakage Detection Systems
-
-
-Industrial Gas Consumption Monitoring
-
-
-HVAC and Pneumatic System Optimization
-
-
-Multi-Factory Air Transfer Analysis
-
-🔑 Why Choose the TRX Ultrasonic Air Flow Meter?
-Whether you’re looking to reduce compressed air costs, monitor compressor efficiency, or implement predictive maintenance, the TRX Series provides unmatched performance, reliability, and cost-efficiency—all without system interruptions or pressure loss.
-
-                </p>
-              </div>
-              
-            </div>
-          )}
-
-          {activeTab === "Features" && (
-            <ul>
-  <li>No Pressure Loss: Designed with a clear flow path and no moving parts, ensuring zero pressure drop and energy loss for improved system efficiency</li>
-  <li>Long-Term Accuracy & Maintenance-Free Operation: High-accuracy measurement with no recalibration, filter replacements, or scheduled maintenance for up to 10 years</li>
-  <li>Exceptional Durability in Harsh Environments: Robust construction resists oil mist, moisture, and dust for reliable performance in unfiltered compressed air lines</li>
-  <li>Leak Detection & Low Flow Sensitivity: Wide turndown ratio (1:60) enables precise low flow and air leak detection, supporting proactive maintenance and energy savings</li>
-  <li>Reverse Flow Measurement: Supports bi-directional flow, ideal for loop piping systems and multi-factory air distribution</li>
-  <li>Multiple Gas Compatibility: Works with air, nitrogen, and inert gases; offers RS485 Modbus, analog (4–20 mA), pulse, and alarm outputs</li>
-  <li>Energy Optimization Ready: With a watt-hour meter, calculates air/power ratio (kW/m³) for compressor efficiency and operational cost insights</li>
-</ul>
-          )}
-
-          {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN25 – DN80</li>
-  <li>Accuracy: ±1.3%RD (at 0.5 MPa, ordinary temperature, dry air or nitrogen)</li>
-  <li>Fluid Temperature: –10°C to 60°C</li>
-  <li>Working Pressure: 0 to less than 1 MPa (gauge pressure)</li>
-  <li>Compensation: Built-in temperature and pressure compensation</li>
-  <li>Power Supply: External 24 VDC ±10%</li>
-  <li>Output Options:
-    <ul>
-      <li>4–20 mA (±0.5%FS)</li>
-      <li>RS485</li>
-    </ul>
-  </li>
-  <li>Measurable Fluids:
-    <ul>
-      <li>Compressed Air</li>
-      <li>Nitrogen</li>
-    </ul>
-  </li>
-  <li>Certifications: RoHS, CE, UKCA</li>
-</ul>
-          )}
-
-          {activeTab === "Downloads" && (
-            <p>Download data sheets and certifications from our documentation portal.</p>
-          )}
-        </div>
-      </div>
-
-      {/* YOU MAY ALSO BE INTERESTED IN Section */}
-      <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
-        <div className="container">
-          <h5 className="fw-semibold mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
-          <div className="row justify-content-center">
-            {relatedProducts.map((product) => (
-              <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
-                <Link to={product.link} className="text-decoration-none text-dark">
-                  <div
-                    className="d-flex flex-column align-items-center p-3 shadow-sm"
-                    style={{
-                      backgroundColor: '#ffffff',
-                      width: '180px',
-                      height: '180px',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      borderRadius: '0px',
-                    }}
-                  >
-                    <img
-                      src={product.img}
-                      alt={product.title}
-                      style={{
-                        maxHeight: '100%',
-                        maxWidth: '100%',
-                        objectFit: 'contain',
-                      }}
-                    />
-                  </div>
-                  <p className="fw-medium text-center mt-2" style={{ fontSize: '15px' }}>{product.title}</p>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Animation CSS */}
-      <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.4s ease-in-out;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
-    </div>
-  );
-}
+    );
+  }
 
 export default ProductDetail;

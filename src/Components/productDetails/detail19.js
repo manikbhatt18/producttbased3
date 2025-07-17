@@ -41,38 +41,14 @@ const relatedProducts = [
                  
                ];
 
-  return (
+return (
     <div className="text-dark">
-      {/* Swapped: Product Info LEFT and Image RIGHT */}
       <div className="container py-5">
         <div className="row">
-          {/* Product Info */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Gas Flow Meters</p>
-            <h3 className="fw-semibold">EQZ/EQZK Radial Turbine Gas Meters</h3>
-            <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; Compact size with durable materials</li>
-              <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
-              <li className="mb-2">&#9679; Advanced features with long battery life</li>
-            </ul>
-            <button className='my-2 rounded'>Enquiry Now</button>
-          </div>
-
-          {/* Image Section */}
           <div className="col-lg-6 d-flex flex-column align-items-center">
-            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '300px' }}>
-  <img
-    src={mainImage}
-    alt="Main Meter"
-    className="img-fluid"
-    style={{
-      maxHeight: '220px',       // Controls height
-      width: '100%',            // Keep width responsive
-      objectFit: 'contain',     // Prevents stretching
-    }}
-  />
-</div>
-
+            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
+              <img src={mainImage} alt="Main Meter" className="img-fluid" />
+            </div>
             <div className="d-flex gap-3 mt-3">
               {images.map((img, i) => (
                 <div key={i} className="d-flex flex-column align-items-center">
@@ -86,7 +62,7 @@ const relatedProducts = [
                       height: '60px',
                       cursor: 'pointer',
                       objectFit: 'cover',
-                      border: mainImage === img ? '2px solid #003e7e' : '1px solid #ddd',
+                      border: mainImage === img ? '2px solid #black' : '1px solid #yellow',
                       borderRadius: '0px'
                     }}
                   />
@@ -94,150 +70,187 @@ const relatedProducts = [
                     style={{
                       height: '3px',
                       width: '60%',
-                      backgroundColor: mainImage === img ? '#cc0033' : 'transparent',
+                      backgroundColor: mainImage === img ? '#ffcc00' : 'transparent',  // Yellow
                       marginTop: '3px',
                       borderRadius: '2px',
                     }}
                   ></div>
+
                 </div>
               ))}
             </div>
           </div>
+
+          <div className="col-lg-6 mt-5 mt-lg-0">
+            <p className="text-muted">Gas Flow Meters</p>
+            <h3 className="fw-semibold">EQZ/EQZK Radial Turbine Gas Meters</h3>
+            <ul className="list-unstyled mt-3">
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
+            </ul>
+            <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
+          </div>
         </div>
       </div>
 
-      {/* Sticky Tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0">
+        <ul className="nav nav-tabs border-0 justify-content-center">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
               <button
-                className={`nav-link border-0 ${activeTab === tab ? 'bg-dark text-white' : 'text-dark'}`}
+                className={`nav-link ${activeTab === tab ? 'active-tab' : ''}`}
                 onClick={() => setActiveTab(tab)}
-                style={{
-                  borderRadius: '0px',
-                  padding: '12px 20px',
-                  fontWeight: '500'
-                }}
               >
                 {tab}
               </button>
+
+
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Tab Content */}
       <div className="container">
         <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <p>
-             The EQZ  radial turbine gas meters by Elgas are engineered for high-precision measurement of natural gas and other clean, non-corrosive gases. Widely adopted across India these meters deliver accurate volumetric flow readings in both industrial and commercial gas distribution networks.
-Designed for performance in high-temperature environments and challenging climatic conditions, EQZ meters ensure long-term reliability, minimal pressure loss, and easy integration with telemetry and smart metering systems.
+                <ul>
+  <li><strong>Product Overview:</strong>
+    <ul>
+      <li>EQZ Radial Turbine Gas Meters by Elgas</li>
+      <li>High-precision volumetric flow measurement for natural gas and clean, non-corrosive gases</li>
+      <li>Optimized for industrial and commercial gas distribution networks</li>
+      <li>Performs reliably in high-temperature and challenging environmental conditions</li>
+      <li>Minimal pressure loss with easy integration into telemetry and smart metering systems</li>
+      <li>Widely adopted across India for industrial and utility applications</li>
+    </ul>
+  </li>
 
-Applications of EQZ Turbine Gas Meters in India
-Industrial Gas Flow Monitoring
- Used for high-accuracy measurement of natural gas consumption in steel plants, refineries, and chemical industries.
- Ideal for process control and energy optimization in large-scale industrial operations.
-
-City Gas Distribution (CGD) Networks
- Widely applied in urban gas distribution under CGD projects approved by PNGRB in India.
- Ensures reliable flow data for billing and pipeline integrity in municipal gas supply systems.
-
-Power Plants & Captive Power Units
- Used in gas-based thermal and combined cycle power plants for metering fuel gas input.
- Enables fuel efficiency tracking and regulatory compliance with CEA and DISCOM requirements.
-
-Commercial & Utility Metering
- Installed in commercial complexes, malls, hospitals, and SEZs for accurate utility gas billing.
- Supports LPG, PNG, and CNG distribution within multi-tenant and shared infrastructure setups.
-
-Oil & Gas Pipelines (Upstream/Midstream)
- Deployed in custody transfer and flow measurement of natural gas across oil & gas pipeline networks.
- Suitable for ONGC, GAIL, IndianOil, and EPC contractor projects requiring robust metering.
-
-EPC and Infrastructure Projects
- Used in gas metering packages supplied to large EPC firms executing infrastructure and industrial projects.
- Preferred by L&T, Tata Projects, and other contractors for government and private sector builds.
-
-Research, Labs & Calibration Centers
- Used in metrology labs and test benches for calibrating flow systems and developing gas control technologies.
- Supports precision testing for R&D in Indian energy and mechanical engineering institutes.
-
-Rural & Remote Industrial Clusters
- Installed in decentralized energy systems, agro-industries, and remote industrial gas networks.
- Engineered for low-maintenance operation in off-grid or semi-urban regions.
-
-                </p>
+  <li><strong>Applications in India:</strong>
+    <ul>
+      <li><em>Industrial Gas Flow Monitoring:</em>
+        <ul>
+          <li>Steel plants, refineries, chemical industries</li>
+          <li>Supports process control and energy optimization</li>
+        </ul>
+      </li>
+      <li><em>City Gas Distribution (CGD) Networks:</em>
+        <ul>
+          <li>Used in urban CGD projects approved by PNGRB</li>
+          <li>Reliable billing and pipeline integrity for municipal systems</li>
+        </ul>
+      </li>
+      <li><em>Power Plants & Captive Power Units:</em>
+        <ul>
+          <li>Gas-based thermal and combined cycle plants</li>
+          <li>Tracks fuel efficiency and ensures CEA/DISCOM compliance</li>
+        </ul>
+      </li>
+      <li><em>Commercial & Utility Metering:</em>
+        <ul>
+          <li>Commercial complexes, malls, hospitals, SEZs</li>
+          <li>Supports LPG, PNG, and CNG billing across shared networks</li>
+        </ul>
+      </li>
+      <li><em>Oil & Gas Pipelines (Upstream/Midstream):</em>
+        <ul>
+          <li>Custody transfer and flow measurement across major pipeline infrastructures</li>
+          <li>Used in ONGC, GAIL, IndianOil, and EPC contractor deployments</li>
+        </ul>
+      </li>
+      <li><em>EPC & Infrastructure Projects:</em>
+        <ul>
+          <li>Integrated into gas metering packages for L&T, Tata Projects, and others</li>
+          <li>Supports government and private industrial builds</li>
+        </ul>
+      </li>
+      <li><em>Research, Labs & Calibration Centers:</em>
+        <ul>
+          <li>Used for precision testing and calibration in R&D labs and test benches</li>
+          <li>Supports technological development in energy and mechanical engineering</li>
+        </ul>
+      </li>
+      <li><em>Rural & Remote Industrial Clusters:</em>
+        <ul>
+          <li>Installed in decentralized systems and agro-industrial networks</li>
+          <li>Engineered for minimal maintenance and off-grid readiness</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
               </div>
               
             </div>
           )}
-
           {activeTab === "Features" && (
 <ul>
-  <li>Wide Flow Range for Industrial Use: Handles high gas volumes up to 10,000 m³/h, ideal for large-scale industrial gas metering in India</li>
-  <li>Available in Multiple Pipe Sizes (DN50 to DN200): Compatible with standard Indian gas pipeline sizes in CGD and industrial setups; flanged connections simplify integration</li>
-  <li>High Accuracy with Legal Metrology Compliance: ±1% or ±1.5% accuracy ensures billing-grade precision; eligible for certification under India’s Legal Metrology Act</li>
-  <li>Robust Design for Harsh Indian Conditions: Durable aluminum or steel body resists dust, heat, corrosion, vibration, and mechanical stress</li>
-  <li>Pulse Output Compatibility for Smart Gas Monitoring: LF and HF pulse outputs support SCADA and AMR integration, aligning with India’s CGD smart metering goals</li>
-  <li>Digital Metering Ready with IoT Integration: Compatible with remote telemetry, GPRS/4G, and cloud platforms — ideal for smart city, SEZ, and ULB utility networks</li>
-  <li>Minimal Pressure Loss for Efficient Gas Flow: Turbine design minimizes pressure drop, enhancing energy efficiency and lowering operational costs</li>
-  <li>Low Maintenance & Long Service Life: Engineered for durability and low service needs, perfect for remote or rural deployment in Indian oil & gas EPC projects</li>
-  <li>MID & EN 12261 Certified for Global and Indian Utility Projects: Backed by ISO 9001:2015 quality standards; accepted across Indian PSU, CGD, and multinational tenders</li>
-</ul>
-          )}
-
+  <li><strong>Wide Flow Range for Industrial Use:</strong> Handles high gas volumes up to 10,000 m³/h — ideal for large-scale industrial metering across India.</li>
+  
+  <li><strong>Available in Multiple Pipe Sizes (DN50–DN200):</strong> Compatible with standard Indian gas pipeline sizes; flanged connections simplify integration.</li>
+  
+  <li><strong>High Accuracy with Legal Metrology Compliance:</strong> ±1% or ±1.5% accuracy, certified under India’s Legal Metrology Act for regulated billing applications.</li>
+  
+  <li><strong>Robust Design for Harsh Indian Conditions:</strong> Engineered with durable aluminum or steel to withstand dust, heat, vibration, and corrosion.</li>
+  
+  <li><strong>Pulse Output Compatibility:</strong> LF and HF pulse outputs support seamless integration with SCADA and AMR systems under CGD projects.</li>
+  
+  <li><strong>Digital Metering Ready with IoT Integration:</strong> Supports GPRS/4G, remote telemetry, and cloud platforms — ideal for smart city and SEZ utility grids.</li>
+  
+  <li><strong>Minimal Pressure Loss:</strong> Turbine design reduces pressure drop, improving energy efficiency and lowering operational costs for consumers.</li>
+  
+  <li><strong>Low Maintenance & Long Service Life:</strong> Built for extended uptime and reduced service needs in remote, industrial, or EPC project environments.</li>
+  
+  <li><strong>MID & EN 12261 Certified:</strong> Globally recognized certifications for acceptance in PSU, CGD, and multinational tenders; backed by ISO 9001:2015 quality.</li>
+</ul>          )}
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Sizes: G16 up to G400</li>
-  <li>Dimensions: DN 40, DN 50, DN 80, DN 100</li>
-  <li>Operating Pressure: Maximum 6 bar</li>
-  <li>Accuracy:
+            <ul>
+  <li><strong>Meter Sizes:</strong> G16 to G400</li>
+  <li><strong>Dimensions:</strong> DN40, DN50, DN80, and DN100</li>
+  <li><strong>Operating Pressure:</strong> Up to 6 Bar</li>
+  <li><strong>Accuracy:</strong>
     <ul>
-      <li>0.2 Qmax to Qmax: ±1.5%</li>
+      <li>From 0.2 Qmax to Qmax: ±1.5%</li>
       <li>Below 0.2 Qmax: ±2%</li>
     </ul>
   </li>
-  <li>Operating Temperature Range:
+  <li><strong>Temperature Range:</strong>
     <ul>
       <li>Gas Temperature: –10°C to +60°C</li>
       <li>Ambient Temperature: –10°C to +60°C</li>
     </ul>
   </li>
-  <li>Type Examination Certificate: FTZÚ 15 ATEX 0172X</li>
-  <li>Equipment Marking: Ex II -/2G IIB T4</li>
-  <li>Installation: No straight run required</li>
-  <li>Maintenance: Oil-free, low-maintenance design</li>
-  <li>Optional Feature: Elcor MID-certified gas volume corrector</li>
+  <li><strong>Certification:</strong> FTZÚ Type Examination Certificate (FTZÚ 15 ATEX 0172X)</li>
+  <li><strong>Explosion Safety Marking:</strong> Ex II -/2G IIB T4</li>
+  <li><strong>Installation Requirement:</strong> No straight run needed</li>
+  <li><strong>Maintenance:</strong> Oil-free design for reduced service needs</li>
+  <li><strong>Optional Integration:</strong> MID-certified Elcor Gas Volume Corrector</li>
 </ul>
           )}
-
           {activeTab === "Downloads" && (
-            <p>Download data sheets and certifications from our documentation portal.</p>
+            <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
           )}
         </div>
       </div>
 
-      {/* YOU MAY ALSO BE INTERESTED IN Section */}
       <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
         <div className="container">
-          <h5 className="fw-semibold mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
+          <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
-            {relatedProducts.map((product) => (
-              <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
+            {relatedProducts.map((product, idx) => (
+              <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
                 <Link to={product.link} className="text-decoration-none text-dark">
                   <div
-                    className="d-flex flex-column align-items-center p-3 shadow-sm"
+                    className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
-                      backgroundColor: '#ffffff',
+                      backgroundColor: '#fff',
                       width: '180px',
                       height: '180px',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      borderRadius: '0px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px',
+                      transition: 'transform 0.3s',
                     }}
                   >
                     <img
@@ -250,7 +263,7 @@ Rural & Remote Industrial Clusters
                       }}
                     />
                   </div>
-                  <p className="fw-medium text-center mt-2" style={{ fontSize: '15px' }}>{product.title}</p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: '14px' }}>{product.title}</p>
                 </Link>
               </div>
             ))}
@@ -258,16 +271,111 @@ Rural & Remote Industrial Clusters
         </div>
       </div>
 
-      {/* Animation CSS */}
       <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.4s ease-in-out;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+  .fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Active Tab Style */
+  .nav-tabs .nav-link {
+    color: black;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+
+  .nav-tabs .nav-link:hover {
+    background-color: #ffcc00; /* Yellow hover */
+    color: black;
+  }
+
+  .nav-tabs .nav-link.active-tab {
+    border-bottom: 3px solid #ffcc00;
+    color: black;
+    background-color: white;
+  }
+
+  /* Hover Scale for Cards/Images */
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Enquiry Button Style */
+.btn-enquiry {
+  position: relative;
+  overflow: hidden;
+  background-color: yellow; /* Default button background color */
+  /* Add other button styles as needed */
+}
+
+.btn-enquiry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.btn-enquiry:hover::before {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.btn-enquiry:not(:hover)::before {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.btn-enquiry:hover span {
+  color: white;
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+
+
+`}</style>
+
     </div>
   );
 }

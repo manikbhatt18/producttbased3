@@ -39,38 +39,14 @@ function ProductDetail() {
                  
                ];
 
-  return (
+return (
     <div className="text-dark">
-      {/* Swapped: Product Info LEFT and Image RIGHT */}
       <div className="container py-5">
         <div className="row">
-          {/* Product Info */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Steam Flow Meters</p>
-            <h3 className="fw-semibold">Inline Vortex flow meters</h3>
-            <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; Compact size with durable materials</li>
-              <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
-              <li className="mb-2">&#9679; Advanced features with long battery life</li>
-            </ul>
-            <button className='my-2 rounded'>Enquiry Now</button>
-          </div>
-
-          {/* Image Section */}
           <div className="col-lg-6 d-flex flex-column align-items-center">
-            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '300px' }}>
-  <img
-    src={mainImage}
-    alt="Main Meter"
-    className="img-fluid"
-    style={{
-      maxHeight: '220px',       // Controls height
-      width: '100%',            // Keep width responsive
-      objectFit: 'contain',     // Prevents stretching
-    }}
-  />
-</div>
-
+            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
+              <img src={mainImage} alt="Main Meter" className="img-fluid" />
+            </div>
             <div className="d-flex gap-3 mt-3">
               {images.map((img, i) => (
                 <div key={i} className="d-flex flex-column align-items-center">
@@ -84,7 +60,7 @@ function ProductDetail() {
                       height: '60px',
                       cursor: 'pointer',
                       objectFit: 'cover',
-                      border: mainImage === img ? '2px solid #003e7e' : '1px solid #ddd',
+                      border: mainImage === img ? '2px solid #black' : '1px solid #yellow',
                       borderRadius: '0px'
                     }}
                   />
@@ -92,117 +68,98 @@ function ProductDetail() {
                     style={{
                       height: '3px',
                       width: '60%',
-                      backgroundColor: mainImage === img ? '#cc0033' : 'transparent',
+                      backgroundColor: mainImage === img ? '#ffcc00' : 'transparent',  // Yellow
                       marginTop: '3px',
                       borderRadius: '2px',
                     }}
                   ></div>
+
                 </div>
               ))}
             </div>
           </div>
+
+          <div className="col-lg-6 mt-5 mt-lg-0">
+            <p className="text-muted">Steam Flow Meters</p>
+            <h3 className="fw-semibold">Inline Vortex flow meter</h3>
+            <ul className="list-unstyled mt-3">
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
+              <li className="mb-2">&#9679; </li>
+            </ul>
+            <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
+          </div>
         </div>
       </div>
 
-      {/* Sticky Tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0">
+        <ul className="nav nav-tabs border-0 justify-content-center">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
               <button
-                className={`nav-link border-0 ${activeTab === tab ? 'bg-dark text-white' : 'text-dark'}`}
+                className={`nav-link ${activeTab === tab ? 'active-tab' : ''}`}
                 onClick={() => setActiveTab(tab)}
-                style={{
-                  borderRadius: '0px',
-                  padding: '12px 20px',
-                  fontWeight: '500'
-                }}
               >
                 {tab}
               </button>
+
+
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Tab Content */}
       <div className="container">
         <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
                 <p>
-             .
-
+                  
                 </p>
               </div>
               
             </div>
           )}
-
           {activeTab === "Features" && (
-<ul>
-  
-</ul>
+            <p></p>
           )}
-
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN20 – DN800</li>
-  <li>Accuracy: ±1% FS (±0.5% FS optional)</li>
-  <li>Fluid Temperature: &lt; 250°C (High temp &lt; 350°C optional)</li>
-  <li>Operating Pressure: Up to 16 Bar (40 Bar on request)</li>
-  <li>Temperature & Pressure Compensation: Built-in (optional)</li>
-  <li>Power Supply: External 24 VDC ±10%</li>
-  <li>Output Options:
-    <ul>
-      <li>4–20 mA</li>
-      <li>RS485</li>
-      <li>HART (on request)</li>
-    </ul>
-  </li>
-  <li>Display Protection:
-    <ul>
-      <li>IP65</li>
-      <li>IP68</li>
-      <li>Flameproof (CMRI Certified) — on request</li>
-    </ul>
-  </li>
-  <li>Measurable Fluids:
-    <ul>
-      <li>Steam</li>
-      <li>Air</li>
-      <li>Liquids</li>
-      <li>Other aggressive gases</li>
-    </ul>
-  </li>
-  <li>Certifications: IBR Approved</li>
+            <ul>
+  <li><strong>Pipe Range:</strong> DN20 to DN800</li>
+  <li><strong>Accuracy:</strong> ±1% FS (optional ±0.5% FS)</li>
+  <li><strong>Fluid Temperature:</strong> &lt;250°C (optional high-temp version &lt;350°C)</li>
+  <li><strong>Operating Pressure:</strong> Up to 16 Bar (optional up to 40 Bar)</li>
+  <li><strong>Compensation Features:</strong> Built-in temperature and pressure compensation (optional)</li>
+  <li><strong>Power Supply:</strong> External 24VDC ±10%</li>
+  <li><strong>Output Interfaces:</strong> 4–20mA, RS485, HART (on request)</li>
+  <li><strong>Display Protection Ratings:</strong> IP65, IP68, Flameproof (CMRI certified; optional)</li>
+  <li><strong>Measurable Fluids:</strong> Steam, Air, Liquids, and other aggressive gases</li>
+  <li><strong>Certifications:</strong> IBR Approved</li>
 </ul>
           )}
-
           {activeTab === "Downloads" && (
-            <p>Download data sheets and certifications from our documentation portal.</p>
+            <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
           )}
         </div>
       </div>
 
-      {/* YOU MAY ALSO BE INTERESTED IN Section */}
       <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
         <div className="container">
-          <h5 className="fw-semibold mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
+          <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
-            {relatedProducts.map((product) => (
-              <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
+            {relatedProducts.map((product, idx) => (
+              <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
                 <Link to={product.link} className="text-decoration-none text-dark">
                   <div
-                    className="d-flex flex-column align-items-center p-3 shadow-sm"
+                    className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
-                      backgroundColor: '#ffffff',
+                      backgroundColor: '#fff',
                       width: '180px',
                       height: '180px',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      borderRadius: '0px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px',
+                      transition: 'transform 0.3s',
                     }}
                   >
                     <img
@@ -215,7 +172,7 @@ function ProductDetail() {
                       }}
                     />
                   </div>
-                  <p className="fw-medium text-center mt-2" style={{ fontSize: '15px' }}>{product.title}</p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: '14px' }}>{product.title}</p>
                 </Link>
               </div>
             ))}
@@ -223,18 +180,112 @@ function ProductDetail() {
         </div>
       </div>
 
-      {/* Animation CSS */}
       <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.4s ease-in-out;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+  .fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Active Tab Style */
+  .nav-tabs .nav-link {
+    color: black;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+
+  .nav-tabs .nav-link:hover {
+    background-color: #ffcc00; /* Yellow hover */
+    color: black;
+  }
+
+  .nav-tabs .nav-link.active-tab {
+    border-bottom: 3px solid #ffcc00;
+    color: black;
+    background-color: white;
+  }
+
+  /* Hover Scale for Cards/Images */
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Enquiry Button Style */
+.btn-enquiry {
+  position: relative;
+  overflow: hidden;
+  background-color: yellow; /* Default button background color */
+  /* Add other button styles as needed */
+}
+
+.btn-enquiry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.btn-enquiry:hover::before {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.btn-enquiry:not(:hover)::before {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.btn-enquiry:hover span {
+  color: white;
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+
+
+`}</style>
+
     </div>
   );
 }
-
 export default ProductDetail;

@@ -51,38 +51,14 @@ function ProductDetail() {
                  
                ];
 
-  return (
+return (
     <div className="text-dark">
-      {/* Swapped: Product Info LEFT and Image RIGHT */}
       <div className="container py-5">
         <div className="row">
-          {/* Product Info */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Positive Displacement Oil Meters</p>
-            <h3 className="fw-semibold"> Contoil / RPD Flow Meters </h3>
-            <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; Compact size with durable materials</li>
-              <li className="mb-2">&#9679; Perfect for residential and commercial usage</li>
-              <li className="mb-2">&#9679; Advanced features with long battery life</li>
-            </ul>
-            <button className='my-2 rounded'>Enquiry Now</button>
-          </div>
-
-          {/* Image Section */}
           <div className="col-lg-6 d-flex flex-column align-items-center">
-            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '300px' }}>
-  <img
-    src={mainImage}
-    alt="Main Meter"
-    className="img-fluid"
-    style={{
-      maxHeight: '220px',       // Controls height
-      width: '100%',            // Keep width responsive
-      objectFit: 'contain',     // Prevents stretching
-    }}
-  />
-</div>
-
+            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
+              <img src={mainImage} alt="Main Meter" className="img-fluid" />
+            </div>
             <div className="d-flex gap-3 mt-3">
               {images.map((img, i) => (
                 <div key={i} className="d-flex flex-column align-items-center">
@@ -96,7 +72,7 @@ function ProductDetail() {
                       height: '60px',
                       cursor: 'pointer',
                       objectFit: 'cover',
-                      border: mainImage === img ? '2px solid #003e7e' : '1px solid #ddd',
+                      border: mainImage === img ? '2px solid #black' : '1px solid #yellow',
                       borderRadius: '0px'
                     }}
                   />
@@ -104,135 +80,144 @@ function ProductDetail() {
                     style={{
                       height: '3px',
                       width: '60%',
-                      backgroundColor: mainImage === img ? '#cc0033' : 'transparent',
+                      backgroundColor: mainImage === img ? '#ffcc00' : 'transparent',  // Yellow
                       marginTop: '3px',
                       borderRadius: '2px',
                     }}
                   ></div>
+
                 </div>
               ))}
             </div>
           </div>
+
+          <div className="col-lg-6 mt-5 mt-lg-0">
+            <p className="text-muted">Positive Displacement Oil Meters </p>
+            <h3 className="fw-semibold">Contoil / RPD Flow Meters</h3>
+            <ul className="list-unstyled mt-3">
+              <li className="mb-2">&#9679; ContOil® Inline Oil Flow Meter -</li>
+              <li className="mb-2">&#9679;For Boilers, Generators, and Engine Test Benches</li>
+              <li className="mb-2">&#9679;High Accuracy Volumetric Flow Meters</li>
+            </ul>
+            <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
+          </div>
         </div>
       </div>
 
-      {/* Sticky Tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0">
+        <ul className="nav nav-tabs border-0 justify-content-center">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
               <button
-                className={`nav-link border-0 ${activeTab === tab ? 'bg-dark text-white' : 'text-dark'}`}
+                className={`nav-link ${activeTab === tab ? 'active-tab' : ''}`}
                 onClick={() => setActiveTab(tab)}
-                style={{
-                  borderRadius: '0px',
-                  padding: '12px 20px',
-                  fontWeight: '500'
-                }}
               >
                 {tab}
               </button>
+
+
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Tab Content */}
       <div className="container">
         <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <p>
-             Contoil® Oil Flow Meters are precision-engineered for accurate measurement of fuel and lubrication oil in the most demanding industrial environments. Built for reliability and flexibility, these meters offer consistent performance regardless of fluid temperature or viscosity. Their compact design allows for easy installation in space-restricted systems, making them ideal for integration with power generators, boilers, burners, and closed-loop lubrication systems.
-Applications Across Industries:
-Fuel Consumption Measurement for:
+                <ul>
+  <li><strong>Product Overview:</strong>
+    <ul>
+      <li>Contoil® Oil Flow Meters are precision-engineered for accurate fuel and lubrication oil measurement.</li>
+      <li>Designed for demanding industrial environments with high reliability and flexibility.</li>
+      <li>Performance remains consistent regardless of fluid temperature or viscosity.</li>
+      <li>Compact design allows for easy integration into space-constrained systems.</li>
+      <li>Ideal for use with power generators, boilers, burners, and closed-loop lubrication systems.</li>
+    </ul>
+  </li>
 
-
-Oil burners in heating systems and industrial furnaces, Unloading Applications
-Ships, diesel locomotives, and emergency power units
-Combined heat and power (CHP) systems
-
-
-Lubrication Monitoring in:
-
-
-Closed-loop systems for machinery bearings and motors
-Machine test benches and engine testing labs
-
-
-Remote Integration:
-
-
-Optional digital output for integration into superior control systems and remote monitoring platforms
-                </p>
+  <li><strong>Applications Across Industries:</strong>
+    <ul>
+      <li><em>Fuel Consumption Measurement:</em>
+        <ul>
+          <li>Oil burners in heating systems and industrial furnaces</li>
+          <li>Unloading applications</li>
+          <li>Ships, diesel locomotives, and emergency power units</li>
+          <li>Combined heat and power (CHP) systems</li>
+        </ul>
+      </li>
+      <li><em>Lubrication Monitoring:</em>
+        <ul>
+          <li>Closed-loop systems for machinery bearings and motors</li>
+          <li>Machine test benches and engine testing laboratories</li>
+        </ul>
+      </li>
+      <li><em>Remote Integration:</em>
+        <ul>
+          <li>Optional digital output for integration with control systems</li>
+          <li>Supports remote monitoring platforms</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
               </div>
               
             </div>
           )}
-
           {activeTab === "Features" && (
-            <ul>
-  <li>Unmatched Accuracy (0.5%): Reliable fuel consumption monitoring with temperature- and viscosity-independent readings</li>
-  <li>Flexible Installation: Mount horizontally, vertically, or at an incline — even in space-constrained systems without the need for straight inlet/outlet runs</li>
-  <li>Supports batching, dosing, and filling operations</li>
-  <li>Dual-Side Pump Compatibility: Install on either the pressure or suction side of pumps</li>
-  <li>Operational Simplicity: Mechanical display with a resettable counter and optional limiting value switch for flow rate control</li>
-  <li>Built-In Diagnostics: Easy function checks, fast fault analysis, and on-site repairability reduce downtime and costs</li>
-  <li>Compact Design: Optimized for tight enclosures and complex piping systems</li>
-</ul>
-          )}
-
-          {activeTab === "Technical data" && (
 <ul>
-  <li>Pipe Range: DN4 - DN80</li>
-  <li>Outputs:
+  <li><strong>Unmatched Accuracy (±0.5%):</strong> Reliable fuel consumption monitoring that remains stable regardless of fluid temperature or viscosity.</li>
+  <li><strong>Flexible Installation:</strong> Can be mounted horizontally, vertically, or at an incline—ideal for space-constrained systems and adaptable to batching, dosing, and filling operations.</li>
+  <li><strong>Dual-Side Pump Compatibility:</strong> Installs on both pressure and suction sides of pumps.</li>
+  <li><strong>Operational Simplicity:</strong> Mechanical display with resettable counter and optional limiting value switch for flow rate control.</li>
+  <li><strong>Built-In Diagnostics:</strong> Enables function checks, fault analysis, and on-site repairability to minimize downtime and service costs.</li>
+  <li><strong>Compact Design:</strong> Suitable for tight enclosures and complex piping environments.</li>
+</ul>          )}
+          {activeTab === "Technical data" && (
+           <ul>
+  <li><strong>Pipe Range:</strong> DN4 to DN80</li>
+  <li><strong>Output Types:</strong> Pulse output, Analog 4–20 mA (continuous for remote monitoring)</li>
+  <li><strong>Power Supply:</strong> External power with battery backup option</li>
+  <li><strong>Connection Type:</strong> Flange (DIN, ANSI, JIS) or threaded ends</li>
+  <li><strong>Accuracy:</strong> ±0.5% to ±1%</li>
+  <li><strong>Viscosity & Temperature Independence:</strong> Measurement unaffected by changes in fluid viscosity or temperature</li>
+  <li><strong>Display:</strong> Mechanical with resettable totalizer</li>
+  <li><strong>Straight Run Requirement:</strong> Not required</li>
+  <li><strong>Temperature Range:</strong> 130°C and 180°C versions available</li>
+  <li><strong>Nominal Pressure Ratings:</strong> PN 16, PN 25, and PN 40 bar</li>
+  <li><strong>Suitable Applications:</strong>
     <ul>
-      <li>Pulse</li>
-      <li>Analog 4–20 mA (continuous for remote monitoring)</li>
-    </ul>
-  </li>
-  <li>External Power Supply: Battery back-up option</li>
-  <li>End Connections: Flange (DIN, ANSI, JIS), threaded ends</li>
-  <li>Accuracy: 0.5% to 1%</li>
-  <li>Performance: Independent of viscosity and temperature</li>
-  <li>Display: Mechanical with resettable totalizer</li>
-  <li>Installation: No straight run required</li>
-  <li>Temperature Range: 130°C and 180°C</li>
-  <li>Nominal Pressure: PN 16, PN 25, and PN 40</li>
-  <li>Suitable Applications:
-    <ul>
-      <li>Heating fuel (extra light / light)</li>
-      <li>Medium and heavy naphtha</li>
-      <li>Diesel, petrol, and other lubricating liquids (oils)</li>
+      <li>Heating fuels: Extra light, Light</li>
+      <li>Petroleum derivatives: Medium and heavy naphtha, diesel, petrol</li>
+      <li>Lubricating liquids: Various oils</li>
     </ul>
   </li>
 </ul>
           )}
-
           {activeTab === "Downloads" && (
-            <p>Download data sheets and certifications from our documentation portal.</p>
+            <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
           )}
         </div>
       </div>
 
-      {/* YOU MAY ALSO BE INTERESTED IN Section */}
       <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
         <div className="container">
-          <h5 className="fw-semibold mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
+          <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
-            {relatedProducts.map((product) => (
-              <div className="col-6 col-md-3 mb-4 d-flex justify-content-center" key={product.id}>
+            {relatedProducts.map((product, idx) => (
+              <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
                 <Link to={product.link} className="text-decoration-none text-dark">
                   <div
-                    className="d-flex flex-column align-items-center p-3 shadow-sm"
+                    className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
-                      backgroundColor: '#ffffff',
+                      backgroundColor: '#fff',
                       width: '180px',
                       height: '180px',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      borderRadius: '0px',
+                      border: '1px solid #ddd',
+                      borderRadius: '4px',
+                      transition: 'transform 0.3s',
                     }}
                   >
                     <img
@@ -245,7 +230,7 @@ Optional digital output for integration into superior control systems and remote
                       }}
                     />
                   </div>
-                  <p className="fw-medium text-center mt-2" style={{ fontSize: '15px' }}>{product.title}</p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: '14px' }}>{product.title}</p>
                 </Link>
               </div>
             ))}
@@ -253,16 +238,111 @@ Optional digital output for integration into superior control systems and remote
         </div>
       </div>
 
-      {/* Animation CSS */}
       <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.4s ease-in-out;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+  .fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Active Tab Style */
+  .nav-tabs .nav-link {
+    color: black;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    background-color: white;
+  }
+
+  .nav-tabs .nav-link:hover {
+    background-color: #ffcc00; /* Yellow hover */
+    color: black;
+  }
+
+  .nav-tabs .nav-link.active-tab {
+    border-bottom: 3px solid #ffcc00;
+    color: black;
+    background-color: white;
+  }
+
+  /* Hover Scale for Cards/Images */
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Enquiry Button Style */
+.btn-enquiry {
+  position: relative;
+  overflow: hidden;
+  background-color: yellow; /* Default button background color */
+  /* Add other button styles as needed */
+}
+
+.btn-enquiry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.btn-enquiry:hover::before {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.btn-enquiry:not(:hover)::before {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.btn-enquiry:hover span {
+  color: white;
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+
+
+`}</style>
+
     </div>
   );
 }
