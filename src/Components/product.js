@@ -77,7 +77,7 @@ function Product() {
               <li className="mb-2">&#9679; The lightest and smallest ultrasonic water meter available to our customers</li>
               <li className="mb-2">&#9679; None of the materials in contact with water used for the construction of this meter contain heavy metals</li>
             </ul>
-            <button className="my-2  btn-enquiry">Enquiry Now</button>
+            <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
           </div>
         </div>
       </div>
@@ -237,19 +237,46 @@ function Product() {
   }
 
   /* Enquiry Button Style */
-  .btn-enquiry {
-    background-color: #ffcc00;
-    border: none;
-    padding: 8px 20px;
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
-    color: black;
-  }
+.btn-enquiry {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  .btn-enquiry:hover {
-    background-color: black;
-    color: white;
-  }
+.btn-enquiry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.btn-enquiry:hover::before {
+  transform: translateX(0);
+}
+
+.btn-enquiry span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.btn-enquiry:hover span {
+  color: white;
+}
+
+
+
 `}</style>
 
     </div>
