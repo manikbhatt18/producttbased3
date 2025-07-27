@@ -17,7 +17,7 @@ function ProductsSection() {
       </h5>
       <Row>
         <ProductCard
-          icon={waterIcon}
+          icon={oilIcon}
           title="Water Flow Meter"
           details="Used in industries for water flow monitoring and control.loremsvshxisuxdbajlxajxauox hxbshxusyxgusyx gaagxouagsiuash avxaxgauogx xbaouxga "
         />

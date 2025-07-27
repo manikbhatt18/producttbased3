@@ -31,7 +31,9 @@ function CustomNavbar() {
 
             {/* Products dropdown */}
             <div className="nav-item dropdown">
-              <span>Products</span>
+               <NavLink to="/products" className="nav-item">
+              Product
+            </NavLink>
               <div className="dropdown-menu">
                 <Link to="/products/ultrasonic">Ultrasonic Flow Meter</Link>
                 <Link to="/products/electromagnetic">Electromagnetic Flow Meter</Link>
