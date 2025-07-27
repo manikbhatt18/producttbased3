@@ -3,7 +3,7 @@ import { Carousel, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import slide1 from '../../images/bg1.jpg';
 import slide2 from '../../images/bg2.jpg';
-import slide3 from '../../images/img3.jpg';
+import slide3 from '../../images/bg3.jpg';
 
 function BannerSlider() {
   const carouselRef = useRef(null);
@@ -31,7 +31,7 @@ function BannerSlider() {
 
   return (
     <div className="position-relative">
-      <Carousel fade controls={false} indicators={false} interval={4000} ref={carouselRef}>
+      <Carousel fade controls={false} indicators={false} interval={4000} pause={false} ref={carouselRef}>
         {slides.map((slide, idx) => (
           <Carousel.Item key={idx}>
             <motion.div
@@ -39,7 +39,7 @@ function BannerSlider() {
               animate={{ scale: 1.05 }}
               transition={{ duration: 4, ease: 'easeInOut' }}
             >
-              <img src={slide.img} className="d-block w-100" alt={`Slide ${idx}`} />
+              <img src={slide.img} className="d-block w-100 shadow-lg" alt={`Slide ${idx}`} />
               <Carousel.Caption className="text-start mb-5">
                 <h1 className="fw-bold text-warning">{slide.heading}</h1>
                 <h2 className="fw-bold text-white">{slide.subHeading}</h2>
@@ -51,21 +51,15 @@ function BannerSlider() {
         ))}
       </Carousel>
 
-      {/* Custom Controls */}
-      <Button
-        variant="light"
-        className="position-absolute bottom-0 end-0 m-3"
-        onClick={() => carouselRef.current.prev()}
-      >
-        &lt;
-      </Button>
-      <Button
-        variant="warning"
-        className="position-absolute bottom-0 end-0 m-3 ms-5"
-        onClick={() => carouselRef.current.next()}
-      >
-        &gt;
-      </Button>
+      {/* Custom Controls with absolute positioning */}
+      <div className="position-absolute bottom-0 end-0 m-3 d-flex" style={{ zIndex: 10 }}>
+        <Button variant="light" onClick={() => carouselRef.current.prev()} className="me-2">
+          &lt;
+        </Button>
+        <Button variant="warning" onClick={() => carouselRef.current.next()}>
+          &gt;
+        </Button>
+      </div>
     </div>
   );
 }

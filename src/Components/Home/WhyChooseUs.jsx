@@ -1,19 +1,70 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import imgWhyChoose from '../../images/whyChooseUs.png';
+import './WhyChooseUs.css';
 
 function WhyChooseUs() {
+  const headingRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) observer.unobserve(headingRef.current);
+    };
+  }, []);
+
   return (
-    <div className="why-choose">
-      <div className="image-box">
-        <img src="https://via.placeholder.com/500x400" alt="Why Choose Us" />
-      </div>
-      <div className="text-box">
-        <h2>Why Choose IOTAflow</h2>
-        <ul>
-          <li><strong>Lean Manufacturing</strong> - A Lean Team that is obsessed with flow of value.</li>
-          <li><strong>Fast Delivery</strong> - Deliver in just 7 days.</li>
-          <li><strong>Flexible Solutions</strong> - Options at various price points.</li>
-          <li><strong>Customer-Centricity</strong> - We adapt to you.</li>
-        </ul>
+    <div className="why-choose-section">
+      <div className="why-container">
+        <div className="why-left">
+          <img src={imgWhyChoose} alt="Why Choose IOTAFlow" />
+        </div>
+
+        <div className="why-right">
+          <h1
+            ref={headingRef}
+            className={`why-heading ${isVisible ? 'show' : ''}`}
+          >
+            Why Choose <br />
+            <span className={`iotflow ${isVisible ? 'animate-underline' : ''}`}>
+              IOTAFLOW
+            </span>
+          </h1>
+          <p className="why-text">
+            We’re continually working to change the way people think about and engage with our products.
+          </p>
+
+          <div className="why-grid">
+            <div className="why-item">
+              <h5>&gt; Lean Manufacturing</h5>
+              <p>A Lean Team that is obsessed with flow of value to the customer by continuously working on the value stream.</p>
+            </div>
+            <div className="why-item">
+              <h5>&gt; Fast Delivery</h5>
+              <p>Unlike the industry standard lead times of 4-6 weeks, we deliver our standard products in just 7 days.</p>
+            </div>
+            <div className="why-item">
+              <h5>&gt; Flexible Solutions</h5>
+              <p>Multiple options at various price points to fit your budget.</p>
+            </div>
+            <div className="why-item">
+              <h5>&gt; Customer-Centricity</h5>
+              <p>At IOTAFLOW, we adapt to you, not the other way around!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

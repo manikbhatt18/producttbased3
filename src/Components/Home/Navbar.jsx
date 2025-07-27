@@ -1,103 +1,70 @@
-import React from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { NavLink, Link } from "react-router-dom";
+import "./CustomNavbar.css";
+import Logo from "../../images/logo1.png";
 
 function CustomNavbar() {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-dark text-white py-1 px-3 d-flex justify-content-end align-items-center gap-3">
+      <div className="top-bar">
         <span>✉ contact@iotaflow.com</span>
         <span>📞 +91-9910693866</span>
       </div>
 
-      {/* Main Navbar */}
-      <Navbar expand="lg" bg="white" variant="light" className="shadow-sm py-2">
-        <Container>
-          <Navbar.Brand href="/" className="fw-bold fs-4">
-            X &gt;&gt;&gt; SAMATEX
-          </Navbar.Brand>
+      {/* Navbar */}
+      <nav className="custom-navbar">
+        <div className="nav-container">
+          {/* Logo */}
+          <div className="nav-logo">
+            <img src={Logo} alt="Logo" />
+          </div>
 
-          <Navbar.Toggle aria-controls="navbar-nav" />
+          {/* Menu Items */}
+          <div className="nav-menu">
+            <NavLink to="/" className="nav-item">
+              Home
+            </NavLink>
+            <NavLink to="/about-us" className="nav-item">
+              About Us
+            </NavLink>
 
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="mx-auto align-items-center gap-3">
-              <Nav.Link as={Link} to="/" className="nav-item-custom active-nav">
-                Home
-                <div className="nav-underline"></div>
-              </Nav.Link>
-              <Nav.Link as={Link} to="/about" className="nav-item-custom">
-                About Us
-              </Nav.Link>
-              <Nav.Link as={Link} to="/products" className="nav-item-custom">
-                Products
-              </Nav.Link>
-              <Nav.Link as={Link} to="/application" className="nav-item-custom">
-                Application
-              </Nav.Link>
-              <Nav.Link as={Link} to="/services" className="nav-item-custom">
-                Services
-              </Nav.Link>
-              <Nav.Link as={Link} to="/tools" className="nav-item-custom">
-                Tools
-              </Nav.Link>
-              <Nav.Link as={Link} to="/resources" className="nav-item-custom">
-                Lean Resources
-              </Nav.Link>
-            </Nav>
+            {/* Products dropdown */}
+            <div className="nav-item dropdown">
+              <span>Products</span>
+              <div className="dropdown-menu">
+                <Link to="/products/ultrasonic">Ultrasonic Flow Meter</Link>
+                <Link to="/products/electromagnetic">Electromagnetic Flow Meter</Link>
+                <Link to="/products/water">Water Meter</Link>
+                <Link to="/products/positive-displacement">Positive Displacement Meter</Link>
+                <Link to="/products/variable-area">Variable Area Rotameter</Link>
+                <Link to="/products/differential-pressure">Differential Pressure Flow</Link>
+                <Link to="/products/gas">Gas Meter</Link>
+                <Link to="/products/thermal-mass">Thermal Mass Flow Sensor</Link>
+              </div>
+            </div>
 
-            <Button className="btn-enquiry">
-              <span>Contact Us &gt;</span>
-            </Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-     
-      <style >{`
- 
-  /* Enquiry Button Style */
-.btn-enquiry {
-  position: relative;
-  overflow: hidden;
-  background-color: #ffcc00;
-  color: black;
-  border: none;
-  padding: 8px 20px;
-  font-weight: 500;
-  cursor: pointer;
-}
+            <NavLink to="/application" className="nav-item">
+              Application
+            </NavLink>
+            <NavLink to="/services" className="nav-item">
+              Services
+            </NavLink>
+            <NavLink to="/tools" className="nav-item">
+              Tools
+            </NavLink>
+            <NavLink to="/resources" className="nav-item">
+              Lean Resources
+            </NavLink>
+          </div>
 
-.btn-enquiry::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease;
-  z-index: 1;
-}
-
-.btn-enquiry:hover::before {
-  transform: translateX(0);
-}
-
-.btn-enquiry span {
-  position: relative;
-  z-index: 2;
-  transition: color 0.4s ease;
-}
-
-.btn-enquiry:hover span {
-  color: white;
-}
-
-
-
-`}</style>
-
+          {/* Contact Button */}
+          
+        </div>
+         <button className="contact-btn">
+            <span>Contact Us &gt;</span>
+          </button>
+      </nav>
     </>
   );
 }

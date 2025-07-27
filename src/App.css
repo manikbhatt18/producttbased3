@@ -95,3 +95,7 @@
 .control-btn:hover {
   opacity: 0.8;
 }
+.carousel-item img {
+  height: 600px;      /* Set desired height */
+  object-fit: cover;  /* Ensures image covers the height without distortion */
+}

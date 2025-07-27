@@ -1,0 +1,155 @@
+/* ===== Top Contact Bar ===== */
+.top-bar {
+  background: #1a1a1a;
+  color: white;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 14px;
+}
+/* ===== Navbar ===== */
+.custom-navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.nav-logo img {
+  height: 40px;
+}
+
+/* Nav Items */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+/* === Added Yellow Underline Hover Effect === */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffcc00;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ===== Dropdown (Products) ===== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background: #ffcc00;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* ===== Contact Button (Using Your Hover Effect) ===== */
+.contact-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  font-weight: 600;
+  padding: 0 20px;
+  height: 60px; /* Match navbar height */
+  cursor: pointer;
+  width: 180px;
+  margin-left: 300px; /* YOUR margin preserved */
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.contact-btn:hover::before {
+  animation: slideInLeft 0.4s ease forwards;
+}
+
+.contact-btn:not(:hover)::before {
+  animation: slideOutRight 0.4s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.contact-btn span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s ease;
+}
+
+.contact-btn:hover span {
+  color: white;
+}

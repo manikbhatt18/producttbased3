@@ -1,0 +1,131 @@
+:root {
+  --brand-yellow: #ffd200;
+  --dark-900: #1f1f1f;
+  --gray-200: #e9ecef;
+  --gray-500: #adb5bd;
+}
+
+.lean-hero h1 {
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Resources collage ---------- */
+
+.resources-wall {
+  background: linear-gradient(#ffefad 0%, #ffefad 65%, #d6bf76 100%);
+}
+
+.resource-card {
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  position: relative;
+  padding-bottom: 52px; /* space for title */
+  border-radius: 4px;
+  transform: rotate(-0.2deg);
+}
+
+.resource-card img {
+  border-radius: 4px 4px 0 0;
+}
+
+.resource-card .resource-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: .75rem 1rem;
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--gray-200);
+  border-radius: 0 0 4px 4px;
+}
+
+/* “pins” */
+.pin {
+  width: 12px;
+  height: 12px;
+  background: var(--brand-yellow);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px rgba(0,0,0,.06);
+}
+.pin-top-left { left: 12px; }
+.pin-top-right { right: 12px; }
+
+/* Slightly vary the tilt to mimic collage feel */
+.resource-card:nth-child(3n)   { transform: rotate(0.6deg); }
+.resource-card:nth-child(4n)   { transform: rotate(-0.8deg); }
+.resource-card:nth-child(5n)   { transform: rotate(0.3deg); }
+
+/* ---------- Videos ---------- */
+
+.video-card iframe {
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+/* ---------- Footer (same as Services footer) ---------- */
+
+.footer-mega {
+  background: var(--dark-900);
+  position: relative;
+  margin-top: 4rem;
+}
+
+.footer-mega .logo {
+  font-weight: 800;
+  font-size: 2.25rem;
+  letter-spacing: 2px;
+}
+
+.footer-col-title {
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.footer-col-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 36px;
+  height: 2px;
+  background: var(--brand-yellow);
+}
+
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.7);
+}
+.text-light-50:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background: #161616;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 20px rgba(0,0,0,.08);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.scroll-top i {
+  font-size: 1.25rem;
+}
+.lean-hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
