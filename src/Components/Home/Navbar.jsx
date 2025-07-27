@@ -31,7 +31,7 @@ function CustomNavbar() {
 
             {/* Products dropdown */}
             <div className="nav-item dropdown">
-               <NavLink to="/products" className="nav-item">
+              <NavLink to="/products" className="nav-item">
               Product
             </NavLink>
               <div className="dropdown-menu">

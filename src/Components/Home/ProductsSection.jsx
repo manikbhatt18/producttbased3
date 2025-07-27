@@ -3,9 +3,12 @@ import { Container, Row } from 'react-bootstrap';
 import ProductCard from './ProductCard';
 
 // Import your icons
-import waterIcon from '../../images/Buf lite1.png';
-import oilIcon from '../../images/contoil.png';
-import gasIcon from '../../images/m1.png';
+import oilIcon from '../../images/oil.png';
+import waterIcon from '../../images/water.png';
+import airIcon from '../../images/Air.png';
+import gasIcon from '../../images/gas.png';
+import steamIcon from '../../images/steam.png';
+import chemicalIcon from '../../images/chemical.png';
 
 function ProductsSection() {
   return (
@@ -18,35 +21,36 @@ function ProductsSection() {
       <Row>
         <ProductCard
           icon={oilIcon}
-          title="Water Flow Meter"
-          details="Used in industries for water flow monitoring and control.loremsvshxisuxdbajlxajxauox hxbshxusyxgusyx gaagxouagsiuash avxaxgauogx xbaouxga "
+          title="Oil"
+          details="Company that offers design and build services for you from initial sketches to the final production. "
         />
         <ProductCard
-          icon={oilIcon}
-          title="Oil Flow Meter"
-          details="Precise oil flow measurement for industrial applications."
+          icon={waterIcon}
+          title="Water"
+          details="We consider all the drivers of change - from the ground up and we'll motivate and support you to make the change."
         />
         <ProductCard
-          icon={gasIcon}
-          title="Gas Flow Meter"
-          details="Reliable gas flow monitoring solutions."
+          icon={airIcon}
+          title="Air"
+          details="Design repeatable growth models and innovation pipelines that generate new products with higher potential and lower risks of failure."
         />
+        
       </Row>
             <Row>
         <ProductCard
-          icon={waterIcon}
-          title="Water Flow Meter"
-          details="Used in industries for water flow monitoring and control."
-        />
-        <ProductCard
-          icon={oilIcon}
-          title="Oil Flow Meter"
-          details="Precise oil flow measurement for industrial applications."
-        />
-        <ProductCard
           icon={gasIcon}
-          title="Gas Flow Meter"
-          details="Reliable gas flow monitoring solutions."
+          title="Gas"
+          details="We work buy-side and sell-side and give our clients hard-hitting and objective answers and focus hard on the best opportunities."
+        />
+        <ProductCard
+          icon={steamIcon}
+          title="Steam"
+          details="We work across all the major geographies, meaning we understand the underlying drivers in construction markets."
+        />
+        <ProductCard
+          icon={chemicalIcon}
+          title="Chemicals"
+          details="Scheduled transport operations, from broad market trends and strategy to the development of integrated commercial strategies."
         />
       </Row>
       
