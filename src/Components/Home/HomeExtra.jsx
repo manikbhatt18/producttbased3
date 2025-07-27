@@ -3,12 +3,49 @@ import { Container, Row, Col, Button, Accordion } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/autoplay";
 import "./home-extra.css";
+
+/* === import every logo that lives under src/images (put correct cases!) === */
+import adani from "../../images/adani.png";
+import cairn from "../../images/Cairn.png"; // <-- make sure this EXACTLY matches the file name
+import client2 from "../../images/client2.jpg";
+import client3 from "../../images/client3.png";
+import client4_1 from "../../images/client4 (1).jpg";
+import client4_180 from "../../images/client4-180x96.png";
+import client5_180 from "../../images/client5-180x96.png";
+import client5 from "../../images/client5.jpg";
+import client6_180 from "../../images/client6-180x96.png";
+import client6 from "../../images/client6.jpg";
+import client7_180 from "../../images/client7-180x96.png";
+import client8_180 from "../../images/client8-180x96.png";
+import client8 from "../../images/client8.jpg";
+import client9_180 from "../../images/client9-180x96.png";
+import client10_180 from "../../images/client10-180x96.png";
+import client11_180 from "../../images/client11-180x96.png";
+import client12_180 from "../../images/client12-180x96.png";
+import drReddys from "../../images/Dr.-Reddys.png";
+import essarSteel from "../../images/essar-steel.png";
+import gaar from "../../images/Gaar.png";
+import hindustan from "../../images/hindustan.png";
+import itcHotels from "../../images/itc-hotels.png";
+import jindal from "../../images/jindal.png";
+import ltLogo from "../../images/lt_logo.png";
+import mahindraRise from "../../images/Mahindra-rise.png";
+import motherDairy from "../../images/mother-dairy.png";
+import ntpc from "../../images/NTPC.png";
+import ocmLuxury from "../../images/ocm-lxury.png";
+import oilLtd from "../../images/oilltd.png";
+import roorkee from "../../images/roorkee.png";
+import schneider from "../../images/Schneider.png";
+import smec from "../../images/smec.png";
+import sterlingWilson from "../../images/sterling-wilson.png";
+import taj from "../../images/Taj.png";
+import ultratech from "../../images/ultratech-cement.png";
+import voltas from "../../images/voltas.png";
 
 /* ---------------- HERO ---------------- */
 export function HeroBanner() {
-  // Put bg1.jpg into /public/images/bg1.jpg (or import it)
+  // Put bg1.jpg into /public/images/bg1.jpg (or import it from src if you prefer)
   const HERO_IMG = "/images/bg1.jpg";
 
   return (
@@ -20,7 +57,7 @@ export function HeroBanner() {
       <Container className="h-100">
         <Row className="h-100 align-items-center justify-content-end">
           <Col lg={6} className="hero-copy">
-          <h1 className="display-1 fw-bold mb-3">
+            <h1 className="display-1 fw-bold mb-3">
               IOTAFLOW <span className="badge-systems">Systems</span>
             </h1>
             <h2 className="display-5 fw-bold mb-3">
@@ -77,7 +114,7 @@ export function StatsModern() {
 
           {/* RIGHT STATS */}
           <Col lg={6}>
-            <div className="stats-right">
+          <div className="stats-right">
               <div className="stat-card vertical-card">
                 <h3>10+</h3>
                 <p>Exports</p>
@@ -100,7 +137,7 @@ export function StatsModern() {
   );
 }
 
-/* ---------------- DIFFERENCE (kept in case you still want it separated) ---------------- */
+/* ---------------- DIFFERENCE (OPTIONAL) ---------------- */
 export function DifferenceBlock() {
   const bullets = [
     "10+ Global Partnerships",
@@ -144,44 +181,42 @@ export function DifferenceBlock() {
 /* ---------------- OUR CLIENTS (SLIDER) ---------------- */
 export function ClientsSection() {
   const logos = [
-    "/images/clients/adani.png",
-    "/images/clients/cairn.png",
-    "/images/clients/client2.jpg",
-    "/images/clients/client3.png",
-    "/images/clients/client4 (1).jpg",
-    "/images/clients/client4-180x96.png",
-    "/images/clients/client5-180x96.png",
-    "/images/clients/client5.jpg",
-    "/images/clients/client6-180x96.png",
-    "/images/clients/client6.jpg",
-    "/images/clients/client7-180x96.png",
-    "/images/clients/client8-180x96.png",
-    "/images/clients/client8.jpg",
-    "/images/clients/client9-180x96.png",
-    "/images/clients/client10-180x96.png",
-    "/images/clients/client11-180x96.png",
-    "/images/clients/client12-180x96.png",
-    "/images/clients/Dr.-Reddys.png",
-    "/images/clients/essar-steel.png",
-    "/images/clients/Gaar.png",
-    "/images/clients/hindustan.png",
-    "/images/clients/itc-hotels.png",
-    "/images/clients/jindal.png",
-    "/images/clients/lt_logo.png",
-    "/images/clients/Mahindra-rise.png",
-    "/images/clients/mother-dairy.png",
-    "/images/clients/NTPC.png",
-    "/images/clients/ocm-lxury.png",
-    "/images/clients/oilltd.png",
-    "/images/clients/roorkee.png",
-    "/images/clients/jindal.png",
-    "/images/clients/Schneider.png",
-    "/images/clients/smec.png",
-    "/images/clients/sterling-wilson.png",
-    "/images/clients/Taj.png",
-    "/images/clients/ultratech-cement.png",
-    "/images/clients/voltas.png",
-   
+    adani,
+    cairn,
+    client2,
+    client3,
+    client4_1,
+    client4_180,
+    client5_180,
+    client5,
+    client6_180,
+    client6,
+    client7_180,
+    client8_180,
+    client8,
+    client9_180,
+    client10_180,
+    client11_180,
+    client12_180,
+    drReddys,
+    essarSteel,
+    gaar,
+    hindustan,
+    itcHotels,
+    jindal,
+    ltLogo,
+    mahindraRise,
+    motherDairy,
+    ntpc,
+    ocmLuxury,
+    oilLtd,
+    roorkee,
+    schneider,
+    smec,
+    sterlingWilson,
+    taj,
+    ultratech,
+    voltas,
   ];
 
   return (
@@ -250,14 +285,14 @@ export function MoreAboutUs() {
   );
 }
 
-/* ---------------- FAQ (black bg when open) ---------------- */
+/* ---------------- FAQ ---------------- */
 export function FAQSection() {
   const [activeKey, setActiveKey] = useState("0");
 
   const faqs = [
     {
       q: "What types of flow meters does IOTA Flow manufacture in India?",
-      a: "IOTA Flow is a trusted Indian manufacturer of flow meters, offering a wide range of products such as ultrasonic flow meters, electromagnetic flow meters, and mechanical water meters. Our flow meters are made in India and designed to meet the needs of various industries, including water management, chemical processing, and oil & gas.",
+      a: "IOTA Flow is a trusted Indian manufacturer of flow meters, offering a wide range...",
     },
     {
       q: "Are IOTA Flow’s flow meters suitable for Indian industrial and municipal applications?",
@@ -340,7 +375,6 @@ export default function HomeExtra() {
     <>
       {/* <HeroBanner /> */}
       <StatsModern />
-      {/* keep or remove DifferenceBlock if you don't need it separately anymore */}
       {/* <DifferenceBlock /> */}
       <ClientsSection />
       <MoreAboutUs />
