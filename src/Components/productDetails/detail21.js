@@ -140,9 +140,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">GasPro RPD Gas Meter</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;High-precision rotary gas meter with embedded 2G/3G/4G/NB modem</li>
+              <li className="mb-2">&#9679;Modular, tamper-proof design with optional MID-certified volume corrector</li>
+              <li className="mb-2">&#9679;Built for industrial accuracy, long battery life, and future-ready upgrades</li>
               
             
             </ul>
@@ -176,6 +176,17 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
+  <li>The GasPro RPD Gas Meter is a next-generation rotary positive displacement solution for precise gas flow metering.</li>
+  <li>Ideal for utility providers, industrial complexes, and high-demand commercial applications.</li>
+  <li>Delivers high accuracy and stability, with modular architecture enabling scalable upgrade paths.</li>
+  <li>Built to withstand harsh environmental conditions with robust construction.</li>
+  <li>Supports remote data monitoring via embedded communication module: 2G/3G/4G/NB.</li>
+  <li>Integrates seamlessly with SCADA and AMI systems for real-time management.</li>
+  <li>Optional Elcor MID-certified gas volume corrector allows real-time compensation for temperature and pressure.</li>
+  <li>Optimizes billing accuracy and operational efficiency across utility networks and industrial fuel systems.</li>
+  <li>Engineered for tamper protection, minimal maintenance, and long-term reliability.</li>
+  <li>Certified under MID and ATEX standards.</li>
+  <li>Operates via external power or long-life battery — future-ready for advanced infrastructure deployment.</li>
 </ul>
 
               </div>

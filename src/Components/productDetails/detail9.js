@@ -136,10 +136,10 @@ function ProductDetail() {
             <p className="text-muted">Water Meters</p>
             <h3 className="fw-semibold">Multijet Water Meters, Aqua-Re Series</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Magnet-drive multijet design ensures high durability and accuracy</li>
+              <li className="mb-2">&#9679;360° rotatable mechanism with brass or stainless steel body</li>
+              <li className="mb-2">&#9679;Compatible with AMR systems and offers optional analog/pulse output</li>
+             
             
             </ul>
             <button className="my-2 btn-enquiry">
@@ -172,7 +172,16 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-
+  <li>The Aqua-Re Series Multijet Water Meters are precision-built for accurate measurement of cold and hot water in residential, commercial, and industrial applications.</li>
+  <li>Utilize a rotary vane wheel multi-jet mechanism with magnet drive, ensuring reliable performance and low wear over time.</li>
+  <li>Available in pipe sizes from DN15 to DN40.</li>
+  <li>Feature a removable 360° rotatable mechanism for easy installation and maintenance.</li>
+  <li>Constructed with high-quality brass or stainless steel bodies.</li>
+  <li>Compliant with ISO 4064 Class B standards.</li>
+  <li>Suitable for cold water (up to 50°C) and high-temperature applications (90°C & 130°C).</li>
+  <li>Support multiple output options, including pulse for AMR systems and analog (4–20 mA) with 24VDC input in digital models.</li>
+  <li>Optional built-in battery support for remote or off-grid operations.</li>
+  <li>Ideal for water management in India’s municipal and industrial sectors.</li>
 </ul>
               </div>
             </div>

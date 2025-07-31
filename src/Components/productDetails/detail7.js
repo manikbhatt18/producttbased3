@@ -1,20 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../../images/p6a.png";
-import img2 from "../../images/p6b.png";
+import img1 from "../../images/p7a.jpg";
+import img2 from "../../images/p7b.png";
+import img3 from "../../images/p7c.png";
+import img4 from "../../images/p7d.png";
 
 
 
-import related1 from "../../images/p1a.png";
-import related2 from "../../images/p2a.png";
-import related3 from "../../images/p3a.jpg";
-import related4 from "../../images/p4a.jpg";
+import related1 from "../../images/p6a.png";
+import related2 from "../../images/p8a.png";
+import related3 from "../../images/p9a.png";
+import related4 from "../../images/p10a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
-  const images = [img1, img2];
+  const images = [img1, img2,img3,img4];
 
   const ROTATE_MS = 2000; // change to 1500–3000 if you like
 
@@ -63,21 +65,21 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/product.js" },
+    { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
     {
       img: related2,
-      title: "INLINE ULTRASONIC ROBUST Series",
-      link: "/product-detail/detail2",
+      title: "CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters",
+      link: "/product-detail/detail8",
     },
     {
       img: related3,
-      title: " INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)",
-      link: "/product-detail/detail3",
+      title: " Multijet Water Meters, Aqua-Re Series",
+      link: "/product-detail/detail9",
     },
     {
       img: related4,
-      title: "Clamp-ON (Portable) ULTRASONIC PF 222/333",
-      link: "/product-detail/detail4",
+      title: "Woltmann Water Meters, Aqua-Re Series",
+      link: "/product-detail/detail10",
     },
   ];
 
@@ -133,10 +135,10 @@ function ProductDetail() {
             <p className="text-muted">Water Meters</p>
             <h3 className="fw-semibold"> Electromagnetic Flow Meter (EMF Standard)</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;High-accuracy flow measurement with optional ±0.2% precision</li>
+              <li className="mb-2">&#9679;Compatible with corrosive, slurry, and sewage applications</li>
+              <li className="mb-2">&#9679;Versatile structure: integral, remote, submersible, and Ex-proof</li>
+              
             
             </ul>
             <button className="my-2 btn-enquiry">
@@ -168,7 +170,14 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                
+                <ul>
+  <li>The Electromagnetic Flow Meter (EMF Standard) offers advanced, non-intrusive flow measurement for a wide range of liquids including slurries, chemicals, raw water, and sewage.</li>
+  <li>Supports pipe sizes ranging from DN10 to DN2000 mm, suitable for diverse industrial and municipal applications.</li>
+  <li>Provides exceptional measuring accuracy of ±0.5% as standard, with optional ±0.2% for high-precision requirements.</li>
+  <li>Built with premium liner and electrode materials such as Teflon, Hastelloy, and Titanium for superior chemical resistance and durability.</li>
+  <li>Designed for extreme environments, offering IP68 protection (remote type) and explosion-proof certification (Exd II BT4).</li>
+  <li>Available in multiple configurations including integral, remote, submersible types, and insertion models for larger pipe diameters.</li>
+</ul>
               </div>
             </div>
           )}

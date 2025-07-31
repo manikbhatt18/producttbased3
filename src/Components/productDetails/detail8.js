@@ -134,10 +134,10 @@ function ProductDetail() {
             <p className="text-muted">Water Meters</p>
             <h3 className="fw-semibold">CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;High-accuracy flow sensing for chemicals, water, and medical fluids</li>
+              <li className="mb-2">&#9679;Ultra-compact design ideal for tight industrial spaces</li>
+              <li className="mb-2">&#9679;RoHS, CE & UKCA certified for global safety compliance</li>
+          
             
             </ul>
             <button className="my-2 btn-enquiry">

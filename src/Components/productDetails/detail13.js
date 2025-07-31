@@ -136,9 +136,9 @@ function ProductDetail() {
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Micro Stream Flow Sensor OFZ Series </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Precision micro-flow sensing ideal for automotive and chemical dosing</li>
+              <li className="mb-2">&#9679;Compact, low-power design for AdBlue, DEF, and light oil applications</li>
+              <li className="mb-2">&#9679;PPS body with SS304 shaft for chemical resistance and durability</li>
               
             
             </ul>
@@ -171,8 +171,16 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  
+<ul>
+  <li>The OFZ Series Micro Stream Flow Sensor is a compact and highly accurate solution for microfluidic and dosing applications in industrial and automotive settings.</li>
+  <li>Optimized for small pipe sizes (DN5–DN10) with a pulse value of 0.46 ml/pulse, ensuring precision in low-volume dispensing.</li>
+  <li>Ideal for AdBlue (DEF) systems in diesel vehicles, urea dosing, and other chemical handling operations.</li>
+  <li>Constructed with a PPS (Polyphenylene Sulfide) body, stainless steel shaft (SS304), and NBR sealing for chemical, heat, and wear resistance.</li>
+  <li>Supports operating pressures up to 5 bar and temperatures up to 70°C.</li>
+  <li>Performs reliably in environments involving weak acids/alkaline fluids, oil transfer (light and heavy), water circulation, and kerosene flow control.</li>
+  <li>Provides voltage pulse or open collector signal outputs with a 0.5-meter cable for seamless system integration.</li>
+  <li>Operates on low power (0.2 VA or less) with a wide input voltage range of 3–24 VDC.</li>
+  <li>Ideal for compact flow control setups requiring efficiency, precision, and automation compatibility.</li>
 </ul>
               </div>
             </div>

@@ -139,9 +139,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">Ultra-NXT Ultrasonic Gas Flow Meter  </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Smart ultrasonic gas metering with real-time temperature and pressure compensation</li>
+              <li className="mb-2">&#9679;Ideal for utilities, industrial plants, and commercial gas distribution</li>
+              <li className="mb-2">&#9679;Maintenance-free, explosion-proof, and IIoT-ready for future scalability</li>
               
             
             </ul>

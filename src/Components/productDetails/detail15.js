@@ -160,9 +160,9 @@ function ProductDetail() {
             <p className="text-muted">Air Flow Meters</p>
             <h3 className="fw-semibold">TRX Ultrasonic Air Meters </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Accurate flow monitoring for gases like air, nitrogen, and biogas</li>
+              <li className="mb-2">&#9679;Insertion design with optional high-temp and ATEX variants</li>
+              <li className="mb-2">&#9679;Analog and pulse outputs for easy system integration</li>
               
             
             </ul>
@@ -195,7 +195,14 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
+<ul>
+  <li>The Thermal Mass Flow Sensor (Insertion Type) is a high-precision solution for direct gas flow measurement in pipelines.</li>
+  <li>Ideal for gases including compressed air, nitrogen, oxygen, biogas, and specialty gases.</li>
+  <li>Designed for easy insertion into existing systems.</li>
+  <li>Supports analog and pulse outputs for real-time monitoring.</li>
+  <li>Available in robust build options for high pressure (up to 40 bar) and high temperature (up to 350°C).</li>
+  <li>ATEX-certified for use in hazardous environments.</li>
+  <li>Perfect for industrial gas monitoring, energy audits, and HVAC optimization.</li>
 </ul>
               </div>
             </div>

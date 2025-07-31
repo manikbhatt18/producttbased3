@@ -142,9 +142,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">Conical shaped Flow meter</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Innovative cone-style flow meter for tough gas, steam & biogas conditions</li>
+              <li className="mb-2">&#9679;High accuracy, low pressure loss & excellent performance in dusty or corrosive media</li>
+              <li className="mb-2">&#9679;Ideal for compact installations across energy, steel, mining & process industries</li>
               
             
             </ul>

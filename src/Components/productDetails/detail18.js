@@ -139,9 +139,9 @@ function ProductDetail() {
             <p className="text-muted">Vortex Flow Meters</p>
             <h3 className="fw-semibold">IVF Insertion Vortex flow meter </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Accurate and maintenance-free flow monitoring for steam, gas, and liquids</li>
+              <li className="mb-2">&#9679;Ideal for power plants, chemical industries, and utility management</li>
+              <li className="mb-2">&#9679;Handles harsh conditions with stable signal output and wide media compatibility</li>
               
             
             </ul>

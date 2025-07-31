@@ -141,9 +141,9 @@ function ProductDetail() {
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Oval Gear Flow Meters (OGM)</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Precise flow measurement for high-viscosity and high-temperature fluids</li>
+              <li className="mb-2">&#9679;Ideal for oils, chemicals, and industrial liquids with up to ±0.2% accuracy</li>
+              <li className="mb-2">&#9679;Built for tough environments with multiple material and output options</li>
               
             
             </ul>
@@ -177,7 +177,14 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-  
+  <li>Oval Gear Flow Meters are high-precision positive displacement meters designed for measuring viscous and non-conductive fluids in industrial environments.</li>
+  <li>Ideal for applications requiring superior accuracy and durability across petrochemical, lubricant, food processing, paint manufacturing, and hydraulic industries in India.</li>
+  <li>Capable of handling fluid viscosities up to 5,000 cP and operating temperatures from -20°C to +280°C.</li>
+  <li>Well-suited for thick fluids like high-temperature oils, syrups, adhesives, and liquids where other flow meters may fail.</li>
+  <li>Offers measurement accuracy of ±0.5%, with optional ±0.2% for more critical operations.</li>
+  <li>Available in cast iron, cast steel, and stainless steel body variants to match fluid types and process requirements.</li>
+  <li>Additional integration options include a local LC display, signal transmitter, and MCU-based flow controller for seamless inclusion in manual and automated systems.</li>
+  <li>Supports a wide flow range from 0.04 to 340 m³/h, ensuring high versatility for industrial fluid handling.</li>
 </ul>
               </div>
             </div>

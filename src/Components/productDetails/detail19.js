@@ -141,9 +141,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">EQZ/EQZK Radial Turbine Gas Meters </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;High-precision gas metering for industrial, commercial, and CGD networks</li>
+              <li className="mb-2">&#9679;Designed for Indian conditions with minimal pressure loss and long-term reliability</li>
+              <li className="mb-2">&#9679;Seamlessly integrates with smart metering, telemetry, and EPC infrastructure projects</li>
               
             
             </ul>

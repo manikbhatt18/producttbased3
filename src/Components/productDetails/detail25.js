@@ -139,9 +139,9 @@ function ProductDetail() {
             <p className="text-muted">Rotameters</p>
             <h3 className="fw-semibold">Acrylic / Glass Tube Rotameters</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Compact, economical rotameter for air, water, oil, gas & solvents</li>
+              <li className="mb-2">&#9679;Acrylic or glass tube options with in-line or panel mounting</li>
+              <li className="mb-2">&#9679;Clear laser-engraved scale for accurate, easy flow reading</li>
               
             
             </ul>
@@ -175,9 +175,17 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-
+  <li>IOTAFLOW Acrylic and Glass Tube Rotameters provide compact, cost-effective flow measurement for low to medium flow applications.</li>
+  <li>Suitable for monitoring air, water, oil, gas, and solvents across industrial and lab environments.</li>
+  <li>Laser-engraved scales on the body ensure long-lasting readability and precise indication.</li>
+  <li>Choose between acrylic tubes for budget-friendly use or glass tubes for enhanced chemical resistance.</li>
+  <li>Flexible installation options include in-line and panel mounting.</li>
+  <li>Offered with screwed or flanged end connections for versatile setup compatibility.</li>
+  <li>Float material options include SS316 and PTFE, supporting various chemical compositions.</li>
+  <li>Flange materials range from polypropylene (PP) to stainless steel (SS316), suitable for diverse process demands.</li>
+  <li>Designed for simple operation with minimal maintenance requirements.</li>
+  <li>Trusted for consistent flow monitoring in chemical, process, and utility environments.</li>
 </ul>
-
               </div>
             </div>
           )}

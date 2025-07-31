@@ -143,9 +143,9 @@ function ProductDetail() {
             <p className="text-muted">Rotameters</p>
             <h3 className="fw-semibold">Metal tube Rotameters (Variable Area measurement) </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Rugged metal-tube rotameter for precise variable area flow measurement</li>
+              <li className="mb-2">&#9679;Works with gas, liquid & steam; ideal for harsh, high-pressure environments</li>
+              <li className="mb-2">&#9679;Multiple material, connection & output options; customizable for your needs</li>
               
             
             </ul>
@@ -179,7 +179,16 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-
+  <li>IOTAFLOW Metal Tube Rotameter employs the variable area principle for dependable and accurate flow measurement.</li>
+  <li>Engineered for demanding process industry applications involving gas, liquid, or steam.</li>
+  <li>Features a robust metal housing and magnetically coupled pointer system, eliminating sealed shaft requirements for enhanced durability.</li>
+  <li>Delivers stable performance under high-pressure and high-temperature conditions.</li>
+  <li>Modular configuration supports multiple wetted material options: SS316, PTFE, and Plastic.</li>
+  <li>Compatible with diverse connection types: flange, tri-clamp, and sanitary fittings.</li>
+  <li>Suitable across chemical, food & beverage, and pharmaceutical sectors.</li>
+  <li>Available with explosion-proof configurations, signal output (4–20 mA), and switch-based alarm capabilities.</li>
+  <li>IP65/IP67-rated housing supports deployment in both general-purpose and hazardous environments.</li>
+  <li>Designed for applications where accuracy, flexibility, and resilience are critical.</li>
 </ul>
 
               </div>

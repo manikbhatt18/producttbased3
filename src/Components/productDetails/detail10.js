@@ -136,10 +136,9 @@ function ProductDetail() {
             <p className="text-muted">Water Meters</p>
             <h3 className="fw-semibold">Woltmann Water Meters, Aqua-Re Series</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;High-accuracy turbine meter ideal for large pipe sizes</li>
+              <li className="mb-2">&#9679;Rugged cast iron/stainless steel body with 360° rotatable mechanism</li>
+              <li className="mb-2">&#9679;AMR-ready with optional analog and battery-powered models</li>
             
             </ul>
             <button className="my-2 btn-enquiry">
@@ -172,7 +171,16 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-
+  <li>The Woltmann Water Meters from the Aqua-Re Series are robust, high-capacity meters engineered for accurate water flow measurement in large-scale applications.</li>
+  <li>Designed with a turbine mechanical system and magnetic transmission, making them ideal for industrial water distribution, municipal supply systems, irrigation networks, and large commercial facilities across India.</li>
+  <li>Available in pipe sizes from DN50 to DN500.</li>
+  <li>Feature a removable mechanism and a 360° rotatable register for simplified installation and maintenance in complex piping environments.</li>
+  <li>Constructed with cast iron or stainless steel bodies and coated with epoxy for corrosion resistance and extended operational life.</li>
+  <li>Certified to ISO 4064 Class B accuracy standards.</li>
+  <li>Support cold water (up to 50°C) and high-temperature hot water applications (up to 130°C).</li>
+  <li>Include pulse outputs for AMR systems, with optional analog (4–20 mA) and digital configurations for smart infrastructure integration.</li>
+  <li>Optional built-in battery ensures uninterrupted data transmission in off-grid or remote installations.</li>
+  <li>Widely trusted by utility providers and industries across India for reliable, efficient high-volume water usage management.</li>
 </ul>
               </div>
             </div>

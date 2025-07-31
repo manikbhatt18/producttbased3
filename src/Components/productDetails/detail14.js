@@ -139,9 +139,9 @@ function ProductDetail() {
             <p className="text-muted">Air Flow Meters</p>
             <h3 className="fw-semibold">TRX Ultrasonic Air Meters </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Non-invasive ultrasonic sensing with zero pressure drop</li>
+              <li className="mb-2">&#9679;Ideal for compressed air audits and leakage detection</li>
+              <li className="mb-2">&#9679;Maintenance-free design with high resistance to oil, moisture, and dust</li>
               
             
             </ul>

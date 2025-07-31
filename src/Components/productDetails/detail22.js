@@ -141,9 +141,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">UF-Biosonic (Ultrasonic Flow Measurement for Biogas) </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
-              <li className="mb-2">&#9679;</li>
+              <li className="mb-2">&#9679;Compact ultrasonic flow meter tailored for biogas applications</li>
+              <li className="mb-2">&#9679;Battery or external powered with RS485 & analog output</li>
+              <li className="mb-2">&#9679;IP65-rated, reliable performance under low-pressure biogas conditions</li>
               
             
             </ul>
@@ -177,6 +177,15 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
+  <li>UF-Biosonic is a compact ultrasonic flow meter for low-pressure biogas applications.</li>
+  <li>Utilizes advanced transit-time technology for precision and stability in challenging gas conditions.</li>
+  <li>Accuracy maintained up to ±1.5% across dynamic environments.</li>
+  <li>Supports flexible power configurations: battery or external 24VDC supply.</li>
+  <li>Offers multiple output options including RS485 and 4–20mA for seamless system integration.</li>
+  <li>Encased in an IP65-rated durable body — suited for harsh industrial or outdoor conditions.</li>
+  <li>Ideal for waste-to-energy plants, biogas digesters, and green energy installations.</li>
+  <li>Engineered for low maintenance and consistent data performance.</li>
+  <li>Compact footprint supports efficient flow tracking in sustainable energy setups.</li>
 </ul>
 
               </div>
