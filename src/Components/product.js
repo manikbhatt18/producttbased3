@@ -62,7 +62,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "//product-detail/detail2" },
+    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
     {
       img: related2,
       title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)",

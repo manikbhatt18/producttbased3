@@ -65,7 +65,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/product.js" },
+    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/products" },
     {
       img: related2,
       title: "INLINE ULTRASONIC ROBUST Series",
