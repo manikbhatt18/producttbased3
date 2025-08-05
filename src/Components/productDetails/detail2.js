@@ -13,7 +13,7 @@ import related4 from "../../images/p4a.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
-  const images = [img1, img2, img3];
+  // const images = [img1, img2, img3];
   //  copy code from here
   const images = [img1, img2];
 
