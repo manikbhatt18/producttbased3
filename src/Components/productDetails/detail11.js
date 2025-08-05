@@ -1,145 +1,197 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-import img1 from '../../images/product11(1).png';
-import img2 from '../../images/product11(2).png';
-import img3 from '../../images/product11(3).png';
-import img4 from '../../images/product11(4).png';
-import img5 from '../../images/product11(5).png';
-import img6 from '../../images/product11(6).png';
-import img7 from '../../images/product11(7).png';
-import img8 from '../../images/product11(8).png';
-import img9 from '../../images/product11(9).png';
-import img10 from '../../images/RPD png.png';
-import img11 from '../../images/RPD SERIES FLOW METER.png';
-import img12 from '../../images/product11(12).png';
-import img13 from '../../images/contoil (2).png';
-import img14 from '../../images/contoil (3).png';
-import img15 from '../../images/contoil.png';
+import img1 from "../../images/p11a.jpg";
+import img2 from "../../images/p11b.png";
+import img3 from "../../images/p11c.png";
+import img4 from "../../images/p11d.png";
+import img5 from "../../images/p11e.jpg";
+import img6 from "../../images/p11f.png";
+import img7 from "../../images/p11g.png";
+import img8 from "../../images/p11h.png";
+import img9 from "../../images/p11i.png";
 
 
 
 
-import related1 from '../../images/p121.png';
-import related2 from '../../images/of-z_h146.png';
-import related3 from '../../images/TRX 1.png';
-import related4 from '../../images/p152.png';
 
+import related1 from "../../images/p12a.png";
+import related2 from "../../images/p13.png";
+import related3 from "../../images/p14a.png";
+import related4 from "../../images/p15a.png";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15];
-  const [mainImage, setMainImage] = useState(images[0]);
-  const [activeTab, setActiveTab] = useState("Description");
-  const tabContentRef = useRef(null);
+  const images = [img1, img2,img3,img4, img5,img6,img7, img8,img9];
 
+  const ROTATE_MS = 2000; // change to 1500–3000 if you like
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [mainImage, setMainImage] = useState(images[0]);
+  const [isPaused, setIsPaused] = useState(false);
+  const [activeTab, setActiveTab] = useState("Description");
+
+  const tabContentRef = useRef(null);
+  const imgWrapperRef = useRef(null);
+
+  // Tab fade-in animation
   useEffect(() => {
     if (tabContentRef.current) {
-      tabContentRef.current.classList.remove('fade-in');
+      tabContentRef.current.classList.remove("fade-in");
       void tabContentRef.current.offsetWidth;
-      tabContentRef.current.classList.add('fade-in');
+      tabContentRef.current.classList.add("fade-in");
     }
   }, [activeTab]);
 
-  const relatedProducts = [
-                 
-                 { img: related1, title: " Oval Gear Flow Meters (OGM) ", link: "/product-detail/detail12" },
-                 { img: related2, title: " Micro Stream Flow Sensor OFZ Series", link: "/product-detail/detail13" },
-                 { img: related3, title: "TRX Ultrasonic Air Meters", link: "/product-detail/detail14" },
-                 { img: related4, title: "Thermal Mass Flow Sensors (Insertion)", link: "/product-detail/detail15" },
-                 
-               ];
+  // Image crossfade trigger
+  useEffect(() => {
+    if (imgWrapperRef.current) {
+      imgWrapperRef.current.classList.remove("img-fade-in");
+      void imgWrapperRef.current.offsetWidth;
+      imgWrapperRef.current.classList.add("img-fade-in");
+    }
+  }, [mainImage]);
 
-return (
+  // Auto-rotate images
+  useEffect(() => {
+    if (isPaused) return;
+    const id = setInterval(() => {
+      setCurrentIndex((prev) => {
+        const next = (prev + 1) % images.length;
+        setMainImage(images[next]);
+        return next;
+      });
+    }, ROTATE_MS);
+    return () => clearInterval(id);
+  }, [isPaused, images, ROTATE_MS]);
+
+  const handleThumbClick = (img, idx) => {
+    setMainImage(img);
+    setCurrentIndex(idx);
+  };
+
+ const relatedProducts = [
+    { img: related1, title: "Oval Gear Flow Meters (OGM)", link: "/product-detail/detail12" },
+    {
+      img: related2,
+      title: " Micro Stream Flow Sensor OFZ Series ",
+      link: "/product-detail/detail13",
+    },
+    {
+      img: related3,
+      title: "  TRX Ultrasonic Air Meters ",
+      link: "/product-detail/detail14",
+    },
+    {
+      img: related4,
+      title: " Thermal Mass Flow Sensors",
+      link: "/product-detail/detail15",
+    },
+  ];
+
+  return (
     <div className="text-dark">
       <div className="container py-5">
         <div className="row">
+          {/* LEFT: images */}
           <div className="col-lg-6 d-flex flex-column align-items-center">
-            <div className="border mb-3 p-2 rounded shadow-sm" style={{ width: '100%', maxWidth: '400px' }}>
-              <img src={mainImage} alt="Main Meter" className="img-fluid" />
+            <div
+              className="border mb-3 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+            >
+              <div ref={imgWrapperRef} className="img-canvas img-fade-in">
+                <img src={mainImage} alt="Main Meter" className="main-image" />
+              </div>
             </div>
+
             <div className="d-flex gap-3 mt-3">
               {images.map((img, i) => (
                 <div key={i} className="d-flex flex-column align-items-center">
                   <img
                     src={img}
                     alt={`thumb-${i}`}
-                    onClick={() => setMainImage(img)}
+                    onClick={() => handleThumbClick(img, i)}
                     className="img-thumbnail"
                     style={{
-                      width: '60px',
-                      height: '60px',
-                      cursor: 'pointer',
-                      objectFit: 'cover',
-                      border: mainImage === img ? '2px solid #black' : '1px solid #yellow',
-                      borderRadius: '0px'
+                      width: "60px",
+                      height: "60px",
+                      cursor: "pointer",
+                      objectFit: "cover",
+                      border: mainImage === img ? "2px solid #000" : "1px solid #ddd",
+                      borderRadius: "0px",
                     }}
                   />
                   <div
                     style={{
-                      height: '3px',
-                      width: '60%',
-                      backgroundColor: mainImage === img ? '#ffcc00' : 'transparent',  // Yellow
-                      marginTop: '3px',
-                      borderRadius: '2px',
+                      height: "3px",
+                      width: "60%",
+                      backgroundColor: mainImage === img ? "#ffcc00" : "transparent",
+                      marginTop: "3px",
+                      borderRadius: "2px",
                     }}
                   ></div>
-
                 </div>
               ))}
             </div>
           </div>
 
+          {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Positive Displacement Oil Meters </p>
+            <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Contoil / RPD Flow Meters</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679; ContOil® Inline Oil Flow Meter -</li>
+              <li className="mb-2">&#9679;ContOil® Inline Oil Flow Meter -</li>
               <li className="mb-2">&#9679;For Boilers, Generators, and Engine Test Benches</li>
               <li className="mb-2">&#9679;High Accuracy Volumetric Flow Meters</li>
+              
+            
             </ul>
-            <button className="my-2  btn-enquiry"><span>Enquiry Now</span></button>
+            <button className="my-2 btn-enquiry">
+              <span>Enquiry Now</span>
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="container sticky-top bg-white shadow-sm" style={{ top: '0px', zIndex: 1020 }}>
+      {/* Sticky tabs */}
+      <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
         <ul className="nav nav-tabs border-0 justify-content-center">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
               <button
-                className={`nav-link ${activeTab === tab ? 'active-tab' : ''}`}
+                className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
                 onClick={() => setActiveTab(tab)}
               >
                 {tab}
               </button>
-
-
             </li>
           ))}
         </ul>
       </div>
 
+      {/* Tab content */}
       <div className="container">
         <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
                 <ul>
-  <li><strong>Product Overview:</strong>
+  <li>Contoil® Oil Flow Meters — precision-engineered for accurate fuel and lubrication oil measurement in demanding industrial environments</li>
+  <li>Consistent performance — unaffected by fluid temperature or viscosity</li>
+  <li>Compact design — enables easy installation in space-restricted systems</li>
+  <li>Ideal for integration with:
     <ul>
-      <li>Contoil® Oil Flow Meters are precision-engineered for accurate fuel and lubrication oil measurement.</li>
-      <li>Designed for demanding industrial environments with high reliability and flexibility.</li>
-      <li>Performance remains consistent regardless of fluid temperature or viscosity.</li>
-      <li>Compact design allows for easy integration into space-constrained systems.</li>
-      <li>Ideal for use with power generators, boilers, burners, and closed-loop lubrication systems.</li>
+      <li>Power generators</li>
+      <li>Boilers</li>
+      <li>Burners</li>
+      <li>Closed-loop lubrication systems</li>
     </ul>
   </li>
-
-  <li><strong>Applications Across Industries:</strong>
+  <li>Applications Across Industries:
     <ul>
-      <li><em>Fuel Consumption Measurement:</em>
+      <li><strong>Fuel Consumption Measurement:</strong>
         <ul>
           <li>Oil burners in heating systems and industrial furnaces</li>
           <li>Unloading applications</li>
@@ -147,62 +199,95 @@ return (
           <li>Combined heat and power (CHP) systems</li>
         </ul>
       </li>
-      <li><em>Lubrication Monitoring:</em>
+      <li><strong>Lubrication Monitoring:</strong>
         <ul>
           <li>Closed-loop systems for machinery bearings and motors</li>
-          <li>Machine test benches and engine testing laboratories</li>
+          <li>Machine test benches and engine testing labs</li>
         </ul>
       </li>
-      <li><em>Remote Integration:</em>
+      <li><strong>Remote Integration:</strong>
         <ul>
-          <li>Optional digital output for integration with control systems</li>
-          <li>Supports remote monitoring platforms</li>
+          <li>Optional digital output for advanced control systems</li>
+          <li>Compatible with remote monitoring platforms</li>
         </ul>
       </li>
     </ul>
   </li>
 </ul>
               </div>
-              
             </div>
           )}
+
           {activeTab === "Features" && (
-<ul>
-  <li><strong>Unmatched Accuracy (±0.5%):</strong> Reliable fuel consumption monitoring that remains stable regardless of fluid temperature or viscosity.</li>
-  <li><strong>Flexible Installation:</strong> Can be mounted horizontally, vertically, or at an incline—ideal for space-constrained systems and adaptable to batching, dosing, and filling operations.</li>
-  <li><strong>Dual-Side Pump Compatibility:</strong> Installs on both pressure and suction sides of pumps.</li>
-  <li><strong>Operational Simplicity:</strong> Mechanical display with resettable counter and optional limiting value switch for flow rate control.</li>
-  <li><strong>Built-In Diagnostics:</strong> Enables function checks, fault analysis, and on-site repairability to minimize downtime and service costs.</li>
-  <li><strong>Compact Design:</strong> Suitable for tight enclosures and complex piping environments.</li>
-</ul>          )}
+           <ul>
+  <li>Unmatched Accuracy (0.5%) — reliable fuel consumption monitoring, unaffected by temperature and viscosity variations</li>
+  <li>Flexible Installation:
+    <ul>
+      <li>Mount horizontally, vertically, or at an incline</li>
+      <li>Operates without straight inlet/outlet runs</li>
+      <li>Suitable for batching, dosing, and filling operations</li>
+    </ul>
+  </li>
+  <li>Dual-Side Pump Compatibility — install on either the pressure or suction side of pumps</li>
+  <li>Operational Simplicity:
+    <ul>
+      <li>Mechanical display with resettable counter</li>
+      <li>Optional limiting value switch for flow rate control</li>
+    </ul>
+  </li>
+  <li>Built-In Diagnostics — enables quick function checks, fault analysis, and on-site repairability</li>
+  <li>Compact Design — ideal for tight enclosures and complex piping systems</li>
+</ul>
+          )}
+
           {activeTab === "Technical data" && (
            <ul>
-  <li><strong>Pipe Range:</strong> DN4 to DN80</li>
-  <li><strong>Output Types:</strong> Pulse output, Analog 4–20 mA (continuous for remote monitoring)</li>
-  <li><strong>Power Supply:</strong> External power with battery backup option</li>
-  <li><strong>Connection Type:</strong> Flange (DIN, ANSI, JIS) or threaded ends</li>
-  <li><strong>Accuracy:</strong> ±0.5% to ±1%</li>
-  <li><strong>Viscosity & Temperature Independence:</strong> Measurement unaffected by changes in fluid viscosity or temperature</li>
-  <li><strong>Display:</strong> Mechanical with resettable totalizer</li>
-  <li><strong>Straight Run Requirement:</strong> Not required</li>
-  <li><strong>Temperature Range:</strong> 130°C and 180°C versions available</li>
-  <li><strong>Nominal Pressure Ratings:</strong> PN 16, PN 25, and PN 40 bar</li>
-  <li><strong>Suitable Applications:</strong>
+  <li>Pipe Range: DN4 – DN80</li>
+  <li>Outputs:
     <ul>
-      <li>Heating fuels: Extra light, Light</li>
-      <li>Petroleum derivatives: Medium and heavy naphtha, diesel, petrol</li>
-      <li>Lubricating liquids: Various oils</li>
+      <li>Pulse</li>
+      <li>Analog 4–20 mA (continuous for remote monitoring)</li>
+    </ul>
+  </li>
+  <li>Power Options:
+    <ul>
+      <li>External power supply</li>
+      <li>Battery backup (optional)</li>
+    </ul>
+  </li>
+  <li>Connection Types:
+    <ul>
+      <li>Flanges — DIN, ANSI, JIS</li>
+      <li>Threaded ends</li>
+    </ul>
+  </li>
+  <li>Accuracy: 0.5% to 1%</li>
+  <li>Performance: Independent of fluid viscosity and temperature</li>
+  <li>Display: Mechanical with resettable totalizer</li>
+  <li>Straight Run Requirement: None</li>
+  <li>Temperature Range Options: 130°C and 180°C</li>
+  <li>Nominal Pressure Ratings: PN 16, PN 25, PN 40</li>
+  <li>Suitable Applications:
+    <ul>
+      <li>Heating Fuel — Extra light / Light</li>
+      <li>Medium and Heavy naphtha</li>
+      <li>Diesel, petrol, and other lubricating oils</li>
     </ul>
   </li>
 </ul>
           )}
+
           {activeTab === "Downloads" && (
-            <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
+            <p>
+              Visit our documentation page to download the full technical
+              specifications and data sheets.
+            </p>
           )}
         </div>
       </div>
 
-      <div style={{ backgroundColor: '#f6f8fc' }} className="py-5">
+      {/* Related Products */}
+      <div style={{ backgroundColor: "#f6f8fc" }} className="py-5">
         <div className="container">
           <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
@@ -212,25 +297,27 @@ return (
                   <div
                     className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
-                      backgroundColor: '#fff',
-                      width: '180px',
-                      height: '180px',
-                      border: '1px solid #ddd',
-                      borderRadius: '4px',
-                      transition: 'transform 0.3s',
+                      backgroundColor: "#fff",
+                      width: "180px",
+                      height: "180px",
+                      border: "1px solid #ddd",
+                      borderRadius: "4px",
+                      transition: "transform 0.3s",
                     }}
                   >
                     <img
                       src={product.img}
                       alt={product.title}
                       style={{
-                        maxHeight: '100%',
-                        maxWidth: '100%',
-                        objectFit: 'contain',
+                        maxHeight: "100%",
+                        maxWidth: "100%",
+                        objectFit: "contain",
                       }}
                     />
                   </div>
-                  <p className="fw-semibold mt-2" style={{ fontSize: '14px' }}>{product.title}</p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: "14px" }}>
+                    {product.title}
+                  </p>
                 </Link>
               </div>
             ))}
@@ -238,111 +325,138 @@ return (
         </div>
       </div>
 
+      {/* Styles */}
       <style jsx>{`
-  .fade-in {
-    animation: fadeIn 0.2s ease-in-out;
-  }
+        .fade-in {
+          animation: fadeIn 0.2s ease-in-out;
+        }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
 
-  /* Active Tab Style */
-  .nav-tabs .nav-link {
-    color: black;
-    border: none;
-    border-bottom: 3px solid transparent;
-    transition: all 0.3s ease;
-    background-color: white;
-  }
+        /* ----- FIXED preview box + crossfade ----- */
+        .main-image-wrapper {
+          width: 100%;
+          max-width: 400px;
+          height: 400px; /* fixed height so it doesn't jump */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+        }
+        .main-image {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          display: block;
+        }
+        .img-canvas {
+          width: 100%;
+          height: 100%;
+        }
+        .img-fade-in {
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+        .img-fade-in {
+          opacity: 1;
+        }
 
-  .nav-tabs .nav-link:hover {
-    background-color: #ffcc00; /* Yellow hover */
-    color: black;
-  }
+        /* Tabs */
+        .nav-tabs .nav-link {
+          color: black;
+          border: none;
+          border-bottom: 3px solid transparent;
+          transition: all 0.3s ease;
+          background-color: white;
+        }
 
-  .nav-tabs .nav-link.active-tab {
-    border-bottom: 3px solid #ffcc00;
-    color: black;
-    background-color: white;
-  }
+        .nav-tabs .nav-link:hover {
+          background-color: #ffcc00;
+          color: black;
+        }
 
-  /* Hover Scale for Cards/Images */
-  .hover-scale {
-    transition: transform 0.3s ease;
-  }
+        .nav-tabs .nav-link.active-tab {
+          border-bottom: 3px solid #ffcc00;
+          color: black;
+          background-color: white;
+        }
 
-  .hover-scale:hover {
-    transform: scale(1.05);
-  }
+        /* Hover Scale for Cards/Images */
+        .hover-scale {
+          transition: transform 0.3s ease;
+        }
 
-  /* Enquiry Button Style */
-.btn-enquiry {
-  position: relative;
-  overflow: hidden;
-  background-color: yellow; /* Default button background color */
-  /* Add other button styles as needed */
-}
+        .hover-scale:hover {
+          transform: scale(1.05);
+        }
 
-.btn-enquiry::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transform: translateX(-100%);
-  z-index: 1;
-}
+        /* Enquiry Button Style */
+        .btn-enquiry {
+          position: relative;
+          overflow: hidden;
+          background-color: yellow;
+          border: none;
+          padding: 8px 20px;
+          cursor: pointer;
+        }
 
-.btn-enquiry:hover::before {
-  animation: slideInLeft 0.4s ease forwards;
-}
+        .btn-enquiry::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          transform: translateX(-100%);
+          z-index: 1;
+        }
 
-.btn-enquiry:not(:hover)::before {
-  animation: slideOutRight 0.4s ease forwards;
-}
+        .btn-enquiry:hover::before {
+          animation: slideInLeft 0.4s ease forwards;
+        }
 
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
+        .btn-enquiry:not(:hover)::before {
+          animation: slideOutRight 0.4s ease forwards;
+        }
 
-@keyframes slideOutRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
 
-.btn-enquiry span {
-  position: relative;
-  z-index: 2;
-  transition: color 0.4s ease;
-}
+        @keyframes slideOutRight {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(100%);
+          }
+        }
 
-.btn-enquiry:hover span {
-  color: white;
-}
+        .btn-enquiry span {
+          position: relative;
+          z-index: 2;
+          transition: color 0.4s ease;
+        }
 
-.btn-enquiry span {
-  position: relative;
-  z-index: 2;
-  transition: color 0.4s ease;
-}
-
-
-
-`}</style>
-
+        .btn-enquiry:hover span {
+          color: white;
+        }
+      `}</style>
     </div>
   );
 }

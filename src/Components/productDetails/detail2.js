@@ -1,20 +1,21 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../../images/Copy of Old 1.png";
-import img2 from "../../images/Copy of Old 2.png";
-import img3 from "../../images/Copy of Old 3.png";
+import img1 from "../../images/p2a.png";
+import img2 from "../../images/p2b.png";
 
-import related1 from "../../images/Buf lite-2-1.png";
-import related2 from "../../images/1.png";
-import related3 from "../../images/1.png";
-import related4 from "../../images/1.png";
+
+import related1 from "../../images/p1a.png";
+import related2 from "../../images/p3a.jpg";
+import related3 from "../../images/p4a.jpg";
+import related4 from "../../images/p4a.jpg";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
   const images = [img1, img2, img3];
   //  copy code from here
+  const images = [img1, img2];
 
   const ROTATE_MS = 2000;                   
 
@@ -63,7 +64,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/" },
+    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/products" },
     {
       img: related2,
       title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)",
@@ -257,49 +258,15 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-              <li>
-                <strong>4-Channel Measurement:</strong> High-accuracy flow readings using
-                four-beam sensing across multiple insertion points for enhanced volumetric precision.
-              </li>
-              <li>
-                <strong>Non-Intrusive, Low-Pressure Loss Design:</strong> Insertion sensors minimize
-                obstruction—preserving fluid integrity and system efficiency.
-              </li>
-              <li>
-                <strong>Wide Diameter Compatibility:</strong> Supports DN15 to DN6000 pipes across
-                metallic, plastic, and composite materials.
-              </li>
-              <li>
-                <strong>Advanced DSP Technology:</strong> Digital signal processing ensures noise
-                immunity, stable readings, and ultra-low drift.
-              </li>
-              <li>
-                <strong>High Accuracy & Repeatability:</strong> ±1.5% accuracy, ±0.1% repeatability
-                even in turbulent/variable flow.
-              </li>
-              <li>
-                <strong>Data Logging & Retention:</strong> Hourly/daily/monthly data for up to 1
-                year (without external power).
-              </li>
-              <li>
-                <strong>Industrial Outputs:</strong> RS-232, RS-485 (Modbus), 4–20 mA, pulse,
-                optional Ethernet—SCADA/PLC/BMS ready.
-              </li>
-              <li>
-                <strong>Durable Build:</strong> SS316 wetted parts, IP67 sensors, IP54 control unit.
-              </li>
-              <li>
-                <strong>Extreme Environment Ready:</strong> –40°C to +65°C ambient, –30°C to
-                +150°C liquid (extendable to +350°C).
-              </li>
-              <li>
-                <strong>Secure Configuration:</strong> Password-protected, tamper-resistant.
-              </li>
-              <li>
-                <strong>Batching & Alarm Modes:</strong> Volume-based batching, start/stop control,
-                alarms with logging.
-              </li>
-            </ul>
+  <li>Rugged design handles poor-quality water effortlessly – Sand/Particle interference is not an issue.</li>
+  <li>10-year lithium battery life with optional 24V DC supply – No external power required.</li>
+  <li>Reliable operation up to 130°C – Suitable for hot water and condensate conditions.</li>
+  <li>Supports multiple connectivity protocols – RS485, Modbus (wired/wireless), GSM/GPRS, LoRaWAN, and NFC.</li>
+  <li>IP67/IP68-rated enclosure – Perfect for extreme weather and outdoor installations.</li>
+  <li>1:125 turndown ratio – Ideal for low flow residential and industrial scenarios.</li>
+  <li>Built-in data logger – Stores hourly data for 1440 hours, daily data for 460 days, and monthly data for 48 months.</li>
+  <li>Smart monitoring via NFC & mobile app – Access real-time readings, historical usage trends, and diagnostics with a tap.</li>
+</ul>
           )}
 
           {activeTab === "Technical data" && (
