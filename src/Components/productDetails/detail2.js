@@ -14,8 +14,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
   const images = [img1, img2, img3];
+  //  copy code from here
 
-  const ROTATE_MS = 2000; // change to 1500–3000 if you like
+  const ROTATE_MS = 2000;                   
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mainImage, setMainImage] = useState(images[0]);
@@ -125,7 +126,8 @@ function ProductDetail() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> 
+        
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
