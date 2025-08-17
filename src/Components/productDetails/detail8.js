@@ -169,74 +169,65 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters (d8) are precision-engineered sensors for high-accuracy liquid flow measurement in compact industrial setups</li>
-  <li>Ideal for chemical liquid monitoring, water purification, food processing, and medical equipment applications</li>
-  <li>Certified with RoHS, CE, and UKCA for compliance with international safety standards</li>
-  <li>Designed for industries across India with compact, maintenance-free operation</li>
-  <li>No moving parts and corrosion-resistant construction suitable for aggressive chemicals</li>
-  <li>Compatible with sodium hypochlorite, caustic soda, and coagulants</li>
-  <li>Perfect for water treatment plants, agricultural spraying systems, and factory wastewater management</li>
-</ul>
+                <section>
+  <h2>CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters</h2>
+  <p>
+    The CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters are precision-engineered sensors designed for high-accuracy liquid flow measurement in compact industrial setups. These micro-sized electromagnetic flow meters are ideal for chemical liquid monitoring, water purification, food processing, and medical equipment applications.
+  </p>
+  <p>
+    Certified with <strong>RoHS</strong>, <strong>CE</strong>, and <strong>UKCA</strong>, they ensure compliance with global safety standards, making them highly suitable for industries across India.
+  </p>
+  <p>
+    Built with no moving parts and a compact body, they provide maintenance-free operation and are compatible with corrosive chemicals like <em>sodium hypochlorite</em>, <em>caustic soda</em>, and <em>coagulants</em> — essential for water treatment plants, agriculture spraying systems, and factory wastewater management in India.
+  </p>
+</section>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
            <ul>
-  <li>Compact and micro-sized design — integrates seamlessly into tight machine layouts</li>
-  <li>No moving parts — enhances durability and minimizes maintenance</li>
-  <li>Chemical compatibility — suitable for corrosive solutions like sodium hypochlorite and caustic soda</li>
-  <li>High measurement accuracy — optimized for pulsation and small-flow rate monitoring</li>
-  <li>LED indicator (2-color) — enables intuitive status checks</li>
-  <li>Multiple output options — Unitpulse, High-density pulse, Warning, Switch</li>
-  <li>Global certifications — RoHS, CE, UKCA for industrial safety and reliability</li>
-  <li>Applications:
-    <ul>
-      <li><strong>Agricultural Use:</strong>
-        <ul>
-          <li>Pesticide spraying via drones or tractors</li>
-          <li>Milk feeding systems for calf rearing</li>
-        </ul>
-      </li>
-      <li><strong>Food Industry:</strong>
-        <ul>
-          <li>Vegetable washing and processing machines</li>
-          <li>Automatic beer and beverage dispensing systems</li>
-        </ul>
-      </li>
-      <li><strong>Medical & Laboratory:</strong>
-        <ul>
-          <li>Dialysis machine flow monitoring</li>
-          <li>Cleaning and sterilization equipment</li>
-          <li>Circulation monitoring for microscopes and chillers</li>
-        </ul>
-      </li>
-      <li><strong>Industrial & Utility:</strong>
-        <ul>
-          <li>3D metal printers — laser cooling flow measurement</li>
-          <li>Fuel cells and foam firefighting vehicles (CAFS)</li>
-          <li>Water purification plants and distribution reservoirs</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li><strong>Compact and micro-sized design:</strong> Easily integrates into tight machine layouts.</li>
+  <li><strong>No moving parts:</strong> Ensures durability and reduces maintenance costs.</li>
+  <li><strong>Chemical compatibility:</strong> Measures corrosive solutions (e.g., sodium hypochlorite, caustic soda).</li>
+  <li><strong>High measurement accuracy:</strong> Suitable for pulsation and small-flow rate monitoring.</li>
+  <li><strong>LED indicator:</strong> 2-color LED for status monitoring at a glance.</li>
+  <li><strong>Multiple output options:</strong> Unitpulse, High-density pulse, Warning, Switch.</li>
+  <li><strong>Global certifications:</strong> RoHS, CE, UKCA approved for industrial safety and reliability.</li>
+  <li><strong>Applications – Agricultural Use:</strong> Pesticide spraying via drones or tractors; Milk feeding systems for calf rearing.</li>
+  <li><strong>Applications – Food Industry:</strong> Vegetable washing and processing machines; Automatic beer and beverage dispensing systems.</li>
+  <li><strong>Applications – Medical & Laboratory:</strong> Dialysis machine flow monitoring; Cleaning and sterilization equipment; Circulation monitoring for microscopes and chillers.</li>
+  <li><strong>Applications – Industrial & Utility:</strong> 3D metal printers (laser cooling flow measurement); Fuel cells and foam firefighting vehicles (CAFS); Water purification plants and distribution reservoirs.</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-  <li>Pipe Range: DN5 - DN20mm</li>
-  <li>Straight Run: No straight run required</li>
-  <li>Features: Built-in flow rate recording & controlling function</li>
-  <li>Design: Compact and easy to install</li>
-  <li>Model-Specific Applications:
-    <ul>
-      <li><strong>VNS:</strong> Designed for Sodium Hypochlorite and Caustic Soda measurement</li>
-      <li><strong>CX:</strong> Ideal for coolant water in die-casting, injection molding, and welding machines</li>
-    </ul>
-  </li>
-</ul>
+           <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN5 – DN20 mm</td>
+    </tr>
+    <tr>
+      <td>Straight Run</td>
+      <td>No straight run required</td>
+    </tr>
+    <tr>
+      <td>Features</td>
+      <td>Built-in flow rate recording & controlling function</td>
+    </tr>
+    <tr>
+      <td>Design</td>
+      <td>Compact, easy to install</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

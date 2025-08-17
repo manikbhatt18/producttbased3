@@ -168,65 +168,122 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>The UF AV5500 from IOTAFLOW is a high-performance area-velocity ultrasonic flow meter, purpose-built to accurately measure flow in open channels, natural streams, stormwater drains, and partially-filled pipes—without requiring flumes or weirs.</li>
-  <li>This advanced system utilizes a submerged ultrasonic Doppler sensor to simultaneously measure velocity and level, calculating flow volume in real-time.</li>
-  <li>Ideal for wastewater, industrial effluent, stormwater monitoring, and irrigation flow measurement.</li>
-  <li>The UF AV5500 delivers CE, CSA, and UL-certified reliability in harsh field conditions.</li>
-</ul>
+                <section id="uf-av5500-overview">
+  <h2>UF AV5500 Area-Velocity Ultrasonic Flow Meter</h2>
+  <p>The <strong>UF AV5500</strong> from IOTAFLOW is a high-performance area-velocity ultrasonic flow meter, purpose-built to accurately measure flow in open channels, natural streams, stormwater drains, and partially-filled pipes—without requiring flumes or weirs.</p>
+  <p>This advanced system utilizes a submerged ultrasonic Doppler sensor to simultaneously measure velocity and level, calculating flow volume in real-time. Ideal for wastewater, industrial effluent, stormwater monitoring, and irrigation flow measurement, the UF AV5500 delivers <strong>CE, CSA, and UL-certified</strong> reliability in harsh field conditions.</p>
+</section>
 
-<h3>Target Applications</h3>
-<ul>
-  <li>🔹 Wastewater flow monitoring in sewer lines and treatment plants</li>
-  <li>🔹 Stormwater discharge measurement in municipal drainage systems</li>
-  <li>🔹 Effluent tracking in industrial process lines and outfalls</li>
-  <li>🔹 Irrigation and canal water flow measurement</li>
-  <li>🔹 Environmental stream flow studies and hydrological monitoring</li>
-  <li>🔹 Retrofit flow metering in existing gravity-fed and partially filled pipelines</li>
-  <li>🔹 Smart water data logging for regulatory reporting and analytics</li>
-</ul>
+<section id="uf-av5500-applications">
+  <h3>Target Applications</h3>
+  <ul>
+    <li>Wastewater flow monitoring in sewer lines and treatment plants</li>
+    <li>Stormwater discharge measurement in municipal drainage systems</li>
+    <li>Effluent tracking in industrial process lines and outfalls</li>
+    <li>Irrigation and canal water flow measurement</li>
+    <li>Environmental stream flow studies and hydrological monitoring</li>
+    <li>Retrofit flow metering in existing gravity-fed and partially filled pipelines</li>
+    <li>Smart water data logging for regulatory reporting and analytics</li>
+  </ul>
+</section>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-            <ul>
-  <li>Non-Contacting Doppler Ultrasonic Technology – Accurately measures level and velocity for open flow systems</li>
-  <li>Ideal for Partially Filled Pipes and Irregular Channels – Works with custom-shaped conduits and storm drains</li>
-  <li>No Flume or Weir Required – Simplifies installation, reduces civil work, and lowers cost</li>
-  <li>Advanced Data Logging – Built-in 26 million-point logger with USB data export</li>
-  <li>Weatherproof Enclosure (NEMA 4X / IP66) – Rugged design for outdoor use</li>
-  <li>Wide Velocity Range – Measures flow from 0.03 to 6.2 m/s, including reverse flow up to -1.5 m/s</li>
-  <li>Level Range – Handles water levels from 1 inch (25.4 mm) up to 15 ft (4.5 m)</li>
-  <li>Multiple Outputs – 3 x 4-20 mA, Modbus RTU, USB, 2 x Control Relays</li>
-  <li>CE, CSA, UL/EN 61010-1 Certified – Globally compliant and safety-tested</li>
-  <li>Intrinsic Safety Options Available – For use in hazardous or classified environments</li>
-  <li>No Moving Parts – Zero maintenance and resistance to fouling and corrosion</li>
-  <li>Temperature Compensated Readings – Reliable in varying field temperatures</li>
-</ul>
+            <section id="uf-av5500-key-features">
+  
+  <ul>
+    <li><strong>Non-Contacting Doppler Ultrasonic Technology</strong> – Accurately measures level and velocity for open flow systems</li>
+    <li><strong>Ideal for Partially Filled Pipes and Irregular Channels</strong> – Works with custom-shaped conduits and storm drains</li>
+    <li><strong>No Flume or Weir Required</strong> – Simplifies installation, reduces civil work, and lowers cost</li>
+    <li><strong>Advanced Data Logging</strong> – Built-in 26 million-point logger with USB data export</li>
+    <li><strong>Weatherproof Enclosure (NEMA 4X / IP66)</strong> – Rugged design for outdoor use</li>
+    <li><strong>Wide Velocity Range</strong> – Measures flow from 0.03 to 6.2 m/s, including reverse flow up to -1.5 m/s</li>
+    <li><strong>Level Range</strong> – Handles water levels from 1 inch (25.4 mm) up to 15 ft (4.5 m)</li>
+    <li><strong>Multiple Outputs</strong> – 3 × 4-20 mA, Modbus RTU, USB, 2 × Control Relays</li>
+    <li><strong>CE, CSA, UL/EN 61010-1 Certified</strong> – Globally compliant and safety-tested</li>
+    <li><strong>Intrinsic Safety Options Available</strong> – For use in hazardous or classified environments</li>
+    <li><strong>No Moving Parts</strong> – Zero maintenance and resistance to fouling and corrosion</li>
+    <li><strong>Temperature Compensated Readings</strong> – Reliable in varying field temperatures</li>
+  </ul>
+</section>
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-  <li><strong>Ideal for Open Channels & Partially Filled Pipes</strong> – Measures flow velocity and level simultaneously</li>
-  <li>Sensor cable: 7.6 m / 25 ft submersible, shielded 3-coaxial pairs</li>
-  <li>Flow rate range: 0.1 to 20 ft/sec, with reverse flow detection up to -5 ft/sec</li>
-  <li>Accuracy (Velocity): ±2% of reading or ±0.04 ft/sec (whichever is greater)</li>
-  <li>Accuracy (Level): ±0.25% of reading or ±0.08’’ (whichever is greater)</li>
-  <li>Enclosure: Watertight, NEMA4X (IP66) polycarbonate</li>
-  <li>Totalizer: 14-digit display</li>
-  <li>Calibration: Built-in 5-key programmer</li>
-  <li>Outputs:
-    <ul>
-      <li>Three isolated 4-20mA / 0-5V for Flow, Level, and Velocity</li>
-      <li>2 control relays – 5 amp, SPDT, programmable for flow proportional pulse output, flow and/or level alarm</li>
-    </ul>
-  </li>
-  <li>Datalogger: 128 MB storage capacity (6.5 million data points)</li>
-  <li>Power input: 100–240 VAC, 50/60 Hz, 10 VA maximum</li>
-  <li>Certifications: CE, UL/SCA/EN 61010-1</li>
-  <li><em>Note:</em> Portable Doppler Effect (D550 Series) also available</li>
-</ul>
+            <section id="uf-av5500-specifications">
+  <h3>UF AV5500 Technical Specifications</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Application</td>
+        <td>Ideal for Open Channels & Partially Filled Pipes</td>
+      </tr>
+      <tr>
+        <td>Measurement</td>
+        <td>Measures flow Velocity and Level simultaneously</td>
+      </tr>
+      <tr>
+        <td>Sensor Cable</td>
+        <td>7.6 m / 25 ft submersible, shielded 3-coaxial pairs</td>
+      </tr>
+      <tr>
+        <td>Flow Rate Range</td>
+        <td>0.1 to 20 ft/sec and reverse flow to -5 ft/sec</td>
+      </tr>
+      <tr>
+        <td>Accuracy (Velocity)</td>
+        <td>± 2% of reading or ± 0.04 ft/sec (whichever is greater)</td>
+      </tr>
+      <tr>
+        <td>Accuracy (Level)</td>
+        <td>± 0.25% of reading or ± 0.08’’ (whichever is greater)</td>
+      </tr>
+      <tr>
+        <td>Enclosure</td>
+        <td>Watertight, NEMA4X (IP66) polycarbonate</td>
+      </tr>
+      <tr>
+        <td>Totalizer</td>
+        <td>14 Digit</td>
+      </tr>
+      <tr>
+        <td>Calibration</td>
+        <td>Built-in 5-key programmer</td>
+      </tr>
+      <tr>
+        <td>Outputs</td>
+        <td>Three isolated 4-20mA / 0-5V (Flow, Level and Velocity)</td>
+      </tr>
+      <tr>
+        <td>Control Relays</td>
+        <td>2 relays – 5 amp, SPDT – programmable for flow pulse/alarms</td>
+      </tr>
+      <tr>
+        <td>Datalogger</td>
+        <td>128 Megabyte storage (6.5 million points)</td>
+      </tr>
+      <tr>
+        <td>Power Input</td>
+        <td>100-240VAC, 50/60Hz, 10 VA max</td>
+      </tr>
+      <tr>
+        <td>Certifications</td>
+        <td>CE, UL/SCA/EN 61010-1</td>
+      </tr>
+      <tr>
+        <td>Note</td>
+        <td>Portable Doppler Effect (D550 Series) also available</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
           )}
 
           {activeTab === "Downloads" && (

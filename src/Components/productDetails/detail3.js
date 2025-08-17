@@ -12,7 +12,7 @@ import img5 from "../../images/p3e.png";
 import related1 from "../../images/p1a.png";
 import related2 from "../../images/p2a.png";
 import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p4a.jpg";
+import related4 from "../../images/p5a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -66,7 +66,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/products" },
+    { img: related1, title: "Ultrimis™ Domestic Ultrasonic Flow Meters", link: "/products" },
     {
       img: related2,
       title: "INLINE ULTRASONIC ROBUST Series",
@@ -206,87 +206,100 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
             <ul>
-  <li>Enhanced accuracy using four-beam sensing across multiple insertion points</li>
-  <li>Non-intrusive design minimizes obstruction and maintains fluid integrity</li>
-  <li>Compatible with DN15 mm to DN6000 mm pipes across metallic, plastic, and composite materials</li>
-  <li>Digital signal processing ensures noise immunity, stability, and low drift</li>
-  <li>Accuracy of ±1.5% with ±0.1% repeatability—even under turbulent flow conditions</li>
-  <li>Internal logging retains hourly, daily, and monthly data up to 1 year without external power</li>
-  <li>Industrial outputs include RS-232/RS-485 (Modbus), 4–20 mA analog, pulse output, optional Ethernet</li>
-  <li>SS316 stainless steel wetted parts; sensor heads rated IP67, control unit IP54</li>
-  <li>Operates in ambient temperatures from -40°C to +65°C and liquid temperatures up to +150°C (extendable to +350°C)</li>
-  <li>Password-protected settings and secure data access</li>
-  <li>Supports volume-based batching, start-stop batching, and alarm diagnostics</li>
-  <li>Nominal pipe diameter range: DN15 to DN6000</li>
-  <li>Measurement method: Transit Time</li>
-  <li>Channel options: Single, Dual, and Four Track (1 to 4)</li>
-  <li>Clamp-on PEA accuracy:
-    <ul>
-      <li>Single-beam: ±2%</li>
-      <li>Two-beam: ±1%</li>
-      <li>Four-beam: ±0.5%</li>
-    </ul>
-  </li>
-  <li>Flow velocity range: 0.1–20 m/s</li>
-  <li>Fluid temperature range: -30°C to +160°C</li>
-  <li>Transmitter ambient temperature range: 0°C to +50°C</li>
-  <li>Pipeline pressure: 2.5 MPa / 25 bar</li>
-  <li>Protection rating:
-    <ul>
-      <li>Transmitter: IP54</li>
-      <li>Transducers: IP68</li>
-    </ul>
-  </li>
-  <li>Measurement data logging:
-    <ul>
-      <li>Hourly log: 1440 records</li>
-      <li>Daily log: 60 records</li>
-      <li>Monthly log: Programmable up to 14,400 records</li>
-      <li>Batching log: 512 records</li>
-    </ul>
-  </li>
-  <li>Power supply: 24V DC</li>
-  <li>Power consumption: &lt;12W</li>
-  <li>Transmitter weight: &lt;3 kg</li>
-  <li>Transmitter dimensions: 250 × 132 × 90 mm</li>
+  <li><strong>4-Channel Measurement:</strong> Enhanced accuracy using four-beam sensing across multiple insertion points for precise volumetric flow readings.</li>
+  <li><strong>Non-Intrusive, Low-Pressure Loss Design:</strong> Insertion sensors minimize obstruction and maintain fluid integrity—ideal for process-critical pipelines.</li>
+  <li><strong>Wide Diameter Compatibility:</strong> Supports DN15 mm to DN6000 mm pipes across metallic, plastic, and composite materials.</li>
+  <li><strong>Advanced DSP Technology:</strong> Robust digital signal processing ensures noise immunity, stable readings, and low drift performance.</li>
+  <li><strong>High Accuracy & Repeatability:</strong> Achieves ±1.5% accuracy with ±0.1% repeatability, even under turbulent or variable flow conditions.</li>
+  <li><strong>Data Logging & Retention:</strong> Internal storage logs hourly, daily, and monthly data—preserved for up to 1 year without external power.</li>
+  <li><strong>Industrial Outputs:</strong> RS-232/RS-485 (Modbus), 4–20 mA analog, pulse output, and optional Ethernet—ready for SCADA, PLC, and BMS integration.</li>
+  <li><strong>Durable Build:</strong> Wetted parts made from SS316 stainless steel; sensor heads rated IP67, control unit IP54.</li>
+  <li><strong>Extreme Environment Ready:</strong> Operates between -40°C to +65°C ambient and -30°C to +150°C liquid temperature (extendable to +350°C).</li>
+  <li><strong>Secure Configuration:</strong> Password-protected settings and data protection from unauthorized access.</li>
+  <li><strong>Batching and Alarm Modes:</strong> Supports volume-based batching, start-stop batching, and real-time diagnostics with alarm logging.</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-  <li>Nominal pipeline diameter: DN15 to DN6000</li>
-  <li>Measurement principle: Transit Time</li>
-  <li>Measuring channels: 1 to 4 (Single Track, Dual Track, Four Track)</li>
-  <li>Clamp-on PEA accuracy at 1:100 flow range:
-    <ul>
-      <li>Single-beam: ±2%</li>
-      <li>Two-beam: ±1%</li>
-      <li>Four-beam: ±0.5%</li>
-    </ul>
-  </li>
-  <li>Flow velocity range: 0.1–20 m/s</li>
-  <li>Fluid temperature range: -30°C to +160°C</li>
-  <li>Transmitter ambient temperature max: 0°C to +50°C</li>
-  <li>Pipeline pressure rating: 2.5 MPa / 25 bar</li>
-  <li>Protection class:
-    <ul>
-      <li>Transmitter: IP54</li>
-      <li>Transducers: IP68</li>
-    </ul>
-  </li>
-  <li>Data logging capacity:
-    <ul>
-      <li>Hourly log: 1440 records</li>
-      <li>Daily log: 60 records</li>
-      <li>Monthly log: Programmable up to 14,400 records</li>
-      <li>Batching log: 512 records</li>
-    </ul>
-  </li>
-  <li>Power supply: 24V DC</li>
-  <li>Power consumption: &lt;12W</li>
-  <li>Transmitter weight: &lt;3 kg</li>
-  <li>Transmitter dimensions: 250 × 132 × 90 mm</li>
-</ul>
+           <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nominal Diameter of the Pipeline</td>
+      <td>DN 15–6000</td>
+    </tr>
+    <tr>
+      <td>Measurement Principle</td>
+      <td>Transit Time</td>
+    </tr>
+    <tr>
+      <td>Measuring Channels</td>
+      <td>1 to 4 (Single Track | Dual Track | Four Track)</td>
+    </tr>
+    <tr>
+      <td>Clamp-on PEA Accuracy (%)</td>
+      <td>
+        <ul>
+          <li>Single-beam sounding: ±2%</li>
+          <li>Two-beam sounding: ±1%</li>
+          <li>Four-beam sounding: ±0.5%</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Flow Velocity Range</td>
+      <td>0.1 – 20 m/s</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature Range</td>
+      <td>-30°C to +160°C</td>
+    </tr>
+    <tr>
+      <td>Ambient Temperature for Transmitter</td>
+      <td>0°C to +50°C (Maximum)</td>
+    </tr>
+    <tr>
+      <td>Pipeline Pressure</td>
+      <td>2.5 MPa / 25 bar</td>
+    </tr>
+    <tr>
+      <td>Transmitter/Transducers Protection</td>
+      <td>IP54 / IP68</td>
+    </tr>
+    <tr>
+      <td>Measurement Data Logging</td>
+      <td>
+        <ul>
+          <li>Hourly log: 1440 records</li>
+          <li>Daily log: 60 records</li>
+          <li>Monthly log: Programmable up to 14,400 records</li>
+          <li>Batching: 512 records</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>24V DC</td>
+    </tr>
+    <tr>
+      <td>Power Consumption</td>
+      <td>&lt;12W</td>
+    </tr>
+    <tr>
+      <td>Transmitter Weight</td>
+      <td>&lt;3 kg</td>
+    </tr>
+    <tr>
+      <td>Transmitter Dimensions</td>
+      <td>250 × 132 × 90 mm</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

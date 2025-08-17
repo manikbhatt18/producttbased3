@@ -11,7 +11,7 @@ import img5 from "../../images/p4e.png";
 import related1 from "../../images/p1a.png";
 import related2 from "../../images/p2a.png";
 import related3 from "../../images/p3a.jpg";
-import related4 from "../../images/p4a.jpg";
+import related4 from "../../images/p5a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -65,7 +65,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/products" },
+    { img: related1, title: "Ultrimis™ Domestic Ultrasonic Flow Meters", link: "/products" },
     {
       img: related2,
       title: "INLINE ULTRASONIC ROBUST Series",
@@ -170,85 +170,136 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>High-performance, non-invasive flow meter for industrial liquid measurement</li>
-  <li>Utilizes advanced transit-time ultrasonic technology for accurate bidirectional flow data</li>
-  <li>No pipe cutting, pressure drop, or contamination risk—perfect for fixed installations</li>
-  <li>Compatible with fluids like hot/cold water, wastewater, acids, alkalis, and liquid foods</li>
-  <li>Ideal for chemical processing, municipal utilities, power generation, and food & beverage industries</li>
-  <li>Available in 1, 2, and 4-channel configurations:
-    <ul>
-      <li>1-Channel (Single Track): Compact, general-purpose monitoring</li>
-      <li>2-Channel (Dual Track): Enhanced signal stability</li>
-      <li>4-Channel (Four Track): High-precision for large-diameter pipelines</li>
-    </ul>
-  </li>
-  <li>Optimized for non-intrusive installation—ideal for OEM integration and multi-line systems</li>
-  <li>Maintenance-free, accurate, cost-effective, and simple to install</li>
-</ul>
+                <section id="uf-1500-overview">
+  <h2>Unlock Precision with Non-Intrusive Flow Monitoring</h2>
+  <p>The <strong>UF-1500 Clamp-On Ultrasonic Flow Meter</strong> is a high-performance, non-invasive solution engineered for accurate and reliable liquid flow measurement in industrial environments. Utilizing advanced transit-time ultrasonic technology, this fixed installation meter delivers precise bidirectional flow data without disrupting existing pipelines—no pipe cutting, pressure drop, or contamination risk.</p>
+  <p>Designed for process fluids including hot and cold water, wastewater, acids, alkalis, and liquid foods, the UF-1500 excels in chemical processing, municipal utilities, power generation, and food & beverage industries.</p>
+</section>
 
-<ul>
-  <li>Water and Wastewater Treatment Plants</li>
-  <li>Chemical, Petrochemical, and Pharmaceutical Industries</li>
-  <li>Food and Beverage Processing (CIP/SIP compliant)</li>
-  <li>HVAC and District Energy Systems</li>
-  <li>Power Generation and Thermal Utilities</li>
-  <li>Oil & Gas Pipelines and Hazardous Zones</li>
-  <li>OEM Machine Integration and Automation Systems</li>
-</ul>
+<section id="track-configurations">
+  <h3>Available in Multiple Track Configurations</h3>
+  <ul>
+    <li><strong>1-Channel (Single Track):</strong> Compact or general-purpose flow monitoring</li>
+    <li><strong>2-Channel (Dual Track):</strong> Enhanced signal strength and measurement stability</li>
+    <li><strong>4-Channel (Four Track):</strong> High-precision, high-volume, or large-diameter pipeline applications</li>
+  </ul>
+  <p>Each configuration is optimized for non-intrusive installation, offering flexibility for OEM integration, multi-line systems, or redundant measurement setups.</p>
+</section>
+
+<section id="why-choose-uf1500">
+  <h3>Why Choose the UF-1500 Clamp-On Ultrasonic Flow Meter?</h3>
+  <p>Boost your system’s efficiency with a maintenance-free, accurate, and cost-effective flow measurement device. This plug-and-play system is the preferred choice for engineers seeking precision, flexibility, and minimal installation overhead.</p>
+</section>
+
+<section id="applications">
+  <h3>Applications Across Industries</h3>
+  <ul>
+    <li>Water and Wastewater Treatment Plants</li>
+    <li>Chemical, Petrochemical, and Pharmaceutical Industries</li>
+    <li>Food and Beverage Processing (CIP/SIP compliant)</li>
+    <li>HVAC and District Energy Systems</li>
+    <li>Power Generation and Thermal Utilities</li>
+    <li>Oil & Gas Pipelines and Hazardous Zones</li>
+    <li>OEM Machine Integration and Automation Systems</li>
+  </ul>
+</section>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
             <ul>
-  <li>Non-invasive measurement: Clamp-on transducers eliminate the need for pipe penetration—ideal for sanitary and corrosive environments</li>
-  <li>Flexible track configurations: Single Track (1-Channel), Dual Track (2-Channel), and Four Track (4-Channel) options for enhanced accuracy and application versatility</li>
-  <li>Supports pipe sizes from DN15 to DN6000—suited for small to very large industrial pipelines</li>
-  <li>Bidirectional flow capability with high accuracy up to ±1%</li>
-  <li>Advanced output options: 4–20 mA analog, pulse, Hart protocol, RS-232/RS-485 interfaces—ready for SCADA and automation</li>
-  <li>Robust design: IP65-rated stainless steel enclosure resistant to water and dust—ideal for field conditions</li>
-  <li>High sensitivity: Measures flow velocities from 0.01 m/s to 20 m/s</li>
-  <li>Internal memory for measurement history, batching control, alarm monitoring, and secure parameter protection</li>
+  <li><strong>Non-Invasive Measurement:</strong> Clamp-on transducers eliminate the need for pipe penetration—ideal for sanitary and corrosive environments.</li>
+  <li><strong>Flexible Track Configurations:</strong> Available in Single Track (1-Channel), Dual Track (2-Channel), and Four Track (4-Channel) configurations for enhanced measurement accuracy and application flexibility across different pipe conditions and diameters. Ideal for industrial, utility, and OEM flow monitoring systems.</li>
+  <li><strong>Wide Diameter Compatibility:</strong> Models support pipe sizes from DN15 to DN6000, accommodating small to very large industrial pipelines.</li>
+  <li><strong>Bidirectional Flow Capability:</strong> Measures flow in both forward and reverse directions with high accuracy up to ±1%.</li>
+  <li><strong>Advanced Output Options:</strong> Includes 4–20 mA analog output, pulse output, HART protocol support, and RS-232/RS-485 digital interfaces for seamless integration into SCADA and automation systems.</li>
+  <li><strong>Robust Design:</strong> IP65-rated stainless steel enclosure resists water and dust; ideal for harsh field conditions.</li>
+  <li><strong>High Sensitivity:</strong> Measures flow at velocities as low as 0.01 m/s, scalable up to 20 m/s.</li>
+  <li><strong>Data Logging & Configuration:</strong> Internal memory for measurement history, batching control, alarm monitoring, and parameter protection.</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-  <li>Nominal pipeline diameter: DN15 to DN6000</li>
-  <li>Measurement principle: Transit Time</li>
-  <li>V206 Probe: Suitable for difficult applications</li>
-  <li>Measuring channels: 1 to 4 (Single Track, Dual Track, Four Track)</li>
-  <li>Clamp-on PEA accuracy at 1:100 flowrate range:
-    <ul>
-      <li>Single-beam sounding: ±2%</li>
-      <li>Two-beam sounding: ±1%</li>
-      <li>Four-beam sounding: ±0.5%</li>
-    </ul>
-  </li>
-  <li>Flow velocity range: 0.1–20 m/s</li>
-  <li>Fluid temperature range: -30°C to +160°C</li>
-  <li>Transmitter ambient temperature: 0°C to +50°C</li>
-  <li>Pipeline pressure rating: 2.5 MPa / 25 bar</li>
-  <li>Protection class:
-    <ul>
-      <li>Transmitter: IP54</li>
-      <li>Transducers: IP68</li>
-    </ul>
-  </li>
-  <li>Measurement data logging capacity:
-    <ul>
-      <li>Hourly log: 1440 records</li>
-      <li>Daily log: 60 records</li>
-      <li>Monthly log: Programmable up to 14,400 records</li>
-      <li>Batching log: 512 records</li>
-    </ul>
-  </li>
-  <li>Power supply: 24V DC</li>
-  <li>Power consumption: &lt;12W</li>
-  <li>Transmitter weight: &lt;3 kg</li>
-  <li>Transmitter dimensions: 250 × 132 × 90 mm</li>
-</ul>
+            <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nominal Diameter of the Pipeline</td>
+      <td>DN 15–6000</td>
+    </tr>
+    <tr>
+      <td>Measurement Principle</td>
+      <td>Transit Time</td>
+    </tr>
+    <tr>
+      <td>Measuring Channels</td>
+      <td>1 to 4 (Single Track | Dual Track | Four Track)</td>
+    </tr>
+    <tr>
+      <td>Clamp-on PEA Accuracy (%)</td>
+      <td>
+        <ul>
+          <li>Single-beam sounding: ±2%</li>
+          <li>Two-beam sounding: ±1%</li>
+          <li>Four-beam sounding: ±0.5%</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Flow Velocity Range</td>
+      <td>0.1 – 20 m/s</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature Range</td>
+      <td>-30°C to +160°C</td>
+    </tr>
+    <tr>
+      <td>Ambient Temperature for Transmitter</td>
+      <td>0°C to +50°C (Maximum)</td>
+    </tr>
+    <tr>
+      <td>Pipeline Pressure</td>
+      <td>2.5 MPa / 25 bar</td>
+    </tr>
+    <tr>
+      <td>Transmitter/Transducers Protection</td>
+      <td>IP54 / IP68</td>
+    </tr>
+    <tr>
+      <td>Measurement Data Logging</td>
+      <td>
+        <ul>
+          <li>Hourly log: 1440 records</li>
+          <li>Daily log: 60 records</li>
+          <li>Monthly log: Programmable up to 14,400 records</li>
+          <li>Batching: 512 records</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>24V DC</td>
+    </tr>
+    <tr>
+      <td>Power Consumption</td>
+      <td>&lt;12W</td>
+    </tr>
+    <tr>
+      <td>Transmitter Weight</td>
+      <td>&lt;3 kg</td>
+    </tr>
+    <tr>
+      <td>Transmitter Dimensions</td>
+      <td>250 × 132 × 90 mm</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

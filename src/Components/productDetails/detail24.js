@@ -143,9 +143,9 @@ function ProductDetail() {
             <p className="text-muted">Rotameters</p>
             <h3 className="fw-semibold">Metal tube Rotameters (Variable Area measurement) </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;Rugged metal-tube rotameter for precise variable area flow measurement</li>
-              <li className="mb-2">&#9679;Works with gas, liquid & steam; ideal for harsh, high-pressure environments</li>
-              <li className="mb-2">&#9679;Multiple material, connection & output options; customizable for your needs</li>
+              <li className="mb-2">&#9679;IOTAFLOW Metal Tube Rotameter – High-Pressure Variable Area Flow Meter</li>
+              <li className="mb-2">&#9679;Durable metal tube rotameter for process water, steam, compressed air, and chemicals. </li>
+              <li className="mb-2">&#9679;Made in India for reliable industrial and utility flow measurement.</li>
               
             
             </ul>
@@ -179,16 +179,42 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li>IOTAFLOW Metal Tube Rotameter employs the variable area principle for dependable and accurate flow measurement.</li>
-  <li>Engineered for demanding process industry applications involving gas, liquid, or steam.</li>
-  <li>Features a robust metal housing and magnetically coupled pointer system, eliminating sealed shaft requirements for enhanced durability.</li>
-  <li>Delivers stable performance under high-pressure and high-temperature conditions.</li>
-  <li>Modular configuration supports multiple wetted material options: SS316, PTFE, and Plastic.</li>
-  <li>Compatible with diverse connection types: flange, tri-clamp, and sanitary fittings.</li>
-  <li>Suitable across chemical, food & beverage, and pharmaceutical sectors.</li>
-  <li>Available with explosion-proof configurations, signal output (4–20 mA), and switch-based alarm capabilities.</li>
-  <li>IP65/IP67-rated housing supports deployment in both general-purpose and hazardous environments.</li>
-  <li>Designed for applications where accuracy, flexibility, and resilience are critical.</li>
+  <li><strong>Product Name:</strong> IOTAFLOW Metal Tube Rotameter Series</li>
+  <li><strong>Measurement Principle:</strong> Variable area flow measurement using a tapered metal tube and float</li>
+  <li><strong>Construction:</strong> Robust SS316 stainless steel body with optional PTFE lining for corrosive media</li>
+  <li><strong>Connection Types:</strong> Flanged, sanitary, and tri-clamp options for flexible installation</li>
+  <li><strong>Operating Conditions:</strong> Suitable for high pressure (up to 100 bar) and high temperature (up to 300°C)</li>
+  <li><strong>Indication & Output:</strong> Magnetic coupling for leak-free indication; optional 4–20 mA transmitters and switch outputs</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li><strong>Industrial & Process Industries:</strong>
+        <ul>
+          <li>Chemical processing — Monitoring flows of acids, bases, solvents, and reagents in chemical plants and laboratories</li>
+          <li>Oil and gas sectors — Measuring fuels, lubricants, condensate, and vented gases under high temperature and pressure</li>
+          <li>High-pressure offshore systems — Used on oil platforms for drilling mud, hydraulic fluids, and coolant metering</li>
+        </ul>
+      </li>
+      <li><strong>Utilities & Water Treatment:</strong>
+        <ul>
+          <li>Water and wastewater plants — Measuring raw and treated water, chemical dosing flows, and air/gas lines</li>
+          <li>Power generation — Monitoring boiler feedwater, cooling fluid, and steam flows in thermal and renewable stations</li>
+        </ul>
+      </li>
+      <li><strong>Pharmaceutical, Food & Beverage:</strong>
+        <ul>
+          <li>Pharma manufacturing — Measuring flows of pure water, solvents, and reagents in sterile environments</li>
+          <li>Food and beverage industry — Ingredient dosing, syrup and oil flow control, and sanitary process monitoring</li>
+        </ul>
+      </li>
+      <li><strong>Specialty & Advanced Applications:</strong>
+        <ul>
+          <li>Semiconductor fabrication — Monitoring specialty gases and ultra-pure fluids in cleanrooms and labs</li>
+          <li>Research & development — Pilot plants, R&D flow validation, and safe handling of variable or corrosive fluids</li>
+          <li>Transport systems — Regulating LNG vapor flow during regasification and loading/unloading operations</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
               </div>
@@ -197,35 +223,105 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
 <ul>
- 
+  <li><strong>Product Name:</strong> IOTAFLOW Metal Tube Rotameter Series</li>
+  <li><strong>Measurement Principle:</strong> Variable area flow measurement using a tapered metal tube and float</li>
+  <li><strong>Media Compatibility:</strong> Measures liquids, gases, and steam with high accuracy (±2% FS, optional ±1.6% FS)</li>
+  <li><strong>Construction:</strong> Rugged SS316 stainless steel body with optional PTFE lining for corrosive media</li>
+  <li><strong>Flow Range:</strong> 0.1 Nm³/h to 450 Nm³/h for air; 30 L/h to 150,000 L/h for water</li>
+  <li><strong>Operating Temperature:</strong> Handles fluid temperatures up to 300°C</li>
+  <li><strong>Operating Pressure:</strong> Standard up to 40 kg/cm²; optional up to 100 kg/cm²</li>
+  <li><strong>Indication System:</strong> Magnetic coupling ensures no direct contact between indicator and process fluid</li>
+  <li><strong>Output Options:</strong> Micro-switch, inductive alarm, and 4–20 mA transmitter for control integration</li>
+  <li><strong>Housing Protection:</strong> IP65/IP67 rated; optional explosion-proof configuration</li>
+  <li><strong>Mounting Lengths:</strong> Standard 250 mm; explosion-proof version 350 mm</li>
+  <li><strong>Connection Types:</strong> Flanged, tri-clamp, sanitary, and threaded options available</li>
+  <li><strong>Fluid Cleanliness:</strong> Suitable for clean or slightly dirty fluids</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li><strong>Industrial & Process Industries:</strong>
+        <ul>
+          <li>Chemical processing — Acids, bases, solvents, and reagents</li>
+          <li>Oil and gas — Fuels, lubricants, condensate, and vented gases</li>
+          <li>Offshore systems — Drilling mud, hydraulic fluids, and coolants</li>
+        </ul>
+      </li>
+      <li><strong>Utilities & Water Treatment:</strong>
+        <ul>
+          <li>Water and wastewater — Raw water, chemical dosing, and air/gas lines</li>
+          <li>Power generation — Boiler feedwater, cooling fluids, and steam</li>
+        </ul>
+      </li>
+      <li><strong>Pharmaceutical, Food & Beverage:</strong>
+        <ul>
+          <li>Pharma — Pure water, solvents, and sterile reagents</li>
+          <li>Food and beverage — Ingredient dosing and sanitary flow control</li>
+        </ul>
+      </li>
+      <li><strong>Specialty & Advanced Applications:</strong>
+        <ul>
+          <li>Semiconductor — Specialty gases and ultra-pure fluids</li>
+          <li>R&D — Pilot plants and corrosive fluid validation</li>
+          <li>Transport — LNG vapor flow regulation during regasification</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><strong>Material:</strong> Aluminum alloy case with paint</li>
-  <li><strong>Body Wetted Parts:</strong> SS316, PTFE lined, plastic (others on request)</li>
-  <li><strong>Indication:</strong> Magnetic coupling (non-sealed)</li>
-  <li><strong>Connection Types:</strong> Flange type, Trip Clamp, Sanitary (others on request)</li>
-  <li><strong>Temperature:</strong> 200℃ (300℃ optional)</li>
-  <li><strong>Housing Protection:</strong> IP65/IP67 or Explosion Proof</li>
-  <li><strong>Explosion Proof Classification:</strong> 
-    <ul>
-      <li>CLASS I, GROUPS B, C & D</li>
-      <li>CLASS II, GROUPS E, F & G</li>
-      <li>NEMA 4, 7, 9</li>
-    </ul>
-  </li>
-  <li><strong>Accuracy:</strong> ±2% FS (±1.6% FS optional)</li>
-  <li><strong>Maximum Pressure:</strong> 40 kg/cm² standard (option up to 100 kg/cm²)</li>
-  <li><strong>Optional Switches:</strong>
-    <ul>
-      <li>Micro Switch: 3A/250VAC, 5A/30VDC, 0.4A/125VDC</li>
-      <li>Adjustable inductive alarm switch</li>
-      <li>4–20 mA two-wire analog output</li>
-    </ul>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Outer Casing Material</td>
+      <td>High-strength aluminium alloy with corrosion-resistant protective coating</td>
+    </tr>
+    <tr>
+      <td>Body Wetted Parts</td>
+      <td>SS316 stainless steel, PTFE-lined, or industrial-grade plastic (custom materials available on request)</td>
+    </tr>
+    <tr>
+      <td>Flow Indication Method</td>
+      <td>Magnetic coupling transmission to indicator; eliminates direct process contact for enhanced safety</td>
+    </tr>
+    <tr>
+      <td>Connection Types</td>
+      <td>Flanged (ANSI/DIN), Tri-Clamp, Sanitary; custom connections available on request</td>
+    </tr>
+    <tr>
+      <td>Operating Temperature</td>
+      <td>Standard: up to 200°C; High-temperature version: up to 300°C</td>
+    </tr>
+    <tr>
+      <td>Housing Protection Rating</td>
+      <td>IP65 / IP67 weatherproof; optional explosion-proof enclosure</td>
+    </tr>
+    <tr>
+      <td>Explosion-Proof Classification</td>
+      <td>Class I (Groups B, C & D), Class II (Groups E, F & G); NEMA 4, 7, 9 compliant</td>
+    </tr>
+    <tr>
+      <td>Measurement Accuracy</td>
+      <td>±2% of full scale; optional high-precision ±1.6% FS</td>
+    </tr>
+    <tr>
+      <td>Maximum Operating Pressure</td>
+      <td>Standard: 40 kg/cm² (4 MPa); High-pressure version: up to 100 kg/cm² (10 MPa)</td>
+    </tr>
+    <tr>
+      <td>Output & Alarm Options</td>
+      <td>
+        Micro-switch (3A/250VAC, 5A/30VDC, 0.4A/125VDC); adjustable inductive alarm switch; 4–20 mA two-wire analog transmitter
+      </td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

@@ -175,28 +175,22 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-  <li><strong>Ultrasonic Air Flow Meter (TRX/TRZ Series)</strong> — Accurate, efficient, maintenance-free solution</li>
-  <li>High-precision, non-invasive ultrasonic sensing for compressed air and industrial gas applications</li>
-  <li>Engineered for long-term stability with zero pressure drop</li>
-  <li>Exceptional resistance to oil, moisture, and dust</li>
-  <li>Optimized for demanding production environments</li>
-</ul>
-
-<h3>📈 Applications</h3>
-<ul>
-  <li>Compressed air energy audits</li>
-  <li>Factory air leakage detection systems</li>
-  <li>Industrial gas consumption monitoring</li>
-  <li>HVAC and pneumatic system optimization</li>
-  <li>Multi-factory air transfer analysis</li>
-</ul>
-
-<h3>🔑 Why Choose the TRX Ultrasonic Air Flow Meter?</h3>
-<ul>
-  <li>Reduces compressed air costs and supports predictive maintenance</li>
-  <li>Monitors compressor efficiency in real time</li>
-  <li>Offers unmatched performance, reliability, and cost-efficiency</li>
-  <li>No system interruption or pressure loss during operation</li>
+  <li><strong>Product:</strong> Ultrasonic Air Flow Meter (TRX/TRZ Series)</li>
+  <li><strong>Tagline:</strong> Accurate. Efficient. Maintenance-Free.</li>
+  <li><strong>Description:</strong> High-precision, non-invasive flow measurement solution for compressed air and industrial gas applications</li>
+  <li><strong>Technology:</strong> Advanced ultrasonic sensing for long-term stability and zero pressure drop</li>
+  <li><strong>Environmental Resistance:</strong> Exceptional tolerance to oil, moisture, and dust</li>
+  <li><strong>Use Case:</strong> Ideal for demanding production environments</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li>Compressed air energy audits</li>
+      <li>Factory air leakage detection systems</li>
+      <li>Industrial gas consumption monitoring</li>
+      <li>HVAC and pneumatic system optimization</li>
+      <li>Multi-factory air transfer analysis</li>
+    </ul>
+  </li>
+  <li><strong>Why Choose TRX:</strong> Enables cost reduction, compressor efficiency monitoring, and predictive maintenance—without system interruptions or pressure loss</li>
 </ul>
               </div>
             </div>
@@ -205,28 +199,63 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
-  <li><strong>No Pressure Loss:</strong> Clear flow path and no moving parts ensure zero pressure drop and energy loss for optimal system efficiency</li>
-  <li><strong>Long-Term Accuracy & Maintenance-Free:</strong> High-accuracy measurements with no recalibration, filter changes, or maintenance for up to 10 years</li>
-  <li><strong>Exceptional Durability:</strong> Reliable operation in contaminated air lines, resistant to oil mist, moisture, and dust</li>
-  <li><strong>Leak Detection & Low Flow Sensitivity:</strong> Wide turndown ratio (1:60) enables precise detection of air leaks and low flow for energy savings</li>
-  <li><strong>Reverse Flow Measurement:</strong> Supports bi-directional flow for loop piping and multi-factory air distribution systems</li>
-  <li><strong>Multiple Gas Compatibility:</strong> Works with air, nitrogen, and inert gases; supports RS485 Modbus, analog (4-20 mA), pulse, and alarm outputs</li>
-  <li><strong>Energy Optimization:</strong> Calculates air/power ratio (kW/m³) in real time when paired with a watt-hour meter, providing insight into compressor efficiency</li>
+  <li><strong>No Pressure Loss:</strong> Clear flow path with no moving parts ensures zero pressure drop and zero energy loss, improving system efficiency</li>
+  <li><strong>Long-Term Accuracy & Maintenance-Free Operation:</strong> High-accuracy air flow measurement with no degradation over time—no recalibration, no filter replacements, and no scheduled maintenance for up to 10 years</li>
+  <li><strong>Exceptional Durability:</strong> Robust build resists oil mist, moisture, and dust for reliable performance in contaminated or unfiltered compressed air lines</li>
+  <li><strong>Leak Detection & Low Flow Sensitivity:</strong> Wide turndown ratio (1:60) enables precise detection of low flow rates and air leaks for proactive maintenance and energy savings</li>
+  <li><strong>Reverse Flow Measurement:</strong> Supports bi-directional flow monitoring—ideal for loop piping systems and inter-factory air distribution</li>
+  <li><strong>Multiple Gas Compatibility:</strong> Suitable for air, nitrogen, and inert gases; supports RS485 Modbus, analog (4–20 mA), pulse, and alarm outputs</li>
+  <li><strong>Energy Optimization Ready:</strong> When paired with a watt-hour meter, enables calculation of air/power ratio (kW/m³) for real-time compressor efficiency and cost analysis</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN25 - DN80</li>
-  <li>Accuracy: ± 1.3%RD (0.5MPa, ordinary temperature and, dry air or nitrogen)</li>
-  <li>Fluid temperature: -10 ~ 60 °C</li>
-  <li>Working: Pressure: 0 ~ Less than 1MPa (Gauge pressure)</li>
-  <li>Built-In Temp. & Pressure compensation</li>
-  <li>Power Supply: External 24VDC±10％</li>
-  <li>Output: 4-20mA (±0.5%FS) / RS485</li>
-  <li>Measurable Fluids: Compressed Air, Nitrogen</li>
-  <li>Certifications: RoHS, CE, UKCA</li>
-</ul>
+        <table>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Value</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN25 – DN80</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±1.3%RD (0.5 MPa, ordinary temperature, dry air or nitrogen)</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature</td>
+      <td>–10 to 60 °C</td>
+    </tr>
+    <tr>
+      <td>Working Pressure</td>
+      <td>0 to &lt;1 MPa (Gauge pressure)</td>
+    </tr>
+    <tr>
+      <td>Temperature & Pressure Compensation</td>
+      <td>Built-in</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>External 24 VDC ±10%</td>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>4–20 mA (±0.5%FS) / RS485</td>
+    </tr>
+    <tr>
+      <td>Measurable Fluids</td>
+      <td>Compressed Air, Nitrogen</td>
+    </tr>
+    <tr>
+      <td>Certifications</td>
+      <td>RoHS, CE, UKCA</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

@@ -136,7 +136,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Gas Flow Meters</p>
+            <p className="text-muted">Natural Gas Flow Meters</p>
             <h3 className="fw-semibold">Ultra-NXT Ultrasonic Gas Flow Meter  </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679;Smart ultrasonic gas metering with real-time temperature and pressure compensation</li>
@@ -209,68 +209,89 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
-  <li><strong>High Accuracy Measurement:</strong> Volume accuracy of ±1.2% to ±2.3%, with optional calibration to ±0.75%</li>
-  
-  <li><strong>Advanced Ultrasonic Technology:</strong> Measures flow by analyzing time-of-flight differences in ultrasonic pulses</li>
-  
-  <li><strong>Temperature & Pressure Compensation:</strong> Automatically adjusts to environmental changes for reliable standard volume output</li>
-  
-  <li><strong>Wide Dynamic Range:</strong> 
-    <ul>
-      <li>Standard: Up to 1:400</li>
-      <li>Ultra-Nxt 2024 Pro version: Up to 1:600</li>
-    </ul>
-  </li>
-  
-  <li><strong>Built-in Data Logger:</strong> Archives data hourly, daily, and monthly with alarms and event logs</li>
-  
-  <li><strong>Multiple Communication Protocols:</strong> RS-232, RS-485, and optical port options</li>
-  
-  <li><strong>Robust Environmental Tolerance:</strong> 
-    <ul>
-      <li>IP66 rated for dust and water protection</li>
-      <li>Explosion-proof: 1Ex ib IIB T4 Gb X</li>
-      <li>Operational temperature range: -40°C to +60°C</li>
-    </ul>
-  </li>
-  
-  <li><strong>Flexible Installation:</strong> Compact design supports vertical or horizontal setup; compatible with G10 to G4000 meter sizes</li>
+  <li><strong>Product Name:</strong> Ultra-Nxt Ultrasonic Gas Flow Meter</li>
+  <li><strong>Measurement Principle:</strong> Multi-beam ultrasonic technology for high-accuracy flow and volume measurement</li>
+  <li><strong>Compensation:</strong> Real-time correction for temperature, pressure, and gas compressibility</li>
+  <li><strong>Dynamic Range:</strong> Wide range up to 1:200 for varied flow conditions</li>
+  <li><strong>Deployment:</strong> Designed for industrial gas measurement, natural gas utilities, and commercial metering systems</li>
+  <li><strong>Legacy Replacement:</strong> Ideal replacement for membrane, rotary, and turbine gas meters</li>
+  <li><strong>Industry Applications:</strong></li>
+  <ul>
+    <li><strong>Natural Gas Distribution & Utilities:</strong> Accurate city gas metering, smart grid integration, and utility billing with minimal pressure drop and silent operation</li>
+    <li><strong>Industrial Gas Flow Monitoring:</strong> Used in oil & gas, chemical, metal, and pharmaceutical sectors; solid-state alternative to turbine and rotary meters</li>
+    <li><strong>Commercial Infrastructure:</strong> Bulk gas monitoring in buildings, complexes, and industrial parks; integrates with BMS for centralized energy efficiency</li>
+    <li><strong>Hazardous Environments:</strong> Explosion-proof design; resistant to magnetic fields and high humidity; suitable for refineries, petrochemical plants, and LNG terminals</li>
+  </ul>
+  <li><strong>Why Choose Ultra-Nxt?</strong></li>
+  <ul>
+    <li>12+ year service life with MTBF over 60,000 hours</li>
+    <li>Seamless integration with SCADA and IoT platforms</li>
+    <li>Lower installation and operational costs</li>
+    <li>Future-ready with smart grid and IIoT compatibility</li>
+    <li>Smart, scalable, and sustainable choice for modern gas metering</li>
+  </ul>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-         <ul>
-  <li><strong>Sizes:</strong> G 6 up to G 4000</li>
-  
-  <li><strong>Measurement Accuracy:</strong> ±1.2% to ±2%</li>
-  
-  <li><strong>Flow Range Turndown:</strong> Up to 1:200</li>
-  
-  <li><strong>Operating Temperature:</strong> -40°C to +60°C</li>
-  
-  <li><strong>Maximum Pressure:</strong> 16 Bar</li>
-  
-  <li><strong>Outputs:</strong>
-    <ul>
-      <li>RS-232</li>
-      <li>RS-485</li>
-      <li>Optical ports</li>
-    </ul>
-  </li>
-  
-  <li><strong>Communication Options:</strong> Built-in or external GSM/3G modems</li>
-  
-  <li><strong>Environmental Protection:</strong>
-    <ul>
-      <li>IP66-rated enclosure</li>
-      <li>Explosion-proof: 1Ex ib IIB T4 Gb X</li>
-    </ul>
-  </li>
-  
-  <li><strong>Measurable Gases:</strong> Natural and fuel gases</li>
-  
-  <li><strong>Integrated Compensation:</strong> Built-in temperature, pressure, and gas correction — no need for external corrector</li>
-</ul>
+       <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sizes</td>
+      <td>G 6 up to G 4000</td>
+    </tr>
+    <tr>
+      <td>Measurement Accuracy Options</td>
+      <td>&plusmn;1.2% to &plusmn;2%</td>
+    </tr>
+    <tr>
+      <td>Flow Range Turndown</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Operating Temperature</td>
+      <td>-40&deg;C to +60&deg;C</td>
+    </tr>
+    <tr>
+      <td>Maximum Pressure</td>
+      <td>16 Bar</td>
+    </tr>
+    <tr>
+      <td>Outputs</td>
+      <td>RS-232, RS-485, and optical ports</td>
+    </tr>
+    <tr>
+      <td>Modem Options</td>
+      <td>Built-in or external GSM/3G modems</td>
+    </tr>
+    <tr>
+      <td>Protection</td>
+      <td>IP66</td>
+    </tr>
+    <tr>
+      <td>Explosion-proof</td>
+      <td>1Ex ib IIB T4 Gb X</td>
+    </tr>
+    <tr>
+      <td>Measurable Gases</td>
+      <td>Natural &amp; Fuel Gases</td>
+    </tr>
+    <tr>
+      <td>Built-in Corrections</td>
+      <td>Temperature, Pressure &amp; Gas correction built-in</td>
+    </tr>
+    <tr>
+      <td>External Corrector Required</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

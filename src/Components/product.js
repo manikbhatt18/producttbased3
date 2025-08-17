@@ -8,7 +8,7 @@ import img3 from "../images/p1c.png";
 import related1 from "../images/p2a.png";
 import related2 from "../images/p3a.jpg";
 import related3 from "../images/p4a.jpg";
-import related4 from "../images/p4a.jpg";
+import related4 from "../images/p5a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -116,11 +116,11 @@ function ProductDetail() {
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Water Meters</p>
-            <h3 className="fw-semibold">Domestic Ultrasonic Flow Meters</h3>
+            <h3 className="fw-semibold">Ultrimis™ Domestic Ultrasonic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;Accurate and reliable flow measurement with 12-year battery life</li>
-              <li className="mb-2">&#9679;Compact design with brass hydraulic parts for long-term durability </li>
-              <li className="mb-2">&#9679;Supports multiple interfaces including M-Bus, RS485 & optional LoRaWAN</li>
+              <li className="mb-2">&#9679;Ultrimis ultrasonic water meter (DN15–DN50) for domestic use. </li>
+              <li className="mb-2">&#9679;IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.</li>
+              
             </ul>
             <button className="my-2 btn-enquiry">
               <span>Enquiry Now</span>
@@ -152,39 +152,124 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-                  <li>The Domestic Ultrasonic Flow Meter is a high-performance solution designed for precise flow measurement in residential and light industrial applications.</li>
-                  <li>Constructed with a rugged brass hydraulic body for durability.</li>
-                  <li>Offers IP65 protection, with an IP68 option available for enhanced environmental resistance.</li>
-                  <li>Supports flexible installation options to suit various environments.</li>
-                  <li>Equipped with a clear LCD display for easy data visibility.</li>
-                  <li>Compatible with multiple communication interfaces including Pulse, M-BUS, RS485, and optional LoRaWAN for remote access.</li>
-                  <li>Powered by a long-lasting lithium battery, delivering up to 12 years of operation.</li>
-                  <li>Features robust data logging with up to 60 months of EEPROM memory storage.</li>
-                </ul>
+  <li><strong>Product Name:</strong> Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</li>
+  <li><strong>Description:</strong> Compact, high-precision ultrasonic water meter designed for domestic and commercial applications.</li>
+  <li><strong>Technology:</strong> Patented W-Sonic Technology ensures reliable, maintenance-free operation with no moving parts.</li>
+  <li><strong>Accuracy:</strong> Maintains long-term metering accuracy even at very low flow rates.</li>
+  <li><strong>Durability:</strong> Built for Indian conditions with IP68 protection and extended battery life of up to 16 years.</li>
+  <li><strong>Communication Protocols:</strong> Compatible with NFC, Wireless M-Bus, and LoRaWAN.</li>
+  <li><strong>Installation Flexibility:</strong> Supports all mounting positions without requiring straight pipe sections.</li>
+  <li><strong>Availability:</strong> Distributed in India by IOTAFLOW Systems Pvt. Ltd., authorized channel partner of Apator Powogaz.</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li>Domestic water metering in apartments, group housing, and residential complexes</li>
+      <li>Commercial building water billing in offices, malls, hotels, and hospitals</li>
+      <li>Smart city water management systems with AMR/AMI integration</li>
+      <li>Replacement of mechanical meters (Woltman, multijet) in old buildings</li>
+      <li>Cold and hot water flow monitoring in utility pipelines</li>
+      <li>Water consumption and leakage monitoring in public and private infrastructure</li>
+      <li>Metering solutions for municipal water supply and urban development projects</li>
+    </ul>
+  </li>
+</ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-            <ul></ul>
+           <ul>
+  <li>Ultrasonic W-Sonic™ technology for stable, high-accuracy metering up to R800</li>
+  <li>No moving parts – maintenance-free and wear-resistant</li>
+  <li>Flexible installation – horizontal, vertical, or angled positions without straight pipe runs</li>
+  <li>Fully sealed IP68 housing – submersible, dustproof, and ideal for underground chambers</li>
+  <li>Battery-powered with a service life of up to 16 years</li>
+  <li>High metering accuracy:
+    <ul>
+      <li>±2% for cold water</li>
+      <li>±3% for hot water</li>
+      <li>±5% for very low flow</li>
+    </ul>
+  </li>
+  <li>Reverse flow detection and bi-directional measurement supported</li>
+  <li>Tamper-proof design with logging for:
+    <ul>
+      <li>Backflow</li>
+      <li>Zero flow</li>
+      <li>Battery status</li>
+      <li>Unauthorized access</li>
+    </ul>
+  </li>
+  <li>Communication-ready:
+    <ul>
+      <li>NFC (mobile diagnostics)</li>
+      <li>Wireless M-Bus (OMS)</li>
+      <li>LoRaWAN</li>
+    </ul>
+  </li>
+  <li>Compact and lightweight body suitable for small residential installations</li>
+  <li>Environmentally friendly – low lithium content and energy-efficient</li>
+</ul>
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-              <li>Pipe Range: DN15 - DN25</li>
-              <li>Maximum Permissible Error: Q1 &lt; Q &lt; Q2 - 5%</li>
-              <li>Nominal Pressure: 16 Bar</li>
-              <li>Temperature Range: T30, T50, T90</li>
-              <li>Hydraulic Part Material: Brass</li>
-              <li>Installation: Return flow/forward flow (horizontal/vertical)</li>
-              <li>Protection: IP65 (IP68 optional)</li>
-              <li>End Connection: Threaded (ANSI Flanged Optional)</li>
-              <li>Display: LCD, 8 digits + icons, Units m³</li>
-              <li>Interfaces: Pulse, M-BUS, Wireless M-BUS, RS485, Optical, RF ultra narrow band</li>
-              <li>In-Built LoraWAN: Optional</li>
-              <li>Power Supply: Battery Operated 3.6 V Lithium, 12 years</li>
-              <li>Date History in EEPROM Memory: 60 Months, 184 Days, 1488 Hours</li>
-            </ul>
+            <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Sizes</td>
+      <td>DN15 to DN50</td>
+    </tr>
+    <tr>
+      <td>Measurement Range</td>
+      <td>Q1: 0.75 l/h to Q4: up to 31.25 m³/h (model dependent)</td>
+    </tr>
+    <tr>
+      <td>R Ratio</td>
+      <td>Up to R800</td>
+    </tr>
+    <tr>
+      <td>Temperature Classes</td>
+      <td>T30, T50, T70 (max 70°C)</td>
+    </tr>
+    <tr>
+      <td>Pressure Rating</td>
+      <td>MAP16 (16 bar max)</td>
+    </tr>
+    <tr>
+      <td>Accuracy Class</td>
+      <td>±2% (cold), ±3% (hot), ±5% (low flow)</td>
+    </tr>
+    <tr>
+      <td>Reverse Flow Measurement</td>
+      <td>Supported</td>
+    </tr>
+    <tr>
+      <td>Communications</td>
+      <td>NFC, Wireless M-Bus (OMS), LoRaWAN</td>
+    </tr>
+    <tr>
+      <td>Power Source</td>
+      <td>Integrated lithium battery (up to 16 years)</td>
+    </tr>
+    <tr>
+      <td>Protection Rating</td>
+      <td>IP68 (submersible and dust-tight)</td>
+    </tr>
+    <tr>
+      <td>Certifications</td>
+      <td>CE, WRAS, DVGW, KIWA, WELMEC, OIML R49, EN-ISO 4064</td>
+    </tr>
+    <tr>
+      <td>Regulatory Compliance</td>
+      <td>MID (Directive 2014/32/EU), RED (Directive 2014/53/EU)</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

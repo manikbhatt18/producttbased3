@@ -179,27 +179,19 @@ function ProductDetail() {
               <div className="col-md-6">
 <ul>
   <li><strong>Product Name:</strong> IOTAFLOW CSF – Conical Shaped Flow Meter</li>
-  
-  <li><strong>Application:</strong> Accurate flow measurement for complex gas and steam applications</li>
-  
-  <li><strong>Design:</strong> Centrally suspended cone reshapes velocity profile for improved signal stability and minimal pressure drop</li>
-  
-  <li><strong>Features:</strong>
+  <li><strong>Measurement Principle:</strong> Differential pressure flow measurement using a centrally suspended cone</li>
+  <li><strong>Flow Conditioning:</strong> Cone reshapes velocity profile for enhanced accuracy, stable signal output, and minimal pressure drop</li>
+  <li><strong>Fluid Compatibility:</strong> Suitable for Biogas, CBM, Steam (saturated/superheated), Dust-Laden Air, Coke Oven Gas, and multi-component gas mixtures</li>
+  <li><strong>Performance:</strong> High repeatability and reliability in fluctuating or low-pressure conditions</li>
+  <li><strong>Installation:</strong> Compact footprint for tight industrial spaces; low-maintenance design with long service life</li>
+  <li><strong>Application Areas:</strong>
     <ul>
-      <li>High-performance differential pressure technology</li>
-      <li>Low-maintenance and long service life</li>
-      <li>Suitable for compact installations in harsh industrial conditions</li>
-    </ul>
-  </li>
-
-  <li><strong>Application-Specific Use Cases:</strong>
-    <ul>
-      <li><strong>Biogas:</strong> Handles variable low-pressure flow with moisture and particulates; ideal for digesters and renewable gas systems</li>
-      <li><strong>Coke Oven Gas:</strong> Resistant to corrosive, dusty environments typical in steel plants</li>
-      <li><strong>Coal Bed Methane (CBM):</strong> Designed for low-pressure upstream extraction and monitoring</li>
-      <li><strong>Gas Mixtures:</strong> Maintains accuracy in blended or multi-component streams with wide turndown</li>
-      <li><strong>Dust-Laden Air:</strong> Accurate measurement in air with particulates; perfect for ventilation, exhaust, and mining</li>
-      <li><strong>Steam (Saturated/Superheated):</strong> Minimizes noise and head loss in steam lines; ideal for boilers and power plants</li>
+      <li><strong>Biogas:</strong> Handles variable, low-pressure flows with high moisture and particulates; ideal for digesters and renewable gas systems</li>
+      <li><strong>Coke Oven Gas:</strong> Withstands corrosive and dusty by-products in steel plants; stable under fluctuating conditions</li>
+      <li><strong>Coal Bed Methane (CBM):</strong> Suitable for low-pressure gas extraction and upstream energy monitoring</li>
+      <li><strong>Gas Mixtures:</strong> Maintains high accuracy across blended or multi-component streams with wide turndown</li>
+      <li><strong>Dust-Laden Air:</strong> Accurate in particulate-laden environments; ideal for ventilation, exhaust, and mining systems</li>
+      <li><strong>Steam:</strong> Reduces noise and head loss in saturated and superheated steam lines; suitable for power plants and boiler monitoring</li>
     </ul>
   </li>
 </ul>
@@ -210,78 +202,92 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
 <ul>
-  <li><strong>Product Name:</strong> IOTAFLOW CSF – Conical Shaped Flow Meter</li>
-  
-  <li><strong>Application:</strong> Accurate flow measurement for complex gas and steam applications</li>
-  
-  <li><strong>Design:</strong> Centrally suspended cone reshapes velocity profile for improved signal stability and minimal pressure drop</li>
-  
-  <li><strong>Features:</strong>
-    <ul>
-      <li>High-performance differential pressure technology</li>
-      <li>Low-maintenance and long service life</li>
-      <li>Suitable for compact installations in harsh industrial conditions</li>
-    </ul>
-  </li>
-
-  <li><strong>Application-Specific Use Cases:</strong>
-    <ul>
-      <li><strong>Biogas:</strong> Handles variable low-pressure flow with moisture and particulates; ideal for digesters and renewable gas systems</li>
-      <li><strong>Coke Oven Gas:</strong> Resistant to corrosive, dusty environments typical in steel plants</li>
-      <li><strong>Coal Bed Methane (CBM):</strong> Designed for low-pressure upstream extraction and monitoring</li>
-      <li><strong>Gas Mixtures:</strong> Maintains accuracy in blended or multi-component streams with wide turndown</li>
-      <li><strong>Dust-Laden Air:</strong> Accurate measurement in air with particulates; perfect for ventilation, exhaust, and mining</li>
-      <li><strong>Steam (Saturated/Superheated):</strong> Minimizes noise and head loss in steam lines; ideal for boilers and power plants</li>
-    </ul>
-  </li>
+  <li><strong>Accuracy & Repeatability:</strong> ±1.0% accuracy and ±0.5% repeatability for consistent performance in harsh and variable flow environments</li>
+  <li><strong>Turndown Ratio:</strong> Wide rangeability up to 10:1; superior to conventional orifice meters (typically 3:1)</li>
+  <li><strong>Signal Quality:</strong> High-frequency, low-noise signal ideal for gas and steam applications requiring stable output</li>
+  <li><strong>Self-Conditioning Design:</strong> Integrated cone eliminates need for long straight piping; requires only 0–3D upstream and 0–1D downstream</li>
+  <li><strong>Pressure Drop:</strong> Low head loss design improves system efficiency and reduces energy costs</li>
+  <li><strong>Material Options:</strong> Corrosion- and heat-resistant construction in SS316, SS304, Duplex, Hastelloy, and Carbon Steel</li>
+  <li><strong>Sizing & Connections:</strong> Custom sizes from 0.5" to 120"+; available in flanged, threaded, or welded-end configurations</li>
+  <li><strong>Instrumentation Compatibility:</strong> Integrates with digital indicators, totalizers, 3-way manifolds, and differential pressure transmitters</li>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><strong>Pipe Range:</strong> DN10 to DN3000 or larger</li>
-  <li><strong>System Accuracy:</strong> ±1% for total system</li>
-  <li><strong>Turn Down Ratio:</strong> 10:1 with compact installation</li>
-  <li><strong>Body Material Options:</strong> 
-    <ul>
-      <li>Duplex 2205</li>
-      <li>304 or 316 Stainless Steel</li>
-      <li>Hastelloy C-276</li>
-      <li>254 SMO</li>
-      <li>Carbon steels</li>
-      <li>Special materials available on request</li>
-    </ul>
-  </li>
-  <li><strong>End Fittings:</strong> Flanged, threaded, hub, or weld-end (custom options available)</li>
-  <li><strong>RTD Sensor:</strong>
-    <ul>
-      <li>Type: PT-100 thin film</li>
-      <li>Range: -58°F to 752°F (-50°C to 400°C)</li>
-    </ul>
-  </li>
-  <li><strong>Manifold Configuration:</strong> 3-Valve</li>
-  <li><strong>dP Transmitter:</strong>
-    <ul>
-      <li>Housing: F30 Aluminum</li>
-      <li>Membrane: 316L stainless steel</li>
-      <li>Enclosure Rating: NEMA 4X/6P, IP66/67</li>
-      <li>Electrical Connections: NPT 1/2" thread</li>
-    </ul>
-  </li>
-  <li><strong>Flow Computer Output:</strong> 4–20 mA and isolated pulse</li>
-  <li><strong>Pressure Range:</strong> Up to 1500 psi (100 bar)</li>
-  <li><strong>Temperature Range:</strong> Up to 1600°F (870°C)</li>
-  <li><strong>Applications:</strong>
-    <ul>
-      <li>Biogas</li>
-      <li>Coke Oven Gas</li>
-      <li>Coal Bed Methane (CBM)</li>
-      <li>Gas Mixtures</li>
-      <li>Dust-Laden Air</li>
-      <li>Steam</li>
-    </ul>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN10 to DN3000 or larger</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±1% for Total System</td>
+    </tr>
+    <tr>
+      <td>Turn Down</td>
+      <td>10:1 with compact installation</td>
+    </tr>
+    <tr>
+      <td>Body Material</td>
+      <td>Duplex 2205, 304, or 316 stainless steel, Hastelloy C-276, 254 SMO, carbon steels; special materials on request</td>
+    </tr>
+    <tr>
+      <td>End Fittings</td>
+      <td>Flanged, threaded, hub or weld-end standard; others on request</td>
+    </tr>
+    <tr>
+      <td>RTD Sensor Type</td>
+      <td>PT-100, thin film</td>
+    </tr>
+    <tr>
+      <td>RTD Range</td>
+      <td>−58° to 752°F (−50° to 400°C)</td>
+    </tr>
+    <tr>
+      <td>Manifold Configuration</td>
+      <td>3-valve</td>
+    </tr>
+    <tr>
+      <td>dP Transmitter Housing</td>
+      <td>F30 Aluminum</td>
+    </tr>
+    <tr>
+      <td>dP Transmitter Membrane</td>
+      <td>316L</td>
+    </tr>
+    <tr>
+      <td>dP Transmitter Enclosure</td>
+      <td>NEMA 4X/6P, IP66/67</td>
+    </tr>
+    <tr>
+      <td>Electrical Connections</td>
+      <td>NPT 1/2 thread</td>
+    </tr>
+    <tr>
+      <td>Flow Computer Output</td>
+      <td>4–20 mA, isolated pulse</td>
+    </tr>
+    <tr>
+      <td>Pressure Range</td>
+      <td>Up to 1500 psi (100 bar)</td>
+    </tr>
+    <tr>
+      <td>Temperature Range</td>
+      <td>Up to 1,600°F (870°C)</td>
+    </tr>
+    <tr>
+      <td>Applications</td>
+      <td>Biogas, Coke Oven Gas, Coal Bed Methane (CBM), Gas Mixtures, Air (with Dust), Steam</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

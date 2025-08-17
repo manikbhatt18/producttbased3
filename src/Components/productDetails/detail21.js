@@ -137,12 +137,12 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Gas Flow Meters</p>
+            <p className="text-muted">Natural Gas Flow Meters</p>
             <h3 className="fw-semibold">GasPro RPD Gas Meter</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;High-precision rotary gas meter with embedded 2G/3G/4G/NB modem</li>
-              <li className="mb-2">&#9679;Modular, tamper-proof design with optional MID-certified volume corrector</li>
-              <li className="mb-2">&#9679;Built for industrial accuracy, long battery life, and future-ready upgrades</li>
+              <li className="mb-2">&#9679;IOTAFLOW GasPro RPD gas meter for PNG, LPG, biogas in CGD & industries. </li>
+              <li className="mb-2">&#9679;DN25–DN200, 1600 m³/h. MID, ATEX, CGWA, RS485, EVC & Modbus ready.</li>
+              <li className="mb-2">&#9679;Made in India.</li>
               
             
             </ul>
@@ -176,17 +176,26 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li>The GasPro RPD Gas Meter is a next-generation rotary positive displacement solution for precise gas flow metering.</li>
-  <li>Ideal for utility providers, industrial complexes, and high-demand commercial applications.</li>
-  <li>Delivers high accuracy and stability, with modular architecture enabling scalable upgrade paths.</li>
-  <li>Built to withstand harsh environmental conditions with robust construction.</li>
-  <li>Supports remote data monitoring via embedded communication module: 2G/3G/4G/NB.</li>
-  <li>Integrates seamlessly with SCADA and AMI systems for real-time management.</li>
-  <li>Optional Elcor MID-certified gas volume corrector allows real-time compensation for temperature and pressure.</li>
-  <li>Optimizes billing accuracy and operational efficiency across utility networks and industrial fuel systems.</li>
-  <li>Engineered for tamper protection, minimal maintenance, and long-term reliability.</li>
-  <li>Certified under MID and ATEX standards.</li>
-  <li>Operates via external power or long-life battery — future-ready for advanced infrastructure deployment.</li>
+  <li><strong>Product Name:</strong> GasPro RPD Gas Meter by IOTAFLOW Systems</li>
+  <li><strong>Measurement Principle:</strong> Rotary displacement for high-accuracy gas flow metering</li>
+  <li><strong>Measurable Gases:</strong> Natural gas, LPG, biogas, hydrogen, nitrogen, and industrial gases</li>
+  <li><strong>Size Range:</strong> DN15 to DN200 (G6 to G400)</li>
+  <li><strong>Accuracy:</strong> &plusmn;1.5%</li>
+  <li><strong>Output Options:</strong> Pulse, 4–20 mA, RS-485 Modbus</li>
+  <li><strong>Volume Correction:</strong> Optional ELCOR corrector for MID-certified pressure and temperature compensation</li>
+  <li><strong>Hazardous Zone Compliance:</strong> ATEX-approved for explosive environments</li>
+  <li><strong>Remote Monitoring:</strong> Supports 2G/3G/4G/NB-IoT for telemetry and AMR/AMI systems</li>
+  <li><strong>Applications:</strong></li>
+  <ul>
+    <li><strong>City Gas Distribution (CGD):</strong> Municipal utility metering with billing-grade accuracy</li>
+    <li><strong>Industrial Consumption:</strong> Refineries, power plants, food &amp; beverage, and pharma sectors</li>
+    <li><strong>Commercial Infrastructure:</strong> Centralized metering in malls, hospitals, and commercial buildings</li>
+    <li><strong>OEM & Process Industries:</strong> LPG, biogas, CNG, hydrogen, and nitrogen metering</li>
+    <li><strong>Energy Billing Systems:</strong> Integrated temperature/pressure compensation for accurate billing</li>
+    <li><strong>Remote Telemetry:</strong> AMR/AMI systems with Modbus or GSM integration</li>
+    <li><strong>Hazardous Areas:</strong> ATEX-compatible metering in explosive zones</li>
+    <li><strong>EVC Compatibility:</strong> Supports ELCOR and ELCORplus volume correctors</li>
+  </ul>
 </ul>
 
               </div>
@@ -196,32 +205,86 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
+  <li><strong>Technology:</strong> Rotary piston displacement for high-accuracy gas flow measurement</li>
+  <li><strong>Flow Range:</strong> Wide turndown ratios up to 120:1; flow rates up to 1600 m³/h</li>
+  <li><strong>Size Options:</strong> DN25 to DN200</li>
+  <li><strong>Material Options:</strong> Aluminum alloy, cast steel, stainless steel (based on pressure class)</li>
+  <li><strong>Pressure Ratings:</strong> 1.0 – 1.6 MPa</li>
+  <li><strong>Sensors:</strong> Integrated pressure and temperature sensors for real-time compensation</li>
+  <li><strong>Communication Interfaces:</strong> RS-485 Modbus, pulse output, 4–20 mA analog</li>
+  <li><strong>Power Supply:</strong> Battery-powered (up to 11 years) or external power options</li>
+  <li><strong>Telemetry Integration:</strong> Compatible with IOTAFLOW’s EVCs and dataloggers for remote reading</li>
+  <li><strong>Performance:</strong> Low pressure drop, minimal maintenance, long service life</li>
+  <li><strong>Certifications:</strong> MID and ATEX certified variants available</li>
+  <li><strong>Operating Conditions:</strong> Ambient temperature -25°C to +80°C; gas media up to +60°C</li>
+  <li><strong>Security:</strong> Tamper-proof construction for field reliability</li>
+  <li><strong>Applications:</strong> CGD networks, industrial plants, and utility-grade metering</li>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><strong>Pipe Range:</strong> DN15 to DN200</li>
-  <li><strong>Sizes:</strong> G 6 up to G 400</li>
-  <li><strong>Medium Temperature:</strong> −20°C to +80°C</li>
-  <li><strong>External Power Supply:</strong> ±24VDC ±15%</li>
-  <li><strong>Output Options:</strong> 4–20mA, Pulse, RS-485</li>
-  <li><strong>Nominal Pressure:</strong> 10 Bar (16 Bar optional)</li>
-  <li><strong>Measurement Accuracy:</strong> ±1.5%</li>
-  <li><strong>Optional Add-on:</strong> Elcor MID-certified gas volume corrector</li>
-  <li><strong>Highlights:</strong>
-    <ul>
-      <li>High accuracy and measurement stability</li>
-      <li>Embedded modem: 2G/3G/4G/NB</li>
-      <li>Robust industrial-grade design</li>
-      <li>Modular technology architecture</li>
-      <li>MID and ATEX certified</li>
-      <li>Long battery life for extended deployment</li>
-      <li>Future-upgradeable platform</li>
-      <li>Tamper-proof construction</li>
-    </ul>
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN15 to DN200</td>
+    </tr>
+    <tr>
+      <td>Flow Sizes</td>
+      <td>G6 to G400</td>
+    </tr>
+    <tr>
+      <td>Medium Temperature</td>
+      <td>&minus;20&deg;C to +80&deg;C</td>
+    </tr>
+    <tr>
+      <td>Nominal Pressure</td>
+      <td>10 bar (16 bar available as an option)</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>&plusmn;1.5%</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>External &plusmn;24VDC &plusmn;15%</td>
+    </tr>
+    <tr>
+      <td>Signal Outputs</td>
+      <td>4&ndash;20 mA, Pulse, RS-485 Modbus</td>
+    </tr>
+    <tr>
+      <td>Communication Interface</td>
+      <td>Optional modem: 2G / 3G / 4G / NB-IoT</td>
+    </tr>
+    <tr>
+      <td>Volume Correction (EVC)</td>
+      <td>MID-certified ELCOR gas volume corrector (optional)</td>
+    </tr>
+    <tr>
+      <td>Mounting Orientation</td>
+      <td>Horizontal or vertical</td>
+    </tr>
+    <tr>
+      <td>Enclosure Protection</td>
+      <td>IP66-rated casing (dust- and moisture-resistant)</td>
+    </tr>
+    <tr>
+      <td>Material of Construction</td>
+      <td>High-grade aluminum alloy or optional stainless steel</td>
+    </tr>
+    <tr>
+      <td>Compliances</td>
+      <td>CE, MID, ATEX, CGD-compliant</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

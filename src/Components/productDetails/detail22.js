@@ -141,9 +141,9 @@ function ProductDetail() {
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">UF-Biosonic (Ultrasonic Flow Measurement for Biogas) </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;Compact ultrasonic flow meter tailored for biogas applications</li>
-              <li className="mb-2">&#9679;Battery or external powered with RS485 & analog output</li>
-              <li className="mb-2">&#9679;IP65-rated, reliable performance under low-pressure biogas conditions</li>
+              <li className="mb-2">&#9679;UF-BioSonic – Ultrasonic Flow Meter for Biogas & Methane Measurement</li>
+              <li className="mb-2">&#9679;UF-BioSonic biogas flow meter for renewable energy projects, waste-to-energy plants, digesters & wastewater treatment.</li>
+              <li className="mb-2">&#9679; Accurate, durable & maintenance-free.</li>
               
             
             </ul>
@@ -177,15 +177,26 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li>UF-Biosonic is a compact ultrasonic flow meter for low-pressure biogas applications.</li>
-  <li>Utilizes advanced transit-time technology for precision and stability in challenging gas conditions.</li>
-  <li>Accuracy maintained up to ±1.5% across dynamic environments.</li>
-  <li>Supports flexible power configurations: battery or external 24VDC supply.</li>
-  <li>Offers multiple output options including RS485 and 4–20mA for seamless system integration.</li>
-  <li>Encased in an IP65-rated durable body — suited for harsh industrial or outdoor conditions.</li>
-  <li>Ideal for waste-to-energy plants, biogas digesters, and green energy installations.</li>
-  <li>Engineered for low maintenance and consistent data performance.</li>
-  <li>Compact footprint supports efficient flow tracking in sustainable energy setups.</li>
+  <li><strong>Product Name:</strong> UF-BioSonic Series Ultrasonic Biogas Flow Meter</li>
+  <li><strong>Measurement Principle:</strong> Ultrasonic transit-time technology for accurate and stable biogas flow measurement</li>
+  <li><strong>Gas Compatibility:</strong> Wet and corrosive biogas with high H₂S and CO₂ content</li>
+  <li><strong>Methane Analysis:</strong> Integrated CH₄ content measurement (30–100% Vol) for combined flow and composition monitoring</li>
+  <li><strong>Design:</strong> No moving parts, zero pressure drop, maintenance-free operation</li>
+  <li><strong>Construction:</strong> Robust stainless steel body with optional temperature and pressure compensation</li>
+  <li><strong>Protection:</strong> IP65-rated for harsh environments</li>
+  <li><strong>Outputs:</strong> RS485 and 4–20 mA signal interfaces</li>
+  <li><strong>Power Supply:</strong> External power or long-life battery options</li>
+  <li><strong>Applications:</strong></li>
+  <ul>
+    <li><strong>Landfill Gas:</strong> Measurement for energy recovery projects</li>
+    <li><strong>Wastewater Treatment:</strong> Biogas flow monitoring in municipal and industrial plants</li>
+    <li><strong>Anaerobic Digesters:</strong> Flow tracking in organic waste digestion systems</li>
+    <li><strong>Bio-Methane Plants:</strong> Renewable gas injection into utility grids</li>
+    <li><strong>CHP Units:</strong> Performance monitoring and efficiency control for biogas engines</li>
+    <li><strong>Biogas Flares:</strong> Compliance and emission reporting</li>
+    <li><strong>Carbon Projects:</strong> CDM and carbon credit initiatives requiring precise gas quantification</li>
+    <li><strong>Agricultural Biogas:</strong> Systems for livestock waste and crop residue digestion</li>
+  </ul>
 </ul>
 
               </div>
@@ -195,24 +206,70 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
+  <li><strong>Measurement Principle:</strong> Ultrasonic transit-time technology with no moving parts and negligible pressure drop</li>
+  <li><strong>Dual Functionality:</strong> Simultaneous flow rate and methane concentration measurement in one device</li>
+  <li><strong>Volumetric Correction:</strong> Optional temperature and pressure compensation for enhanced accuracy</li>
+  <li><strong>Flow Range:</strong> Wide operating range with high turndown ratio for low to high flow conditions</li>
+  <li><strong>Gas Compatibility:</strong> Resistant to H₂S corrosion and moisture; performs reliably with wet, dirty biogas</li>
+  <li><strong>Design Variant:</strong> UF-BioSonic 2 model includes bypass configuration to reduce condensate impact and extend meter life</li>
+  <li><strong>Power Options:</strong> Long-life industrial lithium battery (More than 5 years) or external power supply</li>
+  <li><strong>Installation:</strong> Maintenance-free operation with simple setup; no pipeline interruption required</li>
+  <li><strong>Communication:</strong> RS485 Modbus and 4–20 mA analog output for integration with control systems</li>
+  <li><strong>Construction:</strong> Durable stainless steel body suitable for industrial and outdoor environments</li>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><strong>Pipe Range:</strong> DN32 to DN300</li>
-  <li><strong>Measurement Accuracy:</strong> ≤±1.5%</li>
-  <li><strong>Fluid Temperature:</strong> −20°C to +40°C</li>
-  <li><strong>Operating Pressure:</strong> 2 Bar</li>
-  <li><strong>Power Supply:</strong>
-    <ul>
-      <li>Battery-operated</li>
-      <li>External 24VDC ±10%</li>
-    </ul>
-  </li>
-  <li><strong>Communication:</strong> RS485 and 4–20mA output</li>
-  <li><strong>Environmental Protection:</strong> IP65-rated enclosure</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN32 to DN300</td>
+    </tr>
+    <tr>
+      <td>Measurement Accuracy</td>
+      <td>≤ ±1.5%</td>
+    </tr>
+    <tr>
+      <td>Measured Medium</td>
+      <td>Biogas and bio-methane (wet or dry, high H₂S tolerance)</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature Range</td>
+      <td>−20°C to +40°C</td>
+    </tr>
+    <tr>
+      <td>Maximum Operating Pressure</td>
+      <td>Up to 2 bar</td>
+    </tr>
+    <tr>
+      <td>Power Supply Options</td>
+      <td>Long-life lithium battery (maintenance-free) or external 24VDC ±10%</td>
+    </tr>
+    <tr>
+      <td>Communication Outputs</td>
+      <td>RS485 Modbus RTU, 4–20 mA analog</td>
+    </tr>
+    <tr>
+      <td>Ingress Protection</td>
+      <td>IP65 – weatherproof, dust-tight, and suitable for outdoor use</td>
+    </tr>
+    <tr>
+      <td>Construction</td>
+      <td>Industrial-grade stainless steel housing with corrosion-resistant internals</td>
+    </tr>
+    <tr>
+      <td>Installation Type</td>
+      <td>In-line flange connection</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

@@ -138,7 +138,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Gas Flow Meters</p>
+            <p className="text-muted">Natural Gas Flow Meters</p>
             <h3 className="fw-semibold">EQZ/EQZK Radial Turbine Gas Meters </h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679;High-precision gas metering for industrial, commercial, and CGD networks</li>
@@ -177,21 +177,21 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li><strong>Product Description:</strong> The EQZ radial turbine gas meters by Elgas are engineered for high-precision measurement of natural gas and other clean, non-corrosive gases.</li>
-  <li><strong>Deployment:</strong> Widely adopted across India for industrial and commercial gas distribution networks.</li>
-  <li><strong>Design Strength:</strong> Built for performance in high-temperature environments and challenging climatic conditions.</li>
-  <li><strong>Reliability:</strong> Ensures long-term durability with minimal pressure loss and easy integration into telemetry and smart metering systems.</li>
-
-  <li><strong>Applications:</strong></li>
+  <li><strong>Product Name:</strong> EQZ Radial Turbine Gas Meters by Elgas</li>
+  <li><strong>Measurement Principle:</strong> High-precision volumetric flow measurement for natural gas and clean, non-corrosive gases</li>
+  <li><strong>Deployment:</strong> Widely adopted across India in industrial and commercial gas distribution networks</li>
+  <li><strong>Environmental Suitability:</strong> Designed for high-temperature environments and challenging climatic conditions</li>
+  <li><strong>Performance:</strong> Ensures long-term reliability, minimal pressure loss, and easy integration with telemetry and smart metering systems</li>
+  <li><strong>Applications in India:</strong></li>
   <ul>
-    <li><strong>Industrial Gas Flow Monitoring:</strong> Used for high-accuracy measurement of natural gas in steel plants, refineries, and chemical industries. Ideal for process control and energy optimization in large-scale industrial operations.</li>
-    <li><strong>City Gas Distribution (CGD) Networks:</strong> Widely applied in urban gas distribution under CGD projects approved by PNGRB in India. Ensures reliable flow data for billing and pipeline integrity.</li>
-    <li><strong>Power Plants & Captive Power Units:</strong> Used in gas-based thermal and combined cycle power plants for metering fuel gas input. Enables fuel efficiency tracking and compliance with CEA and DISCOM regulations.</li>
-    <li><strong>Commercial & Utility Metering:</strong> Installed in commercial complexes, malls, hospitals, and SEZs for accurate utility gas billing. Supports LPG, PNG, and CNG distribution in multi-tenant setups.</li>
-    <li><strong>Oil & Gas Pipelines (Upstream/Midstream):</strong> Deployed in custody transfer and flow measurement of natural gas across pipeline networks. Suitable for ONGC, GAIL, IndianOil, and EPC contractor applications.</li>
-    <li><strong>EPC and Infrastructure Projects:</strong> Integrated into gas metering packages used by major EPC firms like L&T and Tata Projects in government and private sector builds.</li>
-    <li><strong>Research, Labs & Calibration Centers:</strong> Employed in metrology labs and test benches for calibrating flow systems and developing gas control technologies. Supports precision testing for R&D in Indian institutes.</li>
-    <li><strong>Rural & Remote Industrial Clusters:</strong> Installed in decentralized energy systems, agro-industries, and remote industrial gas networks. Designed for low-maintenance operation in off-grid or semi-urban regions.</li>
+    <li><strong>Industrial Gas Flow Monitoring:</strong> High-accuracy measurement in steel plants, refineries, and chemical industries; ideal for process control and energy optimization</li>
+    <li><strong>City Gas Distribution (CGD) Networks:</strong> Applied in urban gas distribution under PNGRB-approved projects; ensures reliable billing and pipeline integrity</li>
+    <li><strong>Power Plants & Captive Power Units:</strong> Used in gas-based thermal and combined cycle plants; supports fuel efficiency tracking and regulatory compliance</li>
+    <li><strong>Commercial & Utility Metering:</strong> Installed in malls, hospitals, SEZs for accurate billing; supports LPG, PNG, and CNG distribution in shared infrastructure</li>
+    <li><strong>Oil & Gas Pipelines (Upstream/Midstream):</strong> Used in custody transfer and flow measurement across pipeline networks; suitable for ONGC, GAIL, IndianOil, and EPC projects</li>
+    <li><strong>EPC and Infrastructure Projects:</strong> Included in metering packages for large EPC firms like L&amp;T and Tata Projects; used in government and private sector builds</li>
+    <li><strong>Research, Labs & Calibration Centers:</strong> Used in metrology labs and test benches for calibrating flow systems and developing gas control technologies</li>
+    <li><strong>Rural & Remote Industrial Clusters:</strong> Installed in decentralized energy systems and agro-industries; engineered for low-maintenance operation in off-grid regions</li>
   </ul>
 </ul>
 
@@ -202,49 +202,77 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
-  <li><strong>Wide Flow Range for Industrial Use:</strong> Handles high gas volumes up to 10,000 m³/h, ideal for large industrial gas metering in India.</li>
-
-  <li><strong>Available in Multiple Pipe Sizes (DN 50 to DN 200):</strong> Fits standard Indian gas pipeline sizes used in CGD and industrial setups. Flanged connections simplify integration into existing gas distribution networks.</li>
-
-  <li><strong>High Accuracy with Legal Metrology Compliance:</strong> Offers ±1% or ±1.5% accuracy as per industry standards, ensuring billing-grade precision. Can be certified under India's Legal Metrology Act for regulated gas trade.</li>
-
-  <li><strong>Robust Design for Harsh Indian Conditions:</strong> Built to perform in dusty, high-temperature industrial environments across India. Durable aluminum or steel body resists corrosion, vibration, and mechanical stress.</li>
-
-  <li><strong>Pulse Output Compatibility for Smart Gas Monitoring:</strong> Equipped with LF and HF pulse outputs for easy integration with SCADA and AMR systems. Supports India's move toward smart metering under city gas distribution (CGD) projects.</li>
-
-  <li><strong>Digital Metering Ready with IoT Integration:</strong> Compatible with remote telemetry, GPRS/4G, and cloud platforms for real-time tracking. Perfect for smart city, SEZ, and ULB utility gas infrastructure.</li>
-
-  <li><strong>Minimal Pressure Loss for Efficient Gas Flow:</strong> Turbine design minimizes pressure drop, improving energy efficiency in gas supply. Reduces operational costs for Indian industrial and utility gas consumers.</li>
-
-  <li><strong>Low Maintenance & Long Service Life:</strong> Designed for extended operational life with minimal service needs in remote or rural areas. Ideal for Indian oil & gas EPC projects requiring reliable long-term metering.</li>
-
-  <li><strong>MID & EN 12261 Certified for Global and Indian Utility Projects:</strong> International certifications ensure acceptance in Indian PSU, CGD, and multinational tenders. Backed by ISO 9001:2015 manufacturing quality for consistent performance.</li>
+  <li><strong>Wide Flow Range for Industrial Use:</strong> Handles high gas volumes up to 10,000 m³/h; ideal for large industrial gas metering in India</li>
+  <li><strong>Available in Multiple Pipe Sizes (DN 50 to DN 200):</strong> Fits standard Indian gas pipeline sizes used in CGD and industrial setups; flanged connections simplify integration</li>
+  <li><strong>High Accuracy with Legal Metrology Compliance:</strong> Offers &plusmn;1% or &plusmn;1.5% accuracy; billing-grade precision certified under India's Legal Metrology Act</li>
+  <li><strong>Robust Design for Harsh Indian Conditions:</strong> Built for dusty, high-temperature environments; aluminum or steel body resists corrosion, vibration, and mechanical stress</li>
+  <li><strong>Pulse Output Compatibility for Smart Gas Monitoring:</strong> LF and HF pulse outputs support SCADA and AMR systems; aligns with India's smart metering goals under CGD projects</li>
+  <li><strong>Digital Metering Ready with IoT Integration:</strong> Compatible with telemetry, GPRS/4G, and cloud platforms for real-time tracking; ideal for smart city, SEZ, and ULB infrastructure</li>
+  <li><strong>Minimal Pressure Loss for Efficient Gas Flow:</strong> Turbine design reduces pressure drop, enhancing energy efficiency and lowering operational costs</li>
+  <li><strong>Low Maintenance & Long Service Life:</strong> Engineered for extended operation with minimal servicing; suitable for remote and rural Indian EPC deployments</li>
+  <li><strong>MID & EN 12261 Certified:</strong> Internationally certified for Indian PSU, CGD, and multinational tenders; backed by ISO 9001:2015 manufacturing quality</li>
 </ul>
  )}
 
           {activeTab === "Technical data" && (
-          <ul>
-  <li><strong>Sizes:</strong> G 16 up to G 400</li>
-  <li><strong>Dimensions:</strong> DN 40, 50, 80, and 100</li>
-  <li><strong>Operating Pressure:</strong> Maximum 6 bar</li>
-  <li><strong>Accuracy:</strong>
-    <ul>
-      <li>From 0.2 Q<sub>max</sub> to Q<sub>max</sub>: ±1.5%</li>
-      <li>Below 0.2 Q<sub>max</sub>: ±2%</li>
-    </ul>
-  </li>
-  <li><strong>Operation Temperature Range:</strong>
-    <ul>
-      <li>Gas Temperature: -10°C to +60°C</li>
-      <li>Ambient Temperature: -10°C to +60°C</li>
-    </ul>
-  </li>
-  <li><strong>Certification:</strong> Type Examination Certificate FTZÚ 15 ATEX 0172X</li>
-  <li><strong>Marking of Equipment:</strong> Ex II -/2G IIB T4</li>
-  <li><strong>Installation:</strong> No straight run required</li>
-  <li><strong>Maintenance:</strong> Oil-free design for minimal upkeep</li>
-  <li><strong>Optional Add-on:</strong> Elcor MID-certified gas volume corrector</li>
-</ul>
+         <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sizes</td>
+      <td>G 16 up to G 400</td>
+    </tr>
+    <tr>
+      <td>Dimensions</td>
+      <td>DN 40, 50, 80 and 100</td>
+    </tr>
+    <tr>
+      <td>Operating Pressure</td>
+      <td>Max. 6 bar</td>
+    </tr>
+    <tr>
+      <td>Accuracy (0.2 Qmax to Qmax)</td>
+      <td>&plusmn;1.5%</td>
+    </tr>
+    <tr>
+      <td>Accuracy (below 0.2 Qmax)</td>
+      <td>&plusmn;2%</td>
+    </tr>
+    <tr>
+      <td>Gas Temperature Range</td>
+      <td>-10&deg;C up to +60&deg;C</td>
+    </tr>
+    <tr>
+      <td>Ambient Temperature Range</td>
+      <td>-10&deg;C up to +60&deg;C</td>
+    </tr>
+    <tr>
+      <td>Type Examination Certificate</td>
+      <td>FTZÚ 15 ATEX 0172X</td>
+    </tr>
+    <tr>
+      <td>Marking of Equipment</td>
+      <td>Ex II -/2G IIB T4</td>
+    </tr>
+    <tr>
+      <td>Straight Run Requirement</td>
+      <td>No straight run required</td>
+    </tr>
+    <tr>
+      <td>Maintenance</td>
+      <td>Oil-free maintenance</td>
+    </tr>
+    <tr>
+      <td>Gas Volume Corrector (Optional)</td>
+      <td>Elcor: MID Certified</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

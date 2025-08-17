@@ -134,11 +134,11 @@ function ProductDetail() {
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Water Meters</p>
-            <h3 className="fw-semibold">Woltmann Water Meters, Aqua-Re Series</h3>
+            <h3 className="fw-semibold"> Woltmann Water Meters, Turbine Type </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;High-accuracy turbine meter ideal for large pipe sizes</li>
-              <li className="mb-2">&#9679;Rugged cast iron/stainless steel body with 360° rotatable mechanism</li>
-              <li className="mb-2">&#9679;AMR-ready with optional analog and battery-powered models</li>
+              <li className="mb-2">&#9679;Apator Woltmann Flow Meter – For High-Capacity Water Measurement</li>
+              <li className="mb-2">&#9679;Apator Woltmann Flow Meters for bulk water metering with IP68 protection, wide flow range.</li>
+              <li className="mb-2">&#9679;, AMR compatibility & precision for industrial and municipal use.</li>
             
             </ul>
             <button className="my-2 btn-enquiry">
@@ -170,17 +170,28 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>The Woltmann Water Meters from the Aqua-Re Series are robust, high-capacity meters engineered for accurate water flow measurement in large-scale applications.</li>
-  <li>Designed with a turbine mechanical system and magnetic transmission, making them ideal for industrial water distribution, municipal supply systems, irrigation networks, and large commercial facilities across India.</li>
-  <li>Available in pipe sizes from DN50 to DN500.</li>
-  <li>Feature a removable mechanism and a 360° rotatable register for simplified installation and maintenance in complex piping environments.</li>
-  <li>Constructed with cast iron or stainless steel bodies and coated with epoxy for corrosion resistance and extended operational life.</li>
-  <li>Certified to ISO 4064 Class B accuracy standards.</li>
-  <li>Support cold water (up to 50°C) and high-temperature hot water applications (up to 130°C).</li>
-  <li>Include pulse outputs for AMR systems, with optional analog (4–20 mA) and digital configurations for smart infrastructure integration.</li>
-  <li>Optional built-in battery ensures uninterrupted data transmission in off-grid or remote installations.</li>
-  <li>Widely trusted by utility providers and industries across India for reliable, efficient high-volume water usage management.</li>
+                <section>
+  <p>
+    The <strong>Apator Woltmann Flow Meter series</strong> – MWN Nubis, MWN 130 Nubis, and MWN NKOP – are precision-engineered horizontal-axis propeller meters/turbine flow meters for high-capacity water measurement in industrial water supply, municipal distribution networks, irrigation systems, and commercial water management.
+  </p>
+  <p>
+    Designed for <strong>cold water (up to 50°C)</strong> and <strong>hot water (up to 130°C)</strong>, these meters offer exceptional accuracy, long-term stability, and compatibility with <strong>AMR and wireless communication modules</strong>. Built with <strong>hydrodynamically balanced rotors</strong>, durable materials, and <strong>IP65/IP68-rated protection</strong>, they ensure reliable performance even under harsh environmental and electromagnetic conditions.
+  </p>
+</section>
+
+<ul>
+  <li><strong>Target Applications:</strong>
+    <ul>
+      <li>Irrigation and agricultural water distribution</li>
+      <li>Industrial utility water measurement</li>
+      <li>District metering areas (DMA) in water supply networks</li>
+      <li>High-volume municipal water supplies</li>
+      <li>Process water monitoring in power plants and manufacturing</li>
+      <li>Hot water and condensate metering (130°C rated version)</li>
+      <li>Water consumption tracking for commercial complexes, residential townships, and factories</li>
+      <li>Flow monitoring in CGWA-regulated installations (when integrated with data loggers & telemetry)</li>
+    </ul>
+  </li>
 </ul>
               </div>
             </div>
@@ -188,28 +199,80 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
            <ul>
-  
+  <li><strong>Type:</strong> Horizontal Woltmann-type turbine flow meter</li>
+  <li><strong>Register:</strong> Magnetic transmission with super dry IP68-rated register</li>
+  <li><strong>Size Range:</strong> DN50 to DN500 (flanged connection)</li>
+  <li><strong>Maintenance:</strong> Removable measuring mechanism for quick servicing</li>
+  <li><strong>Body Material:</strong> Epoxy-coated cast iron for anti-corrosion protection</li>
+  <li><strong>Operating Temperature:</strong> Cold water (50°C) and hot water versions (90°C & 130°C)</li>
+  <li><strong>Output Options:</strong>
+    <ul>
+      <li>Pulse output (standard)</li>
+      <li>Relay output (optional)</li>
+      <li>Analog output (4–20 mA) (optional)</li>
+      <li>RS485 communication (optional)</li>
+      <li>Battery-operated digital version (1.5–2 year battery life)</li>
+    </ul>
+  </li>
+  <li><strong>Flow Totalizer:</strong> Includes resettable and non-resettable functions</li>
+  <li><strong>Hydraulics:</strong> Low pressure loss, suitable for high-flow systems</li>
+  <li><strong>Register Orientation:</strong> 360° rotating register for easy reading in any position</li>
+  <li><strong>System Compatibility:</strong> Compatible with AMR/AMI systems</li>
+  <li><strong>Standards Compliance:</strong> EN 14154 and MID Directive 2004/22/EC</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Turbine Mechanical Water Meter with Magnetic Transmission</li>
-  <li>Pipe Range: DN50 – DN500</li>
-  <li>Removable mechanism — 360° rotatable for flexible installation</li>
-  <li>Accuracy: Class B as per ISO 4064 — suitable for Cold Water (50°C) and Hot Water (90°C & 130°C versions)</li>
-  <li>Body: Cast Iron or Stainless Steel with epoxy outer coating</li>
-  <li>Display Parameters: Flow rate, Total, Resettable Total</li>
-  <li>Relay Output: Activated by flow rate</li>
-  <li>Outputs:
-    <ul>
-      <li>Pulse output — for AMR (Automatic Meter Reading) communication</li>
-      <li>Analog output — 4 ~ 20 mA</li>
-      <li>Power input — 24 VDC (Digital option)</li>
-      <li>Built-in battery — 1.5 to 2-year lifespan (Optional)</li>
-    </ul>
-  </li>
-</ul>
+          <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product</td>
+      <td>Turbine Mechanical Water Meter with Magnetic Transmission</td>
+    </tr>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN50 – DN500, Removable mechanism, 360° Rotatable</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>Class B as per ISO 4064</td>
+    </tr>
+    <tr>
+      <td>Suitable for</td>
+      <td>Cold Water (50°C) / Hot Water (90°C & 130°C versions)</td>
+    </tr>
+    <tr>
+      <td>Body Material</td>
+      <td>Cast Iron or Stainless Steel with epoxy outer coating</td>
+    </tr>
+    <tr>
+      <td>Display Parameters</td>
+      <td>Flow rate / Total / Reset-able total</td>
+    </tr>
+    <tr>
+      <td>Relay Output</td>
+      <td>On flow rate</td>
+    </tr>
+    <tr>
+      <td>Outputs</td>
+      <td>Pulse output for AMR communication, Analog (4–20 mA) output</td>
+    </tr>
+    <tr>
+      <td>Digital Option Input</td>
+      <td>24 VDC</td>
+    </tr>
+    <tr>
+      <td>Battery</td>
+      <td>In-built battery (life 1.5 – 2 years) (Optional)</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

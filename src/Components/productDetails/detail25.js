@@ -175,16 +175,41 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li>IOTAFLOW Acrylic and Glass Tube Rotameters provide compact, cost-effective flow measurement for low to medium flow applications.</li>
-  <li>Suitable for monitoring air, water, oil, gas, and solvents across industrial and lab environments.</li>
-  <li>Laser-engraved scales on the body ensure long-lasting readability and precise indication.</li>
-  <li>Choose between acrylic tubes for budget-friendly use or glass tubes for enhanced chemical resistance.</li>
-  <li>Flexible installation options include in-line and panel mounting.</li>
-  <li>Offered with screwed or flanged end connections for versatile setup compatibility.</li>
-  <li>Float material options include SS316 and PTFE, supporting various chemical compositions.</li>
-  <li>Flange materials range from polypropylene (PP) to stainless steel (SS316), suitable for diverse process demands.</li>
-  <li>Designed for simple operation with minimal maintenance requirements.</li>
-  <li>Trusted for consistent flow monitoring in chemical, process, and utility environments.</li>
+  <li><strong>Product Name:</strong> IOTAFLOW Acrylic & Glass Tube Rotameter Series</li>
+  <li><strong>Measurement Principle:</strong> Variable area flow measurement using tapered tubes and float displacement</li>
+  <li><strong>Design Variants:</strong>
+    <ul>
+      <li><strong>Acrylic Body Rotameters:</strong> Crystal-clear, impact-resistant acrylic with engraved scale for easy visual monitoring</li>
+      <li><strong>Glass Tube Rotameters:</strong> High-precision borosilicate glass tubes offering excellent chemical resistance and accuracy</li>
+    </ul>
+  </li>
+  <li><strong>Media Compatibility:</strong> Suitable for liquids, gases, and steam across industrial and utility applications</li>
+  <li><strong>Connection Options:</strong> Multiple process connections available; supports OEM integration</li>
+  <li><strong>Accessories:</strong> Optional flow switches and transmitters for enhanced monitoring and control</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li><strong>Acrylic Tube Rotameters:</strong>
+        <ul>
+          <li>Water & Wastewater Treatment — Raw water, RO feed, ETP dosing, and filtration flows</li>
+          <li>Compressed Air & Gas Lines — Air flow in utilities, HVAC, and pneumatic systems</li>
+          <li>Light Chemical Processing — Acids, alkalis, and non-corrosive chemicals at low temperatures</li>
+          <li>Food & Beverage — Syrups, bottling, dairy water, and CIP system flows</li>
+          <li>Irrigation & Agriculture — Fertigation dosing and greenhouse water monitoring</li>
+          <li>Laboratory & Pilot Plants — Flow control in chemical, pharma, and academic research setups</li>
+        </ul>
+      </li>
+      <li><strong>Glass Tube Rotameters:</strong>
+        <ul>
+          <li>Chemical & Petrochemical Plants — Acids, solvents, alkalis, hydrocarbons, and corrosive fluids</li>
+          <li>Oil & Gas Industry — Hydrocarbon liquids, fuel oils, LPG vapors, and refinery streams</li>
+          <li>Pharmaceutical Manufacturing — Solvent handling, purified water, clean gases in GMP environments</li>
+          <li>Power Plants & Utilities — Boiler feed water, steam lines, and cooling circuits</li>
+          <li>Food & Beverage Processing — Edible oils, flavor dosing, and high-temperature liquids</li>
+          <li>High-Temperature & High-Pressure — Process media up to 200°C and 20 kg/cm²</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
               </div>
             </div>
@@ -197,18 +222,56 @@ function ProductDetail() {
  )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><strong>Pipe Range:</strong> DN6 – DN100</li>
-  <li><strong>Float Material:</strong> PTFE / SS316</li>
-  <li><strong>Media Compatibility:</strong> Air, Water, Oil, Gas & Solvents</li>
-  <li><strong>Mounting:</strong> In-Line / Panel Mounted with Needle Valve</li>
-  <li><strong>End Connection:</strong> Screwed / Flanged</li>
-  <li><strong>Operating Temperature:</strong> 70℃</li>
-  <li><strong>Operating Pressure:</strong> 10 Bar</li>
-  <li><strong>Mounting Accuracy:</strong> Bottom to Top: ±2% on Full Scale Deflection (FSD)</li>
-  <li><strong>Measuring Tube Float Scale:</strong> Laser Engraved on Body</li>
-  <li><strong>Connection Flange Options:</strong> PP / MS / SS304 / SS316</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN6 to DN100</td>
+    </tr>
+    <tr>
+      <td>Float Material</td>
+      <td>PTFE / SS316 (corrosion-resistant)</td>
+    </tr>
+    <tr>
+      <td>Compatible Media</td>
+      <td>Air, water, oil, gas, and industrial solvents</td>
+    </tr>
+    <tr>
+      <td>Mounting Options</td>
+      <td>In-line or panel-mounted with integrated needle valve</td>
+    </tr>
+    <tr>
+      <td>End Connection Type</td>
+      <td>Screwed (BSP/NPT) or flanged (ANSI/DIN)</td>
+    </tr>
+    <tr>
+      <td>Maximum Operating Temperature</td>
+      <td>Up to 70°C</td>
+    </tr>
+    <tr>
+      <td>Maximum Operating Pressure</td>
+      <td>Up to 10 bar</td>
+    </tr>
+    <tr>
+      <td>Measurement Accuracy</td>
+      <td>Bottom-to-top flow direction: ±2% of full-scale deflection (FSD)</td>
+    </tr>
+    <tr>
+      <td>Scale Marking</td>
+      <td>Laser-engraved on meter body for long-term readability</td>
+    </tr>
+    <tr>
+      <td>Flange Material Options</td>
+      <td>PP, MS, SS304, SS316</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

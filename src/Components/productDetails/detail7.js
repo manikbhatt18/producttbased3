@@ -10,7 +10,7 @@ import img4 from "../../images/p7d.png";
 
 import related1 from "../../images/p6a.png";
 import related2 from "../../images/p8a.png";
-import related3 from "../../images/p9a.png";
+import related3 from "../../images/p7a.jpg";
 import related4 from "../../images/p10a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -73,8 +73,8 @@ function ProductDetail() {
     },
     {
       img: related3,
-      title: " Multijet Water Meters, Aqua-Re Series",
-      link: "/product-detail/detail9",
+      title: "MF-TER Electromagnetic Flow Meter",
+      link: "/product-detail/detail7b",
     },
     {
       img: related4,
@@ -133,11 +133,10 @@ function ProductDetail() {
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
             <p className="text-muted">Water Meters</p>
-            <h3 className="fw-semibold"> Electromagnetic Flow Meter (EMF Standard)</h3>
+            <h3 className="fw-semibold">MF-PRO Electromagnetic Flow Meter</h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;High-accuracy flow measurement with optional ±0.2% precision</li>
-              <li className="mb-2">&#9679;Compatible with corrosive, slurry, and sewage applications</li>
-              <li className="mb-2">&#9679;Versatile structure: integral, remote, submersible, and Ex-proof</li>
+              <li className="mb-2">&#9679;Ideal for Effluent, Water & Slurry Applications</li>
+              <li className="mb-2">&#9679;CGWA Compliant</li>
               
             
             </ul>
@@ -170,41 +169,132 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>The Electromagnetic Flow Meter (EMF Standard) offers advanced, non-intrusive flow measurement for a wide range of liquids including slurries, chemicals, raw water, and sewage.</li>
-  <li>Supports pipe sizes ranging from DN10 to DN2000 mm, suitable for diverse industrial and municipal applications.</li>
-  <li>Provides exceptional measuring accuracy of ±0.5% as standard, with optional ±0.2% for high-precision requirements.</li>
-  <li>Built with premium liner and electrode materials such as Teflon, Hastelloy, and Titanium for superior chemical resistance and durability.</li>
-  <li>Designed for extreme environments, offering IP68 protection (remote type) and explosion-proof certification (Exd II BT4).</li>
-  <li>Available in multiple configurations including integral, remote, submersible types, and insertion models for larger pipe diameters.</li>
-</ul>
+               <section id="mf-pro-overview">
+  <h2>MF-PRO Electromagnetic Flow Meter</h2>
+  <p>The <strong>MF-PRO</strong> Electromagnetic Flow Meter by IOTAFLOW Systems is a highly robust, full-bore inline meter engineered for precise flow measurement of conductive liquids, slurries, and wastewater in industrial and municipal applications.</p>
+  <p>Designed for harsh flow environments, it delivers reliable performance with <strong>no moving parts</strong>, minimal maintenance, and a wide velocity range from <strong>0.3 to 10 m/s</strong>.</p>
+</section>
+
+<section id="mf-pro-compliance">
+  <h3>Regulatory Compliance & Data Transmission</h3>
+  <ul>
+    <li>Complies with <strong>CGWA guidelines</strong> for flow monitoring</li>
+    <li>Supports data transmission to <strong>CPCB</strong>, <strong>State Pollution Control Boards (SPCB)</strong>, and <strong>NIC portals</strong></li>
+    <li>Ideal for regulated <strong>effluent and water discharge</strong> applications</li>
+  </ul>
+</section>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-            <ul>
-  
+           <ul>
+  <li><strong>Based on Faraday's Law</strong> for high-accuracy conductive liquid measurement</li>
+  <li><strong>Full-bore inline design</strong> with negligible pressure drop</li>
+  <li><strong>Velocity range:</strong> 0.3 to 10 m/s</li>
+  <li><strong>Pipe sizes:</strong> DN10 to DN2000</li>
+  <li><strong>Accuracy:</strong> ±0.5% of reading (standard)</li>
+  <li><strong>Electrode materials:</strong> SS316L, Hastelloy, Titanium, Tantalum</li>
+  <li><strong>Liner materials:</strong> PTFE, Rubber, Ebonite (suitable for chemical and slurry media)</li>
+  <li><strong>Output signals:</strong> RS485, Modbus RTU, 4-20 mA, pulse, HART Communication</li>
+  <li><strong>Battery-powered options</strong> available for remote flow monitoring</li>
+  <li><strong>Display:</strong> Totalizer, diagnostics, and status indicators</li>
+  <li><strong>Protection class:</strong> IP65 / IP68</li>
+  <li><strong>Certifications:</strong> CE, ISO</li>
+  <li><strong>Fully CGWA compliant</strong>; supports real-time data transmission to CPCB, SPCB, NIC portals</li>
+
+
+  <li><strong>Applications</strong> </li>
+  <li><strong>Effluent discharge flow monitoring</strong> for CGWA compliance</li>
+  <li><strong>Slurry flow measurement</strong> in cement, paper, and mineral processing</li>
+  <li><strong>Raw and treated water metering</strong> in industrial and municipal networks</li>
+  <li><strong>STP and ETP wastewater flow monitoring</strong></li>
+  <li><strong>Cooling water, chemical dosing, and process lines</strong></li>
+  <li><strong>Utility flow auditing</strong> in large industrial setups</li>
+  <li><strong>Irrigation canals</strong> and agricultural distribution pipelines</li>
 </ul>
+
           )}
 
           {activeTab === "Technical data" && (
-            <ul>
-  <li>Pipe Range: DN10 – DN2000 mm</li>
-  <li>Nominal Pressure: 0.6 – 4.0 MPa</li>
-  <li>Accuracy: ±0.5% of the value displayed (±0.3% or ±0.2% optional)</li>
-  <li>Liner Material: Teflon, PFA, F46, Neoprene, Polyurethane</li>
-  <li>Electrode Type: General type, Scraper type, and Replaceable type</li>
-  <li>Electrode Material: SS316, Hastelloy B, Hastelloy C, Titanium, Tantalum, Platinum-iridium, stainless steel covered with tungsten</li>
-  <li>Ambient Temperature: –25°C to +60°C</li>
-  <li>Medium Electrical Conductivity: ≥5.0 s/cm</li>
-  <li>Measuring Range: 500:1, flow rate up to 10 m/s</li>
-  <li>Structure Type: Integral type, Remote type, Submersible type, Ex Proof type</li>
-  <li>Protection Class: IP68 – Dustproof and submersible for extended use (only for remote type)</li>
-  <li>Ex-proof Mark: Exd II BT4</li>
-  <li>Suitable Applications: Slurries, Chemicals (Acids & Alkalis), Raw/Sewage Water, etc.</li>
-  <li><em>Note:</em> Insertion Electromagnetic available for pipes DN200 and above</li>
-</ul>
+          <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN10 to DN2000 mm</td>
+    </tr>
+    <tr>
+      <td>Nominal Pressure</td>
+      <td>0.6 MPa to 4.0 MPa</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±0.5% of reading (standard), ±0.3% optional</td>
+    </tr>
+    <tr>
+      <td>Velocity Range</td>
+      <td>0.3 to 10 m/s (500:1 turndown ratio)</td>
+    </tr>
+    <tr>
+      <td>Liner Materials</td>
+      <td>PTFE (Teflon), PFA, F46, Neoprene, Polyurethane</td>
+    </tr>
+    <tr>
+      <td>Electrode Material Options</td>
+      <td>SS316, Hastelloy B, Hastelloy C, Titanium, Tantalum, Platinum-Iridium, SS + Tungsten Coat</td>
+    </tr>
+    <tr>
+      <td>Electrode Type</td>
+      <td>General type, Scraper type, Replaceable type</td>
+    </tr>
+    <tr>
+      <td>Structure Type</td>
+      <td>Integral type, Remote type, Insertion (for DN200 and above)</td>
+    </tr>
+    <tr>
+      <td>Medium Conductivity</td>
+      <td>≥ 5.0 µS/cm</td>
+    </tr>
+    <tr>
+      <td>Ambient Temperature</td>
+      <td>-25°C to +60°C</td>
+    </tr>
+    <tr>
+      <td>Operating Temperature</td>
+      <td>Up to 150°C (liner-dependent)</td>
+    </tr>
+    <tr>
+      <td>Protection Class</td>
+      <td>IP65 / IP68 (remote type submersible)</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>24V DC, Lithium Battery (optional for remote sites)</td>
+    </tr>
+    <tr>
+      <td>Output Signals</td>
+      <td>RS485, Modbus RTU, 4–20 mA, Pulse, Relay, GSM/GPRS</td>
+    </tr>
+    <tr>
+      <td>Display Unit</td>
+      <td>LCD with totalizer, diagnostics, and flow rate display</td>
+    </tr>
+    <tr>
+      <td>Optional Features</td>
+      <td>Insertion type, data logger, telemetry-ready</td>
+    </tr>
+    <tr>
+      <td>Certifications</td>
+      <td>CE, ISO, CGWA Compliant</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

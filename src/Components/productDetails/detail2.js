@@ -7,7 +7,7 @@ import img2 from "../../images/p2b.png";
 import related1 from "../../images/p1a.png";
 import related2 from "../../images/p3a.jpg";
 import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p4a.jpg";
+import related4 from "../../images/p5a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -57,7 +57,7 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Domestic Ultrasonic Flow Meters", link: "/products" },
+    { img: related1, title: "Ultrimis™ Domestic Ultrasonic Flow Meters", link: "/products" },
     { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series", link: "/product-detail/detail3" },
     { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
@@ -154,33 +154,154 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-                  <li>Struggling with frequent failures in mechanical water meters? Say goodbye to costly downtime.</li>
-                  <li>Designed for precision water flow measurement in harsh environments.</li>
-                  <li>Compatible with raw water, treated water, DM water, hot water, and condensate up to 130°C.</li>
-                  <li>Uses ultrasonic transit-time technology — no internal obstructions.</li>
-                </ul>
+  <li><strong>Product Name:</strong> Inline Ultrasonic Flow Meter – Robust Series</li>
+  <li><strong>Overview:</strong> Smart, maintenance-free ultrasonic flow meter designed to replace mechanical meters and eliminate failures due to clogging, wear, and moving parts.</li>
+  <li><strong>Technology:</strong> Ultrasonic transit-time measurement with no internal obstructions, ensuring high accuracy in low-flow and particle-heavy water lines.</li>
+  <li><strong>Fluid Compatibility:</strong> Suitable for:
+    <ul>
+      <li>Raw water</li>
+      <li>Treated water</li>
+      <li>DM water</li>
+      <li>Hot water</li>
+      <li>Condensate up to 130°C</li>
+      <li>Flows containing sand or suspended solids</li>
+    </ul>
+  </li>
+  <li><strong>Advantages Over Mechanical Meters:</strong>
+    <ul>
+      <li>No moving parts – eliminates wear and clogging</li>
+      <li>No paddle or Woltman-type components</li>
+      <li>Long-lasting reliability with minimal maintenance</li>
+    </ul>
+  </li>
+  <li><strong>Target Applications:</strong>
+    <ul>
+      <li>Residential water metering for cold/hot domestic water</li>
+      <li>Industrial water flow monitoring in manufacturing, chemical, and food processing</li>
+      <li>Irrigation systems in agriculture and landscape management</li>
+      <li>DM water and condensate flow measurement in pharmaceutical and boiler plants</li>
+      <li>Water consumption tracking in buildings, commercial complexes, and smart cities</li>
+      <li>District cooling and heating systems, HVAC water distribution</li>
+      <li>Utility water supply networks and non-revenue water (NRW) control</li>
+      <li>CGWA flow meter for groundwater abstraction plants</li>
+      <li>CPCB/PCB/NIC data logger compliant water metering systems</li>
+    </ul>
+  </li>
+  <li><strong>Regulatory Compliance:</strong>
+    <ul>
+      <li>CGWA-Compliant Design – Ideal for groundwater abstraction monitoring</li>
+      <li>Data transmission ready for PCB, CPCB, and NIC portals</li>
+      <li>Supports real-time reporting via Modbus, GPRS, or RS485</li>
+      <li>Fully compliant with industrial and environmental water use mandates</li>
+      <li>Seamless integration with government dashboards</li>
+    </ul>
+  </li>
+</ul>
               </div>
             </div>
           )}
           {activeTab === "Features" && (
             <ul>
-              <li>Rugged design handles poor-quality water effortlessly.</li>
-              <li>10-year lithium battery life with optional 24V DC supply.</li>
-              <li>Reliable operation up to 130°C – Suitable for hot water.</li>
-              <li>Supports multiple connectivity protocols – RS485, Modbus, GSM/GPRS, LoRaWAN, NFC.</li>
-              <li>IP67/IP68-rated enclosure – Perfect for extreme weather.</li>
-              <li>1:125 turndown ratio – Ideal for low flow scenarios.</li>
-            </ul>
+  <li><strong>Sand/Particle Interference?</strong> NO PROBLEM – Rugged design handles poor-quality water effortlessly.</li>
+  <li><strong>No External Power?</strong> NO PROBLEM – 10-year lithium battery life with optional 24V DC supply.</li>
+  <li><strong>Hot Water/Condensate?</strong> NO PROBLEM – Operates reliably up to 130°C.</li>
+  <li><strong>No Connectivity?</strong> NO PROBLEM – Supports:
+    <ul>
+      <li>RS485</li>
+      <li>Modbus (wired/wireless)</li>
+      <li>GSM/GPRS</li>
+      <li>LoRaWAN</li>
+      <li>NFC</li>
+    </ul>
+  </li>
+  <li><strong>Outdoor Use?</strong> NO PROBLEM – IP67/IP68-rated enclosure for extreme weather.</li>
+  <li><strong>Low Flow Conditions?</strong> NO PROBLEM – Incredible 1:125 turndown ratio, perfect for residential and industrial low-demand scenarios.</li>
+  <li><strong>Built-in Data Logger:</strong>
+    <ul>
+      <li>Hourly data storage: 1440 hours</li>
+      <li>Daily data storage: 460 days</li>
+      <li>Monthly data storage: 48 months</li>
+    </ul>
+  </li>
+  <li><strong>Smart Monitoring via NFC & Mobile App:</strong> Tap your Android phone to the meter to access:
+    <ul>
+      <li>Real-time readings</li>
+      <li>Historical usage trends</li>
+      <li>Diagnostics</li>
+    </ul>
+    Through a dedicated NFC app interface, ideal for remote monitoring and smart utility integration.
+  </li>
+</ul>
           )}
           {activeTab === "Technical data" && (
-            <ul>
-              <li><strong>Pipe Range:</strong> DN32 – DN300</li>
-              <li><strong>Accuracy:</strong> ± 2.0%</li>
-              <li><strong>Maximum Pipeline Pressure:</strong> 2.5 MPa / 25 bar</li>
-              <li><strong>Fluid Temp Range:</strong> 50°C to 130°C</li>
-              <li><strong>Protection Rating:</strong> IP67/IP68 optional</li>
-              <li><strong>Power Supply:</strong> Battery 3.6V Lithium (10 years)</li>
-            </ul>
+            <table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN32 – DN300 / up to DN1000</td>
+    </tr>
+    <tr>
+      <td>NFC Communication</td>
+      <td>Enabled</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±2.0% of MV</td>
+    </tr>
+    <tr>
+      <td>Maximum Pipeline Pressure</td>
+      <td>2.5 MPa / 25 bar</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature Range</td>
+      <td>50°C – 130°C (For Hot Water)</td>
+    </tr>
+    <tr>
+      <td>Ambient Temperature Range</td>
+      <td>5°C – 65°C</td>
+    </tr>
+    <tr>
+      <td>Protection</td>
+      <td>IP67 (IP68 optional)</td>
+    </tr>
+    <tr>
+      <td>End Connection</td>
+      <td>ASME/ANSI B16.5 Class 150, Tri-Clover, PN16</td>
+    </tr>
+    <tr>
+      <td>Compliance</td>
+      <td>ISO 4064</td>
+    </tr>
+    <tr>
+      <td>Interfaces</td>
+      <td>Pulse, RS485, Analog 4–20mA (Optional), In-built LoRaWAN (Optional)</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>Battery Operated 3.6V Lithium (10 years), Power Operated (Optional)</td>
+    </tr>
+    <tr>
+      <td>Measurement Data Logging</td>
+      <td>
+        <ul>
+          <li>1440 Hourly logs</li>
+          <li>460 Daily logs</li>
+          <li>48 Monthly logs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Certifications</td>
+      <td>CE, MID Certified</td>
+    </tr>
+  </tbody>
+</table>
           )}
           {activeTab === "Downloads" && <p>Visit our documentation page to download the full technical specifications and data sheets.</p>}
         </div>

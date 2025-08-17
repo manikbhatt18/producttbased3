@@ -175,23 +175,22 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li><strong>Vortex Flow Meter – Precision Flow Monitoring for Steam, Gas, and Liquid Applications:</strong> The IOTAFLOW Vortex Flow Meter is a high-accuracy flow measurement solution engineered for industrial gas, steam, and liquid applications, including saturated and superheated steam. Based on the Karman vortex shedding principle, it provides reliable, maintenance-free operation with robust signal stability in harsh environments.</li>
-
-  <li><strong>🔧 Power Plants & Boiler Systems:</strong> Optimized for steam flow measurement in turbine lines, boiler feed systems, and heat recovery loops. Delivers accurate readings in both saturated and superheated steam conditions.</li>
-
-  <li><strong>⚗️ Chemical & Petrochemical Industries:</strong> Reliable in aggressive and corrosive process environments. Ideal for measuring process gases, vapors, and utility steam in reactors, pipelines, and heat exchangers.</li>
-
-  <li><strong>🛢️ Oil & Gas Industry:</strong> Used in natural gas flow metering, compressed gas distribution, and flare gas monitoring, offering rugged durability in upstream and downstream operations.</li>
-
-  <li><strong>🍺 Food & Beverage Industry:</strong> Supports CIP (Clean-in-Place) processes with hygienic-grade options. Accurately monitors steam, water, and CO₂ in beverage and dairy production.</li>
-
-  <li><strong>💊 Pharmaceutical Industry:</strong> Ensures precise steam control for sterilization processes (SIP) and utility management in GMP-compliant environments.</li>
-
-  <li><strong>🚗 Automotive & Metal Processing:</strong> Monitors cooling water, compressed air, and other industrial fluids in high-heat, high-vibration manufacturing conditions.</li>
-
-  <li><strong>📦 Pulp, Paper & Textiles:</strong> Used for steam and condensate flow tracking in drying processes and for energy optimization in utility services.</li>
-
-  <li><strong>💧 Water & Wastewater Treatment:</strong> Efficient in chlorine gas, aeration airflow, and process water flow measurement in treatment plants and distribution networks.</li>
+  <li><strong>Product:</strong> IOTAFLOW Vortex Flow Meter – Precision Flow Monitoring for Steam, Gas, and Liquid Applications</li>
+  <li><strong>Description:</strong> High-accuracy flow measurement solution for industrial gas, steam, and liquid applications, including saturated and superheated steam</li>
+  <li><strong>Technology:</strong> Based on the Karman vortex shedding principle for reliable, maintenance-free operation and robust signal stability in harsh environments</li>
+  <li><strong>Design Advantage:</strong> Custom-engineered sizing to fit process lines without pipe modifications, ensuring accurate low-flow measurement and avoiding pressure drop or costly piping alterations</li>
+  <li><strong>Targeted Application Areas:</strong>
+    <ul>
+      <li><strong>Power Plants & Boiler Systems:</strong> Steam flow measurement in turbine lines, boiler feed systems, and heat recovery loops; accurate in both saturated and superheated steam conditions</li>
+      <li><strong>Chemical & Petrochemical Industries:</strong> Measurement of process gases, vapors, and utility steam in aggressive and corrosive environments such as reactors, pipelines, and heat exchangers</li>
+      <li><strong>Oil & Gas Industry:</strong> Natural gas metering, compressed gas distribution, and flare gas monitoring in upstream and downstream operations</li>
+      <li><strong>Food & Beverage Industry:</strong> CIP process support with hygienic-grade options; monitoring of steam, water, and CO₂ in beverage and dairy production</li>
+      <li><strong>Pharmaceutical Industry:</strong> Steam control for SIP and utility management in GMP-compliant environments</li>
+      <li><strong>Automotive & Metal Processing:</strong> Monitoring of cooling water, compressed air, and industrial fluids in high-heat, high-vibration manufacturing conditions</li>
+      <li><strong>Pulp, Paper & Textiles:</strong> Steam and condensate flow tracking in drying processes and energy optimization in utility services</li>
+      <li><strong>Water & Wastewater Treatment:</strong> Measurement of chlorine gas, aeration airflow, and process water in treatment plants and distribution networks</li>
+    </ul>
+  </li>
 </ul>
 
               </div>
@@ -201,39 +200,58 @@ function ProductDetail() {
           {activeTab === "Features" && (
            
 <ul>
-  <li><strong>No Moving Parts:</strong> Maintenance-free design eliminates wear, leaks, and mechanical failure, ensuring long-term reliability and low lifecycle cost.</li>
-
-  <li><strong>SS 316L Stainless Steel Construction:</strong> Rugged and corrosion-resistant, with industry-standard flange and wafer connections for flexible installation.</li>
-
-  <li><strong>Optimized for Saturated and Superheated Steam:</strong> Engineered for high-temperature steam flow with integrated pressure and temperature compensation, enabling accurate metering in boilers and thermal processes.</li>
-
-  <li><strong>Wide Flow Turndown Ratio (Up to 1:20):</strong> Perfect for low-flow applications with exceptional rangeability, ideal for steam distribution, compressed air systems, and process gas.</li>
-
-  <li><strong>Negligible Pressure Drop:</strong> Delivers up to 90% lower pressure loss compared to orifice meters, maximizing system efficiency and reducing energy costs.</li>
-
-  <li><strong>IBR Approved:</strong> Certified for compliance with Indian Boiler Regulations, ensuring suitability for regulated steam and boiler applications.</li>
-
-  <li><strong>High Accuracy and Repeatability:</strong> Offers ±0.5% accuracy, ±0.2% repeatability, and robust performance even under fluctuating process conditions.</li>
-
-  <li><strong>Universal Media Compatibility:</strong> Accurately measures air, steam, natural gas, nitrogen, and non-conductive liquids in multi-industry environments.</li>
-
-  <li><strong>Digital Communication Ready:</strong> Supports RS485, MODBUS, HART, and GPRS, facilitating seamless integration with DCS, PLC, and SCADA systems.</li>
+  <li><strong>No Moving Parts:</strong> Maintenance-free design eliminates wear, leaks, and mechanical failure, ensuring long-term reliability and low lifecycle cost</li>
+  <li><strong>Custom Process Fit:</strong> Eliminates need for pipe size modification; ensures zero additional pressure drop while covering low-flow measurement requirements without sacrificing accuracy or stability</li>
+  <li><strong>SS 316L Stainless Steel Construction:</strong> Rugged and corrosion-resistant with industry-standard flange and wafer connections for flexible installation</li>
+  <li><strong>Steam Optimization:</strong> Engineered for high-temperature steam flow with integrated pressure and temperature compensation for accurate metering of saturated and superheated steam</li>
+  <li><strong>Wide Flow Turndown Ratio:</strong> Up to 1:20 rangeability—ideal for low-flow applications in steam distribution, compressed air systems, and process gas</li>
+  <li><strong>Negligible Pressure Drop:</strong> Delivers up to 90% lower pressure loss compared to orifice meters, maximizing system efficiency and reducing energy costs</li>
+  <li><strong>IBR Approved:</strong> Certified for compliance with Indian Boiler Regulations for regulated steam and boiler applications</li>
+  <li><strong>High Accuracy and Repeatability:</strong> ±0.5% accuracy and ±0.2% repeatability with robust performance under fluctuating process conditions</li>
+  <li><strong>Universal Media Compatibility:</strong> Accurately measures air, steam, natural gas, nitrogen, and non-conductive liquids across industries</li>
+  <li><strong>Digital Communication Ready:</strong> Supports RS485, MODBUS, HART, and GPRS for seamless integration with DCS, PLC, and SCADA systems</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-          <ul>
-  <li><strong>Pipe Range:</strong> DN20 - DN800</li>
-  <li><strong>Accuracy:</strong> ± 1% FS (0.5% FS Optional)</li>
-  <li><strong>Fluid Temperature:</strong> &lt; 250°C (High temp &lt; 350°C Optional)</li>
-  <li><strong>Operating Pressure:</strong> Upto 16 Bar (40 Bar on request)</li>
-  <li><strong>Built-In Temperature & Pressure Compensation:</strong> Optional</li>
-  <li><strong>Power Supply:</strong> External 24VDC ±10％</li>
-  <li><strong>Output:</strong> 4-20mA / RS485 / HART (On request)</li>
-  <li><strong>Display Protection:</strong> IP65, IP68, Flameproof (CMRI Certified) (On request)</li>
-  <li><strong>Measurable Fluids:</strong> Steam, Air, Liquids & other Aggressive Gasses</li>
-  <li><strong>Certifications:</strong> IBR Approved</li>
-</ul>
+          <table>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Value</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN20 – DN800</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±1% FS (±0.5% FS optional)</td>
+    </tr>
+    <tr>
+      <td>Fluid Temperature</td>
+      <td>&lt;250°C (High temp &lt;350°C optional)</td>
+    </tr>
+    <tr>
+      <td>Operating Pressure</td>
+      <td>Up to 16 Bar (40 Bar on request)</td>
+    </tr>
+    <tr>
+      <td>Temperature & Pressure Compensation</td>
+      <td>Built-in (optional)</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>External 24 VDC ±10%</td>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>4–20 mA / RS485 / HART (on request)</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

@@ -177,104 +177,98 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>Contoil® Oil Flow Meters — precision-engineered for accurate fuel and lubrication oil measurement in demanding industrial environments</li>
-  <li>Consistent performance — unaffected by fluid temperature or viscosity</li>
-  <li>Compact design — enables easy installation in space-restricted systems</li>
-  <li>Ideal for integration with:
+               <ul>
+  <li><strong>Contoil® Oil Flow Meters:</strong> Precision-engineered for accurate measurement of fuel and lubrication oil in demanding industrial environments</li>
+  <li><strong>Performance:</strong> Consistent accuracy regardless of fluid temperature or viscosity</li>
+  <li><strong>Design:</strong> Compact form factor for easy installation in space-restricted systems</li>
+  <li><strong>Integration:</strong> Ideal for power generators, boilers, burners, and closed-loop lubrication systems</li>
+  <li><strong>Applications – Fuel Consumption Measurement:</strong>
     <ul>
-      <li>Power generators</li>
-      <li>Boilers</li>
-      <li>Burners</li>
-      <li>Closed-loop lubrication systems</li>
+      <li>Oil burners in heating systems and industrial furnaces</li>
+      <li>Unloading applications</li>
+      <li>Ships, diesel locomotives, and emergency power units</li>
+      <li>Combined heat and power (CHP) systems</li>
     </ul>
   </li>
-  <li>Applications Across Industries:
+  <li><strong>Applications – Lubrication Monitoring:</strong>
     <ul>
-      <li><strong>Fuel Consumption Measurement:</strong>
-        <ul>
-          <li>Oil burners in heating systems and industrial furnaces</li>
-          <li>Unloading applications</li>
-          <li>Ships, diesel locomotives, and emergency power units</li>
-          <li>Combined heat and power (CHP) systems</li>
-        </ul>
-      </li>
-      <li><strong>Lubrication Monitoring:</strong>
-        <ul>
-          <li>Closed-loop systems for machinery bearings and motors</li>
-          <li>Machine test benches and engine testing labs</li>
-        </ul>
-      </li>
-      <li><strong>Remote Integration:</strong>
-        <ul>
-          <li>Optional digital output for advanced control systems</li>
-          <li>Compatible with remote monitoring platforms</li>
-        </ul>
-      </li>
+      <li>Closed-loop systems for machinery bearings and motors</li>
+      <li>Machine test benches and engine testing labs</li>
     </ul>
   </li>
+  <li><strong>Remote Integration:</strong> Optional digital output for control system integration and remote monitoring</li>
 </ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-           <ul>
-  <li>Unmatched Accuracy (0.5%) — reliable fuel consumption monitoring, unaffected by temperature and viscosity variations</li>
-  <li>Flexible Installation:
-    <ul>
-      <li>Mount horizontally, vertically, or at an incline</li>
-      <li>Operates without straight inlet/outlet runs</li>
-      <li>Suitable for batching, dosing, and filling operations</li>
-    </ul>
-  </li>
-  <li>Dual-Side Pump Compatibility — install on either the pressure or suction side of pumps</li>
-  <li>Operational Simplicity:
-    <ul>
-      <li>Mechanical display with resettable counter</li>
-      <li>Optional limiting value switch for flow rate control</li>
-    </ul>
-  </li>
-  <li>Built-In Diagnostics — enables quick function checks, fault analysis, and on-site repairability</li>
-  <li>Compact Design — ideal for tight enclosures and complex piping systems</li>
+          <ul>
+  <li><strong>Unmatched Accuracy (±0.5%):</strong> Reliable fuel consumption monitoring with temperature- and viscosity-independent readings</li>
+  <li><strong>Flexible Installation:</strong> Mount horizontally, vertically, or at an incline—even in space-constrained systems without straight inlet/outlet runs</li>
+  <li><strong>Application Support:</strong> Suitable for batching, dosing, and filling operations</li>
+  <li><strong>Dual-Side Pump Compatibility:</strong> Install on either the pressure or suction side of pumps</li>
+  <li><strong>Operational Simplicity:</strong> Mechanical display with resettable counter and optional limiting value switch for flow rate control</li>
+  <li><strong>Built-In Diagnostics:</strong> Enables quick function checks, fault analysis, and on-site repairability to reduce downtime and costs</li>
+  <li><strong>Compact Design:</strong> Optimized for tight enclosures and complex piping systems</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN4 – DN80</li>
-  <li>Outputs:
-    <ul>
-      <li>Pulse</li>
-      <li>Analog 4–20 mA (continuous for remote monitoring)</li>
-    </ul>
-  </li>
-  <li>Power Options:
-    <ul>
-      <li>External power supply</li>
-      <li>Battery backup (optional)</li>
-    </ul>
-  </li>
-  <li>Connection Types:
-    <ul>
-      <li>Flanges — DIN, ANSI, JIS</li>
-      <li>Threaded ends</li>
-    </ul>
-  </li>
-  <li>Accuracy: 0.5% to 1%</li>
-  <li>Performance: Independent of fluid viscosity and temperature</li>
-  <li>Display: Mechanical with resettable totalizer</li>
-  <li>Straight Run Requirement: None</li>
-  <li>Temperature Range Options: 130°C and 180°C</li>
-  <li>Nominal Pressure Ratings: PN 16, PN 25, PN 40</li>
-  <li>Suitable Applications:
-    <ul>
-      <li>Heating Fuel — Extra light / Light</li>
-      <li>Medium and Heavy naphtha</li>
-      <li>Diesel, petrol, and other lubricating oils</li>
-    </ul>
-  </li>
-</ul>
+           <table>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Value</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Range</td>
+      <td>DN4 – DN80</td>
+    </tr>
+    <tr>
+      <td>Outputs</td>
+      <td>Pulse, Analog 4–20 mA continuous for remote monitoring</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>External power supply with battery back-up option</td>
+    </tr>
+    <tr>
+      <td>Connection Types</td>
+      <td>Flange (DIN, ANSI, JIS), threaded ends</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>0.5% to 1%</td>
+    </tr>
+    <tr>
+      <td>Viscosity & Temperature Effect</td>
+      <td>Independent of viscosity and temperature</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>Mechanical display with resettable totalizer</td>
+    </tr>
+    <tr>
+      <td>Straight Run Requirement</td>
+      <td>No straight run required</td>
+    </tr>
+    <tr>
+      <td>Temperature Range</td>
+      <td>130°C and 180°C</td>
+    </tr>
+    <tr>
+      <td>Nominal Pressure</td>
+      <td>PN 16, 25 and 40 Bar</td>
+    </tr>
+    <tr>
+      <td>Suitable Applications</td>
+      <td>Heating fuel (extra light / light), medium, heavy naphtha, diesel, petrol, and other lubricating liquids (oils)</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

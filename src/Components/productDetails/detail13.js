@@ -136,9 +136,9 @@ function ProductDetail() {
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Micro Stream Flow Sensor OFZ Series </h3>
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;Precision micro-flow sensing ideal for automotive and chemical dosing</li>
-              <li className="mb-2">&#9679;Compact, low-power design for AdBlue, DEF, and light oil applications</li>
-              <li className="mb-2">&#9679;PPS body with SS304 shaft for chemical resistance and durability</li>
+              <li className="mb-2">&#9679;OF-Z Microstream Flow Sensor – Oval Gear Sensor for Oil & AdBlue | Aichi Tokei Japan</li>
+              <li className="mb-2">&#9679;AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW. 0.5–200 L/h range.</li>
+              <li className="mb-2">&#9679;±0.5% accuracy, compact, easy to install</li>
               
             
             </ul>
@@ -172,43 +172,106 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <ul>
-  <li>The OFZ Series Micro Stream Flow Sensor is a compact and highly accurate solution for microfluidic and dosing applications in industrial and automotive settings.</li>
-  <li>Optimized for small pipe sizes (DN5–DN10) with a pulse value of 0.46 ml/pulse, ensuring precision in low-volume dispensing.</li>
-  <li>Ideal for AdBlue (DEF) systems in diesel vehicles, urea dosing, and other chemical handling operations.</li>
-  <li>Constructed with a PPS (Polyphenylene Sulfide) body, stainless steel shaft (SS304), and NBR sealing for chemical, heat, and wear resistance.</li>
-  <li>Supports operating pressures up to 5 bar and temperatures up to 70°C.</li>
-  <li>Performs reliably in environments involving weak acids/alkaline fluids, oil transfer (light and heavy), water circulation, and kerosene flow control.</li>
-  <li>Provides voltage pulse or open collector signal outputs with a 0.5-meter cable for seamless system integration.</li>
-  <li>Operates on low power (0.2 VA or less) with a wide input voltage range of 3–24 VDC.</li>
-  <li>Ideal for compact flow control setups requiring efficiency, precision, and automation compatibility.</li>
+  <li><strong>Product:</strong> OF-Z Microstream Flow Sensor from Aichi Tokei Denki, Japan</li>
+  <li><strong>Type:</strong> Compact, high-precision oval gear flow sensor for low flow rate measurement</li>
+  <li><strong>Fluid Compatibility:</strong> Viscous fluids such as AdBlue, kerosene, heavy oil, and lubricants</li>
+  <li><strong>Use Case:</strong> Ideal for applications requiring excellent repeatability, precise control, and reliable fluid dispensing in industrial and automotive environments</li>
+  <li><strong>Technology:</strong> Aichi’s micro-flow technology for accurate volumetric measurement unaffected by viscosity or pulsation</li>
+  <li><strong>Design:</strong> Simple mechanical structure for long-term stability and easy installation in narrow or confined spaces</li>
+  <li><strong>Distribution:</strong> Offered in India by IOTAFLOW Systems for OEMs, industrial users, and process control engineers</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li>AdBlue (DEF) dispensing systems for automotive OEMs</li>
+      <li>Fuel dosing systems using kerosene, heavy oil, and diesel</li>
+      <li>Lubrication systems in industrial machinery</li>
+      <li>Process control in chemical dosing for additives and stabilizers</li>
+      <li>Thermal power plant chemical injection</li>
+      <li>Printing, textile, and packaging industries requiring accurate liquid flow metering</li>
+      <li>OEM manufacturing lines needing embedded flow control sensors</li>
+      <li>Low flow monitoring in skid-mounted systems</li>
+    </ul>
+  </li>
 </ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-           <ul>
-  
+<ul>
+  <li><strong>Design:</strong> Compact and robust oval gear flow sensor for micro and low-flow applications</li>
+  <li><strong>Accuracy:</strong> High repeatability with ±0.5% accuracy for stable flow control</li>
+  <li><strong>Fluid Compatibility:</strong> Viscous fluids including AdBlue, DEF, kerosene, oils, and chemical additives</li>
+  <li><strong>Installation:</strong> No need for straight pipe runs—suitable for tight piping layouts</li>
+  <li><strong>Performance:</strong> Minimal pressure loss and excellent response to pulsating flows</li>
+  <li><strong>Flow Range:</strong> 0.5 L/h to 200 L/h (model-dependent)</li>
+  <li><strong>Connection Sizes:</strong> Rc ¼, Rc ⅜</li>
+  <li><strong>Temperature Resistance:</strong> Up to 80°C fluid temperature</li>
+  <li><strong>Structure:</strong> Simple mechanical design—no power required for basic models</li>
+  <li><strong>Digital Options:</strong> Optional digital output models for remote monitoring or OEM integration</li>
+  <li><strong>Origin:</strong> Made in Japan – Aichi Tokei Denki precision quality</li>
+  <li><strong>Availability:</strong> Offered in India by IOTAFLOW Systems Pvt. Ltd.</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN10 – DN200</li>
-  <li>Suitable for high temperature and high viscosity applications</li>
-  <li>Accuracy options: ±0.5% or ±0.2%</li>
-  <li>Standard viscosity capacity: Up to 5,000 cP (centipoise ≈ mPa·s)</li>
-  <li>Flow range: 0.04–340 m³/h (18–37,396 GPM)</li>
-  <li>Operating environment: –20°C to +280°C</li>
-  <li>Material options: Cast Iron, Cast Steel, and Stainless Steel</li>
-  <li>Available features:
-    <ul>
-      <li>LC display</li>
-      <li>Transmitter</li>
-      <li>MCU-based flow process controller</li>
-    </ul>
-  </li>
-</ul>
+           <table>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Specification</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN5 to DN10</td>
+    </tr>
+    <tr>
+      <td>Connection Size</td>
+      <td>R1/4" to R1/2" threaded</td>
+    </tr>
+    <tr>
+      <td>Maximum Pressure</td>
+      <td>5 bar</td>
+    </tr>
+    <tr>
+      <td>Maximum Fluid Temperature</td>
+      <td>70°C</td>
+    </tr>
+    <tr>
+      <td>Output Signal</td>
+      <td>Voltage pulses / Open collector (choose at ordering) with 0.5 m cable</td>
+    </tr>
+    <tr>
+      <td>Pulse Value</td>
+      <td>0.46 ml/pulse</td>
+    </tr>
+    <tr>
+      <td>Applied Voltage Range</td>
+      <td>3 to 24 VDC</td>
+    </tr>
+    <tr>
+      <td>Power Consumption</td>
+      <td>0.2 VA or less</td>
+    </tr>
+    <tr>
+      <td>Material of Construction</td>
+      <td>Case & Rotor: PPS; Shaft: SS304; O-ring: NBR</td>
+    </tr>
+    <tr>
+      <td>Installation Orientation</td>
+      <td>Any (horizontal or vertical); no straight pipe length required</td>
+    </tr>
+    <tr>
+      <td>Fluid Compatibility</td>
+      <td>Urea (AdBlue/DEF), light oil, heavy oil, kerosene, cool/hot water, weak acid/alkali</td>
+    </tr>
+    <tr>
+      <td>Country of Origin</td>
+      <td>Japan</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (

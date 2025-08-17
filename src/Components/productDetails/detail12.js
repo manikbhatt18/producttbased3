@@ -177,42 +177,105 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-  <li>Oval Gear Flow Meters are high-precision positive displacement meters designed for measuring viscous and non-conductive fluids in industrial environments.</li>
-  <li>Ideal for applications requiring superior accuracy and durability across petrochemical, lubricant, food processing, paint manufacturing, and hydraulic industries in India.</li>
-  <li>Capable of handling fluid viscosities up to 5,000 cP and operating temperatures from -20°C to +280°C.</li>
-  <li>Well-suited for thick fluids like high-temperature oils, syrups, adhesives, and liquids where other flow meters may fail.</li>
-  <li>Offers measurement accuracy of ±0.5%, with optional ±0.2% for more critical operations.</li>
-  <li>Available in cast iron, cast steel, and stainless steel body variants to match fluid types and process requirements.</li>
-  <li>Additional integration options include a local LC display, signal transmitter, and MCU-based flow controller for seamless inclusion in manual and automated systems.</li>
-  <li>Supports a wide flow range from 0.04 to 340 m³/h, ensuring high versatility for industrial fluid handling.</li>
+  <li><strong>IOTAFLOW Oval Gear Flow Meter:</strong> High-precision positive displacement flow meter engineered for accurate measurement of viscous, non-conductive, flammable, and high-value liquids, including solvents, alcohols, oils, and chemicals</li>
+  <li><strong>Measurement Principle:</strong> Dual oval gear rotors provide direct volumetric flow measurement, unaffected by changes in fluid conductivity, temperature, or pulsation</li>
+  <li><strong>Manufacturer:</strong> IOTAFLOW Systems Pvt. Ltd.</li>
+  <li><strong>Industrial Use:</strong> Ideal for batching, dosing, transfer, and process control across a wide range of applications</li>
+  <li><strong>Size Range:</strong> DN10 to DN200</li>
+  <li><strong>Accuracy:</strong> Repeatable up to ±0.2%</li>
+  <li><strong>Viscosity Range:</strong> Up to 5,000 cP</li>
+  <li><strong>Pressure Handling:</strong> Up to 6.4 MPa</li>
+  <li><strong>Applications:</strong>
+    <ul>
+      <li>Oil metering – diesel, heavy oil, light oil, lubrication systems</li>
+      <li>Solvent and alcohol measurement in pharmaceutical, distilleries, and chemical industries</li>
+      <li>Paints, adhesives, and resins in packaging and industrial coating</li>
+      <li>Chemical dosing and batching systems</li>
+      <li>DEF/AdBlue and non-conductive fluid applications</li>
+      <li>Food-grade viscous liquid metering</li>
+      <li>Heat transfer and hydraulic fluids in OEM machinery and skids</li>
+      <li>Explosion-prone or Ex-proof zones needing positive displacement metering</li>
+    </ul>
+  </li>
 </ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-           <ul>
-  
+<ul>
+  <li><strong>Technology:</strong> Positive displacement oval gear – unaffected by fluid conductivity</li>
+  <li><strong>Measurement:</strong> Direct volumetric measurement – no flow conditioning or straight pipe required</li>
+  <li><strong>Accuracy:</strong> Up to ±0.2% with high repeatability</li>
+  <li><strong>Viscosity Range:</strong> 2 to 5,000 cP (compatible with heavy oil, resin, adhesives)</li>
+  <li><strong>Flow Rate Range:</strong> 0.04 to 340 m³/h (size-dependent)</li>
+  <li><strong>Temperature Range:</strong> –20°C to +280°C</li>
+  <li><strong>Pressure Rating:</strong> Up to 6.4 MPa (64 bar)</li>
+  <li><strong>Material Options:</strong> Cast Iron, Cast Steel, SS304, SS316</li>
+  <li><strong>Size Availability:</strong> DN10 to DN200</li>
+  <li><strong>Output Compatibility:</strong> Pulse, 4–20 mA, RS485, batching controllers</li>
+  <li><strong>Display Options:</strong> Mechanical, Digital Totalizer, Rate + Total, MCU Controller</li>
+  <li><strong>Enclosure Ratings:</strong> IP65, IP67, IP68; NEMA 4X; Ex-Proof options</li>
+  <li><strong>Compliance:</strong> CGWA guidelines for groundwater flow reporting</li>
+  <li><strong>Connection Standards:</strong> Flanged PN16, PN25, PN40, PN64 or ANSI #150/#300</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <ul>
-  <li>Pipe Range: DN10 – DN200</li>
-  <li>Suitable for high temperature and high viscosity applications</li>
-  <li>Accuracy options: ±0.5% or ±0.2%</li>
-  <li>Standard viscosity capacity: Up to 5,000 cP (centipoise ≈ mPa·s)</li>
-  <li>Flow range: 0.04–340 m³/h (18–37,396 GPM)</li>
-  <li>Operating environment: –20°C to +280°C</li>
-  <li>Material options: Cast Iron, Cast Steel, and Stainless Steel</li>
-  <li>Available features:
-    <ul>
-      <li>LC display</li>
-      <li>Transmitter</li>
-      <li>MCU-based flow process controller</li>
-    </ul>
-  </li>
-</ul>
+          <table>
+  <thead>
+    <tr>
+      <th><strong>Parameter</strong></th>
+      <th><strong>Specification</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pipe Size Range</td>
+      <td>DN10 to DN200</td>
+    </tr>
+    <tr>
+      <td>Application Type</td>
+      <td>High temperature and high viscosity fluid measurement</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±0.5% (standard) or ±0.2% (high-precision option)</td>
+    </tr>
+    <tr>
+      <td>Viscosity Handling</td>
+      <td>Up to 5,000 cP (centipoise)</td>
+    </tr>
+    <tr>
+      <td>Flow Range</td>
+      <td>0.04 to 340 m³/h (18 to 37,396 GPM)</td>
+    </tr>
+    <tr>
+      <td>Working Temperature Range</td>
+      <td>–20°C to +280°C</td>
+    </tr>
+    <tr>
+      <td>Material Options</td>
+      <td>Cast Iron, Cast Steel, SS304, SS316 (based on application)</td>
+    </tr>
+    <tr>
+      <td>Display / Control Options</td>
+      <td>LCD Totalizer, Local Transmitter, MCU-based Flow Controller</td>
+    </tr>
+    <tr>
+      <td>Output Signals</td>
+      <td>Pulse, 4–20 mA, RS485 Modbus (optional)</td>
+    </tr>
+    <tr>
+      <td>Mounting Orientation</td>
+      <td>Horizontal or vertical; no upstream/downstream pipe length required</td>
+    </tr>
+    <tr>
+      <td>Enclosure Protection</td>
+      <td>IP65, IP67, IP68; Flameproof/Ex-Proof options available</td>
+    </tr>
+  </tbody>
+</table>
           )}
 
           {activeTab === "Downloads" && (
