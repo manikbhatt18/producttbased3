@@ -26,6 +26,7 @@ import Detail4 from "./Components/productDetails/detail4";
 import Detail5 from "./Components/productDetails/detail5";
 import Detail6 from "./Components/productDetails/detail6";
 import Detail7 from "./Components/productDetails/detail7";
+import Detail7b from "./Components/productDetails/detail7b";
 import Detail8 from "./Components/productDetails/detail8";
 import Detail9 from "./Components/productDetails/detail9";
 import Detail10 from "./Components/productDetails/detail10";
@@ -88,6 +89,8 @@ function App() {
           <Route path="/product-detail/detail5" element={<Detail5 />} />
           <Route path="/product-detail/detail6" element={<Detail6 />} />
           <Route path="/product-detail/detail7" element={<Detail7 />} />
+          <Route path="/product-detail/detail7b" element={<Detail7b />} />
+
           <Route path="/product-detail/detail8" element={<Detail8 />} />
           <Route path="/product-detail/detail9" element={<Detail9 />} />
           <Route path="/product-detail/detail10" element={<Detail10 />} />
