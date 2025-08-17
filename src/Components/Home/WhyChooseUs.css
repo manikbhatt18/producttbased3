@@ -2,29 +2,33 @@
 .why-choose-section {
   padding: 50px 20px;
   background: #f8f8f8;
+  display: block;
 }
 
-/* Container (no bootstrap) */
+/* Container */
 .why-container {
   display: flex;
-  max-width: 100%;
- left: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   gap: 40px;
   align-items: center;
-  
+ 
 }
 
 /* Left Image */
 .why-left img {
   width: 100%;
   max-width: 800px;
+  height: auto;
+  
   
 }
 
 /* Right Text Area */
 .why-right {
   flex: 1;
- 
+  width: 40%;
 }
 
 /* Heading Animation */
@@ -45,7 +49,7 @@
 .iotflow {
   position: relative;
   display: inline-block;
-  color: black; /* Force black text */
+  color: black;
   z-index: 1;
 }
 
@@ -71,7 +75,7 @@
 .why-text {
   color: #555;
   margin: 20px 0;
-  line-height: 2.00;
+  line-height: 2;
 }
 
 /* Grid Layout */
@@ -83,12 +87,71 @@
 }
 
 .why-item h5 {
-  color: black;
-  font-weight: 700;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* adjust as needed */
+  margin-bottom: 8px;
+}
+
+.why-item h5 .Icon {
+  width: 30px; /* adjust size */
+  height: auto;
+  margin-right: 8px; /* spacing between icon and text */
+  font-size: 1rem;
 }
 
 .why-item p {
-  color: #666;
-  font-size: 14px;
+  margin-left: 20px;
+  line-height: 1.4; /* keep paragraph clean */
+}
+
+/* ================= Responsive Styles ================= */
+
+/* Medium screens - stack image and text vertically */
+@media (max-width: 992px) {
+  .why-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .why-left img {
+    max-width: 100%;
+  }
+
+  .why-heading {
+    font-size: 2.8rem;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small screens - single column layout */
+@media (max-width: 576px) {
+  .why-container {
+    gap: 20px;
+    text-align: left;
+  }
+
+  .why-heading {
+    font-size: 2.2rem;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .why-item p {
+    font-size: 13px;
+   
+  }
+}
+.why-choose-section .Icon {
+  width: 2rem  !important;
+  height: 2rem  !important;
+  
+ 
 }

@@ -1,0 +1,40 @@
+.clients-section {
+  padding: 150px 0; /* was 80px */
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.heading-bar {
+  width: 4px;
+  height: 24px;
+  background: var(--brand-yellow);
+  display: inline-block;
+}
+.client-logo-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-logo-card img {
+  max-height: 70px;
+  max-width: 90%;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter var(--transition-fast), transform var(--transition-fast);
+}
+.client-logo-card img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}

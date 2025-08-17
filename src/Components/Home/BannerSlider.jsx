@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import slide1 from '../../images/bg1.jpg';
 import slide2 from '../../images/bg2.jpg';
 import slide3 from '../../images/bg3.jpg';
+import './BannerSlider.css';
 
 function BannerSlider() {
   const carouselRef = useRef(null);
@@ -39,19 +40,23 @@ function BannerSlider() {
               animate={{ scale: 1.05 }}
               transition={{ duration: 4, ease: 'easeInOut' }}
             >
-              <img src={slide.img} className="d-block w-100 shadow-lg" alt={`Slide ${idx}`} />
+              <img src={slide.img} className="d-block w-100 shadow-lg banner-img" alt={`Slide ${idx}`} />
               <Carousel.Caption className="text-start mb-5">
-                <h1 className="fw-bold text-warning">{slide.heading}</h1>
-                <h2 className="fw-bold text-white">{slide.subHeading}</h2>
-                <p className="fs-5">{slide.text}</p>
-                <Button variant="outline-light" className="rounded-0 px-4 py-2">Our Products &gt;</Button>
+                <div className="caption-bg">
+                  <h1 className="fw-bold text-warning">{slide.heading}</h1>
+                  <h2 className="fw-bold text-white">{slide.subHeading}</h2>
+                  <p className="fs-5">{slide.text}</p>
+                  <Button variant="warning" className="btnClass">
+                    <span>Our Products </span>
+                  </Button>
+                </div>
               </Carousel.Caption>
             </motion.div>
           </Carousel.Item>
         ))}
       </Carousel>
 
-      {/* Custom Controls with absolute positioning */}
+      {/* Custom Controls */}
       <div className="position-absolute bottom-0 end-0 m-3 d-flex" style={{ zIndex: 10 }}>
         <Button variant="light" onClick={() => carouselRef.current.prev()} className="me-2">
           &lt;

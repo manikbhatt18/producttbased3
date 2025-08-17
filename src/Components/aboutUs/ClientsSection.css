@@ -60,3 +60,6 @@
     transform: translateX(-50%);
   }
 }
+.clients-section  h5{
+  margin-left: 120px;
+}

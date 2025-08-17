@@ -287,7 +287,7 @@ export function MoreAboutUs() {
 
 /* ---------------- FAQ ---------------- */
 export function FAQSection() {
-  const [activeKey, setActiveKey] = useState("0");
+  const [activeKey, setActiveKey] = useState("-1");
 
   const faqs = [
     {

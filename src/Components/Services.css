@@ -104,3 +104,193 @@
 .scroll-top i {
   font-size: 1.25rem;
 }
+ .btn-enquiry {
+          position: relative;
+          overflow: hidden;
+          background-color:black;
+          border: none;
+          padding: 8px 20px;
+          cursor: pointer;
+          color: #eee;
+        }
+
+        .btn-enquiry::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color:white;
+          transform: translateX(-100%);
+          z-index: 1;
+        }
+
+        .btn-enquiry:hover::before {
+          animation: slideInLeft 0.4s ease forwards;
+        }
+
+        .btn-enquiry:not(:hover)::before {
+          animation: slideOutRight 0.4s ease forwards;
+        }
+
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes slideOutRight {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(100%);
+          }
+        }
+
+        .btn-enquiry span {
+          position: relative;
+          z-index: 2;
+          transition: color 0.4s ease;
+        }
+
+        .btn-enquiry:hover span {
+          color: black;
+        }
+/* Existing styles remain exactly the same — only media queries added */
+
+/* For tablets and below */
+@media (max-width: 992px) {
+  .footer-mega .logo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .footer-mega p {
+    text-align: center;
+  }
+
+  .btn-enquiry {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-bottom .d-flex {
+    justify-content: center !important;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .footer-mega .logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-mega p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .footer-col-title {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+
+  .scroll-top {
+    width: 44px;
+    height: 44px;
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+}
+/* ---------------- Responsive adjustments for ServicesPage ---------------- */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  .services-page .stat-card,
+  .services-page .open-positions-card {
+    min-height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .services-page .display-4 {
+    font-size: 2.2rem;
+  }
+
+  .services-page .lead {
+    font-size: 1rem;
+  }
+
+  .services-page h1.display-4 {
+    font-size: 2rem;
+  }
+
+  .services-page h2.h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Features grid */
+  .services-page .gy-4 > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .services-page .stat-card,
+  .services-page .open-positions-card {
+    padding: 2rem 1rem;
+  }
+
+  .services-page h1.display-4 {
+    font-size: 1.6rem;
+  }
+
+  .services-page .lead {
+    font-size: 0.95rem;
+  }
+
+  .services-page h2.h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Table responsiveness */
+  .services-page .table-responsive {
+    overflow-x: auto;
+  }
+
+  /* Progress bars */
+  .services-page .custom-progress {
+    height: 5px;
+  }
+
+  /* Feature item spacing */
+  .services-page .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

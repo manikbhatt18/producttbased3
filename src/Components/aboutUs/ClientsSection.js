@@ -44,8 +44,9 @@ const logos = [adani, Cairn, client2, client3, client4, client41,client51,client
 function ClientsSection() {
   return (
     <section className="clients-section py-5">
+      <h5 className="section-title"><span></span> OUR CLIENTS</h5>
       <div className="container text-center">
-        <h5 className="section-title"><span></span> OUR CLIENTS</h5>
+        
         <div className="slider-wrapper mt-4">
           <div className="slider-track">
             {[...logos, ...logos].map((logo, idx) => (

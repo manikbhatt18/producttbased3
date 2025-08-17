@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import coreValuesImg from '../../images/coreVal.png'; // Replace with your actual image
+import coreValuesImg from '../../images/coreVal.png';
+import icon from "../../images/greater.png";
 
 function CoreValues() {
   const headingRef = useRef(null);
@@ -18,9 +19,9 @@ function CoreValues() {
   }, []);
 
   return (
-    <div className="core-values-section d-flex">
+    <div className="core-values-section d-flex flex-wrap">
       {/* Left Section */}
-      <div className="left-section text-white py-5 px-4 w-50">
+      <div className="left-section text-white py-5 px-4 col-lg-6 col-md-12">
         <div className="content-wrapper">
           <h1
             ref={headingRef}
@@ -37,29 +38,29 @@ function CoreValues() {
           </p>
 
           <div className="row mt-4">
-            <div className="col-6 mb-4">
-              <h5><span className="text-warning me-2">&gt;</span>Empowering Ownership</h5>
+            <div className="col-sm-6 mb-4">
+              <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Empowering Ownership</h5>
               <p className="text-light">
                 A culture where our team takes full responsibility and pride in their work, driving excellence in every flow measuring sensor we create.
               </p>
             </div>
 
-            <div className="col-6 mb-4">
-              <h5><span className="text-warning me-2">&gt;</span>Thrust for Learning</h5>
+            <div className="col-sm-6 mb-4">
+              <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Thrust for Learning</h5>
               <p className="text-light">
                 Continuously expanding our expertise and skills, we harness the power of learning to innovate and lead.
               </p>
             </div>
 
-            <div className="col-6">
-              <h5><span className="text-warning me-2">&gt;</span>Innovating Solutions</h5>
+            <div className="col-sm-6 mb-4">
+              <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Innovating Solutions</h5>
               <p className="text-light">
                 Embracing every challenge with confidence to provide world-class solutions.
               </p>
             </div>
 
-            <div className="col-6">
-              <h5><span className="text-warning me-2">&gt;</span>Team of Problem Solvers</h5>
+            <div className="col-sm-6 mb-4">
+              <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Team of Problem Solvers</h5>
               <p className="text-light">
                 Our team collaborates to solve even the most complex industrial challenges.
               </p>
@@ -69,23 +70,25 @@ function CoreValues() {
       </div>
 
       {/* Right Section */}
-      <div className="right-section w-50">
+      <div className="right-section col-lg-6 col-md-12 p-0">
         <img
           src={coreValuesImg}
           alt="Core Values"
-          className="img-fluid h-100 w-100 object-fit-cover"
+          className="img-fluid w-100 h-100 object-fit-cover"
         />
       </div>
 
-      {/* Custom Styles */}
+      {/* Keep your styles but move to CSS for responsive tweaks */}
       <style>{`
+      .Icon {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(55%) saturate(748%) hue-rotate(4deg) brightness(103%) contrast(102%);
+}
+     
         .left-section {
           background-color: #1a1a1a;
         }
-
-        // .black-text {
-        //   color: black;
-        // }
 
         .highlight-yellow {
           position: relative;
@@ -119,6 +122,43 @@ function CoreValues() {
         .animate-heading.show {
           opacity: 1;
           transform: translateY(0);
+        }
+
+        /* ✅ Responsive adjustments only */
+        @media (max-width: 992px) {
+          .core-values-section {
+            flex-direction: column;
+          }
+          .right-section img {
+            height: auto;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .left-section {
+            padding: 2rem 1.5rem;
+          }
+          .animate-heading {
+            font-size: 1.8rem;
+          }
+          .left-section p {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .animate-heading {
+            font-size: 1.5rem;
+          }
+          .left-section {
+            padding: 1.5rem 1rem;
+          }
+          .left-section p {
+            font-size: 0.95rem;
+          }
+          .left-section h5 {
+            font-size: 1rem;
+          }
         }
       `}</style>
     </div>

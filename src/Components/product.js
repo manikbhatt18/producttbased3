@@ -14,8 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
   const images = [img1, img2, img3];
-
-  const ROTATE_MS = 2000; // change to 1500–3000 if you like
+  const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mainImage, setMainImage] = useState(images[0]);
@@ -25,7 +24,6 @@ function ProductDetail() {
   const tabContentRef = useRef(null);
   const imgWrapperRef = useRef(null);
 
-  // Tab fade-in animation
   useEffect(() => {
     if (tabContentRef.current) {
       tabContentRef.current.classList.remove("fade-in");
@@ -34,7 +32,6 @@ function ProductDetail() {
     }
   }, [activeTab]);
 
-  // Image crossfade trigger
   useEffect(() => {
     if (imgWrapperRef.current) {
       imgWrapperRef.current.classList.remove("img-fade-in");
@@ -43,7 +40,6 @@ function ProductDetail() {
     }
   }, [mainImage]);
 
-  // Auto-rotate images
   useEffect(() => {
     if (isPaused) return;
     const id = setInterval(() => {
@@ -63,21 +59,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-    {
-      img: related2,
-      title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)",
-      link: "/product-detail/detail3",
-    },
-    {
-      img: related3,
-      title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series",
-      link: "/product-detail/detail4",
-    },
-    {
-      img: related4,
-      title: "Clamp-ON (Portable) ULTRASONIC PF 222/333",
-      link: "/product-detail/detail5",
-    },
+    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
+    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];
 
   return (
@@ -96,17 +80,19 @@ function ProductDetail() {
               </div>
             </div>
 
-            <div className="d-flex gap-3 mt-3">
+            <div className="d-flex gap-2 gap-md-3 flex-wrap justify-content-center mt-3">
               {images.map((img, i) => (
-                <div key={i} className="d-flex flex-column align-items-center">
+                <div key={i} className="d-flex flex-column align-items-center mb-2">
                   <img
                     src={img}
                     alt={`thumb-${i}`}
                     onClick={() => handleThumbClick(img, i)}
                     className="img-thumbnail"
                     style={{
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
+                      maxWidth: "60px",
+                      maxHeight: "60px",
                       cursor: "pointer",
                       objectFit: "cover",
                       border: mainImage === img ? "2px solid #000" : "1px solid #ddd",
@@ -145,7 +131,7 @@ function ProductDetail() {
 
       {/* Sticky tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0 justify-content-center">
+        <ul className="nav nav-tabs border-0 justify-content-center flex-wrap">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
               <button
@@ -166,48 +152,43 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <ul>
-  <li>The Domestic Ultrasonic Flow Meter is a high-performance solution designed for precise flow measurement in residential and light industrial applications.</li>
-  <li>Constructed with a rugged brass hydraulic body for durability.</li>
-  <li>Offers IP65 protection, with an IP68 option available for enhanced environmental resistance.</li>
-  <li>Supports flexible installation options to suit various environments.</li>
-  <li>Equipped with a clear LCD display for easy data visibility.</li>
-  <li>Compatible with multiple communication interfaces including Pulse, M-BUS, RS485, and optional LoRaWAN for remote access.</li>
-  <li>Powered by a long-lasting lithium battery, delivering up to 12 years of operation.</li>
-  <li>Features robust data logging with up to 60 months of EEPROM memory storage.</li>
-</ul>
+                  <li>The Domestic Ultrasonic Flow Meter is a high-performance solution designed for precise flow measurement in residential and light industrial applications.</li>
+                  <li>Constructed with a rugged brass hydraulic body for durability.</li>
+                  <li>Offers IP65 protection, with an IP68 option available for enhanced environmental resistance.</li>
+                  <li>Supports flexible installation options to suit various environments.</li>
+                  <li>Equipped with a clear LCD display for easy data visibility.</li>
+                  <li>Compatible with multiple communication interfaces including Pulse, M-BUS, RS485, and optional LoRaWAN for remote access.</li>
+                  <li>Powered by a long-lasting lithium battery, delivering up to 12 years of operation.</li>
+                  <li>Features robust data logging with up to 60 months of EEPROM memory storage.</li>
+                </ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-            <ul>
-              
-            </ul>
+            <ul></ul>
           )}
 
           {activeTab === "Technical data" && (
             <ul>
-  <li>Pipe Range: DN15 - DN25</li>
-  <li>Maximum Permissible Error: Q1 &lt; Q &lt; Q2 - 5%</li>
-  <li>Nominal Pressure: 16 Bar</li>
-  <li>Temperature Range: T30, T50, T90</li>
-  <li>Hydraulic Part Material: Brass</li>
-  <li>Installation: Return flow/forward flow (horizontal/vertical)</li>
-  <li>Protection: IP65 (IP68 optional)</li>
-  <li>End Connection: Threaded (ANSI Flanged Optional)</li>
-  <li>Display: LCD, 8 digits + icons, Units m³</li>
-  <li>Interfaces: Pulse, M-BUS, Wireless M-BUS, RS485, Optical, RF ultra narrow band</li>
-  <li>In-Built LoraWAN: Optional</li>
-  <li>Power Supply: Battery Operated 3.6 V Lithium, 12 years</li>
-  <li>Date History in EEPROM Memory: 60 Months, 184 Days, 1488 Hours</li>
-</ul>
+              <li>Pipe Range: DN15 - DN25</li>
+              <li>Maximum Permissible Error: Q1 &lt; Q &lt; Q2 - 5%</li>
+              <li>Nominal Pressure: 16 Bar</li>
+              <li>Temperature Range: T30, T50, T90</li>
+              <li>Hydraulic Part Material: Brass</li>
+              <li>Installation: Return flow/forward flow (horizontal/vertical)</li>
+              <li>Protection: IP65 (IP68 optional)</li>
+              <li>End Connection: Threaded (ANSI Flanged Optional)</li>
+              <li>Display: LCD, 8 digits + icons, Units m³</li>
+              <li>Interfaces: Pulse, M-BUS, Wireless M-BUS, RS485, Optical, RF ultra narrow band</li>
+              <li>In-Built LoraWAN: Optional</li>
+              <li>Power Supply: Battery Operated 3.6 V Lithium, 12 years</li>
+              <li>Date History in EEPROM Memory: 60 Months, 184 Days, 1488 Hours</li>
+            </ul>
           )}
 
           {activeTab === "Downloads" && (
-            <p>
-              Visit our documentation page to download the full technical
-              specifications and data sheets.
-            </p>
+            <p>Visit our documentation page to download the full technical specifications and data sheets.</p>
           )}
         </div>
       </div>
@@ -218,17 +199,17 @@ function ProductDetail() {
           <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
             {relatedProducts.map((product, idx) => (
-              <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center" key={idx}>
                 <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
                       backgroundColor: "#fff",
-                      width: "180px",
-                      height: "180px",
+                      width: "100%",
+                      maxWidth: "180px",
+                      aspectRatio: "1/1",
                       border: "1px solid #ddd",
                       borderRadius: "4px",
-                      transition: "transform 0.3s",
                     }}
                   >
                     <img
@@ -241,9 +222,7 @@ function ProductDetail() {
                       }}
                     />
                   </div>
-                  <p className="fw-semibold mt-2" style={{ fontSize: "14px" }}>
-                    {product.title}
-                  </p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: "14px" }}>{product.title}</p>
                 </Link>
               </div>
             ))}
@@ -258,45 +237,30 @@ function ProductDetail() {
         }
 
         @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ----- FIXED preview box + crossfade ----- */
         .main-image-wrapper {
           width: 100%;
           max-width: 400px;
-          height: 400px; /* fixed height so it doesn't jump */
+          height: 400px;
           display: flex;
           align-items: center;
           justify-content: center;
           background: #fff;
         }
+
         .main-image {
-          max-width: 100%;
-          max-height: 100%;
-          object-fit: contain;
-          display: block;
-        }
-        .img-canvas {
           width: 100%;
           height: 100%;
-        }
-        .img-fade-in {
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-        .img-fade-in {
-          opacity: 1;
+          object-fit: contain;
         }
 
-        /* Tabs */
+        .img-canvas { width: 100%; height: 100%; }
+        .img-fade-in { opacity: 0; transition: opacity 0.4s ease; }
+        .img-fade-in { opacity: 1; }
+
         .nav-tabs .nav-link {
           color: black;
           border: none;
@@ -305,33 +269,19 @@ function ProductDetail() {
           background-color: white;
         }
 
-        .nav-tabs .nav-link:hover {
-          background-color: #ffcc00;
-          color: black;
-        }
+        .nav-tabs .nav-link:hover { background-color: #ffcc00; color: black; }
+        .nav-tabs .nav-link.active-tab { border-bottom: 3px solid #ffcc00; color: black; background-color: white; }
 
-        .nav-tabs .nav-link.active-tab {
-          border-bottom: 3px solid #ffcc00;
-          color: black;
-          background-color: white;
-        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
 
-        /* Hover Scale for Cards/Images */
-        .hover-scale {
-          transition: transform 0.3s ease;
-        }
-
-        .hover-scale:hover {
-          transform: scale(1.05);
-        }
-
-        /* Enquiry Button Style */
         .btn-enquiry {
           position: relative;
           overflow: hidden;
-          background-color: yellow;
-          border: none;
+          background-color:  #ffcc00;
+          
           padding: 8px 20px;
+           color:black;
           cursor: pointer;
         }
 
@@ -343,44 +293,26 @@ function ProductDetail() {
           width: 100%;
           height: 100%;
           background-color: black;
+         
           transform: translateX(-100%);
           z-index: 1;
         }
 
-        .btn-enquiry:hover::before {
-          animation: slideInLeft 0.4s ease forwards;
-        }
+        .btn-enquiry:hover::before { animation: slideInLeft 0.4s ease forwards; }
+        .btn-enquiry:not(:hover)::before { animation: slideOutRight 0.4s ease forwards; }
 
-        .btn-enquiry:not(:hover)::before {
-          animation: slideOutRight 0.4s ease forwards;
-        }
+        @keyframes slideInLeft { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        @keyframes slideOutRight { from { transform: translateX(0); } to { transform: translateX(100%); } }
 
-        @keyframes slideInLeft {
-          from {
-            transform: translateX(-100%);
-          }
-          to {
-            transform: translateX(0);
-          }
-        }
+        .btn-enquiry span { position: relative; z-index: 2; transition: color 0.4s ease; }
+        .btn-enquiry:hover span { color: white; }
 
-        @keyframes slideOutRight {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(100%);
-          }
+        @media (max-width: 991px) {
+          .main-image-wrapper { height: auto; max-width: 100%; }
+          .nav-tabs .nav-link { font-size: 14px; padding: 0.5rem 0.75rem; }
         }
-
-        .btn-enquiry span {
-          position: relative;
-          z-index: 2;
-          transition: color 0.4s ease;
-        }
-
-        .btn-enquiry:hover span {
-          color: white;
+        @media (max-width: 767px) {
+          .nav-tabs { flex-wrap: wrap; }
         }
       `}</style>
     </div>

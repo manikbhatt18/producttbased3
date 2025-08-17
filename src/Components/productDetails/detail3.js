@@ -338,135 +338,38 @@ function ProductDetail() {
       </div>
 
       {/* Styles */}
-      <style jsx>{`
-        .fade-in {
-          animation: fadeIn 0.2s ease-in-out;
-        }
+       <style jsx>{`
+        .fade-in { animation: fadeIn 0.2s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+        .main-image-wrapper { width: 100%; max-width: 400px; height: 400px; display: flex; align-items: center; justify-content: center; background: #fff; }
+        .main-image { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+        .img-canvas { width: 100%; height: 100%; }
+        .img-fade-in { opacity: 0; transition: opacity 0.4s ease; }
+        .img-fade-in { opacity: 1; }
 
-        /* ----- FIXED preview box + crossfade ----- */
-        .main-image-wrapper {
-          width: 100%;
-          max-width: 400px;
-          height: 400px; /* fixed height so it doesn't jump */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: #fff;
-        }
-        .main-image {
-          max-width: 100%;
-          max-height: 100%;
-          object-fit: contain;
-          display: block;
-        }
-        .img-canvas {
-          width: 100%;
-          height: 100%;
-        }
-        .img-fade-in {
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-        .img-fade-in {
-          opacity: 1;
-        }
+        .nav-tabs .nav-link { color: black; border: none; border-bottom: 3px solid transparent; transition: all 0.3s ease; background-color: white; }
+        .nav-tabs .nav-link:hover { background-color: #ffcc00; color: black; }
+        .nav-tabs .nav-link.active-tab { border-bottom: 3px solid #ffcc00; color: black; background-color: white; }
 
-        /* Tabs */
-        .nav-tabs .nav-link {
-          color: black;
-          border: none;
-          border-bottom: 3px solid transparent;
-          transition: all 0.3s ease;
-          background-color: white;
-        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
 
-        .nav-tabs .nav-link:hover {
-          background-color: #ffcc00;
-          color: black;
-        }
+        .btn-enquiry { position: relative; overflow: hidden; background-color: yellow; color:black; border: none; padding: 8px 20px; cursor: pointer; }
+        .btn-enquiry::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; transform: translateX(-100%); z-index: 1; }
+        .btn-enquiry:hover::before { animation: slideInLeft 0.4s ease forwards; }
+        .btn-enquiry:not(:hover)::before { animation: slideOutRight 0.4s ease forwards; }
+        @keyframes slideInLeft { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        @keyframes slideOutRight { from { transform: translateX(0); } to { transform: translateX(100%); } }
+        .btn-enquiry span { position: relative; z-index: 2; transition: color 0.4s ease; }
+        .btn-enquiry:hover span { color: white; }
 
-        .nav-tabs .nav-link.active-tab {
-          border-bottom: 3px solid #ffcc00;
-          color: black;
-          background-color: white;
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+          .main-image-wrapper { max-width: 100%; height: auto; }
         }
-
-        /* Hover Scale for Cards/Images */
-        .hover-scale {
-          transition: transform 0.3s ease;
-        }
-
-        .hover-scale:hover {
-          transform: scale(1.05);
-        }
-
-        /* Enquiry Button Style */
-        .btn-enquiry {
-          position: relative;
-          overflow: hidden;
-          background-color: yellow;
-          border: none;
-          padding: 8px 20px;
-          cursor: pointer;
-        }
-
-        .btn-enquiry::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: black;
-          transform: translateX(-100%);
-          z-index: 1;
-        }
-
-        .btn-enquiry:hover::before {
-          animation: slideInLeft 0.4s ease forwards;
-        }
-
-        .btn-enquiry:not(:hover)::before {
-          animation: slideOutRight 0.4s ease forwards;
-        }
-
-        @keyframes slideInLeft {
-          from {
-            transform: translateX(-100%);
-          }
-          to {
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes slideOutRight {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(100%);
-          }
-        }
-
-        .btn-enquiry span {
-          position: relative;
-          z-index: 2;
-          transition: color 0.4s ease;
-        }
-
-        .btn-enquiry:hover span {
-          color: white;
+        @media (max-width: 767px) {
+          .nav-tabs { flex-wrap: wrap; }
         }
       `}</style>
     </div>

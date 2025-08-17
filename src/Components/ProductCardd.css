@@ -1,0 +1,38 @@
+.product-card {
+  position: relative;
+  width: 300px;
+  border: none ;
+  
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  
+}
+
+.iconn-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none !important;
+  
+}
+
+
+
+
+
+.product-card:hover .details-box {
+  transform: translateY(0);
+}
+.product-card,
+.product-card * {
+  border: none !important;
+  box-shadow: none !important;
+}
+img {
+  border: none !important;
+  outline: none !important;
+}
+.container.journey, 
+.container.py-5 {
+  background-color: white !important;
+}

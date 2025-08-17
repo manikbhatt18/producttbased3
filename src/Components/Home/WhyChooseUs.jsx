@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import imgWhyChoose from '../../images/whyChooseUs.png';
 import './WhyChooseUs.css';
+import icon from "../../images/greater.png";
 
 function WhyChooseUs() {
   const headingRef = useRef(null);
@@ -27,6 +28,7 @@ function WhyChooseUs() {
 
   return (
     <div className="why-choose-section">
+      
       <div className="why-container">
         <div className="why-left">
           <img src={imgWhyChoose} alt="Why Choose IOTAFlow" />
@@ -48,19 +50,19 @@ function WhyChooseUs() {
 
           <div className="why-grid">
             <div className="why-item">
-              <h5>&gt; Lean Manufacturing</h5>
+              <h5><img src={icon} alt="icon" className='Icon' /> Lean Manufacturing</h5>
               <p>A Lean Team that is obsessed with flow of value to the customer by continuously working on the value stream.</p>
             </div>
             <div className="why-item">
-              <h5>&gt; Fast Delivery</h5>
+              <h5><img src={icon} alt="icon" className='Icon' /> Fast Delivery</h5>
               <p>Unlike the industry standard lead times of 4-6 weeks, we deliver our standard products in just 7 days.</p>
             </div>
             <div className="why-item">
-              <h5>&gt; Flexible Solutions</h5>
+              <h5><img src={icon} alt="icon" className='Icon' /> Flexible Solutions</h5>
               <p>Multiple options at various price points to fit your budget.</p>
             </div>
             <div className="why-item">
-              <h5>&gt; Customer-Centricity</h5>
+              <h5><img src={icon} alt="icon" className='Icon' /> Customer-Centricity</h5>
               <p>At IOTAFLOW, we adapt to you, not the other way around!</p>
             </div>
           </div>

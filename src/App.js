@@ -49,6 +49,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./Components/Footer";
 import OurPartners from "./Components/Home/OurPartners";
+import HeroSection from "./Components/Home/HeroSection";
 
 function HomePage() {
   return (
@@ -58,6 +59,7 @@ function HomePage() {
       <WhyChooseUs />
       <CoreValues />
      <OurPartners/>
+     <HeroSection/>
       {/* <HeroBanner /> */}
       <StatsModern />
       {/* <DifferenceBlock /> */}

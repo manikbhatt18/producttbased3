@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-import ProductCard from './ProductCard';
+import ProductCard from './ProductCardd';
 
-// Import your icons
-import oilIcon from '../../images/oil.png';
-import waterIcon from '../../images/water.png';
-import airIcon from '../../images/Air.png';
-import gasIcon from '../../images/gas.png';
-import steamIcon from '../../images/steam.png';
-import chemicalIcon from '../../images/chemical.png';
+
+import oilIcon from '../../images/icon1.png';
+import waterIcon from '../../images/icon2.png';
+import airIcon from '../../images/icon3.png';
+import gasIcon from '../../images/icon4.png';
+import steamIcon from '../../images/icon5 (2).png';
+import chemicalIcon from '../../images/icon6.png';
 
 function ProductsSection() {
   return (

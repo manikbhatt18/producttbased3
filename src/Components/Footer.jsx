@@ -5,7 +5,7 @@ import "./Services.css"; // Move footer-specific CSS here if needed
 
 function Footer() {
   return (
-    <footer className="footer-mega text-light pt-5">
+    <footer className="footer-mega text-light pt-5 mt-10">
       <Container className="pb-5">
         <Row className="gy-5">
           <Col lg={4}>
@@ -18,9 +18,9 @@ function Footer() {
               history in a wide range of industries. We have presence on 5
               continents in 207 countries worldwide
             </p>
-            <Button variant="outline-light" className="rounded-0 px-4">
-              Find locations <i className="bi bi-chevron-right ms-2" />
-            </Button>
+           {/* <button className="my-2 btn-enquiry">
+              <span>Enquiry Now</span>
+            </button> */}
           </Col>
 
           <Col lg={2} md={6}>
