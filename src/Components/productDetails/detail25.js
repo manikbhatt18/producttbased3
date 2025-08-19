@@ -11,7 +11,7 @@ import img7 from "../../images/p25g.png";
 
 
 
-import related1 from "../../images/p21a.png";
+import related1 from "../../images/p17a.png";
 import related2 from "../../images/p22a.png";
 import related3 from "../../images/p23a.png";
 import related4 from "../../images/p1a.png";
@@ -68,7 +68,7 @@ function ProductDetail() {
   };
 
  const relatedProducts = [
-    { img: related1, title: "GasPro RPD Gas Meter", link: "/product-detail/detail21" },
+    { img: related1, title: "Ultrasonic BTU meter (Heat & Energy measurement) ", link: "/product-detail/detail17" },
     {
       img: related2,
       title: " UF-Biosonic (Ultrasonic Flow Measurement for Biogas)   ",

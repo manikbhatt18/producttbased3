@@ -55,14 +55,14 @@ function CoreValues() {
             <div className="col-sm-6 mb-4">
               <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Innovating Solutions</h5>
               <p className="text-light">
-                Embracing every challenge with confidence to provide world-class solutions.
+                    Embracing every challenge with creativity and resourcefulness.
               </p>
             </div>
 
             <div className="col-sm-6 mb-4">
               <h5><span className="text-warning me-2"><img src={icon} alt="icon" className='Icon' /></span>Team of Problem Solvers</h5>
               <p className="text-light">
-                Our team collaborates to solve even the most complex industrial challenges.
+                Fostering a collaborative environment, we thrive as a united team.
               </p>
             </div>
           </div>

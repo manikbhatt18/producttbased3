@@ -9,7 +9,7 @@ import img2 from "../../images/p8b.png";
 
 import related1 from "../../images/p6a.png";
 import related2 from "../../images/p7a.jpg";
-import related3 from "../../images/p9a.png";
+import related3 from "../../images/sja.png";
 import related4 from "../../images/p10a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -67,12 +67,12 @@ function ProductDetail() {
     { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
     {
       img: related2,
-      title: " Electromagnetic Flow Meter (EMF Standard)",
+      title: " MF-PRO Electromagnetic Flow Meter",
       link: "/product-detail/detail7",
     },
     {
       img: related3,
-      title: " Multijet Water Meters, Aqua-Re Series",
+      title: "Smart Single Jet Water Meters",
       link: "/product-detail/detail9",
     },
     {

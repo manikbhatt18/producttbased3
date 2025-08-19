@@ -3,7 +3,7 @@ import { Carousel, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import slide1 from '../../images/bg1.jpg';
 import slide2 from '../../images/bg2.jpg';
-import slide3 from '../../images/bg3.jpg';
+import slide3 from '../../images/newbg3.jpg';
 import './BannerSlider.css';
 
 function BannerSlider() {
@@ -11,22 +11,22 @@ function BannerSlider() {
 
   const slides = [
     {
-      img: slide1,
+      img: slide2,
       heading: 'UTILITIES are most Valuable',
       subHeading: 'When they stay INVISIBLE',
-      text: 'Un-regulated / Un-Monitored utility expenses are draining your Money.',
+      text: ' Un-regulated / Un-Monitored utility expenses are draining your Money.',
     },
     {
-      img: slide2,
-      heading: 'To Master It,',
-      subHeading: 'First Measure It.',
-      text: 'Step one, Take Charge. Step two, Measure with confidence.',
+      img: slide1,
+      heading: ' Protecting Your Reputation,',
+      subHeading: 'Always.',
+      text: ' With IOTAFLOW, you gain a lean, reliable partner ensuring accuracy, efficiency, and peace of mind in flow measurement — year after year.',
     },
     {
       img: slide3,
-      heading: 'Tailored Technologies:',
-      subHeading: 'Our Products Fit Your Application, Not Vice Versa.',
-      text: 'Rejecting the notion of a one-size-fits-all approach.',
+      heading: 'Your Process is Unique.',
+      subHeading: 'So Are Our Solutions.',
+      text: 'We don’t believe in one-size-fits-all. At IOTAFLOW, every customer gets custom flow measurement solutions designed to fit their unique needs — without compromise.',
     },
   ];
 
