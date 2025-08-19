@@ -3,21 +3,61 @@ import { NavLink, Link } from "react-router-dom";
 import "./CustomNavbar.css";
 import Logo from "../../images/logo1.png";
 import icon from "../../images/greater.png";
+import GaugeIcon from "../../images/clockIconn.png"; // icon
 
 function CustomNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState("Ultrasonic Flow Meter");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Clock/Gauge icon component to match your image
-  const ClockIcon = () => (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-      <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  );
+  // ✅ Product Data
+  const productData = {
+    "Ultrasonic Flow Meter": [
+      { name: "Inline Ultrasonic", link: "/products/inline-ultrasonic" },
+      { name: "Ultrasonic Inserted /Insertion Multipath", link: "/products/ultrasonic-inserted" },
+      { name: "Ultrasonic Fixed Clamp-On", link: "/products/ultrasonic-fixed-clamp" },
+      { name: "Ultrasonic Portable Clamp-On", link: "/products/ultrasonic-portable-clamp" },
+      { name: "Ultrasonic Open Channel", link: "/products/ultrasonic-open-channel" },
+      { name: "Ultrasonic Biogas Meter", link: "/products/ultrasonic-biogas" },
+      { name: "Inline Ultrasonic BTU Meter", link: "/products/inline-ultrasonic-btu" },
+      { name: "Clamp-On Ultrasonic BTU Meter", link: "/products/clamp-ultrasonic-btu" },
+      { name: "Ultrasonic Air Meter", link: "/products/ultrasonic-air-meter" },
+    ],
+    "Electromagnetic Flow Meter": [
+      { name: "Inline Electromagnetic", link: "/products/inline-electromagnetic" },
+      { name: "Battery Powered Electromagnetic", link: "/products/battery-electromagnetic" },
+      { name: "Electromagnetic Slurry Flow Meter", link: "/products/slurry-electromagnetic" },
+    ],
+    "Water Meter": [
+      { name: "Domestic Water Meter", link: "/products/domestic-water" },
+      { name: "Industrial Water Meter", link: "/products/industrial-water" },
+      { name: "Smart AMR Water Meter", link: "/products/smart-water" },
+    ],
+    "Positive Displacement Meter": [
+      { name: "Oval Gear Flow Meter", link: "/products/oval-gear" },
+      { name: "Nutating Disc Meter", link: "/products/nutating-disc" },
+    ],
+    "Variable Area Rotameter": [
+      { name: "Glass Tube Rotameter", link: "/products/glass-rotameter" },
+      { name: "Metal Tube Rotameter", link: "/products/metal-rotameter" },
+    ],
+    "Differential Pressure Flow Meter": [
+      { name: "Orifice Plate Meter", link: "/products/orifice" },
+      { name: "Venturi Tube Meter", link: "/products/venturi" },
+      { name: "Pitot Tube Meter", link: "/products/pitot" },
+    ],
+    "GAS Meter": [
+      { name: "Diaphragm Gas Meter", link: "/products/diaphragm-gas" },
+      { name: "Turbine Gas Meter", link: "/products/turbine-gas" },
+    ],
+    "Thermal Mass Flow sensor": [
+      { name: "Inline Thermal Mass Meter", link: "/products/inline-thermal" },
+      { name: "Insertion Thermal Mass Meter", link: "/products/insertion-thermal" },
+    ],
+  };
 
   return (
     <>
@@ -35,7 +75,7 @@ function CustomNavbar() {
             <img src={Logo} alt="Logo" />
           </div>
 
-          {/* Hamburger Icon */}
+          {/* Hamburger */}
           <div
             className={`hamburger ${menuOpen ? "active" : ""}`}
             onClick={toggleMenu}
@@ -54,110 +94,46 @@ function CustomNavbar() {
               About Us
             </NavLink>
 
-            {/* Products dropdown with grid layout */}
+            {/* Products dropdown */}
             <div className="nav-item dropdown">
               <NavLink to="/products" className="nav-item" onClick={toggleMenu}>
                 Product
               </NavLink>
+
               <div className="dropdown-menu">
                 <div className="products-grid">
-                  {/* Left Side - Categories */}
+                  {/* Left Categories */}
                   <div className="product-categories">
-                    <h4>Flow Meter Categories</h4>
                     <ul className="category-list">
-                      <li><Link to="/products/ultrasonic" onClick={toggleMenu}>Ultrasonic Flow Meter</Link></li>
-                      <li><Link to="/products/electromagnetic" onClick={toggleMenu}>Electromagnetic Flow Meter</Link></li>
-                      <li><Link to="/products/water" onClick={toggleMenu}>Water Meter</Link></li>
-                      <li><Link to="/products/positive-displacement" onClick={toggleMenu}>Positive Displacement Meter</Link></li>
-                      <li><Link to="/products/variable-area" onClick={toggleMenu}>Variable Area Rotameter</Link></li>
-                      <li><Link to="/products/differential-pressure" onClick={toggleMenu}>Differential Pressure Flow Meter</Link></li>
-                      <li><Link to="/products/gas" onClick={toggleMenu}>GAS Meter</Link></li>
-                      <li><Link to="/products/thermal-mass" onClick={toggleMenu}>Thermal Mass Flow sensor</Link></li>
+                      {Object.keys(productData).map((category) => (
+                        <li
+                          key={category}
+                          className={`category-item ${activeCategory === category ? "active" : ""}`}
+                          onClick={() => setActiveCategory(category)} // ✅ CLICK ONLY
+                        >
+                          {category}
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
-                  {/* Right Side - Product Cards */}
+                  {/* Right Products */}
                   <div className="product-items">
-                    <Link to="/products/inline-ultrasonic" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Inline Ultrasonic</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-inserted" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Inserted /Insertion Multipath</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-fixed-clamp" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Fixed Clamp-On</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-portable-clamp" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Portable Clamp-On</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-open-channel" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Open Channel</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-biogas" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Biogas Meter</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/inline-ultrasonic-btu" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Inline Ultrasonic BTU Meter</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/clamp-ultrasonic-btu" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Clamp-On Ultrasonic BTU Meter</h5>
-                      </div>
-                    </Link>
-
-                    <Link to="/products/ultrasonic-air-meter" className="product-card" onClick={toggleMenu}>
-                      <div className="product-icon">
-                        <ClockIcon />
-                      </div>
-                      <div className="product-info">
-                        <h5>Ultrasonic Air Meter</h5>
-                      </div>
-                    </Link>
+                    {productData[activeCategory].map((product) => (
+                      <Link
+                        to={product.link}
+                        key={product.name}
+                        className="product-card"
+                        onClick={toggleMenu}
+                      >
+                        <div className="product-icon">
+                          <img src={GaugeIcon} alt="icon" />
+                        </div>
+                        <div className="product-info">
+                          <h5 className="product-name">{product.name}</h5>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -176,18 +152,17 @@ function CustomNavbar() {
               Lean Resources
             </NavLink>
 
-            {/* Contact Button in mobile menu */}
             <button className="contact-btn mobile-contact" onClick={toggleMenu}>
               <span>Contact Us &gt;</span>
             </button>
           </div>
-
-          
-          
         </div>
+
         <button className="contact-btn desktop-contact">
-            <span>Contact Us<img src={icon} alt="icon" /></span>
-          </button>
+          <span>
+            Contact Us <img src={icon} alt="icon" className="icon-btn" />
+          </span>
+        </button>
       </nav>
     </>
   );

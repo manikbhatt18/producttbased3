@@ -1,37 +1,40 @@
-/* Section Wrapper */
+/* ================== Section Wrapper ================== */
 .why-choose-section {
   padding: 50px 20px;
   background: #f8f8f8;
   display: block;
+  align-items: start;
 }
 
-/* Container */
+/* ================== Container ================== */
 .why-container {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
   gap: 40px;
   align-items: center;
- 
+  justify-content: space-between;
 }
 
-/* Left Image */
+/* ================== Left Image ================== */
 .why-left img {
   width: 100%;
   max-width: 800px;
   height: auto;
-  
-  
 }
 
-/* Right Text Area */
+/* ================== Right Text Area ================== */
 .why-right {
   flex: 1;
   width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Heading Animation */
+/* ================== Heading Animation ================== */
 .why-heading {
   font-size: 3.5rem;
   font-weight: 900;
@@ -45,7 +48,7 @@
   transform: translateY(0);
 }
 
-/* Highlight with Yellow Underline Animation */
+/* ================== Highlight with Yellow Underline ================== */
 .iotflow {
   position: relative;
   display: inline-block;
@@ -71,14 +74,15 @@
   transform: scaleX(1);
 }
 
-/* Text */
+/* ================== Text ================== */
 .why-text {
   color: #555;
   margin: 20px 0;
   line-height: 2;
+  font-size: 1.1rem;
 }
 
-/* Grid Layout */
+/* ================== Grid Layout ================== */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -89,34 +93,51 @@
 .why-item h5 {
   display: flex;
   align-items: center;
-  font-size: 18px; /* adjust as needed */
+  font-size: 18px;
+  font-weight: bold;
   margin-bottom: 8px;
+  gap: 10px;
 }
 
 .why-item h5 .Icon {
-  width: 30px; /* adjust size */
+  width: 30px;
   height: auto;
-  margin-right: 8px; /* spacing between icon and text */
-  font-size: 1rem;
 }
 
 .why-item p {
   margin-left: 20px;
-  line-height: 1.4; /* keep paragraph clean */
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
 }
 
-/* ================= Responsive Styles ================= */
+/* ================== Icon Global ================== */
+.why-choose-section .Icon {
+  width: 2rem !important;
+  height: 2rem !important;
+}
 
-/* Medium screens - stack image and text vertically */
+/* ===================================================
+   ✅ RESPONSIVE (same as your current CSS)
+   =================================================== */
+
+/* Tablet */
 @media (max-width: 992px) {
   .why-container {
     flex-direction: column;
-    gap: 30px;
     text-align: center;
+    gap: 30px;
   }
 
   .why-left img {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .why-right {
+    width: 100%;
+    padding: 0 15px;
   }
 
   .why-heading {
@@ -125,10 +146,11 @@
 
   .why-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
-/* Small screens - single column layout */
+/* Mobile */
 @media (max-width: 576px) {
   .why-container {
     gap: 20px;
@@ -144,14 +166,24 @@
     gap: 15px;
   }
 
+  .why-item {
+    text-align: left;
+  }
+
+  .why-item h5 {
+    justify-content: left;
+  }
+
   .why-item p {
     font-size: 13px;
-   
   }
+  .why-choose-section .Icon {
+ align-items: left;
 }
-.why-choose-section .Icon {
-  width: 2rem  !important;
-  height: 2rem  !important;
-  
- 
+  .why-right {
+    display: flex;
+  text-align: start;
+  justify-content: start;
+  }
+
 }

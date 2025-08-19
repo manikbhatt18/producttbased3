@@ -1,132 +1,215 @@
-/* Hero Section - Responsive Banner */
-.hero-section {
-  background-image: url('../images/lb.png');
-  width: 100%;
-  aspect-ratio: 16 / 6; /* Keeps same proportion across devices */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
+/* ---------------------- */
+/* Page wrapper */
+/* ---------------------- */
+.lean-page {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.journey {
-  background-image: url('../images/myJ.png');
+/* ---------------------- */
+/* Hero Banner */
+/* ---------------------- */
+.hero-wrapper {
   width: 100%;
-  aspect-ratio: 16 / 6; /* Keeps same proportion across devices */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.journey2 {
-  /* background-image: url('../images/Lean\ Journey.gif'); */
-  width: 100%;
-  aspect-ratio: 16 / 6; /* Keeps same proportion across devices */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 20px 0 0; /* gap below navbar */
 }
 
-/* 8 Wastes Section */
-.waste-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;   /* keeps banner feel */
+  border-radius: 0;
+}
+
+/* ---------------------- */
+/* Generic Sections */
+/* ---------------------- */
+.section {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.waste-icon-wrapper {
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
-  background-color: #f0f0f0;
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ---------------------- */
+/* Story Section */
+/* ---------------------- */
+.story-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.story-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ---------------------- */
+/* Team Section */
+/* ---------------------- */
+.team-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.waste-icon-wrapper img {
-  max-width: 60%;
-  max-height: 60%;
+.team-member {
+  text-align: center;
 }
 
-.waste-icon-wrapper:hover {
-  transform: scale(1.1);
+.team-member img {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
 }
 
-.waste-item p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+/* ---------------------- */
+/* Product/Emoticon Cards */
+/* ---------------------- */
+.product-cardd img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;  /* keeps uniform */
+  object-fit: contain;
 }
 
-/* Video Card Style */
+/* ---------------------- */
+/* Lean Journey GIF */
+/* ---------------------- */
+.journey {
+  display: block;
+  max-width: 100%;
+  width: 95%;
+  height: 40%;
+  margin: 0 auto;
+  object-fit: contain;
+  
+}
+
+.journey2 {
+  display: block;
+  max-width: 100%;
+  width: 95%;
+  height: 40%;
+  margin: 0 auto;
+  object-fit: contain;
+  
+}
+.lead{
+  font-size: 1rem;
+}
+/* ---------------------- */
+/* Videos */
+/* ---------------------- */
 .video-card {
-  border: 3px solid #ffc107; /* yellow border */
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 .video-frame iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .video-info {
-  padding: 10px;
-  text-align: center;
+  padding: 12px;
+  text-align: left;
 }
 
 .video-info h5 {
   font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
+  margin: 0 0 6px;
+  font-weight: 600;
 }
 
-.video-info p {
-  margin: 5px 0 0;
-  font-size: 0.9rem;
-}
+/* ---------------------- */
+/* Responsive Media Queries */
+/* ---------------------- */
 
-.forBg {
-  background: #ffc107;
-}
-
-/* Contact Us Icon Sizing */
-.contact-btn img {
-  height: 1em; /* same height as text */
-  width: auto;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-
-/* Tablet adjustments */
+/* Tablets (<= 992px) */
 @media (max-width: 992px) {
-  .waste-icon-wrapper {
-    width: 80px;
-    height: 80px;
+  .section {
+    padding: 40px 15px;
   }
-  .video-info h5 {
-    font-size: 0.95rem;
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .team-member img {
+    width: 150px;
   }
 }
 
-/* Mobile adjustments */
-@media (max-width: 576px) {
-  .waste-icon-wrapper {
-    width: 60px;
-    height: 60px;
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 15px;
   }
-  .waste-item p {
-    font-size: 0.85rem;
+
+  .section-title {
+    font-size: 1.5rem;
   }
-  .video-info h5 {
+
+  .section-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .team-member img {
+    width: 120px;
+  }
+
+ 
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .section-text {
     font-size: 0.9rem;
   }
-  .video-info p {
-    font-size: 0.8rem;
+
+  .team-member img {
+    width: 100px;
   }
+
+ 
 }
