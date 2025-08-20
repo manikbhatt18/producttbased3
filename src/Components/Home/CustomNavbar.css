@@ -659,3 +659,33 @@
   margin-left: 6px;
   vertical-align: middle;
 }
+/* Regular dropdown for non-product items */
+.dropdown-menu.regular {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 10;
+  padding: 0;
+}
+
+.dropdown-menu.regular a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu.regular a:hover {
+  background: #ffcc00;
+}
+
+.dropdown:hover .dropdown-menu.regular {
+  display: flex;
+}

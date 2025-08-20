@@ -67,7 +67,7 @@ function ProductDetail() {
 
   return (
     <div className="text-dark">
-      <Breadcrumbs/>
+      {/* <Breadcrumbs/> */}
       <div className="container py-5">
         <div className="row">
           {/* LEFT: images */}

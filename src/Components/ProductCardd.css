@@ -1,38 +1,65 @@
-.product-card {
-  position: relative;
-  width: 300px;
-  border: none ;
-  
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  
-}
+/* =======================
+   ProductCardd.css
+======================= */
 
-.iconn-box img {
-  width: 100%;
-  height: 100%;
+/* Default (Desktop / Large screens) */
+.product-cardd img {
+  width: 150px;
+  height: 150px;
   object-fit: contain;
-  border: none !important;
-  
 }
 
-
-
-
-
-.product-card:hover .details-box {
-  transform: translateY(0);
+.product-cardd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.product-card,
-.product-card * {
-  border: none !important;
-  box-shadow: none !important;
+
+.iconn-box {
+  margin: 15px;
 }
-img {
-  border: none !important;
-  outline: none !important;
+
+/* Force all 8 in a row on desktops */
+.emoticon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;  /* stay in one line */
+  gap: 40px;          /* spacing between icons */
 }
-.container.journey, 
-.container.py-5 {
-  background-color: white !important;
+
+/* =======================
+   Responsive adjustments
+======================= */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  .product-cardd img {
+    width: 120px;
+    height: 120px;
+  }
+  .emoticon-row {
+    flex-wrap: wrap;  /* allow wrap if space tight */
+    gap: 30px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .product-cardd img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .product-cardd img {
+    width: 80px;
+    height: 80px;
+  }
+  .iconn-box {
+    margin: 10px;
+  }
 }

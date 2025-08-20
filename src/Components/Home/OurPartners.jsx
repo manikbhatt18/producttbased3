@@ -30,25 +30,29 @@ export function OurPartners() {
         </h3>
 
         <Swiper
-          slidesPerView={4}
-          spaceBetween={24}
-          loop
-          autoplay={{ delay: 2000, disableOnInteraction: false }}
-          modules={[Autoplay]}
-          breakpoints={{
-            0: { slidesPerView: 2 },
-            576: { slidesPerView: 3 },
-            992: { slidesPerView: 4 },
-          }}
-        >
-          {logos.map((src, i) => (
-            <SwiperSlide key={i}>
-              <div className="client-logo-card">
-                <img src={src} alt={`client-${i}`} />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  slidesPerView={4}
+  spaceBetween={24}
+  loop
+  // removed autoplay
+  modules={[]}
+  breakpoints={{
+    0: { slidesPerView: 2 },
+    576: { slidesPerView: 3 },
+    992: { slidesPerView: 4 },
+  }}
+>
+  {logos.map((src, i) => (
+    <SwiperSlide key={i}>
+      <div className="client-logo-card">
+        <img src={src} alt={`client-${i}`} />
+        <div className="client-hover">
+          <p>Client {i + 1} details here</p>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
+
       </Container>
     </section>
   );

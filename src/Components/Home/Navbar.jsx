@@ -90,9 +90,19 @@ function CustomNavbar() {
             <NavLink to="/" className="nav-item" onClick={toggleMenu}>
               Home
             </NavLink>
-            <NavLink to="/about-us" className="nav-item" onClick={toggleMenu}>
+            <div className="nav-item dropdown">
+              <NavLink to="/about-us" className="nav-item" onClick={toggleMenu}>
               About Us
             </NavLink>
+              <div className="dropdown-menu regular">
+                <NavLink to="/about-us/certification" onClick={toggleMenu}>
+                  Company
+                </NavLink>
+                <NavLink to="/about-us/result" onClick={toggleMenu}>
+                 Certification
+                </NavLink>
+              </div>
+            </div>
 
             {/* Products dropdown */}
             <div className="nav-item dropdown">
@@ -148,9 +158,19 @@ function CustomNavbar() {
             <NavLink to="/tools" className="nav-item" onClick={toggleMenu}>
               Tools
             </NavLink>
-            <NavLink to="/resources" className="nav-item" onClick={toggleMenu}>
+             <div className="nav-item dropdown">
+              <NavLink to="/resources" className="nav-item" onClick={toggleMenu}>
               Lean Resources
             </NavLink>
+              <div className="dropdown-menu regular">
+                <NavLink to="/lean/Lean Journey" onClick={toggleMenu}>
+                 Lean Journey
+                </NavLink>
+                <NavLink to="/leans/ case study" onClick={toggleMenu}>
+                 case study
+                </NavLink>
+              </div>
+            </div>
 
             <button className="contact-btn mobile-contact" onClick={toggleMenu}>
               <span>Contact Us &gt;</span>

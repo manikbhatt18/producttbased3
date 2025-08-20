@@ -89,12 +89,6 @@
 /* ---------------------- */
 /* Product/Emoticon Cards */
 /* ---------------------- */
-.product-cardd img {
-  width: 100%;
-  height: auto;
-  max-width: 150px;  /* keeps uniform */
-  object-fit: contain;
-}
 
 /* ---------------------- */
 /* Lean Journey GIF */
