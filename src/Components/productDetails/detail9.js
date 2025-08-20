@@ -71,7 +71,7 @@ function ProductDetail() {
     { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
     {
       img: related2,
-      title: " Electromagnetic Flow Meter (EMF Standard)",
+      title: " MF-PRO Electromagnetic Flow Meter",
       link: "/product-detail/detail7",
     },
     {
