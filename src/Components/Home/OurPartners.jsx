@@ -33,7 +33,7 @@ export function OurPartners() {
   slidesPerView={4}
   spaceBetween={24}
   loop
-  // removed autoplay
+ 
   modules={[]}
   breakpoints={{
     0: { slidesPerView: 2 },
