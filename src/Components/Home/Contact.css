@@ -1,0 +1,60 @@
+/* Banner Section */
+.contact-banner {
+  position: relative;
+  background: linear-gradient(to right, #c1a100, #d4b100), 
+              url("https://maps.gstatic.com/tactile/pane/default_geocode-1x.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 120% 50px;
+  border-bottom-right-radius: 120% 50px;
+}
+
+.location-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Contact Info + Form */
+.contact-info h2 {
+  font-weight: bold;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #000;
+  background: #ffd700;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-icons a i {
+  font-size: 18px;
+}
+
+.send-btn {
+  background: #ffd700;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Location Section */
+.contact-location {
+  background: #fafafa;
+}
+
+.contact-location h6 {
+  font-weight: bold;
+}
+
+.map-container {
+  margin-top: 20px;
+}

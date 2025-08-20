@@ -9,6 +9,7 @@ import oilIcon from '../../images/icon1.png';
 import gasIcon from '../../images/icon4.png';
 import steamIcon from '../../images/icon5 (2).png';
 import chemicalIcon from '../../images/icon6.png';
+import { div } from 'framer-motion/client';
 
 function ProductsSection() {
   return (
@@ -22,13 +23,14 @@ function ProductsSection() {
         <ProductCard
           icon={waterIcon}
           title="Water Flow Meter"
-          details="A water flow meter measures the flow of water in various applications, such as household usage, municipal water systems, sewage flow tracking, and industrial cooling.
-{<span>Types of Water Flow Meters:</span>
-Electromagnetic Flow Meters: Use electrodes to measure conductive fluids with high accuracy. They are low maintenance and don’t impede water flow.
-Ultrasonic Flow Meters: These inline meters have no moving parts, providing accurate, economical monitoring for hot water and demineralized water applications.
-Mechanical Flow Meters: Utilize a Turbine to track flow rates. They require regular maintenance due to mechanical wear.
-"
-          
+          details={
+            <div>
+              <p>hello my name i8s <strong>chitranjan</strong> </p>
+              <ul><li>chitranajn</li>
+              </ul>
+            </div>
+          }
+
         />
         <ProductCard
           icon={airIcon}
@@ -43,9 +45,9 @@ Mechanical Flow Meters: Utilize a Turbine to track flow rates. They require regu
           title="Oil Flow Meter"
           details="Positive Displacement (PD) meters are highly reliable and accurate for measuring oil flow, suitable for fluids like hydrocarbons, oils, diesel, fuels, and solvents. They work by counting the rotations of a rotor within a chamber of fixed volume, translating to precise volumetric flow rates. The benefits of PD meters include their high accuracy, achieved through precision manufacturing with minimal clearance between internal parts. They also offer consistent accuracy over many cycles, require low maintenance, and have a lifespan of 10-20 years. Additionally, PD meters are effective even with uneven flow distribution and have wide turndown ratios."
         />
-        
+
       </Row>
-            <Row>
+      <Row>
         <ProductCard
           icon={gasIcon}
           title="Gas Flow Meter"
@@ -76,7 +78,7 @@ Metal Tube Rotameters with PTFE linings also measure aggressive fluids effective
 For high-viscosity fluids like Molasses, resin and Glue Oval gear flow meters are preferred due to their dual oval gears that ensure accurate measurement."
         />
       </Row>
-      
+
     </Container>
   );
 }

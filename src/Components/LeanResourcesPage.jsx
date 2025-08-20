@@ -61,27 +61,29 @@ function LeanResourcesPage() {
             </span>
           </h5>
           <Row className="emoticon-row">
-            {[oilIcon,
+            {[
+              oilIcon,
               waterIcon,
               airIcon,
               gasIcon,
               steamIcon,
               chemicalIcon,
               waste7,
-              waste8,].map((icon, idx) => (
-                <Col
-                  key={idx}
-                  xs={6}   // ✅ 2 columns per row on phones
-                  sm={4}   // 3 per row on small devices
-                  md={3}   // 4 per row on tablets
-                  lg={2}   // 6 per row on large
-                  className="d-flex justify-content-center"
-                >
-                  <ProductCard icon={icon} />
-                </Col>
-
-              ))}
+              waste8,
+            ].map((icon, idx) => (
+              <Col
+                key={idx}
+                xs={3}   // ✅ 4 per row on phones
+                sm={3}   // 4 per row on small devices
+                md={2}   // ✅ 6 per row on tablets
+                lg={1}   // ✅ 8 per row on large screens
+                className="d-flex justify-content-center emoticon-col"
+              >
+                <ProductCard icon={icon} />
+              </Col>
+            ))}
           </Row>
+
 
         </Container>
 

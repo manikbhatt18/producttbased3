@@ -48,6 +48,7 @@ import Detail24 from "./Components/productDetails/detail24";
 import Detail25 from "./Components/productDetails/detail25";
 
 import Product2 from "./Components/product2";
+import Contact from "./Components/Home/Contact";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -115,7 +116,7 @@ function App() {
           <Route path="/product-detail/detail24" element={<Detail24 />} />
           <Route path="/product-detail/detail25" element={<Detail25 />} />
 
-          import Product2 from "./Components/product2";
+          <Route path="/contact" element={<Contact />} />
 
          <Route path="/product2" element={<Product2 />} />
 

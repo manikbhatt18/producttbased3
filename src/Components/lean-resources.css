@@ -207,3 +207,19 @@
 
  
 }
+/* Emoticon Section */
+/* Emoticon Section */
+.emoticon-row {
+  row-gap: 10px;     /* reduced vertical gap */
+  column-gap: 7px;  /* reduced horizontal gap */
+  margin: 0 auto;
+}
+
+.emoticon-col {
+  padding: 5px !important; /* tighter spacing */
+}
+
+.emoticon-col img {
+  max-width: 120px;   /* control icon size */
+  height: auto;
+}

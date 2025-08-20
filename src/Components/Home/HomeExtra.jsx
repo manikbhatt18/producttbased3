@@ -225,7 +225,7 @@ export function ClientsSection() {
   ];
 
   return (
-    <section className="clients-section">
+    <section className="clients-sectionn">
       <Container>
         <h3 className="section-heading">
           <span className="heading-bar" /> OUR CLIENTS
@@ -245,7 +245,7 @@ export function ClientsSection() {
                 >
                   {logos.map((src, i) => (
                     <SwiperSlide key={i}>
-                      <div className="client-logo-card">
+                      <div className="client-logo-cardd">
                         <img src={src} alt={`client-${i}`} />
                       </div>
                     </SwiperSlide>
@@ -279,7 +279,7 @@ export function MoreAboutUs() {
           </Col>
           <Col md={4}>
             <div className="ratio ratio-16x9 video-frame">
-              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="video3" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed" title="video3" allowFullScreen />
             </div>
 
           </Col>
