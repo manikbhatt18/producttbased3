@@ -7,6 +7,7 @@ import ProductsSection from "./Components/Home/ProductsSection";
 import WhyChooseUs from "./Components/Home/WhyChooseUs";
 import CoreValues from "./Components/Home/CoreValues";
 
+
 import Product from "./Components/product";
 import ServicesPage from "./Components/ServicesPage";
 import LeanResourcesPage from "./Components/LeanResourcesPage";
@@ -46,11 +47,14 @@ import Detail23 from "./Components/productDetails/detail23";
 import Detail24 from "./Components/productDetails/detail24";
 import Detail25 from "./Components/productDetails/detail25";
 
+import Product2 from "./Components/product2";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./Components/Footer";
 import OurPartners from "./Components/Home/OurPartners";
 import HeroSection from "./Components/Home/HeroSection";
+
 
 function HomePage() {
   return (
@@ -59,8 +63,8 @@ function HomePage() {
       <ProductsSection />
       <WhyChooseUs />
       <CoreValues />
-     <OurPartners/>
-     <HeroSection/>
+      <OurPartners />
+      <HeroSection />
       {/* <HeroBanner /> */}
       <StatsModern />
       {/* <DifferenceBlock /> */}
@@ -81,6 +85,7 @@ function App() {
           <Route path="/products" element={<Product />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />
+
 
           {/* Product Detail Routes */}
           <Route path="/product-detail/detail2" element={<Detail2 />} />
@@ -109,6 +114,12 @@ function App() {
           <Route path="/product-detail/detail23" element={<Detail23 />} />
           <Route path="/product-detail/detail24" element={<Detail24 />} />
           <Route path="/product-detail/detail25" element={<Detail25 />} />
+
+          import Product2 from "./Components/product2";
+
+         <Route path="/product2" element={<Product2 />} />
+
+         
         </Route>
       </Routes>
       <Footer />
