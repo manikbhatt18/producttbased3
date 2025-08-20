@@ -114,7 +114,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold">INLINE ULTRASONIC ROBUST Series</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Robust™ Inline Ultrasonic Water Flow Meter</li>

@@ -130,7 +130,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold">  Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679;UF AV5500 – Open Channel & Partially-Filled Pipe Flow Meter</li>

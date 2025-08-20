@@ -133,7 +133,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold">INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; UF-1500 Series Insertion Ultrasonic Flow Meter – Precision Flow Measurement for Large Pipelines</li>

@@ -99,8 +99,8 @@ function LeanResourcesPage() {
           <Row className="g-4 mb-2 forBg">
             {[
               {
-                title: "Rewarding Mistakes in IOTAflow Culture",
-                caption: "Mistakes are rewarded in Iotaflow culture",
+                title: "2023 2 Second Lean Summit",
+                caption: "Seating matters - Ireland",
                 link: "https://www.youtube.com/embed/q8x-1hRcjhA",
               },
               {
@@ -109,8 +109,8 @@ function LeanResourcesPage() {
                 link: "https://www.youtube.com/embed/KYnoL-nWr4w",
               },
               {
-                title: "2023 2 Second Lean Summit",
-                caption: "Seating matters - Ireland",
+                title: "Rewarding Mistakes in IOTAflow Culture",
+                caption: "Mistakes are rewarded in Iotaflow culture",
                 link: "https://www.youtube.com/embed/JJZCCWxysTk",
               },
             ].map((video, idx) => (
