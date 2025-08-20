@@ -131,7 +131,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Electromagnetic Flow Meter</p>
             <h3 className="fw-semibold">CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679;High-accuracy flow sensing for chemicals, water, and medical fluids</li>

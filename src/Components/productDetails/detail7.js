@@ -132,7 +132,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Electromagnetic Flow Meter</p>
             <h3 className="fw-semibold">MF-PRO Electromagnetic Flow Meter</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679;Ideal for Effluent, Water & Slurry Applications</li>

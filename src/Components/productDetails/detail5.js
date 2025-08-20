@@ -132,7 +132,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
           <div className="col-lg-6 mt-5 mt-lg-0">
-            <p className="text-muted">Water Meters</p>
+            <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold"> Clamp-ON (Portable) ULTRASONIC PF 222/333</h3>
             <ul className="list-unstyled mt-3">
               <li className="mb-2">&#9679; Micronics™ PF333 Portable Ultrasonic Flow Meter</li>

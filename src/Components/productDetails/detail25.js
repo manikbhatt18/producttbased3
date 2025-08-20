@@ -217,7 +217,25 @@ function ProductDetail() {
 
           {activeTab === "Features" && (
 <ul>
- 
+  <li><strong>Application Range:</strong> Suitable for liquids, gases, steam, chemicals, oils, and water</li>
+  <li><strong>Measurement Accuracy:</strong> ±2–3% of full scale; repeatability of 0.5%; rangeability 10:1</li>
+  <li><strong>Construction:</strong>
+    <ul>
+      <li><strong>Acrylic:</strong> Crystal-clear body for direct visual reading</li>
+      <li><strong>Glass Tube:</strong> Borosilicate glass with stress-free mounting design</li>
+    </ul>
+  </li>
+  <li><strong>Material Options:</strong> SS316, SS304, PTFE, PVC, Monel, PP</li>
+  <li><strong>Pressure & Temperature Capability:</strong>
+    <ul>
+      <li><strong>Acrylic:</strong> Up to 60°C; 2–25 kg/cm²</li>
+      <li><strong>Glass:</strong> Up to 200°C; up to 20 kg/cm² (model dependent)</li>
+    </ul>
+  </li>
+  <li><strong>Connection Types:</strong> Flanged, threaded, Tri-Clamp, sanitary</li>
+  <li><strong>Accessory Options:</strong> Hi/Low flow switches, steam jacket, 4–20 mA transmitter</li>
+  <li><strong>Maintenance:</strong> Field-replaceable tubes (glass type) without disturbing end connections</li>
+  <li><strong>Customization:</strong> Scales, sizes, and connections tailored for OEM requirements</li>
 </ul>
  )}
 
