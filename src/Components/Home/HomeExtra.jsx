@@ -100,6 +100,7 @@ export function StatsModern() {
               <li>
                 <i className="bi bi-check-circle-fill"></i> 10+ Global Partnerships
               </li>
+             
               <li>
                 <i className="bi bi-check-circle-fill"></i> 2-2 Lean Manufacturing
               </li>
@@ -162,8 +163,11 @@ export function DifferenceBlock() {
             <Row className="mt-5 g-4">
               {bullets.map((b) => (
                 <Col md={6} key={b}>
+                
                   <div className="bullet-line">
+                    
                     <span className="bullet-icon">
+                     
                       <i className="bi bi-chevron-right" />
                     </span>
                     <span className="bullet-text fw-bold">{b}</span>
@@ -271,6 +275,15 @@ export function MoreAboutUs() {
             </div>
           </Col>
           <Col md={6}>
+            <div className="ratio ratio-16x9 video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="video 2"
+                allowFullScreen
+              />
+            </div>
+          </Col>
+           <Col md={6}>
             <div className="ratio ratio-16x9 video-frame">
               <iframe
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"

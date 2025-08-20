@@ -185,11 +185,13 @@
 /* -------- VIDEOS -------- */
 .more-about-us {
   padding: 100px 0 80px;
+ 
+  
 }
 .video-frame iframe {
   border: 0;
   border-radius: 6px;
-}
+  }
 
 /* -------- FAQ -------- */
 .faq-section {
