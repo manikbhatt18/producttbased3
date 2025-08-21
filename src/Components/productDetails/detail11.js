@@ -392,15 +392,15 @@ function ProductDetail() {
         .hover-scale:hover {
           transform: scale(1.05);
         }
-
         /* Enquiry Button Style */
         .btn-enquiry {
           position: relative;
           overflow: hidden;
-          background-color: yellow;
+          background-color:#ffcc00;
           border: none;
           padding: 8px 20px;
           cursor: pointer;
+          color:black;
         }
 
         .btn-enquiry::before {

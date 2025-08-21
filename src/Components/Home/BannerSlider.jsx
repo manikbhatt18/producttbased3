@@ -20,7 +20,7 @@ function BannerSlider() {
       img: slide1,
       heading: ' Protecting Your Reputation,',
       subHeading: 'Always.',
-      text: ' With <b>IOTAFLOW,<b> you gain a lean, reliable partner ensuring accuracy, efficiency, and peace of mind in flow measurement — year after year.',
+      text: ' With IOTAFLOW, you gain a lean, reliable partner ensuring accuracy, efficiency, and peace of mind in flow measurement — year after year.',
     },
     {
       img: slide3,

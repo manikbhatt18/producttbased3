@@ -83,7 +83,7 @@
   transform: translateX(-50%) !important;
   min-width: 500px;
   max-width: 80vw;                 /* prevent horizontal scrolling */
-  max-height: 80vh;
+  max-height: 90vh;
   overflow-y: auto;                /* only vertical scroll */
   overflow-x: hidden;              /* prevent left-right scroll */
   display: flex;
