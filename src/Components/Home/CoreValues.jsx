@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import coreValuesImg from '../../images/coreVal.png';
+import coreValuesImg from '../../images/corepic.jpg';
 import icon from "../../images/greater.png";
 
 function CoreValues() {

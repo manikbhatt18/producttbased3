@@ -6,12 +6,15 @@ import "swiper/css";
 import "./Partner.css";
 
 // Import logos
-import aquametro from '../../images/partner1.jpg';
-import apator from '../../images/partner2.jpg';
-import Schmidt from '../../images/Schmidt-Technology.png';
-import micro from '../../images/partner4.jpg';
-import ultraflex from '../../images/partner5.jpg';
-import elgas from '../../images/partner3.jpg';
+import aquametro from '../../images/par11.png';
+import apator from '../../images/par33.png';
+import Schmidt from '../../images/par44.png';
+import micro from '../../images/par55.png';
+import ultraflex from '../../images/par77.png';
+import elgas from '../../images/par22.png';
+import vzl from '../../images/par88.png';
+import aichi from '../../images/par66.png';
+
 
 export function OurPartners() {
   // ✅ Use JSX for text so <strong> works
@@ -79,7 +82,7 @@ export function OurPartners() {
       link: "https://micronicsflowmeters.com/"
     },
     { 
-      img: ultraflex, 
+      img: aichi, 
       text: (
         <>
           Aichi Tokei Denki, based in Japan, is a pioneer in flow measurement and 
@@ -103,7 +106,7 @@ export function OurPartners() {
       link: "https://www.ultraflux.net/en/"
     },
     { 
-      img: ultraflex, 
+      img: vzl, 
       text: (
         <>
           Vzljot is a leading Russian manufacturer of flow meters and measuring 
