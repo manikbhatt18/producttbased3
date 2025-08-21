@@ -48,6 +48,7 @@
   color: black;
   padding: 10px 0;
   transition: color 0.3s ease;
+  left: 20px;
 }
 
 /* === Yellow Underline Hover Effect === */
@@ -72,23 +73,25 @@
 /* ===== Dropdown ===== */
 .dropdown {
   position: relative;
+  left: 10px;
+  
 }
 
 /* Center the dropdown below "Products" */
 /* ===== Dropdown ===== */
 /* Dropdown container */
 .dropdown-menu {
-  position: absolute;
+    position: absolute;
   top: 100%;
-  left: 50% !important;            /* always center horizontally */
-  transform: translateX(-50%) !important;
-  min-width: 500px;
-  max-width: 80vw;                 /* prevent horizontal scrolling */
-  max-height: 90vh;
-  overflow-y: auto;                /* only vertical scroll */
-  overflow-x: hidden;              /* prevent left-right scroll */
+  left: calc(50% + 50px) !important; /* shift 50px to the right */
+  transform: translateX(-50%) !important; /* keep it centered */
+  min-width: max-content;
+  
+  width: 1250px; /* ✅ fixed width for better balance */
+  max-width: 90vw; /* responsive on small screens */
+  max-height: 80vh;
   display: flex;
-  /* padding: 20px 25px; */
+  padding: 20px 25px;
   border-radius: 6px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -99,6 +102,8 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  left: 100px;
+  
 }
 
 
@@ -126,6 +131,7 @@
   border-left: 1px solid #eee;     /* separator */
   display: flex;
   align-items: center;
+  margin-left: 100px;
   
   max-width: 300px;                /* optional, keep it tidy */
 }

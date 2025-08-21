@@ -11,7 +11,8 @@ function ProductCard({ icon, title, details }) {
          <div className="title-box py-2">{title}</div>
         </div>
         
-        <div className="details-box d-flex align-items-center justify-content-center">
+        <div className="details-box text-start">
+
            
           <p className="m-0">{details}</p>
         </div>
