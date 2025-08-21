@@ -53,7 +53,7 @@ function CustomNavbar() {
       { name: "Ultra-NXT Ultrasonic Gas Flow Meter ", link: "/product-detail/detail20" },
       { name: "GasPro RPD Gas Meter ", link: "/product-detail/detail21" },
       { name: "UF-Biosonic (Ultrasonic Flow Measurement for Biogas)", link: "/product-detail/detail22" },
-      { name: "EQZ/EQZK Radial Turbine Gas Meters", link: "/product-detail/detail14" },
+      // { name: "EQZ/EQZK Radial Turbine Gas Meters", link: "/product-detail/detail14" },
 
 
     ],

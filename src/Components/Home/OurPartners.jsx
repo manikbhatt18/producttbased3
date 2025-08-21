@@ -30,7 +30,7 @@ export function OurPartners() {
           to Indian industries and shipping companies.
         </>
       ),
-      link: "https://www.aquametro.com"
+      link: "https://www.aquametro-oil-marine.com/en/"
     },
     { 
       img: elgas, 
