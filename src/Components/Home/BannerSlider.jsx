@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import slide1 from '../../images/Pipeline meter web image.jpg';
+import slide1 from '../../images/Air leak compressor website design.jpg';
 import slide2 from '../../images/bg2.jpg';
 import slide3 from '../../images/Flow web banner .jpg';
 import './BannerSlider.css';
