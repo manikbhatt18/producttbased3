@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import "./ProductDetailCustom.css";
+
 
 import img1 from "../images/p1a.png";
 import img2 from "../images/p1b.jpg";
