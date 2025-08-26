@@ -1,15 +1,18 @@
 .banner-img {
-  width: 100% !important;
-  aspect-ratio: 16 / 6 !important;
-  object-fit: cover !important;
-  height: auto !important; /* Override Bootstrap fixed height */
+  width: 100% !important;       /* Take full width */
+  max-height: 600px !important; /* Limit height */
+  height: auto !important;      /* Adjust height proportionally */
+  aspect-ratio: 16 / 6; /* keeps consistent proportion */
+  object-fit: contain;
+
+  background-color: #000;
   display: block;
 }
-.carousel-item {
-  height: auto !important;
-  
-}
 
+.carousel-item {
+  height: auto !important; /* Allow height to adjust dynamically */
+  min-height: 500px;       /* Ensures consistent min height for layout */
+}
 /* Caption background for readability */
 .caption-bg {
   background: rgba(0, 0, 0, 0.5);

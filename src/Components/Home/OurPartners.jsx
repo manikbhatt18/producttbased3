@@ -124,7 +124,7 @@ export function OurPartners() {
     <section className="clients-section">
       <Container>
         <h3 className="section-heading">
-          <span className="heading-bar" /> OUR PARTNER
+          <span className="heading-bar" /> OUR PARTNERS
         </h3>
 
         <Swiper

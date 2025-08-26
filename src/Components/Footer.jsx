@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./Services.css"; // Move footer-specific CSS here if needed
+import Logo from "../images/Iotaf logo icon.png";
 
 function Footer() {
   return (
@@ -9,16 +10,16 @@ function Footer() {
       <Container className="pb-5">
         <Row className="gy-5">
           <Col lg={4}>
-            <div className="logo mb-4">
-              <span className="logo-x">XX</span>
-              <span className="logo-chevrons">›››</span>
+            <div className="logo">
+              <img src={Logo} alt="Company Logo" />
             </div>
+
             <p className="mb-4">
               Samatex - is the leading company with the known name and rich
               history in a wide range of industries. We have presence on 5
               continents in 207 countries worldwide
             </p>
-           {/* <button className="my-2 btn-enquiry">
+            {/* <button className="my-2 btn-enquiry">
               <span>Enquiry Now</span>
             </button> */}
           </Col>

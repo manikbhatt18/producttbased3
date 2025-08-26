@@ -145,6 +145,21 @@ function ProductDetail() {
             </button>
           </div>
         </div>
+            {/* Sticky tabs */}
+      <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
+        <ul className="nav nav-tabs border-0 justify-content-center">
+          {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
+            <li className="nav-item" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
       </div>
 
       {/* Sticky tabs */}

@@ -118,7 +118,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+         <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold">Ultrimis™ Domestic Ultrasonic Flow Meters</h3>
             <ul className="list-unstyled mt-3">
@@ -131,10 +131,8 @@ function ProductDetail() {
             </button>
           </div>
         </div>
-      </div>
-
-      {/* Sticky tabs */}
-      <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
+           {/* Sticky tabs */}
+         <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
         <ul className="nav nav-tabs border-0 justify-content-center flex-wrap">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
@@ -148,6 +146,10 @@ function ProductDetail() {
           ))}
         </ul>
       </div>
+      </div>
+
+   
+     
 
       {/* Tab content */}
       <div className="container">
