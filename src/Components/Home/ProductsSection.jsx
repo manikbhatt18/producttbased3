@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ProductCard from './ProductCardd';
 
-import waterIcon from '../../images/icon2.png';
-import airIcon from '../../images/icon3.png';
-import oilIcon from '../../images/icon1.png';
+import waterIcon from '../../images/icon1.png';
+import airIcon from '../../images/icon2.png';
+import oilIcon from '../../images/icon3.png';
 
 import gasIcon from '../../images/icon4.png';
 import steamIcon from '../../images/icon5 (2).png';

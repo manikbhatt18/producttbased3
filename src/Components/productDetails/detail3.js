@@ -6,6 +6,7 @@ import img2 from "../../images/p3b.png";
 import img3 from "../../images/p3c.png";
 import img4 from "../../images/p3d.png";
 import img5 from "../../images/p3e.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -132,7 +133,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
             <h3 className="fw-semibold">INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)</h3>
             <ul className="list-unstyled mt-3">
@@ -172,134 +173,74 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li>The UF-1500 Series Insertion Ultrasonic Flow Meter by IOTAFLOW is a high-precision, 4-channel (4-beam) insertion-type flow meter designed for accurate, bidirectional flow measurement in large-diameter pipelines.</li>
-  <li>Advanced ultrasonic time-pulse technology with multi-point sensing for stable, bidirectional flow measurement</li>
-  <li>Operates effectively in full and partially filled pipes</li>
-  <li>Supports a wide range of industrial fluids including potable water, wastewater, chemicals, and food-grade liquids</li>
-  <li>Non-intrusive design ensures minimal pressure loss</li>
-  <li>Compatible with pipe diameters ranging from DN15 mm to DN6000 mm</li>
-  <li>Supports Z, V, and U configuration schemes for installation flexibility</li>
-  <li>Ideal for mission-critical flow monitoring in municipal, utility, and industrial applications</li>
-</ul>
+                <p>
+The UF-1500 Series Insertion Ultrasonic Flow Meter by IOTAFLOW is a high-precision, 4-channel (4-beam) insertion-type flow meter designed for accurate, bidirectional flow measurement in large-diameter pipelines. Using advanced ultrasonic time-pulse technology with multi-point sensing, it delivers stable and reliable readings even in challenging flow conditions.
+</p>
+<p>
+Engineered for use in both full and partially filled pipes, the UF-1500 provides robust performance across a wide range of industrial fluids including potable water, wastewater, chemicals, and food-grade liquids. Its non-intrusive insertion design ensures minimal pressure loss, making it an ideal solution for high-capacity municipal, utility, and industrial flow applications.
+</p>
+<p>
+With compatibility for pipe diameters from DN15 mm to DN6000 mm, and built-in support for Z, V, and U configuration schemes, it’s the go-to solution for large-scale, high-accuracy flow monitoring in mission-critical environments.
+</p>
 
-<h4>Applications</h4>
+<p><b>Applications</b></p>
 <ul>
-  <li>Power Generation (boiler feedwater, condensate loops)</li>
-  <li>Municipal Water Supply and Wastewater Treatment</li>
-  <li>Chemical and Petrochemical Plants</li>
-  <li>Food and Beverage Production (milk, syrups, CIP)</li>
-  <li>Oil and Gas Pipeline Monitoring</li>
-  <li>HVAC and Thermal Energy Management</li>
-</ul>
-
-<h4>Compatible Fluids</h4>
-<ul>
-  <li>Potable and process water (hot/cold)</li>
-  <li>Partially filled pipelines</li>
-  <li>Wastewater and sewage</li>
-  <li>Acids, alkalis, and corrosive fluids</li>
-  <li>Dairy, juices, syrups, and other liquid foods</li>
+  <li><b>Industrial Sectors</b>
+    <ul>
+      <li>Power Generation (boiler feedwater, condensate loops)</li>
+      <li>Municipal Water Supply and Wastewater Treatment</li>
+      <li>Chemical and Petrochemical Plants</li>
+      <li>Food and Beverage Production (milk, syrups, CIP)</li>
+      <li>Oil and Gas Pipeline Monitoring</li>
+      <li>HVAC and Thermal Energy Management</li>
+    </ul>
+  </li>
+  <li><b>Compatible Fluids</b>
+    <ul>
+      <li>Potable and process water (hot/cold)</li>
+      <li>Partially filled pipelines</li>
+      <li>Wastewater and sewage</li>
+      <li>Acids, alkalis, and corrosive fluids</li>
+      <li>Dairy, juices, syrups, and other liquid foods</li>
+    </ul>
+  </li>
 </ul>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-            <ul>
-  <li><strong>4-Channel Measurement:</strong> Enhanced accuracy using four-beam sensing across multiple insertion points for precise volumetric flow readings.</li>
-  <li><strong>Non-Intrusive, Low-Pressure Loss Design:</strong> Insertion sensors minimize obstruction and maintain fluid integrity—ideal for process-critical pipelines.</li>
-  <li><strong>Wide Diameter Compatibility:</strong> Supports DN15 mm to DN6000 mm pipes across metallic, plastic, and composite materials.</li>
-  <li><strong>Advanced DSP Technology:</strong> Robust digital signal processing ensures noise immunity, stable readings, and low drift performance.</li>
-  <li><strong>High Accuracy & Repeatability:</strong> Achieves ±1.5% accuracy with ±0.1% repeatability, even under turbulent or variable flow conditions.</li>
-  <li><strong>Data Logging & Retention:</strong> Internal storage logs hourly, daily, and monthly data—preserved for up to 1 year without external power.</li>
-  <li><strong>Industrial Outputs:</strong> RS-232/RS-485 (Modbus), 4–20 mA analog, pulse output, and optional Ethernet—ready for SCADA, PLC, and BMS integration.</li>
-  <li><strong>Durable Build:</strong> Wetted parts made from SS316 stainless steel; sensor heads rated IP67, control unit IP54.</li>
-  <li><strong>Extreme Environment Ready:</strong> Operates between -40°C to +65°C ambient and -30°C to +150°C liquid temperature (extendable to +350°C).</li>
-  <li><strong>Secure Configuration:</strong> Password-protected settings and data protection from unauthorized access.</li>
-  <li><strong>Batching and Alarm Modes:</strong> Supports volume-based batching, start-stop batching, and real-time diagnostics with alarm logging.</li>
+<ul>
+  <li><b>4-Channel Measurement:</b> Enhanced accuracy using four-beam sensing across multiple insertion points for precise volumetric flow readings.</li>
+  <li><b>Non-Intrusive, Low-Pressure Loss Design:</b> Insertion sensors minimize obstruction and maintain fluid integrity—ideal for process-critical pipelines.</li>
+  <li><b>Wide Diameter Compatibility:</b> Supports DN15 mm to DN6000 mm pipes across metallic, plastic, and composite materials.</li>
+  <li><b>Advanced DSP Technology:</b> Robust digital signal processing ensures noise immunity, stable readings, and low drift performance.</li>
+  <li><b>High Accuracy & Repeatability:</b> Achieves ±1.5% accuracy with ±0.1% repeatability, even under turbulent or variable flow conditions.</li>
+  <li><b>Data Logging & Retention:</b> Internal storage logs hourly, daily, and monthly data—preserved for up to 1 year without external power.</li>
+  <li><b>Industrial Outputs:</b> RS-232/RS-485 (Modbus), 4–20 mA analog, pulse output, and optional Ethernet—ready for SCADA, PLC, and BMS integration.</li>
+  <li><b>Durable Build:</b> Wetted parts made from SS316 stainless steel; sensor heads rated IP67, control unit IP54.</li>
+  <li><b>Extreme Environment Ready:</b> Operates between -40°C to +65°C ambient and -30°C to +150°C liquid temp (extendable to +350°C).</li>
+  <li><b>Secure Configuration:</b> Password-protected settings and data protection from unauthorized access.</li>
+  <li><b>Batching and Alarm Modes:</b> Supports volume-based batching, start-stop batching, and real-time diagnostics with alarm logging.</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
            <table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Nominal Diameter of the Pipeline</td>
-      <td>DN 15–6000</td>
-    </tr>
-    <tr>
-      <td>Measurement Principle</td>
-      <td>Transit Time</td>
-    </tr>
-    <tr>
-      <td>Measuring Channels</td>
-      <td>1 to 4 (Single Track | Dual Track | Four Track)</td>
-    </tr>
-    <tr>
-      <td>Clamp-on PEA Accuracy (%)</td>
-      <td>
-        <ul>
-          <li>Single-beam sounding: ±2%</li>
-          <li>Two-beam sounding: ±1%</li>
-          <li>Four-beam sounding: ±0.5%</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Flow Velocity Range</td>
-      <td>0.1 – 20 m/s</td>
-    </tr>
-    <tr>
-      <td>Fluid Temperature Range</td>
-      <td>-30°C to +160°C</td>
-    </tr>
-    <tr>
-      <td>Ambient Temperature for Transmitter</td>
-      <td>0°C to +50°C (Maximum)</td>
-    </tr>
-    <tr>
-      <td>Pipeline Pressure</td>
-      <td>2.5 MPa / 25 bar</td>
-    </tr>
-    <tr>
-      <td>Transmitter/Transducers Protection</td>
-      <td>IP54 / IP68</td>
-    </tr>
-    <tr>
-      <td>Measurement Data Logging</td>
-      <td>
-        <ul>
-          <li>Hourly log: 1440 records</li>
-          <li>Daily log: 60 records</li>
-          <li>Monthly log: Programmable up to 14,400 records</li>
-          <li>Batching: 512 records</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Power Supply</td>
-      <td>24V DC</td>
-    </tr>
-    <tr>
-      <td>Power Consumption</td>
-      <td>&lt;12W</td>
-    </tr>
-    <tr>
-      <td>Transmitter Weight</td>
-      <td>&lt;3 kg</td>
-    </tr>
-    <tr>
-      <td>Transmitter Dimensions</td>
-      <td>250 × 132 × 90 mm</td>
-    </tr>
-  </tbody>
+  <tr><td><b>Nominal diameter of the pipeline</b></td><td>DN 15-6000</td></tr>
+  <tr><td><b>Principle</b></td><td>Transit Time</td></tr>
+  <tr><td><b>Measuring Channels</b></td><td>1 to 4 (Single Track | Dual Track | Four Track)</td></tr>
+  <tr><td><b>Clamp-on PEA Accuracy</b></td><td>From 1:100: Single-beam ±2% | Two-beam ±1% | Four-beam ±0.5%</td></tr>
+  <tr><td><b>Flow velocity range</b></td><td>0.1-20 m/s</td></tr>
+  <tr><td><b>Fluid temperature range</b></td><td>-30°C to +160°C (Ambient)</td></tr>
+  <tr><td><b>Temperature for transmitter</b></td><td>0 – +50°C Maximum</td></tr>
+  <tr><td><b>Pipeline pressure</b></td><td>2.5/25 MPa/bar</td></tr>
+  <tr><td><b>Transmitter/transducers protection</b></td><td>IP54/IP68</td></tr>
+  <tr><td><b>Measurement data logging</b></td><td>Hourly log 1440 - Daily log 60 - Monthly log Programmable 14400 - Batching 512</td></tr>
+  <tr><td><b>Power supply</b></td><td>24VDC</td></tr>
+  <tr><td><b>Power consumption</b></td><td>&lt;12W</td></tr>
+  <tr><td><b>Transmitter weight</b></td><td>&lt;3 kg</td></tr>
+  <tr><td><b>Transmitter dimensions</b></td><td>250x132x90 mm</td></tr>
 </table>
           )}
 

@@ -8,6 +8,7 @@ import img4 from "../../images/p25d.png";
 import img5 from "../../images/p25e.png";
 import img6 from "../../images/p25f.png";
 import img7 from "../../images/p25g.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -135,7 +136,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Rotameters</p>
             <h3 className="fw-semibold">Acrylic / Glass Tube Rotameters</h3>
             <ul className="list-unstyled mt-3">

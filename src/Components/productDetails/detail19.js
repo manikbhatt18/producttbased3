@@ -6,6 +6,7 @@ import img2 from "../../images/p19b.png";
 import img3 from "../../images/p19c.png";
 import img4 from "../../images/p19d.png";
 import img5 from "../../images/p19e.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -137,7 +138,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Natural Gas Flow Meters</p>
             <h3 className="fw-semibold">EQZ/EQZK Radial Turbine Gas Meters </h3>
             <ul className="list-unstyled mt-3">

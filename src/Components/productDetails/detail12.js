@@ -8,6 +8,7 @@ import img4 from "../../images/p12d.png";
 import img5 from "../../images/p12e.png";
 import img6 from "../../images/p12f.png";
 import img7 from "../../images/p12g.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -137,7 +138,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Oval Gear Flow Meters (OGM)</h3>
             <ul className="list-unstyled mt-3">

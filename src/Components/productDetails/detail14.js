@@ -5,6 +5,7 @@ import img1 from "../../images/p14a.png";
 import img2 from "../../images/p14b.png";
 import img3 from "../../images/p14c.png";
 import img4 from "../../images/p14d.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -135,7 +136,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Air Flow Meters</p>
             <h3 className="fw-semibold">TRX Ultrasonic Air Meters </h3>
             <ul className="list-unstyled mt-3">

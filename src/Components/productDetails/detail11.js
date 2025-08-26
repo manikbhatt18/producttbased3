@@ -10,6 +10,7 @@ import img6 from "../../images/p11f.png";
 import img7 from "../../images/p11g.png";
 import img8 from "../../images/p11h.png";
 import img9 from "../../images/p11i.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -138,7 +139,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Contoil / RPD Flow Meters</h3>
             <ul className="list-unstyled mt-3">

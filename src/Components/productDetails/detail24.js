@@ -5,6 +5,7 @@ import img1 from "../../images/p24a.jpg";
 import img2 from "../../images/p24b.png";
 import img3 from "../../images/p24c.png";
 import img4 from "../../images/p24d.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -139,7 +140,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Rotameters</p>
             <h3 className="fw-semibold">Metal tube Rotameters (Variable Area measurement) </h3>
             <ul className="list-unstyled mt-3">

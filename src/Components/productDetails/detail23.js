@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import img1 from "../../images/p23a.png";
 import img2 from "../../images/p23b.png";
 import img3 from "../../images/p23c.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -138,7 +139,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Gas Flow Meters</p>
             <h3 className="fw-semibold">Conical shaped Flow meter</h3>
             <ul className="list-unstyled mt-3">

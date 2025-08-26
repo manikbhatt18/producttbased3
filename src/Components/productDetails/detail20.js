@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import img1 from "../../images/p20a.png";
 import img2 from "../../images/p20b.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -135,7 +136,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Natural Gas Flow Meters</p>
             <h3 className="fw-semibold">Ultra-NXT Ultrasonic Gas Flow Meter  </h3>
             <ul className="list-unstyled mt-3">

@@ -5,6 +5,7 @@ import img1 from "../../images/p7a.jpg";
 import img2 from "../../images/p7b.png";
 import img3 from "../../images/p7c.png";
 import img4 from "../../images/p7d.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -131,7 +132,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Electromagnetic Flow Meter</p>
             <h3 className="fw-semibold">MF-TER Electromagnetic Flow Meter</h3>
             <ul className="list-unstyled mt-3">

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import img1 from "../../images/p13.png";
+import "../ProductDetailCustom.css";
 
 
 
@@ -132,7 +133,7 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-          <div className="col-lg-6 mt-5 mt-lg-0">
+        <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Positive Displacement Oil Meters</p>
             <h3 className="fw-semibold">Micro Stream Flow Sensor OFZ Series </h3>
             <ul className="list-unstyled mt-3">

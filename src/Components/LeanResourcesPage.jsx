@@ -95,24 +95,24 @@ function LeanResourcesPage() {
         {/* Videos Section */}
         <Container>
           <h3 className="section-heading">
-            <span className="heading-bar" /> Our Prominent
+            <span className="heading-bar" /> Our Lean Journey in Action
           </h3>
 
           <Row className="g-4 mb-2 forBg">
             {[
               {
-                title: "2023 2 Second Lean Summit",
-                caption: "Seating matters - Ireland",
-                link: "https://www.youtube.com/embed/q8x-1hRcjhA",
-              },
-              {
-                title: "GembaTalk S1 E6: How 'What's in it for me' revolutionized IOTAFLOW's culture",
-                caption: "with Pankaj Malik",
+                title: "",
+                caption: "",
                 link: "https://www.youtube.com/embed/KYnoL-nWr4w",
               },
               {
-                title: "Rewarding Mistakes in IOTAflow Culture",
-                caption: "Mistakes are rewarded in Iotaflow culture",
+                title: "IOTAFLOW is grateful to have the opportunity to be part of Paul Akers’ 2 Second Lean Tour series.",
+                caption: "What began with small, daily improvements has AME 2 Second Lean Tour",
+                link: "https://www.youtube.com/embed/q8x-1hRcjhA",
+              },
+              {
+                title: "",
+                caption: "",
                 link: "https://www.youtube.com/embed/JJZCCWxysTk",
               },
             ].map((video, idx) => (

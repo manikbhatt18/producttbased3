@@ -40,7 +40,7 @@ function CustomNavbar() {
      
     ],
     "Variable Area Rotameter": [
-      { name: "Metal tube Rotameters (Variable Area measurement)", link: "//product-detail/detail24" },
+      { name: "Metal tube Rotameters (Variable Area measurement)", link: "/product-detail/detail24" },
       { name: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
     ],
     "Differential Pressure Flow Meter": [
