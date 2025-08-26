@@ -152,8 +152,7 @@ function ProductDetail() {
             </button>
           </div>
         </div>
-      </div>
-
+        
       {/* Sticky tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
         <ul className="nav nav-tabs border-0 justify-content-center">
@@ -169,6 +168,8 @@ function ProductDetail() {
           ))}
         </ul>
       </div>
+      </div>
+
 
       {/* Tab content */}
       <div className="container">

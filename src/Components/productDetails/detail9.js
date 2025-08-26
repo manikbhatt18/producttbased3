@@ -19,7 +19,7 @@ import related4 from "../../images/p10a.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function ProductDetail() {
-  const images = [img1, img2,img3,img4,img5,img6];
+  const images = [img1, img2, img3, img4, img5, img6];
 
   const ROTATE_MS = 2000; // change to 1500–3000 if you like
 
@@ -67,7 +67,7 @@ function ProductDetail() {
     setCurrentIndex(idx);
   };
 
- const relatedProducts = [
+  const relatedProducts = [
     { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
     {
       img: related2,
@@ -141,31 +141,32 @@ function ProductDetail() {
               <li className="mb-2">&#9679;Apator Powogaz Smart D+ Single-Jet Water Meter | AMR-Ready</li>
               <li className="mb-2">&#9679;High-accuracy single-jet water meter DN15/DN20 for residential, commercial & municipal projects in India.</li>
               <li className="mb-2">&#9679;AMR-ready, durable brass body, low start flow.</li>
-             
-            
+
+
             </ul>
             <button className="my-2 btn-enquiry">
               <span>Enquiry Now</span>
             </button>
           </div>
         </div>
+        {/* Sticky tabs */}
+        <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
+          <ul className="nav nav-tabs border-0 justify-content-center">
+            {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
+              <li className="nav-item" key={tab}>
+                <button
+                  className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
       </div>
 
-      {/* Sticky tabs */}
-      <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
-        <ul className="nav nav-tabs border-0 justify-content-center">
-          {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
-            <li className="nav-item" key={tab}>
-              <button
-                className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
 
       {/* Tab content */}
       <div className="container">
@@ -174,108 +175,108 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 <section>
-  <p>
-    The <strong>Apator Powogaz Smart D+</strong> Single-Jet Water Meter delivers precise metering for cold and hot water in residential, commercial, and industrial applications. Built with advanced <strong>vane-wheel technology</strong>, a <strong>hermetically sealed counter</strong>, and robust <strong>tamper protection</strong>, it ensures long-term reliability in challenging environments.
-  </p>
-  <p>
-    With <strong>MID compliance</strong>, <strong>R200 measurement range</strong>, and compatibility with wired or wireless <strong>AMR communication modules</strong>, the Smart D+ is ideal for modern water management. Designed for <strong>horizontal and vertical installations</strong> without straight pipe run requirements (<strong>U0D0</strong>), it offers <strong>low starting flow</strong>, <strong>high accuracy</strong>, and <strong>resistance to external magnetic fields</strong>.
-  </p>
-</section>
+                  <p>
+                    The <strong>Apator Powogaz Smart D+</strong> Single-Jet Water Meter delivers precise metering for cold and hot water in residential, commercial, and industrial applications. Built with advanced <strong>vane-wheel technology</strong>, a <strong>hermetically sealed counter</strong>, and robust <strong>tamper protection</strong>, it ensures long-term reliability in challenging environments.
+                  </p>
+                  <p>
+                    With <strong>MID compliance</strong>, <strong>R200 measurement range</strong>, and compatibility with wired or wireless <strong>AMR communication modules</strong>, the Smart D+ is ideal for modern water management. Designed for <strong>horizontal and vertical installations</strong> without straight pipe run requirements (<strong>U0D0</strong>), it offers <strong>low starting flow</strong>, <strong>high accuracy</strong>, and <strong>resistance to external magnetic fields</strong>.
+                  </p>
+                </section>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-           <ul>
-  <li><strong>High-accuracy metering:</strong> R200 horizontal / R80 vertical measurement range</li>
-  <li><strong>MID-compliant and EN-ISO 4064 certified:</strong> For potable water applications</li>
-  <li><strong>Hermetically sealed counter:</strong> Fog-resistant, clear dual-colour numeric display</li>
-  <li><strong>Tamper protection:</strong> Snap ring cover, deformation pin for unauthorized interference detection</li>
-  <li><strong>Low starting flow:</strong> Accurate measurement of small consumption volumes</li>
-  <li><strong>No straight pipe runs required:</strong> U0D0 installation flexibility</li>
-  <li><strong>Dual reading technologies:</strong> Optical and inductive for AMR integration</li>
-  <li><strong>Communication compatibility:</strong> Wireless M-Bus, M-Bus, pulse output for remote data collection</li>
-  <li><strong>Durable construction:</strong> Brass body and high-quality internal components for extended service life</li>
-  <li><strong>Electronic diagnostics:</strong> Operational monitoring and fault detection</li>
-  <li><strong>Target Applications:</strong>
-    <ul>
-      <li>Residential – single-family and multi-family housing water supply</li>
-      <li>Commercial – hotels, office complexes, retail facilities</li>
-      <li>Industrial – factories, processing plants requiring accurate water tracking</li>
-      <li>Municipal – cold and hot water distribution systems</li>
-      <li>Smart metering projects – integrated with AMR/AMI systems for automated billing</li>
-    </ul>
-  </li>
-</ul>
+            <ul>
+              <li><strong>High-accuracy metering:</strong> R200 horizontal / R80 vertical measurement range</li>
+              <li><strong>MID-compliant and EN-ISO 4064 certified:</strong> For potable water applications</li>
+              <li><strong>Hermetically sealed counter:</strong> Fog-resistant, clear dual-colour numeric display</li>
+              <li><strong>Tamper protection:</strong> Snap ring cover, deformation pin for unauthorized interference detection</li>
+              <li><strong>Low starting flow:</strong> Accurate measurement of small consumption volumes</li>
+              <li><strong>No straight pipe runs required:</strong> U0D0 installation flexibility</li>
+              <li><strong>Dual reading technologies:</strong> Optical and inductive for AMR integration</li>
+              <li><strong>Communication compatibility:</strong> Wireless M-Bus, M-Bus, pulse output for remote data collection</li>
+              <li><strong>Durable construction:</strong> Brass body and high-quality internal components for extended service life</li>
+              <li><strong>Electronic diagnostics:</strong> Operational monitoring and fault detection</li>
+              <li><strong>Target Applications:</strong>
+                <ul>
+                  <li>Residential – single-family and multi-family housing water supply</li>
+                  <li>Commercial – hotels, office complexes, retail facilities</li>
+                  <li>Industrial – factories, processing plants requiring accurate water tracking</li>
+                  <li>Municipal – cold and hot water distribution systems</li>
+                  <li>Smart metering projects – integrated with AMR/AMI systems for automated billing</li>
+                </ul>
+              </li>
+            </ul>
           )}
 
           {activeTab === "Technical data" && (
-           <table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Nominal Diameter (DN)</td>
-      <td>15 mm / 20 mm</td>
-    </tr>
-    <tr>
-      <td>Measurement Range</td>
-      <td>R200 (H), R80 (V)</td>
-    </tr>
-    <tr>
-      <td>Permanent Flow Rate (Q3)</td>
-      <td>1.6 / 2.5 / 4 m³/h</td>
-    </tr>
-    <tr>
-      <td>Maximum Flow Rate (Q4)</td>
-      <td>2 / 3.125 / 5 m³/h</td>
-    </tr>
-    <tr>
-      <td>Minimum Flow Rate (Q1)</td>
-      <td>0.01 – 0.025 m³/h</td>
-    </tr>
-    <tr>
-      <td>Starting Flow</td>
-      <td>5 – 12 dm³/h</td>
-    </tr>
-    <tr>
-      <td>Temperature Class</td>
-      <td>Cold water up to 50°C, hot water up to 90°C</td>
-    </tr>
-    <tr>
-      <td>Pressure Rating</td>
-      <td>PN16 (16 bar)</td>
-    </tr>
-    <tr>
-      <td>Installation Positions</td>
-      <td>Horizontal (H), Vertical (V)</td>
-    </tr>
-    <tr>
-      <td>Accuracy</td>
-      <td>±2% (0.1–30°C), ±3% (&gt;30°C)</td>
-    </tr>
-    <tr>
-      <td>Ingress Protection</td>
-      <td>IP65</td>
-    </tr>
-    <tr>
-      <td>Communication Options</td>
-      <td>Optical, inductive, M-Bus, wireless M-Bus, pulse output</td>
-    </tr>
-    <tr>
-      <td>Body Material</td>
-      <td>Brass</td>
-    </tr>
-    <tr>
-      <td>Standards Compliance</td>
-      <td>EN-ISO 4064, OIML R49, MID Directive 2014/32/EU</td>
-    </tr>
-  </tbody>
-</table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nominal Diameter (DN)</td>
+                  <td>15 mm / 20 mm</td>
+                </tr>
+                <tr>
+                  <td>Measurement Range</td>
+                  <td>R200 (H), R80 (V)</td>
+                </tr>
+                <tr>
+                  <td>Permanent Flow Rate (Q3)</td>
+                  <td>1.6 / 2.5 / 4 m³/h</td>
+                </tr>
+                <tr>
+                  <td>Maximum Flow Rate (Q4)</td>
+                  <td>2 / 3.125 / 5 m³/h</td>
+                </tr>
+                <tr>
+                  <td>Minimum Flow Rate (Q1)</td>
+                  <td>0.01 – 0.025 m³/h</td>
+                </tr>
+                <tr>
+                  <td>Starting Flow</td>
+                  <td>5 – 12 dm³/h</td>
+                </tr>
+                <tr>
+                  <td>Temperature Class</td>
+                  <td>Cold water up to 50°C, hot water up to 90°C</td>
+                </tr>
+                <tr>
+                  <td>Pressure Rating</td>
+                  <td>PN16 (16 bar)</td>
+                </tr>
+                <tr>
+                  <td>Installation Positions</td>
+                  <td>Horizontal (H), Vertical (V)</td>
+                </tr>
+                <tr>
+                  <td>Accuracy</td>
+                  <td>±2% (0.1–30°C), ±3% (&gt;30°C)</td>
+                </tr>
+                <tr>
+                  <td>Ingress Protection</td>
+                  <td>IP65</td>
+                </tr>
+                <tr>
+                  <td>Communication Options</td>
+                  <td>Optical, inductive, M-Bus, wireless M-Bus, pulse output</td>
+                </tr>
+                <tr>
+                  <td>Body Material</td>
+                  <td>Brass</td>
+                </tr>
+                <tr>
+                  <td>Standards Compliance</td>
+                  <td>EN-ISO 4064, OIML R49, MID Directive 2014/32/EU</td>
+                </tr>
+              </tbody>
+            </table>
           )}
 
           {activeTab === "Downloads" && (

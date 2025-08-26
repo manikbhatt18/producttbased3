@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./CustomNavbar.css";
-import Logo from "../../images/logo1.png";
+import Logo from "../../images/Iotaf logo full.png";
 import icon from "../../images/greater.png";
 import GaugeIcon from "../../images/clockIconn.png"; // icon
 

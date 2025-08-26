@@ -150,9 +150,7 @@ function ProductDetail() {
             </button>
           </div>
         </div>
-      </div>
-
-      {/* Sticky tabs */}
+             {/* Sticky tabs */}
       <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
         <ul className="nav nav-tabs border-0 justify-content-center">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
@@ -168,6 +166,9 @@ function ProductDetail() {
         </ul>
       </div>
 
+      </div>
+
+ 
       {/* Tab content */}
       <div className="container">
         <div ref={tabContentRef} className="p-4 border shadow-sm bg-white fade-in">
