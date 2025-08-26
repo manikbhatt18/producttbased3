@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import img1 from "../../images/p2a.png";
 import img2 from "../../images/p2b.png";
 
-import related1 from "../../images/p1a.png";
+import related1 from "../../images/385x385 (1).jpg";
 import related2 from "../../images/p3a.jpg";
 import related3 from "../../images/p4a.jpg";
 import related4 from "../../images/p5a.png";
