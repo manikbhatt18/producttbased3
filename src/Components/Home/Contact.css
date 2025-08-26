@@ -1,16 +1,14 @@
 /* Banner Section */
 .contact-banner {
   position: relative;
-  background: linear-gradient(to right, #c1a100, #d4b100), 
-              url("https://maps.googleapis.com/maps/api/staticmap?center=28.6219097,77.1224383&zoom=15&size=800x400&markers=color:red%7C28.6219097,77.1224383&key=YOUR_API_KEY");
+  background: url("../../images/Contact\ us\ page.jpg");
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom-left-radius: 120% 50px;
-  border-bottom-right-radius: 120% 50px;
+ 
 }
 
 .location-icon {

@@ -50,14 +50,29 @@
   transition: color 0.3s ease;
   left: 21px;
 }
+.custom-navbar .nav-menu a {
+  color: inherit;          /* inherit black or whatever you set in .nav-item */
+  text-decoration: none;   /* remove blue underline */
+}
 
-/* === Yellow Underline Hover Effect === */
-.nav-item::after {
+/* Optional: keep hover effect consistent */
+.custom-navbar .nav-menu a:hover {
+  color: inherit; /* don't turn blue on hover */
+}
+
+/* === Yellow Underline Hover Effect (Top-level + Dropdown Parents) === */
+.custom-navbar > .nav-container > .nav-menu > .nav-item {
+  position: relative; /* Required for ::after positioning */
+  display: inline-block; /* Keeps it consistent */
+}
+
+/* Underline effect */
+.custom-navbar > .nav-container > .nav-menu > .nav-item::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 100%;
+  bottom: -1px; /* adjust if needed */
+  width: 100%; /* <== full width of parent */
   height: 3px;
   background: #ffcc00;
   transform: scaleX(0);
@@ -65,15 +80,20 @@
   transform-origin: right;
 }
 
-.nav-item:hover::after {
+.custom-navbar > .nav-container > .nav-menu > .nav-item:hover::after,
+.custom-navbar > .nav-container > .nav-menu > .nav-item.active::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* Prevent underline effect on dropdown parent items */
-.dropdown > .nav-item::after {
-  display: none;
+/* === Dropdown items (inside menu) → only background hover, no underline === */
+.custom-navbar .dropdown-menu .nav-item::after {
+  display: none !important;
 }
+
+
+
+
 
 /* ===== Dropdown ===== */
 .dropdown {
@@ -83,7 +103,7 @@
 
 /* Center the dropdown below "Products" */
 .dropdown-menu {
-    position: absolute;
+  position: absolute;
   top: 100%;
   left: calc(50% + 50px) !important;
   transform: translateX(-50%) !important;
@@ -131,6 +151,7 @@
   margin-left: 100px;
   max-width: 300px;
 }
+/* Remove top border/edge effect under dropdown */
 
 .dropdown-right img {
   max-width: 100%;

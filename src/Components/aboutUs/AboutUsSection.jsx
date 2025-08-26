@@ -3,10 +3,12 @@ import './AboutUsSection.css';
 import teamImage from '../../images/tbg1.webp';  // Your single team image
 import KPISection from './KPISection';
 
-import AnimatedImageSection from './AnimatedImageSection';
+import AnimatedVideoSection from './AnimatedVideoSection';
 import LeanSection from './LeanSection';
 import ClientsSection from './ClientsSection';
-import FooterSection from './FooterSection';
+
+
+
 
 function AboutUsSection() {
   return (
@@ -56,7 +58,7 @@ function AboutUsSection() {
         </div>
         <KPISection />
         <div className="animated-image-section-wrapper py-5">
-          <AnimatedImageSection />
+          <AnimatedVideoSection />
 
         </div>
         <LeanSection />

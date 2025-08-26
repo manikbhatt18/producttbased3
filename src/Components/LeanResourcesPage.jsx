@@ -49,7 +49,7 @@ function LeanResourcesPage() {
         </section>
 
         {/* Empty section background */}
-        <section className="bg-light text-white py-5">
+        <section >
           <img src={img3} alt="Lean Journey" className="journey" />
         </section>
 
@@ -88,12 +88,12 @@ function LeanResourcesPage() {
         </Container>
 
         {/* Lean Journey GIF */}
-        <section className="bg-light text-white py-5">
-          <img src={img2} alt="Lean Journey" className="journey2" />
-        </section>
+       <section className="hero-wrapperr">
+        <img src={img2} alt="Lean Banner" className="lean-journey" />
+      </section>
 
         {/* Videos Section */}
-        <Container>
+        <Container className="mt-5">
           <h3 className="section-heading">
             <span className="heading-bar" /> Our Lean Journey in Action
           </h3>

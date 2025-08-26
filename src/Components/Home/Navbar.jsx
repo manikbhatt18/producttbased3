@@ -37,7 +37,6 @@ function CustomNavbar() {
       { name: "Contoil / RPD Flow Meters", link: "/product-detail/detail11" },
       { name: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
        { name: "Micro Stream Flow Sensor OFZ Series", link: "/product-detail/detail13" },
-     
     ],
     "Variable Area Rotameter": [
       { name: "Metal tube Rotameters (Variable Area measurement)", link: "/product-detail/detail24" },
@@ -45,7 +44,6 @@ function CustomNavbar() {
     ],
     "Differential Pressure Flow Meter": [
       { name: "Conical shaped Flow meter", link: "/product-detail/detail23" },
-
     ],
     "GAS Meter": [
       { name: "TRX Ultrasonic Air Flow Meter", link: "/product-detail/detail14" },
@@ -53,9 +51,6 @@ function CustomNavbar() {
       { name: "Ultra-NXT Ultrasonic Gas Flow Meter ", link: "/product-detail/detail20" },
       { name: "GasPro RPD Gas Meter ", link: "/product-detail/detail21" },
       { name: "UF-Biosonic (Ultrasonic Flow Measurement for Biogas)", link: "/product-detail/detail22" },
-      // { name: "EQZ/EQZK Radial Turbine Gas Meters", link: "/product-detail/detail14" },
-
-
     ],
     "Vortex Flow Meter": [
       { name: "VFM Vortex Flow Meters", link: "/product-detail/detail16" },
@@ -94,9 +89,10 @@ function CustomNavbar() {
             <NavLink to="/" className="nav-item" onClick={toggleMenu}>
               Home
             </NavLink>
+
             {/* About Us dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/about-us" className="nav-item" onClick={toggleMenu}>
+              <NavLink to="/about-us" onClick={toggleMenu}>
                 About Us
               </NavLink>
               <div className="dropdown-menu regular">
@@ -109,13 +105,11 @@ function CustomNavbar() {
               </div>
             </div>
 
-
             {/* Products dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/products" className="nav-item" onClick={toggleMenu}>
+              <NavLink to="/products"  onClick={toggleMenu}>
                 Product
               </NavLink>
-
               <div className="dropdown-menu">
                 <div className="products-grid">
                   {/* Left Categories */}
@@ -132,7 +126,6 @@ function CustomNavbar() {
                       ))}
                     </ul>
                   </div>
-
                   {/* Right Products */}
                   <div className="product-items">
                     {productData[activeCategory].map((product) => (
@@ -164,8 +157,10 @@ function CustomNavbar() {
             <NavLink to="/tools" className="nav-item" onClick={toggleMenu}>
               Tools
             </NavLink>
+
+            {/* Resources dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/resources" className="nav-item" onClick={toggleMenu}>
+              <NavLink to="/resources"  onClick={toggleMenu}>
                 Lean Resources
               </NavLink>
               <div className="dropdown-menu regular">
@@ -174,7 +169,6 @@ function CustomNavbar() {
                 </NavLink>
                 <NavLink to="/about-us/result" onClick={toggleMenu}>
                   Case Studies
-
                 </NavLink>
               </div>
             </div>
@@ -186,13 +180,14 @@ function CustomNavbar() {
         </div>
 
         {/* Desktop Contact Button */}
-       <div><Link to="/contact"> <button className="contact-btn desktop-contact">
-        
-          <span>
-            Contact Us <img src={icon} alt="icon" className="icon-btn" />
-          </span>
-        </button>
-        </Link>
+        <div>
+          <Link to="/contact">
+            <button className="contact-btn desktop-contact">
+              <span>
+                Contact Us <img src={icon} alt="icon" className="icon-btn" />
+              </span>
+            </button>
+          </Link>
         </div>
       </nav>
     </>

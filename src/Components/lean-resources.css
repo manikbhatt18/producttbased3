@@ -96,21 +96,25 @@
 .journey {
   display: block;
   max-width: 100%;
-  width: 95%;
+  
   height: 40%;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit:cover;
   
 }
 
-.journey2 {
+.hero-wrapperr {
+  width: 100%;
+  margin: 20px 0 0; /* gap below navbar */
+  margin-bottom: 20px;
+}
+
+.lean-journey {
   display: block;
-  max-width: 100%;
-  width: 95%;
-  height: 40%;
-  margin: 0 auto;
-  object-fit: contain;
-  
+  width: 100%;
+  height: 70%;
+  object-fit: contain;   /* keeps banner feel */
+  border-radius: 0;
 }
 .lead{
   font-size: 1rem;
