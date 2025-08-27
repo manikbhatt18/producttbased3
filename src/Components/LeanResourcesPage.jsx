@@ -103,7 +103,7 @@ function LeanResourcesPage() {
           <Row className="g-4 mb-2 forBg">
             {[
               {
-                title: "",
+                title: "GembaTalk S1 E6: How \"What's in it for me\" revolutionized IOTAFLOW's culture with Pankaj Malik",
                 caption: "",
                 link: "https://www.youtube.com/embed/KYnoL-nWr4w",
               },
@@ -113,7 +113,7 @@ function LeanResourcesPage() {
                 link: "https://www.youtube.com/embed/q8x-1hRcjhA",
               },
               {
-                title: "",
+                title: "Mistakes are rewarded in Iotaflow culture|Lean culture|Corporate positivity |Employees welfare|",
                 caption: "",
                 link: "https://www.youtube.com/embed/JJZCCWxysTk",
               },
