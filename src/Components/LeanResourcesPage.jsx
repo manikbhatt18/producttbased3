@@ -5,7 +5,7 @@ import "./lean-resources.css";
 import ProductCard from './ProductCard';
 
 import img1 from '../images/Lean resource 2.jpg';        // Hero banner
-import img2 from '../images/gifLean Journey.gif';
+import img2 from '../images/gifgif.gif';
 import img3 from '../images/Lean resource 1.jpg';
 
 // Emoticon icons

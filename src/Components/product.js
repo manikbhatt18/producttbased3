@@ -158,13 +158,13 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 
-  <p><b>Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</b></p>
+  <p>Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</p>
   <p>
-    The Ultrimis™ from Apator Powogaz is a compact, high-precision ultrasonic water meter designed specifically for domestic and commercial water metering applications. 
-    It features patented <b>W-Sonic Technology</b> that ensures reliable, maintenance-free operation with no moving parts, and long-term metering accuracy even at very low flow rates.
+    The <b>Ultrimis™ </b>from <b>Apator Powogaz</b> is a compact, high-precision<b> ultrasonic water meter</b> designed specifically for <b>domestic and commercial water metering</b> applications. 
+    It features<b> patented W-Sonic Technology</b> that ensures reliable, maintenance-free operation with <b>no moving parts</b>, and long-term metering accuracy even at very low flow rates.
   </p>
   <p>
-    Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended battery life of up to <b>16 years</b>, and seamless compatibility with 
+    Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended <b>battery life of up to 16 years</b>, and seamless compatibility with 
     <b>NFC</b>, <b>Wireless M-Bus</b>, and <b>LoRaWAN</b> communication protocols. The meter supports all mounting positions without requiring straight pipe sections, 
     making it ideal for space-constrained or retrofit installations.
   </p>
@@ -172,7 +172,7 @@ function ProductDetail() {
     Now available in India through <b>IOTAFLOW Systems Pvt. Ltd.</b>, an authorized channel partner of Apator Powogaz.
   </p>
 
-  <h3>Applications</h3>
+  <p>Applications</p>
   <ul>
     <li>Domestic water metering in apartments, group housing, and residential complexes</li>
     <li>Commercial building water billing in offices, malls, hotels, and hospitals</li>
@@ -183,9 +183,7 @@ function ProductDetail() {
     <li>Metering solutions for municipal water supply and urban development projects</li>
   </ul>
 
-<p>Why Choose the TRX Ultrasonic Air Flow Meter?<br/>
-Whether you’re looking to <strong>reduce compressed air costs, monitor compressor efficiency</strong>, or implement <strong>predictive maintenance</strong>, the <strong>TRX Series</strong> provides unmatched performance, <strong>reliability</strong>, and <strong>cost-efficiency</strong>—all without system interruptions or pressure loss.
-</p>
+
               </div>
             </div>
           )}
@@ -193,15 +191,15 @@ Whether you’re looking to <strong>reduce compressed air costs, monitor compres
           {activeTab === "Features" && (
            
   <ul>
-    <li><b>Ultrasonic W-Sonic™ technology</b> for stable, high-accuracy metering up to R800</li>
-    <li><b>No moving parts</b> – maintenance-free and wear-resistant</li>
-    <li><b>Flexible installation</b> – horizontal, vertical, or angled positions without straight pipe runs</li>
-    <li><b>Fully sealed IP68 housing</b> – submersible, dustproof, and ideal for underground chambers</li>
-    <li><b>Battery-powered</b> with a service life of up to 16 years</li>
-    <li><b>High metering accuracy:</b> ±2% (cold water), ±3% (hot water), ±5% (very low flow)</li>
-    <li><b>Reverse flow detection</b> and bi-directional measurement supported</li>
-    <li><b>Tamper-proof design</b> with logging for backflow, zero flow, battery status, and unauthorized access</li>
-    <li><b>Communication-ready:</b> NFC (mobile diagnostics), Wireless M-Bus (OMS), and LoRaWAN</li>
+    <li>Ultrasonic W-Sonic™ technology for stable, high-accuracy metering up to R800</li>
+    <li>No moving parts– maintenance-free and wear-resistant</li>
+    <li>Flexible installation – horizontal, vertical, or angled positions without straight pipe runs</li>
+    <li>Fully sealed IP68 housing – submersible, dustproof, and ideal for underground chambers</li>
+    <li>Battery-powered with a service life of up to 16 years</li>
+    <li>High metering accuracy: ±2% (cold water), ±3% (hot water), ±5% (very low flow)</li>
+    <li>Reverse flow detection and bi-directional measurement supported</li>
+    <li>Tamper-proof design with logging for backflow, zero flow, battery status, and unauthorized access</li>
+    <li>Communication-ready: NFC (mobile diagnostics), Wireless M-Bus (OMS), and LoRaWAN</li>
     <li>Compact and lightweight body suitable for small residential installations</li>
     <li>Environmentally friendly – low lithium content and energy-efficient</li>
   </ul>

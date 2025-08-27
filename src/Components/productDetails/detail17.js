@@ -177,23 +177,19 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
 <p>
-The Micronics PF 222/333 Portable Ultrasonic Flow Meter is a compact, battery-powered clamp-on flow measurement solution designed for non-invasive, real-time monitoring of liquid flow in full pipes. Represented in India by IOTAFLOW Systems Pvt. Ltd., this portable ultrasonic meter is ideal for engineers and technicians seeking instant, high-accuracy diagnostics without cutting pipes or interrupting flow. Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the Micronics PF333 delivers high-performance flow readings in demanding environments — from utilities to industrial audits.
+The IOTAFLOW Ultrasonic BTU Meter, intelligently integrated with the Apator FAUN electronic BTU calculator, offers a seamless solution for high-accuracy thermal energy metering in HVAC systems, district heating, chilled water networks, and industrial energy monitoring. Leveraging transit-time ultrasonic flow technology, it guarantees zero pressure drop, long-term stability, and maintenance-free operation—even in harsh conditions. 
 </p>
-
-<p><b>Authorized Channel Partner</b></p>
 <p>
-Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. As an official Micronics channel partner in India, IOTAFLOW offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities. Contact us for demos, bulk orders, or integration with existing SCADA/BMS systems.
+The FAUN calculator enhances functionality with its large, clear display, two-button operation, and full configuration capabilities via PC or local input. It computes energy usage (BTU, kWh, GJ, MWh) by processing flow data from the ultrasonic sensor and paired Pt100/Pt500 temperature inputs. The calculator features robust data logging, two independent tariff registers, configurable communication modules, and up to 12 years of battery life—all in line with MID and EN-1434 C/E1/M1 compliance.
 </p>
 
 <p><b>Target Applications</b></p>
 <ul>
-  <li>Water flow auditing in industrial plants and utility pipelines</li>
-  <li>HVAC commissioning and chilled water flow balancing</li>
-  <li>Pump verification and energy efficiency monitoring</li>
-  <li>RO and DM water flow measurement in chemical and pharmaceutical units</li>
-  <li>Process water and condensate tracking in boiler and thermal systems</li>
-  <li>Non-invasive flow metering for temporary setups and maintenance inspections</li>
-  <li>Portable diagnostics in building services, energy audits, and facility management</li>
+  <li>HVAC cooling and heating system metering</li>
+  <li>District heating and cooling networks</li>
+  <li>Industrial process heat monitoring</li>
+  <li>Chilled water consumption tracking</li>
+  <li>Energy audits and building management systems</li>
 </ul>
 
 
@@ -204,38 +200,60 @@ Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. As an officia
           {activeTab === "Features" && (
            
 <ul>
-  <li>Micronics Make – UK Engineered: Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-  <li>Portable & Lightweight: Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-  <li>Clamp-On Technology: No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-  <li>Wide Pipe Compatibility: Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-  <li>High Accuracy: Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-  <li>Battery Operation: Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-  <li>Data Logging: Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-  <li>Intuitive Interface: Large backlit LCD and user-friendly menu-driven setup.</li>
-  <li>Multi-Output Support: RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-  <li><b>Certified for International Standards:</b></li>
-  <li>CE Certified</li>
-  <li>RoHS Compliant</li>
-  <li>ISO 9001 Manufacturing Standards</li>
+  <li>Transit-time ultrasonic measurement — no moving parts; ensures reliability and minimal maintenance</li>
+  <li>Clamp-on option available — non-invasive installation ideal for retrofit upgrades</li>
+  <li>Wide dynamic range with high accuracy and stability for variable-flow systems</li>
+  <li>Communication-ready with multiple protocol support: M-Bus, Modbus RTU, RS232, RS485, Wireless M-Bus, LON, and pulse/analog outputs</li>
+  <li>Long battery lifespan (up to 12 years) or optional 230 VAC power supply</li>
+  <li>High ingress protection — configurable to IP54, IP65, or IP68 for durability</li>
+  <li>Advanced diagnostics — error detection (air locks, weak signal, flow reversal) and failure logs</li>
+  <li>Configurable via PC software or front buttons for tailored operation</li>
 </ul>
           )}
 
           {activeTab === "Technical data" && (
-<ul>
-  <li><b>Principle</b>: Transit Time, CE approved</li>
-  <li><b>Pipe Range</b>: 13 mm ID to 10,000 mm OD</li>
-  <li><b>Transducer Operating Temp</b>: -20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</li>
-  <li><b>Display shows</b>: flow rate, total flow, signal and battery level; non-invasive sensing</li>
-  <li><b>Language options</b>: English, French, German, Spanish</li>
-  <li><b>Carrying case</b>: IP67 Rated</li>
-  <li><b>Battery / Mains operation</b>: Battery Life 14 Hours, 2.5 Hours charging time</li>
-  <li><b>Accuracy</b>: ±0.5% to ±3% (dependent on flow and pipe size)</li>
-  <li><b>Turn Down Ratio</b>: 100:1</li>
-  <li><b>Data Communications</b>: USB (supports most USB 2.0 drives)</li>
-  <li><b>Outputs</b>: 3 × Pulse Output, 4–20 mA Output</li>
-  <li><b>Data Logging</b>: Up to 198,000 records; export via USB to CSV/Excel</li>
-  <li><b>Temperature Sensors</b>: Clamp-on PT100 Class B 4-wire; range 0°C – 200°C; resolution 0.1°C; minimum ΔT 0.3°C (optional)</li>
-</ul>
+<table>
+  <tr>
+    <td><b>Parameter</b></td>
+    <td><b>Value</b></td>
+  </tr>
+  <tr>
+    <td>Measurement Principle</td>
+    <td>Transit-time ultrasonic</td>
+  </tr>
+  <tr>
+    <td>Flow Range</td>
+    <td>Wide range per meter size DN</td>
+  </tr>
+  <tr>
+    <td>Pipe Sizes</td>
+    <td>Multiple DN options for commercial & industrial use</td>
+  </tr>
+  <tr>
+    <td>Accuracy Class</td>
+    <td>±1% (flow) and ±0.1°C (temperature)</td>
+  </tr>
+  <tr>
+    <td>Temperature Range</td>
+    <td>Compatible with hot and chilled water</td>
+  </tr>
+  <tr>
+    <td>Communication</td>
+    <td>Modbus, RS485, M-Bus, GSM/GPRS, NFC</td>
+  </tr>
+  <tr>
+    <td>Power Supply</td>
+    <td>Battery (long life) or external 24V DC</td>
+  </tr>
+  <tr>
+    <td>Ingress Protection</td>
+    <td>IP65 or higher</td>
+  </tr>
+  <tr>
+    <td>Special Features</td>
+    <td>Low pressure drop, no moving parts, Apator BTU calculator integration</td>
+  </tr>
+</table>
           )}
 
           {activeTab === "Downloads" && (
