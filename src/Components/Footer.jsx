@@ -113,11 +113,15 @@ function Footer() {
       <div className="footer-divider"></div>
 
       {/* Footer Bottom Bar */}
-      <div className="footer-bottom py-3 text-center">
-        <Container>
+      <div className="footer-bottom py-3 d-flex">
+        <Container className=" text-start">
           <small>© {new Date().getFullYear()} IOTAFLOW Systems Pvt. Ltd</small>
         </Container>
+        <Container className=" text-end">
+          <small><a href="https://errorr.in/" className="text-decoration-none text-reset">Designed and Promoted By  Errorr.in - Best Digital Marketing Company in India.</a></small>
+        </Container>
       </div>
+       
     </footer>
   );
 }

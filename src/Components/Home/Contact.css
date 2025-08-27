@@ -5,6 +5,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   transition: background 0.3s ease;
+  color:black ;
 }
 
 .send-btn:hover {
@@ -24,6 +25,9 @@
   line-height: 40px;
   text-align: center;
   transition: all 0.3s ease;
+}
+.social-icons i{
+  margin-left: 7px;
 }
 
 .social-icons a:hover {
