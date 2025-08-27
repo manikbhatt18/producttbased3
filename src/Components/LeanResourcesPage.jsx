@@ -17,6 +17,7 @@ import steamIcon from '../images/Emoticon 5.png';
 import chemicalIcon from '../images/Emoticon 6.png';
 import waste7 from "../images/Emoticon 7.png";
 import waste8 from "../images/Emoticon 8.png";
+import { h3 } from "framer-motion/client";
 
 function LeanResourcesPage() {
   return (
@@ -54,38 +55,39 @@ function LeanResourcesPage() {
         </section>
 
         {/* Emoticon Section */}
-        <Container className="py-5 ">
-          <h5 className="fw-bold mb-4 text-start">
-            <span style={{ borderLeft: '3px solid #ffcc00', paddingLeft: '10px' }}>
-              8 Wastes In Lean Blocks
-            </span>
-          </h5>
-          <Row className="emoticon-row">
-            {[
-              oilIcon,
-              waterIcon,
-              airIcon,
-              gasIcon,
-              steamIcon,
-              chemicalIcon,
-              waste7,
-              waste8,
-            ].map((icon, idx) => (
-              <Col
-                key={idx}
-                xs={3}   // ✅ 4 per row on phones
-                sm={3}   // 4 per row on small devices
-                md={2}   // ✅ 6 per row on tablets
-                lg={1}   // ✅ 8 per row on large screens
-                className="d-flex justify-content-center emoticon-col"
-              >
-                <ProductCard icon={icon} />
-              </Col>
-            ))}
-          </Row>
+      <Container className="py-5">
+  <h3 className="fw-bold mb-4 text-center">
+    <span style={{  paddingLeft: '10px' }}>
+      8 Wastes In Lean Blocks
+    </span>
+  </h3>
 
+  {/* Grid with responsive column counts */}
+<Row className="emoticon-row row-cols-8 g-3 justify-content-center">
 
-        </Container>
+  {[
+    { icon: oilIcon, title: "Defect" },
+    { icon: waterIcon, title: "Waiting Time" },
+    { icon: airIcon, title: "Extra Motion" },
+    { icon: gasIcon, title: "Extra Inventory" },
+    { icon: steamIcon, title: "Extra Process" },
+    { icon: chemicalIcon, title: "Extra Transportation" },
+    { icon: waste7, title: "Non Utilized Talent" },
+    { icon: waste8, title: "Overproduction" },
+  ].map((item, idx) => (
+    <Col key={idx} className="emoticon-col">
+      <div className="emoticon-item">
+        <div className="emoticon-card">
+          <img src={item.icon} alt={item.title} className="emoticon-img" />
+        </div>
+        <span className="emoticon-title">{item.title}</span>
+      </div>
+    </Col>
+  ))}
+</Row>
+
+</Container>
+
 
         {/* Lean Journey GIF */}
        <section className="hero-wrapperr">

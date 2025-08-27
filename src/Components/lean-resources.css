@@ -87,20 +87,14 @@
 }
 
 /* ---------------------- */
-/* Product/Emoticon Cards */
-/* ---------------------- */
-
-/* ---------------------- */
 /* Lean Journey GIF */
 /* ---------------------- */
 .journey {
   display: block;
   max-width: 100%;
-  
   height: 40%;
   margin: 0 auto;
-  object-fit:cover;
-  
+  object-fit: cover;
 }
 
 .hero-wrapperr {
@@ -113,12 +107,14 @@
   display: block;
   width: 100%;
   height: 70%;
-  object-fit: contain;   /* keeps banner feel */
+  object-fit: contain;
   border-radius: 0;
 }
-.lead{
+
+.lead {
   font-size: 1rem;
 }
+
 /* ---------------------- */
 /* Videos */
 /* ---------------------- */
@@ -140,11 +136,74 @@
   text-align: center;
 }
 
-
 .video-info h5 {
   font-size: 1rem;
   margin: 0 0 6px;
   font-weight: 600;
+}
+
+/* ---------------------- */
+/* Emoticon Section */
+/* ---------------------- */
+
+/* Grid container */
+.emoticon-row {
+  margin: 0 auto;
+  row-gap: 20px;   /* vertical spacing */
+  column-gap: 10px; /* horizontal spacing */
+}
+
+/* Each grid cell centers its content */
+.emoticon-col {
+  display: flex;
+  /* justify-content: center;
+  padding: 5px; */
+}
+
+/* Stack: [icon card] over [label] */
+.emoticon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* keeps label below icon */
+  height: 100%;                /* stretch full column */
+  text-align: center;
+}
+
+/* Icon container */
+.emoticon-card {
+  width: 130px;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon itself */
+.emoticon-img {
+  width: 150px;
+  height: 130px;
+  margin: 0;
+}
+
+/* Label */
+.emoticon-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 8px;
+  line-height: 1.2;
+  min-height: 2.4em; /* reserve space for up to 2 lines */
+  display: flex;
+  align-items: center;  /* vertically center text inside reserved space */
+  text-align: center;
+}
+/* Slightly smaller on mobile */
+@media (max-width: 768px) {
+  .emoticon-card { width: 90px; height: 90px; }
+  .emoticon-img { width: 50px; }
+  .emoticon-title { font-size: 12px; }
 }
 
 /* ---------------------- */
@@ -188,8 +247,6 @@
   .team-member img {
     width: 120px;
   }
-
- 
 }
 
 /* Small Mobile (<= 480px) */
@@ -209,22 +266,4 @@
   .team-member img {
     width: 100px;
   }
-
- 
-}
-/* Emoticon Section */
-/* Emoticon Section */
-.emoticon-row {
-  row-gap: 10px;     /* reduced vertical gap */
-  column-gap: 7px;  /* reduced horizontal gap */
-  margin: 0 auto;
-}
-
-.emoticon-col {
-  padding: 5px !important; /* tighter spacing */
-}
-
-.emoticon-col img {
-  max-width: 120px;   /* control icon size */
-  height: auto;
 }

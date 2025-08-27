@@ -9,11 +9,7 @@ const Contact = () => {
 
       <section className="contact-banner">
         <div className="overlay">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
-            alt="location"
-            className="location-icon"
-          />
+         
         </div>
       </section>
 
