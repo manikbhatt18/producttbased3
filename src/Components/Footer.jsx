@@ -1,108 +1,123 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Services.css"; // Move footer-specific CSS here if needed
 import Logo from "../images/Iotaf logo icon.png";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer-mega text-light pt-5 mt-10">
-      <Container className="pb-5">
+    <footer className="footer text-light pt-5">
+      {/* Wave Shape */}
+      <div className="footer-wave">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 150"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#1a1a1a"
+            d="M0,64 C360,160 1080,0 1440,96 L1440,0 L0,0 Z"
+          ></path>
+        </svg>
+      </div>
+
+      {/* Footer Content */}
+      <Container>
         <Row className="gy-5">
-          <Col lg={4}>
-            <div className="logo">
-              <img src={Logo} alt="Company Logo" />
+          {/* Logo + About */}
+          <Col lg={4} md={12}>
+            <div className="main-con mb-3">
+              <div className="footer-logo me-3">
+                <img src={Logo} alt="IOTAFlow Logo" />
+              </div>
+              <div>
+                <h4 className="fw-bold mb-0">IOTAFLOW</h4>
+                <small className="d-block fw-2"><span>SYSTEMS PVT. LTD</span></small>
+              </div>
             </div>
 
-            <p className="mb-4">
-              Samatex - is the leading company with the known name and rich
-              history in a wide range of industries. We have presence on 5
-              continents in 207 countries worldwide
+            <p >
+              At IOTAFLOW Systems, we embrace Lean <br /> principles to deliver
+              flow measurement, <br />IOT automation, and calibration solutions <br />
+              that drive energy efficiency across industrial utilities.
             </p>
-            {/* <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button> */}
+
+            <div className="mt-3">
+              <p className="mb-1">Follow us</p>
+              <div className="social-icons">
+                <i className="bi bi-youtube"></i>
+                <i className="bi bi-linkedin"></i>
+                <i className="bi bi-facebook"></i>
+                <i className="bi bi-twitter"></i>
+              </div>
+            </div>
           </Col>
 
+          {/* Company Links */}
           <Col lg={2} md={6}>
             <FooterCol
               title="Company"
-              items={[
-                "Overview",
-                "History",
-                "Vision",
-                "Core values",
-                "Leadership",
-                "Strategy",
-              ]}
+              items={["About Us", "Applications", "Case Studies", "Lean Resources"]}
             />
           </Col>
+
+          {/* Support Links */}
           <Col lg={2} md={6}>
             <FooterCol
-              title="Investors"
-              items={[
-                "Overview",
-                "Earnings Releases",
-                "Presentations",
-                "Governance",
-                "Financial Info",
-                "Stock Information",
-              ]}
+              title="Support"
+              items={["FAQs", "Lodge a Complaint", "Feedback", "Downloads"]}
             />
           </Col>
+
+          {/* Careers */}
           <Col lg={2} md={6}>
-            <FooterCol
-              title="Community"
-              items={[
-                "Overview",
-                "Community Stories",
-                "Health & Wellness",
-                "Arts & Culture",
-                "Education",
-                "Parks & Recreation",
-              ]}
-            />
+            <FooterCol title="Careers" items={["Career Opportunities"]} />
           </Col>
+
+          {/* Contact Us */}
           <Col lg={2} md={6}>
-            <FooterCol
-              title="Careers"
-              items={[
-                "Overview",
-                "Job Openings",
-                "Our Culture",
-                "Workforce Diversity",
-                "Supply Chain",
-                "Spotlights",
-              ]}
-            />
+            <div className="footer-col">
+              <h5 className="fw-bold mb-3 footer-col-title">
+                Contact Us
+                <span className="footer-col-underline" />
+              </h5>
+              <p className="mb-1">
+                <i className="bi bi-telephone me-2"></i> +91-9910693866
+              </p>
+              <p className="mb-1">
+                <i className="bi bi-telephone me-2"></i> +91-9779085987
+              </p>
+              <p className="mb-1">
+                <i className="bi bi-envelope me-2"></i> contact@iotaflow.com
+              </p>
+              <p className="mb-1">
+                <i className="bi bi-geo-alt me-2"></i> Find Us
+              </p>
+              <div className="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2619677918765!2d77.1224383!3d28.621909699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d034d4c4c02d3%3A0x4b397a3052ad9053!2sIOTAFLOW%20Systems%20Pvt%20Ltd%20-%20Flow%20meter%20manufacturer%20%26%20exporter%20in%20india!5e0!3m2!1sen!2sin!4v1755784905876!5m2!1sen!2sin"
+                  width="100%"
+                  height="120"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  title="Company Location"
+                ></iframe>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
 
-      <div className="footer-bottom py-3">
-        <Container className="d-flex justify-content-between align-items-center">
-          <div className="small text-muted">
-            Copyright © Samatex Ind. 2019
-          </div>
-          <div className="d-flex gap-3 fs-5">
-            <i className="bi bi-youtube" />
-            <i className="bi bi-google" />
-            <i className="bi bi-facebook" />
-            <i className="bi bi-twitter" />
-            <i className="bi bi-skype" />
-            <i className="bi bi-envelope" />
-          </div>
+      {/* Yellow Divider */}
+      <div className="footer-divider"></div>
+
+      {/* Footer Bottom Bar */}
+      <div className="footer-bottom py-3 text-center">
+        <Container>
+          <small>© {new Date().getFullYear()} IOTAFLOW Systems Pvt. Ltd</small>
         </Container>
       </div>
-
-      {/* Scroll to top button */}
-      <button
-        className="scroll-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        aria-label="Scroll to top"
-      >
-        <i className="bi bi-chevron-up"></i>
-      </button>
     </footer>
   );
 }
