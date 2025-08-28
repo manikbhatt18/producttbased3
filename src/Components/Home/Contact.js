@@ -7,11 +7,14 @@ const Contact = () => {
     <div className="contact-page">
 
 
-      <section className="contact-banner">
-        <div className="overlay">
-         
-        </div>
-      </section>
+     <section className="contact-banner">
+  <img 
+    src={require("../../images/Contact us page.jpg")} 
+    alt="Contact Banner" 
+    className="contact-banner-img"
+  />
+</section>
+
 
 
       <Container className="contact-form-section py-5">
