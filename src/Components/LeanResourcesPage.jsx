@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 
 import img1 from "../images/Lean resource 2.jpg"; // Hero banner
 import img2 from "../images/gifgif.gif";
-import img3 from "../images/Lean resource 1.jpg";
+import img3 from "../images/Lean resource 1 png.png";
 
 // Emoticon icons
 import oilIcon from "../images/Emoticon 1.png";
@@ -73,7 +73,7 @@ function LeanResourcesPage() {
         {/* Emoticon Section */}
         <Container className="py-5">
           <h3 className="fw-bold mb-4 text-center">
-            <span style={{ paddingLeft: "10px" }}>8 Wastes In Lean Blocks</span>
+            <span style={{ paddingLeft: "10px" }}>8 Wastes In Lean </span>
           </h3>
 
           <Row className="g-3 justify-content-center row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-8">
