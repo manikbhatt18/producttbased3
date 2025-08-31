@@ -34,7 +34,6 @@ function CoreValues() {
           </h1>
 
           <p className="text-light fs-5">
-            Learn more about the ways in which our innovation is helping evolve expectations for businesses and manufacturers alike.
           </p>
 
           <div className="row mt-4">

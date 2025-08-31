@@ -172,136 +172,91 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <ul>
-  <li><strong>Product Name:</strong> IOTAFLOW MF-TER Electromagnetic Flow Meter</li>
-  <li><strong>Measurement Principle:</strong> Electromagnetic flow measurement with remote-mounted transmitter</li>
-  <li><strong>Accuracy:</strong> High-precision ±0.2% suitable for custody transfer and critical dosing applications</li>
-  <li><strong>Transmitter Rating:</strong> Flameproof Ex d IIC T6-certified for hazardous and explosive environments</li>
-  <li><strong>Mounting Configuration:</strong> Remote-mount design for safety and accessibility in high-risk zones</li>
-  <li><strong>Compliance:</strong> CGWA-compliant for groundwater abstraction monitoring</li>
-  <li><strong>Data Reporting:</strong> Real-time flow monitoring with automated reporting to CPCB, PCB, and NIC government portals</li>
-  <li><strong>Application Areas:</strong> Custody transfer, chemical dosing, oil & gas operations, and regulated environmental monitoring</li>
-</ul>
+ <p>
+    The <b>MF-TER Electromagnetic Flow Meter</b> is a trusted, economical solution designed for water, wastewater, and industrial flow measurement where long-term accuracy, reliability, and regulatory compliance are required.  
+    It offers a compact transmitter with easy integration into SCADA, telemetry, and data logging systems, making it suitable for continuous monitoring under <b>CGWA/CPCB/SPCB guidelines</b>.
+  </p>
               </div>
             </div>
           )}
 
           {activeTab === "Features" && (
-        <ul>
-  <li><strong>Product Name:</strong> IOTAFLOW MF-TER Electromagnetic Flow Meter</li>
-  <li><strong>Design:</strong> Remote transmitter configuration for hazardous and flameproof zone installations</li>
-  <li><strong>Certification:</strong> Flameproof Ex d IIC T6-rated for explosive gas environments; CE, Ex, ISO certified</li>
-  <li><strong>Accuracy:</strong> ±0.2% of reading; suitable for custody transfer and critical dosing</li>
-  <li><strong>Velocity Range:</strong> 0.3 to 10 m/s</li>
-  <li><strong>Pipe Size Range:</strong> DN15 to DN600</li>
-  <li><strong>Output Options:</strong> 4–20 mA, RS485, Modbus RTU, pulse, GSM/GPRS, HART communication</li>
-  <li><strong>Materials:</strong>
-    <ul>
-      <li><strong>Electrodes:</strong> SS316L, Hastelloy, Tantalum, Titanium</li>
-      <li><strong>Liners:</strong> PTFE, hard rubber</li>
-    </ul>
-  </li>
-  <li><strong>Operating Temperature:</strong> Up to 150°C (liner dependent)</li>
-  <li><strong>Fluid Compatibility:</strong> Suitable for high-pressure and corrosive fluids</li>
-  <li><strong>Ingress Protection:</strong> IP68-rated sensor and IP66-rated flameproof transmitter</li>
-  <li><strong>Compliance:</strong> Fully CGWA compliant; supports automated data transmission to CPCB, SPCB, and NIC portals</li>
-  <li><strong>Application Areas:</strong>
-    <ul>
-      <li>Hazardous area installations — oil & gas, petrochemicals, solvents</li>
-      <li>Custody transfer and high-value fluid metering</li>
-      <li>Chemical dosing in explosive or high-risk zones</li>
-      <li>Flammable or volatile fluid handling systems</li>
-      <li>Refineries, paint shops, and explosive gas zones</li>
-      <li>Water and effluent metering with CGWA compliance</li>
-      <li>Critical accuracy applications in industrial automation</li>
-    </ul>
-  </li>
-</ul>
+            <>
+         <ul>
+    <li>Cost-effective electromagnetic flow meter with robust performance</li>
+    <li>Sizes available from DN10 to DN1200 mm</li>
+    <li>Accuracy: ±0.5% of reading</li>
+    <li>Wide flow range with velocity from 0.3 to 10 m/s</li>
+    <li>Suitable for water, wastewater, slurry, and chemical applications</li>
+    <li>Electrode options: SS316L, Hastelloy, Titanium, Tantalum</li>
+    <li>Liner options: Rubber, PTFE, Ebonite</li>
+    <li>Outputs: 4–20 mA, RS485, Modbus RTU, Pulse</li>
+    <li>Low power consumption, battery-powered option available</li>
+    <li>Ingress protection: IP65/IP68</li>
+    <li>Complies with CGWA real-time flow reporting standards</li>
+  </ul>
+
+  <p><b>Applications</b></p>
+  <ul>
+    <li>Effluent monitoring in STP/ETP discharge lines</li>
+    <li>Industrial process water and slurry flow measurement</li>
+    <li>Municipal water supply networks</li>
+    <li>Agricultural irrigation channels and pipelines</li>
+    <li>Utility flow auditing and compliance monitoring</li>
+  </ul>
+  </>
           )}
 
           {activeTab === "Technical data" && (
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Specification</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Pipe Size Range</td>
-      <td>DN10 to DN2000 mm</td>
-    </tr>
-    <tr>
-      <td>Nominal Pressure</td>
-      <td>0.6 MPa to 4.0 MPa</td>
-    </tr>
-    <tr>
-      <td>Accuracy</td>
-      <td>±0.2% of reading (standard); ±0.3% optional</td>
-    </tr>
-    <tr>
-      <td>Velocity Range</td>
-      <td>0.3 to 10 m/s (500:1 turndown ratio)</td>
-    </tr>
-    <tr>
-      <td>Liner Materials</td>
-      <td>PTFE (Teflon), PFA, F46, Neoprene, Polyurethane</td>
-    </tr>
-    <tr>
-      <td>Electrode Material Options</td>
-      <td>SS316, Hastelloy B, Hastelloy C, Titanium, Tantalum, Platinum-Iridium, SS + Tungsten Coat</td>
-    </tr>
-    <tr>
-      <td>Electrode Type</td>
-      <td>General type, Scraper type, Replaceable type</td>
-    </tr>
-    <tr>
-      <td>Structure Type</td>
-      <td>Remote type with Ex-proof transmitter</td>
-    </tr>
-    <tr>
-      <td>Medium Conductivity</td>
-      <td>≥ 5.0 µS/cm</td>
-    </tr>
-    <tr>
-      <td>Ambient Temperature</td>
-      <td>−25°C to +60°C</td>
-    </tr>
-    <tr>
-      <td>Operating Temperature</td>
-      <td>Up to 150°C (liner-dependent)</td>
-    </tr>
-    <tr>
-      <td>Protection Class</td>
-      <td>IP68 (sensor); IP66 (transmitter – flameproof)</td>
-    </tr>
-    <tr>
-      <td>Ex-Proof Certification</td>
-      <td>Exd II BT4 (Zone 1 / Zone 2 hazardous area compliant)</td>
-    </tr>
-    <tr>
-      <td>Power Supply</td>
-      <td>230V AC, 24V DC</td>
-    </tr>
-    <tr>
-      <td>Output Signals</td>
-      <td>RS485, Modbus RTU, 4–20 mA, Pulse, GSM/GPRS, Relay, HART</td>
-    </tr>
-    <tr>
-      <td>Display Unit</td>
-      <td>Remote flameproof LCD panel with diagnostics and totalizer</td>
-    </tr>
-    <tr>
-      <td>Optional Features</td>
-      <td>Data logging, telemetry interface, CPCB/NIC reporting integration</td>
-    </tr>
-    <tr>
-      <td>Certifications</td>
-      <td>CE, ISO, Ex-proof, CGWA Compliant</td>
-    </tr>
-  </tbody>
-</table>
+ <table>
+    <tbody>
+      <tr>
+        <td><b>Parameter</b></td>
+        <td><b>Value</b></td>
+      </tr>
+      <tr>
+        <td>Pipe Size Range</td>
+        <td>DN10 to DN1200 mm</td>
+      </tr>
+      <tr>
+        <td>Nominal Pressure</td>
+        <td>0.6 MPa to 1.6 MPa</td>
+      </tr>
+      <tr>
+        <td>Accuracy</td>
+        <td>±0.5% of reading</td>
+      </tr>
+      <tr>
+        <td>Velocity Range</td>
+        <td>0.3 to 10 m/s</td>
+      </tr>
+      <tr>
+        <td>Liner Materials</td>
+        <td>PTFE, Rubber, Ebonite</td>
+      </tr>
+      <tr>
+        <td>Electrode Materials</td>
+        <td>SS316L, Hastelloy, Titanium, Tantalum</td>
+      </tr>
+      <tr>
+        <td>Output Signals</td>
+        <td>4–20 mA, Pulse, RS485, Modbus RTU</td>
+      </tr>
+      <tr>
+        <td>Ingress Protection</td>
+        <td>IP65 / IP68 (optional)</td>
+      </tr>
+      <tr>
+        <td>Power Supply</td>
+        <td>24V DC, Lithium Battery option</td>
+      </tr>
+      <tr>
+        <td>Certification</td>
+        <td>ISO, CE, CGWA compliant</td>
+      </tr>
+    </tbody>
+  </table>
+
           )}
 
           {activeTab === "Downloads" && (
