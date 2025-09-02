@@ -73,14 +73,14 @@ function ProductDetail() {
       <div className="container py-5">
         <div className="row">
           {/* LEFT: images */}
-          <div className="col-lg-6 d-flex flex-column align-items-center">
+          <div className="col-lg-6 d-flex flex-column align-items-center m">
             <div
-              className="border mb-3 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
+              className="border mb-2 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
               <div ref={imgWrapperRef} className="img-canvas img-fade-in">
-                <img src={mainImage} alt="Main Meter" className="main-image" />
+                <img src={mainImage} alt="Main Meter" className="main-image mt-2" />
               </div>
             </div>
 

@@ -92,12 +92,12 @@ function ProductDetail() {
           {/* LEFT: images */}
           <div className="col-lg-6 d-flex flex-column align-items-center">
             <div
-              className="border mb-3 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
+              className="border mb-1 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div ref={imgWrapperRef} className="img-canvas img-fade-in">
-                <img src={mainImage} alt="Main Meter" className="main-image" />
+              <div ref={imgWrapperRef} className=" d-flex img-canvas img-fade-in mt-7">
+                <img src={mainImage} alt="Main Meter" className="main-image " />
               </div>
             </div>
 

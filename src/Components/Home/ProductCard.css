@@ -1,4 +1,16 @@
-.product-card {
+ /* Remove unwanted spacing from sections */
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Specifically target the text section */
+.utilities-section {
+  margin-top: 0 !important;
+  padding-top: 20px; /* adjust as needed */
+}
+
+ .product-card {
   position: relative;
   width: 500px;
   border: none;
