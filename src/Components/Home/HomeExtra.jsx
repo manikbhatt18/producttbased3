@@ -91,26 +91,24 @@ export function StatsModern() {
               Your Flow Matters, Our Meters Make the Difference!
             </h2>
             <p className="lead mb-4">
-              Iota means minuscule or minute, which we take as inspiration to
-              design and deliver flow meters that have an iota of an error.
-              Flow word is there to keep us focused on the fact that we shall
-              design and deliver flow meters for everything that flows.
+<b>IOTA</b> means minuscule or minute, which we take as inspiration to design and deliver flow meters that have an IOTA of error. <b>FLOW</b> word is there to keep us focused on the fact that we shall design and deliver flow meters for everything that flows.
+
             </p>
             <ul className="list-unstyled modern-bullets">
               <li>
-                <i className="bi bi-check-circle-fill"></i>ZED Gold Certified for Quality
+                <i className="bi bi-check-circle-fill"></i><b>ZED Gold Certified for Quality</b>
               </li>
               <p>Recognition for excellence in manufacturing and process quality.</p>
               <li>
-                <i className="bi bi-check-circle-fill"></i>European Technology, Built in India
+                <i className="bi bi-check-circle-fill"></i><b>European Technology, Built in India</b>
               </li>
               <p>Through our technology transfer with Aflowt Germany, we deliver world-class flow solutions with local reliability.</p>
               <li>
-                <i className="bi bi-check-circle-fill"></i> 25+ Years of Engineering Expertise
+                <i className="bi bi-check-circle-fill"></i> <b>25+ Years of Engineering Expertise</b>
               </li>
               <p> Over two decades of proven experience in flow measurement and utility management.</p>
               <li>
-                <i className="bi bi-check-circle-fill"></i> Government-Approved Solutions
+                <i className="bi bi-check-circle-fill"></i> <b>Government-Approved Solutions</b>
               </li>
               <p> Trusted and approved by leading government departments and authorities.</p>
 
@@ -279,7 +277,7 @@ export function MoreAboutUs() {
           </Col>
           <Col md={4}>
             <div className="ratio ratio-16x9 video-frame">
-              <iframe src="https://www.youtube.com/embed" title="video3" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/3NVPU0yrmu0" title="video3" allowFullScreen />
             </div>
 
           </Col>
@@ -297,7 +295,7 @@ export function FAQSection() {
   const faqs = [
     {
       q: "What types of flow meters are available, and how do they differ?",
-      a: <p>"At IOTAFLOW, we don’t believe in a one-size-fits-all solution. Through partnerships with 8+ global technology leaders across Europe and Japan, we offer a complete portfolio of flow measurement technologies — so you always get the right-fit solution, not a forced one.
+      a: <p>At IOTAFLOW, we don’t believe in a one-size-fits-all solution. Through partnerships with 8+ global technology leaders across Europe and Japan, we offer a complete portfolio of flow measurement technologies — so you always get the right-fit solution, not a forced one.
         Our range includes:
         Electromagnetic (Mag) meters – Reliable for water, slurry, acids, alkalis.
 
@@ -321,12 +319,12 @@ export function FAQSection() {
 
 
         With 25+ years of engineering expertise, IOTAFLOW delivers solutions that are accurate, efficient, and application-specific — never compromised.
-        "</p>,
+        </p>,
     },
 
     {
       q: " Which flow meter should I choose for my application?",
-      a: <p> "The best flow meter depends on:
+      a: <p> The best flow meter depends on:
         The type of fluid (liquid, gas, slurry, corrosive, etc.)
 
 
@@ -343,11 +341,11 @@ export function FAQSection() {
 
 
         Our team at IOTAFLOW works with global partners to recommend the right-fit solution, ensuring accuracy and efficiency without overspending.
-        "</p>,
+        </p>,
     },
     {
       q: " What factors affect accuracy in flow measurement?",
-      a: <p>"Several factors can reduce the accuracy of a flow meter if not managed properly:
+      a: <p>Several factors can reduce the accuracy of a flow meter if not managed properly:
         Poor installation – turbulence or short pipe runs can disturb the flow profile.
 
 
@@ -365,15 +363,15 @@ export function FAQSection() {
 
         At IOTAFLOW, we not only supply the right flow meter but also guide you on proper installation, filtration, and calibration to ensure long-term accuracy and peace of mind.
         That’s why proper selection, installation, and ongoing support are critical. With our 98% customer satisfaction record, we ensure accuracy is maintained year after year.
-        "</p>,
+        </p>,
     },
     {
       q: "Why is proper meter installation and flow conditioning essential?",
-      a: <p>"Proper installation and flow conditioning are critical for accurate measurement. Factors like turbulence, short pipe runs, or incorrect alignment can create distorted flow profiles that lead to errors. Using straight pipe runs, flow conditioners, and correct mounting ensures your flow meter delivers reliable and repeatable data. At IOTAFLOW, we guide customers through best practices in installation and setup to ensure long-term accuracy."</p>,
+      a: <p>Proper installation and flow conditioning are critical for accurate measurement. Factors like turbulence, short pipe runs, or incorrect alignment can create distorted flow profiles that lead to errors. Using straight pipe runs, flow conditioners, and correct mounting ensures your flow meter delivers reliable and repeatable data. At IOTAFLOW, we guide customers through best practices in installation and setup to ensure long-term accuracy.</p>,
     },
     {
       q: " How do I integrate flow meter data into my control systems?",
-      a: <p>"Most modern flow meters provide outputs such as:
+      a: <p>Most modern flow meters provide outputs such as:
         Analog (4–20mA)
 
 
@@ -383,11 +381,11 @@ export function FAQSection() {
         Digital protocols (Modbus, Profibus, Ethernet, etc.)
 
 
-        At IOTAFLOW, we deliver solutions that integrate seamlessly with your SCADA, PLC, or IoT / LoraWan systems, enabling real-time monitoring and control."</p>,
+        At IOTAFLOW, we deliver solutions that integrate seamlessly with your SCADA, PLC, or IoT / LoraWan systems, enabling real-time monitoring and control.</p>,
     },
     {
       q: "What details should I provide when requesting a flow meter?",
-      a: <p>"When specifying a flow meter, it’s important to share complete details so that you receive the most accurate, compliant, and cost-effective solution. We typically need:
+      a: <p>When specifying a flow meter, it’s important to share complete details so that you receive the most accurate, compliant, and cost-effective solution. We typically need:
         Fluid type and properties – liquid, gas, slurry, clean, or corrosive.
 
 
@@ -409,11 +407,11 @@ export function FAQSection() {
         IoT / LoRaWAN requirements – for remote monitoring, smart utilities, and Industry 4.0 integration.
 
 
-        CGWA Compliance requirements – flow meters for groundwater extraction must meet Central Ground Water Authority (CGWA) guidelines in India, which mandate tamper-proof, telemetry-enabled devices with online data submission."</p>,
+        CGWA Compliance requirements – flow meters for groundwater extraction must meet Central Ground Water Authority (CGWA) guidelines in India, which mandate tamper-proof, telemetry-enabled devices with online data submission.</p>,
     },
     {
       q: "How can I achieve accurate measurement at very low flow rates and detect air leakages?",
-      a: <p>"Accurate measurement at very low flow rates, especially in air and gas systems, is critical for preventing hidden losses and improving efficiency. Traditional flow meters often struggle at these ranges, which is why advanced technologies are essential.
+      a: <p>Accurate measurement at very low flow rates, especially in air and gas systems, is critical for preventing hidden losses and improving efficiency. Traditional flow meters often struggle at these ranges, which is why advanced technologies are essential.
         At IOTAFLOW Systems, we specialize in solutions designed for precision and leakage detection:
         Ultrasonic Air Flow Meters – with turndown ratios up to 1:60, these meters deliver highly accurate results in compressed air and gas networks, making it possible to identify even small leaks.
 
@@ -422,21 +420,21 @@ export function FAQSection() {
 
 
         By offering Ultrasonic and Thermal mass technology, we help industries in India not only measure low flow rates with confidence but also detect air and gas leakages that drain money and efficiency.
-        Backed by our global technology partnerships, IOTAFLOW provides application-specific, reliable, and energy-saving flow measurement solutions tailored to your needs."</p>,
+        Backed by our global technology partnerships, IOTAFLOW provides application-specific, reliable, and energy-saving flow measurement solutions tailored to your needs.</p>,
     },
     {
       q: "What is the maximum fluid velocity for magnetic flow meters?",
-      a: <p>"Magnetic flow meters (magmeters) are widely used for accurate liquid measurement, but their performance depends on fluid velocity. In general, most magmeters work best below 10 m/s for clean conductive liquids and below 3 m/s for slurry or sludge applications. Exceeding these limits can affect both accuracy and meter life.
+      a: <p>Magnetic flow meters (magmeters) are widely used for accurate liquid measurement, but their performance depends on fluid velocity. In general, most magmeters work best below 10 m/s for clean conductive liquids and below 3 m/s for slurry or sludge applications. Exceeding these limits can affect both accuracy and meter life.
         At IOTAFLOW Systems, we provide advanced magmeters that deliver reliable results across a wide velocity range:
         MF-PRO Models – ensure ±0.5% accuracy for all liquids within the 3–10 m/s velocity range.
 
 
         MF-TER Models – deliver even higher precision with ±0.2% accuracy, making them ideal for industries where performance and repeatability are critical.
-        By offering specialized magnetic flow meters for different applications, we help industries in India select solutions that balance velocity, accuracy, durability, and compliance — ensuring long-term reliability in utility and process measurement."</p>,
+        By offering specialized magnetic flow meters for different applications, we help industries in India select solutions that balance velocity, accuracy, durability, and compliance — ensuring long-term reliability in utility and process measurement.</p>,
     },
     {
       q: "How can flow meters improve compressor efficiency and reduce energy losses?",
-      a: <p>"Compressed air is often called the “fourth utility” in industries — but it’s also one of the most expensive. On average, 23% of an industrial facility’s total energy is consumed by compressors, and a significant portion of this is wasted due to leaks and inefficiencies.
+      a: <p>Compressed air is often called the “fourth utility” in industries — but it’s also one of the most expensive. On average, 23% of an industrial facility’s total energy is consumed by compressors, and a significant portion of this is wasted due to leaks and inefficiencies.
         Installing the right flow measurement system helps industries take control of this hidden cost.
         With Ultrasonic Air Flow Meters (UFM) from IOTAFLOW Systems, you can:
         Detects air leakages early, even at very low flow rates.
@@ -451,11 +449,11 @@ export function FAQSection() {
         Reduce energy costs while extending compressor life.
 
 
-        Our Ultrasonic Air Flow Meters (with turndown ratios up to 1:60) are purpose-built for compressed air and gas monitoring, giving industries in India a reliable way to track consumption, identify losses, and achieve sustainable energy savings year after year."</p>,
+        Our Ultrasonic Air Flow Meters (with turndown ratios up to 1:60) are purpose-built for compressed air and gas monitoring, giving industries in India a reliable way to track consumption, identify losses, and achieve sustainable energy savings year after year.</p>,
     },
     {
       q: "Can ultrasonic flow meters measure flow in partially filled pipelines (Partial Flow)?",
-      a: <p>"Yes — but not all ultrasonic flow meters are designed for this challenge. In partially filled or large-diameter pipelines, conventional clamp-on or single-path ultrasonic meters often lose accuracy because of unstable velocity profiles and varying liquid levels.
+      a: <p>Yes — but not all ultrasonic flow meters are designed for this challenge. In partially filled or large-diameter pipelines, conventional clamp-on or single-path ultrasonic meters often lose accuracy because of unstable velocity profiles and varying liquid levels.
         The solution lies in multi-path insertion ultrasonic flow meters.
         At IOTAFLOW Systems, our customized 4-track insertion ultrasonic flow meters are specifically engineered for such applications, making them ideal for industries where flow conditions are complex and traditional meters fail. They provide:
         Reliable measurement in partially filled pipelines
@@ -467,7 +465,7 @@ export function FAQSection() {
         Long-term durability and application-specific adaptability
 
 
-        This makes ultrasonic insertion technology one of the most effective solutions for challenging industrial flow measurement requirements."</p>,
+        This makes ultrasonic insertion technology one of the most effective solutions for challenging industrial flow measurement requirements.</p>,
     },
 
   ];
