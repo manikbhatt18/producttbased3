@@ -1,42 +1,61 @@
+/* ================= Banner Image ================= */
 .banner-img {
-  width: 100% !important;       /* Take full width */
-  max-height: 600px !important; /* Limit height */
-  height: auto !important;      /* Adjust height proportionally */
-  aspect-ratio: 16 / 6; /* keeps consistent proportion */
-  object-fit: contain;
-
+  width: 100% !important;         
+  height: auto !important;        
+  max-height: 600px !important;   
+  object-fit: cover;              
   background-color: #000;
   display: block;
 }
 
+/* ================= Carousel Item ================= */
 .carousel-item {
-  height: auto !important; /* Allow height to adjust dynamically */
-  min-height: 500px;       /* Ensures consistent min height for layout */
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;         /* remove extra padding */
+  margin: 0;          /* remove extra margin */
 }
-/* Caption background for readability */
+
+/* ================= Caption Background ================= */
 .caption-bg {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 8px;
   display: inline-block;
   max-width: 650px;
-  margin-left: 0px;
-  
+  margin: auto;
+  color: #fff;
 }
 
-/* Tablet adjustments */
+/* ================= Default text sizes (Desktop-first) ================= */
+.caption-bg h1 {
+  font-size: 2.5rem;
+}
+
+.caption-bg h2 {
+  font-size: 1.8rem;
+}
+
+.caption-bg p {
+  font-size: 1.2rem;
+}
+
+/* ================= Tablet adjustments ================= */
 @media (max-width: 992px) {
   .caption-bg {
-    max-width: 80%;
+    max-width: 85%;
     padding: 15px;
   }
 
   .caption-bg h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .caption-bg h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .caption-bg p {
@@ -44,37 +63,53 @@
   }
 }
 
-/* Phone adjustments */
+/* ================= Phone adjustments ================= */
 @media (max-width: 576px) {
+  .banner-img {
+    max-height: 300px;    
+    height: auto;
+    object-fit: cover;
+  }
+
   .caption-bg {
-    max-width: 90%;
+    max-width: 95%;
     padding: 12px;
   }
 
   .caption-bg h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .caption-bg h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .caption-bg p {
     font-size: 0.9rem;
   }
 
-  .btnClass {
-    padding: 6px 15px;
-    font-size: 0.85rem;
+  /* Hide button in mobile view */
+  .btnClass,
+  button.btnClass {
+    display: none !important;
+    visibility: hidden !important;
   }
 }
 
-/* Button hover effect (unchanged) */
+/* ================= Button Styling ================= */
 .btnClass {
   position: relative;
   overflow: hidden;
   border: none;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btnClass:hover {
+  transform: scale(1.05);
 }
 
 .btnClass::before {
@@ -123,4 +158,18 @@
 
 .btnClass:hover span {
   color: black;
+}
+
+/* ================= Slider Container ================= */
+.slider-container {
+  width: 100%;
+  height: auto;   /* let height adjust dynamically */
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container img {
+  width: 100%;
+  height: auto;   
+  object-fit: cover;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import coreValuesImg from '../../images/corepic.jpg';
-import icon from "../../images/greater.png";
+import icon from "../../images/Arrow icon png.png";
 
 function CoreValues() {
   const headingRef = useRef(null);
@@ -82,7 +82,7 @@ function CoreValues() {
       .Icon {
   width: 2rem;
   height: 2rem;
-  filter: brightness(0) saturate(100%) invert(84%) sepia(55%) saturate(748%) hue-rotate(4deg) brightness(103%) contrast(102%);
+ 
 }
      
         .left-section {

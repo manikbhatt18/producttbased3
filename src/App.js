@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 import BannerSlider from "./Components/Home/BannerSlider";
-import ProductsSection from "./Components/Home/ProductsSection";
+
 import WhyChooseUs from "./Components/Home/WhyChooseUs";
 import CoreValues from "./Components/Home/CoreValues";
 
@@ -51,7 +51,7 @@ import Detail25 from "./Components/productDetails/detail25";
 
 import Product2 from "./Components/product2";
 import Contact from "./Components/Home/Contact";
-
+import ProductsSection from "./Components/Home/ProductsSection";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Footer from "./Components/Footer";
@@ -63,7 +63,7 @@ function HomePage() {
   return (
     <>
       <BannerSlider />
-      <ProductsSection />
+     <ProductsSection />
       <WhyChooseUs />
       <CoreValues />
       <OurPartners />
@@ -85,7 +85,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUsSection />} />
-          <Route path="/products" element={<Product />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />
 

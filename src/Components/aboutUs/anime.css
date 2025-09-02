@@ -1,20 +1,39 @@
 .video-container {
   position: relative;
   width: 100%;
-  height: 120vh; /* full viewport height */
+  height: 100vh; /* take full viewport height */
+  max-height: 100%; /* prevent overflow on small screens */
   overflow: hidden;
-
 }
 
 .video-player {
   position: absolute;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-   object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio while covering */
   display: block;
-  line-height: 0;
   z-index: 1;
-  
+}
+
+/* 📱 Small devices (phones) */
+@media (max-width: 768px) {
+  .video-container {
+    height: 60vh; /* shorter video section */
+  }
+}
+
+/* 💻 Tablets & medium devices */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .video-container {
+    height: 80vh;
+  }
+}
+
+/* 🖥️ Large screens (desktops) */
+@media (min-width: 1201px) {
+  .video-container {
+    height: 100vh;
+  }
 }

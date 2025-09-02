@@ -95,7 +95,7 @@ function ProductDetail() {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div ref={imgWrapperRef} className="img-canvas img-fade-in">
+              <div ref={imgWrapperRef} className=" d-flex img-canvas img-fade-in mt-7">
                 <img src={mainImage} alt="Main Meter" className="main-image" />
               </div>
             </div>

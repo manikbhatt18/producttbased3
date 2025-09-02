@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import imgWhyChoose from '../../images/whyChooseUs.png';
 import './WhyChooseUs.css';
-import icon from "../../images/greater.png";
+import icon from "../../images/Arrow icon png.png";
 
 function WhyChooseUs() {
   const headingRef = useRef(null);

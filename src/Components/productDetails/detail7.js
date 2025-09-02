@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import img1 from "../../images/p7a.jpg";
-import img2 from "../../images/p7b.png";
+import img2 from "../../images/2000x2000.jpg";
 import img3 from "../../images/p7c.png";
 import img4 from "../../images/p7d.png";
 import "../ProductDetailCustom.css";
@@ -96,7 +96,7 @@ function ProductDetail() {
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div ref={imgWrapperRef} className="img-canvas img-fade-in">
+             <div ref={imgWrapperRef} className=" d-flex img-canvas img-fade-in mt-7">
                 <img src={mainImage} alt="Main Meter" className="main-image" />
               </div>
             </div>
