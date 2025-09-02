@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "../images/p1a.png";
-import img2 from "../images/p1b.jpg";
-import img3 from "../images/p1c.png";
+
+import img2 from "../images/2000x2000.jpg";
+
 
 import related1 from "../images/p2a.png";
 import related2 from "../images/p3a.jpg";
@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "./Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3];
+  const images = [ img2];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);

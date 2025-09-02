@@ -107,7 +107,7 @@ function CustomNavbar() {
 
             {/* Products dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/products"  onClick={toggleMenu}>
+              <NavLink to="/product"  onClick={toggleMenu}>
                 Product
               </NavLink>
               <div className="dropdown-menu">
@@ -172,10 +172,11 @@ function CustomNavbar() {
                 </NavLink>
               </div>
             </div>
-
+             <Link to="/contact">
             <button className="contact-btn mobile-contact" onClick={toggleMenu}>
               <span>Contact Us &gt;</span>
             </button>
+             </Link>
           </div>
         </div>
 

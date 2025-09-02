@@ -23,7 +23,7 @@
 .nav-container {
   width: 100%;
   max-width: 1200px;
-  margin-right: 250px;
+  margin-right: 220px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,10 +105,10 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: calc(50% + 50px) !important;
+  left: calc(50% + 60px) !important;
   transform: translateX(-50%) !important;
   min-width: max-content;
-  width: 1280px;
+  width: 1270px;
   max-width: 90vw;
   max-height: 80vh;
   display: flex;
