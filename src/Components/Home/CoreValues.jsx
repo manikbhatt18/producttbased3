@@ -33,7 +33,7 @@ function CoreValues() {
             <span className="white-text">Values</span>
           </h1>
 
-          <p className="text-light fs-5">
+          <p className="text-light fs-5">At IOTAFLOW, we believe each of us plays a vital role in shaping a lasting legacy through ownership, learning, and problem-solving, we grow together and create innovations that make a lasting impact.
           </p>
 
           <div className="row mt-4">

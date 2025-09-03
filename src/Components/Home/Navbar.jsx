@@ -16,7 +16,7 @@ function CustomNavbar() {
   // ✅ Product Data
   const productData = {
     "Ultrasonic Flow Meter": [
-      { name: "Ultrimis™ Domestic Ultrasonic Water Meter", link: "/products" },
+      { name: "Ultrimis™ Domestic Ultrasonic Water Meter", link: "/product" },
       { name: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
       { name: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
       { name: " Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },

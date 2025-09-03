@@ -4,9 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./lean-resources.css";
 import ProductCard from "./ProductCard";
 
-import img1 from "../images/Lean resource 2.jpg"; // Hero banner
+import img1 from "../images/Lean resource 2 Png.png"; // Hero banner
 import img2 from "../images/gifgif.gif";
-import img3 from "../images/Lean resource 2 Png.png";
+import img3 from "../images/Lean resource 1.jpg";
 
 // Emoticon icons
 import oilIcon from "../images/Emoticon 1.png";

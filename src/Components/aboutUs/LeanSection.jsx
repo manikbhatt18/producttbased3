@@ -23,6 +23,9 @@ function LeanSection() {
           At IOTAFLOW, we proudly trace our roots back to 1999, when we began as a distributor of process instruments under the name Universal Engineers.
           In 2009, we decided to focus exclusively on flow meters and rebranded ourselves as IOTAFLOW Systems Pvt. Ltd.
         </p>
+        <p>A significant milestone in our journey came in 2019 when we entered into a technical collaboration agreement with renowned European companies like Aflowt, Emkometers, & Vzljot. These partnerships have enabled us to manufacture and distribute their high-quality products across India and neighboring regions, marking a new chapter in our story of growth and innovation.</p>
+        <p>We offer a wide range of flow meters, making us a single-source supplier for all industrial flow measurement needs. Thanks to our association with European manufacturers such as Schmidt, Ultraflux, Aquametro, Elgas, Apator, Micronics, and Aichi Tokei, we have enhanced our product offerings. Additionally, we operate our own manufacturing and testing facilities for various types of flow meters, including Woltman Turbine Water Meters, Electromagnetic Flow Meters, Ultrasonic Flow Meters, and Rotameters. Our Calibration Lab, established in accordance with National Standards, ensures the highest level of precision and reliability in our flow meter testing.</p>
+        <p>Natural Gas Flow meters, Positive Displacement Meters, Ultrasonic Clamp-On Fixed / Portable / Intrusive / Wetted Probes / Open-Channel, Thermal mass flow sensors, & Ultrasonic Air Meters for Compressed Air are some of the technologies we source from our European Partners.</p>
       </div>
     </section>
   );

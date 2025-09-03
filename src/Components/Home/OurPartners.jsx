@@ -25,7 +25,7 @@ export function OurPartners() {
         <>
           Aquametro Oil & Marine is a global leader in fuel measurement, monitoring, 
           and management systems for marine and industrial applications. As their 
-          official channel partner in India, <strong>IOTAFLOW Systems</strong> 
+          official channel partner in India, <strong>IOTAFLOW Systems </strong> 
           provides Aquametro’s advanced flow meters and fuel management solutions 
           to Indian industries and shipping companies.
         </>
@@ -37,7 +37,7 @@ export function OurPartners() {
       text: (
         <>
           Elgas S.R.O, from the Czech Republic, is a recognized manufacturer of 
-          advanced gas metering and data logging devices. <strong>IOTAFLOW Systems</strong> 
+          advanced gas metering and data logging devices. <strong>IOTAFLOW Systems </strong> 
           represents Elgas in India, offering their reliable gas metering solutions 
           to energy companies and industrial consumers.
         </>
@@ -99,7 +99,7 @@ export function OurPartners() {
         <>
           Faure Herman and ULTRAFLUX are leading names in ultrasonic and turbine flow 
           meter technologies, known for unmatched precision in fluid measurement. 
-          As their trusted channel partner in India, <strong>IOTAFLOW Systems</strong> 
+          As their trusted channel partner in India, <strong>IOTAFLOW Systems </strong>
           makes their cutting-edge flow metering solutions accessible to Indian industries.
         </>
       ),

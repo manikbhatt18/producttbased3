@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUsSection.css';
-import teamImage from '../../images/tbg1.webp';  // Your single team image
+import teamImage from '../../images/about us website img.jpg';  // Your single team image
 import KPISection from './KPISection';
 
 import AnimatedVideoSection from './AnimatedVideoSection';
