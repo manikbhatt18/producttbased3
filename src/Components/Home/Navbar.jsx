@@ -15,46 +15,52 @@ function CustomNavbar() {
 
   // ✅ Product Data
   const productData = {
-    "Ultrasonic Flow Meter": [
-      { name: "Ultrimis™ Domestic Ultrasonic Water Meter", link: "/product" },
-      { name: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-      { name: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
-      { name: " Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-      { name: " Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
-      { name: "Ultrasonic BTU meter (Heat & Energy measurement)", link: "/product-detail/detail17" },
-      { name: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
+    "Ultrasonic Flow Meters": [
+      { name: "Domestic Ultrasonic Water Meter", link: "/product" },
+      { name: "Inline Ultrasonic Flow Meter", link: "/product-detail/detail2" },
+      { name: "Intrusive Ultrasonic Flow Meter (1–4 Channels)", link: "/product-detail/detail3" },
+      { name: "Clamp-On (Fixed) Ultrasonic Flow Meter ", link: "/product-detail/detail4" },
+      { name: "Clamp-On (Portable) Ultrasonic Flow Meter", link: "/product-detail/detail5" },
+      { name: "Ultrasonic BTU & Energy Meter", link: "/product-detail/detail17" },
+      { name: "Area Velocity Doppler Flow Meter", link: "/product-detail/detail6" },
+      { name: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+      { name: "UF-Biosonic (Biogas Flow Meter)", link: "/product-detail/detail22" },
+      { name: "TRX Ultrasonic Flow Meter (Air & Nitrogen)", link: "/product-detail/detail14" },
+
+
     ],
-    "Electromagnetic Flow Meter": [
-      { name: "MF-PRO Electromagnetic Flow Meter", link: "/product-detail/detail7" },
-      { name: "MF-TER Electromagnetic Flow Meter", link: "/product-detail/detail7b" },
-      { name: " CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters", link: "/product-detail/detail8" },
+    "Electromagnetic Flow Meters": [
+      { name: "MF-PRO", link: "/product-detail/detail7" },
+      { name: "MF-TER (Ex-proof for Oil & Gas)", link: "/product-detail/detail7b" },
+      { name: " Compact / Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
     ],
-    "Water Meter": [
-      { name: "Smart Single Jet Water Meters", link: "/product-detail/detail9" },
-      { name: " Woltmann Water Meters, Turbine Type ", link: "/product-detail/detail10" },
+
+    "Water Meters": [
+      { name: "Smart Single-Jet Water Meter", link: "/product-detail/detail9" },
+      { name: "Woltmann Turbine Water Meter ", link: "/product-detail/detail10" },
     ],
-    "Positive Displacement Meter": [
-      { name: "Contoil / RPD Flow Meters", link: "/product-detail/detail11" },
+    "Positive Displacement Meters": [
+      { name: "RPD (Ring Piston) Flow Meters", link: "/product-detail/detail11" },
       { name: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
-       { name: "Micro Stream Flow Sensor OFZ Series", link: "/product-detail/detail13" },
+       { name: "Micro Stream Flow Sensor (OFZ Series)", link: "/product-detail/detail13" },
     ],
-    "Variable Area Rotameter": [
-      { name: "Metal tube Rotameters (Variable Area measurement)", link: "/product-detail/detail24" },
+    "Rotameters (Variable Area Flow Meters)": [
+      { name: "Metal tube Rotameters", link: "/product-detail/detail24" },
       { name: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
     ],
-    "Differential Pressure Flow Meter": [
-      { name: "Conical shaped Flow meter", link: "/product-detail/detail23" },
+    "Special Application Flow Meters": [
+      { name: "Conical Shape Flow Meter (Coke Oven Gas, High-Pressure/High-Temperature Gases, Wet Air, etc.)", link: "/product-detail/detail23" },
     ],
-    "GAS Meter": [
-      { name: "TRX Ultrasonic Air Flow Meter", link: "/product-detail/detail14" },
-      { name: "EQZ/EQZK Radial Turbine Gas Meters", link: "/product-detail/detail19" },
-      { name: "Ultra-NXT Ultrasonic Gas Flow Meter ", link: "/product-detail/detail20" },
+   "Thermal Mass Flow Meters": [
+      { name: "Thermal Mass Flow Meter (Air & Gases: O₂, CO₂, Argon, Natural Gas, Biogas, etc.)", link: "/product-detail/detail15" },
+    ],
+    "Gas Flow Meters (Mechanical)": [
+      { name: "EQZ/EQZK Turbine Gas Meters", link: "/product-detail/detail19" },
       { name: "GasPro RPD Gas Meter ", link: "/product-detail/detail21" },
-      { name: "UF-Biosonic (Ultrasonic Flow Measurement for Biogas)", link: "/product-detail/detail22" },
     ],
-    "Vortex Flow Meter": [
-      { name: "VFM Vortex Flow Meters", link: "/product-detail/detail16" },
-      { name: "IVF Insertion Vortex flow meter", link: "/product-detail/detail18" },
+    "Vortex Flow Meters": [
+      { name: "VFM Vortex Flow Meters (Universal: Steam, Air, Gases, Liquids)", link: "/product-detail/detail16" },
+      { name: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
     ],
   };
 
