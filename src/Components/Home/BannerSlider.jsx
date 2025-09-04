@@ -3,7 +3,7 @@ import { Carousel, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import slide1 from "../../images/banner 25.jpg";
 import slide2 from "../../images/bg2.jpg";
-import slide3 from "../../images/Flow web banner .jpg";
+import slide3 from "../../images/Flow web banner  (1600 x 833 px).jpg";
 import "./BannerSlider.css";
 
 
@@ -13,8 +13,8 @@ function BannerSlider() {
   const slides = [
     {
       img: slide2,
-      heading: "UTILITIES are most Valuable",
-      subHeading: "When they stay INVISIBLE",
+      heading: "UTILITIES are most Valuable,",
+      subHeading: "When they stay INVISIBLE.",
       text: "Un-regulated / Un-Monitored utility expenses are draining your Money.",
     },
     {
@@ -25,7 +25,7 @@ function BannerSlider() {
     },
     {
       img: slide3,
-      heading: "Your Process is Unique.",
+      heading: "Your Process is Unique,",
       subHeading: "So Are Our Solutions.",
       text: "We don’t believe in one-size-fits-all. At IOTAFLOW, every customer gets custom flow measurement solutions designed to fit their unique needs — without compromise.",
     },

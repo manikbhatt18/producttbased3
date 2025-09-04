@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 
 import img1 from "../images/Lean resource 2 Png.png"; // Hero banner
 import img2 from "../images/gifgif.gif";
-import img3 from "../images/Lean resource 1.jpg";
+import img3 from "../images/(1) lean resource.jpg";
 
 // Emoticon icons
 import oilIcon from "../images/Emoticon 1.png";

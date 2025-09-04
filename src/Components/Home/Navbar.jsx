@@ -7,7 +7,7 @@ import GaugeIcon from "../../images/clockIconn.png"; // icon
 
 function CustomNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("Ultrasonic Flow Meter");
+  const [activeCategory, setActiveCategory] = useState("Ultrasonic Flow Meters");
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
