@@ -21,24 +21,27 @@
 }
 
 .nav-container {
-  width: 100%;
-  max-width: 1200px;
-  margin-right: 220px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left + contact right */
   align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 /* Logo */
 .nav-logo img {
   height: 50px;
+  align-items: start;
 }
 
 /* Nav Items */
 .nav-menu {
+  flex: 1;                 /* take remaining space */
   display: flex;
-  gap: 30px;
+  justify-content: center; /* align items in center */
+  gap: 30px;               /* spacing between links */
 }
 
 .nav-item {
@@ -48,7 +51,7 @@
   color: black;
   padding: 10px 0;
   transition: color 0.3s ease;
-  left: 21px;
+  left: 0; /* remove the manual left offset */
 }
 .custom-navbar .nav-menu a {
   color: inherit;          /* inherit black or whatever you set in .nav-item */
@@ -567,7 +570,7 @@
     min-width: 650px;
     padding: 20px;
   }
-
+ 
   .products-grid {
     grid-template-columns: 200px 1fr;
   }
@@ -585,6 +588,15 @@
   .category-list a {
     font-size: 12px;
   }
+    .nav-container {
+  width: 100%;
+  max-width: 1200px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
 
   .product-items {
     gap: 15px 20px;
@@ -642,9 +654,9 @@
 
   .dropdown-menu {
     padding: 10px 8px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
+    margin-left: -10px; 
+     margin-right: -10px;
+  } 
 
   .product-categories {
     padding-left: 8px;
@@ -685,11 +697,11 @@
 }
 
 /* Large screen adjustments */
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .dropdown-menu {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    min-width: 850px;
+    left: 100% !important;
+    transform: translateX(-40%) !important;
+    max-width: 2000px;
     padding: 30px;
   }
 
@@ -726,6 +738,20 @@
   .product-info h5 {
     font-size: 15px;
   }
+  .nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.nav-logo img {
+  height: 50px;
+  align-items: start;
+
+}
 }
 
 @media (min-width: 993px) {
@@ -740,3 +766,131 @@
   margin-left: 6px;
   vertical-align: middle;
 }
+/* ===== Base Styles (apply to >=400px by default) ===== */
+body {
+  min-width: 400px; /* prevent collapse on extra-small screens */
+}
+
+/* Small mobile (400px – 575px) */
+@media (max-width: 575px) and (min-width: 400px) {
+  .top-bar {
+    padding: 5px 8px;
+    font-size: 11px;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-container {
+    padding: 0 12px;
+    margin-right: 0;
+  }
+
+  .nav-logo img {
+    height: 32px;
+  }
+
+  .contact-btn.desktop-contact {
+    width: 110px;
+    font-size: 13px;
+    height: 50px;
+  }
+
+  .nav-menu {
+    width: 250px;
+    padding: 60px 12px;
+  }
+
+  .dropdown-menu {
+    padding: 8px;
+    margin: 0 -8px;
+  }
+
+  .product-categories {
+    padding-left: 6px;
+  }
+
+  .product-categories h4 {
+    font-size: 12px;
+  }
+
+  .category-list a {
+    font-size: 10px;
+  }
+
+  .product-items {
+    padding-left: 6px;
+    gap: 5px;
+  }
+
+  .product-card {
+    padding: 5px;
+    min-height: 40px;
+  }
+
+  .product-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  .product-icon img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .product-info h5 {
+    font-size: 9px;
+  }
+}
+
+/* Existing Mobile Styles (576px – 992px) remain same */
+
+/* Tablet (993px – 1199px) remain same */
+
+/* Large Screens (>=1200px) remain same */
+
+/* Ultra-large screens (>=1600px) → Optional tweak */
+@media (min-width: 1600px) {
+  .nav-container {
+    max-width: 1400px;
+  }
+
+  .dropdown-menu {
+    max-width: 2200px;
+    padding: 35px;
+  }
+
+  .product-items {
+    gap: 25px 35px;
+  }
+
+  .product-card {
+    padding: 16px;
+    min-height: 70px;
+  }
+
+  .product-info h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .nav-container {
+    padding: 0 15px;     /* tighter fit */
+  }
+
+  .navbar-nav {
+    gap: 15px;           /* reduce spacing between links */
+  }
+
+  .contact-btn {
+    padding: 8px 16px;   /* shrink slightly if needed */
+    font-size: 14px;
+    max-width: 150px;
+  }
+   .dropdown-menu {
+    max-width: 1080px;
+    padding: 35px;
+     transform: translateX(-35%) !important;
+  }
+}
+

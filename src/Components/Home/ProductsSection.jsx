@@ -27,20 +27,20 @@ function ProductsSection() {
           details={
             <div>
               <p>
-               
-A water flow meter measures the flow of water in various applications, such as household usage, municipal water systems, sewage flow tracking, and industrial cooling.<br />
 
-<strong>Types of Water Flow Meters:</strong>
-<ol>
-<li><strong>Electromagnetic Flow Meters:</strong> Use electrodes to measure conductive fluids with high accuracy. They are low maintenance and don’t impede water flow.</li>
-<li><strong>Ultrasonic Flow Meters:</strong>Ultrasonic Flow Meters: These inline meters have no moving parts, providing accurate, economical monitoring for hot water and demineralized water applications.</li>
-<li><strong>Mechanical Flow Meters:</strong> Utilize a Turbine to track flow rates. They require regular maintenance due to mechanical wear.</li>
-</ol>
+                A water flow meter measures the flow of water in various applications, such as household usage, municipal water systems, sewage flow tracking, and industrial cooling.<br />
+
+                <strong>Types of Water Flow Meters:</strong>
+                <ol>
+                  <li><strong>Electromagnetic Flow Meters:</strong> Use electrodes to measure conductive fluids with high accuracy. They are low maintenance and don’t impede water flow.</li>
+                  <li><strong>Ultrasonic Flow Meters:</strong>Ultrasonic Flow Meters: These inline meters have no moving parts, providing accurate, economical monitoring for hot water and demineralized water applications.</li>
+                  <li><strong>Mechanical Flow Meters:</strong> Utilize a Turbine to track flow rates. They require regular maintenance due to mechanical wear.</li>
+                </ol>
 
               </p>
             </div>
           }
-          
+
         />
         <ProductCard
           icon={airIcon}
@@ -49,10 +49,10 @@ A water flow meter measures the flow of water in various applications, such as h
             <div>
               <p>
                 Air flow meters measure air velocity and play a crucial role in various industries, from HVAC systems to power plants. Measuring air flow can be challenging, but different types of instruments are available:<br />
-<ol>
-<li><strong> Differential Pressure Flow Meters:</strong> Include orifice, Vortex & V-cone ,they require additional pressure and temperature measurements.</li>
-<li><strong>Thermal Mass Flow Meters:</strong> Measure mass flow directly, without needing extra devices. They handle large compressed air pipes, offer high rangeability, and are easy to install. They detect low flow rates, do not create pressure drops, and are cost-efficient for mass flow measurement.</li>
-</ol>
+                <ol>
+                  <li><strong> Differential Pressure Flow Meters:</strong> Include orifice, Vortex & V-cone ,they require additional pressure and temperature measurements.</li>
+                  <li><strong>Thermal Mass Flow Meters:</strong> Measure mass flow directly, without needing extra devices. They handle large compressed air pipes, offer high rangeability, and are easy to install. They detect low flow rates, do not create pressure drops, and are cost-efficient for mass flow measurement.</li>
+                </ol>
               </p>
             </div>
           }
@@ -69,9 +69,9 @@ A water flow meter measures the flow of water in various applications, such as h
             </div>
           }
         />
-        
+
       </Row>
-            <Row>
+      <Row>
         <ProductCard
           icon={gasIcon}
           title="Gas Flow Meter"
@@ -81,11 +81,11 @@ A water flow meter measures the flow of water in various applications, such as h
                 Gas Measurement is crucial in chemical process industries for ensuring safety, process control, and efficiency. Among the types of flow meters, <br />
                 <ol>
 
-               <li><strong>Rotary Positive Displacement meters</strong> are highly accurate, measuring volumetric flow by mechanically displacing fluid components. </li>
-<li><strong>Turbine flow meters</strong> measure flow based on a spinning rotor/turbine, offering high accuracy for clean, dry Natural gases (CNG, PNG & LPG). </li>
-<li><strong>Conical shaped flow meters </strong> for measurement of Coke-Oven gas, Coal Bed Methane (CBM), High temperature and pressure gas mixtures </li>
- </ol>
- Each type requires pressure and temperature compensation.
+                  <li><strong>Rotary Positive Displacement meters</strong> are highly accurate, measuring volumetric flow by mechanically displacing fluid components. </li>
+                  <li><strong>Turbine flow meters</strong> measure flow based on a spinning rotor/turbine, offering high accuracy for clean, dry Natural gases (CNG, PNG & LPG). </li>
+                  <li><strong>Conical shaped flow meters </strong> for measurement of Coke-Oven gas, Coal Bed Methane (CBM), High temperature and pressure gas mixtures </li>
+                </ol>
+                Each type requires pressure and temperature compensation.
               </p>
             </div>
           }
@@ -97,10 +97,10 @@ A water flow meter measures the flow of water in various applications, such as h
             <div>
               <p>
                 Accurate steam flow measurement is essential for optimal performance and energy savings in industries such as power plants, chemical plants, refineries, and manufacturing units. Steam flow meters utilize various technologies, each tailored to specific conditions and accuracy requirements. <br />
-<strong>Vortex flow meters</strong>, for instance, operate on the vortex shedding principle, where a bluff body in the flow stream creates alternating vortices.<br />
-Orifice flow meter is another option for optimal measurement of steam<br />
+                <strong>Vortex flow meters</strong>, for instance, operate on the vortex shedding principle, where a bluff body in the flow stream creates alternating vortices.<br />
+                Orifice flow meter is another option for optimal measurement of steam<br />
 
-Precise steam measurement helps prevent energy wastage, reduce costs, and enhance system efficiency. Key considerations include steam state (Saturated or Superheated), pressure, temperature.
+                Precise steam measurement helps prevent energy wastage, reduce costs, and enhance system efficiency. Key considerations include steam state (Saturated or Superheated), pressure, temperature.
 
               </p>
             </div>
@@ -114,15 +114,15 @@ Precise steam measurement helps prevent energy wastage, reduce costs, and enhanc
               <p>
                 Chemical flow meters are essential for measuring both corrosive and non-corrosive fluids, widely used in petrochemical plants and refineries. They handle substances like acids, alkalis, detergents, and slurry. <br />
 
-<strong>Electromagnetic flow meters</strong>, with appropriate electrodes and liners, are ideal for corrosive chemicals such as Sulphuric acid, hydrochloric acid and caustic soda & Brine <br />
-<strong>Metal Tube Rotameter</strong>s with PTFE linings also measure aggressive fluids effectively.<br />
-For high-viscosity fluids like Molasses, resin and Glue<strong> Oval gear flow meters</strong> are preferred due to their dual oval gears that ensure accurate measurement.
+                <strong>Electromagnetic flow meters</strong>, with appropriate electrodes and liners, are ideal for corrosive chemicals such as Sulphuric acid, hydrochloric acid and caustic soda & Brine <br />
+                <strong>Metal Tube Rotameter</strong>s with PTFE linings also measure aggressive fluids effectively.<br />
+                For high-viscosity fluids like Molasses, resin and Glue<strong> Oval gear flow meters</strong> are preferred due to their dual oval gears that ensure accurate measurement.
               </p>
             </div>
           }
         />
       </Row>
-      
+
     </Container>
   );
 }
