@@ -8,13 +8,11 @@ function ProductCard({ icon, title, details }) {
       <div className="product-card text-center">
         <div className="iconn-box py-4">
           <img src={icon} alt={title} className="img-fluid" />
-         <div className="title-box py-2">{title}</div>
+          <div className="title-box py-2">{title}</div>
         </div>
-        
-        <div className="details-box text-start">
 
-           
-          <p className="m-0">{details}</p>
+        <div className="details-box text-start">
+          {details}   {/* ✅ No <p> wrapper, safe for nested tags */}
         </div>
       </div>
     </Col>
