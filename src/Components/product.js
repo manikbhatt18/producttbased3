@@ -336,7 +336,7 @@ function ProductDetail() {
                   {activeTab === "Features" && (
                     <div className="row">
                       {/* Left Column */}
-                      <div className="col-md-6">
+                      <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
                           <li>Ultrasonic W-Sonic™ technology for stable, high-accuracy metering up to R800</li>
                           <li>No moving parts– maintenance-free and wear-resistant</li>
@@ -551,6 +551,11 @@ function ProductDetail() {
 
         .feature-list-spaced li {
           margin-bottom: 1rem; /* Adjust this value to increase or decrease spacing */
+        }
+
+        .column-separator {
+          border-right: 2.5px solid #ffcc00; /* Yellow theme color */
+          padding-right: 1rem; /* Adds some space between the text and the line */
         }
 
         .tech-specs-table {
