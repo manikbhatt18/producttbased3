@@ -190,7 +190,7 @@ function CustomNavbar() {
         <div>
           <Link to="/contact">
             <button className="contact-btn desktop-contact">
-              <span>
+              <span className="tw-flex tw-items-center tw-gap-2">
                 Contact Us <img src={icon} alt="icon" className="icon-btn" />
               </span>
             </button>

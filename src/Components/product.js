@@ -224,7 +224,7 @@ function ProductDetail() {
                 </span>
                 IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.
               </li>
-              <li> 
+              <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
                 <span>
                   <img
                     src={NFCsymbol}

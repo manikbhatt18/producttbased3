@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .nav-link {
   color: black;
   border-bottom: 3px solid transparent;

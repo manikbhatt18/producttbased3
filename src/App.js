@@ -1,4 +1,11 @@
 import React from "react";
+import './index.css';
+import "./App.css";
+
+
+
+
+
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -14,6 +21,7 @@ import Product from "./Components/product";
 import ServicesPage from "./Components/ServicesPage";
 import LeanResourcesPage from "./Components/LeanResourcesPage";
 import AboutUsSection from "./Components/aboutUs/AboutUsSection";
+import SeoPage from "./pages/SeoPage";
 import {
 
   StatsModern,
@@ -53,7 +61,7 @@ import Product2 from "./Components/product2";
 import Contact from "./Components/Home/Contact";
 import ProductsSection from "./Components/Home/ProductsSection";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+
 import Footer from "./Components/Footer";
 import OurPartners from "./Components/Home/OurPartners";
 import HeroSection from "./Components/Home/HeroSection";
@@ -88,6 +96,7 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />
+          <Route path="/seo" element={<SeoPage />} />
 
 
           {/* Product Detail Routes */}
