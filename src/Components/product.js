@@ -7,9 +7,10 @@ import { FaRegFilePdf } from "react-icons/fa6";
 
 
 
-import img1 from "../images/p1a.png";
-import img2 from "../images/p1b.jpg";
-import img3 from "../images/p1c.png";
+import img1 from "../images/d1a.png";
+import img2 from "../images/d1b.png";
+import img3 from "../images/d1c.png";
+import img4 from "../images/d1d.png";
 
 import related1 from "../images/p2a.png";
 import related2 from "../images/p3a.jpg";
@@ -35,6 +36,8 @@ import Ethernet from "../images/Ethernet.png";
 import GOST from "../images/GOST-R Certified symbol.png";
 import HART from "../images/HART Enabled symbol.png";
 import MID from "../images/MID Certified.png";
+import Wsonic from "../images/W Sonic technology.png";
+
 
 
 
@@ -44,7 +47,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "./Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3];
+  const images = [img1, img2, img3,img4];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -259,15 +262,15 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
                 </span>                 
                 <span>
                   <img
-                    src={Exproofimg}
-                    alt="Exproofimg"
+                    src={ce}
+                    alt="ce"
                     className="Icon" // Your original class name
                   /> 
                 </span> 
                 <span>
                   <img
-                    src={IBRimg}
-                    alt="IBRimg"
+                    src={Wsonic}
+                    alt="Wsonic"
                     className="Icon" // Your original class name
                   /> 
                 </span> 
@@ -308,7 +311,10 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
             <div className="row">
               <div className="col-md-6">
                 
-<p>The Ultrimis™ from Apator Powogaz is a compact, high-precision ultrasonic water meter designed specifically for domestic and commercial water metering applications. It features patented W-Sonic Technology that ensures reliable, maintenance-free operation with no moving parts, and long-term metering accuracy even at very low flow rates. Built for performance in Indian conditions, Ultrimis meters offer IP68 protection, extended battery life of up to 16 years, and seamless compatibility with NFC, Wireless M-Bus, and LoRaWAN communication protocols. The meter supports all mounting positions without requiring straight pipe sections, making it ideal for space-constrained or retrofit installations. Now available in India through IOTAFLOW Systems Pvt. Ltd., an authorized channel partner of Apator Powogaz.</p>
+<p><b>Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</b></p>
+<p>The <b>Ultrimis™</b> from <b>Apator Powogaz</b> is a compact, high-precision <b>ultrasonic water meter</b> designed specifically for <b>domestic and commercial water metering</b> applications. It features <b>patented W-Sonic Technology</b> that ensures reliable, maintenance-free operation with <b>no moving parts </b>, and long-term metering accuracy even at very low flow rates.</p>
+<p> Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended <b>battery life of up to 16 years </b>, and seamless compatibility with<b> NFC, Wireless M-Bus, and LoRaWAN</b> communication protocols. The meter supports all mounting positions without requiring straight pipe sections, making it ideal for space-constrained or retrofit installations. </p>
+<p>Now available in India through <b>IOTAFLOW Systems Pvt. Ltd.</b>, an authorized channel partner of Apator Powogaz.</p>
 
           {/* Decorative Separator Line Added Here */}
          <div style={{
@@ -339,7 +345,7 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
+      
 <li>Ultrasonic W-Sonic™ technology for stable, high-accuracy metering up to R800.</li>
 <li>No moving parts - maintenance-free and wear-resistant.</li>
 <li>Flexible installation - horizontal, vertical, or angled positions without straight pipe runs.</li>
@@ -350,7 +356,11 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
 <li>Tamper-proof design with logging for backflow, zero flow, battery status, and unauthorized access.</li>
 <li>Communication-ready: NFC (mobile diagnostics), Wireless M-Bus (OMS), and LoRaWAN.</li>
 <li>Compact and lightweight body suitable for small residential installations.</li>
-<li>Environmentally friendly - low lithium content and energy-efficient.</li>
+<li>Environmentally friendly – low lithium content and energy-efficient.</li>
+
+
+
+
 </ul>
 
 

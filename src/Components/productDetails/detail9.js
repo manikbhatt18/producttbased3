@@ -1,38 +1,135 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
-import img1 from "../../images/sja.png";
-import img2 from "../../images/sjb.png";
-import img3 from "../../images/sjc.png";
-import img4 from "../../images/sjd.png";
-import img5 from "../../images/sje.png";
-import img6 from "../../images/sjf.png";
 import "../ProductDetailCustom.css";
 
+// for pdf icon
+import { FaRegFilePdf } from "react-icons/fa6";
 
 
 
-import related1 from "../../images/p6a.png";
-import related2 from "../../images/p7a.jpg";
-import related3 from "../../images/p8a.png";
-import related4 from "../../images/p10a.png";
+import img1 from "../../images/d9a.png";
+import img2 from "../../images/d9b.png";
+import img3 from "../../images/d9c.png";
+import img4 from "../../images/d9d.png";
+
+import related1 from "../../images/p2a.png";
+import related2 from "../../images/p3a.jpg";
+import related3 from "../../images/p4a.jpg";
+import related4 from "../../images/p5a.png";
+
+
+
+//icons to be added
+import arrowIcon from "../../images/Arrow icon png.png";
+import NFCsymbol from "../../images/NFC.png";
+import Exproofimg from "../../images/Ex proof.png";
+import IBRimg from "../../images/IBR.png";
+import LoraWANimg from "../../images/Lora wan.png";
+import mbusimg from "../../images/m bus.png";
+import AMR from "../../images/AMR Ready.png";
+import battery from "../../images/Battery operated symbol.png";
+import datalogger from "../../images/built-in data logger..png";
+import ce from "../../images/CE.png";
+import CGWA from "../../images/CGWA Compliant symbol.png";
+import EAC from "../../images/EAC TR TS Compliance.png";
+import Ethernet from "../../images/Ethernet.png";
+import GOST from "../../images/GOST-R Certified symbol.png";
+import HART from "../../images/HART Enabled symbol.png";
+import MID from "../../images/MID Certified.png";
+import Wsonic from "../../images/W Sonic technology.png";
+import iot from "../../images/IOT Ready.png";
+import rohs from "../../images/Rohs compliant.png";
+import profi from "../../images/profibus communication symbol.png";
+import self from "../../images/Self diagnosis symbol.png";
+import wras from "../../images/WRAS.png";
+
+
+
+
+
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Breadcrumbs from "../Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3, img4, img5, img6];
-
-  const ROTATE_MS = 2000; // change to 1500–3000 if you like
+  const images = [img1, img2, img3,img4];
+  const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mainImage, setMainImage] = useState(images[0]);
   const [isPaused, setIsPaused] = useState(false);
   const [activeTab, setActiveTab] = useState("Description");
+  const [downloadFiles, setDownloadFiles] = useState({
+    catalogue: [
+      {
+        title: 'Micronics-PF333-222-Brochure- catalogue',
+        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        size: 'Loading...' // Initial state for size
+      }
+    ],
+    manual: [
+      {
+        title: 'PF222_333_User_Manual- manual',
+        path: '/documents/PF222_333_User_Manual.pdf',
+        size: 'Loading...'
+      }
+      
+    ]
+  });
+
+  // Helper function to format bytes into KB/MB/GB
+  const formatBytes = (bytes, decimals = 2) => {
+    if (!+bytes) return '0 Bytes';
+    const k = 1024;
+    const dm = decimals < 0 ? 0 : decimals;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
+  };
+
+  useEffect(() => {
+    const fetchAllFileSizes = async () => {
+      // Create a new state object to avoid direct mutation
+      const newDownloadFiles = JSON.parse(JSON.stringify(downloadFiles));
+      
+      // A function to fetch and update the size for a single file
+      const fetchSize = async (file) => {
+        try {
+          const response = await fetch(file.path);
+          if (response.ok) {
+            const size = response.headers.get('content-length');
+            file.size = size ? formatBytes(size) : 'N/A';
+          } else {
+            file.size = 'N/A';
+          }
+        } catch (error) {
+          console.error(`Failed to fetch size for ${file.path}:`, error);
+          file.size = 'N/A';
+        }
+      };
+
+      // Create an array of all fetch promises
+      const promises = [
+        ...newDownloadFiles.catalogue.map(fetchSize),
+        ...newDownloadFiles.manual.map(fetchSize)
+      ];
+
+      // Wait for all fetches to complete
+      await Promise.all(promises);
+
+      // Update the state once with all the new sizes
+      setDownloadFiles(newDownloadFiles);
+    };
+
+    fetchAllFileSizes();
+  }, []); // Empty dependency array to run only once
+
 
   const tabContentRef = useRef(null);
   const imgWrapperRef = useRef(null);
 
-  // Tab fade-in animation
   useEffect(() => {
     if (tabContentRef.current) {
       tabContentRef.current.classList.remove("fade-in");
@@ -41,7 +138,6 @@ function ProductDetail() {
     }
   }, [activeTab]);
 
-  // Image crossfade trigger
   useEffect(() => {
     if (imgWrapperRef.current) {
       imgWrapperRef.current.classList.remove("img-fade-in");
@@ -50,7 +146,6 @@ function ProductDetail() {
     }
   }, [mainImage]);
 
-  // Auto-rotate images
   useEffect(() => {
     if (isPaused) return;
     const id = setInterval(() => {
@@ -69,51 +164,42 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Area Velocity (Doppler Effect) AV5500 Series *Ideal for Open Channels & Partially Filled Pipes", link: "/product-detail/detail6" },
-    {
-      img: related2,
-      title: " MF-PRO Electromagnetic Flow Meter",
-      link: "/product-detail/detail7",
-    },
-    {
-      img: related3,
-      title: "  CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters",
-      link: "/product-detail/detail8",
-    },
-    {
-      img: related4,
-      title: "Woltmann Water Meters, Aqua-Re Series",
-      link: "/product-detail/detail10",
-    },
+    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
+    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
+    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];
 
   return (
     <div className="text-dark">
+      {/* <Breadcrumbs/> */}
       <div className="container py-5">
         <div className="row">
           {/* LEFT: images */}
-          <div className="col-lg-6 d-flex flex-column align-items-center">
+          <div className="col-lg-6 d-flex flex-column align-items-center m">
             <div
-              className="border mb-3 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
+              className="border mb-2 p-2 rounded shadow-sm position-relative overflow-hidden main-image-wrapper"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
-              <div ref={imgWrapperRef} className=" d-flex img-canvas img-fade-in mt-7">
-                <img src={mainImage} alt="Main Meter" className="main-image" />
+              <div ref={imgWrapperRef} className="img-canvas img-fade-in">
+                <img src={mainImage} alt="Main Meter" className="main-image mt-2" />
               </div>
             </div>
 
-            <div className="d-flex gap-3 mt-3">
+            <div className="d-flex gap-2 gap-md-3 flex-wrap justify-content-center mt-3">
               {images.map((img, i) => (
-                <div key={i} className="d-flex flex-column align-items-center">
+                <div key={i} className="d-flex flex-column align-items-center mb-2">
                   <img
                     src={img}
                     alt={`thumb-${i}`}
                     onClick={() => handleThumbClick(img, i)}
                     className="img-thumbnail"
                     style={{
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
+                      maxWidth: "60px",
+                      maxHeight: "60px",
                       cursor: "pointer",
                       objectFit: "cover",
                       border: mainImage === img ? "2px solid #000" : "1px solid #ddd",
@@ -135,39 +221,84 @@ function ProductDetail() {
           </div>
 
           {/* RIGHT: copy */}
-        <div className="col-lg-6 product-detail-right">
-            <p className="text-muted">Water Meters</p>
-            <h3 className="fw-semibold">Smart Single Jet Water Meters</h3>
+         <div className="col-lg-6 product-detail-right">
+            <p className="text-muted">Ultrasonic Flow Meter</p>
+            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            
+            {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
-              <li className="mb-2">&#9679;Apator Powogaz Smart D+ Single-Jet Water Meter | AMR-Ready</li>
-              <li className="mb-2">&#9679;High-accuracy single-jet water meter DN15/DN20 for residential, commercial & municipal projects in India.</li>
-              <li className="mb-2">&#9679;AMR-ready, durable brass body, low start flow.</li>
+              <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+                <span> 
+                  <img 
+                    src={arrowIcon} 
+                    alt="arrow icon" 
+                    className="Icon" // Your original class name
+                  /> 
+                </span>
+Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% accuracy, CE certified.</li>
+              <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+                <span> 
+                  <img 
+                    src={arrowIcon} 
+                    alt="arrow icon" 
+                    className="Icon" // Your original class name
+                  /> 
+                </span>
+Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
+
+              <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
+                <span>
+                  <img
+                    src={AMR}
+                    alt="AMR"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                 <span>
+                  <img
+                    src={MID}
+                    alt="MID"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={wras}
+                    alt="wras"
+                    className="Icon" // Your original class name
+                  /> 
+                </span>  
+                                 
 
 
+
+              </li>
             </ul>
+            
             <button className="my-2 btn-enquiry">
               <span>Enquiry Now</span>
             </button>
           </div>
         </div>
-        {/* Sticky tabs */}
+        	{/* Sticky tabs */}
         <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
-          <ul className="nav nav-tabs border-0 justify-content-center">
-            {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
-              <li className="nav-item" key={tab}>
-                <button
-                  className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+        <ul className="nav nav-tabs border-0 justify-content-center flex-wrap">
+          {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
+            <li className="nav-item" key={tab}>
+              <button
+                className={`nav-link ${activeTab === tab ? "active-tab" : ""}`}
+                onClick={() => setActiveTab(tab)}
+              >
+                {tab}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
       </div>
 
+    
+      
 
       {/* Tab content */}
       <div className="container">
@@ -175,117 +306,128 @@ function ProductDetail() {
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-                <section>
-                  <p>
-                    The <strong>Apator Powogaz Smart D+</strong> Single-Jet Water Meter delivers precise metering for cold and hot water in residential, commercial, and industrial applications. Built with advanced <strong>vane-wheel technology</strong>, a <strong>hermetically sealed counter</strong>, and robust <strong>tamper protection</strong>, it ensures long-term reliability in challenging environments.
-                  </p>
-                  <p>
-                    With <strong>MID compliance</strong>, <strong>R200 measurement range</strong>, and compatibility with wired or wireless <strong>AMR communication modules</strong>, the Smart D+ is ideal for modern water management. Designed for <strong>horizontal and vertical installations</strong> without straight pipe run requirements (<strong>U0D0</strong>), it offers <strong>low starting flow</strong>, <strong>high accuracy</strong>, and <strong>resistance to external magnetic fields</strong>.
-                  </p>
-                </section>
-              </div>
-            </div>
-          )}
+        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
+        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
+<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
+<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
+<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
+<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
 
-          {activeTab === "Features" && (
-            <ul>
-              <li><strong>High-accuracy metering:</strong> R200 horizontal / R80 vertical measurement range</li>
-              <li><strong>MID-compliant and EN-ISO 4064 certified:</strong> For potable water applications</li>
-              <li><strong>Hermetically sealed counter:</strong> Fog-resistant, clear dual-colour numeric display</li>
-              <li><strong>Tamper protection:</strong> Snap ring cover, deformation pin for unauthorized interference detection</li>
-              <li><strong>Low starting flow:</strong> Accurate measurement of small consumption volumes</li>
-              <li><strong>No straight pipe runs required:</strong> U0D0 installation flexibility</li>
-              <li><strong>Dual reading technologies:</strong> Optical and inductive for AMR integration</li>
-              <li><strong>Communication compatibility:</strong> Wireless M-Bus, M-Bus, pulse output for remote data collection</li>
-              <li><strong>Durable construction:</strong> Brass body and high-quality internal components for extended service life</li>
-              <li><strong>Electronic diagnostics:</strong> Operational monitoring and fault detection</li>
-              <li><strong>Target Applications:</strong>
-                <ul>
-                  <li>Residential – single-family and multi-family housing water supply</li>
-                  <li>Commercial – hotels, office complexes, retail facilities</li>
-                  <li>Industrial – factories, processing plants requiring accurate water tracking</li>
-                  <li>Municipal – cold and hot water distribution systems</li>
-                  <li>Smart metering projects – integrated with AMR/AMI systems for automated billing</li>
-                </ul>
-              </li>
-            </ul>
-          )}
+
+
+          {/* Decorative Separator Line Added Here */}
+         <div style={{
+          height: '4px',
+          width: '700px',
+          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+          margin: '2rem 0'
+        }} />
+          <p><b>Applications </b></p>
+         <ul>
+<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
+<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
+<li><b>Pump verification and energy efficiency monitoring.</b></li>
+<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
+<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
+<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
+<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
+</ul>
+
+
+                      </div>
+                    </div>
+                  )}
+
+                  {activeTab === "Features" && (
+                    <div className="row">
+                      {/* Left Column */}
+                      <div className="col-md-6 column-separator">
+                        <ul className="list-unstyled feature-list-spaced">
+                      
+
+
+<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
+<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
+<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
+<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
+<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+</ul>
+
+
+
+
+                      </div>
+                      {/* Right Column */}
+                      <div className="col-md-6">
+                        <ul className="list-unstyled feature-list-spaced">
+<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
+<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
+<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
+<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
+<li><b>Certified for International Standards:</b>
+<ul>
+<li>CE Certified</li>
+<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
+<li>ISO 9001 Manufacturing Standards</li>
+</ul>
+</li>
+</ul>
+                      </div>
+                    </div>
+                  )}
 
           {activeTab === "Technical data" && (
-            <table>
-              <thead>
-                <tr>
-                  <th>Parameter</th>
-                  <th>Value</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Nominal Diameter (DN)</td>
-                  <td>15 mm / 20 mm</td>
-                </tr>
-                <tr>
-                  <td>Measurement Range</td>
-                  <td>R200 (H), R80 (V)</td>
-                </tr>
-                <tr>
-                  <td>Permanent Flow Rate (Q3)</td>
-                  <td>1.6 / 2.5 / 4 m³/h</td>
-                </tr>
-                <tr>
-                  <td>Maximum Flow Rate (Q4)</td>
-                  <td>2 / 3.125 / 5 m³/h</td>
-                </tr>
-                <tr>
-                  <td>Minimum Flow Rate (Q1)</td>
-                  <td>0.01 – 0.025 m³/h</td>
-                </tr>
-                <tr>
-                  <td>Starting Flow</td>
-                  <td>5 – 12 dm³/h</td>
-                </tr>
-                <tr>
-                  <td>Temperature Class</td>
-                  <td>Cold water up to 50°C, hot water up to 90°C</td>
-                </tr>
-                <tr>
-                  <td>Pressure Rating</td>
-                  <td>PN16 (16 bar)</td>
-                </tr>
-                <tr>
-                  <td>Installation Positions</td>
-                  <td>Horizontal (H), Vertical (V)</td>
-                </tr>
-                <tr>
-                  <td>Accuracy</td>
-                  <td>±2% (0.1–30°C), ±3% (&gt;30°C)</td>
-                </tr>
-                <tr>
-                  <td>Ingress Protection</td>
-                  <td>IP65</td>
-                </tr>
-                <tr>
-                  <td>Communication Options</td>
-                  <td>Optical, inductive, M-Bus, wireless M-Bus, pulse output</td>
-                </tr>
-                <tr>
-                  <td>Body Material</td>
-                  <td>Brass</td>
-                </tr>
-                <tr>
-                  <td>Standards Compliance</td>
-                  <td>EN-ISO 4064, OIML R49, MID Directive 2014/32/EU</td>
-                </tr>
-              </tbody>
-            </table>
-          )}
+            <table className="tech-specs-table">
+<tr><th>Parameter</th><th>Value</th></tr>
+<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
+<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
+<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
+<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
+<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
+<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
+<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
+<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
+<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
+<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
+<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
+<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
+<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+</table>
+
+
+          )}      
 
           {activeTab === "Downloads" && (
-            <p>
-              Visit our documentation page to download the full technical
-              specifications and data sheets.
-            </p>
-          )}
+            <div className="row">
+              {/* Catalogue Column */}
+              <div className="col-md-6">
+                <h4 className="download-heading">Catalogue</h4>
+                {downloadFiles.catalogue.map((file, index) => (
+                  <a key={`catalogue-${index}`} href={file.path} download className="download-item">
+                    <FaRegFilePdf className="pdf-icon-fa" />
+                    <div className="download-info">
+                      <span className="download-title">{file.title}</span>
+                      <span className="download-size">(PDF) {file.size}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+
+              {/* Manual Column */}
+              <div className="col-md-6">
+                <h4 className="download-heading">Manual</h4>
+                {downloadFiles.manual.map((file, index) => (
+                  <a key={`manual-${index}`} href={file.path} download className="download-item">
+                    <FaRegFilePdf className="pdf-icon-fa" />
+                    <div className="download-info">
+                      <span className="download-title">{file.title}</span>
+                      <span className="download-size">(PDF) {file.size}</span>
+                    </div>
+                  </a>
+                ))}
+    </div>
+  </div>
+)}
         </div>
       </div>
 
@@ -295,17 +437,17 @@ function ProductDetail() {
           <h5 className="fw-semibold text-center mb-4">YOU MAY ALSO BE INTERESTED IN</h5>
           <div className="row justify-content-center">
             {relatedProducts.map((product, idx) => (
-              <div className="col-6 col-md-3 mb-4 text-center" key={idx}>
+              <div className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 text-center" key={idx}>
                 <Link to={product.link} className="text-decoration-none text-dark">
                   <div
                     className="p-3 shadow-sm d-flex align-items-center justify-content-center mx-auto hover-scale"
                     style={{
                       backgroundColor: "#fff",
-                      width: "180px",
-                      height: "180px",
+                      width: "100%",
+                      maxWidth: "180px",
+                      aspectRatio: "1/1",
                       border: "1px solid #ddd",
                       borderRadius: "4px",
-                      transition: "transform 0.3s",
                     }}
                   >
                     <img
@@ -318,9 +460,7 @@ function ProductDetail() {
                       }}
                     />
                   </div>
-                  <p className="fw-semibold mt-2" style={{ fontSize: "14px" }}>
-                    {product.title}
-                  </p>
+                  <p className="fw-semibold mt-2" style={{ fontSize: "14px" }}>{product.title}</p>
                 </Link>
               </div>
             ))}
@@ -329,51 +469,38 @@ function ProductDetail() {
       </div>
 
       {/* Styles */}
-      <style jsx>{`
+      <style >{`
         .fade-in {
           animation: fadeIn 0.2s ease-in-out;
         }
 
         @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ----- FIXED preview box + crossfade ----- */
         .main-image-wrapper {
           width: 100%;
           max-width: 400px;
-          height: 400px; /* fixed height so it doesn't jump */
+          height: 400px;
           display: flex;
           align-items: center;
           justify-content: center;
           background: #fff;
         }
+
+
+
         .main-image {
-          max-width: 100%;
-          max-height: 100%;
-          object-fit: contain;
-          display: block;
-        }
-        .img-canvas {
           width: 100%;
           height: 100%;
-        }
-        .img-fade-in {
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-        .img-fade-in {
-          opacity: 1;
+          object-fit: contain;
         }
 
-        /* Tabs */
+        .img-canvas { width: 100%; height: 100%; }
+        .img-fade-in { opacity: 0; transition: opacity 0.4s ease; }
+        .img-fade-in { opacity: 1; }
+
         .nav-tabs .nav-link {
           color: black;
           border: none;
@@ -382,36 +509,23 @@ function ProductDetail() {
           background-color: white;
         }
 
-        .nav-tabs .nav-link:hover {
-          background-color: #ffcc00;
-          color: black;
-        }
+        .nav-tabs .nav-link:hover { background-color: #ffcc00; color: black; }
+        .nav-tabs .nav-link.active-tab { border-bottom: 3px solid #ffcc00; color: black; background-color: white; }
 
-        .nav-tabs .nav-link.active-tab {
-          border-bottom: 3px solid #ffcc00;
-          color: black;
-          background-color: white;
-        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
 
-        /* Hover Scale for Cards/Images */
-        .hover-scale {
-          transition: transform 0.3s ease;
-        }
-
-        .hover-scale:hover {
-          transform: scale(1.05);
-        }
-
-        /* Enquiry Button Style */
         .btn-enquiry {
           position: relative;
           overflow: hidden;
-          background-color:#ffcc00;
-          border: none;
+          background-color:  #ffcc00;
+          
           padding: 8px 20px;
+            color:black;
           cursor: pointer;
-          color:black;
         }
+
+      
 
         .btn-enquiry::before {
           content: "";
@@ -421,44 +535,126 @@ function ProductDetail() {
           width: 100%;
           height: 100%;
           background-color: black;
+          
           transform: translateX(-100%);
           z-index: 1;
         }
 
-        .btn-enquiry:hover::before {
-          animation: slideInLeft 0.4s ease forwards;
+        .btn-enquiry:hover::before { animation: slideInLeft 0.4s ease forwards; }
+        .btn-enquiry:not(:hover)::before { animation: slideOutRight 0.4s ease forwards; }
+
+        @keyframes slideInLeft { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+        @keyframes slideOutRight { from { transform: translateX(0); } to { transform: translateX(100%); } }
+
+        .btn-enquiry span { position: relative; z-index: 2; transition: color 0.4s ease; }
+        .btn-enquiry:hover span { color: white; }
+        
+        /* CSS for the image (Icon class) */
+        .list-item-with-icon { /* Helper class to manage flex display for the list item */
+          display: flex;
+          align-items: center; /* Vertically aligns icon and text */
         }
 
-        .btn-enquiry:not(:hover)::before {
-          animation: slideOutRight 0.4s ease forwards;
+        /* Specific styles for your .Icon class */
+        .Icon {
+          width: 2rem !important;
+          height: 2rem !important;
+          margin-right: 0.75rem; /* Adds space between the icon and the text */
+          /*
+            IMPORTANT: The 'color' property below will only work if arrowIcon
+            is an SVG that uses 'fill="currentColor"' or 'stroke="currentColor"'.
+            For PNG/JPG, you need to use CSS 'filter' or edit the image directly.
+          */
+          color: #ffcc00; 
         }
 
-        @keyframes slideInLeft {
-          from {
-            transform: translateX(-100%);
-          }
-          to {
-            transform: translateX(0);
-          }
+        .feature-list-spaced li {
+          margin-bottom: 1rem; /* Adjust this value to increase or decrease spacing */
         }
 
-        @keyframes slideOutRight {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(100%);
-          }
+        .column-separator {
+          border-right: 2.5px solid #ffcc00; /* Yellow theme color */
+          padding-right: 1rem; /* Adds some space between the text and the line */
         }
 
-        .btn-enquiry span {
-          position: relative;
-          z-index: 2;
-          transition: color 0.4s ease;
+        .tech-specs-table {
+          width: 100%;
+          border-collapse: collapse; /* Removes double borders */
+          margin-top: 1rem;
         }
 
-        .btn-enquiry:hover span {
-          color: white;
+        .tech-specs-table td {
+          padding: 1rem 0.75rem; /* Adds vertical and horizontal spacing inside cells */
+          border-bottom: 1px solid #eee; /* Light gray line between rows */
+        }
+
+        /* Style for the left column (the bolded titles) */
+        .tech-specs-table td:first-child {
+          border-right: 2px solid #ffcc00; /* Yellow vertical line */
+          padding-right: 1rem; /* Extra space next to the yellow line */
+          width: 35%; /* Gives the first column a consistent width */
+        }
+
+        .download-heading {
+          font-size: 1.5rem;
+          font-weight: 600;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 0.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .download-item {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: inherit;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          border-radius: 4px;
+          transition: background-color 0.2s ease-in-out;
+        }
+
+        .download-item:hover {
+          background-color: #f8f9fa; /* A light background color on hover */
+        }
+
+        .pdf-icon {
+          background-color: #ffcc00; /* Yellow theme color */
+          color: #fff;
+          font-weight: bold;
+          font-size: 0.8rem;
+          padding: 0.8rem 0.6rem;
+          border-radius: 4px;
+          margin-right: 1rem;
+          text-align: center;
+        }
+
+        .download-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .download-title {
+          font-weight: 600;
+        }
+
+        .download-size {
+          font-size: 0.9rem;
+          color: #6c757d; /* Muted text color */
+        }
+
+        .pdf-icon-fa {
+          color: #ffcc00; /* Yellow theme color */
+          font-size: 2.5rem; /* Adjust size as needed */
+          margin-right: 1rem;
+        }
+
+        @media (max-width: 991px) {
+          .main-image-wrapper { height: auto; max-width: 100%; }
+          .nav-tabs .nav-link { font-size: 14px; padding: 0.5rem 0.75rem; }
+        }
+        @media (max-width: 767px) {
+          .nav-tabs { flex-wrap: wrap; }
         }
       `}</style>
     </div>

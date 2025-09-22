@@ -1,37 +1,55 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./ProductDetailCustom.css";
+import "../ProductDetailCustom.css";
 
 // for pdf icon
 import { FaRegFilePdf } from "react-icons/fa6";
 
 
 
-import img1 from "../images/p1a.png";
-import img2 from "../images/p1b.jpg";
-import img3 from "../images/p1c.png";
+import img1 from "../../images/d2a.png";
+import img2 from "../../images/d2b.png";
+import img3 from "../../images/d2c.png";
+import img4 from "../../images/d2d.png";
 
-import related1 from "../images/p2a.png";
-import related2 from "../images/p3a.jpg";
-import related3 from "../images/p4a.jpg";
-import related4 from "../images/p5a.png";
+import related1 from "../../images/p2a.png";
+import related2 from "../../images/p3a.jpg";
+import related3 from "../../images/p4a.jpg";
+import related4 from "../../images/p5a.png";
 
 
 
 //icons to be added
-import arrowIcon from "../images/Arrow icon png.png";
-import NFCsymbol from "../images/NFC symbol png 2.png";
-import Exproofimg from "../images/Ex proof.png";
-import IBRimg from "../images/IBR.png";
-import LoraWANimg from "../images/Lora wan.png";
-import mbusimg from "../images/m bus.png";
+import arrowIcon from "../../images/Arrow icon png.png";
+import NFCsymbol from "../../images/NFC.png";
+import Exproofimg from "../../images/Ex proof.png";
+import IBRimg from "../../images/IBR.png";
+import LoraWANimg from "../../images/Lora wan.png";
+import mbusimg from "../../images/m bus.png";
+import AMR from "../../images/AMR Ready.png";
+import battery from "../../images/Battery operated symbol.png";
+import datalogger from "../../images/built-in data logger..png";
+import ce from "../../images/CE.png";
+import CGWA from "../../images/CGWA Compliant symbol.png";
+import EAC from "../../images/EAC TR TS Compliance.png";
+import Ethernet from "../../images/Ethernet.png";
+import GOST from "../../images/GOST-R Certified symbol.png";
+import HART from "../../images/HART Enabled symbol.png";
+import MID from "../../images/MID Certified.png";
+import Wsonic from "../../images/W Sonic technology.png";
+import iot from "../../images/IOT Ready.png";
+
+
+
+
+
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Breadcrumbs from "./Breadcrumbs";
+import Breadcrumbs from "../Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3];
+  const images = [img1, img2, img3,img4];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,15 +59,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Ultrimis Ultrasonic Water Meter - catalogue',
-        path: '/documents/Ultrimis Ultrasonic Water Meter.pdf',
+        title: 'Inline Ultrasonic V1 Robust Series - catalogue',
+        path: '/documents/Inline Ultrasonic V1 Robust Series.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrimis Ultrasonic Water Meter - manual',
-        path: '/documents/Ultrimis-manual.pdf',
+        title: 'Robust - manual',
+        path: '/documents/ROBUST MANUAL.pdf',
         size: 'Loading...'
       }
       
@@ -200,10 +218,11 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold">Ultrimis™ Domestic Ultrasonic Flow Meters</h3>
+            <h3 className="fw-semibold">Inline Ultrasonic ROBUST Series Flow Meter</h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
+              
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -212,9 +231,8 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-                Ultrimis ultrasonic water meter (DN15–DN50) for domestic use.
-              </li>
-              <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+Smart ultrasonic water meter for residential & industrial use.             </li>
+<li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
                     src={arrowIcon} 
@@ -222,8 +240,8 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-                IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.
-              </li>
+IP67, 10-year battery, NFC app, LoRa/GSM communication & built-in data logger.
+            </li>
               <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
                 <span>
                   <img
@@ -232,21 +250,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span> 
-                <span>
-                  <img
-                    src={Exproofimg}
-                    alt="Exproofimg"
-                    className="Icon" // Your original class name
-                  /> 
-                </span> 
-                <span>
-                  <img
-                    src={IBRimg}
-                    alt="IBRimg"
-                    className="Icon" // Your original class name
-                  /> 
-                </span> 
-                <span>
+                 <span>
                   <img
                     src={LoraWANimg}
                     alt="LoraWANimg"
@@ -255,11 +259,41 @@ function ProductDetail() {
                 </span> 
                 <span>
                   <img
-                    src={mbusimg}
-                    alt="mbusimg"
+                    src={iot}
+                    alt="iot"
+                    className="Icon" // Your original class name
+                  /> 
+                </span>                 
+                <span>
+                  <img
+                    src={battery}
+                    alt="battery"
                     className="Icon" // Your original class name
                   /> 
                 </span> 
+                <span>
+                  <img
+                    src={datalogger}
+                    alt="datalogger"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                                <span>
+                  <img
+                    src={ce}
+                    alt="ce"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                                <span>
+                  <img
+                    src={CGWA}
+                    alt="cgwa"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+
+
               </li>
             </ul>
             
@@ -295,19 +329,9 @@ function ProductDetail() {
             <div className="row">
               <div className="col-md-6">
                 
-          <p> <b>Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</b></p>
-          <p>
-            The <b>Ultrimis™ </b>from <b>Apator Powogaz</b> is a compact, high-precision<b> ultrasonic water meter</b> designed specifically for <b>domestic and commercial water metering</b> applications. 
-            It features<b> patented W-Sonic Technology</b> that ensures reliable, maintenance-free operation with <b>no moving parts</b>, and long-term metering accuracy even at very low flow rates.
-          </p>
-          <p>
-            Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended <b>battery life of up to 16 years</b>, and seamless compatibility with 
-            <b>NFC</b>, <b>Wireless M-Bus</b>, and <b>LoRaWAN</b> communication protocols. The meter supports all mounting positions without requiring straight pipe sections, 
-            making it ideal for space-constrained or retrofit installations.
-          </p>
-          <p>
-            Now available in India through <b>IOTAFLOW Systems Pvt. Ltd.</b>, an authorized channel partner of Apator Powogaz.
-          </p>
+<p><b><b>Robust™ Inline Ultrasonic Water Flow Meter | No Moving Parts, 10-Year Battery</b></b></p>
+<p>Struggling with frequent failures in <b>mechanical water meters? </b> Say goodbye to costly downtime, moving part replacements, and clogging issues with the<b> IOTAFLOW Inline Ultrasonic Flow Meter - Robust Series.</b> Designed for <b>precision water flow measurement</b> in harsh and high-demand environments, this smart meter offers long-lasting reliability and <b>superior accuracy</b>, even in <b>low-flow or particle-heavy water lines.</b></p>
+<p> Unlike Woltman or paddle-type meters, this meter uses <b>ultrasonic transit-time technology</b>, ensuring <b>accurate measurement</b> without internal obstructions. It works perfectly with <b>raw water, treated water, DM water, hot water</b>, and condensate up to <b>130°C</b>, even with <b>sand or suspended solids</b> in the flow.</p>
 
           {/* Decorative Separator Line Added Here */}
          <div style={{
@@ -318,15 +342,25 @@ function ProductDetail() {
         }} />
 
           <p><b>Applications</b></p>
-          <ul>
-            <li>Domestic water metering in apartments, group housing, and residential complexes</li>
-            <li>Commercial building water billing in offices, malls, hotels, and hospitals</li>
-            <li>Smart city water management systems with AMR/AMI integration</li>
-            <li>Replacement of mechanical meters (Woltman, multijet) in old buildings</li>
-            <li>Cold and hot water flow monitoring in utility pipelines</li>
-            <li>Water consumption and leakage monitoring in public and private infrastructure</li>
-            <li>Metering solutions for municipal water supply and urban development projects</li>
-          </ul>
+<ul>
+<li><b>Residential water metering</b> for cold/hot domestic water.</li>
+<li><b>Industrial water flow </b>monitoring in manufacturing, chemical, and food processing.</li>
+<li><b>Irrigation systems</b> in agriculture and landscape management.</li>
+<li><b>DM water and condensate flow measurement in pharmaceutical and boiler plants.</b></li>
+<li><b>Water consumption tracking in buildings, commercial complexes, and smart cities.</b></li>
+<li><b>District cooling and heating systems</b>, HVAC water distribution.</li>
+<li><b>Utility water supply networks and non-revenue water (NRW) control.</b></li>
+<li><b>CGWA flow meter for groundwater abstraction plants.</b></li>
+<li><b>CPCB/PCB/NIC data logger compliant water metering systems.</b></li>
+</ul>
+<p><b>CGWA, CPCB, and NIC Compliant</b></p>
+<ul>
+  <li>CGWA-Compliant Design – Ideal for groundwater abstraction monitoring</li>
+  <li>Data transmission ready for PCB, CPCB, and NIC portals</li>
+  <li>Supports real-time reporting via Modbus, GPRS, or RS485</li>
+<li>Fully compliant with industrial and environmental water use mandates</li>
+<li>Seamless integration with government dashboards</li>
+</ul>
 
 
                       </div>
@@ -338,22 +372,23 @@ function ProductDetail() {
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                          <li>Ultrasonic W-Sonic™ technology for stable, high-accuracy metering up to R800</li>
-                          <li>No moving parts– maintenance-free and wear-resistant</li>
-                          <li>Flexible installation – horizontal, vertical, or angled positions without straight pipe runs</li>
-                          <li>Fully sealed IP68 housing – submersible, dustproof, and ideal for underground chambers</li>
-                          <li>Battery-powered with a service life of up to 16 years</li>
-                          <li>High metering accuracy: ±2% (cold water), ±3% (hot water), ±5% (very low flow)</li>
-                        </ul>
+                      
+<li><b>Sand/Particle Interference? NO PROBLEM</b> - Rugged design handles poor-quality water effortlessly.</li>
+<li><b>No External Power? NO PROBLEM</b> - 10-year lithium battery life with optional 24V DC supply.</li>
+<li><b>Hot Water/Condensate? NO PROBLEM</b> - Operates reliably up to 130°C.</li>
+<li><b>No Connectivity? NO PROBLEM</b> - Supports RS485, Modbus (wired/wireless), GSM/GPRS, LoRaWAN, and NFC.</li>
+
+</ul>
+
+
                       </div>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-                          <li>Reverse flow detection and bi-directional measurement supported</li>
-                          <li>Tamper-proof design with logging for backflow, zero flow, battery status, and unauthorized access</li>
-                          <li>Communication-ready: NFC (mobile diagnostics), Wireless M-Bus (OMS), and LoRaWAN</li>
-                          <li>Compact and lightweight body suitable for small residential installations</li>
-                          <li>Environmentally friendly – low lithium content and energy-efficient</li>
+<li><b>Outdoor Use? NO PROBLEM</b> - IP67/IP68-rated enclosure for extreme weather.</li>
+<li><b>Low Flow Conditions? NO PROBLEM</b> - Incredible 1:125 turndown ratio, perfect for residential and industrial low-demand scenarios.</li>
+<li><b>Built-in Data Logger</b> - Stores hourly data for 1440 hours, daily data for 460 days, and monthly data for 48 months.</li>
+<li>Smart Monitoring via NFC & Mobile App.</li>
                         </ul>
                       </div>
                     </div>
@@ -361,21 +396,23 @@ function ProductDetail() {
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-              <tbody>
-                <tr><td><b>Pipe Sizes</b></td><td>DN15 to DN50</td></tr>
-                <tr><td><b>Measurement Range</b></td><td>Q1: 0.75 l/h to Q4: up to 31.25 m³/h (model dependent)</td></tr>
-                <tr><td><b>R Ratio</b></td><td>Up to R800</td></tr>
-                <tr><td><b>Temperature Classes</b></td><td>T30, T50, T70 (max 70°C)</td></tr>
-                <tr><td><b>Pressure Rating</b></td><td>MAP16 (16 bar max)</td></tr>
-                <tr><td><b>Accuracy Class</b></td><td>±2% (cold), ±3% (hot), ±5% (low flow)</td></tr>
-                <tr><td><b>Reverse Flow Measurement</b></td><td>Supported</td></tr>
-                <tr><td><b>Communications</b></td><td>NFC, Wireless M-Bus (OMS), LoRaWAN</td></tr>
-                <tr><td><b>Power Source</b></td><td>Integrated lithium battery (up to 16 years)</td></tr>
-                <tr><td><b>Protection Rating</b></td><td>IP68 (submersible and dust-tight)</td></tr>
-                <tr><td><b>Certifications</b></td><td>CE, WRAS, DVGW, KIWA, WELMEC, OIML R49, EN-ISO 4064</td></tr>
-                <tr><td><b>Regulatory Compliance</b></td><td>MID (Directive 2014/32/EU), RED (Directive 2014/53/EU)</td></tr>
-              </tbody>
-            </table>
+<tr><th>Parameter</th><th>Value</th></tr>
+<tr><td>Pipe Range</td><td>DN32-DN300 / up to DN1000</td></tr>
+<tr><td>NFC Communication Enabled</td><td>Yes</td></tr>
+<tr><td>Accuracy</td><td>±2.0 of MV</td></tr>
+<tr><td>Maximum pipeline pressure, MPa / bar</td><td>2.5/25</td></tr>
+<tr><td>Fluid temperature range, °C</td><td>50°C/130°C (For Hot Water)</td></tr>
+<tr><td>Ambient temperature range, °C</td><td>5-65°C</td></tr>
+<tr><td>Protection</td><td>IP67 (IP68 optional)</td></tr>
+<tr><td>End Connection</td><td>ASME/ANSI B16. 5 Class 150, Tri-Clover, PN16</td></tr>
+<tr><td>Compliance</td><td>ISO 4064</td></tr>
+<tr><td>Interfaces</td><td>Pulse, RS485, Analog 4-20mA (Optional), In-Built LoraWAN optional</td></tr>
+<tr><td>Power supply</td><td>Battery Operated 3,6 V, Lithium, 10 years, Power Operated (Optional)</td></tr>
+<tr><td>Measurement data logging, number of records</td><td>1440 Hourly log- 460 Daily log- 48 Monthly log</td></tr>
+<tr><td>CE, MID Certified</td><td>Yes</td></tr>
+</table>
+
+
           )}      
 
           {activeTab === "Downloads" && (
