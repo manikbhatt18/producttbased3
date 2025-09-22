@@ -219,7 +219,7 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            <h3 className="fw-semibold">Doppler Area Velocity AV5500 Series Flow Meter *Ideal for Open Channels & Partially Filled Pipes</h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
@@ -231,7 +231,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% accuracy, CE certified.</li>
+Doppler-based area velocity flow meter for open channels & partially-filled pipes.</li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -240,7 +240,16 @@ Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% acc
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
+Open channel & sewer flow meter for Indian drainage systems.</li>
+<li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+                <span> 
+                  <img 
+                    src={arrowIcon} 
+                    alt="arrow icon" 
+                    className="Icon" // Your original class name
+                  /> 
+                </span>
+ CE/CSA certified ultrasonic meter with Modbus & USB. Ideal for STP, ETP, canals & effluent line.</li>
 
               <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
                 <span>

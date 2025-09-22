@@ -220,8 +220,8 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
-            <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            <p className="text-muted">Electromagnetic Flow Meter</p>
+            <h3 className="fw-semibold">MF-TER Electromagnetic Flow Meter </h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
@@ -233,7 +233,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% accuracy, CE certified.</li>
+Flameproof, Ex-Proof Flow Meter for Hazardous Areas.</li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -242,7 +242,7 @@ Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% acc
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
+High Accuracy | Oil & Gas.</li>
 
               <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
                  <span>

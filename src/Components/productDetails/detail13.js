@@ -219,7 +219,7 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            <h3 className="fw-semibold">OFZ Micro Stream Flow Sensor</h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
@@ -231,7 +231,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% accuracy, CE certified.</li>
+OF-Z Microstream Flow Sensor – Oval Gear Sensor for Oil & AdBlue | Aichi Tokei Japan.</li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -240,7 +240,16 @@ Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% acc
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
+AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW.</li>
+              <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+                <span> 
+                  <img 
+                    src={arrowIcon} 
+                    alt="arrow icon" 
+                    className="Icon" // Your original class name
+                  /> 
+                </span>
+0.5–200 L/h range, ±0.5% accuracy, compact, easy to install.</li>
 
             </ul>
             

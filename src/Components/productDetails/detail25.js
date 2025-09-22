@@ -222,8 +222,8 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
-            <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            <p className="text-muted">Rotameters (Universal)</p>
+            <h3 className="fw-semibold">Acrylic / Glass Tube Rotameter (Variable Area Flow Meter)</h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">
@@ -235,7 +235,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% accuracy, CE certified.</li>
+IOTAFLOW Acrylic & Glass Tube Rotameters – Reliable Variable Area Flow Meters.</li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -244,7 +244,17 @@ Micronics PF333 portable ultrasonic flow meter with clamp-on sensors, ±0.5% acc
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
+IOTAFLOW acrylic & glass tube rotameters for accurate liquid, gas, and steam flow measurement.</li>
+              <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
+                <span> 
+                  <img 
+                    src={arrowIcon} 
+                    alt="arrow icon" 
+                    className="Icon" // Your original class name
+                  /> 
+                </span>
+ Durable, precise, and ideal for industrial applications.</li>
+
 
             </ul>
             
