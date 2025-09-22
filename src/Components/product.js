@@ -308,19 +308,7 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
             <div className="row">
               <div className="col-md-6">
                 
-          <p> <b>Ultrimis™ Domestic Ultrasonic Water Meter – Apator Powogaz</b></p>
-          <p>
-            The <b>Ultrimis™ </b>from <b>Apator Powogaz</b> is a compact, high-precision<b> ultrasonic water meter</b> designed specifically for <b>domestic and commercial water metering</b> applications. 
-            It features<b> patented W-Sonic Technology</b> that ensures reliable, maintenance-free operation with <b>no moving parts</b>, and long-term metering accuracy even at very low flow rates.
-          </p>
-          <p>
-            Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended <b>battery life of up to 16 years</b>, and seamless compatibility with 
-            <b>NFC</b>, <b>Wireless M-Bus</b>, and <b>LoRaWAN</b> communication protocols. The meter supports all mounting positions without requiring straight pipe sections, 
-            making it ideal for space-constrained or retrofit installations.
-          </p>
-          <p>
-            Now available in India through <b>IOTAFLOW Systems Pvt. Ltd.</b>, an authorized channel partner of Apator Powogaz.
-          </p>
+<p>The Ultrimis™ from Apator Powogaz is a compact, high-precision ultrasonic water meter designed specifically for domestic and commercial water metering applications. It features patented W-Sonic Technology that ensures reliable, maintenance-free operation with no moving parts, and long-term metering accuracy even at very low flow rates. Built for performance in Indian conditions, Ultrimis meters offer IP68 protection, extended battery life of up to 16 years, and seamless compatibility with NFC, Wireless M-Bus, and LoRaWAN communication protocols. The meter supports all mounting positions without requiring straight pipe sections, making it ideal for space-constrained or retrofit installations. Now available in India through IOTAFLOW Systems Pvt. Ltd., an authorized channel partner of Apator Powogaz.</p>
 
           {/* Decorative Separator Line Added Here */}
          <div style={{
