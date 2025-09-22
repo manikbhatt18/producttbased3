@@ -20,11 +20,24 @@ import related4 from "../images/p5a.png";
 
 //icons to be added
 import arrowIcon from "../images/Arrow icon png.png";
-import NFCsymbol from "../images/NFC symbol png 2.png";
+import NFCsymbol from "../images/NFC.png";
 import Exproofimg from "../images/Ex proof.png";
 import IBRimg from "../images/IBR.png";
 import LoraWANimg from "../images/Lora wan.png";
 import mbusimg from "../images/m bus.png";
+import AMR from "../images/AMR Ready.png";
+import battery from "../images/Battery operated symbol.png";
+import datalogger from "../images/built-in data logger..png";
+import ce from "../images/CE.png";
+import CGWA from "../images/CGWA Compliant symbol.png";
+import EAC from "../images/EAC TR TS Compliance.png";
+import Ethernet from "../images/Ethernet.png";
+import GOST from "../images/GOST-R Certified symbol.png";
+import HART from "../images/HART Enabled symbol.png";
+import MID from "../images/MID Certified.png";
+
+
+
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -212,8 +225,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-                Ultrimis ultrasonic water meter (DN15–DN50) for domestic use.
-              </li>
+Ultrimis ultrasonic water meter (DN15–DN50) for domestic use.               </li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -222,8 +234,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-                IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.
-              </li>
+IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.              </li>
               <li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
                 <span>
                   <img
@@ -232,6 +243,20 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span> 
+                 <span>
+                  <img
+                    src={LoraWANimg}
+                    alt="LoraWANimg"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={mbusimg}
+                    alt="mbusimg"
+                    className="Icon" // Your original class name
+                  /> 
+                </span>                 
                 <span>
                   <img
                     src={Exproofimg}
@@ -246,20 +271,8 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span> 
-                <span>
-                  <img
-                    src={LoraWANimg}
-                    alt="LoraWANimg"
-                    className="Icon" // Your original class name
-                  /> 
-                </span> 
-                <span>
-                  <img
-                    src={mbusimg}
-                    alt="mbusimg"
-                    className="Icon" // Your original class name
-                  /> 
-                </span> 
+
+
               </li>
             </ul>
             
