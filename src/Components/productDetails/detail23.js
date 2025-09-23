@@ -60,15 +60,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '121_Conical Shaped Flow Meter- catalogue',
+        path: '/documents/121_Conical Shaped Flow Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Conical shaped Flow meter User- manual',
+        path: '/documents/Conical shaped Flow meter User Manual.pdf',
         size: 'Loading...'
       }
       

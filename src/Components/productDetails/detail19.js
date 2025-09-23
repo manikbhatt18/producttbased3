@@ -63,15 +63,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '123_GWF Gas Meter- catalogue',
+        path: '/documents/123_GWF Gas Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Radial Blade Turbine Gas Meter TRZ- manual',
+        path: '/documents/Radial Blade Turbine Gas Meter TRZ Manual.pdf',
         size: 'Loading...'
       }
       

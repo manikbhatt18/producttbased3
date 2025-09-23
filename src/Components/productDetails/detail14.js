@@ -65,15 +65,20 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: 'AIR Ultrasonic Flowmeter- catalogue',
+        path: '/documents/AIR Ultrasonic Flowmeter (1).pdf',
+        size: 'Loading...' // Initial state for size
+      },
+      {
+        title: 'UltrasonicAirMeter_Intro- catalogue',
+        path: '/documents/UltrasonicAirMeter_Intro.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Ultrasonic Air Flow Meter User- manual',
+        path: '/documents/Ultrasonic Air Flow Meter User Manual.pdf',
         size: 'Loading...'
       }
       

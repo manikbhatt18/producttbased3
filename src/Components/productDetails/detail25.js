@@ -64,17 +64,18 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '117_GLASS TUBE  ROTAMETER- catalogue',
+        path: '/documents/117_GLASS TUBE  ROTAMETER.pdf',
+        size: 'Loading...' // Initial state for size
+      },
+      {
+        title: '117_GLASS TUBE ROTAMETER- catalogue',
+        path: '/documents/117_GLASS TUBE ROTAMETER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
-      {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
-        size: 'Loading...'
-      }
+
       
     ]
   });

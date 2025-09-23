@@ -63,15 +63,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '114_Oval Gear Flow Meter- catalogue',
+        path: '/documents/114_Oval Gear Flow Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'OVAL GEAR FLOW METER- manual',
+        path: '/documents/OVAL GEAR FLOW METER.pdf',
         size: 'Loading...'
       }
       

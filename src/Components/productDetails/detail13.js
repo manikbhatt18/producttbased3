@@ -60,15 +60,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: 'Microstream Flowsensor- catalogue',
+        path: '/documents/Microstream Flowsensor.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Micro Stream Flow Sensor OFZ Series User- manual',
+        path: '/documents/Micro Stream Flow Sensor OFZ Series User Manual.pdf',
         size: 'Loading...'
       }
       

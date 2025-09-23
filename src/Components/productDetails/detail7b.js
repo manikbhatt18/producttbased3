@@ -62,15 +62,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '137_ELECTROMAGNETIC FLOW METER- catalogue',
+        path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'MFT INSTALLATION- manual',
+        path: '/documents/MFT INSTALLATION.pdf',
         size: 'Loading...'
       }
       

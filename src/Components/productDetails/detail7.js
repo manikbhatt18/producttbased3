@@ -61,15 +61,20 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '137_ELECTROMAGNETIC FLOW METER- catalogue',
+        path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Iotaflow MF “Pro M” Installation- manual',
+        path: '/documents/Iotaflow MF “Pro M” Installation.pdf',
+        size: 'Loading...'
+      },
+        {
+        title: 'Iotaflow MF Pro Batching',
+        path: '/documents/Iotaflow MF Pro Batching.pdf',
         size: 'Loading...'
       }
       

@@ -68,17 +68,22 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '113_RPD SERIES FLOW METER- catalogue',
+        path: '/documents/113_RPD SERIES FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'RPD INSTALLATION- manual',
+        path: '/documents/RPD INSTALLATION.pdf',
         size: 'Loading...'
-      }
+      },
+      {
+        title: 'RPD Series User Manual- manual',
+        path: '/documents/RPD Series User Manual.pdf',
+        size: 'Loading...'
+      },
       
     ]
   });

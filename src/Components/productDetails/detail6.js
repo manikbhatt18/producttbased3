@@ -60,15 +60,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: 'Iotaflow 7600 Series- catalogue',
+        path: '/documents/106_Iotaflow 7600 Series Catlaogue.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'UF_AV5500_Users_Guide_Series_A.1.2 - manual',
+        path: '/documents/UF_AV5500_Users_Guide_Series_A.1.2 Manual.pdf',
         size: 'Loading...'
       }
       

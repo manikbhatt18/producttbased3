@@ -63,15 +63,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '116_Metal tube Flowmeter- catalogue',
+        path: '/documents/116_Metal tube Flowmeter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Metal Tube Flow Meter User- manual',
+        path: '/documents/Metal Tube Flow Meter User Manual.pdf',
         size: 'Loading...'
       }
       

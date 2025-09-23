@@ -64,15 +64,20 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: 'Apator Single jet DN15,20en- catalogue',
+        path: '/documents/Apator Single jet DN15,20en.pdf',
         size: 'Loading...' // Initial state for size
-      }
+      },
+        {
+        title: 'Apator Single jet DN25-master-c- catalogue',
+        path: '/documents/Apator Single jet DN25-master-c.pdf',
+        size: 'Loading...' // Initial state for size
+      },
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Smart Single Jet Water Meter User- manual',
+        path: '/documents/Smart Single Jet Water Meter User Manual.pdf',
         size: 'Loading...'
       }
       

@@ -60,18 +60,19 @@ function ProductDetail() {
   const [activeTab, setActiveTab] = useState("Description");
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
-      {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
-        size: 'Loading...' // Initial state for size
-      }
+ 
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'VFM Operating Helen- manual',
+        path: '/documents/VFM Operating Helen Manual.pdf',
         size: 'Loading...'
-      }
+      },
+            {
+        title: 'Vortex Flowmeter Quick Guide.pdf- manual',
+        path: '/documents/Vortex Flowmeter Quick Guide.pdf',
+        size: 'Loading...'
+      },
       
     ]
   });

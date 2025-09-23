@@ -63,17 +63,37 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: 'VNS Compact Electromagnetic  flow sensor- catalogue',
+        path: '/documents/VNS Compact Electromagnetic  flow sensor.pdf',
         size: 'Loading...' // Initial state for size
-      }
+      },
+      {
+        title: 'VN_Compact Electromagnetic Flow Sensor User Manual- catalogue',
+        path: '/documents/VN_Compact Electromagnetic Flow Sensor User Manual.pdf',
+        size: 'Loading...' // Initial state for size
+      },
+      {
+        title: 'CX Capcitive Electromagnetic Flow sensor- catalogue',
+        path: '/documents/CX Capcitive Electromagnetic Flow sensor.pdf',
+        size: 'Loading...' // Initial state for size
+      },
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Handling Manual Capacitive Electromagnetic Flowsensor CX series- manual',
+        path: '/documents/Handling Manual Capacitive Electromagnetic Flowsensor CX series.pdf',
         size: 'Loading...'
-      }
+      },
+      {
+        title: 'VN Compact Electromagnetic Flow Sensor- manual',
+        path: '/documents/VN Compact Electromagnetic Flow Sensor.pdf',
+        size: 'Loading...'
+      },
+      {
+        title: 'VNS Compact Electromagnetic  flow sensor',
+        path: '/documents/VNS Compact Electromagnetic  flow sensor.pdf',
+        size: 'Loading...'
+      },
       
     ]
   });

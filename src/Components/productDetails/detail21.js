@@ -63,15 +63,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '122_GasPro RPD Gas meter- catalogue',
+        path: '/documents/122_GasPro RPD Gas meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'GasPro RPD Gas Meter Installation User- manual',
+        path: '/documents/GasPro RPD Gas Meter Installation User Manual.pdf',
         size: 'Loading...'
       }
       

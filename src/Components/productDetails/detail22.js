@@ -62,15 +62,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
-        path: '/documents/Micronics-PF333-222-Brochure.pdf',
+        title: '108_UF- BioSonic series- catalogue',
+        path: '/documents/108_UF- BioSonic series.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
-        path: '/documents/PF222_333_User_Manual.pdf',
+        title: 'Ultrasonic Biogas Flow Meter User- manual',
+        path: '/documents/Ultrasonic Biogas Flow Meter User Manual.pdf',
         size: 'Loading...'
       }
       

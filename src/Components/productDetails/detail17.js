@@ -60,15 +60,15 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Ultrimis Ultrasonic Water Meter - catalogue',
-        path: '/documents/Ultrimis Ultrasonic Water Meter.pdf',
+        title: 'Inline Ultrasonic V1 Robust Series- catalogue',
+        path: '/documents/Inline Ultrasonic V1 Robust Series.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrimis Ultrasonic Water Meter - manual',
-        path: '/documents/Ultrimis-manual.pdf',
+        title: 'ULTRASONIC BTU METER- manual',
+        path: '/documents/ULTRASONIC BTU METER.pdf',
         size: 'Loading...'
       }
       
