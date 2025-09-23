@@ -359,22 +359,55 @@ AMR compatibility & precision for industrial and municipal use.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Product</b></td>
+      <td>Turbine Mechanical Water Meter with Magnetic Transmission</td>
+    </tr>
+    <tr>
+      <td><b>Pipe Range</b></td>
+      <td>DN50 - DN500, Removable mechanism, 360° Rotatable</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>Class B as per ISO 4064</td>
+    </tr>
+    <tr>
+      <td><b>Suitable for</b></td>
+      <td>Cold Water (50°C) / Hot Water (90°C & 130°C versions)</td>
+    </tr>
+    <tr>
+      <td><b>Body Material</b></td>
+      <td>Cast Iron or Stainless Steel with epoxy outer coating</td>
+    </tr>
+    <tr>
+      <td><b>Display Parameters</b></td>
+      <td>Flow rate / Total / Reset-able total</td>
+    </tr>
+    <tr>
+      <td><b>Relay Output</b></td>
+      <td>On flow rate</td>
+    </tr>
+    <tr>
+      <td><b>Outputs</b></td>
+      <td>Pulse output for AMR communication, Analog (4~20 mA) output</td>
+    </tr>
+    <tr>
+      <td><b>Digital Option Input</b></td>
+      <td>24 VDC</td>
+    </tr>
+    <tr>
+      <td><b>Battery</b></td>
+      <td>In-built battery (life 1.5 ~ 2 years) (Optional)</td>
+    </tr>
+  </tbody>
 </table>
-
 
           )}      
 

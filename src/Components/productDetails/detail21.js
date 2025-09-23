@@ -252,7 +252,7 @@ DN25–DN200, 1600 m³/h. MID, ATEX, CGWA, RS485, EVC & Modbus ready.</li>
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Made in India</li>
+Made in India.</li>
 
 
 
@@ -364,23 +364,67 @@ Made in India</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Size Range</b></td>
+      <td>DN15 to DN200</td>
+    </tr>
+    <tr>
+      <td><b>Flow Sizes</b></td>
+      <td>G6 to G400</td>
+    </tr>
+    <tr>
+      <td><b>Medium Temperature</b></td>
+      <td>−20°C to +80°C</td>
+    </tr>
+    <tr>
+      <td><b>Nominal Pressure</b></td>
+      <td>10 bar (16 bar available as an option)</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>±1.5%</td>
+    </tr>
+    <tr>
+      <td><b>Power Supply</b></td>
+      <td>External ±24VDC ±15%</td>
+    </tr>
+    <tr>
+      <td><b>Signal Outputs</b></td>
+      <td>4–20 mA, Pulse, RS-485 Modbus</td>
+    </tr>
+    <tr>
+      <td><b>Communication Interface</b></td>
+      <td>Optional modem: 2G / 3G / 4G / NB-IoT</td>
+    </tr>
+    <tr>
+      <td><b>Volume Correction (EVC)</b></td>
+      <td>MID-certified ELCOR gas volume corrector (optional)</td>
+    </tr>
+    <tr>
+      <td><b>Mounting Orientation</b></td>
+      <td>Horizontal or vertical</td>
+    </tr>
+    <tr>
+      <td><b>Enclosure Protection</b></td>
+      <td>IP66-rated casing (dust- and moisture-resistant)</td>
+    </tr>
+    <tr>
+      <td><b>Material of Construction</b></td>
+      <td>High-grade aluminum alloy or optional stainless steel</td>
+    </tr>
+    <tr>
+      <td><b>Compliances</b></td>
+      <td>CE, MID, ATEX, CGD-compliant</td>
+    </tr>
+  </tbody>
 </table>
-
-
           )}      
 
           {activeTab === "Downloads" && (

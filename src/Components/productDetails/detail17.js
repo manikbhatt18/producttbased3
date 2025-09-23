@@ -378,16 +378,50 @@ Seamless billing-grade metering for heating & cooling networks.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Measurement Principle</td><td>Transit-time ultrasonic</td></tr>
-<tr><td>Flow Range</td><td>Wide range per meter size DN</td></tr>
-<tr><td>Pipe Sizes</td><td>Multiple DN options for commercial & industrial use</td></tr>
-<tr><td>Accuracy Class</td><td>±1% (flow) and ±0.1°C (temperature)</td></tr>
-<tr><td>Temperature Range</td><td>Compatible with hot and chilled water</td></tr>
-<tr><td>Communication</td><td>Modbus, RS485, M-Bus, GSM/GPRS, NFC</td></tr>
-<tr><td>Power Supply</td><td>Battery (long life) or external 24V DC</td></tr>
-<tr><td>Ingress Protection</td><td>IP65 or higher</td></tr>
-<tr><td>Special Features</td><td>Low pressure drop, no moving parts, Apator BTU calculator integration</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Measurement Principle</b></td>
+      <td>Transit-time ultrasonic</td>
+    </tr>
+    <tr>
+      <td><b>Flow Range</b></td>
+      <td>Wide range per meter size DN</td>
+    </tr>
+    <tr>
+      <td><b>Pipe Sizes</b></td>
+      <td>Multiple DN options for commercial & industrial use</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy Class</b></td>
+      <td>±1% (flow) and ±0.1°C (temperature)</td>
+    </tr>
+    <tr>
+      <td><b>Temperature Range</b></td>
+      <td>Compatible with hot and chilled water</td>
+    </tr>
+    <tr>
+      <td><b>Communication</b></td>
+      <td>Modbus, RS485, M-Bus, GSM/GPRS, NFC</td>
+    </tr>
+    <tr>
+      <td><b>Power Supply</b></td>
+      <td>Battery (long life) or external 24V DC</td>
+    </tr>
+    <tr>
+      <td><b>Ingress Protection</b></td>
+      <td>IP65 or higher</td>
+    </tr>
+    <tr>
+      <td><b>Special Features</b></td>
+      <td>Low pressure drop, no moving parts, Apator BTU calculator integration</td>
+    </tr>
+  </tbody>
 </table>
 
 

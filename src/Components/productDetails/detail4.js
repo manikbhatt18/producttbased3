@@ -383,23 +383,83 @@ Easy install, no pipe cutting.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Nominal diameter of the pipeline</td><td>DN 15-6000</td></tr>
-<tr><td>Principle</td><td>Transit Time</td></tr>
-<tr><td>Measuring Channels</td><td>1 to 4 (Single Track | Dual Track | Four Track)</td></tr>
-<tr><td>Clamp-on PEA Accuracy, %, with flowrate range from 1:100</td><td>Single-beam sounding ±2 | Two-beam sounding ±1 | Four-beam sounding ±0.5</td></tr>
-<tr><td>Flow velocity range</td><td>0.1-20 m/s</td></tr>
-<tr><td>Fluid temperature range</td><td>- 30- (+160) °С</td></tr>
-<tr><td>Ambient Temperature for transmitter</td><td>0 – (+50)°С</td></tr>
-<tr><td>Maximum Pipeline pressure</td><td>2.5/25 MPa/bar</td></tr>
-<tr><td>Transmitter/transducers protection</td><td>IP54/IP68</td></tr>
-<tr><td>Measurement data logging, number of records</td><td>Hourly log 1440 - Daily log 60 - Monthly log Programmable 14400 -Batching 512</td></tr>
-<tr><td>Power supply</td><td>24VDC</td></tr>
-<tr><td>Power consumption</td><td>&lt;12W</td></tr>
-<tr><td>Transmitter weight</td><td>&lt;3 kg</td></tr>
-<tr><td>Transmitter dimensions</td><td>250x132x90 mm</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Nominal diameter of the pipeline</b></td>
+      <td>DN 15-6000</td>
+    </tr>
+    <tr>
+      <td><b>Principle, Transit Time</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Measuring Channels</b></td>
+      <td>1 to 4 (Single Track | Dual Track | Four Track)</td>
+    </tr>
+    <tr>
+      <td><b>Clamp-on PEA Accuracy, %, with flowrate range</b></td>
+      <td>from 1:100</td>
+    </tr>
+    <tr>
+      <td><b>Single-beam sounding ±2 | Two-beam sounding ±1 | Four-beam sounding ±0.5</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Flow velocity range</b></td>
+      <td>0.1-20 m/s</td>
+    </tr>
+    <tr>
+      <td><b>Fluid temperature range</b></td>
+      <td>-30- (+160) °C, Ambient</td>
+    </tr>
+    <tr>
+      <td><b>Temperature for transmitter</b></td>
+      <td>0 – (+50)°C Maximum</td>
+    </tr>
+    <tr>
+      <td><b>Pipeline pressure</b></td>
+      <td>2.5/25 MPa/bar</td>
+    </tr>
+    <tr>
+      <td><b>Transmitter/transducers protection</b></td>
+      <td>IP54/IP68</td>
+    </tr>
+    <tr>
+      <td><b>Measurement data logging</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>number of records</b></td>
+      <td>Hourly log 1440 - Daily log 60</td>
+    </tr>
+    <tr>
+      <td><b>Monthly log</b></td>
+      <td>Programmable 14400 - Batching 512</td>
+    </tr>
+    <tr>
+      <td><b>Power supply</b></td>
+      <td>24VDC</td>
+    </tr>
+    <tr>
+      <td><b>Power consumption</b></td>
+      <td>&lt;12W</td>
+    </tr>
+    <tr>
+      <td><b>Transmitter weight</b></td>
+      <td>&lt;3 kg,</td>
+    </tr>
+    <tr>
+      <td><b>Transmitter dimensions</b></td>
+      <td>250x132x90 mm.</td>
+    </tr>
+  </tbody>
 </table>
-
 
 
 

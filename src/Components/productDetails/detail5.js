@@ -381,20 +381,82 @@ Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+ <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Principle, Transit Time, CE approved</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Pipe Range</b></td>
+      <td>13mm ID to 10,000mm OD</td>
+    </tr>
+    <tr>
+      <td><b>Transducer Operating Temp</b></td>
+      <td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td>
+    </tr>
+    <tr>
+      <td><b>Display shows</b></td>
+      <td>flow rate, total flow, signal and battery level<br/>Non-invasive sensing</td>
+    </tr>
+    <tr>
+      <td><b>Language options</b></td>
+      <td>English, French, German, Spanish</td>
+    </tr>
+    <tr>
+      <td><b>Carrying case</b></td>
+      <td>IP67 Rated</td>
+    </tr>
+    <tr>
+      <td><b>Battery or mains operation</b></td>
+      <td>(Battery Life 14 Hours, 2.5 Hours charging time)</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>+/-0.5% to +/-3% dependent on flow and pipe size</td>
+    </tr>
+    <tr>
+      <td><b>Turn Down Ratio</b></td>
+      <td>100:1</td>
+    </tr>
+    <tr>
+      <td><b>Data Communications</b></td>
+      <td>USB, supports most USB 2.0 BOM drives.</td>
+    </tr>
+    <tr>
+      <td><b>Output</b></td>
+      <td>3 x Pulse Output, 4-20mA Output</td>
+    </tr>
+    <tr>
+      <td><b>Data Logging</b></td>
+      <td>100,000,000 data points. 12 named sites.</td>
+    </tr>
+    <tr>
+      <td><b>Download via USB to CSV file and export to Excel.</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Temperature Sensors</b></td>
+      <td>Clamp-on PT100 Class B 4 wire,</td>
+    </tr>
+    <tr>
+      <td><b>range</b></td>
+      <td>0°C − 200°C (32°F − 392°F),</td>
+    </tr>
+    <tr>
+      <td><b>resolution</b></td>
+      <td>0.1°C (0.18°F). Minimum</td>
+    </tr>
+    <tr>
+      <td><b>delta</b></td>
+      <td>T is 0.3°C (Optional).</td>
+    </tr>
+  </tbody>
 </table>
 
 

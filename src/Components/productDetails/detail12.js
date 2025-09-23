@@ -221,7 +221,7 @@ function ProductDetail() {
 
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
-            <p className="text-muted">            <p className="text-muted">Positive Displacement Oil Meters</p></p>
+            <p className="text-muted">    <p className="text-muted">Positive Displacement Oil Meters</p></p>
             <h3 className="fw-semibold">Oval Gear Oil Flow Meter (OGM)</h3>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
@@ -234,7 +234,7 @@ function ProductDetail() {
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Oval Gear Flow Meter – For Oil, Solvents, Alcohols, Chemicals & Viscous Liquids</li>
+Oval Gear Flow Meter – For Oil, Solvents, Alcohols, Chemicals & Viscous Liquids.</li>
               <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -243,7 +243,7 @@ Oval Gear Flow Meter – For Oil, Solvents, Alcohols, Chemicals & Viscous Liquid
                     className="Icon" // Your original class name
                   /> 
                 </span>
-Built for tough environments with multiple material and output options</li>
+Built for tough environments with multiple material and output options.</li>
 
             </ul>
             
@@ -350,20 +350,58 @@ Built for tough environments with multiple material and output options</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Size Range</b></td>
+      <td>DN10 to DN200</td>
+    </tr>
+    <tr>
+      <td><b>Application Type</b></td>
+      <td>High temperature and high viscosity fluid measurement</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>±0.5% (standard) or ±0.2% (high-precision option)</td>
+    </tr>
+    <tr>
+      <td><b>Viscosity Handling</b></td>
+      <td>Up to 5,000 cP (centipoise)</td>
+    </tr>
+    <tr>
+      <td><b>Flow Range</b></td>
+      <td>0.04 to 340 m³/h (18 to 37,396 GPM)</td>
+    </tr>
+    <tr>
+      <td><b>Working Temperature Range</b></td>
+      <td>-20°C to +280°C</td>
+    </tr>
+    <tr>
+      <td><b>Material Options</b></td>
+      <td>Cast Iron, Cast Steel, SS304, SS316 (based on application)</td>
+    </tr>
+    <tr>
+      <td><b>Display / Control Options</b></td>
+      <td>LCD Totalizer, Local Transmitter, MCU-based Flow Controller</td>
+    </tr>
+    <tr>
+      <td><b>Output Signals</b></td>
+      <td>Pulse, 4–20 mA, RS485 Modbus (optional)</td>
+    </tr>
+    <tr>
+      <td><b>Mounting Orientation</b></td>
+      <td>Horizontal or vertical; no upstream/downstream pipe length required</td>
+    </tr>
+    <tr>
+      <td><b>Enclosure Protection</b></td>
+      <td>IP65, IP67, IP68; Flameproof/Ex-Proof options available</td>
+    </tr>
+  </tbody>
 </table>
 
 

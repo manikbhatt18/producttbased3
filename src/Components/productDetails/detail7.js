@@ -396,21 +396,84 @@ CGWA Compliant.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+  <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Size Range</b></td>
+      <td>DN10 to DN2000 mm</td>
+    </tr>
+    <tr>
+      <td><b>Nominal Pressure</b></td>
+      <td>0.6 MPa to 4.0 MPa</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>±0.5% of reading (standard), ±0.3% optional</td>
+    </tr>
+    <tr>
+      <td><b>Velocity Range</b></td>
+      <td>0.3 to 10 m/s (500:1 turndown ratio)</td>
+    </tr>
+    <tr>
+      <td><b>Liner Materials</b></td>
+      <td>PTFE (Teflon), PFA, F46, Neoprene, Polyurethane</td>
+    </tr>
+    <tr>
+      <td><b>Electrode Material Options</b></td>
+      <td>SS316, Hastelloy B, Hastelloy C, Titanium, Tantalum, Platinum-Iridium, SS + Tungsten Coat</td>
+    </tr>
+    <tr>
+      <td><b>Electrode Type</b></td>
+      <td>General type, Scraper type, Replaceable type</td>
+    </tr>
+    <tr>
+      <td><b>Structure Type</b></td>
+      <td>Integral type, Remote type, Insertion (for DN200 and above)</td>
+    </tr>
+    <tr>
+      <td><b>Medium Conductivity</b></td>
+      <td>≥ 5.0 µS/cm</td>
+    </tr>
+    <tr>
+      <td><b>Ambient Temperature</b></td>
+      <td>-25°C to +60°C</td>
+    </tr>
+    <tr>
+      <td><b>Operating Temperature</b></td>
+      <td>Up to 150°C (liner-dependent)</td>
+    </tr>
+    <tr>
+      <td><b>Protection Class</b></td>
+      <td>IP65 / IP68 (remote type submersible)</td>
+    </tr>
+    <tr>
+      <td><b>Power Supply</b></td>
+      <td>24V DC, Lithium Battery (optional for remote sites)</td>
+    </tr>
+    <tr>
+      <td><b>Output Signals</b></td>
+      <td>RS485, Modbus RTU, 4–20 mA, Pulse, Relay, GSM/GPRS</td>
+    </tr>
+    <tr>
+      <td><b>Display Unit</b></td>
+      <td>LCD with totalizer, diagnostics, and flow rate display</td>
+    </tr>
+    <tr>
+      <td><b>Optional Features</b></td>
+      <td>Insertion type, data logger, telemetry-ready</td>
+    </tr>
+    <tr>
+      <td><b>Certifications</b></td>
+      <td>CE, ISO, CGWA Compliant</td>
+    </tr>
+  </tbody>
 </table>
+
 
 
           )}      

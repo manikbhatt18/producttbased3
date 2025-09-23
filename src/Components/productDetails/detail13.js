@@ -356,22 +356,63 @@ AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Size Range</b></td>
+      <td>DN5 to DN10</td>
+    </tr>
+    <tr>
+      <td><b>Connection Size</b></td>
+      <td>R1/4" to R1/2" threaded</td>
+    </tr>
+    <tr>
+      <td><b>Maximum Pressure</b></td>
+      <td>5 bar</td>
+    </tr>
+    <tr>
+      <td><b>Maximum Fluid Temperature</b></td>
+      <td>70°C</td>
+    </tr>
+    <tr>
+      <td><b>Output Signal</b></td>
+      <td>Voltage pulses / Open collector (choose at ordering) with 0.5 m cable</td>
+    </tr>
+    <tr>
+      <td><b>Pulse Value</b></td>
+      <td>0.46 ml/pulse</td>
+    </tr>
+    <tr>
+      <td><b>Applied Voltage Range</b></td>
+      <td>3 to 24 VDC</td>
+    </tr>
+    <tr>
+      <td><b>Power Consumption</b></td>
+      <td>0.2 VA or less</td>
+    </tr>
+    <tr>
+      <td><b>Material of Construction</b></td>
+      <td>Case &amp; Rotor: PPS; Shaft: SS304; O-ring: NBR</td>
+    </tr>
+    <tr>
+      <td><b>Installation Orientation</b></td>
+      <td>Any (horizontal or vertical); no straight pipe length required</td>
+    </tr>
+    <tr>
+      <td><b>Fluid Compatibility</b></td>
+      <td>Urea (AdBlue/DEF), light oil, heavy oil, kerosene, cool/hot water, weak acid/alkali</td>
+    </tr>
+    <tr>
+      <td><b>Country of Origin</b></td>
+      <td>Japan</td>
+    </tr>
+  </tbody>
 </table>
-
 
           )}      
 

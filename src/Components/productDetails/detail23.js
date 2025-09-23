@@ -357,22 +357,79 @@ Ideal for compact installations across energy, steel, mining & process industrie
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Range</b></td>
+      <td>DN10 to DN3000 or larger</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>±1% for Total System</td>
+    </tr>
+    <tr>
+      <td><b>Turn Down</b></td>
+      <td>10:1 with compact Installation</td>
+    </tr>
+    <tr>
+      <td><b>Body Material</b></td>
+      <td>Duplex 2205, 304, or 316 stainless steel, Hastelloy C-276, 254 SMO, carbon steels; Special Materials on request</td>
+    </tr>
+    <tr>
+      <td><b>End Fittings</b></td>
+      <td>Flanged, threaded, hub or weld-end standard; others on request</td>
+    </tr>
+    <tr>
+      <td><b>RTD Sensor Type</b></td>
+      <td>PT-100, thin film</td>
+    </tr>
+    <tr>
+      <td><b>RTD Range</b></td>
+      <td>-58° to 752° F (-50° to 400° C)</td>
+    </tr>
+    <tr>
+      <td><b>Manifold Configuration</b></td>
+      <td>3-Valve</td>
+    </tr>
+    <tr>
+      <td><b>dP Transmitter Housing</b></td>
+      <td>F30 Aluminum</td>
+    </tr>
+    <tr>
+      <td><b>dP Transmitter Membrane</b></td>
+      <td>316L</td>
+    </tr>
+    <tr>
+      <td><b>dP Transmitter Enclosure</b></td>
+      <td>NEMA 4X/6P, IP66/67</td>
+    </tr>
+    <tr>
+      <td><b>Electrical Connections</b></td>
+      <td>NPT1/2 thread</td>
+    </tr>
+    <tr>
+      <td><b>Flow Computer Output</b></td>
+      <td>4-20 mA, Isolated Pulse</td>
+    </tr>
+    <tr>
+      <td><b>Pressure Range</b></td>
+      <td>Up to 1500 psi (100 bar)</td>
+    </tr>
+    <tr>
+      <td><b>Temperature Range</b></td>
+      <td>Up to 1,600 °F (870°C)</td>
+    </tr>
+    <tr>
+      <td><b>Applications</b></td>
+      <td>Biogas, Coke Oven Gas, Coal Bed Methane (CBM), Gas Mixtures, Air (with Dust), Steam</td>
+    </tr>
+  </tbody>
 </table>
-
 
           )}      
 

@@ -360,20 +360,58 @@ Made in India for reliable industrial and utility flow measurement.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+  <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Outer Casing Material</b></td>
+      <td>High-strength aluminium alloy with corrosion-resistant protective coating</td>
+    </tr>
+    <tr>
+      <td><b>Body Wetted Parts</b></td>
+      <td>SS316 stainless steel, PTFE-lined, or industrial-grade plastic (custom materials available on request)</td>
+    </tr>
+    <tr>
+      <td><b>Flow Indication Method</b></td>
+      <td>Magnetic coupling transmission to indicator – eliminates direct process contact for enhanced safety</td>
+    </tr>
+    <tr>
+      <td><b>Connection Types</b></td>
+      <td>Flanged (ANSI/DIN standards), Tri-Clamp, Sanitary; custom connections on request</td>
+    </tr>
+    <tr>
+      <td><b>Operating Temperature</b></td>
+      <td>Standard: up to 200°C; High-temperature version: up to 300°C</td>
+    </tr>
+    <tr>
+      <td><b>Housing Protection Rating</b></td>
+      <td>IP65 / IP67 weatherproof; optional explosion-proof enclosure</td>
+    </tr>
+    <tr>
+      <td><b>Explosion-Proof Classification</b></td>
+      <td>Class I, Groups B, C &amp; D; Class II, Groups E, F &amp; G; NEMA 4, 7, 9 compliance</td>
+    </tr>
+    <tr>
+      <td><b>Measurement Accuracy</b></td>
+      <td>±2% of full scale (optional high-precision ±1.6% FS)</td>
+    </tr>
+    <tr>
+      <td><b>Maximum Operating Pressure</b></td>
+      <td>Standard: 40 kg/cm² (4 MPa); High-pressure version: up to 100 kg/cm² (10 MPa)</td>
+    </tr>
+    <tr>
+      <td><b>Output &amp; Alarm Options</b></td>
+      <td>
+        - Micro-switch: 3A/250VAC, 5A/30VDC, 0.4A/125VDC<br/>
+        - Adjustable inductive alarm switch<br/>
+        - 4–20 mA two-wire analog transmitter output
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 

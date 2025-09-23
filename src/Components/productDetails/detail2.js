@@ -396,21 +396,22 @@ IP67, 10-year battery, NFC app, LoRa/GSM communication & built-in data logger.
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Pipe Range</td><td>DN32-DN300 / up to DN1000</td></tr>
-<tr><td>NFC Communication Enabled</td><td>Yes</td></tr>
-<tr><td>Accuracy</td><td>±2.0 of MV</td></tr>
-<tr><td>Maximum pipeline pressure, MPa / bar</td><td>2.5/25</td></tr>
-<tr><td>Fluid temperature range, °C</td><td>50°C/130°C (For Hot Water)</td></tr>
-<tr><td>Ambient temperature range, °C</td><td>5-65°C</td></tr>
-<tr><td>Protection</td><td>IP67 (IP68 optional)</td></tr>
-<tr><td>End Connection</td><td>ASME/ANSI B16. 5 Class 150, Tri-Clover, PN16</td></tr>
-<tr><td>Compliance</td><td>ISO 4064</td></tr>
-<tr><td>Interfaces</td><td>Pulse, RS485, Analog 4-20mA (Optional), In-Built LoraWAN optional</td></tr>
-<tr><td>Power supply</td><td>Battery Operated 3,6 V, Lithium, 10 years, Power Operated (Optional)</td></tr>
-<tr><td>Measurement data logging, number of records</td><td>1440 Hourly log- 460 Daily log- 48 Monthly log</td></tr>
-<tr><td>CE, MID Certified</td><td>Yes</td></tr>
+  <tr><th>Parameter</th><th>Value</th></tr>
+  <tr><td><b>Pipe Range</b></td><td>DN32 – DN300 / up to DN1000</td></tr>
+  <tr><td><b>NFC Communication Enabled</b></td><td></td></tr>
+  <tr><td><b>Accuracy</b></td><td>± 2.0 of MV</td></tr>
+  <tr><td><b>Maximum pipeline pressure, MPa / bar</b></td><td>2.5 / 25</td></tr>
+  <tr><td><b>Fluid temperature range, °C</b></td><td>50°C / 130°C (For Hot Water)</td></tr>
+  <tr><td><b>Ambient temperature range, °C</b></td><td>5 – 65°C</td></tr>
+  <tr><td><b>Protection</b></td><td>IP67 (IP68 optional)</td></tr>
+  <tr><td><b>End Connection</b></td><td>ASME/ANSI B16. 5 Class 150, Tri-Clover, PN16</td></tr>
+  <tr><td><b>Compliance</b></td><td>ISO 4064</td></tr>
+  <tr><td><b>Interfaces</b></td><td>Pulse, RS485, Analog 4-20mA (Optional), In-Built LoraWAN optional</td></tr>
+  <tr><td><b>Power supply</b></td><td>Battery Operated 3.6 V, Lithium, 10 years, Power Operated (Optional)</td></tr>
+  <tr><td><b>Measurement data logging, number of records</b></td><td>1440 Hourly log – 460 Daily log – 48 Monthly log</td></tr>
+  <tr><td><b>CE, MID Certified</b></td><td></td></tr>
 </table>
+
 
 
           )}      

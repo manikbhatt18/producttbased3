@@ -352,11 +352,7 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
 <li>Fully sealed IP68 housing - submersible, dustproof, and ideal for underground chambers.</li>
 <li>Battery-powered with a service life of up to 16 years.</li>
 <li>High metering accuracy: ±2% (cold water), ±3% (hot water), ±5% (very low flow).</li>
-<li>Reverse flow detection and bi-directional measurement supported.</li>
-<li>Tamper-proof design with logging for backflow, zero flow, battery status, and unauthorized access.</li>
-<li>Communication-ready: NFC (mobile diagnostics), Wireless M-Bus (OMS), and LoRaWAN.</li>
-<li>Compact and lightweight body suitable for small residential installations.</li>
-<li>Environmentally friendly – low lithium content and energy-efficient.</li>
+
 
 
 
@@ -380,20 +376,64 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Pipe Sizes</td><td>DN15 to DN50</td></tr>
-<tr><td>Measurement Range</td><td>Q1: 0.75 l/h to Q4: up to 31.25 m³/h (model dependent)</td></tr>
-<tr><td>R Ratio</td><td>Up to R800</td></tr>
-<tr><td>Temperature Classes</td><td>T30, T50, T70 (max 70°C)</td></tr>
-<tr><td>Pressure Rating</td><td>MAP16 (16 bar max)</td></tr>
-<tr><td>Accuracy Class</td><td>±2% (cold), ±3% (hot), ±5% (low flow)</td></tr>
-<tr><td>Reverse Flow Measurement</td><td>Supported</td></tr>
-<tr><td>Communications</td><td>NFC, Wireless M-Bus (OMS), LoRaWAN</td></tr>
-<tr><td>Power Source</td><td>Integrated lithium battery (up to 16 years)</td></tr>
-<tr><td>Protection Rating</td><td>IP68 (submersible and dust-tight)</td></tr>
-<tr><td>Certifications</td><td>CE, WRAS, DVGW, KIWA, WELMEC, OIML R49, EN-ISO 4064</td></tr>
-<tr><td>Regulatory Compliance</td><td>MID (Directive 2014/32/EU), RED (Directive 2014/53/EU)</td></tr>
+  <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Sizes</b></td>
+      <td>DN15 to DN50</td>
+    </tr>
+    <tr>
+      <td><b>Measurement Range</b></td>
+      <td>Q1: 0.75 l/h to Q4: up to 31.25 m³/h (model dependent)</td>
+    </tr>
+    <tr>
+      <td><b>R Ratio</b></td>
+      <td>Up to R800</td>
+    </tr>
+    <tr>
+      <td><b>Temperature Classes</b></td>
+      <td>T30, T50, T70 (max 70°C)</td>
+    </tr>
+    <tr>
+      <td><b>Pressure Rating</b></td>
+      <td>MAP16 (16 bar max)</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy Class</b></td>
+      <td>±2% (cold), ±3% (hot), ±5% (low flow)</td>
+    </tr>
+    <tr>
+      <td><b>Reverse Flow Measurement</b></td>
+      <td>Supported</td>
+    </tr>
+    <tr>
+      <td><b>Communications</b></td>
+      <td>NFC, Wireless M-Bus (OMS), LoRaWAN</td>
+    </tr>
+    <tr>
+      <td><b>Power Source</b></td>
+      <td>Integrated lithium battery (up to 16 years)</td>
+    </tr>
+    <tr>
+      <td><b>Protection Rating</b></td>
+      <td>IP68 (submersible and dust-tight)</td>
+    </tr>
+    <tr>
+      <td><b>Certifications</b></td>
+      <td>CE, WRAS, DVGW, KIWA, WELMEC, OIML R49, EN-ISO 4064</td>
+    </tr>
+    <tr>
+      <td><b>Regulatory Compliance</b></td>
+      <td>MID (Directive 2014/32/EU), RED (Directive 2014/53/EU)</td>
+    </tr>
+  </tbody>
 </table>
+
           )}      
 
           {activeTab === "Downloads" && (

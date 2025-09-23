@@ -389,22 +389,75 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+<thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Application</b></td>
+      <td>Ideal for Open Channels & Partially Filled Pipes</td>
+    </tr>
+    <tr>
+      <td><b>Measurement</b></td>
+      <td>Measures flow Velocity and Level simultaneously</td>
+    </tr>
+    <tr>
+      <td><b>Sensor Cable</b></td>
+      <td>7.6 m / 25 ft submersible, shielded 3-coaxial pairs</td>
+    </tr>
+    <tr>
+      <td><b>Flow Rate Range</b></td>
+      <td>0.1 to 20 ft/sec and reverse flow to -5 ft/sec</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy (Velocity)</b></td>
+      <td>± 2% of reading or ± 0.04 ft/sec (whichever is greater)</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy (Level)</b></td>
+      <td>± 0.25% of reading or ± 0.08’’ (whichever is greater)</td>
+    </tr>
+    <tr>
+      <td><b>Enclosure</b></td>
+      <td>Watertight, NEMA4X (IP66) polycarbonate</td>
+    </tr>
+    <tr>
+      <td><b>Totalizer</b></td>
+      <td>14 Digit</td>
+    </tr>
+    <tr>
+      <td><b>Calibration</b></td>
+      <td>Built-in 5-key programmer</td>
+    </tr>
+    <tr>
+      <td><b>Outputs</b></td>
+      <td>Three isolated 4-20mA / 0-5V (Flow, Level and Velocity)</td>
+    </tr>
+    <tr>
+      <td><b>Control Relays</b></td>
+      <td>2 relays - 5 amp, SPDT - programmable for flow pulse/alarms</td>
+    </tr>
+    <tr>
+      <td><b>Datalogger</b></td>
+      <td>128 Megabyte storage (6.5 million points)</td>
+    </tr>
+    <tr>
+      <td><b>Power Input</b></td>
+      <td>100-240VAC, 50/60Hz, 10 VA max</td>
+    </tr>
+    <tr>
+      <td><b>Certifications</b></td>
+      <td>CE, UL/SCA/EN 61010-1</td>
+    </tr>
+    <tr>
+      <td><b>Note</b></td>
+      <td>Portable Doppler Effect (D550 Series) also available</td>
+    </tr>
+  </tbody>
 </table>
-
 
           )}      
 

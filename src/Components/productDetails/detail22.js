@@ -349,22 +349,55 @@ Accurate, durable & maintenance-free.</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+ <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Size Range</b></td>
+      <td>DN32 to DN300</td>
+    </tr>
+    <tr>
+      <td><b>Measurement Accuracy</b></td>
+      <td>≤ ±1.5%</td>
+    </tr>
+    <tr>
+      <td><b>Measured Medium</b></td>
+      <td>Biogas and bio-methane (wet or dry, high H₂S tolerance)</td>
+    </tr>
+    <tr>
+      <td><b>Fluid Temperature Range</b></td>
+      <td>−20°C to +40°C</td>
+    </tr>
+    <tr>
+      <td><b>Maximum Operating Pressure</b></td>
+      <td>Up to 2 bar</td>
+    </tr>
+    <tr>
+      <td><b>Power Supply Options</b></td>
+      <td>Long-life lithium battery (maintenance-free) or external 24VDC ±10%</td>
+    </tr>
+    <tr>
+      <td><b>Communication Outputs</b></td>
+      <td>RS485 Modbus RTU, 4–20 mA analog</td>
+    </tr>
+    <tr>
+      <td><b>Ingress Protection</b></td>
+      <td>IP65 – weatherproof, dust-tight, and suitable for outdoor use</td>
+    </tr>
+    <tr>
+      <td><b>Construction</b></td>
+      <td>Industrial-grade stainless steel housing with corrosion-resistant internals</td>
+    </tr>
+    <tr>
+      <td><b>Installation Type</b></td>
+      <td>In-line flange connection</td>
+    </tr>
+  </tbody>
 </table>
-
 
           )}      
 

@@ -248,7 +248,7 @@ ContOil® Inline Oil Flow Meter -</li>
                     className="Icon" // Your original class name
                   /> 
                 </span>
-For Boilers, Generators, and Engine Test Benches</li>
+For Boilers, Generators, and Engine Test Benches.</li>
 <li className="mb-2 list-item-with-icon"> {/* Added a helper class for consistent styling */}
                 <span> 
                   <img 
@@ -257,7 +257,7 @@ For Boilers, Generators, and Engine Test Benches</li>
                     className="Icon" // Your original class name
                   /> 
                 </span>
-High Accuracy Volumetric Flow Meters</li>
+High Accuracy Volumetric Flow Meters.</li>
             </ul>
             
             <button className="my-2 btn-enquiry">
@@ -363,20 +363,58 @@ High Accuracy Volumetric Flow Meters</li>
 
           {activeTab === "Technical data" && (
             <table className="tech-specs-table">
-<tr><th>Parameter</th><th>Value</th></tr>
-<tr><td>Principle</td><td>Transit Time, CE approved</td></tr>
-<tr><td>Pipe Range</td><td>13mm ID to 10,000mm OD</td></tr>
-<tr><td>Transducer Operating Temp</td><td>-20°C to +135°C (Optional Hi-Temp -20°C to +200°C)</td></tr>
-<tr><td>Display</td><td>Shows flow rate, total flow, signal and battery level Non-invasive sensing</td></tr>
-<tr><td>Language options</td><td>English, French, German, Spanish</td></tr>
-<tr><td>Carrying case</td><td>IP67 Rated</td></tr>
-<tr><td>Battery or mains operation</td><td>Battery Life 14 Hours, 2.5 Hours charging time</td></tr>
-<tr><td>Accuracy</td><td>+/-0.5% to +/-3% dependent on flow and pipe size</td></tr>
-<tr><td>Turn Down Ratio</td><td>100:1</td></tr>
-<tr><td>Data Communications</td><td>USB, supports most USB 2.0 BOM drives.</td></tr>
-<tr><td>Output</td><td>3 x Pulse Output, 4-20mA Output</td></tr>
-<tr><td>Data Logging</td><td>100,000,000 data points. 12 named sites. Download via USB to CSV file and export to Excel.</td></tr>
-<tr><td>Temperature Sensors</td><td>Clamp-on PT100 Class B 4 wire, range 0°C – 200°C (32°F – 392°F), resolution 0.1°C (0.18°F). Minimum delta T is 0.3°C (Optional).</td></tr>
+ <thead>
+    <tr>
+      <th><b>Parameter</b></th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Pipe Range</b></td>
+      <td>DN4 - DN80</td>
+    </tr>
+    <tr>
+      <td><b>Outputs</b></td>
+      <td>Pulse, Analog 4-20 mA continuous for remote monitoring</td>
+    </tr>
+    <tr>
+      <td><b>Power Supply</b></td>
+      <td>External power supply with Battery Back-up option</td>
+    </tr>
+    <tr>
+      <td><b>Connection Types</b></td>
+      <td>Flange (DIN, ANSI, JIS), threaded ends</td>
+    </tr>
+    <tr>
+      <td><b>Accuracy</b></td>
+      <td>0.5% to 1%</td>
+    </tr>
+    <tr>
+      <td><b>Viscosity & Temperature Effect</b></td>
+      <td>Independent of viscosity and temperature</td>
+    </tr>
+    <tr>
+      <td><b>Display</b></td>
+      <td>Mechanical display with Resettable Totalizer</td>
+    </tr>
+    <tr>
+      <td><b>Straight Run Requirement</b></td>
+      <td>No straight run required</td>
+    </tr>
+    <tr>
+      <td><b>Temperature Range</b></td>
+      <td>130°C and 180°C</td>
+    </tr>
+    <tr>
+      <td><b>Nominal Pressure</b></td>
+      <td>PN 16, 25 and 40 Bar</td>
+    </tr>
+    <tr>
+      <td><b>Suitable Applications</b></td>
+      <td>Heating fuel Extra light / Light, Medium, Heavy naphtha, diesel, petrol, and other lubricating liquids (Oils)</td>
+    </tr>
+  </tbody>
 </table>
 
 
