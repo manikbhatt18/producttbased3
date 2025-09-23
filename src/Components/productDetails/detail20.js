@@ -329,14 +329,18 @@ Replaces outdated turbine and rotary meters with a <b>low-maintenance, solid-sta
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
                       
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
+  <li>
+    <strong>High Accuracy Measurement:</strong> Volume accuracy of ±1.2% to ±2.3%, with optional calibration to ±0.75%.
+  </li>
+  <li>
+    <strong>Advanced Ultrasonic Technology:</strong> Measures flow by analyzing time-of-flight differences in ultrasonic pulses.
+  </li>
+  <li>
+    <strong>Temperature &amp; Pressure Compensation:</strong> Auto-adjusts to environmental changes for reliable standard volume output.
+  </li>
+  <li>
+    <strong>Wide Dynamic Range:</strong> Up to <strong>1:400</strong> (standard); <strong>1:600</strong> with Ultra-Nxt 2024 Pro version.
+  </li></ul>
 
 
 
@@ -345,17 +349,18 @@ Replaces outdated turbine and rotary meters with a <b>low-maintenance, solid-sta
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li>
+    <strong>Built-in Data Logger:</strong> Hourly, daily, and monthly data archiving with alarms and event logs.
+  </li>
+  <li>
+    <strong>Multiple Communication Protocols:</strong> RS-232, RS-485, optical port.
+  </li>
+  <li>
+    <strong>Robust Environmental Tolerance:</strong> IP66 rated, explosion-proof (1Ex ib IIB T4 Gb X), operates from -40°C to +60°C.
+  </li>
+  <li>
+    <strong>Flexible Installation:</strong> Compact design with vertical or horizontal configuration; compatible with G10 to G4000 gas meter sizes.
+  </li>
 </ul>
                       </div>
                     </div>

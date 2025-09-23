@@ -333,15 +333,24 @@ Whether looking to <b>reduce compressed air costs</b>, <b>monitor compressor eff
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
                       
+ <li>
+    <strong>No Pressure Loss</strong><br/>
+    Designed with a clear flow path and no moving parts, the TRX ensures <strong>zero pressure drop</strong> and <strong>zero energy loss</strong>, improving system efficiency.
+  </li>
+  <li>
+    <strong>Long-Term Accuracy &amp; Maintenance-Free Operation</strong><br/>
+    The TRX provides <strong>high-accuracy air flow measurement</strong> without degradation over time—<strong>no recalibration</strong>, <strong>no filter replacements</strong>, and <strong>no scheduled maintenance for up to 10 years</strong>.
+  </li>
+  <li>
+    <strong>Exceptional Durability in Harsh Environments</strong><br/>
+    With a robust build resistant to <strong>oil mist, moisture, and dust</strong>, the TRX performs reliably in contaminated or unfiltered compressed air lines.
+  </li>
+  <li>
+    <strong>Leak Detection &amp; Low Flow Sensitivity</strong><br/>
+    Thanks to its wide turndown ratio (<strong>1:60</strong>), the TRX precisely detects <strong>low flow rates</strong> and <strong>air leaks</strong>, enabling proactive maintenance and energy savings.
+  </li>
 
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
 </ul>
-
 
 
 
@@ -349,18 +358,20 @@ Whether looking to <b>reduce compressed air costs</b>, <b>monitor compressor eff
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
+  <li>
+    <strong>Reverse Flow Measurement</strong><br/>
+    Capable of monitoring <strong>bi-directional flow</strong>, it's perfect for <strong>loop piping systems</strong> and inter-factory air distribution.
+  </li>
+  <li>
+    <strong>Multiple Gas Compatibility</strong><br/>
+    Suitable for <strong>air, nitrogen, and inert gases</strong>, with multiple output options including <strong>RS485 Modbus</strong>, <strong>analog (4-20 mA)</strong>, <strong>pulse</strong>, and <strong>alarm signals</strong>.
+  </li>
+  <li>
+    <strong>Energy Optimization Ready</strong><br/>
+    When paired with a <strong>watt-hour meter</strong>, the TRX helps calculate the <strong>air/power ratio (kW/m³)</strong>, offering real-time insight into <strong>compressor efficiency</strong> and operational cost.
+  </li>
 </ul>
-</li>
-</ul>
+
                       </div>
                     </div>
                   )}

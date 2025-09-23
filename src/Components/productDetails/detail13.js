@@ -331,12 +331,13 @@ Its strength lies in handling <b>viscous and low-viscosity fluids at very low fl
                       
 
 
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
+ <li>Compact and robust oval gear flow sensor for micro and low-flow applications</li>
+  <li>High repeatability with ±0.5% accuracy for stable flow control</li>
+  <li>Viscous fluid compatible – ideal for AdBlue, diesel exhaust fluid (DEF), kerosene, oils, and chemical additives</li>
+  <li>No need for straight pipe runs – install in tight piping layouts</li>
+  <li>Minimal pressure loss and excellent response to pulsating flows</li>
+  <li>Wide flow range: as low as 0.5 L/h up to 200 L/h, depending on model</li>
+  <li>Available in multiple connection sizes (Rc ¼, Rc ⅜)</li></ul>
 
 
 
@@ -345,17 +346,11 @@ Its strength lies in handling <b>viscous and low-viscosity fluids at very low fl
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li>Resistant to fluid temperature up to 80°C</li>
+  <li>Simple mechanical structure – no power required for basic models</li>
+  <li>Optional digital output models for remote monitoring or OEM integration</li>
+  <li>Made in Japan – Aichi Tokei Denki precision quality</li>
+  <li>Offered in India by IOTAFLOW Systems Pvt. Ltd.</li>
 </ul>
                       </div>
                     </div>

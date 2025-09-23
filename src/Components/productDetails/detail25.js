@@ -16,9 +16,8 @@ import img6 from "../../images/d25f.png";
 
 
 import related1 from "../../images/d24a.png";
-import related2 from "../../images/d11a.png";
-import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p5a.png";
+import related2 from "../../images/d13a.png";
+import related3 from "../../images/d11a.png";
 
 
 
@@ -165,8 +164,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail24" },
-    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail11" },
+    { img: related1, title: "Metal Tube Rotameters", link: "/product-detail/detail24" },
+    { img: related2, title: "OFZ Micro Stream Flow Sensor", link: "/product-detail/detail13" },
+        { img: related3, title: "ContOil / RPD Oil Flow Meters", link: "/product-detail/detail11" }
     // { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     // { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];
@@ -336,11 +336,29 @@ Available with multiple connection types, materials, and optional accessories li
                       
 
 
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>
+    <strong>Wide Application Range</strong> – Suitable for liquids, gases, steam, chemicals, oils, and water
+  </li>
+  <li>
+    <strong>High Accuracy</strong> – ±2–3% of full scale, repeatability of 0.5%, rangeability 10:1
+  </li>
+  <li>
+    <strong>Robust Construction</strong> –
+    <ul>
+      <li><strong>Acrylic:</strong> Crystal-clear body for direct reading</li>
+      <li><strong>Glass Tube:</strong> Borosilicate glass with stress-free mounting design</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Material Options</strong> – SS316, SS304, PTFE, PVC, Monel, PP
+  </li>
+  <li>
+    <strong>Pressure &amp; Temperature Capability</strong> –
+    <ul>
+      <li><strong>Acrylic:</strong> up to 60°C, 2–25 kg/cm²</li>
+      <li><strong>Glass:</strong> up to 200°C, up to 20 kg/cm² (depending on model)</li>
+    </ul>
+  </li>
 </ul>
 
 
@@ -350,18 +368,20 @@ Available with multiple connection types, materials, and optional accessories li
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
+  <li>
+    <strong>Connection Types</strong> – Flanged, threaded, Tri-Clamp, sanitary
+  </li>
+  <li>
+    <strong>Accessory Options</strong> – Hi/Low flow switches, steam jacket, 4–20 mA transmitter
+  </li>
+  <li>
+    <strong>Maintenance-Friendly</strong> – Field-replaceable tubes (glass type) without disturbing end connections
+  </li>
+  <li>
+    <strong>Customization Available</strong> – Scales, sizes, and connections tailored for OEM requirements
+  </li>
 </ul>
-</li>
-</ul>
+
                       </div>
                     </div>
                   )}

@@ -322,15 +322,21 @@ With robust construction, negligible pressure drop, and advanced signal processi
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
+<li>
+    Accurate flow measurement for <strong>steam, gas, and liquids</strong> in large pipelines (≥ DN300).
+  </li>
+  <li>
+    <strong>No moving parts</strong> – reduces wear, leakage, and long-term maintenance.
+  </li>
+  <li>
+    <strong>Hot-tap installation</strong> with ball valve option – no shutdown required for servicing.
+  </li>
+  <li>
+    <strong>Negligible pressure loss</strong> even in very large diameter pipes.
+  </li>
+  <li>
+    Advanced <strong>digital signal processing</strong> with vibration compensation for stability.
+  </li></ul>
 
 
 
@@ -339,17 +345,18 @@ With robust construction, negligible pressure drop, and advanced signal processi
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li>
+    Wide communication options: <strong>RS485 / Modbus / HART / GPRS.</strong>
+  </li>
+  <li>
+    Available in <strong>IP65/IP67 protection</strong> and optional <strong>explosion-proof design.</strong>
+  </li>
+  <li>
+    Custom calibration ensures accuracy across varied operating conditions.
+  </li>
+  <li>
+    Cost-effective alternative to inline meters for <strong>water, chemical, oil &amp; gas, and utilities.</strong>
+  </li>
 </ul>
                       </div>
                     </div>

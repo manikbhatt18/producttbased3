@@ -359,14 +359,26 @@ Efficient in chlorine gas, aeration airflow, and process water flow measurement 
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>
+    <strong>No Moving Parts</strong><br/>
+    Maintenance-free design eliminates wear, leaks, and mechanical failure, ensuring <strong>long-term reliability and low lifecycle cost</strong>.
+  </li>
+  <li>
+    <strong>Custom-designed for process fit</strong><br/>
+    Eliminates need for pipe size modification, ensuring zero additional pressure drop for <strong>Covering low flow measurement</strong> requirements without sacrificing accuracy or stability.
+  </li>
+  <li>
+    <strong>SS 316L Stainless Steel Construction</strong><br/>
+    Rugged and corrosion-resistant, with <strong>industry-standard flange and wafer connections</strong> for flexible installation.
+  </li>
+  <li>
+    <strong>Optimized for Saturated and Superheated Steam</strong><br/>
+    Engineered for high-temperature steam flow with integrated pressure and temperature compensation, <strong>enabling accurate metering of saturated and superheated steam in boilers and thermal processes</strong>.
+  </li>
+  <li>
+    <strong>Wide Flow Turndown Ratio (Up to 1:20)</strong><br/>
+    Perfect for <strong>low-flow applications</strong> with exceptional rangeability, ideal for steam distribution, compressed air systems, and process gas.
+  </li>
 </ul>
 
 
@@ -376,17 +388,26 @@ Efficient in chlorine gas, aeration airflow, and process water flow measurement 
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+ <li>
+    <strong>Negligible Pressure Drop</strong><br/>
+    Delivers <strong>up to 90% lower pressure loss compared to orifice meters</strong>, maximizing system efficiency and reducing energy costs.
+  </li>
+  <li>
+    <strong>IBR Approved</strong><br/>
+    Certified for compliance with <strong>Indian Boiler Regulations</strong>, ensuring suitability for regulated steam and boiler applications.
+  </li>
+  <li>
+    <strong>High Accuracy and Repeatability</strong><br/>
+    Offers ±0.5% accuracy, ±0.2% repeatability, and robust performance even under fluctuating process conditions.
+  </li>
+  <li>
+    <strong>Universal Media Compatibility</strong><br/>
+    Accurately measures air, steam, natural gas, nitrogen, and non-conductive liquids in multi-industry environments.
+  </li>
+  <li>
+    <strong>Digital Communication Ready</strong><br/>
+    Supports RS485, MODBUS, HART, and GPRS, facilitating seamless integration with DCS, PLC, and SCADA systems.
+  </li>
 </ul>
                       </div>
                     </div>

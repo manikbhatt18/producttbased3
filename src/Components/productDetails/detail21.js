@@ -331,14 +331,27 @@ The GasPro RPD Gas Meter is ideal for critical and large-scale gas flow measurem
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
                       
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
+<li>
+    <strong>Rotary piston displacement technology</strong> for <strong>high-accuracy gas flow measurement</strong>
+  </li>
+  <li>
+    <strong>Wide flow range</strong> with turndown ratios up to <strong>120:1</strong> for dynamic demand
+  </li>
+  <li>
+    <strong>Sizes from DN25 to DN200</strong>; flow rates up to <strong>1600 m³/h</strong>
+  </li>
+  <li>
+    <strong>Material options:</strong> Aluminum alloy, cast steel, stainless steel (based on pressure class)
+  </li>
+  <li>
+    <strong>Pressure ratings:</strong> 1.0 – 1.6 MPa
+  </li>
+  <li>
+    Integrated pressure and temperature sensors for <strong>real-time compensation</strong>
+  </li>
+  <li>
+    <strong>Communication-ready:</strong> RS485 Modbus, pulse output, 4–20 mA analog
+  </li></ul>
 
 
 
@@ -347,17 +360,24 @@ The GasPro RPD Gas Meter is ideal for critical and large-scale gas flow measurem
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+<li>
+    <strong>Battery-powered (up to 11 years)</strong> or external power options
+  </li>
+  <li>
+    <strong>Compatible with IOTAFLOW’s EVCs and dataloggers</strong> for telemetry and remote reading
+  </li>
+  <li>
+    <strong>Low pressure drop</strong>, minimal maintenance, long service life
+  </li>
+  <li>
+    <strong>CGD, industrial, and utility-grade metering</strong>, MID and ATEX certified variants available
+  </li>
+  <li>
+    <strong>Operating temperature:</strong> -25°C to +80°C; gas media up to +60°C
+  </li>
+  <li>
+    <strong>Tamper-proof construction</strong> for field reliability
+  </li>
 </ul>
                       </div>
                     </div>

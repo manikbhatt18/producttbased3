@@ -15,9 +15,8 @@ import img5 from "../../images/d24e.png";
 
 
 import related1 from "../../images/d25a.png";
-import related2 from "../../images/d12a.png";
-import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p5a.png";
+import related2 from "../../images/d13a.png";
+import related3 from "../../images/d12a.png";
 
 
 
@@ -164,7 +163,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
-    { img: related2, title: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
+        { img: related2, title: "OFZ Micro Stream Flow Sensor", link: "/product-detail/detail13" },
+
+    { img: related3, title: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
     // { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     // { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];
@@ -340,14 +341,24 @@ Ideal for utilities, chemical plants, food & beverage, oil & gas, and process in
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>
+    <strong>Measures liquids, gases, and steam</strong> with high accuracy (±2% FS, optional ±1.6% FS)
+  </li>
+  <li>
+    <strong>Rugged SS316 / PTFE-lined construction</strong> for corrosive media
+  </li>
+  <li>
+    <strong>Wide flow ranges:</strong> 0.1 Nm³/h to 450 Nm³/h air; 30 L/h to 150,000 L/h water
+  </li>
+  <li>
+    Handles up to <strong>300°C fluid temperature</strong>
+  </li>
+  <li>
+    Operates at <strong>max pressure 40 kg/cm²</strong> (optional 100 kg/cm²)
+  </li>
+  <li>
+    Magnetic coupling ensures no direct contact between indicator and process fluid
+  </li>
 </ul>
 
 
@@ -357,18 +368,23 @@ Ideal for utilities, chemical plants, food & beverage, oil & gas, and process in
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
+  <li>
+    Multiple outputs: <strong>micro-switch, inductive alarm, 4–20 mA transmitter</strong>
+  </li>
+  <li>
+    Housing protection: <strong>IP65/IP67</strong>, optional <strong>Explosion Proof</strong>
+  </li>
+  <li>
+    Flexible mounting lengths: standard 250 mm, explosion proof 350 mm
+  </li>
+  <li>
+    Multiple process connections: <strong>flange, tri-clamp, sanitary, threaded</strong>
+  </li>
+  <li>
+    Suitable for clean or slightly dirty fluids
+  </li>
 </ul>
-</li>
-</ul>
+
                       </div>
                     </div>
                   )}

@@ -352,14 +352,22 @@ Whether you're measuring corrosive gases, hot steam, or low-pressure flows, the 
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>
+    <strong>High Accuracy (±1.0%) &amp; Repeatability (±0.5%)</strong><br/>
+    Engineered to deliver consistent performance in harsh and variable flow environments.
+  </li>
+  <li>
+    <strong>Wide Turndown Ratio</strong><br/>
+    Handles flow variation with ease—up to <strong>10:1 rangeability</strong>, compared to 3:1 in conventional orifice meters.
+  </li>
+  <li>
+    <strong>Minimal Signal Noise</strong><br/>
+    Generates a high-frequency, <strong>low-noise signal</strong>, perfect for applications involving gases and steam where signal stability is critical.
+  </li>
+  <li>
+    <strong>Self-Conditioning Flow Design</strong><br/>
+    The cone acts as an integrated flow conditioner, eliminating the need for long straight piping (only <strong>0–3D upstream</strong> and <strong>0–1D downstream</strong> required).
+  </li>
 </ul>
 
 
@@ -369,18 +377,24 @@ Whether you're measuring corrosive gases, hot steam, or low-pressure flows, the 
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
+  <li>
+    <strong>Low Head Loss</strong><br/>
+    Optimized design reduces pressure drop, improving overall system efficiency and reducing energy costs.
+  </li>
+  <li>
+    <strong>Built for Harsh Media</strong><br/>
+    Available in corrosion- and heat-resistant materials including <strong>SS316, SS304, Duplex, Hastelloy, and Carbon Steel</strong>—tailored to suit aggressive gases and steam.
+  </li>
+  <li>
+    <strong>Custom Sizing from 0.5” to 120”+</strong><br/>
+    Flexible for small pipelines or massive plant installations. Available in <strong>flanged, threaded, or welded-end connections</strong>.
+  </li>
+  <li>
+    <strong>Smart Instrumentation Integration</strong><br/>
+    Compatible with digital indicators, totalizers, 3-way manifolds, and differential pressure transmitters.
+  </li>
 </ul>
-</li>
-</ul>
+
                       </div>
                     </div>
                   )}

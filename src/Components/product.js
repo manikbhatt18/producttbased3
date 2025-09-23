@@ -12,10 +12,10 @@ import img2 from "../images/d1b.png";
 import img3 from "../images/d1c.png";
 import img4 from "../images/d1d.png";
 
-import related1 from "../images/p2a.png";
-import related2 from "../images/p3a.jpg";
-import related3 from "../images/p4a.jpg";
-import related4 from "../images/p5a.png";
+import related1 from "../images/d2a.png";
+import related2 from "../images/d3a.png";
+import related3 from "../images/d4a.png";
+import related4 from "../images/d5a.png";
 
 
 

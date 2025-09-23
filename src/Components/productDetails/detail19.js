@@ -341,14 +341,30 @@ Engineered for low-maintenance operation in off-grid or semi-urban regions.<br/>
                         <ul className="list-unstyled feature-list-spaced">
                       
 
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
-
+ <li>
+    <strong>Wide Flow Range for Industrial Use</strong><br/>
+    Handles high gas volumes up to <strong>10,000 m³/h</strong>, ideal for large industrial gas metering in India.
+  </li>
+  <li>
+    <strong>Available in Multiple Pipe Sizes (DN 50 to DN 200)</strong><br/>
+    Fits standard Indian gas pipeline sizes used in CGD and industrial setups.<br/>
+    Flanged connections simplify integration into existing gas distribution networks.
+  </li>
+  <li>
+    <strong>High Accuracy with Legal Metrology Compliance</strong><br/>
+    Offers ±1% or ±1.5% accuracy as per industry standards, ensuring <strong>billing-grade precision</strong>.<br/>
+    Can be certified under India's <strong>Legal Metrology Act</strong> for regulated gas trade.
+  </li>
+  <li>
+    <strong>Robust Design for Harsh Indian Conditions</strong><br/>
+    Built to perform in dusty, high-temperature industrial environments across India.<br/>
+    Durable aluminum or steel body resists corrosion, vibration, and mechanical stress.
+  </li>
+  <li>
+    <strong>Pulse Output Compatibility for Smart Gas Monitoring</strong><br/>
+    Equipped with LF and HF pulse outputs for easy integration with SCADA and AMR systems.<br/>
+    Supports India's move toward smart metering under city gas distribution (CGD) projects.
+  </li></ul>
 
 
 
@@ -356,17 +372,26 @@ Engineered for low-maintenance operation in off-grid or semi-urban regions.<br/>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+<li>
+    <strong>Digital Metering Ready with IoT Integration</strong><br/>
+    Compatible with remote telemetry, GPRS/4G, and cloud platforms for real-time tracking.<br/>
+    Perfect for smart pay, SEZ, and ULB utility gas infrastructure.
+  </li>
+  <li>
+    <strong>Minimal Pressure Loss for Efficient Gas Flow</strong><br/>
+    Turbine design minimizes pressure drop, improving energy efficiency in gas supply.<br/>
+    Reduces operational costs for Indian industrial and utility gas consumers.
+  </li>
+  <li>
+    <strong>Low Maintenance &amp; Long Service Life</strong><br/>
+    Designed for extended operational life with minimal service needs in remote or rural areas.<br/>
+    Ideal for Indian oil &amp; gas, PSU projects requiring reliable long-term metering.
+  </li>
+  <li>
+    <strong>MID &amp; EN 12261 Certified for Global and Indian Utility Projects</strong><br/>
+    International certifications ensure acceptance in Indian PSU, CGD, and multinational tenders.<br/>
+    Backed by ISO 9001:2015 manufacturing quality for consistent performance.
+  </li>
 </ul>
                       </div>
                     </div>

@@ -315,14 +315,24 @@ Available with <b>RS485 and 4–20 mA outputs</b>, plus external power or long-l
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>
+    <strong>Ultrasonic transit-time measurement</strong> with <strong>no moving parts</strong> and negligible pressure drop
+  </li>
+  <li>
+    <strong>Dual measurement</strong> – flow rate and methane concentration in one device
+  </li>
+  <li>
+    Optional <strong>temperature and pressure compensation</strong> for precise volumetric correction
+  </li>
+  <li>
+    <strong>Wide flow range</strong> with high turndown ratio for low to high flow conditions
+  </li>
+  <li>
+    <strong>Resistant to corrosion from H₂S and moisture</strong>
+  </li>
+  <li>
+    Works effectively with <strong>wet, dirty biogas</strong> without performance loss
+  </li>
 </ul>
 
 
@@ -332,17 +342,21 @@ Available with <b>RS485 and 4–20 mA outputs</b>, plus external power or long-l
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+ <li>
+    <strong>Bypass design</strong> in UF-BioSonic 2 model to reduce condensate impact and extend meter life
+  </li>
+  <li>
+    <strong>Long-life industrial lithium battery</strong> (&gt;5 years) or external power supply
+  </li>
+  <li>
+    <strong>Maintenance-free</strong> operation and simple installation without pipeline interruption
+  </li>
+  <li>
+    <strong>Communication-ready:</strong> RS485 Modbus / 4–20 mA analog output
+  </li>
+  <li>
+    Stainless steel body for durability in <strong>industrial and outdoor installations</strong>
+  </li>
 </ul>
                       </div>
                     </div>
