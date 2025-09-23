@@ -321,13 +321,7 @@ AMR-ready, durable brass body, low start flow.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p> The <b>Apator Powogaz Smart D+ Single-Jet Water Meter</b> is a high-accuracy single-jet water meter designed for residential, commercial, and municipal water metering projects in India. It features advanced vane-wheel technology, hermetically sealed counters for fog resistance, and robust tamper protection to ensure long-term reliability in challenging environments. The meter is MID-compliant with an R200 measurement range and supports wired or wireless AMR communication modules. It allows installation in horizontal and vertical positions without requiring straight pipe runs, providing low starting flow sensitivity and resistance to external magnetic fields. The durable brass body and high-quality internal components ensure extended service life. </p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -338,16 +332,7 @@ AMR-ready, durable brass body, low start flow.</li>
           margin: '2rem 0'
         }} />
           <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+<ul> <li><b>Residential water metering</b> for single-family and multi-family housing water supply</li> <li><b>Commercial buildings</b> such as hotels, office complexes, and retail facilities</li> <li><b>Industrial utilities</b> including factories and processing plants requiring accurate water tracking</li> <li><b>Municipal water supply networks</b> for cold and hot water distribution systems</li> <li><b>Smart water metering projects</b> integrated with AMR/AMI systems for automated billing</li> </ul>
 
                       </div>
                     </div>

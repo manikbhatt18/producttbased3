@@ -288,13 +288,12 @@ Designed for Indian conditions with minimal pressure loss and long-term reliabil
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
+<p>
 
+The <b>EQZ radial turbine gas meters by Elgas</b> are engineered for <b>high-precision measurement of natural gas and other clean, non-corrosive gases</b>.<br/>
+Widely adopted across India, these meters deliver <b>accurate volumetric flow readings</b> in both industrial and commercial gas distribution networks.<br/>
+Designed for performance in <b>high-temperature environments</b> and challenging climatic conditions, EQZ meters ensure <b>long-term reliability</b>, minimal pressure loss, and easy integration with telemetry and smart metering systems.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -304,17 +303,32 @@ Designed for Indian conditions with minimal pressure loss and long-term reliabil
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+          <p>
+<b>Applications of EQZ Turbine Gas Meters in India</b><br/>
+<b>Industrial Gas Flow Monitoring:</b> Used for high-accuracy measurement of natural gas consumption in steel plants, refineries, and chemical industries.<br/>
+Ideal for process control and energy optimization in large-scale industrial operations.<br/>
+<br/>
+<b>City Gas Distribution (CGD) Networks:</b> Widely applied in urban gas distribution under CGD projects approved by PNGRB in India.<br/>
+Ensures reliable flow data for billing and pipeline integrity in municipal gas supply systems.<br/>
+<br/>
+<b>Power Plants & Captive Power Units:</b> Used in gas-based thermal and combined cycle power plants for metering fuel gas input.<br/>
+Enables fuel efficiency tracking and regulatory compliance with CEA and DISCOM requirements.<br/>
+<br/>
+<b>Commercial & Utility Metering:</b> Installed in commercial complexes, malls, hospitals, and SEZs for accurate utility gas billing.<br/>
+Supports LPG, PNG, and CNG distribution within multi-tenant and shared infrastructure setups.<br/>
+<br/>
+<b>Oil & Gas Pipelines (Upstream/Midstream):</b> Deployed in custody transfer and flow measurement of natural gas across oil & gas pipeline networks.<br/>
+Suitable for ONGC, GAIL, IndianOil, and EPC contractor projects requiring robust metering.<br/>
+<br/>
+<b>EPC and Infrastructure Projects:</b> Used in gas metering packages supplied to large EPC firms executing infrastructure and industrial projects.<br/>
+Preferred by L&T, Tata Projects, and other contractors for government and private sector builds.<br/>
+<br/>
+<b>Research, Labs & Calibration Centers:</b> Used in metrology labs and test benches for calibrating flow systems and developing gas control technologies.<br/>
+Supports precision testing for R&D in Indian energy and mechanical engineering institutes.<br/>
+<br/>
+<b>Rural & Remote Industrial Clusters:</b> Installed in decentralized energy systems, agro-industries, and remote industrial gas networks.<br/>
+Engineered for low-maintenance operation in off-grid or semi-urban regions.<br/>
+</p>
 
                       </div>
                     </div>

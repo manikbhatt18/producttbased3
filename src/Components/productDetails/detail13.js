@@ -284,13 +284,16 @@ AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+The <b>OF-Z Microstream Flow Sensor</b> from <b>Aichi Tokei Denki, Japan</b> is a compact, high-precision <b>oval gear flow sensor</b> designed for <b>low flow rate measurement</b> of viscous fluids such as <b>AdBlue, kerosene, heavy oil, and lubricants</b>.<br/>
+It is ideal for applications requiring <b>excellent repeatability</b>, precise control, and reliable fluid dispensing in <b>industrial and automotive</b> environments.<br/>
+<br/>
+Built using Aichi’s micro-flow technology, the OF-Z delivers <b>accurate volumetric measurement</b> without being affected by fluid viscosity or pulsation.<br/>
+Its simple mechanical structure ensures <b>long-term stability and easy installation</b>, even in narrow or confined spaces.<br/>
+<br/>
+As a channel partner in India, <b>IOTAFLOW Systems</b> brings this advanced Japanese technology to OEMs, industrial users, and process control engineers in India.<br/>
+<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -300,16 +303,20 @@ AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Applications</b><br/></p>
+The <b>OF-Z Microstream Flow Sensor</b> is purpose-built for <b>microfluidic and precision liquid metering applications</b> across several industrial sectors.<br/>
+Its strength lies in handling <b>viscous and low-viscosity fluids at very low flow rates</b>, making it perfect for:<br/>
+<br/>
+<b>AdBlue (DEF) dispensing systems</b> for automotive OEMs<br/>
+<b>Fuel dosing systems</b> using kerosene, heavy oil, and diesel<br/>
+<b>Lubrication systems</b> in industrial machinery<br/>
+<b>Process control in chemical dosing</b> for additives and stabilizers<br/>
+<b>Thermal power plant chemical injection</b><br/>
+<b>Printing, textile, and packaging industries</b> requiring accurate liquid flow<br/>
+<b>OEM manufacturing lines</b> needing embedded flow control sensors<br/>
+<b>Low flow monitoring in skid-mounted systems</b><br/>
+</p>
 
 
                       </div>

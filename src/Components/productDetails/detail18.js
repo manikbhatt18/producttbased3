@@ -287,12 +287,12 @@ Handles harsh conditions with stable signal output and wide media compatibility.
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
+<p>
+The <b>IOTAFLOW Insertion Type Vortex Flow Meter (IVF)</b> is designed for accurate and economical flow measurement in large-diameter pipelines.<br/>
+Based on the Kármán vortex shedding principle, it provides reliable measurement of <b>steam, gas, and liquid</b> without moving parts, ensuring minimal maintenance and long service life.<br/>
+Ideal for utilities, process industries, and power plants, this meter allows installation without cutting pipe sections, making it cost-effective for retrofit projects.<br/>
+With robust construction, negligible pressure drop, and advanced signal processing, it offers dependable performance even in <b>harsh industrial environments with large diameter pipelines</b>.<br/>
+</p>
 
 
 
@@ -303,17 +303,15 @@ Handles harsh conditions with stable signal output and wide media compatibility.
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+<p>
+<p><b>Applications</b><br/></p>
+<b>Power Plants & Utilities:</b> Steam flow monitoring in boilers, turbines, and distribution networks.<br/>
+<b>Oil & Gas Industry:</b> Natural gas, flare gas, and compressed gas measurement in upstream and downstream operations.<br/>
+<b>Chemical & Petrochemical Plants:</b> Flow measurement of process gases, solvents, and high-temperature steam.<br/>
+<b>Water & Wastewater Treatment:</b> Large pipeline flow monitoring for aeration systems and treated water distribution.<br/>
+<b>Food & Beverage Industry:</b> Steam and compressed air flow measurement in production and cleaning systems.<br/>
+<b>Metals, Pulp & Paper, Textiles:</b> Utility monitoring of steam and condensate in drying and processing operations.<br/>
+</p>
 
                       </div>
                     </div>

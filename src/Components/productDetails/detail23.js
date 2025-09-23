@@ -285,12 +285,15 @@ Ideal for compact installations across energy, steel, mining & process industrie
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
+<p>
+IOTAFLOW CSF – Conical Shaped Flow Meter<br/>
+<br/>
+<b>Accurate Flow Measurement for Complex Gas and Steam Applications</b><br/>
+The <b>IOTAFLOW Conical Shaped Flow Meter (CSF)</b> is a high-performance <b>differential pressure flow meter</b> engineered for challenging industrial conditions where precision, reliability, and compact installation are critical.<br/>
+Its unique <b>centrally suspended cone design</b> reshapes the velocity profile of the flow, resulting in <b>exceptional accuracy, stable signal output, and minimal pressure drop</b>—ideal for industries handling difficult fluids such as <b>Biogas, CBM, Steam, and Dust-Laden Air</b>.<br/>
+<br/>
+Whether you're measuring corrosive gases, hot steam, or low-pressure flows, the CSF meter ensures <b>consistent, repeatable performance</b> with <b>low maintenance and long service life</b>.<br/>
+</p>
 
 
 
@@ -301,16 +304,43 @@ Ideal for compact installations across energy, steel, mining & process industrie
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+        <p>Application-Specific Use Cases</p>
+        <p>Ideal for <b>industrial flow measurement</b> in both standard and aggressive service environments:</p>
+<table style={{ borderCollapse: "collapse", width: "100%" }}>
+  <thead>
+    <tr>
+      <th style={{ border: "1px solid #333", padding: "8px", textAlign: "left" }}>Application Area</th>
+      <th style={{ border: "1px solid #333", padding: "8px", textAlign: "left" }}>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Biogas</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>Measures variable, low-pressure flows with high moisture content and particulates. Excellent for digesters and renewable gas systems.</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Coke Oven Gas</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>Resistant to corrosive and dusty by-products in steel plants; stable in fluctuating operating conditions.</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Coal Bed Methane (CBM)</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>Suitable for low-pressure gas extraction and monitoring in upstream energy sectors.</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Gas Mixtures</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>High accuracy for blended or multi-component gas streams; maintains performance with wide turndown.</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Dust-Laden Air</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>Maintains measurement accuracy even in air with particulates; ideal for ventilation, exhaust, and mining systems.</td>
+    </tr>
+    <tr>
+      <td style={{ border: "1px solid #333", padding: "8px" }}><b>Steam (Saturated/Superheated)</b></td>
+      <td style={{ border: "1px solid #333", padding: "8px" }}>Reduces noise and head loss in both high- and low-pressure steam lines; ideal for power plants and boiler monitoring.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
                       </div>

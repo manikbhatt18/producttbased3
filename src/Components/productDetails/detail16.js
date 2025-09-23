@@ -303,12 +303,15 @@ Handles harsh conditions with stable signal output and wide media compatibility.
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
+<p>
+
+<b>Vortex Flow Meter – Precision Flow Monitoring for Steam, Gas, and Liquid Applications<br/></b>
+<br/>
+The <b>IOTAFLOW Vortex Flow Meter</b> is a high-accuracy flow measurement solution engineered for <b>industrial gas, steam, and liquid applications</b>, including <b>saturated and superheated steam</b>.<br/>
+Based on the <b>Karman vortex shedding principle</b>, it provides <b>reliable, maintenance-free operation</b> with robust signal stability in <b>harsh environments</b>.<br/>
+A unique advantage of our vortex meters is the <b>custom-engineered sizing</b>—designed to perfectly fit your process line <b>without requiring any pipe size modifications</b>.<br/>
+This ensures accurate measurement even for <b>low-flow applications</b>, while avoiding <b>pressure drop</b> or costly piping alterations during installation.<br/>
+</p>
 
 
 
@@ -319,16 +322,32 @@ Handles harsh conditions with stable signal output and wide media compatibility.
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Targeted Application Areas:</b><br/></p>
+<b>Power Plants & Boiler Systems</b><br/>
+Optimized for steam flow measurement in turbine lines, boiler feed systems, and heat recovery loops. Delivers accurate readings in both saturated and superheated steam conditions.<br/>
+<br/>
+<b>Chemical & Petrochemical Industries</b><br/>
+Reliable in aggressive and corrosive process environments. Ideal for measuring process gases, vapors, and utility steam in reactors, pipelines, and heat exchangers.<br/>
+<br/>
+<b>Oil & Gas Industry</b><br/>
+Used in natural gas flow metering, compressed gas distribution, and flare gas monitoring. Offers rugged durability in upstream and downstream operations.<br/>
+<br/>
+<b>Food & Beverage Industry</b><br/>
+Supports CIP (Clean-In-Place) processes with hygienic-grade options. Accurately monitors steam, water, and CO₂ in beverage and dairy production.<br/>
+<br/>
+<b>Pharmaceutical Industry</b><br/>
+Ensures precise steam control for sterilization processes (SIP) and utility management in GMP-compliant environments.<br/>
+<br/>
+<b>Automotive & Metal Processing</b><br/>
+Monitors cooling water, compressed air, and other industrial fluids in high-heat, high-vibration manufacturing conditions.<br/>
+<br/>
+<b>Pulp, Paper & Textiles</b><br/>
+Used for steam and condensate flow tracking in drying processes and for energy optimization in utility services.<br/>
+<br/>
+<b>Water & Wastewater Treatment</b><br/>
+Efficient in chlorine gas, aeration airflow, and process water flow measurement in treatment plants and distribution networks.<br/>
+</p>
 
 
                       </div>

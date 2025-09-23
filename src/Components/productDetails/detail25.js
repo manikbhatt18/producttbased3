@@ -290,13 +290,12 @@ IOTAFLOW acrylic & glass tube rotameters for accurate liquid, gas, and steam flo
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+The <b>IOTAFLOW Acrylic & Glass Tube Rotameter Series</b> offers precise, reliable, and cost-effective variable area flow measurement for liquids, gases, and steam across diverse industries.<br/>
+Our <b>Acrylic Body Rotameters</b> feature a crystal-clear, impact-resistant body with engraved scale, ideal for easy visual monitoring in water treatment, compressed air, and light chemical applications.<br/>
+The <b>Glass Tube Rotameters</b> are built with high-precision borosilicate glass tubes, delivering excellent chemical resistance and accuracy even in demanding process conditions.<br/>
+Available with multiple connection types, materials, and optional accessories like flow switches and transmitters, these rotameters are perfect for <b>process monitoring, industrial utilities, and OEM integration</b>.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -306,17 +305,24 @@ IOTAFLOW acrylic & glass tube rotameters for accurate liquid, gas, and steam flo
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+<p>
+<p><b>Applications</b><br/></p>
+<p><b>Acrylic Tube Rotameters</b><br/></p>
+<b>• Water & Wastewater Treatment</b> — Visual monitoring of raw water, RO feed water, ETP dosing chemicals, and filtration flows<br/>
+<b>• Compressed Air & Gas Lines</b> — Air flow measurement in industrial utilities, HVAC, and pneumatic systems<br/>
+<b>• Light Chemical Processing</b> — Suitable for acids, alkalis, and non-corrosive chemicals at low temperatures<br/>
+<b>• Food & Beverage</b> — Syrups, soft drink bottling, dairy water monitoring, and CIP system flows<br/>
+<b>• Irrigation & Agriculture</b> — Fertigation system dosing, greenhouse water supply monitoring<br/>
+<b>• Laboratory & Pilot Plants</b> — Flow control for small-scale chemical, pharma, and academic research setups<br/>
+<br/>
+<p><b>Glass Tube Rotameters</b><br/></p>
+<b>• Chemical & Petrochemical Plants</b> — Acids, solvents, alkalis, hydrocarbons, and process fluids in corrosive environments<br/>
+<b>• Oil & Gas Industry</b> — Hydrocarbon liquids, fuel oils, LPG vapors, and refinery process streams<br/>
+<b>• Pharmaceutical Manufacturing</b> — Solvent handling, purified water, clean gases in GMP-compliant facilities<br/>
+<b>• Power Plants & Utilities</b> — Boiler feed water, steam lines, and cooling water circuits<br/>
+<b>• Food & Beverage Processing</b> — Process liquids, edible oils, flavor dosing in high-temperature operations<br/>
+<b>• High-Temperature & High-Pressure Applications</b> — Measurement of process media up to 200°C and 20 kg/cm²<br/>
+</p>
 
                       </div>
                     </div>

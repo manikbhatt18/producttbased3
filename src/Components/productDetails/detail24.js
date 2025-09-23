@@ -288,13 +288,14 @@ Made in India for reliable industrial and utility flow measurement.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+The <b>IOTAFLOW Metal Tube Rotameter Series</b> delivers accurate, reliable measurement of liquids, gases, and steam in demanding industrial environments.<br/>
+Built with a robust <b>SS316 stainless steel body</b> (optional PTFE lining) and available in multiple connection types including flanged, sanitary, and tri-clamp, these variable area flow meters are designed for <b>high pressure (up to 100 bar)</b> and <b>high temperature (up to 300°C)</b> service.<br/>
+</p>
+<p>
+With <b>magnetic coupling indication, optional 4–20 mA transmitters, and switch outputs</b>, they ensure safe operation without leakage risk.<br/>
+Ideal for utilities, chemical plants, food & beverage, oil & gas, and process industries requiring dependable flow monitoring.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -304,16 +305,30 @@ Made in India for reliable industrial and utility flow measurement.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Applications</b><br/></p>
+
+<b>Industrial & Process Industries</b><br/>
+<b>• Chemical processing</b> — Monitoring flows of acids, bases, solvents, and reagents in chemical plants and laboratories.<br/>
+<b>• Oil and gas sectors</b> — Measuring fuels, lubricants, condensate, and vented gases under high temperature and high-pressure conditions.<br/>
+<b>• High-pressure offshore systems</b> — Used on oil platforms for drilling mud, hydraulic fluids, and high-temperature coolant metering.<br/>
+<br/>
+
+<b>Utilities & Water Treatment</b><br/>
+<b>• Water and wastewater plants</b> — Measuring raw and treated water, chemical dosing flows, and air/gas lines during treatment.<br/>
+<b>• Power generation</b> — Monitoring boiler feedwater, cooling fluid, and steam flows in thermal and renewable power stations.<br/>
+<br/>
+
+<b>Pharmaceutical, Food & Beverage</b><br/>
+<b>• Pharma manufacturing</b> — Measuring flows of pure water, solvents, reagents in sterile plant environments.<br/>
+<b>• Food and beverage industry</b> — Used for ingredient dosing, syrup and oil flow control, and sanitary process monitoring.<br/>
+<br/>
+
+<p><b>Specialty & Advanced Applications</b><br/></p>
+<b>• Semiconductor fabrication</b> — Monitoring specialty gases and ultra-pure fluids in cleanroom and labs.<br/>
+<b>• Research & development</b> — Utility in pilot plants, R&D flow validation, safely handling variable or corrosive fluids.<br/>
+<b>• Transport systems</b> — Used to regulate the flow of LNG vapors during regasification, especially valuable in loading/unloading operations.<br/>
+</p>
 
 
                       </div>

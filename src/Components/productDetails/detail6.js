@@ -317,13 +317,8 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>The <b>UF AV5500</b> from <b>IOTAFLOW</b> is a high-performance <b>area-velocity ultrasonic flow meter</b>, purpose-built to <b>accurately measure flow in open channels, natural streams, stormwater drains, and partially-filled pipes</b> —without requiring flumes or weirs.</p>
+<p> This advanced system utilizes a <b>submerged ultrasonic Doppler sensor</b> to simultaneously measure <b>velocity and level</b>, calculating flow volume in real-time. Ideal for <b>wastewater</b>, <b>industrial effluent</b>, <b>stormwater monitoring</b>, and <b>irrigation flow measurement</b>, the UF AV5500 delivers <b>CE, CSA, and UL-certified reliability</b> in harsh field conditions.</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -334,15 +329,25 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
           margin: '2rem 0'
         }} />
           <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
+<ul>
+<li><b>Wastewater flow monitoring</b> in sewer lines and treatment plants </li>
+
+<li><b>Stormwater discharge measurement</b> in municipal drainage systems </li>
+
+<li><b>Effluent tracking</b> in industrial process lines and outfalls </li>
+
+<li><b>Irrigation and canal water flow measurement</b> </li>
+
+<li><b>Environmental stream flow studies and hydrological monitoring</b> </li>
+
+<li><b>Retrofit flow metering</b> in existing gravity-fed and partially filled pipelines </li>
+
+<li><b>Smart water data logging</b> for regulatory reporting and analytics </li>
+
+
 </ul>
+
+
 
 
                       </div>

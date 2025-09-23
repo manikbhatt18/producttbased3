@@ -277,13 +277,14 @@ Accurate, durable & maintenance-free.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+The <b>UF-BioSonic Series</b> from <b>IOTAFLOW</b> is an advanced ultrasonic flow meter designed specifically for <b>biogas measurement</b> in demanding environments such as landfills, <b>wastewater treatment plants, anaerobic digesters, and bio-methane facilities</b>.<br/>
+Using <b>ultrasonic transit-time technology</b>, it ensures <b>accurate, stable, and maintenance-free operation</b>, even in wet and corrosive biogas containing high H₂S and CO₂ levels.<br/>
+<br/>
+With <b>no moving parts</b>, zero pressure drop, and integrated <b>methane content measurement</b> (30–100% Vol), the UF-BioSonic offers both <b>flow rate and CH₄ analysis</b> in a single unit.<br/>
+The robust stainless steel construction, optional temperature and pressure compensation, and <b>IP65 protection</b> guarantee long service life.<br/>
+Available with <b>RS485 and 4–20 mA outputs</b>, plus external power or long-life battery options, it is ideal for <b>continuous monitoring and process optimization in biogas energy projects</b>.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -293,17 +294,17 @@ Accurate, durable & maintenance-free.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+<p>
+<p><b>Applications</b><br/></p>
+<b>Landfill gas measurement</b> for energy recovery projects<br/>
+<b>Wastewater treatment plants</b> biogas flow monitoring<br/>
+<b>Anaerobic digesters</b> in municipal and industrial facilities<br/>
+<b>Upgraded bio-methane plants</b> for renewable gas injection into grids<br/>
+<b>Biogas engines / CHP units</b> for performance monitoring and efficiency control<br/>
+<b>Biogas flare monitoring</b> for compliance and emission reporting<br/>
+<b>CDM and carbon credit projects</b> requiring precise gas quantification<br/>
+<b>Agricultural biogas systems</b> for livestock waste and crop residue digestion<br/>
+</p>
 
                       </div>
                     </div>

@@ -281,13 +281,13 @@ Maintenance-free, explosion-proof, and IIoT-ready for future scalability.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+<b>Ultra-Nxt Ultrasonic Gas Flow Meter</b><br/>
+<b>Precision Gas Measurement for Industrial & Utility Applications</b><br/>
+The <b>Ultra-Nxt Natural Gas Flow Meter</b> is a state-of-the-art ultrasonic gas metering solution designed for <b>industrial gas measurement, natural gas utilities, and commercial metering systems</b>.<br/>
+Engineered for <b>high-accuracy flow and volume measurement</b>, it provides <b>real-time compensation for temperature, pressure, and gas compressibility</b>, delivering reliable performance even in the harshest environments.<br/>
+With advanced multi-beam ultrasonic technology, a wide <b>dynamic range of up to 1:200</b>, and industry-leading <b>data logging and communication options</b>, Ultra-Nxt stands out as the ideal replacement for legacy membrane, rotary, and turbine gas meters.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -297,16 +297,26 @@ Maintenance-free, explosion-proof, and IIoT-ready for future scalability.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Industry Applications</b><br/></p>
+<b>1. Natural Gas Distribution & Utilities:</b> Ideal for city gas metering, smart grid integration, and utility billing, Ultra-Nxt ensures accurate consumption measurement with minimal pressure drop and silent operation—essential for residential and municipal deployments.<br/>
+<br/>
+<b>2. Industrial Gas Flow Monitoring:</b> Trusted in sectors such as <b>oil & gas, chemical processing, metal manufacturing, and pharmaceuticals</b>, where precision and durability are crucial.<br/>
+Replaces outdated turbine and rotary meters with a <b>low-maintenance, solid-state alternative</b>.<br/>
+<br/>
+<b>3. Commercial Infrastructure:</b> Used in commercial buildings, complexes, and industrial parks for <b>bulk gas monitoring</b> and integration with <b>BMS (Building Management Systems)</b> for centralized energy efficiency.<br/>
+<br/>
+<b>4. Hazardous Environments:</b> With an explosion-proof design and resistance to magnetic fields and high humidity, Ultra-Nxt is suitable for hazardous zones in <b>refineries, petrochemical plants, and LNG terminals</b>.<br/>
+</p>
+<p>
+<p><b>Why Choose Ultra-Nxt?</b><br/></p>
+<b>12+ Year Service Life</b> and MTBF of 60,000+ hours<br/>
+<b>Seamless integration</b> with SCADA/IoT platforms<br/>
+<b>Lower installation</b> and operational costs<br/>
+<b>Future-ready</b> with smart grid and IIoT compatibility<br/>
+<br/>
+<b>Optimize your gas flow measurement systems with Ultra-Nxt — the smart, scalable, and sustainable choice for modern gas metering.</b><br/>
+</p>
 
 
                       </div>

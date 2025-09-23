@@ -293,13 +293,7 @@ AMR compatibility & precision for industrial and municipal use.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p> The <b>Woltmann Turbine Hot & Cold Mechanical Water Meter</b> is designed for measuring bulk water flow in a variety of industrial, commercial, and waterworks applications. It operates on the Woltmann principle, where a turbine with helical blades rotates inside the pipe as water flows through. The magnetic transmission ensures the register is hermetically sealed and detached from water, enhancing durability and reducing maintenance needs. This meter supports high flow rates, up to 600 m³/h or more, and withstands fluid temperatures up to 130°C for hot water applications. The device is suitable for horizontal, vertical, or inclined installation and features pulse output options for integration with monitoring systems. Certified to international standards such as MID, ISO 4064, and WRAS, it ensures reliable performance in demanding water metering conditions. </p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -309,16 +303,9 @@ AMR compatibility & precision for industrial and municipal use.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+        <p><b>Application</b></p>
+        <p>Apator Turbine flow meter is optimized for applications where accurate volumetric flow measurement and long-life durability are required in commercial, industrial, and municipal systems.</p>
+ <ul> <li>Industrial water flow measurement in factories and plants</li> <li>Water distribution monitoring in municipal waterworks</li> <li>Bulk hot and cold water metering in commercial and residential complexes</li> <li>Usage in heating systems for multi-residential and commercial buildings</li> <li>Agricultural water supply flow measurement</li> <li>Integration with remote monitoring systems using pulse output</li> </ul>
 
 
                       </div>

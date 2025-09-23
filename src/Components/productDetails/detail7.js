@@ -329,13 +329,8 @@ CGWA Compliant.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>The <b>MF-PRO Electromagnetic Flow Meter</b> by <b>IOTAFLOW Systems</b> is a highly robust, full-bore inline meter engineered for precise flow measurement of conductive liquids, <b>slurries</b>, and <b>wastewater</b> in industrial and municipal applications. Designed for harsh flow environments, it delivers reliable performance with <b>no moving parts</b>, minimal maintenance, and a <b>wide velocity range from 0.3 to 10 m/s</b>.</p>
+<p> MF-PRO complies with <b>CGWA guidelines for flow monitoring</b> and can transmit flow data to <b>CPCB, State Pollution Control Boards (SPCB), and NIC portals</b>, making it ideal for regulated effluent and water discharge applications.</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -346,14 +341,14 @@ CGWA Compliant.</li>
           margin: '2rem 0'
         }} />
           <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
+<ul>
+<li><b>Effluent discharge flow monitoring for</b> CGWA compliance</li>
+<li><b>Slurry flow measurement</b> in cement, paper, and mineral processing</li>
+<li><b>Raw and treated water metering in</b> industrial and municipal networks</li>
+<li><b>STP/ETP wastewater flow monitoring</b></li>
+<li><b>Cooling water, chemical dosing, and process lines</b></li>
+<li><b>Utility flow auditing in</b> large industrial setups</li>
+<li><b>Irrigation canals and agricultural distribution pipelines</b></li>
 </ul>
 
 

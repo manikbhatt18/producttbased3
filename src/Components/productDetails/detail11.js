@@ -296,14 +296,7 @@ High Accuracy Volumetric Flow Meters.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
-
+<p> Contoil® Oil Flow Meters are precision-engineered for accurate measurement of fuel and lubrication oil in the most demanding industrial environments. Built for reliability and flexibility, these meters offer consistent performance regardless of fluid temperature or viscosity. Their <b>compact design</b> allows for easy installation in space-restricted systems, making them ideal for integration with <b>power generators, boilers, burners, and closed-loop lubrication systems</b>. </p>
 
           {/* Decorative Separator Line Added Here */}
          <div style={{
@@ -313,16 +306,7 @@ High Accuracy Volumetric Flow Meters.</li>
           margin: '2rem 0'
         }} />
           <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
-
+ <ul> <li><b>Fuel Consumption Measurement</b> for: <ul> <li>Oil burners in heating systems and industrial furnaces, Unloading Applications</li> <li>Ships, diesel locomotives, and emergency power units</li> <li>Combined heat and power (CHP) systems</li> </ul> </li> <li><b>Lubrication Monitoring</b> in: <ul> <li>Closed-loop systems for machinery bearings and motors</li> <li>Machine test benches and engine testing labs</li> </ul> </li> <li><b>Remote Integration</b>: <ul> <li>Optional digital output for integration into <b>superior control systems</b> and <b>remote monitoring platforms</b></li> </ul> </li> </ul>
 
                       </div>
                     </div>

@@ -292,13 +292,12 @@ Made in India.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>
+The <b>GasPro RPD Gas Meter</b> by <b>IOTAFLOW Systems</b> is a high-accuracy rotary displacement meter designed for precise measurement of <b>natural gas, LPG, biogas, hydrogen, and industrial gases</b>.<br/>
+Available in sizes <b>DN15 to DN200 (G6 to G400)</b>, it features <b>±1.5% accuracy</b>, robust construction, and supports <b>pulse, 4–20 mA, and RS-485 Modbus outputs</b>.<br/>
+Optional <b>ELCOR volume corrector</b> ensures MID-certified pressure and temperature compensation, with <b>ATEX approval</b> for hazardous zones.<br/>
+Ideal for <b>CGD, industrial plants, and commercial gas monitoring</b>, with remote data via <b>2G/3G/4G/NB-IoT</b>.<br/>
+</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -308,16 +307,18 @@ Made in India.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Applications</b><br/></p>
+The GasPro RPD Gas Meter is ideal for critical and large-scale gas flow measurement in:<br/>
+<b>City Gas Distribution (CGD) networks and municipal utilities</b><br/>
+<b>Industrial natural gas consumption</b> in refineries, power plants, food & beverage, and pharma<br/>
+<b>Commercial buildings, malls, and hospitals</b> for centralized metering<br/>
+<b>LPG, biogas, CNG, hydrogen, and nitrogen metering</b> in OEM and process industries<br/>
+<b>Energy billing systems</b> with temperature/pressure compensation<br/>
+<b>Remote telemetry, AMR/AMI systems</b> with Modbus or GSM integration<br/>
+<b>Hazardous area metering</b> in explosive zones (ATEX-compatible)<br/>
+<b>Billing-grade metering</b> with EVC compatibility (ELCOR, ELCORplus)<br/>
+</p>
 
 
                       </div>

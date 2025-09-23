@@ -325,13 +325,8 @@ High Accuracy | Oil & Gas.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
-
+<p>The <b>MF-TER</b> from <b>IOTAFLOW Systems</b> is a <b>high-precision remote-mount electromagnetic flow meter</b>, specially designed for use in <b>hazardous, explosive, and high-risk industrial environments.</b> It features a <b>flameproof Ex d IIC T6-rated transmitter</b> and provides <b>±0.2% accuracy</b>, making it suitable for <b>custody transfer</b>, <b>chemical dosing</b>, and <b>oil & gas applications</b>.</p>
+<p> Built to comply with <b>CGWA guidelines</b>, the MF-TER is equipped for <b>real-time flow monitoring</b> and <b>data reporting to government portals (CPCB, PCB, NIC)</b> — ensuring legal and environmental accountability.</p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -343,13 +338,13 @@ High Accuracy | Oil & Gas.</li>
         }} />
           <p><b>Applications </b></p>
          <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
+<li><b>Hazardous area installations</b> (oil & gas, petrochemicals, solvents)</li>
+<li><b>Custody transfer and high-value fluid metering</b></li>
+<li><b>Chemical dosing in explosive or high-risk zones</b></li>
+<li><b>Flammable or volatile fluid handling systems</b></li>
+<li><b>Refineries, paint shops, and explosive gas zones</b></li>
+<li><b>Water and effluent metering with CGWA compliance</b></li>
+<li><b>Critical accuracy applications in industrial automation</b></li>
 </ul>
 
 

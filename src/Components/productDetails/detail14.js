@@ -294,13 +294,12 @@ Maintenance-free design with high resistance to oil, moisture, and dust.</li>
           {activeTab === "Description" && (
             <div className="row">
               <div className="col-md-6">
-        <p><b>Micronics™ PF333 Portable Ultrasonic Flow Meter</b></p>  
-        <p><b>(Distributed in India by IOTAFLOW Systems Pvt. Ltd.)</b></p>      
-<p>The <b>Micronics PF 222/333 Portable Ultrasonic Flow Meter</b> is a compact, battery-powered clamp-on flow measurement solution designed for <b>non-invasive, real-time monitoring of liquid flow</b> in full pipes. Represented in India by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this portable ultrasonic meter is ideal for engineers and technicians seeking <b>instant, high-accuracy diagnostics without cutting pipes or interrupting flow.</b></p>
-<p> Whether you're dealing with chilled water, raw water, RO, chemicals, oils, or clean process liquids, the <b>Micronics PF333</b> delivers <b>high-performance flow readings</b> in demanding environments — from <b>utilities to industrial audits.</b></p>
-<p> Authorized Channel Partner in India – IOTAFLOW Systems Pvt. Ltd. </p>
-<p>As an official <b>Micronics channel partner in India, IOTAFLOW</b> offers full sales, support, and technical guidance for PF 222/333 deployment in Indian industries and utilities.</p>
+<p>
 
+
+The <b>Ultrasonic Air Meter TRX Series</b> is a high-precision, <b>non-invasive flow measurement solution</b> designed for <b>compressed air and industrial gas applications</b>.<br/>
+Engineered with advanced <b>ultrasonic sensing technology</b>, the TRX delivers <b>long-term stability</b>, <b>zero pressure drop</b>, and <b>exceptional resistance to oil, moisture, and dust</b>—making it the ideal choice for today's demanding production environments.<br/>
+<br/></p>
 
 
           {/* Decorative Separator Line Added Here */}
@@ -310,16 +309,18 @@ Maintenance-free design with high resistance to oil, moisture, and dust.</li>
           background: 'linear-gradient(to right, #eaff00, #ffcc00)',
           margin: '2rem 0'
         }} />
-          <p><b>Applications </b></p>
-         <ul>
-<li><b>Water flow auditing</b> in industrial plants and utility pipelines.</li>
-<li><b>HVAC commissioning and chilled water flow balancing.</b></li>
-<li><b>Pump verification and energy efficiency monitoring.</b></li>
-<li><b>RO and DM water flow measurement</b> in chemical and pharmaceutical units.</li>
-<li><b>Process water and condensate tracking</b> in boiler and thermal systems.</li>
-<li><b>Non-invasive flow metering</b> for temporary setups and maintenance inspections.</li>
-<li><b>Portable diagnostics</b> in<b>building services, energy audits, and facility management.</b></li>
-</ul>
+<p>
+<p><b>Applications</b></p>
+<b>Compressed Air Energy Audits</b><br/>
+<b>Factory Air Leakage Detection Systems</b><br/>
+<b>Industrial Gas Consumption Monitoring</b><br/>
+<b>HVAC and Pneumatic System Optimization</b><br/>
+<b>Multi-Factory Air Transfer Analysis</b><br/>
+<br/>
+Why Choose the TRX Ultrasonic Air Flow Meter?<br/>
+Whether looking to <b>reduce compressed air costs</b>, <b>monitor compressor efficiency</b>, or implement <b>predictive maintenance</b>, the TRX Series provides unmatched performance, <b>reliability</b>, and <b>cost-efficiency</b>—all without system interruptions or pressure loss.<br/>
+</p>
+
 
 
                       </div>
