@@ -11,10 +11,10 @@ import img1 from "../../images/d7ba.png";
 import img2 from "../../images/d7bb.png";
 import img3 from "../../images/d7bc.png";
 
-import related1 from "../../images/p2a.png";
-import related2 from "../../images/p3a.jpg";
-import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p5a.png";
+import related1 from "../../images/d7aa.png";
+import related2 from "../../images/d8a.png";
+import related3 from "../../images/d3a.png";
+import related4 from "../../images/d4a.png";
 
 
 
@@ -162,10 +162,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
-    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    { img: related1, title: "MF-PRO Electromagnetic Flow Meter", link: "/product-detail/detail7" },
+    { img: related2, title: "CX/VN/VNS Electromagnetic Flow Meters", link: "/product-detail/detail8" },
+    { img: related3, title: "Intrusive Ultrasonic UF 1500 Series", link: "/product-detail/detail3" },
+    { img: related4, title: "Clamp-On Fixed UF 1500 Series", link: "/product-detail/detail4" },
   ];
 
   return (

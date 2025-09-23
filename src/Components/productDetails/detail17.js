@@ -11,10 +11,10 @@ import img1 from "../../images/d17a.png";
 import img2 from "../../images/d17b.png";
 import img3 from "../../images/d17c.png";
 
-import related1 from "../../images/p2a.png";
-import related2 from "../../images/p3a.jpg";
-import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p5a.png";
+import related1 from "../../images/d1a.png";
+import related2 from "../../images/d2a.png";
+import related3 from "../../images/d4a.png";
+import related4 from "../../images/d5a.png";
 
 
 
@@ -160,8 +160,8 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related1, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
+    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail2" },
     { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];

@@ -15,10 +15,10 @@ import img5 from "../../images/d16e.png";
 import img6 from "../../images/d16f.png";
 
 
-import related1 from "../../images/p2a.png";
-import related2 from "../../images/p3a.jpg";
-import related3 from "../../images/p4a.jpg";
-import related4 from "../../images/p5a.png";
+import related1 from "../../images/d18a.png";
+import related2 from "../../images/d1a.png";
+import related3 from "../../images/d22a.png";
+import related4 from "../../images/d20a.png";
 
 
 
@@ -165,10 +165,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail3" },
-    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    { img: related1, title: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
+    { img: related2, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
+    { img: related3, title: "UF-Biosonic (Biogas)", link: "/product-detail/detail22" },
+    { img: related4, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
   ];
 
   return (
