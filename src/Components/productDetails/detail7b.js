@@ -359,12 +359,12 @@ High Accuracy | Oil & Gas.</li>
                         <ul className="list-unstyled feature-list-spaced">
                       
 
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+<li>Remote transmitter design for <b>hazardous & flameproof zone installation</b></li>
+<li>Flameproof certified: <b>Ex d IIC T6</b> for explosive gas environments</li>
+<li>Accuracy: <b>±0.2% of reading</b></li>
+  <li><b>Velocity range: 0.3 to 10 m/s</b></li>
+  <li>Pipe sizes: DN15 to DN600</li>
+  <li><b>Output options: 4–20 mA, RS485, Modbus RTU, pulse, GSM/GPRS, HART Communication</b></li>
 </ul>
 
 
@@ -374,17 +374,18 @@ High Accuracy | Oil & Gas.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+<li>
+    <b>Materials:</b> 
+    <ul style={{ listStyleType: 'none', paddingLeft: '1em' }}>
+      <li><b>Electrodes:</b> SS316L, Hastelloy, Tantalum, Titanium</li>
+      <li><b>Liners:</b> PTFE, hard rubber</li>
+    </ul>
+  </li>
+  <li>Operating temp: <b>Up to 150°C</b> (liner dependent)</li>
+  <li>Suitable for <b>high-pressure & corrosive fluids</b></li>
+  <li><b>IP68-rated sensor</b> and <b>IP66 Ex-proof transmitter</b></li>
+  <li><b>Fully CGWA compliant</b> – supports data transmission to CPCB/SPCB/NIC</li>
+  <li><b>CE, Ex, ISO certified</b></li>
 </ul>
                       </div>
                     </div>

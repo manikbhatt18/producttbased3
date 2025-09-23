@@ -334,13 +334,11 @@ RoHS, CE & UKCA certified for global safety compliance.</li>
                       
 
 
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li><b>Compact and micro-sized design</b> – easily integrates into tight machine layouts.</li>
+  <li><b>No moving parts</b> – ensures durability and reduces maintenance costs.</li>
+  <li><b>Chemical compatibility</b> – measures corrosive solutions (e.g., sodium hypochlorite, caustic soda).</li>
+  <li><b>High measurement accuracy</b> – suitable for pulsation and small-flow rate monitoring.</li>
 </ul>
-
 
 
 
@@ -348,17 +346,9 @@ RoHS, CE & UKCA certified for global safety compliance.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li><b>LED indicator (2-color)</b> for status monitoring at a glance.</li>
+  <li><b>Multiple output options</b> – Unitpulse, High-density pulse, Warning, Switch.</li>
+  <li><b>Global certifications</b> – RoHS, CE, UKCA approved for industrial safety and reliability.</li>
 </ul>
                       </div>
                     </div>

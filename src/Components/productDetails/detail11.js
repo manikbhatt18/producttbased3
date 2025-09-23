@@ -317,16 +317,11 @@ High Accuracy Volumetric Flow Meters.</li>
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+ <li><strong>Unmatched Accuracy (0.5%)</strong>: Reliable fuel consumption monitoring with temperature- and viscosity-independent readings.</li>
+  <li><strong>Flexible Installation</strong>: Mount horizontally, vertically, or at an incline — even in space-constrained systems without the need for straight inlet/outlet runs.</li>
+  <li><strong>Batching</strong>, dosing and filling operations.</li>
+  <li><strong>Dual-Side Pump Compatibility</strong>: Install on either the <strong>pressure or suction side</strong> of pumps.</li>
 </ul>
-
 
 
 
@@ -334,17 +329,10 @@ High Accuracy Volumetric Flow Meters.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li><strong>Operational Simplicity</strong>: Mechanical Display with a <strong>resettable counter</strong> and optional <strong>limiting value switch</strong> for flow rate control.</li>
+  <li><strong>Built-In Diagnostics</strong>: Easy function checks, fast fault analysis, and on-site repairability reduce downtime and costs.</li>
+  <li><strong>Compact Design</strong>: Optimized for <strong>tight enclosures</strong> and complex piping systems.</li>
+
 </ul>
                       </div>
                     </div>

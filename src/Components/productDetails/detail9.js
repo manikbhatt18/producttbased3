@@ -346,13 +346,12 @@ AMR-ready, durable brass body, low start flow.</li>
                       
 
 
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
-</ul>
-
+ <li><b>High-accuracy metering</b> – R200 horizontal / R80 vertical measurement range</li>
+  <li><b>MID-compliant</b> and EN-ISO 4064 certified for potable water applications</li>
+  <li><b>Hermetically sealed counter</b> – fog-resistant, clear dual-colour numeric display</li>
+  <li><b>Tamper protection</b> – snap ring cover, deformation pin for unauthorized interference detection</li>
+  <li><b>Low starting flow</b> for accurate measurement of small consumption volumes</li>
+  </ul>
 
 
 
@@ -360,18 +359,13 @@ AMR-ready, durable brass body, low start flow.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
+  <li><b>No straight pipe runs required</b> (U0D0 installation flexibility)</li>
+  <li><b>Dual reading technologies</b> – optical and inductive for AMR integration</li>
+  <li><b>Compatible with wireless M-Bus, M-Bus, pulse output</b> for remote data collection</li>
+  <li><b>Durable brass body</b> and high-quality internal components for extended service life</li>
+  <li><b>Electronic diagnostics</b> for operational monitoring and fault detection</li>
 </ul>
-</li>
-</ul>
+
                       </div>
                     </div>
                   )}

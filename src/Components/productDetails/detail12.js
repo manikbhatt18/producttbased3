@@ -302,11 +302,13 @@ Built for tough environments with multiple material and output options.</li>
                       
 
 
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+  <li>Positive displacement <strong>oval gear technology</strong> – unaffected by fluid conductivity</li>
+  <li><strong>Direct volumetric measurement</strong> – no flow conditioning or straight pipe required</li>
+  <li>Accuracy levels up to <strong>±0.2%</strong> with high repeatability</li>
+  <li>Wide <strong>viscosity range compatibility</strong>: 2 to 5,000 cP (including heavy oil, resin, adhesives)</li>
+  <li>Flow rate range from <strong>0.04 to 340 m³/h</strong> (size-dependent)</li>
+  <li>Suitable for <strong>temperature ranges from -20°C to +280°C</strong></li>
+  <li>Pressure handling up to <strong>6.4 MPa</strong> (64 bar)</li>
 </ul>
 
 
@@ -316,17 +318,13 @@ Built for tough environments with multiple material and output options.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+  <li><strong>Material options</strong>: Cast Iron, Cast Steel, SS304, SS316</li>
+  <li>Sizes available from <strong>DN10 to DN200</strong></li>
+  <li>Compatible with <strong>pulse output, 4–20 mA, RS485, and batching controllers</strong></li>
+  <li>Optional display units: <strong>Mechanical, Digital Totalizer, Rate + Total, MCU Controller</strong></li>
+  <li>Enclosure ratings: <strong>IP65, IP67, IP68, with NEMA 4X and Ex-Proof options</strong></li>
+  <li>Complies with <strong>CGWA guidelines</strong> for groundwater flow reporting</li>
+  <li>Flanged connections as per <strong>PN16, PN25, PN40, PN64</strong> or <strong>ANSI #150//300</strong> standards</li>
 </ul>
                       </div>
                     </div>

@@ -359,14 +359,12 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
                       {/* Left Column */}
                       <div className="col-md-6 column-separator">
                         <ul className="list-unstyled feature-list-spaced">
-                      
-
-
-<li><b>Micronics Make – UK Engineered:</b> Trusted performance and build quality, now available through IOTAFLOW in India.</li>
-<li><b>Portable & Lightweight:</b> Carry it anywhere for instant flow analysis on multiple pipelines.</li>
-<li><b>Clamp-On Technology:</b> No cutting, no shutdowns, no contamination – non-invasive ultrasonic sensing.</li>
-<li><b>Wide Pipe Compatibility:</b> Supports pipe sizes from 13 mm to 5000 mm with multiple sensor options.</li>
-<li><b>High Accuracy:</b> Delivers ±0.5% accuracy with repeatability for precise auditing and diagnostics.</li>
+<li><b>Non-Contacting Doppler Ultrasonic Technology</b> – Accurately measures level and velocity for open flow systems</li>
+  <li><b>Ideal for Partially Filled Pipes and Irregular Channels</b> – Works with custom-shaped conduits and storm drains</li>
+  <li><b>No Flume or Weir Required</b> – Simplifies installation, reduces civil work, and lowers cost</li>
+  <li><b>Advanced Data Logging</b> – Built-in 26 million-point logger with USB data export</li>
+  <li><b>Weatherproof Enclosure (NEMA 4X / IP66)</b> – Rugged design for outdoor use</li>
+  <li><b>Wide Velocity Range</b> – Measures flow from 0.03 to 6.2 m/s, including reverse flow up to -1.5 m/s</li>
 </ul>
 
 
@@ -376,17 +374,13 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
                       {/* Right Column */}
                       <div className="col-md-6">
                         <ul className="list-unstyled feature-list-spaced">
-<li><b>Battery Operation:</b> Up to 20 hours of operation on a single charge, suitable for extended field use.</li>
-<li><b>Data Logging:</b> Built-in data logger with SD card for up to 198,000 records. Export via USB.</li>
-<li><b>Intuitive Interface:</b> Large backlit LCD and user-friendly menu-driven setup.</li>
-<li><b>Multi-Output Support:</b> RS232, Modbus, USB, 4–20mA, pulse, and relay outputs available.</li>
-<li><b>Certified for International Standards:</b>
-<ul>
-<li>CE Certified</li>
-<li>RoHS Compliant (Restriction of Hazardous Substances)</li>
-<li>ISO 9001 Manufacturing Standards</li>
-</ul>
-</li>
+
+  <li><b>Level Range</b> – Handles water levels from 1 inch (25.4 mm) up to 15 ft (4.5 m)</li>
+  <li><b>Multiple Outputs</b> – 3 × 4-20 mA, Modbus RTU, USB, 2 × Control Relays</li>
+  <li><b>CE, CSA, UL/EN 61010-1 Certified</b> – Globally compliant and safety-tested</li>
+  <li><b>Intrinsic Safety Options Available</b> – For use in hazardous or classified environments</li>
+  <li><b>No Moving Parts</b> – Zero maintenance and resistance to fouling and corrosion</li>
+  <li><b>Temperature Compensated Readings</b> – Reliable in varying field temperatures</li>
 </ul>
                       </div>
                     </div>
