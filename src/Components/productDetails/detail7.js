@@ -62,7 +62,7 @@ function ProductDetail() {
     catalogue: [
       {
         title: '137_ELECTROMAGNETIC FLOW METER- catalogue',
-        path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf.pdf',
+        path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
