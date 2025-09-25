@@ -154,7 +154,7 @@ function CustomNavbar() {
               </div>
             </div>
 
-            <NavLink to="/application" className="nav-item" onClick={toggleMenu}>
+            <NavLink to="/application" className="nav-item application-nav-item" onClick={toggleMenu}>
               Application
             </NavLink>
             <NavLink to="/services" className="nav-item" onClick={toggleMenu}>

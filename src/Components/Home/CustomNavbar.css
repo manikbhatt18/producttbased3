@@ -36,22 +36,26 @@
   align-items: start;
 }
 
-/* Nav Items */
 .nav-menu {
-  flex: 1;                 /* take remaining space */
+  flex: 1;
   display: flex;
-  justify-content: center; /* align items in center */
-  gap: 30px;               /* spacing between links */
+  justify-content:space-around; /* equal spacing for all nav items */
+  align-items: center;
+  padding: 0 40px;              /* optional: breathing room left & right */
+  
+}
+.application-nav-item{
+  margin-left:20px;
 }
 
 .nav-item {
-  position: relative;
+  flex: 1;                      /* each item takes equal width */
+  text-align: center;           /* center the text inside */
   font-weight: 600;
   text-decoration: none;
   color: black;
   padding: 10px 0;
   transition: color 0.3s ease;
-  left: 0; /* remove the manual left offset */
 }
 .custom-navbar .nav-menu a {
   color: inherit;          /* inherit black or whatever you set in .nav-item */
