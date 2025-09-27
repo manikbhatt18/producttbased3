@@ -59,19 +59,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'UF Clamp On Ultrasonic Flow Meter- catalogue',
+        title: 'UF Clamp On Ultrasonic Flow Meter- Catalogue',
         path: '/documents/103_UF Clamp On Ultrasonic Flow Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrasonic flow meter UF15xx series installation - manual',
+        title: 'Ultrasonic flow meter UF15xx series installation - Manual',
         path: '/documents/d4mi.pdf',
         size: 'Loading...'
       },
       {
-        title: 'Ultrasonic flow meter UF15xx series operation - manual',
+        title: 'Ultrasonic flow meter UF15xx series operation - Manual',
         path: '/documents/d4mo.pdf',
         size: 'Loading...'
       },

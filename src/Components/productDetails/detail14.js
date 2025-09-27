@@ -65,19 +65,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'AIR Ultrasonic Flowmeter- catalogue',
+        title: 'AIR Ultrasonic Flowmeter- Catalogue',
         path: '/documents/AIR Ultrasonic Flowmeter (1).pdf',
         size: 'Loading...' // Initial state for size
       },
       {
-        title: 'UltrasonicAirMeter_Intro- catalogue',
+        title: 'UltrasonicAirMeter_Intro- Catalogue',
         path: '/documents/UltrasonicAirMeter_Intro.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrasonic Air Flow Meter User- manual',
+        title: 'Ultrasonic Air Flow Meter User- Manual',
         path: '/documents/Ultrasonic Air Flow Meter User Manual.pdf',
         size: 'Loading...'
       }

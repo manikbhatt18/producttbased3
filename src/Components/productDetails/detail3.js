@@ -59,19 +59,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'UF-1500 Intrusive USFM (Partial Full)- catalogue',
+        title: 'UF-1500 Intrusive USFM (Partial Full)- Catalogue',
         path: '/documents/UF-1500 Intrusive USFM (Partial Full).pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrasonic flow meter UF15xx series installation- manual',
+        title: 'Ultrasonic flow meter UF15xx series installation- Manual',
         path: '/documents/Ultrasonic flow meter UF15xx series installation  (1).pdf',
         size: 'Loading...'
       },
       {
-        title: 'Ultrasonic flow meter UF15xx series operation 1 or 2 - manual',
+        title: 'Ultrasonic flow meter UF15xx series operation 1 or 2 - Manual',
         path: '/documents/Ultrasonic flow meter UF15xx series operation 1 or 2 .pdf',
         size: 'Loading...'
       }

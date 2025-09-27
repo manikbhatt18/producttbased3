@@ -60,14 +60,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Inline Ultrasonic V1 Robust Series- catalogue',
+        title: 'Inline Ultrasonic V1 Robust Series- Catalogue',
         path: '/documents/Inline Ultrasonic V1 Robust Series.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'ULTRASONIC BTU METER- manual',
+        title: 'ULTRASONIC BTU METER- Manual',
         path: '/documents/ULTRASONIC BTU METER.pdf',
         size: 'Loading...'
       }

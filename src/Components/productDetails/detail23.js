@@ -60,14 +60,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '121_Conical Shaped Flow Meter- catalogue',
+        title: '121_Conical Shaped Flow Meter- Catalogue',
         path: '/documents/121_Conical Shaped Flow Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Conical shaped Flow meter User- manual',
+        title: 'Conical shaped Flow meter User- Manual',
         path: '/documents/Conical shaped Flow meter User Manual.pdf',
         size: 'Loading...'
       }

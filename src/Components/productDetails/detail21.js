@@ -63,14 +63,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '122_GasPro RPD Gas meter- catalogue',
+        title: '122_GasPro RPD Gas meter- Catalogue',
         path: '/documents/122_GasPro RPD Gas meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'GasPro RPD Gas Meter Installation User- manual',
+        title: 'GasPro RPD Gas Meter Installation User- Manual',
         path: '/documents/GasPro RPD Gas Meter Installation User Manual.pdf',
         size: 'Loading...'
       }

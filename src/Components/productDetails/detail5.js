@@ -61,14 +61,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Micronics-PF333-222-Brochure- catalogue',
+        title: 'Micronics-PF333-222-Brochure- Catalogue',
         path: '/documents/Micronics-PF333-222-Brochure.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'PF222_333_User_Manual- manual',
+        title: 'PF222_333_User_Manual- Manual',
         path: '/documents/PF222_333_User_Manual.pdf',
         size: 'Loading...'
       }

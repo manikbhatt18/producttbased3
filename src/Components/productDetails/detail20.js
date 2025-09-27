@@ -60,7 +60,7 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Ultra-Nxt Gas flowmeter- catalogue',
+        title: 'Ultra-Nxt Gas flowmeter- Catalogue',
         path: '/documents/Ultra-Nxt Gas flowmeter.pdf',
         size: 'Loading...' // Initial state for size
       }

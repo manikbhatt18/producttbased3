@@ -68,19 +68,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '113_RPD SERIES FLOW METER- catalogue',
+        title: '113_RPD SERIES FLOW METER- Catalogue',
         path: '/documents/113_RPD SERIES FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'RPD INSTALLATION- manual',
+        title: 'RPD INSTALLATION- Manual',
         path: '/documents/RPD INSTALLATION.pdf',
         size: 'Loading...'
       },
       {
-        title: 'RPD Series User Manual- manual',
+        title: 'RPD Series User Manual- Manual',
         path: '/documents/RPD Series User Manual.pdf',
         size: 'Loading...'
       },

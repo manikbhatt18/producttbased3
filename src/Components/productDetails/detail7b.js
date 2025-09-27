@@ -62,14 +62,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '137_ELECTROMAGNETIC FLOW METER- catalogue',
+        title: '137_ELECTROMAGNETIC FLOW METER- Catalogue',
         path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'MFT INSTALLATION- manual',
+        title: 'MFT INSTALLATION- Manual',
         path: '/documents/MFT INSTALLATION.pdf',
         size: 'Loading...'
       }

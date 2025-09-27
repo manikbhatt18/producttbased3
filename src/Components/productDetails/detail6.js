@@ -60,14 +60,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Iotaflow 7600 Series- catalogue',
+        title: 'Iotaflow 7600 Series- Catalogue',
         path: '/documents/106_Iotaflow 7600 Series Catlaogue.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'UF_AV5500_Users_Guide_Series_A.1.2 - manual',
+        title: 'UF_AV5500_Users_Guide_Series_A.1.2 - Manual',
         path: '/documents/UF_AV5500_Users_Guide_Series_A.1.2 Manual.pdf',
         size: 'Loading...'
       }

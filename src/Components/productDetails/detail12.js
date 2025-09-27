@@ -63,14 +63,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '114_Oval Gear Flow Meter- catalogue',
+        title: '114_Oval Gear Flow Meter- Catalogue',
         path: '/documents/114_Oval Gear Flow Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'OVAL GEAR FLOW METER- manual',
+        title: 'OVAL GEAR FLOW METER- Manual',
         path: '/documents/OVAL GEAR FLOW METER.pdf',
         size: 'Loading...'
       }

@@ -62,14 +62,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '108_UF- BioSonic series- catalogue',
+        title: '108_UF- BioSonic series- Catalogue',
         path: '/documents/108_UF- BioSonic series.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Ultrasonic Biogas Flow Meter User- manual',
+        title: 'Ultrasonic Biogas Flow Meter User- Manual',
         path: '/documents/Ultrasonic Biogas Flow Meter User Manual.pdf',
         size: 'Loading...'
       }

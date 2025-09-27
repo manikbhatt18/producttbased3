@@ -63,14 +63,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '123_GWF Gas Meter- catalogue',
+        title: '123_GWF Gas Meter- Catalogue',
         path: '/documents/123_GWF Gas Meter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Radial Blade Turbine Gas Meter TRZ- manual',
+        title: 'Radial Blade Turbine Gas Meter TRZ- Manual',
         path: '/documents/Radial Blade Turbine Gas Meter TRZ Manual.pdf',
         size: 'Loading...'
       }

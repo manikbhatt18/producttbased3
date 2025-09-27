@@ -62,14 +62,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '116_Metal tube Flowmeter- catalogue',
+        title: '116_Metal tube Flowmeter- Catalogue',
         path: '/documents/116_Metal tube Flowmeter.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Metal Tube Flow Meter User- manual',
+        title: 'Metal Tube Flow Meter User- Manual',
         path: '/documents/Metal Tube Flow Meter User Manual.pdf',
         size: 'Loading...'
       }

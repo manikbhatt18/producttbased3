@@ -63,34 +63,34 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'VNS Compact Electromagnetic  flow sensor- catalogue',
+        title: 'VNS Compact Electromagnetic  flow sensor- Catalogue',
         path: '/documents/VNS Compact Electromagnetic  flow sensor.pdf',
         size: 'Loading...' // Initial state for size
       },
       {
-        title: 'VN_Compact Electromagnetic Flow Sensor User Manual- catalogue',
+        title: 'VN_Compact Electromagnetic Flow Sensor User Manual- Catalogue',
         path: '/documents/VN_Compact Electromagnetic Flow Sensor User Manual.pdf',
         size: 'Loading...' // Initial state for size
       },
       {
-        title: 'CX Capcitive Electromagnetic Flow sensor- catalogue',
+        title: 'CX Capcitive Electromagnetic Flow sensor- Catalogue',
         path: '/documents/CX Capcitive Electromagnetic Flow sensor.pdf',
         size: 'Loading...' // Initial state for size
       },
     ],
     manual: [
       {
-        title: 'Handling Manual Capacitive Electromagnetic Flowsensor CX series- manual',
+        title: 'Handling Manual Capacitive Electromagnetic Flowsensor CX series- Manual',
         path: '/documents/Handling Manual Capacitive Electromagnetic Flowsensor CX series.pdf',
         size: 'Loading...'
       },
       {
-        title: 'VN Compact Electromagnetic Flow Sensor- manual',
+        title: 'VN Compact Electromagnetic Flow Sensor- Manual',
         path: '/documents/VN Compact Electromagnetic Flow Sensor.pdf',
         size: 'Loading...'
       },
       {
-        title: 'VNS Compact Electromagnetic  flow sensor',
+        title: 'VNS Compact Electromagnetic  flow sensor- Manual',
         path: '/documents/VNS Compact Electromagnetic  flow sensor.pdf',
         size: 'Loading...'
       },

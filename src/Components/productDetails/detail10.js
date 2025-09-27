@@ -61,7 +61,7 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Apator_Woltman- catalogue',
+        title: 'Apator_Woltman- Catalogue',
         path: '/documents/Apator_Woltman.pdf',
         size: 'Loading...' // Initial state for size
       }
@@ -69,12 +69,12 @@ function ProductDetail() {
     ],
     manual: [
       {
-        title: 'WOLTMAN WATER METER- manual',
+        title: 'WOLTMAN WATER METER- Manual',
         path: '/documents/WOLTMAN WATER METER MANUAL.pdf',
         size: 'Loading...'
       },
        {
-        title: 'Apator_Woltman User- manual',
+        title: 'Apator_Woltman User- Manual',
         path: '/documents/Apator_Woltman User Manual.pdf',
         size: 'Loading...'
       },

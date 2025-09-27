@@ -61,19 +61,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: '137_ELECTROMAGNETIC FLOW METER- catalogue',
+        title: '137_ELECTROMAGNETIC FLOW METER- Catalogue',
         path: '/documents/137_ELECTROMAGNETIC FLOW METER.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Iotaflow MF “Pro M” Installation- manual',
+        title: 'Iotaflow MF “Pro M” Installation- Manual',
         path: '/documents/Iotaflow MF “Pro M” Installation.pdf',
         size: 'Loading...'
       },
         {
-        title: 'Iotaflow MF Pro Batching',
+        title: 'Iotaflow MF Pro Batching- Manual',
         path: '/documents/Iotaflow MF Pro Batching.pdf',
         size: 'Loading...'
       }

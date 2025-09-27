@@ -67,12 +67,12 @@ function ProductDetail() {
     ],
     manual: [
       {
-        title: 'VFM Operating Helen- manual',
+        title: 'VFM Operating Helen- Manual',
         path: '/documents/VFM Operating Helen Manual.pdf',
         size: 'Loading...'
       },
             {
-        title: 'Vortex Flowmeter Quick Guide.pdf- manual',
+        title: 'Vortex Flowmeter Quick Guide.pdf- Manual',
         path: '/documents/Vortex Flowmeter Quick Guide.pdf',
         size: 'Loading...'
       },

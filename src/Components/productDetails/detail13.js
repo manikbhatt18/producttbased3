@@ -60,14 +60,14 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Microstream Flowsensor- catalogue',
+        title: 'Microstream Flowsensor- Catalogue',
         path: '/documents/Microstream Flowsensor.pdf',
         size: 'Loading...' // Initial state for size
       }
     ],
     manual: [
       {
-        title: 'Micro Stream Flow Sensor OFZ Series User- manual',
+        title: 'Micro Stream Flow Sensor OFZ Series User- Manual',
         path: '/documents/Micro Stream Flow Sensor OFZ Series User Manual.pdf',
         size: 'Loading...'
       }

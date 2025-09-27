@@ -64,19 +64,19 @@ function ProductDetail() {
   const [downloadFiles, setDownloadFiles] = useState({
     catalogue: [
       {
-        title: 'Apator Single jet DN15,20en- catalogue',
+        title: 'Apator Single jet DN15,20en- Catalogue',
         path: '/documents/Apator Single jet DN15,20en.pdf',
         size: 'Loading...' // Initial state for size
       },
         {
-        title: 'Apator Single jet DN25-master-c- catalogue',
+        title: 'Apator Single jet DN25-master-c- Catalogue',
         path: '/documents/Apator Single jet DN25-master-c.pdf',
         size: 'Loading...' // Initial state for size
       },
     ],
     manual: [
       {
-        title: 'Smart Single Jet Water Meter User- manual',
+        title: 'Smart Single Jet Water Meter User- Manual',
         path: '/documents/Smart Single Jet Water Meter User Manual.pdf',
         size: 'Loading...'
       }
