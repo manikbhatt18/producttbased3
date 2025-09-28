@@ -575,6 +575,11 @@ Easy install, no pipe cutting.</li>
           border-bottom: 3px solid transparent;
           transition: all 0.3s ease;
           background-color: white;
+          white-space: nowrap;      /* Add this line */
+          padding: 1rem 1.2rem;     /* Add this line */
+        }
+          .sticky-top .nav-tabs .nav-item {
+          flex-grow: 0;
         }
 
         .nav-tabs .nav-link:hover { background-color: #ffcc00; color: black; }
@@ -722,7 +727,7 @@ Easy install, no pipe cutting.</li>
           .nav-tabs .nav-link { font-size: 14px; padding: 0.5rem 0.75rem; }
         }
         @media (max-width: 767px) {
-          .nav-tabs { flex-wrap: wrap; }
+          .nav-tabs { flex-wrap: wrap; justify-content: flex-start;}
         }
       `}</style>
     </div>
