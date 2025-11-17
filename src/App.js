@@ -65,6 +65,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Components/Footer";
 import OurPartners from "./Components/Home/OurPartners";
 import HeroSection from "./Components/Home/HeroSection";
+import IOTsensePage from "./pages/IOTsensePage";
 
 
 function HomePage() {
@@ -97,6 +98,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />
           <Route path="/seo" element={<SeoPage />} />
+          <Route path="/iotsense" element={<IOTsensePage />} />
 
 
           {/* Product Detail Routes */}
