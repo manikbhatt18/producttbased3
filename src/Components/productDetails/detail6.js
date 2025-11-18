@@ -9,6 +9,8 @@ import { FaRegFilePdf } from "react-icons/fa6";
 
 import img1 from "../../images/d6a.png";
 import img2 from "../../images/d6b.png";
+import img3 from "../../images/Doppler (2).png";
+
 
 
 import related1 from "../../images/p2a.png";
@@ -50,7 +52,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2];
+  const images = [img2,img3, img1];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
