@@ -7,15 +7,11 @@ import { FaRegFilePdf } from "react-icons/fa6";
 
 
 
-import img1 from "../../images/d11a.png";
-import img2 from "../../images/d11b.png";
-import img3 from "../../images/d11c.png";
-import img4 from "../../images/d11d.png";
-import img5 from "../../images/d11e.png";
-import img6 from "../../images/d11f.png";
-import img7 from "../../images/d11g.png";
-import img8 from "../../images/d11h.png";
-import img9 from "../../images/d11i.png";
+import img1 from "../../images/RPD 1.png";
+import img2 from "../../images/RPD 2.png";
+import img3 from "../../images/RPD 3.png";
+import img4 from "../../images/RPD 4.png";
+
 
 
 
@@ -58,7 +54,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3,img4,img5,img6,img7,img8,img9];
+  const images = [img1, img2, img3,img4];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);

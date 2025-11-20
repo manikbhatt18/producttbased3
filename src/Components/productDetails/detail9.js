@@ -7,10 +7,10 @@ import { FaRegFilePdf } from "react-icons/fa6";
 
 
 
-import img1 from "../../images/d9a.png";
-import img2 from "../../images/d9b.png";
-import img3 from "../../images/d9c.png";
-import img4 from "../../images/d9d.png";
+import img1 from "../../images/JET 1.png";
+import img2 from "../../images/Jet 2.png";
+import img3 from "../../images/JET 3.png";
+import img4 from "../../images/JET 4.png";
 
 import related1 from "../../images/d10a.png";
 import related2 from "../../images/d1a.png";

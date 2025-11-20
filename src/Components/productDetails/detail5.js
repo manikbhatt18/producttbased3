@@ -51,7 +51,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
 
 function ProductDetail() {
-  const images = [img1, img2, img3,img4];
+  const images = [img1,img3,img4,img2];
   const ROTATE_MS = 2000;
 
   const [currentIndex, setCurrentIndex] = useState(0);
