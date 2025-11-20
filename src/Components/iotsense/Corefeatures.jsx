@@ -7,8 +7,8 @@ const IconCheck = ({ className }) => (
   </svg>
 );
 
-// This array holds the data for the 5 core features.
-// I've parsed your text into this structure.
+// This array holds the data for the core features.
+// The 4th feature "Deployment & Scalability" has been merged into the 1st feature as 'subFeature'.
 const features = [
   {
     title: "Unified Data Fabric for Flow & Utility Assets",
@@ -16,7 +16,12 @@ const features = [
     bullets: [
       "Supports all major industrial protocols (Modbus, HART, wireless IoT, LoRa, NB-IoT) and offers plug-and-play integration for flow measurement networks.",
     ],
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+1+Image"
+    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+1+Image",
+    // Merged content from the original 4th feature
+    subFeature: {
+      title: "Deployment & Scalability",
+      description: "Whether you deploy on-premises, hybrid cloud or fully in cloud, IOT Sense supports it. Designed to handle anything from one smart water meter to thousands of IOT Flow Metering devices across multiple sites with enterprise-grade availability, security and performance."
+    }
   },
   {
     title: "Flow-Focused Applications",
@@ -40,12 +45,6 @@ const features = [
       "Edge-analytics: on-device or gateway inference for real-time flow events or critical telemetry use-cases."
     ],
     imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+3+Image"
-  },
-  {
-    title: "Deployment & Scalability",
-    description: "Whether you deploy on-premises, hybrid cloud or fully in cloud, IOT Sense supports it. Designed to handle anything from one smart water meter to thousands of IOT Flow Metering devices across multiple sites with enterprise-grade availability, security and performance.",
-    bullets: [], // This one had no sub-bullets in your text.
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+4+Image"
   },
   {
     title: "Utility & Sustainability Benefits",
@@ -91,7 +90,7 @@ function Corefeatures() {
                 </p>
                 
                 {/* Render bullets if they exist */}
-                {feature.bullets.length > 0 && (
+                {feature.bullets && feature.bullets.length > 0 && (
                   <ul className="tw-mt-6 tw-space-y-4">
                     {feature.bullets.map((bullet, i) => (
                       <li key={i} className="tw-flex tw-items-start">
@@ -105,6 +104,19 @@ function Corefeatures() {
                       </li>
                     ))}
                   </ul>
+                )}
+
+                {/* --- Render Merged Sub-Feature (if it exists) --- */}
+                {feature.subFeature && (
+                  <div className="tw-mt-10">
+                    {/* Updated the heading class to match the main feature heading exactly */}
+                    <h3 className="tw-text-2xl lg:tw-text-3xl tw-font-bold tw-text-black">
+                      {feature.subFeature.title}
+                    </h3>
+                    <p className="tw-mt-4 tw-text-base tw-text-gray-600">
+                      {feature.subFeature.description}
+                    </p>
+                  </div>
                 )}
               </div>
 

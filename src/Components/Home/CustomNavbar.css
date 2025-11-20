@@ -898,3 +898,10 @@ body {
   }
 }
 
+/* This is closing the dropdown when a category is clicked */
+.dropdown-menu.force-close {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+

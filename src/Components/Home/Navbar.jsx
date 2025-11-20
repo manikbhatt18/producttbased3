@@ -9,8 +9,22 @@ function CustomNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Ultrasonic Flow Meters");
 
+  //  ✅ New State to handle closing the dropdown on click
+  const [forceClose, setForceClose] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  // ✅ Function to close dropdown and reset mobile menu
+  const handleLinkClick = () => {
+    setForceClose(true); // Force hide the dropdown
+    toggleMenu(); // Close mobile menu if open
+  };
+
+  // ✅ Function to reset the dropdown when mouse leaves the area
+  const handleMouseLeave = () => {
+    setForceClose(false);
   };
 
   // ✅ Product Data
@@ -26,15 +40,12 @@ function CustomNavbar() {
       { name: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
       { name: "UF-Biosonic (Biogas Flow Meter)", link: "/product-detail/detail22" },
       { name: "TRX Ultrasonic Flow Meter (Air & Nitrogen)", link: "/product-detail/detail14" },
-
-
     ],
     "Electromagnetic Flow Meters": [
       { name: "MF-PRO", link: "/product-detail/detail7" },
       { name: "MF-TER (Ex-proof for Oil & Gas)", link: "/product-detail/detail7b" },
       { name: " Compact / Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
     ],
-
     "Water Meters": [
       { name: "Smart Single-Jet Water Meter", link: "/product-detail/detail9" },
       { name: "Woltmann Turbine Water Meter ", link: "/product-detail/detail10" },
@@ -42,7 +53,7 @@ function CustomNavbar() {
     "Positive Displacement Meters": [
       { name: "RPD (Ring Piston) Flow Meters", link: "/product-detail/detail11" },
       { name: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
-       { name: "Micro Stream Flow Sensor (OFZ Series)", link: "/product-detail/detail13" },
+      { name: "Micro Stream Flow Sensor (OFZ Series)", link: "/product-detail/detail13" },
     ],
     "Rotameters (Variable Area Flow Meters)": [
       { name: "Metal tube Rotameters", link: "/product-detail/detail24" },
@@ -51,7 +62,7 @@ function CustomNavbar() {
     "Special Application Flow Meters": [
       { name: "Conical Shape Flow Meter (Coke Oven Gas, High-Pressure/High-Temperature Gases, Wet Air, etc.)", link: "/product-detail/detail23" },
     ],
-   "Thermal Mass Flow Meters": [
+    "Thermal Mass Flow Meters": [
       { name: "Thermal Mass Flow Meter (Air & Gases: O₂, CO₂, Argon, Natural Gas, Biogas, etc.)", link: "/product-detail/detail15" },
     ],
     "Gas Flow Meters (Mechanical)": [
@@ -61,6 +72,15 @@ function CustomNavbar() {
     "Vortex Flow Meters": [
       { name: "VFM Vortex Flow Meters (Universal: Steam, Air, Gases, Liquids)", link: "/product-detail/detail16" },
       { name: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
+    ],
+    "IOTAFLOW Accessories": [
+      { name: "Strainers & Filters", link: "/accessories#accessory-1" },
+      { name: "Matching Flanges, Nuts, Bolts & Gaskets (Installation Kit)", link: "/accessories#accessory-2" },
+      { name: "Air Release Systems", link: "/accessories#accessory-3" },
+      { name: "Remote Display Units", link: "/accessories#accessory-4" },
+      { name: "Telemetry Systems - 4G RTU IOT Gateways", link: "/accessories#accessory-5" },
+      { name: "UPS-600VA-IOTAFLOW", link: "/accessories#accessory-6" },
+      { name: "Custom Flow Straighteners", link: "/accessories#accessory-7" },
     ],
   };
 
@@ -112,11 +132,14 @@ function CustomNavbar() {
             </div>
 
             {/* Products dropdown */}
-            <div className="nav-item dropdown">
-              <NavLink to="/product"  onClick={toggleMenu}>
+            <div
+              className="nav-item dropdown"
+              onMouseLeave={handleMouseLeave} /* ✅ Reset state when mouse leaves */
+            >
+              <NavLink to="/product" onClick={toggleMenu}>
                 Product
               </NavLink>
-              <div className="dropdown-menu">
+              <div className={`dropdown-menu ${forceClose ? "force-close" : ""}`}>
                 <div className="products-grid">
                   {/* Left Categories */}
                   <div className="product-categories">
@@ -135,11 +158,11 @@ function CustomNavbar() {
                   {/* Right Products */}
                   <div className="product-items">
                     {productData[activeCategory].map((product) => (
-                      <Link
+                      <Link // Using HashLink or regular Link with hash
                         to={product.link}
                         key={product.name}
                         className="product-card"
-                        onClick={toggleMenu}
+                        onClick={handleLinkClick} /* ✅ Closes dropdown immediately */
                       >
                         <div className="product-icon">
                           <img src={GaugeIcon} alt="icon" />
@@ -166,7 +189,7 @@ function CustomNavbar() {
 
             {/* Resources dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/resources"  onClick={toggleMenu}>
+              <NavLink to="/resources" onClick={toggleMenu}>
                 Lean Resources
               </NavLink>
               <div className="dropdown-menu regular">
@@ -178,11 +201,11 @@ function CustomNavbar() {
                 </NavLink>
               </div>
             </div>
-             <Link to="/contact">
-            <button className="contact-btn mobile-contact" onClick={toggleMenu}>
-              <span>Contact Us &gt;</span>
-            </button>
-             </Link>
+            <Link to="/contact">
+              <button className="contact-btn mobile-contact" onClick={toggleMenu}>
+                <span>Contact Us &gt;</span>
+              </button>
+            </Link>
           </div>
         </div>
 

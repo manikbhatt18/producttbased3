@@ -32,7 +32,10 @@
   color: black !important;
   border-bottom: 3px solid #ffcc00;
 }
-
+.nav-tabs{
+ 
+  margin-top:60px;
+}
 .active-nav {
   border-bottom: 3px solid #ffcc00;
 }

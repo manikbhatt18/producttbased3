@@ -45,18 +45,17 @@ const IconDatabase = ({ className }) => (
 
 
 // Card component to display each feature
-const FeatureCard = ({ icon, title, text }) => (
-  <div className="tw-bg-white tw-border tw-border-gray-100 tw-rounded-xl tw-shadow-lg tw-p-6 tw-text-left tw-transition-all tw-duration-300 hover:tw-shadow-xl hover:tw-scale-[1.02]">
-    {/* Icon Wrapper */}
-    <div className="tw-inline-flex tw-items-center tw-justify-center tw-p-3 tw-rounded-lg tw-bg-[#ffd700]">
+const FeatureCard = ({ icon, title, className }) => (
+  // Added tw-flex, tw-items-center, and tw-gap-4 to align icon and text side-by-side
+  <div className={`tw-bg-white tw-border tw-border-gray-100 tw-rounded-xl tw-shadow-lg tw-p-6 tw-flex tw-items-center tw-gap-4 tw-text-left tw-transition-all tw-duration-300 hover:tw-shadow-xl hover:tw-scale-[1.02] ${className}`}>
+    {/* Icon Wrapper with flex-shrink-0 to prevent squishing */}
+    <div className="tw-inline-flex tw-flex-shrink-0 tw-items-center tw-justify-center tw-p-3 tw-rounded-lg tw-bg-[#ffd700]">
       {icon}
     </div>
-    <h3 className="tw-mt-4 tw-text-lg tw-font-semibold tw-text-gray-900">
+    {/* Removed top margin (tw-mt-4) since it is now side-by-side */}
+    <h3 className="tw-text-lg tw-font-semibold tw-text-gray-900">
       {title}
     </h3>
-    <p className="tw-mt-2 tw-text-sm tw-text-gray-600">
-      {text}
-    </p>
   </div>
 );
 
@@ -66,27 +65,22 @@ function WhychooseIOT() {
     {
       icon: <IconTelemetry className="tw-w-7 tw-h-7 tw-text-black" />,
       title: "Remote Telemetry System (RTS) for Flow",
-      text: "Real-time monitoring and control of flow meters across distributed locations with seamless cloud connectivity."
     },
     {
       icon: <IconWaterDrop className="tw-w-7 tw-h-7 tw-text-black" />,
       title: "Smart Water Meter / Digital Water Meter Support",
-      text: "Comprehensive support for modern smart water meters with automated data collection and analytics."
     },
     {
       icon: <IconSettings className="tw-w-7 tw-h-7 tw-text-black" />,
       title: "Industry 5.0 & IIoT Ready",
-      text: "Built on modern IoT architecture with AI-driven insights, predictive maintenance, and intelligent automation."
     },
     {
       icon: <IconShield className="tw-w-7 tw-h-7 tw-text-black" />,
       title: "Regulatory Compliance",
-      text: "Full compliance with CGWA, CPCB, and NIC standards for water management and environmental monitoring."
     },
     {
       icon: <IconDatabase className="tw-w-7 tw-h-7 tw-text-black" />,
       title: "Data & Visualisation Anytime, Anywhere",
-      text: "Secure, scalable cloud storage with instant access to historical data, reports, and real-time dashboards."
     }
   ];
 
@@ -98,19 +92,16 @@ function WhychooseIOT() {
           <h2 className="tw-text-3xl lg:tw-text-4xl tw-font-bold tw-text-black">
             Why Choose IOT Sense?
           </h2>
-          <p className="tw-mt-4 tw-text-base tw-text-gray-600">
-            A comprehensive IoT platform designed specifically for flow measurement and smart metering applications
-          </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="tw-mt-12 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
+        {/* Features Container */}
+        <div className="tw-mt-12 tw-flex tw-flex-wrap tw-justify-center tw-gap-8">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
               icon={feature.icon}
               title={feature.title}
-              text={feature.text}
+              className="tw-w-full md:tw-w-[calc(50%-1rem)] lg:tw-w-[calc(33.333%-1.333rem)]"
             />
           ))}
         </div>
