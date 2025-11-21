@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .early.coverage
+
+src/tailwind-output.css
