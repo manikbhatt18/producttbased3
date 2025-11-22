@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Added Link for the Contact button
 
 // --- Placeholder Icons ---
 // You can replace these with your actual icon components when they are ready.
@@ -97,10 +98,38 @@ function Getstarted() {
       <div className="tw-container tw-mx-auto tw-px-4">
         
         {/* Header Section */}
-        <div className="tw-flex tw-flex-col sm:tw-flex-row tw-justify-center tw-items-center tw-mb-12">
-          <h2 className="tw-text-3xl lg:tw-text-4xl tw-font-bold tw-text-white tw-text-center">
-            How to Get Started
-          </h2>
+        <div className="tw-flex tw-flex-col md:tw-flex-row tw-justify-between tw-items-end tw-mb-20 tw-gap-8">
+          
+          {/* Left Side: Heading with Arrow */}
+          <div className="tw-relative tw-text-left tw-w-fit">
+            <h2 className="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-text-white tw-relative tw-z-10">
+              How to Get Started
+            </h2>
+            
+            {/* Custom Bold Arrow Underline */}
+            <div className="tw-absolute tw-left-0 tw-top-full tw-mt-2 tw-flex tw-items-center tw-w-[115%]">
+              {/* Bold Arrow Shaft */}
+              <div className="tw-h-2 tw-bg-[#ffd700] tw-flex-grow tw-rounded-l-sm"></div>
+              
+              {/* Bold Arrow Head using CSS Borders */}
+              <div 
+                className="tw-w-0 tw-h-0 
+                tw-border-t-[12px] tw-border-t-transparent
+                tw-border-b-[12px] tw-border-b-transparent
+                tw-border-l-[20px] tw-border-l-[#ffd700]
+                -tw-ml-[1px]" // Negative margin to ensure seamless connection
+              ></div>
+            </div>
+          </div>
+
+          {/* Right Side: Contact Button */}
+          <Link 
+            to="/contact" 
+            className="tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-3 tw-text-base tw-font-bold tw-text-black tw-bg-[#ffd700] tw-rounded-full tw-shadow-md tw-transition-all tw-duration-300 hover:tw-bg-yellow-400 hover:tw-shadow-lg hover:-tw-translate-y-1 tw-no-underline"
+          >
+            Contact Us <span className="tw-ml-2">→</span>
+          </Link>
+
         </div>
 
         {/* Steps Grid */}

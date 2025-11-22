@@ -67,6 +67,8 @@ import OurPartners from "./Components/Home/OurPartners";
 import HeroSection from "./Components/Home/HeroSection";
 import IOTsensePage from "./pages/IOTsensePage";
 import Accessories from "./pages/Accessories";
+import CaseStudies from "./pages/CaseStudies";
+
 
 
 function HomePage() {
@@ -101,6 +103,8 @@ function App() {
           <Route path="/seo" element={<SeoPage />} />
           <Route path="/iotsense" element={<IOTsensePage />} />
           <Route path="/accessories" element={<Accessories />} />
+          <Route path="/casestudies" element={<CaseStudies />} />
+
 
 
           {/* Product Detail Routes */}

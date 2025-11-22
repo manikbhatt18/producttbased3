@@ -73,9 +73,9 @@ function CustomNavbar() {
       { name: "VFM Vortex Flow Meters (Universal: Steam, Air, Gases, Liquids)", link: "/product-detail/detail16" },
       { name: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
     ],
-    "IOTAFLOW Accessories": [
+    "Flow Meter Accessories": [
       { name: "Strainers & Filters", link: "/accessories#accessory-1" },
-      { name: "Matching Flanges, Nuts, Bolts & Gaskets (Installation Kit)", link: "/accessories#accessory-2" },
+      { name: "Matching Flanges, Nuts, Bolts & Gaskets", link: "/accessories#accessory-2" },
       { name: "Air Release Systems", link: "/accessories#accessory-3" },
       { name: "Remote Display Units", link: "/accessories#accessory-4" },
       { name: "Telemetry Systems - 4G RTU IOT Gateways", link: "/accessories#accessory-5" },

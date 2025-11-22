@@ -63,7 +63,7 @@ const accessoriesData = [
     description: (
       <>
         <div className="tw-mb-6">
-          <h4 className="tw-font-bold tw-text-black tw-mb-2">Model: FI-106 Series – Flow Indicator Totalizers</h4>
+          <h4 className="tw-font-bold tw-text-black-800 tw-mb-2">Model: FI-106 Series – Flow Indicator Totalizers</h4>
           <p className="tw-mb-2">
             Remote Display Units are designed for clear, panel-mounted indication of flow rate and total flow for field-installed flow meters. Compatible with RPD, Turbine, Electromagnetic, Ultrasonic, and other inline meters, these units accept 0–20 mA, 4–20 mA, and voltage (1–5 V / 0–5 V) signals with linear or square-root extraction.
           </p>
@@ -72,7 +72,7 @@ const accessoriesData = [
           </p>
         </div>
         <div>
-          <h4 className="tw-font-bold tw-text-black tw-mb-2">Model: FI-108 Series (Data Logger Models)</h4>
+          <h4 className="tw-font-bold tw-text-black-800 tw-mb-2">Model: FI-108 Series (Data Logger Models)</h4>
           <p className="tw-mb-2">
             IOTAFLOW FI-108 Series Remote Display Data Loggers provide local indication and long-term data storage. Available in 1/2/3/4/8-channel configurations, logging up to 180 days of data.
           </p>
@@ -167,7 +167,7 @@ const AccessoryItem = ({ item, isReversed }) => {
 
         <a 
           href="#contact" 
-          className="tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-3 tw-text-base tw-font-bold tw-text-black tw-bg-[#ffd700] tw-rounded-full tw-shadow-md tw-transition-all tw-duration-300 hover:tw-bg-yellow-400 hover:tw-shadow-lg hover:-tw-translate-y-1"
+          className="tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-3 tw-text-base tw-font-bold tw-text-black tw-bg-[#ffd700] tw-rounded-full tw-shadow-md tw-transition-all tw-duration-300 hover:tw-bg-yellow-400 hover:tw-shadow-lg hover:-tw-translate-y-1 tw-no-underline"
         >
           Contact Us <span className="tw-ml-2">→</span>
         </a>
