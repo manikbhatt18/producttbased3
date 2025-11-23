@@ -68,6 +68,11 @@ import HeroSection from "./Components/Home/HeroSection";
 import IOTsensePage from "./pages/IOTsensePage";
 import Accessories from "./pages/Accessories";
 import CaseStudies from "./pages/CaseStudies";
+import Casestudy1 from "./pages/particularCasestudies/Casestudy1";
+import Casestudy2 from "./pages/particularCasestudies/Casestudy2";
+import Casestudy3 from "./pages/particularCasestudies/Casestudy3";
+import Casestudy4 from "./pages/particularCasestudies/Casestudy4";
+import Casestudy5 from "./pages/particularCasestudies/Casestudy5";
 
 
 
@@ -104,6 +109,12 @@ function App() {
           <Route path="/iotsense" element={<IOTsensePage />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/casestudies" element={<CaseStudies />} />
+          <Route path="/case-studies/1" element={<Casestudy1/>} />
+          <Route path="/case-studies/2" element={<Casestudy2/>} />
+          <Route path="/case-studies/3" element={<Casestudy3/>} />
+          <Route path="/case-studies/4" element={<Casestudy4/>} />
+          <Route path="/case-studies/5" element={<Casestudy5/>} />
+
 
 
 

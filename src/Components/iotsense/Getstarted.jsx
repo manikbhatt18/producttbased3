@@ -41,7 +41,19 @@ const steps = [
   {
     icon: <IconStep2 className="tw-w-7 tw-h-7 tw-text-black" />,
     title: "Stream & Explore",
-    text: "The data will stream into our portal — login via iotaflow.in, explore dashboards, set alerts, build workflows."
+    text: (
+    <>
+      The data will stream into our portal — login via{" "}
+      <Link
+      to="/"
+      onClick={() => window.scrollTo(0, 0)}
+      className="tw-no-underline"
+    >
+      iotaflow.in
+    </Link>
+      , explore dashboards, set alerts, build workflows.
+    </>
+  )
   },
   {
     icon: <IconStep3 className="tw-w-7 tw-h-7 tw-text-black" />,

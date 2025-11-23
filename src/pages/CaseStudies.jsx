@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom';
 
 // --- Data: Industries (Sidebar Filters) ---
 const industries = [
+  "Steel & Metallurgy",
+  "Infrastructure & Urban Utilities",
   "Water & Wastewater",
+  "Mining & Fertilizer Industry",
+  "HVAC & Building Automation",
   "Oil & Gas",
   "Energy & Power",
-  "HVAC & Building Automation",
   "Biogas & Renewable Energy",
   "Industrial & Process Automation",
   "Food & Beverage",
   "Chemical & Pharmaceutical",
   "Irrigation & Agriculture",
   "Marine & Shipping",
-  "OEM & Equipment Manufacturers",
-  "Infrastructure & Urban Utilities",
-  "Steel & Metallurgy",
-  "Mining & Fertilizer Industry"
+  "OEM & Equipment Manufacturers"
+  
 ];
 
 // --- Data: Case Studies ---
@@ -60,13 +61,17 @@ const caseStudiesData = [
 
 // --- Component: Case Study Card ---
 const CaseStudyCard = ({ data }) => (
-  <div className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-border-gray-200 tw-overflow-hidden tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-shadow-2xl hover:tw-translate-y-[-4px]">
+  // UPDATED: Wrapped the entire card in Link to make it clickable
+  <Link 
+    to={`/case-studies/${data.id}`} 
+    className=" tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-border-gray-200 tw-overflow-hidden tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-shadow-2xl hover:tw-translate-y-[-4px] tw-no-underline group"
+  >
     {/* Image */}
     <div className="tw-h-56 tw-overflow-hidden tw-relative">
       <img 
         src={data.image} 
         alt={data.title} 
-        className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-110"
+        className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-110"
       />
       {/* Category Badge */}
       <div className="tw-absolute tw-top-4 tw-right-4 tw-bg-[#ffd700] tw-text-black tw-text-xs tw-font-bold tw-px-3 tw-py-1 tw-rounded-full tw-shadow-sm">
@@ -83,14 +88,14 @@ const CaseStudyCard = ({ data }) => (
         {data.description}
       </p>
 
-      {/* Button */}
-      <Link to={`/case-studies/${data.id}`} className="tw-mt-auto">
-        <button className="tw-w-full tw-py-3 tw-bg-black tw-text-white tw-font-bold tw-rounded-lg tw-border-2 tw-border-transparent tw-transition-all tw-duration-300 hover:tw-bg-[#ffd700] hover:tw-text-black hover:tw-border-[#ffd700]">
+      {/* Fake Button (Visual Only) - Changed to span to avoid nested links/buttons */}
+      <div className="tw-mt-auto">
+        <span className="tw-block tw-w-full tw-py-3 tw-bg-black tw-text-white tw-font-bold tw-rounded-lg tw-border-2 tw-border-transparent tw-text-center tw-transition-all tw-duration-300 hover:tw-bg-[#ffd700] hover:tw-text-black hover:tw-border-[#ffd700]">
           Explore Case Study <span className="tw-ml-1">→</span>
-        </button>
-      </Link>
+        </span>
+      </div>
     </div>
-  </div>
+  </Link>
 );
 
 // --- Main Component ---
@@ -167,15 +172,15 @@ function CaseStudies() {
         <div className="tw-flex-1 tw-p-6 md:tw-p-12">
           
           <div className="tw-max-w-6xl tw-mx-auto">
-            {/* New Header Section with Bold Highlighting */}
-            <div className="tw-mb-12">
+            {/* New Header Section with Light Yellow Background */}
+            <div className="tw-mb-12 tw-bg-[#f7ea64] tw-p-8 md:tw-p-10 tw-rounded-xl tw-shadow-sm tw-border tw-border-yellow-500">
               <h1 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-6 tw-text-center">
                 Case Studies
                 <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-2 tw-mx-auto"></span>
               </h1>
               
-              {/* Updated: Added tw-max-w-4xl and tw-mx-auto to constrain width and center the block */}
-              <div className="tw-space-y-4 tw-text-gray-700 tw-text-base md:tw-text-lg tw-leading-relaxed tw-text-center tw-max-w-4xl tw-mx-auto">
+              {/* Description Text */}
+              <div className="tw-space-y-4 tw-text-gray-700 tw-text-base md:tw-text-lg tw-leading-relaxed">
                 <p>
                   At <span className="tw-font-bold tw-text-black">IOTAFLOW</span>, we believe real-world results define true innovation. Our advanced <span className="tw-font-bold tw-text-black">flow measurement technologies</span>, from <span className="tw-font-bold tw-text-black">ultrasonic and electromagnetic meters</span> to <span className="tw-font-bold tw-text-black">mechanical, vortex, and thermal solutions</span>, are engineered to deliver precision, reliability, and measurable impact across industries.
                 </p>
