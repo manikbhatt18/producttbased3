@@ -1,5 +1,11 @@
 import React from 'react';
 
+import waterUtilitiesImg from '../../images/Iotsense_Emoticons_WaterUtilities.png';
+import industrialPlantsImg from '../../images/Iotsense_Emoticons_IndustrialPlants.png';
+import groundwaterComplianceImg from '../../images/Iotsense_Emoticons_Ground-WaterCompliance.png';
+import facilityManagementImg from '../../images/Iotsense_Emoticons_BuildingManagement.png';
+import utilitiesEnergyImg from '../../images/Iotsense_Emoticons_Utilities&Energy.png';
+
 // Card component for each Use Case
 const UseCaseCard = ({ title, description, image, className }) => (
   <div 
@@ -36,27 +42,27 @@ function Usecases() {
     {
       title: "Water Utilities & Smart Cities",
       description: "Deploy smart water meters, IoT telemetry, remote meter reading (AMR/AMI) networks for leak-detection, NRW (non-revenue water) reduction.",
-      image: "https://pixabay.com/images/download/people-2944065_640.jpg?attachment" // Placeholder
+      image: waterUtilitiesImg // Placeholder
     },
     {
       title: "Industrial Plants & Manufacturing",
       description: "Monitor flow in process lines (cooling water, chemicals, compressed air), correlate with energy use for Industry 4.0 optimisation.",
-      image: "https://placehold.co/600x400/1a202c/ffd700?text=Industrial" // Placeholder
+      image: industrialPlantsImg // Placeholder
     },
     {
       title: "Ground-water / Extraction Compliance",
       description: "Use flow telemetry to meet CGWA limits and export NIC-/government-data formats.",
-      image: "https://placehold.co/600x400/1a202c/ffd700?text=Ground+Water" // Placeholder
+      image: groundwaterComplianceImg // Placeholder
     },
     {
       title: "Building / Facility Management",
       description: "Flow-meter networks in large campuses, bore-well monitoring, rain-water harvesting, digital water meter networks.",
-      image: "https://placehold.co/600x400/1a202c/ffd700?text=Facility+Mgmt" // Placeholder
+      image: facilityManagementImg // Placeholder
     },
     {
       title: "Utilities & Energy",
       description: "Steam/condensate flow monitoring, remote telemetry of flow meters in diverse fluid systems.",
-      image: "https://placehold.co/600x400/1a202c/ffd700?text=Utilities" // Placeholder
+      image: utilitiesEnergyImg // Placeholder
     }
   ];
 

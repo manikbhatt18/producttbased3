@@ -1,5 +1,10 @@
 import React from 'react';
 
+import deployAndScaleimg from '../../images/Iot sense_Emoticons_Deployment & Scalability.png';
+import flowFocusedAppsimg from '../../images/Iot sense_Emoticons_Flow-Focused Applications.png';
+import intelligenceAnalyticsimg from '../../images/Iot sense_Emoticons_Intelligence & Analytics.png';
+import utilityBenefitsimg from '../../images/Iot sense_Emoticons_Utility Benefits.png';
+
 // A custom check icon, styled for the black and yellow theme.
 const IconCheck = ({ className }) => (
   <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -16,7 +21,7 @@ const features = [
     bullets: [
       "Supports all major industrial protocols (Modbus, HART, wireless IoT, LoRa, NB-IoT) and offers plug-and-play integration for flow measurement networks.",
     ],
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+1+Image",
+    imagePlaceholder: deployAndScaleimg,
     // Merged content from the original 4th feature
     subFeature: {
       title: "Deployment & Scalability",
@@ -34,7 +39,7 @@ const features = [
       "Compliance audits: generate reports for CGWA extraction limits, CPCB discharge-monitoring, NIC data-interface export.",
       "Leak-/reverse-flow detection, non-revenue water tracking, utility-loss reduction."
     ],
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+2+Image"
+    imagePlaceholder: flowFocusedAppsimg
   },
   {
     title: "Intelligence, Analytics & Automation",
@@ -44,7 +49,7 @@ const features = [
       "Natural-language query: ask “why did flow drop in Zone 3?” or “which pump’s flow is leaking?”",
       "Edge-analytics: on-device or gateway inference for real-time flow events or critical telemetry use-cases."
     ],
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+3+Image"
+    imagePlaceholder: intelligenceAnalyticsimg
   },
   {
     title: "Utility & Sustainability Benefits",
@@ -54,7 +59,7 @@ const features = [
       "Grow easily: add new flow-types, sites and devices without heavy custom-code.",
       "Deliver ESG / sustainability reporting: smart water meters and IoT flow data feed into sustainability metrics, help meet regulatory and corporate goals."
     ],
-    imagePlaceholder: "https://placehold.co/600x450/4a5568/ffffff?text=Feature+5+Image"
+    imagePlaceholder: utilityBenefitsimg
   }
 ];
 

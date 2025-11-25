@@ -12,7 +12,10 @@ const accessoriesData = [
           Industrial-grade strainers engineered for cold water, hot water, and oil service, ensuring long-term protection and accuracy for Woltmann, Multijet, and RPD flow meters. Available in Simplex, Duplex, Y-type, and TEE-type configurations for 8 mm–900 mm lines with flanged or screwed connections (PN 16 / Class #150).
         </p>
         <p className="tw-mb-4">
-          Constructed from MS, Cast Iron, SS304, or SS316 with SS304 baskets rated 150 microns–1.6 mm (40 mesh / 250 µ). Withstand 10 bar working / 16 bar test pressure, feature neoprene seals, ¼″–1″ drain plugs, and optional butterfly valve isolation on duplex versions.
+          Constructed from MS, Cast Iron, SS304, or SS316 with SS304 baskets rated 150 microns–1.6 mm (40 mesh / 250 µ).
+        </p>
+        <p>
+           Withstand 10 bar working / 16 bar test pressure, feature neoprene seals, ¼″–1″ drain plugs, and optional butterfly valve isolation on duplex versions.
         </p>
         <p>
           Designed to extend meter life, maintain flow accuracy, and ensure compliance for industrial and utility applications under CGWA / CPCB monitoring frameworks.
@@ -33,7 +36,10 @@ const accessoriesData = [
           Available for 8 mm–1200 mm line sizes, manufactured in MS, SS304, or SS316, and supplied with flanges drilled to ASME/ANSI B16.5 (Class 150 / 300) and EN 1092-1 PN16 standards for global compatibility.
         </p>
         <p>
-          Suitable for water, oil, air, steam, slurry, and chemical services, the kits ensure accurate alignment, uniform sealing, and correct torque transfer, preventing meter strain and leakage. Delivered with GI/SS fasteners and CAF / EPDM / PTFE gaskets, they provide long-term sealing integrity and compliance with CGWA / CPCB flow-meter installation requirements.
+          Suitable for water, oil, air, steam, slurry, and chemical services, the kits ensure accurate alignment, uniform sealing, and correct torque transfer, preventing meter strain and leakage.
+        </p>
+        <p>
+           Delivered with GI/SS fasteners and CAF / EPDM / PTFE gaskets, they provide long-term sealing integrity and compliance with CGWA / CPCB flow-meter installation requirements.
         </p>
       </>
     ),
@@ -65,19 +71,29 @@ const accessoriesData = [
         <div className="tw-mb-6">
           <h4 className="tw-font-bold tw-text-black-800 tw-mb-2">Model: FI-106 Series – Flow Indicator Totalizers</h4>
           <p className="tw-mb-2">
-            Remote Display Units are designed for clear, panel-mounted indication of flow rate and total flow for field-installed flow meters. Compatible with RPD, Turbine, Electromagnetic, Ultrasonic, and other inline meters, these units accept 0–20 mA, 4–20 mA, and voltage (1–5 V / 0–5 V) signals with linear or square-root extraction.
+            Remote Display Units are designed for clear, panel-mounted indication of flow rate and total flow for field-installed flow meters, making them ideal for Indian industrial sites where the meter is installed at a height, in a hazardous zone, or in difficult-to-access locations. Compatible with RPD, Turbine, Electromagnetic, Ultrasonic, and other inline meters, these units accept 0–20 mA, 4–20 mA, and voltage (1–5 V / 0–5 V) signals with linear or square-root extraction.
+
           </p>
           <p>
-            Available in standard ABS enclosures and flame-proof CMRI-certified models, they offer large readouts up to 0–9999 (flow) and 0–99,999,999 (total) with optional pressure and temperature compensation. Powered by 230 VAC, 24 VDC, 110 VAC, or 24 VAC.
+            Available in standard ABS enclosures and flame-proof CMRI-certified models, they offer large readouts up to 0–9999 (flow) and 0–99,999,999 (total) with optional pressure and temperature compensation for improved accuracy. Powered by 230 VAC, 24 VDC, 110 VAC, or 24 VAC, each model includes 24 V DC transmitter supply, RS485 communication, dual relay alarms, &lt; 6 W consumption, and 1.4 kV input–output isolation for stable performance.
+
+          </p>
+          <p>
+            Ideal for oil, water, chemical, and industrial utilities, these remote indicators ensure accurate monitoring, safer operation and CGWA/CPCB-compliant flow logging—a key accessory for dependable and accessible flow measurement in Indian process plants.
+
           </p>
         </div>
         <div>
           <h4 className="tw-font-bold tw-text-black-800 tw-mb-2">Model: FI-108 Series (Data Logger Models)</h4>
           <p className="tw-mb-2">
-            IOTAFLOW FI-108 Series Remote Display Data Loggers provide local indication and long-term data storage. Available in 1/2/3/4/8-channel configurations, logging up to 180 days of data.
+            IOTAFLOW FI-108 Series Remote Display Data Loggers provide local indication and long-term data storage for flow meters installed in industrial pipelines. Available in 1/2/3/4/8-channel configurations, the FI-108 accepts universal input signals and logs up to 180 days of data at one-minute intervals, making it suitable for utilities, oil lines, water networks, and process plants requiring dependable historical records.
           </p>
           <p>
-            Equipped with a 3-inch LCD display, onboard RTC, and USB 2.0 data export. Sized at 160 mm × 80 mm, this compact accessory enhances visibility and strengthens digital compliance in Indian industrial flow-metering systems.
+            Equipped with a 3-inch LCD display, onboard RTC (real-time clock), and USB 2.0 data export, the unit simplifies reporting for CGWA/CPCB submissions and operational audits. Powered by 220 VAC, it includes low and high relay outputs for alarm conditions.
+          </p>
+          <p>
+            Sized at 160 mm × 80 mm, the FI-108 Series is a compact, panel-mounted accessory that enhances visibility, provides accurate local monitoring, and strengthens digital compliance in Indian industrial flow-metering systems.
+
           </p>
         </div>
       </>
@@ -90,10 +106,12 @@ const accessoriesData = [
     description: (
       <>
         <p className="tw-mb-4">
-          IOTAFLOW Telemetry Systems combine 4G RTU Gateways and RTU-IOT4G NIC-compliant units to deliver fully automated, real-time data transfer for industrial water, oil, and groundwater monitoring applications. Built with integrated RTU, power supply, SIM tray, and 4G GSM/GPRS modem, these gateways support Modbus inputs from 1, 2, or 4 flow meters.
+          IOTAFLOW Telemetry Systems combine 4G RTU Gateways and RTU-IOT4G NIC-compliant units to deliver fully automated, real-time data transfer for industrial water, oil, and groundwater monitoring applications. Built with integrated RTU, power supply, SIM tray, and 4G GSM/GPRS modem, these gateways support Modbus inputs from 1, 2, or 4 flow meters, allowing multiple meters to report through a single device. Powered by 220 VAC/ 24 VDC, each unit ensures continuous, interruption-free transmission of flow data to either the IOTAFLOW Cloud (iotaflow.in) or directly to NIC servers, depending on regulatory requirements.
+
         </p>
         <p>
-          Designed for India’s regulatory landscape, the system meets CGWA, CPCB, SPCB, and State Groundwater authority compliance by enabling automatic hourly data transfer, tamper-proof logging, and authenticated online reporting.
+         Designed for India’s regulatory landscape, the system meets CGWA, CPCB, SPCB, and State Groundwater authority compliance by enabling automatic hourly data transfer, tamper-proof logging, and authenticated online reporting. Ideal for Woltmann, electromagnetic, ultrasonic, turbine, RPD, and industrial utility meters, these gateways eliminate manual data collection, ensure accurate flow monitoring, and support Industry 4.0-ready remote telemetry systems widely adopted across Indian industrial infrastructure.
+
         </p>
       </>
     ),
@@ -105,10 +123,11 @@ const accessoriesData = [
     description: (
       <>
         <p className="tw-mb-4">
-          Compact UPS Power Backup Unit ensures uninterrupted operation of flow meters, telemetry systems, RTUs, and data loggers used in Indian industrial water, oil, and utility monitoring. With a 360 W / 600 VA load capacity, AVR, and a wide 145–290 V input range, it stabilizes voltage and protects sensitive metering equipment.
+          Compact UPS Power Backup Unit ensures uninterrupted operation of flow meters, telemetry systems, RTUs, and data loggers used in Indian industrial water, oil, and utility monitoring. With a 360 W / 600 VA load capacity, AVR, and a wide 145–290 V input range, it stabilizes voltage and protects sensitive metering equipment from fluctuations and surges.
         </p>
         <p>
-          The unit provides three battery-backed, surge-protected outputs with 6A Indian sockets and a fast 10–12 ms transfer time, preventing data loss during power cuts. Optimized for CGWA, CPCB, SPCB, and NIC-compliant installations.
+          The unit provides three battery-backed, surge-protected outputs with 6A Indian sockets and a fast 10–12 ms transfer time, preventing data loss during power cuts. Optimized for CGWA, CPCB, SPCB, and NIC-compliant installations, this UPS ensures reliable, continuous flow-meter data logging and supports Industry 4.0-ready smart metering and IoT telemetry systems across India.
+
         </p>
       </>
     ),
@@ -119,9 +138,10 @@ const accessoriesData = [
     title: "Custom Flow Straighteners",
     description: (
       <>
-        <p className="tw-mb-2"><span className="tw-font-bold">Purpose:</span> Stabilize turbulence and achieve precise velocity profiles before measurement.</p>
-        <p className="tw-mb-2"><span className="tw-font-bold">Use Case:</span> Non-ideal pipeline layouts, elbows or valves near the sensor.</p>
-        <p><span className="tw-font-bold">Specs:</span> Material, L/D ratio, compatibility range (Customizable).</p>
+        <p>
+          IOTAFLOW Flow Straighteners ensure stable, swirl-free flow for accurate readings in electromagnetic, ultrasonic, and turbine flow meters. Built for DN 8 mm to 1200 mm meter sizes pipelines, featuring an SS bundle core with MS or SS body and supplied with flanges drilled to ASME/ANSI B16.5 Table, they deliver uniform velocity profiles and improved meter precision. Ideal for water, oil, and process lines, these straighteners enhance flow stability, reduce measurement error, and meet CGWA/CPCB compliance for Indian industrial flow systems.
+
+        </p>
       </>
     ),
     image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Flow+Straighteners"
