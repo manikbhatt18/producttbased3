@@ -471,7 +471,7 @@ export function FAQSection() {
   ];
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <Container>
         <h3 className="section-heading">
           <span className="heading-bar" /> FAQ’S

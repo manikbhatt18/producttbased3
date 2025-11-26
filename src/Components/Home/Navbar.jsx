@@ -196,7 +196,7 @@ function CustomNavbar() {
                 <NavLink to="/about-us/certification" onClick={toggleMenu}>
                   Lean Journey
                 </NavLink>
-                <NavLink to="/about-us/result" onClick={toggleMenu}>
+                <NavLink to="/casestudies" onClick={toggleMenu}>
                   Case Studies
                 </NavLink>
               </div>

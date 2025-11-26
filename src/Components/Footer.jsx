@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Logo from "../images/Iotaf logo icon.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -57,7 +58,12 @@ function Footer() {
           <Col lg={2} md={6}>
             <FooterCol
               title="Company"
-              items={["About Us", "Applications", "Case Studies", "Lean Resources"]}
+              items={[
+                { label: "About Us", href: "/about-us" },
+                { label: "Applications", href: "/applications" },
+                { label: "Case Studies", href: "/casestudies" },
+                { label: "Lean Resources", href: "/resources" }
+              ]}
             />
           </Col>
 
@@ -65,13 +71,23 @@ function Footer() {
           <Col lg={2} md={6}>
             <FooterCol
               title="Support"
-              items={["FAQs", "Lodge a Complaint", "Feedback", "Downloads"]}
+              items={[
+                { label: "FAQs", href: "/#faq" },
+                { label: "Lodge a Complaint", href: "/complaint" },
+                { label: "Feedback", href: "/feedback" },
+                { label: "Downloads", href: "/downloads" }
+              ]}
             />
           </Col>
 
           {/* Careers */}
           <Col lg={2} md={6}>
-            <FooterCol title="Careers" items={["Career Opportunities"]} />
+            <FooterCol
+              title="Careers"
+              items={[
+                { label: "Career Opportunities", href: "/careers" }
+              ]}
+            />
           </Col>
 
           {/* Contact Us */}
@@ -134,11 +150,15 @@ function FooterCol({ title, items }) {
         <span className="footer-col-underline" />
       </h5>
       <ul className="list-unstyled d-grid gap-2 mb-0">
-        {items.map((i) => (
-          <li key={i}>
-            <a href="#" className="text-decoration-none text-light-50">
-              {i}
-            </a>
+        {items.map((item) => (
+          <li key={item.label}>
+            <Link
+              to={item.href}
+              className="text-decoration-none text-light-50"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              {item.label}
+            </Link>
           </li>
         ))}
       </ul>

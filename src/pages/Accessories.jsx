@@ -1,6 +1,14 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+//images import
+import strainerImage from '../../src/images/Strainers&Filters(2).jpg';
+import AirReleaseImage from '../../src/images/AirReleaseSystems.jpg';
+import RemoteDisplayImage from '../../src/images/Remote_Display_units.JPG';
+import telementryImage from '../../src/images/TelemetrySystems-4G_RTU_IOT_Gateways.jpg';
+import CustomFlowImage from '../../src/images/CustomFlowStraighteners.jpg';
+
+
 // Data for all 7 accessories
 const accessoriesData = [
   {
@@ -22,7 +30,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Strainers+%26+Filters"
+    image: strainerImage
   },
   {
     id: 2,
@@ -61,7 +69,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Air+Release+Systems"
+    image: AirReleaseImage
   },
   {
     id: 4,
@@ -98,7 +106,7 @@ const accessoriesData = [
         </div>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Remote+Display+Units"
+    image: RemoteDisplayImage
   },
   {
     id: 5,
@@ -115,7 +123,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Telemetry+Systems"
+    image: telementryImage
   },
   {
     id: 6,
@@ -144,7 +152,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Flow+Straighteners"
+    image: CustomFlowImage
   }
 ];
 
