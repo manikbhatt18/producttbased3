@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-//images import
-import strainerImage from '../../src/images/Strainers&Filters(2).jpg';
-import AirReleaseImage from '../../src/images/AirReleaseSystems.jpg';
-import RemoteDisplayImage from '../../src/images/Remote_Display_units.JPG';
-import telementryImage from '../../src/images/TelemetrySystems-4G_RTU_IOT_Gateways.jpg';
-import CustomFlowImage from '../../src/images/CustomFlowStraighteners.jpg';
+// --- Placeholder Images for Preview ---
+import strainerImage from '../../src/images/Strainers___Filters__2_-removebg-preview.png';
+import AirReleaseImage from '../../src/images/Air_Release_Systems-removebg-preview.png';
+import RemoteDisplayImage from '../../src/images/IMG_0488-removebg-preview.png';
+import telementryImage from '../../src/images/Telemetry_Systems_-_4G_RTU_IOT_Gateways-removebg-preview.png';
+import CustomFlowImage from '../../src/images/Custom_Flow_Straighteners-removebg-preview.png';
 
-
-// Data for all 7 accessories
 const accessoriesData = [
   {
     id: 1,
@@ -30,6 +28,7 @@ const accessoriesData = [
         </p>
       </>
     ),
+    // Replace with 'strainerImage' in your local project
     image: strainerImage
   },
   {
@@ -69,6 +68,7 @@ const accessoriesData = [
         </p>
       </>
     ),
+    // Replace with 'AirReleaseImage'
     image: AirReleaseImage
   },
   {
@@ -80,15 +80,12 @@ const accessoriesData = [
           <h4 className="tw-font-bold tw-text-black-800 tw-mb-2">Model: FI-106 Series – Flow Indicator Totalizers</h4>
           <p className="tw-mb-2">
             Remote Display Units are designed for clear, panel-mounted indication of flow rate and total flow for field-installed flow meters, making them ideal for Indian industrial sites where the meter is installed at a height, in a hazardous zone, or in difficult-to-access locations. Compatible with RPD, Turbine, Electromagnetic, Ultrasonic, and other inline meters, these units accept 0–20 mA, 4–20 mA, and voltage (1–5 V / 0–5 V) signals with linear or square-root extraction.
-
           </p>
           <p>
             Available in standard ABS enclosures and flame-proof CMRI-certified models, they offer large readouts up to 0–9999 (flow) and 0–99,999,999 (total) with optional pressure and temperature compensation for improved accuracy. Powered by 230 VAC, 24 VDC, 110 VAC, or 24 VAC, each model includes 24 V DC transmitter supply, RS485 communication, dual relay alarms, &lt; 6 W consumption, and 1.4 kV input–output isolation for stable performance.
-
           </p>
           <p>
             Ideal for oil, water, chemical, and industrial utilities, these remote indicators ensure accurate monitoring, safer operation and CGWA/CPCB-compliant flow logging—a key accessory for dependable and accessible flow measurement in Indian process plants.
-
           </p>
         </div>
         <div>
@@ -101,11 +98,11 @@ const accessoriesData = [
           </p>
           <p>
             Sized at 160 mm × 80 mm, the FI-108 Series is a compact, panel-mounted accessory that enhances visibility, provides accurate local monitoring, and strengthens digital compliance in Indian industrial flow-metering systems.
-
           </p>
         </div>
       </>
     ),
+    // Replace with 'RemoteDisplayImage'
     image: RemoteDisplayImage
   },
   {
@@ -115,15 +112,14 @@ const accessoriesData = [
       <>
         <p className="tw-mb-4">
           IOTAFLOW Telemetry Systems combine 4G RTU Gateways and RTU-IOT4G NIC-compliant units to deliver fully automated, real-time data transfer for industrial water, oil, and groundwater monitoring applications. Built with integrated RTU, power supply, SIM tray, and 4G GSM/GPRS modem, these gateways support Modbus inputs from 1, 2, or 4 flow meters, allowing multiple meters to report through a single device. Powered by 220 VAC/ 24 VDC, each unit ensures continuous, interruption-free transmission of flow data to either the IOTAFLOW Cloud (iotaflow.in) or directly to NIC servers, depending on regulatory requirements.
-
         </p>
         <p>
-         Designed for India’s regulatory landscape, the system meets CGWA, CPCB, SPCB, and State Groundwater authority compliance by enabling automatic hourly data transfer, tamper-proof logging, and authenticated online reporting. Ideal for Woltmann, electromagnetic, ultrasonic, turbine, RPD, and industrial utility meters, these gateways eliminate manual data collection, ensure accurate flow monitoring, and support Industry 4.0-ready remote telemetry systems widely adopted across Indian industrial infrastructure.
-
+          Designed for India’s regulatory landscape, the system meets CGWA, CPCB, SPCB, and State Groundwater authority compliance by enabling automatic hourly data transfer, tamper-proof logging, and authenticated online reporting. Ideal for Woltmann, electromagnetic, ultrasonic, turbine, RPD, and industrial utility meters, these gateways eliminate manual data collection, ensure accurate flow monitoring, and support Industry 4.0-ready remote telemetry systems widely adopted across Indian industrial infrastructure.
         </p>
       </>
     ),
-    image: telementryImage
+    // Replace with 'telementryImage'
+    image:telementryImage
   },
   {
     id: 6,
@@ -135,7 +131,6 @@ const accessoriesData = [
         </p>
         <p>
           The unit provides three battery-backed, surge-protected outputs with 6A Indian sockets and a fast 10–12 ms transfer time, preventing data loss during power cuts. Optimized for CGWA, CPCB, SPCB, and NIC-compliant installations, this UPS ensures reliable, continuous flow-meter data logging and supports Industry 4.0-ready smart metering and IoT telemetry systems across India.
-
         </p>
       </>
     ),
@@ -148,10 +143,10 @@ const accessoriesData = [
       <>
         <p>
           IOTAFLOW Flow Straighteners ensure stable, swirl-free flow for accurate readings in electromagnetic, ultrasonic, and turbine flow meters. Built for DN 8 mm to 1200 mm meter sizes pipelines, featuring an SS bundle core with MS or SS body and supplied with flanges drilled to ASME/ANSI B16.5 Table, they deliver uniform velocity profiles and improved meter precision. Ideal for water, oil, and process lines, these straighteners enhance flow stability, reduce measurement error, and meet CGWA/CPCB compliance for Indian industrial flow systems.
-
         </p>
       </>
     ),
+    // Replace with 'CustomFlowImage'
     image: CustomFlowImage
   }
 ];
@@ -165,7 +160,7 @@ const AccessoryItem = ({ item, isReversed }) => {
       <div className="tw-w-full md:tw-w-1/2 tw-relative tw-flex tw-items-center tw-justify-center">
         {/* The Decorative Background Shape */}
         <div 
-          className={`tw-absolute tw-top-0 tw-bottom-0 tw-w-[120%] tw-bg-gray-100 tw-z-0
+          className={`tw-absolute tw-top-0 tw-bottom-0 tw-w-[100%] tw-bg-gray-100 tw-z-0
             ${isReversed 
               ? 'tw-rounded-l-[100px] tw-right-[-20%]' 
               : 'tw-rounded-r-[100px] tw-left-[-20%]'
@@ -179,7 +174,10 @@ const AccessoryItem = ({ item, isReversed }) => {
         <img 
           src={item.image} 
           alt={item.title} 
-          className="tw-relative tw-z-10 tw-w-full tw-max-w-md tw-h-auto tw-object-contain tw-drop-shadow-xl tw-transition-transform tw-duration-500 hover:tw-scale-105"
+          // ADDED: Conditional translate class to shift image outside towards the ending (center)
+          className={`tw-relative tw-z-10 tw-w-full tw-max-w-md tw-h-auto tw-object-contain tw-drop-shadow-xl tw-transition-transform tw-duration-500 hover:tw-scale-105
+            ${isReversed ? 'md:-tw-translate-x-20' : 'md:tw-translate-x-20'}
+          `}
         />
       </div>
 
