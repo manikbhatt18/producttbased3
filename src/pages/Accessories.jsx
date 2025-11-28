@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 // --- Placeholder Images for Preview ---
 import strainerImage from '../../src/images/Strainers___Filters__2_-removebg-preview.png';
@@ -50,7 +50,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=Installation+Kit"
+    image: strainerImage
   },
   {
     id: 3,
@@ -121,23 +121,9 @@ const accessoriesData = [
     // Replace with 'telementryImage'
     image:telementryImage
   },
+  
   {
     id: 6,
-    title: "UPS-600VA-IOTAFLOW",
-    description: (
-      <>
-        <p className="tw-mb-4">
-          Compact UPS Power Backup Unit ensures uninterrupted operation of flow meters, telemetry systems, RTUs, and data loggers used in Indian industrial water, oil, and utility monitoring. With a 360 W / 600 VA load capacity, AVR, and a wide 145–290 V input range, it stabilizes voltage and protects sensitive metering equipment from fluctuations and surges.
-        </p>
-        <p>
-          The unit provides three battery-backed, surge-protected outputs with 6A Indian sockets and a fast 10–12 ms transfer time, preventing data loss during power cuts. Optimized for CGWA, CPCB, SPCB, and NIC-compliant installations, this UPS ensures reliable, continuous flow-meter data logging and supports Industry 4.0-ready smart metering and IoT telemetry systems across India.
-        </p>
-      </>
-    ),
-    image: "https://placehold.co/600x400/f3f4f6/1f2937?text=UPS+Power+Backup"
-  },
-  {
-    id: 7,
     title: "Custom Flow Straighteners",
     description: (
       <>
@@ -148,7 +134,26 @@ const accessoriesData = [
     ),
     // Replace with 'CustomFlowImage'
     image: CustomFlowImage
+  },
+  {
+    id: 7,
+    title: "Solar Power System for Flow Meters",
+    description: (
+      <>
+        <p>
+          The IOTAFLOW Solar Power System provides a reliable, renewable power source for remote and unmanned flow meter installations. Designed for continuous operation in off-grid and industrial locations, the system includes a 100W/12V Exide Solar PV Module, UPS Solar NXG 750/12V controller, and a 12.8V, 36AH LiFePO4 battery for efficient energy storage.
+
+        </p>
+        <p>
+          Ideal for CGWA, CPCB, and NIC-compliant telemetry systems, it ensures 24x7 operation of IOT-based flow meters, RTUs, and telemetry gateways without dependence on grid supply. Compact, maintenance-free, and weather-resistant, this solar flow meter power solution supports Industry 4.0 and smart water management applications across India.
+
+        </p>
+      </>
+    ),
+    // Replace with 'CustomFlowImage'
+    image: CustomFlowImage
   }
+
 ];
 
 const AccessoryItem = ({ item, isReversed }) => {
@@ -175,8 +180,8 @@ const AccessoryItem = ({ item, isReversed }) => {
           src={item.image} 
           alt={item.title} 
           // ADDED: Conditional translate class to shift image outside towards the ending (center)
-          className={`tw-relative tw-z-10 tw-w-full tw-max-w-md tw-h-auto tw-object-contain tw-drop-shadow-xl tw-transition-transform tw-duration-500 hover:tw-scale-105
-            ${isReversed ? 'md:-tw-translate-x-20' : 'md:tw-translate-x-20'}
+          className={`tw-relative tw-z-10 tw-w-full tw-max-w-xxl tw-h-auto tw-object-contain tw-drop-shadow-xl tw-transition-transform tw-duration-500 hover:tw-scale-105
+            ${isReversed ? 'md:-tw-translate-x-28' : 'md:tw-translate-x-28'}
           `}
         />
       </div>
@@ -223,14 +228,19 @@ function Accessories() {
     <div className="tw-bg-white tw-overflow-hidden">
       <div className="tw-container tw-mx-auto tw-px-4 tw-py-16">
         
-        {/* Optional Header */}
-        <div className="tw-text-center tw-max-w-3xl tw-mx-auto tw-mb-16">
-          <h2 className="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-text-black">
-            Our Accessories
+        {/* Optional Header - Updated Content */}
+        <div className="tw-text-center tw-max-w-4xl tw-mx-auto tw-mb-16">
+          <h2 className="tw-text-3xl lg:tw-text-5xl tw-font-bold tw-text-black tw-leading-tight">
+            Flow Meter Accessories – The Complete Ecosystem for Reliable Flow Measurement
           </h2>
-          <p className="tw-mt-4 tw-text-gray-600">
-            Essential components for installation, compliance, and enhanced performance.
-          </p>
+          <div className="tw-mt-6 tw-space-y-4">
+            <h3 className="tw-text-xl tw-font-bold tw-text-[#ffd700] tw-tracking-wide">
+              Beyond Flow Meters — Building a Complete Measurement System
+            </h3>
+            <p className="tw-text-lg tw-text-gray-600 tw-leading-relaxed">
+              Flow meters perform best when installed with the right accessories. IOTAFLOW ensures that every meter you deploy runs at peak efficiency, stays protected, and remains compliant. From filtration to telemetry, every accessory in our catalog is built to keep your operations precise, compliant, and maintenance-free.
+            </p>
+          </div>
         </div>
 
         {/* Accessories List */}
@@ -244,6 +254,24 @@ function Accessories() {
           ))}
         </div>
 
+       
+
+      </div>
+
+       {/* --- Call to Action --- */}
+      <div className="tw-bg-[#ffd700] tw-py-20">
+        <div className="tw-container tw-mx-auto tw-px-4 tw-text-center">
+          <h2 className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-black tw-mb-6">
+            “Precision isn’t purchased — it’s built.”
+          </h2>
+          
+          <Link 
+            to="/contact" 
+            className="tw-inline-block tw-bg-black tw-text-white tw-font-bold tw-py-4 tw-px-12 tw-rounded-full tw-shadow-lg tw-transition-all tw-duration-300 hover:tw-bg-gray-900 hover:tw-scale-105 hover:tw-shadow-xl tw-no-underline"
+          >
+            Contact Us Now
+          </Link>
+        </div>
       </div>
     </div>
   );

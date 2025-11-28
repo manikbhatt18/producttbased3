@@ -1,10 +1,10 @@
 import React from 'react';
 
-import waterUtilitiesImg from '../../images/Iotsense_Emoticons_WaterUtilities.png';
-import industrialPlantsImg from '../../images/Iotsense_Emoticons_IndustrialPlants.png';
+import waterUtilitiesImg from '../../images/Water_utilities&smart_cities.png';
+import industrialPlantsImg from '../../images/Industrial_plants&manufacturing.jpg';
 import groundwaterComplianceImg from '../../images/Iotsense_Emoticons_Ground-WaterCompliance.png';
-import facilityManagementImg from '../../images/Iotsense_Emoticons_BuildingManagement.png';
-import utilitiesEnergyImg from '../../images/Iotsense_Emoticons_Utilities&Energy.png';
+import facilityManagementImg from '../../images/Building_facility_management.png';
+import utilitiesEnergyImg from '../../images/Utilities&energy.png';
 
 // Card component for each Use Case
 const UseCaseCard = ({ title, description, image, className }) => (

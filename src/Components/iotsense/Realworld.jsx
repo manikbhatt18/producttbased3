@@ -17,20 +17,22 @@ function Realworld() {
             {/* Text Content */}
             <div className="tw-py-2">
               <h2 className="tw-text-2xl sm:tw-text-3xl tw-font-bold tw-text-gray-900 tw-mb-6">
-                Real-World Use Case: Ultrasonic Air Flow Monitoring
+                Real-World Application: Enhancing Compressor Efficiency with TRX Ultrasonic Air Flow Meter
               </h2>
 
               <div className="tw-space-y-4 tw-text-base sm:tw-text-lg tw-text-gray-700 tw-leading-relaxed">
                 <p>
-                  Integrating our <span className="tw-font-bold tw-text-black">Ultrasonic Air Flow Meter (UFM)</span> with the <span className="tw-font-bold tw-text-black">IOT Sense platform</span> and a <span className="tw-font-bold tw-text-black">power meter</span> on your compressor enables real-time tracking of air generation vs energy consumption.
+                  Compressed air systems are among the most energy-intensive operations in manufacturing — accounting for <span className="tw-font-bold tw-text-black">up to 23% of a plant’s total energy consumption.</span>
                 </p>
                 
                 <p>
-                  A live dashboard visualises <span className="tw-font-bold tw-text-black">kW consumed per m³ of compressed air</span>, highlighting falling efficiency, leakages, or overloading conditions instantly.
+                  By integrating our TRX Ultrasonic Air Flow Meter (UFM) with the IoT Sense platform and an energy meter, you can achieve real-time monitoring of air generation versus energy consumption. The system tracks kilowatt-hours (kWh) consumed per cubic meter (m³) of compressed air produced, providing an instant snapshot of compressor performance.
+
                 </p>
                 
                 <p className="tw-italic tw-text-gray-600 tw-font-medium">
-                  This powerful combination delivers predictive maintenance, energy savings, and operational transparency.
+                  An interactive live dashboard instantly detects efficiency drops, leakages, or overloading, enabling proactive, predictive maintenance that drives energy savings, enhances operational transparency, and reduces compressor energy costs for sustainable performance.
+
                 </p>
               </div>
 

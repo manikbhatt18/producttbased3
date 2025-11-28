@@ -16,12 +16,12 @@ function IOTvideo() {
         Your browser does not support the video tag.
       </video>
 
-      
-      <div className="tw-absolute tw-inset-0 tw-bg-black/30"></div>
+      {/* Removed the global dark overlay div to keep video clear */}
 
       {/* Content Overlay */}
       <div className="tw-relative tw-z-10 tw-container tw-mx-auto tw-px-4">
-        <div className="tw-max-w-3xl tw-bg-black/60 tw-p-8 md:tw-p-10 tw-rounded-xl tw-backdrop-blur-sm tw-border-l-4 tw-border-[#ffd700]">
+        {/* Removed backdrop-blur-sm to prevent blurring the video behind text */}
+        <div className="tw-max-w-3xl tw-bg-black/60 tw-p-8 md:tw-p-10 tw-rounded-xl tw-border-l-4 tw-border-[#ffd700]">
           <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-6">
             <span className="tw-text-[#ffd700]">IOT Sense</span> – Smart Flow Intelligence Platform
           </h2>

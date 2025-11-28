@@ -1,9 +1,9 @@
 import React from 'react';
 
-import deployAndScaleimg from '../../images/Iot sense_Emoticons_Deployment & Scalability.png';
-import flowFocusedAppsimg from '../../images/Iot sense_Emoticons_Flow-Focused Applications.png';
-import intelligenceAnalyticsimg from '../../images/Iot sense_Emoticons_Intelligence & Analytics.png';
-import utilityBenefitsimg from '../../images/Iot sense_Emoticons_Utility Benefits.png';
+import deployAndScaleimg from '../../images/Core Features_1. Unified Data Fabric for Flow & Utility Assets.png';
+import flowFocusedAppsimg from '../../images/Core Features_2. Flow-Focused Applications.png';
+import intelligenceAnalyticsimg from '../../images/Core Features_3. Intelligence, Analytics & Automation.png';
+import utilityBenefitsimg from '../../images/Core Features_4. Utility & Sustainability Benefits.png';
 
 // A custom check icon, styled for the black and yellow theme.
 const IconCheck = ({ className }) => (

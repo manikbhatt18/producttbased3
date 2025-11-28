@@ -17,7 +17,6 @@ const industries = [
   "Irrigation & Agriculture",
   "Marine & Shipping",
   "OEM & Equipment Manufacturers"
-  
 ];
 
 // --- Data: Case Studies ---
@@ -60,47 +59,88 @@ const caseStudiesData = [
 ];
 
 // --- Component: Case Study Card ---
-const CaseStudyCard = ({ data }) => (
-  // UPDATED: Wrapped the entire card in Link to make it clickable
-  <Link 
-    to={`/case-studies/${data.id}`} 
-    className=" tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-border-gray-200 tw-overflow-hidden tw-flex tw-flex-col tw-transition-all tw-duration-300 hover:tw-shadow-2xl hover:tw-translate-y-[-4px] tw-no-underline group"
+const CaseStudyCard = ({ data, isHighlighted }) => (
+  <div 
+    id={`card-${data.id}`} // Unique ID for scrolling
+    className={`tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-overflow-hidden tw-flex tw-flex-col tw-transition-all tw-duration-500
+      ${isHighlighted 
+        ? 'tw-border-[#fc8d05] tw-ring-4 tw-ring-[#ffd700]/50 tw-scale-[1.02] tw-shadow-2xl' 
+        : 'tw-border-gray-200 hover:tw-shadow-2xl hover:tw-translate-y-[-4px]'
+      }
+    `}
   >
-    {/* Image */}
-    <div className="tw-h-56 tw-overflow-hidden tw-relative">
-      <img 
-        src={data.image} 
-        alt={data.title} 
-        className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-110"
-      />
-      {/* Category Badge */}
-      <div className="tw-absolute tw-top-4 tw-right-4 tw-bg-[#ffd700] tw-text-black tw-text-xs tw-font-bold tw-px-3 tw-py-1 tw-rounded-full tw-shadow-sm">
-        {data.category}
+    {/* Wrapped image content in Link to keep navigation functionality */}
+    <Link to={`/case-studies/${data.id}`} className="tw-no-underline tw-group tw-flex tw-flex-col tw-flex-grow">
+      {/* Image */}
+      <div className="tw-h-56 tw-overflow-hidden tw-relative">
+        <img 
+          src={data.image} 
+          alt={data.title} 
+          className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-110"
+        />
+        {/* Category Badge */}
+        <div className="tw-absolute tw-top-4 tw-right-4 tw-bg-[#ffd700] tw-text-black tw-text-xs tw-font-bold tw-px-3 tw-py-1 tw-rounded-full tw-shadow-sm">
+          {data.category}
+        </div>
       </div>
-    </div>
 
-    {/* Content */}
-    <div className="tw-p-6 tw-flex tw-flex-col tw-flex-grow">
-      <h3 className="tw-text-xl tw-font-bold tw-text-black tw-mb-3 tw-line-clamp-2" title={data.title}>
-        {data.title}
-      </h3>
-      <p className="tw-text-sm tw-text-gray-600 tw-leading-relaxed tw-mb-6 tw-line-clamp-4 tw-flex-grow">
-        {data.description}
-      </p>
+      {/* Content */}
+      <div className="tw-p-6 tw-flex tw-flex-col tw-flex-grow">
+        <h3 className="tw-text-xl tw-font-bold tw-text-black tw-mb-3 tw-line-clamp-2" title={data.title}>
+          {data.title}
+        </h3>
+        <p className="tw-text-sm tw-text-gray-600 tw-leading-relaxed tw-mb-6 tw-line-clamp-4 tw-flex-grow">
+          {data.description}
+        </p>
 
-      {/* Fake Button (Visual Only) - Changed to span to avoid nested links/buttons */}
-      <div className="tw-mt-auto">
-        <span className="tw-block tw-w-full tw-py-3 tw-bg-black tw-text-white tw-font-bold tw-rounded-lg tw-border-2 tw-border-transparent tw-text-center tw-transition-all tw-duration-300 hover:tw-bg-[#ffd700] hover:tw-text-black hover:tw-border-[#ffd700]">
-          Explore Case Study <span className="tw-ml-1">→</span>
-        </span>
+        {/* Fake Button (Visual Only) */}
+        <div className="tw-mt-auto">
+          <span className="tw-block tw-w-full tw-py-3 tw-bg-black tw-text-white tw-font-bold tw-rounded-lg tw-border-2 tw-border-transparent tw-text-center tw-transition-all tw-duration-300 hover:tw-bg-[#ffd700] hover:tw-text-black hover:tw-border-[#ffd700]">
+            Explore Case Study <span className="tw-ml-1">→</span>
+          </span>
+        </div>
       </div>
-    </div>
-  </Link>
+    </Link>
+  </div>
 );
 
 // --- Main Component ---
 function CaseStudies() {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [highlightedId, setHighlightedId] = useState(null);
+
+  // Function to handle sidebar click
+  const handleFilterClick = (industry) => {
+    // Find if a case study exists for this industry
+    const matchingStudy = caseStudiesData.find(study => study.category === industry);
+
+    if (matchingStudy) {
+      // If it exists:
+      // 1. Show 'All' so the card is rendered in the list
+      setActiveFilter("All");
+      
+      // 2. Set the ID to highlight
+      setHighlightedId(matchingStudy.id);
+
+      // 3. Scroll to the card after a short delay (to ensure render)
+      setTimeout(() => {
+        const element = document.getElementById(`card-${matchingStudy.id}`);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+
+      // 4. Remove the highlight after 2 seconds
+      setTimeout(() => {
+        setHighlightedId(null);
+      }, 2000);
+
+    } else {
+      // If no match (empty category), just filter the list like before
+      setActiveFilter(industry);
+      setHighlightedId(null);
+    }
+  };
 
   // Filter Logic
   const filteredStudies = activeFilter === "All" 
@@ -130,57 +170,35 @@ function CaseStudies() {
               View All
             </button>
             
-            {industries.map((industry, index) => {
-              // Check if this industry has a corresponding case study
-              const matchingStudy = caseStudiesData.find(study => study.category === industry);
-              
-              // Common classes for both Link and Button
-              const itemClasses = `tw-block tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-text-left tw-text-sm tw-font-medium tw-transition-colors tw-duration-200 tw-whitespace-nowrap
-                ${activeFilter === industry 
-                  ? "tw-bg-[#ffd700] tw-text-black" 
-                  : "tw-bg-gray-900 tw-text-gray-300 hover:tw-bg-gray-800 hover:tw-text-white"
-                }`;
-
-              if (matchingStudy) {
-                // If match found, render as Link to detail page
-                return (
-                  <Link 
-                    key={index} 
-                    to={`/case-studies/${matchingStudy.id}`} 
-                    className={itemClasses}
-                  >
-                    {industry}
-                  </Link>
-                );
-              } else {
-                // If no match, render as filter button (shows empty state)
-                return (
-                  <button
-                    key={index}
-                    onClick={() => setActiveFilter(industry)}
-                    className={itemClasses}
-                  >
-                    {industry}
-                  </button>
-                );
-              }
-            })}
+            {industries.map((industry, index) => (
+              <button
+                key={index}
+                onClick={() => handleFilterClick(industry)}
+                className={`tw-block tw-w-full tw-px-4 tw-py-3 tw-rounded-lg tw-text-left tw-text-sm tw-font-medium tw-transition-colors tw-duration-200 tw-whitespace-nowrap
+                  ${activeFilter === industry 
+                    ? "tw-bg-[#ffd700] tw-text-black" 
+                    : "tw-bg-gray-900 tw-text-gray-300 hover:tw-bg-gray-800 hover:tw-text-white"
+                  }`}
+              >
+                {industry}
+              </button>
+            ))}
           </div>
         </div>
 
         {/* --- Main Content --- */}
-        <div className="tw-flex-1 tw-p-6 md:tw-p-12">
+        <div className="tw-flex-1 tw-p-4 md:tw-p-8">
           
           <div className="tw-max-w-6xl tw-mx-auto">
-            {/* New Header Section with Light Yellow Background */}
-            <div className="tw-mb-12 tw-bg-[#f7ea64] tw-p-8 md:tw-p-10 tw-rounded-xl tw-shadow-sm tw-border tw-border-yellow-500">
-              <h1 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-6 tw-text-center">
+            {/* New Header Section - Compact Layout */}
+            <div className="tw-mb-6">
+              <h1 className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-black tw-mb-2 tw-text-center">
                 Case Studies
                 <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-2 tw-mx-auto"></span>
               </h1>
               
-              {/* Description Text */}
-              <div className="tw-space-y-4 tw-text-gray-700 tw-text-base md:tw-text-lg tw-leading-relaxed">
+              {/* Description Text - Compact spacing */}
+              <div className="tw-space-y-2 tw-text-gray-700 tw-text-base md:tw-text-base tw-leading-relaxed tw-text-center tw-max-w-4xl tw-mx-auto">
                 <p>
                   At <span className="tw-font-bold tw-text-black">IOTAFLOW</span>, we believe real-world results define true innovation. Our advanced <span className="tw-font-bold tw-text-black">flow measurement technologies</span>, from <span className="tw-font-bold tw-text-black">ultrasonic and electromagnetic meters</span> to <span className="tw-font-bold tw-text-black">mechanical, vortex, and thermal solutions</span>, are engineered to deliver precision, reliability, and measurable impact across industries.
                 </p>
@@ -190,9 +208,7 @@ function CaseStudies() {
                 <p>
                   Whether it’s <span className="tw-font-bold tw-text-black">reducing non-revenue water</span>, enhancing energy efficiency, or <span className="tw-font-bold tw-text-black">improving gas and oil metering precision</span>, these success stories showcase measurable impact through engineering excellence.
                 </p>
-                <p className="tw-font-medium tw-text-black tw-pt-2">
-                  Dive in, discover what’s possible, and see how our expertise in <span className="tw-font-bold tw-text-black">flow measurement, monitoring, and control</span> can transform your operation.
-                </p>
+                
               </div>
             </div>
 
@@ -200,7 +216,11 @@ function CaseStudies() {
             {filteredStudies.length > 0 ? (
               <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-3 tw-gap-8">
                 {filteredStudies.map((study) => (
-                  <CaseStudyCard key={study.id} data={study} />
+                  <CaseStudyCard 
+                    key={study.id} 
+                    data={study} 
+                    isHighlighted={highlightedId === study.id} 
+                  />
                 ))}
               </div>
             ) : (

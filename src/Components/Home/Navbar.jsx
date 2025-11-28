@@ -73,14 +73,14 @@ function CustomNavbar() {
       { name: "VFM Vortex Flow Meters (Universal: Steam, Air, Gases, Liquids)", link: "/product-detail/detail16" },
       { name: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
     ],
-    "Flow Meter Accessories": [
+    "Accessories": [
       { name: "Strainers & Filters", link: "/accessories#accessory-1" },
       { name: "Matching Flanges, Nuts, Bolts & Gaskets", link: "/accessories#accessory-2" },
       { name: "Air Release Systems", link: "/accessories#accessory-3" },
       { name: "Remote Display Units", link: "/accessories#accessory-4" },
       { name: "Telemetry Systems - 4G RTU IOT Gateways", link: "/accessories#accessory-5" },
-      { name: "UPS-600VA-IOTAFLOW", link: "/accessories#accessory-6" },
-      { name: "Custom Flow Straighteners", link: "/accessories#accessory-7" },
+      { name: "Custom Flow Straighteners", link: "/accessories#accessory-6" },
+      { name: "Solar Power System for Flow Meters", link: "/accessories#accessory-7" },
     ],
   };
 
