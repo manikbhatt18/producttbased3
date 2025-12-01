@@ -2,7 +2,7 @@ import React from 'react';
 
 import waterUtilitiesImg from '../../images/Water_utilities&smart_cities.png';
 import industrialPlantsImg from '../../images/Industrial_plants&manufacturing.jpg';
-import groundwaterComplianceImg from '../../images/Iotsense_Emoticons_Ground-WaterCompliance.png';
+import groundwaterComplianceImg from '../../images/Ground-water_extraction_compliance.jpg';
 import facilityManagementImg from '../../images/Building_facility_management.png';
 import utilitiesEnergyImg from '../../images/Utilities&energy.png';
 

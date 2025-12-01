@@ -1,5 +1,7 @@
 import React from 'react';
 
+import realWorldImg from '../../images/TRX_Ultrasonic_Air_Flow_Meter.png';
+
 function Realworld() {
   return (
     <div className="tw-bg-white tw-py-16 sm:tw-py-24">
@@ -50,12 +52,12 @@ function Realworld() {
           </div>
 
           {/* Right Side: Image Placeholder */}
-          <div className="tw-relative tw-w-full tw-h-64 sm:tw-h-80 lg:tw-h-full tw-min-h-[400px] tw-bg-gray-100 tw-rounded-2xl tw-overflow-hidden tw-flex tw-items-center tw-justify-center tw-shadow-sm">
+          <div className="tw-relative tw-w-full tw-h-54 sm:tw-h-80 lg:tw-h-full tw-min-h-[400px] tw-bg-white tw-rounded-2xl tw-overflow-hidden tw-flex tw-items-center tw-justify-center tw-shadow-sm">
             {/* Replace this image source with your actual image later */}
             <img 
-              src="https://placehold.co/800x600/f3f4f6/9ca3af?text=Section+Image+Here" 
+              src= {realWorldImg}
               alt="Real World Use Case Visual" 
-              className="tw-w-full tw-h-full tw-object-cover"
+              className="tw-w-full tw-h-full tw-object-contain"
             />
           </div>
 
