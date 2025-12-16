@@ -310,13 +310,14 @@ Supports DN15 to DN6000 mm.         </li>
 <p> Engineered for use in <b>both full and partially filled pipes</b>, the UF-1500 provides robust performance across a wide range of industrial fluids including <b>potable water, wastewater, chemicals, and food-grade liquids.</b> Its <b>non-intrusive insertion design</b> ensures minimal pressure loss, making it an ideal solution for <b>high-capacity municipal, utility, and industrial flow applications.</b></p>
 <p> With compatibility for pipe diameters from <b>DN15 mm to DN6000 mm</b>, and built-in support for <b>Z, V, and U configuration schemes</b>, it’s the go-to solution for <b>large-scale, high-accuracy flow monitoring</b> in mission-critical environments.</p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 
           <p><b>Applications</b></p>
           <p>The UF-1500 Insertion Ultrasonic Flow Meter is designed for mission-critical flow measurement across a wide spectrum of industries and fluids:</p>

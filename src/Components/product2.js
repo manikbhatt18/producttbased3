@@ -162,6 +162,16 @@ function ProductDetail() {
   <li><strong>Communication Protocols:</strong> Compatible with NFC, Wireless M-Bus, and LoRaWAN.</li>
   <li><strong>Installation Flexibility:</strong> Supports all mounting positions without requiring straight pipe sections.</li>
   <li><strong>Availability:</strong> Distributed in India by IOTAFLOW Systems Pvt. Ltd., authorized channel partner of Apator Powogaz.</li>
+
+  {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
+
   <li><strong>Applications:</strong>
     <ul>
       <li>Domestic water metering in apartments, group housing, and residential complexes</li>

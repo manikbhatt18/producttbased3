@@ -3,37 +3,52 @@ import { NavLink, Link } from "react-router-dom";
 import "./CustomNavbar.css";
 import Logo from "../../images/Iotaf logo full.png";
 import icon from "../../images/greater.png";
-import GaugeIcon from "../../images/clockIconn.png"; // icon
+import GaugeIcon from "../../images/clockIconn.png";
 
 function CustomNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState("Ultrasonic Flow Meters");
-
-  //  ✅ New State to handle closing the dropdown on click
-  const [forceClose, setForceClose] = useState(false);
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setProductDropdownOpen(false);
+    setAboutDropdownOpen(false);
+    setResourcesDropdownOpen(false);
   };
 
-  // ✅ Function to close dropdown and reset mobile menu
-  const handleLinkClick = () => {
-    setForceClose(true); // Force hide the dropdown
-    toggleMenu(); // Close mobile menu if open
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setProductDropdownOpen(false);
+    setAboutDropdownOpen(false);
+    setResourcesDropdownOpen(false);
   };
 
-  // ✅ Function to reset the dropdown when mouse leaves the area
-  const handleMouseLeave = () => {
-    setForceClose(false);
+  const toggleProductDropdown = (e) => {
+    e.preventDefault();
+    setProductDropdownOpen(!productDropdownOpen);
   };
 
-  // ✅ Product Data
+  const toggleAboutDropdown = (e) => {
+    if (e) e.preventDefault();
+    if (e) e.stopPropagation();
+    setAboutDropdownOpen(!aboutDropdownOpen);
+  };
+
+  const toggleResourcesDropdown = (e) => {
+    if (e) e.preventDefault();
+    if (e) e.stopPropagation();
+    setResourcesDropdownOpen(!resourcesDropdownOpen);
+  };
+
   const productData = {
     "Ultrasonic Flow Meters": [
       { name: "Domestic Ultrasonic Water Meter", link: "/product" },
       { name: "Inline Ultrasonic Flow Meter", link: "/product-detail/detail2" },
       { name: "Intrusive Ultrasonic Flow Meter (1–4 Channels)", link: "/product-detail/detail3" },
-      { name: "Clamp-On (Fixed) Ultrasonic Flow Meter ", link: "/product-detail/detail4" },
+      { name: "Clamp-On (Fixed) Ultrasonic Flow Meter", link: "/product-detail/detail4" },
       { name: "Clamp-On (Portable) Ultrasonic Flow Meter", link: "/product-detail/detail5" },
       { name: "Ultrasonic BTU & Energy Meter", link: "/product-detail/detail17" },
       { name: "Area Velocity Doppler Flow Meter", link: "/product-detail/detail6" },
@@ -44,11 +59,11 @@ function CustomNavbar() {
     "Electromagnetic Flow Meters": [
       { name: "MF-PRO", link: "/product-detail/detail7" },
       { name: "MF-TER (Ex-proof for Oil & Gas)", link: "/product-detail/detail7b" },
-      { name: " Compact / Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
+      { name: "Compact / Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
     ],
     "Water Meters": [
       { name: "Smart Single-Jet Water Meter", link: "/product-detail/detail9" },
-      { name: "Woltmann Turbine Water Meter ", link: "/product-detail/detail10" },
+      { name: "Woltmann Turbine Water Meter", link: "/product-detail/detail10" },
     ],
     "Positive Displacement Meters": [
       { name: "RPD (Ring Piston) Flow Meters", link: "/product-detail/detail11" },
@@ -67,10 +82,10 @@ function CustomNavbar() {
     ],
     "Gas Flow Meters (Mechanical)": [
       { name: "EQZ/EQZK Turbine Gas Meters", link: "/product-detail/detail19" },
-      { name: "GasPro RPD Gas Meter ", link: "/product-detail/detail21" },
+      { name: "GasPro RPD Gas Meter", link: "/product-detail/detail21" },
     ],
     "Vortex Flow Meters": [
-      { name: "VFM Vortex Flow Meters (Universal: Steam, Air, Gases, Liquids)", link: "/product-detail/detail16" },
+      { name: <>VFM Vortex Flow Meters <br /> (Universal: Steam, Air, Gases, Liquids)</>, link: "/product-detail/detail16" },
       { name: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
     ],
     "Accessories": [
@@ -97,7 +112,9 @@ function CustomNavbar() {
         <div className="nav-container">
           {/* Logo */}
           <div className="nav-logo">
-            <img src={Logo} alt="Logo" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" />
+            </Link>
           </div>
 
           {/* Hamburger */}
@@ -112,106 +129,112 @@ function CustomNavbar() {
 
           {/* Menu Items */}
           <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
-            <NavLink to="/" className="nav-item" onClick={toggleMenu}>
+            <NavLink to="/" className="nav-item" onClick={closeMenu}>
               Home
             </NavLink>
 
             {/* About Us dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/about-us" onClick={toggleMenu}>
-                About Us
-              </NavLink>
-              <div className="dropdown-menu regular">
-                <NavLink to="/about-us/certification" onClick={toggleMenu}>
-                  Company
-                </NavLink>
-                <NavLink to="/about-us/result" onClick={toggleMenu}>
-                  Certification
-                </NavLink>
-              </div>
+              <span className="nav-link" onClick={toggleAboutDropdown}>
+                About Us <span className="mobile-arrow">{aboutDropdownOpen ? "▲" : "▼"}</span>
+              </span>
+              {aboutDropdownOpen && (
+                <div className="dropdown-menu regular mobile-open">
+                  <NavLink to="/about-us" onClick={closeMenu}>
+                    Company
+                  </NavLink>
+                  <NavLink to="/about-us/certification" onClick={closeMenu}>
+                    Certification
+                  </NavLink>
+                </div>
+              )}
             </div>
 
             {/* Products dropdown */}
-            <div
-              className="nav-item dropdown"
-              onMouseLeave={handleMouseLeave} /* ✅ Reset state when mouse leaves */
-            >
-              <NavLink to="/product" onClick={toggleMenu}>
-                Product
-              </NavLink>
-              <div className={`dropdown-menu ${forceClose ? "force-close" : ""}`}>
-                <div className="products-grid">
-                  {/* Left Categories */}
-                  <div className="product-categories">
-                    <ul className="category-list">
-                      {Object.keys(productData).map((category) => (
-                        <li
-                          key={category}
-                          className={`category-item ${activeCategory === category ? "active" : ""}`}
-                          onClick={() => setActiveCategory(category)}
+            <div className="nav-item dropdown products-dropdown">
+              <span 
+                className="nav-link" 
+                onClick={toggleProductDropdown}
+              >
+                Product <span className="mobile-arrow">{productDropdownOpen ? "▲" : "▼"}</span>
+              </span>
+              {productDropdownOpen && (
+                <div className="dropdown-menu mega-menu mobile-open">
+                  <div className="products-grid">
+                    {/* Left Categories */}
+                    <div className="product-categories">
+                      <ul className="category-list">
+                        {Object.keys(productData).map((category) => (
+                          <li
+                            key={category}
+                            className={`category-item ${activeCategory === category ? "active" : ""}`}
+                            onClick={() => setActiveCategory(category)}
+                          >
+                            {category}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {/* Right Products */}
+                    <div className="product-items">
+                      {productData[activeCategory].map((product) => (
+                        <Link
+                          to={product.link}
+                          key={product.name}
+                          className="product-card"
+                          onClick={closeMenu}
                         >
-                          {category}
-                        </li>
+                          <div className="product-icon">
+                            <img src={GaugeIcon} alt="icon" />
+                          </div>
+                          <div className="product-info">
+                            <h5 className="product-name">{product.name}</h5>
+                          </div>
+                        </Link>
                       ))}
-                    </ul>
-                  </div>
-                  {/* Right Products */}
-                  <div className="product-items">
-                    {productData[activeCategory].map((product) => (
-                      <Link // Using HashLink or regular Link with hash
-                        to={product.link}
-                        key={product.name}
-                        className="product-card"
-                        onClick={handleLinkClick} /* ✅ Closes dropdown immediately */
-                      >
-                        <div className="product-icon">
-                          <img src={GaugeIcon} alt="icon" />
-                        </div>
-                        <div className="product-info">
-                          <h5 className="product-name">{product.name}</h5>
-                        </div>
-                      </Link>
-                    ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
 
-            <NavLink to="/application" className="nav-item application-nav-item" onClick={toggleMenu}>
+            <NavLink to="/application" className="nav-item" onClick={closeMenu}>
               Application
             </NavLink>
-            <NavLink to="/services" className="nav-item" onClick={toggleMenu}>
+            <NavLink to="/services" className="nav-item" onClick={closeMenu}>
               Services
             </NavLink>
-            <NavLink to="/tools" className="nav-item" onClick={toggleMenu}>
+            <NavLink to="/tools" className="nav-item" onClick={closeMenu}>
               Tools
             </NavLink>
 
             {/* Resources dropdown */}
             <div className="nav-item dropdown">
-              <NavLink to="/resources" onClick={toggleMenu}>
-                Lean Resources
-              </NavLink>
-              <div className="dropdown-menu regular">
-                <NavLink to="/about-us/certification" onClick={toggleMenu}>
-                  Lean Journey
-                </NavLink>
-                <NavLink to="/casestudies" onClick={toggleMenu}>
-                  Case Studies
-                </NavLink>
-              </div>
+              <span className="nav-link" onClick={toggleResourcesDropdown}>
+                Lean Resources <span className="mobile-arrow">{resourcesDropdownOpen ? "▲" : "▼"}</span>
+              </span>
+              {resourcesDropdownOpen && (
+                <div className="dropdown-menu regular mobile-open">
+                  <NavLink to="/resources" onClick={closeMenu}>
+                    Lean Journey
+                  </NavLink>
+                  <NavLink to="/casestudies" onClick={closeMenu}>
+                    Case Studies
+                  </NavLink>
+                </div>
+              )}
             </div>
-            <Link to="/contact">
-              <button className="contact-btn mobile-contact" onClick={toggleMenu}>
+
+            {/* Mobile Contact Button */}
+            <Link to="/contact" className="mobile-contact-link">
+              <button className="contact-btn mobile-contact" onClick={closeMenu}>
                 <span>Contact Us &gt;</span>
               </button>
             </Link>
           </div>
-        </div>
 
-        {/* Desktop Contact Button */}
-        <div>
-          <Link to="/contact">
+          {/* Desktop Contact Button */}
+          <Link to="/contact" className="desktop-contact-link">
             <button className="contact-btn desktop-contact">
               <span className="tw-flex tw-items-center tw-gap-2">
                 Contact Us <img src={icon} alt="icon" className="icon-btn" />

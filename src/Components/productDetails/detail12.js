@@ -279,13 +279,14 @@ Built for tough environments with multiple material and output options.</li>
               <div className="col-md-6">
 <p> The <b>IOTAFLOW Oval Gear Flow Meter</b> is a high-precision <b>positive displacement flow meter</b> engineered for the accurate measurement of <b>viscous, non-conductive, flammable, and high-value liquids</b>, including <b>solvents, alcohols, oils, and chemicals</b>. Built with dual oval gear rotors, the meter provides <b>direct volumetric flow measurement</b>, unaffected by changes in fluid conductivity, temperature, or pulsation. Manufactured by <b>IOTAFLOW Systems Pvt. Ltd.</b>, this robust flow meter is ideal for <b>batching, dosing, transfer, and process control</b> across a wide range of industrial applications. With available sizes from <b>DN10 to DN200</b>, it offers repeatable accuracy of up to <b>±0.2%</b>, supports a wide viscosity range up to <b>5,000 cP</b>, and handles pressures up to <b>6.4 MPa</b>. </p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
 <ul> <li>The IOTAFLOW Oval Gear Flow Meter is ideal for <b>high-accuracy measurement of viscous, non-conductive, flammable, and high-value fluids</b>, including those used in:</li> <ul> <li><b>Oil metering</b> – diesel, heavy oil, light oil, lubrication systems</li> <li><b>Solvent and alcohol measurement</b> in pharmaceutical, distilleries, and chemical industries</li> <li><b>Paints, adhesives, and resins</b> in packaging and industrial coating</li> <li><b>Chemical dosing and batching</b> systems</li> <li><b>DEF/AdBlue</b> and non-conductive fluid applications</li> <li><b>Food-grade viscous liquid metering</b></li> <li><b>Heat transfer and hydraulic fluids</b> in OEM machinery and skids</li> <li><b>Explosion-prone or Ex-proof zones</b> needing positive displacement metering</li> </ul> </ul>
 

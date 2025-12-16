@@ -287,13 +287,14 @@ Available with <b>RS485 and 4–20 mA outputs</b>, plus external power or long-l
 </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 <p>
 <p><b>Applications</b><br/></p>
 <b>Landfill gas measurement</b> for energy recovery projects<br/>

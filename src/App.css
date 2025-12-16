@@ -12,7 +12,7 @@
 
 .nav-link:hover {
   color: black;
-  background-color: #ffc107; /* Yellow on hover */
+   /* Yellow on hover */
 }
 
 .active-tab {
@@ -36,9 +36,9 @@
  
   margin-top:60px;
 }
-.active-nav {
+/* .active-nav {
   border-bottom: 3px solid #ffcc00;
-}
+} */
 
 .btn-yellow {
   background: linear-gradient(to right, black 0%, #ffcc00 0%);

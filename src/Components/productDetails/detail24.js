@@ -298,13 +298,14 @@ Ideal for utilities, chemical plants, food & beverage, oil & gas, and process in
 </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 <p>
 <p><b>Applications</b><br/></p>
 

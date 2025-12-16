@@ -294,13 +294,14 @@ High Accuracy Volumetric Flow Meters.</li>
               <div className="col-md-6">
 <p> Contoil® Oil Flow Meters are precision-engineered for accurate measurement of fuel and lubrication oil in the most demanding industrial environments. Built for reliability and flexibility, these meters offer consistent performance regardless of fluid temperature or viscosity. Their <b>compact design</b> allows for easy installation in space-restricted systems, making them ideal for integration with <b>power generators, boilers, burners, and closed-loop lubrication systems</b>. </p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
  <ul> <li><b>Fuel Consumption Measurement</b> for: <ul> <li>Oil burners in heating systems and industrial furnaces, Unloading Applications</li> <li>Ships, diesel locomotives, and emergency power units</li> <li>Combined heat and power (CHP) systems</li> </ul> </li> <li><b>Lubrication Monitoring</b> in: <ul> <li>Closed-loop systems for machinery bearings and motors</li> <li>Machine test benches and engine testing labs</li> </ul> </li> <li><b>Remote Integration</b>: <ul> <li>Optional digital output for integration into <b>superior control systems</b> and <b>remote monitoring platforms</b></li> </ul> </li> </ul>
 

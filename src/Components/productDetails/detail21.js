@@ -300,13 +300,14 @@ Ideal for <b>CGD, industrial plants, and commercial gas monitoring</b>, with rem
 </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 <p>
 <p><b>Applications</b><br/></p>
 The GasPro RPD Gas Meter is ideal for critical and large-scale gas flow measurement in:<br/>

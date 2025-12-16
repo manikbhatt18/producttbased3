@@ -311,13 +311,14 @@ RoHS, CE & UKCA certified for global safety compliance.</li>
 <p> The <b>CX/VN/VNS Compact / Micro Sized Electromagnetic Flow Meters</b> are precision-engineered sensors designed for <b>high-accuracy liquid flow measurement</b> in compact industrial setups. These <b>micro-sized electromagnetic flow meters</b> are ideal for <b>chemical liquid monitoring, water purification, food processing, and medical equipment applications</b>. Certified with <b>RoHS, CE, and UKCA</b>, they ensure compliance with global safety standards, making them highly suitable for industries across <b>India</b>.<br/> Built with <b>no moving parts</b> and a <b>compact body</b>, they provide <b>maintenance-free operation</b> and are compatible with <b>corrosive chemicals</b> like sodium hypochlorite, caustic soda, and coagulants — essential for <b>water treatment plants, agriculture spraying systems, and factory wastewater management in India</b>. </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
 <ul> <li><b>Agricultural Use</b></li> <ul> <li>Pesticide spraying via drones or tractors</li> <li>Milk feeding systems for calf rearing</li> </ul> <li><b>Food Industry</b></li> <ul> <li>Vegetable washing and processing machines</li> <li>Automatic beer and beverage dispensing systems</li> </ul> <li><b>Medical & Laboratory</b></li> <ul> <li>Dialysis machine flow monitoring</li> <li>Cleaning and sterilization equipment</li> <li>Circulation monitoring for microscopes and chillers</li> </ul> <li><b>Industrial & Utility</b></li> <ul> <li>3D metal printers (laser cooling flow measurement)</li> <li>Fuel cells and foam firefighting vehicles (CAFS)</li> <li>Water purification plants and distribution reservoirs</li> </ul> </ul>
 

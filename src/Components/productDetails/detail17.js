@@ -321,13 +321,14 @@ Seamless billing-grade metering for heating & cooling networks.</li>
 <p>The <b>IOTAFLOW Ultrasonic BTU Meter</b>, intelligently integrated with the <b>Apator FAUN electronic BTU calculator</b>, offers a seamless solution for high-accuracy thermal energy metering in <b>HVAC systems, district heating, chilled water networks, and industrial energy monitoring.</b> Leveraging <b>transit-time ultrasonic flow technology</b>, it guarantees <b>zero pressure drop</b>, long-term stability, and maintenance-free operation—even in harsh conditions.</p>
 <p> <b>The FAUN calculator</b> enhances functionality with its large, clear display, two-button operation, and full configuration capabilities via PC or local input. It computes energy usage (BTU, kWh, GJ, MWh) by processing flow data from the ultrasonic sensor and paired Pt100/Pt500 temperature inputs. The calculator features robust data logging, two independent tariff registers, configurable communication modules, and up to 12 years of battery life—all in line with <b>MID and EN-1434 C/E1/M1 compliance</b></p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
          <ul>
 <li><b>District heating and cooling systems</b>, with billing-grade energy metering for municipal utilities.</li>

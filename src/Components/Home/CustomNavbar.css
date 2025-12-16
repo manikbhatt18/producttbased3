@@ -1,85 +1,96 @@
+/* =========================================
+   1. GLOBAL NAVBAR STYLES
+   ========================================= */
 .top-bar {
   background: #1a1a1a;
   color: white;
-  padding: 5px 20px;
+  padding: 8px 20px;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
   font-size: 14px;
 }
 
-/* ===== Navbar ===== */
 .custom-navbar {
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   width: 100%;
+  
+  /* FIX: Ensure no global borders causing the "permanent line" */
+  border: none !important;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between; /* logo left + contact right */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 /* Logo */
 .nav-logo img {
   height: 50px;
-  align-items: start;
+  cursor: pointer;
 }
 
+/* Menu Items (Desktop) */
 .nav-menu {
   flex: 1;
   display: flex;
-  justify-content:space-around; /* equal spacing for all nav items */
+  justify-content: center;
   align-items: center;
-  padding: 0 40px;              /* optional: breathing room left & right */
+  gap: 70px;
+  padding: 0 20px;
   
-}
-.application-nav-item{
-  margin-left:20px;
+  /* FIX: Ensure the menu itself doesn't have borders */
+  border: none !important;
 }
 
+/* FIX: nav-item should only be as wide as its content */
 .nav-item {
-  flex: 1;                      /* each item takes equal width */
-  text-align: center;           /* center the text inside */
   font-weight: 600;
   text-decoration: none;
   color: black;
   padding: 10px 0;
   transition: color 0.3s ease;
-}
-.custom-navbar .nav-menu a {
-  color: inherit;          /* inherit black or whatever you set in .nav-item */
-  text-decoration: none;   /* remove blue underline */
-}
-
-/* Optional: keep hover effect consistent */
-.custom-navbar .nav-menu a:hover {
-  color: inherit; /* don't turn blue on hover */
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  display: inline-flex; /* Prevents stretching to 100% width */
+  align-items: center;
+  width: auto; 
 }
 
-/* === Yellow Underline Hover Effect (Top-level + Dropdown Parents) === */
-.custom-navbar > .nav-container > .nav-menu > .nav-item {
-  position: relative; /* Required for ::after positioning */
-  display: inline-block; /* Keeps it consistent */
+.nav-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block; /* Ensures underline matches text width */
 }
 
-/* Underline effect */
-.custom-navbar > .nav-container > .nav-menu > .nav-item::after {
+/* --- FIXED YELLOW UNDERLINE HOVER EFFECT --- */
+/* We apply the line strictly to:
+   1. Nav items that are simple links (not dropdowns)
+   2. The .nav-link text SPAN inside dropdowns
+   This prevents double lines and full-width lines.
+*/
+.nav-menu > .nav-item:not(.dropdown)::after,
+.nav-menu > .dropdown > .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px; /* adjust if needed */
-  width: 100%; /* <== full width of parent */
+  bottom: -5px;
+  width: 100%;
   height: 3px;
   background: #ffcc00;
   transform: scaleX(0);
@@ -87,195 +98,248 @@
   transform-origin: right;
 }
 
-.custom-navbar > .nav-container > .nav-menu > .nav-item:hover::after,
-.custom-navbar > .nav-container > .nav-menu > .nav-item.active::after {
+/* Active/Hover States */
+.nav-menu > .nav-item:not(.dropdown):hover::after,
+.nav-menu > .nav-item:not(.dropdown).active::after,
+.nav-menu > .dropdown:hover > .nav-link::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* === Dropdown items (inside menu) → only background hover, no underline === */
-.custom-navbar .dropdown-menu .nav-item::after {
+/* Force remove any border-bottom on nav-link to avoid conflicts */
+.nav-link {
+  border-bottom: none !important;
+}
+
+/* Prevent underline on items INSIDE the dropdown menu */
+.dropdown-menu .nav-item::after,
+.dropdown-menu a::after,
+.dropdown-menu .nav-link::after {
   display: none !important;
 }
 
-
-
-
-
-/* ===== Dropdown ===== */
+/* =========================================
+   2. DESKTOP DROPDOWN STYLES
+   ========================================= */
 .dropdown {
   position: relative;
-  left: 15px;
 }
 
-/* Center the dropdown below "Products" */
+/* Hide mobile arrow on desktop */
+.mobile-arrow {
+  display: none;
+}
+
+/* Desktop-only hover for all dropdowns */
+@media (min-width: 769px) {
+  .mobile-arrow {
+    display: none !important;
+  }
+  
+  .dropdown:hover > .dropdown-menu:not(.mobile-open) {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .dropdown:hover > .dropdown-menu.regular:not(.mobile-open) {
+    display: flex !important;
+  }
+  
+  .dropdown-menu.mobile-open {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .dropdown-menu.regular.mobile-open {
+    display: flex !important;
+  }
+}
+
+/* Main Mega Menu Dropdown */
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: calc(50% + 60px) !important;
-  transform: translateX(-50%) !important;
-  min-width: max-content;
-  width: 1270px;
-  max-width: 90vw;
-  max-height: 100vh;
-  display: flex;
-  padding: 20px 25px;
-  border-radius: 6px;
+  left: 50%;
+  transform: translateX(-35%);
+  margin-top: 10px;
+  
+  width: 90vw;
+  max-width: 1100px;
+  max-height: 80vh;
+  
+  display: none;
+  padding: 25px;
+  border-radius: 8px;
   border: 1px solid #ddd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background: white;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden; 
   z-index: 1001;
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  left: 100px;
 }
 
 .dropdown:hover .dropdown-menu {
+  display: block;
   visibility: visible;
   opacity: 1;
-  display: flex;
 }
 
-/* Left column (legacy support if used) */
-.dropdown-left {
-  flex: 1;
-  padding-right: 10px;
-  border-right: 1px solid #eee;
-  overflow-y: auto;
-  max-height: 380px;
+.dropdown.force-close-dropdown .dropdown-menu {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
-/* Right column (legacy support if used) */
-.dropdown-right {
-  flex: 1;
-  padding-left: 5px;
-  border-left: 1px solid #eee;
-  display: flex;
-  align-items: center;
-  margin-left: 100px;
+/* Small "Regular" Dropdowns (e.g. About Us) */
+.dropdown-menu.regular {
+  left: 0;
+  transform: none;
+  min-width: 200px;
+  width: auto;
   max-width: 300px;
-}
-/* Remove top border/edge effect under dropdown */
-
-.dropdown-right img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  overflow-y: auto; 
 }
 
-/* Grid Layout for Product Dropdown */
+.dropdown-menu.regular a {
+  padding: 12px 20px;
+  display: block;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu.regular a:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* --- PRODUCT GRID (DESKTOP) --- */
 .products-grid {
   display: grid;
-  grid-template-columns: 240px 2fr;
-  gap: 0;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  width: 100%;
+  height: 550px;
 }
 
+/* Categories Sidebar */
 .product-categories {
   border-right: 3px solid #ffcc00;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  margin-right: 5px;
+  overflow-y: auto; 
+  height: 100%;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.product-categories h4 {
-  color: #333;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #ffcc00;
+.product-categories::-webkit-scrollbar {
+  display: none; 
 }
 
-/* --- LEFT SIDE CATEGORIES --- */
 .category-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Category Wrapping Fix */
 .category-item {
   cursor: pointer;
-  padding: 8px 12px;
-  font-size: 17px;
+  padding: 14px 15px 14px 20px; 
+  font-size: 14px;
   font-weight: 500;
   color: #333;
   position: relative;
-  transition: color 0.2s ease;
-}
-
-.category-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 2px;
-  background: #ffcc00;
-  transition: width 0.3s ease;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: block;            
+  width: 100%;               
+  box-sizing: border-box;    
+  white-space: normal;       
+  word-wrap: break-word;     
+  line-height: 1.5;          
 }
 
 .category-item:hover {
+  background: #f5f5f5;
   color: #000;
 }
 
-.category-item:hover::after {
-  width: 100%;
-}
-
 .category-item.active {
+  background: #fff9e6;
   color: #000;
   font-weight: 600;
 }
 
-.category-item.active::after {
-  width: 100%;
+.category-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: #ffcc00;
+  transition: height 0.3s ease;
 }
 
-/* Product Items Grid */
+.category-item.active::before {
+  height: 70%;
+}
+
+/* --- PRODUCT ITEMS (RIGHT SIDE) --- */
 .product-items {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-height: 1000px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  height: 100%;
+  overflow-y: auto; 
+  padding-right: 10px;
+  align-content: start; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
 .product-items::-webkit-scrollbar {
-  width: 6px;
+  display: none;
 }
 
-.product-items::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 4px;
-}
-
-.product-items::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
-}
-@media (max-height: 1000px) {
-  .product-items {
-    max-height: 500px;
-  }
-}
-
+/* --- PRODUCT CARD WRAPPING FIX --- */
 .product-card {
   display: flex;
-  padding: 12px;
+  align-items: flex-start; /* Ensures icon stays at top */
+  padding: 15px;
   border-radius: 8px;
   transition: all 0.3s ease;
   text-decoration: none;
   color: #333;
   background: #fafafa;
   border: 1px solid #e8e8e8;
+  position: relative;
+  height: auto; /* Grows with text */
   min-height: 60px;
 }
 
+.product-card::after {
+  display: none !important;
+}
+
 .product-card:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #ffcc00;
 }
 
 .product-icon {
@@ -288,106 +352,54 @@
   background: white;
   border-radius: 50%;
   border: 2px solid #e0e0e0;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevents icon squashing */
+  margin-top: 2px; 
 }
 
 .product-icon img {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
+/* Wrapper for text to ensure it shrinks/wraps */
 .product-info {
   flex: 1;
-}
-
-.product-info h5 {
-  margin-top: 5px;
-  font-size: 25px;
-  font-weight: 600;
-  color: #333;
-  line-height: 1.3;
-  position: relative;
-  display: grid;
-  cursor: pointer;
-}
-
-.product-info h5::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 2px;
-  background: #ffcc00;
-  transition: width 0.3s ease;
-}
-
-.product-card:hover .product-info h5::after {
+  min-width: 0; /* CRITICAL: Allows flex child to shrink below content size */
   width: 100%;
 }
 
-.product-info p {
-  margin: 4px 0 0 0;
-  font-size: 20px;
-  color: #888;
+/* Force wrapping for long product names like Vortex */
+.product-info h5.product-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  white-space: normal !important;      /* Forces wrap */
+  word-wrap: break-word !important;    /* Breaks long words */
+  overflow-wrap: anywhere !important;  /* Modern break */
+  display: block;
 }
 
-/* Regular dropdown for non-product items */
-.dropdown-menu.regular {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  min-width: 20px;
-  max-width: 200px;
-  z-index: 1001;
-  padding: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.dropdown:hover .dropdown-menu.regular {
-  visibility: visible;
-  opacity: 1;
-}
-
-.dropdown-menu.regular a {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
-
-.dropdown-menu.regular a:hover {
-  background: #ffcc00;
-}
-
-/* ===== Contact Button ===== */
+/* =========================================
+   3. BUTTONS & UTILITIES
+   ========================================= */
 .contact-btn {
   position: relative;
   overflow: hidden;
   background-color: #ffcc00;
   color: black;
   border: none;
-  font-weight: 500;
-  padding: 0 20px;
-  height: 60px;
+  font-weight: 600;
+  padding: 0 25px;
+  height: 45px;
   cursor: pointer;
-  width: 200px;
-}
-
-.desktop-contact icon-btn {
-  font-size: 0.2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .contact-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -395,51 +407,53 @@
   height: 100%;
   background-color: black;
   transform: translateX(-100%);
+  transition: transform 0.4s ease;
   z-index: 1;
 }
 
 .contact-btn:hover::before {
-  animation: slideInLeft 0.4s ease forwards;
-}
-
-.contact-btn:not(:hover)::before {
-  animation: slideOutRight 0.4s ease forwards;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOutRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+  transform: translateX(0);
 }
 
 .contact-btn span {
   position: relative;
   z-index: 2;
-  transition: color 0.4s ease;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-btn:hover span {
   color: white;
 }
 
-/* ===== Hamburger Icon ===== */
+.contact-btn img.icon-btn {
+  height: 14px;
+  width: auto;
+  filter: brightness(0);
+  transition: filter 0.3s ease;
+}
+
+.contact-btn:hover img.icon-btn {
+  filter: brightness(0) invert(1);
+}
+
+.mobile-contact-link {
+  display: none;
+}
+
+.desktop-contact-link {
+  display: block;
+}
+
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .hamburger span {
@@ -447,6 +461,7 @@
   height: 3px;
   background: black;
   transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -461,447 +476,310 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* ===== Mobile Menu ===== */
-@media (max-width: 992px) {
+/* =========================================
+   4. MOBILE & RESPONSIVE STYLES
+   ========================================= */
+
+/* --- TABLET (768px - 992px) --- */
+@media (max-width: 992px) and (min-width: 769px) {
+  .nav-menu {
+    gap: 20px;
+  }
+  
+  .nav-item {
+    font-size: 14px;
+  }
+  
+  .products-grid {
+    grid-template-columns: 250px 1fr;
+  }
+  
+  .product-items {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+/* --- MOBILE (< 768px) --- */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 8px 15px;
+    font-size: 12px;
+    gap: 15px;
+  }
+
+  .custom-navbar {
+    height: 60px;
+    /* Ensure no borders on mobile either unless specified */
+    border: none !important;
+  }
+
+  .nav-container {
+    padding: 0 15px;
+  }
+
+  .nav-logo img {
+    height: 40px;
+  }
+
   .hamburger {
     display: flex;
   }
 
+  .desktop-contact-link {
+    display: none;
+  }
+
+  .mobile-contact-link {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .mobile-contact {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Mobile Menu Drawer */
   .nav-menu {
     position: fixed;
     top: 0;
     right: -100%;
-    height: 100%;
-    width: 250px;
+    height: 100vh;
+    width: 85%;
+    max-width: 350px;
     background: white;
     flex-direction: column;
-    padding: 80px 20px;
-    gap: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+    padding: 80px 0 20px 0;
+    gap: 0;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
     overflow-y: auto;
+    z-index: 9999;
+    border: none !important;
   }
 
   .nav-menu.open {
     right: 0;
   }
 
-  .desktop-contact {
+  .nav-menu > .nav-item,
+  .nav-menu > .dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-menu > .nav-item,
+  .nav-menu .nav-link {
+    padding: 15px 20px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .nav-menu .dropdown > .nav-link {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .nav-menu > .nav-item::after,
+  .nav-menu > .dropdown > .nav-link::after {
     display: none;
   }
 
-  .mobile-contact {
-    display: block;
-    margin-top: 20px;
+  .mobile-arrow {
+    display: inline;
+    float: right;
+    font-size: 12px;
   }
 
+  /* Mobile Dropdowns */
   .dropdown-menu {
-    position: static;
-    min-width: auto;
-    max-width: none;
-    max-height: none;
-    overflow: visible;
-    padding: 15px 10px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    border-radius: 6px;
-    visibility: visible;
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #f8f8f8 !important;
+    display: none;
     opacity: 1;
+    visibility: visible;
+    overflow-y: visible;
   }
 
-  .products-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+  .dropdown-menu.mobile-open {
+    display: block !important;
   }
 
-  .product-categories {
-    border-right: none;
-    border-bottom: 2px solid #ffcc00;
-    padding-right: 0;
-    padding-bottom: 15px;
-    padding-left: 10px;
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 
-  .product-categories h4 {
-    font-size: 14px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
+  .dropdown-menu.mobile-open.mobile-open {
+    display: block !important;
   }
 
-  .category-list a {
-    font-size: 12px;
-    padding: 4px 0;
+  .dropdown-menu.regular {
+    padding: 0 !important;
+    background: #f8f8f8 !important;
   }
 
-  .category-list li {
-    margin-bottom: 6px;
+  .dropdown-menu.regular a {
+    padding: 15px 20px 15px 40px !important;
+    border-bottom: 1px solid #e0e0e0;
+    display: block !important;
+    width: 100% !important;
+    text-decoration: none !important;
+    color: #333 !important;
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    touch-action: manipulation;
   }
-
-  .product-items {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-
-  .product-card {
-    padding: 8px;
-    min-height: 50px;
-  }
-
-  .product-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-  }
-
-  .product-icon img {
-    width: 16px;
-    height: 16px;
-  }
-
-  .product-info h5 {
-    font-size: 11px;
-    line-height: 1.2;
-  }
-}
-
-/* Tablet responsive adjustments */
-@media (max-width: 1200px) and (min-width: 993px) {
-  .dropdown-menu {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    min-width: 650px;
-    padding: 20px;
-  }
- 
-  .products-grid {
-    grid-template-columns: 200px 1fr;
-  }
-
-  .product-categories {
-    padding-right: 20px;
-    padding-left: 12px;
-  }
-
-  .product-categories h4 {
-    font-size: 15px;
-    margin-bottom: 18px;
-  }
-
-  .category-list a {
-    font-size: 12px;
-  }
-    .nav-container {
-  width: 100%;
-  max-width: 1200px;
   
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
+  .dropdown-menu.regular a:active {
+    background: #e0e0e0 !important;
+  }
+
+  .products-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    height: auto !important;
+  }
+
+  .product-categories {
+    border-right: none !important;
+    border-bottom: 2px solid #ffcc00;
+    padding: 15px 10px !important;
+    height: auto !important;
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: 10px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  
+  .product-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-list {
+    display: flex !important;
+    gap: 10px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .category-item {
+    flex: 0 0 auto;
+    white-space: nowrap; 
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 16px !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    transition: all 0.2s ease;
+    line-height: normal;
+    display: block; 
+    width: auto;
+  }
+
+  .category-item:hover {
+    background: white;
+  }
+
+  .category-item.active {
+    background: #ffcc00 !important;
+    border-color: #ffcc00 !important;
+    color: black;
+    font-weight: 700;
+  }
+
+  .category-item::before {
+    display: none;
+  }
 
   .product-items {
-    gap: 15px 20px;
-    padding-left: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  .product-items::-webkit-scrollbar {
+    display: none;
   }
 
   .product-card {
-    padding: 10px;
-    min-height: 55px;
+    padding: 15px 20px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    background: white !important;
+    margin: 0 !important;
+    height: auto !important;
+    align-items: center; 
+  }
+
+  .product-card:hover {
+    transform: none;
+    background: #f5f5f5 !important;
   }
 
   .product-icon {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0;
   }
 
   .product-icon img {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }
 
   .product-info h5 {
-    font-size: 12px;
+    font-size: 13px !important;
+    line-height: 1.4;
   }
 }
 
-/* Small mobile adjustments */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .top-bar {
-    padding: 5px 10px;
-    font-size: 12px;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 5px;
-  }
-
-  .nav-container {
-    padding: 0 15px;
-    margin-right: 0;
+    padding: 8px 10px;
   }
 
   .nav-logo img {
     height: 35px;
   }
 
-  .contact-btn.desktop-contact {
-    width: 120px;
-    padding: 0 10px;
-    font-size: 14px;
-  }
-
   .nav-menu {
-    width: 280px;
-    padding: 60px 15px;
+    width: 90%;
   }
 
-  .dropdown-menu {
-    padding: 10px 8px;
-    margin-left: -10px; 
-     margin-right: -10px;
-  } 
-
-  .product-categories {
-    padding-left: 8px;
-  }
-
-  .product-categories h4 {
-    font-size: 13px;
-  }
-
-  .category-list a {
-    font-size: 11px;
-  }
-
-  .product-items {
-    padding-left: 8px;
-    gap: 6px;
-  }
-
-  .product-card {
-    padding: 6px;
-    min-height: 45px;
-  }
-
-  .product-icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 6px;
-  }
-
-  .product-icon img {
-    width: 14px;
-    height: 14px;
-  }
-
-  .product-info h5 {
-    font-size: 10px;
+  .category-item {
+    font-size: 12px !important;
+    padding: 6px 12px !important;
   }
 }
 
-/* Large screen adjustments */
-@media (min-width: 1200px) {
-  .dropdown-menu {
-    left: 100% !important;
-    transform: translateX(-40%) !important;
-    max-width: 2000px;
-    padding: 30px;
-  }
-
-  .products-grid {
-    grid-template-columns: 260px 1fr;
-  }
-
-  .product-categories {
-    padding-right: 35px;
-    padding-left: 20px;
-  }
-
-  .product-items {
-    gap: 22px 30px;
-    padding-left: 35px;
-  }
-
-  .product-card {
-    padding: 14px;
-    min-height: 65px;
-  }
-
-  .product-icon {
-    width: 42px;
-    height: 42px;
-    margin-right: 12px;
-  }
-
-  .product-icon img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .product-info h5 {
-    font-size: 15px;
-  }
-  .nav-container {
-  width: 100%;
-  max-width: 1200px;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-.nav-logo img {
-  height: 50px;
-  align-items: start;
-
-}
-}
-
-@media (min-width: 993px) {
-  .mobile-contact {
-    display: none;
-  }
-}
-
-.contact-btn img {
-  height: 1.2em;
-  width: auto;
-  margin-left: 6px;
-  vertical-align: middle;
-}
-/* ===== Base Styles (apply to >=400px by default) ===== */
 body {
-  min-width: 400px; /* prevent collapse on extra-small screens */
+  min-width: 320px;
 }
-
-/* Small mobile (400px – 575px) */
-@media (max-width: 575px) and (min-width: 400px) {
-  .top-bar {
-    padding: 5px 8px;
-    font-size: 11px;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .nav-container {
-    padding: 0 12px;
-    margin-right: 0;
-  }
-
-  .nav-logo img {
-    height: 32px;
-  }
-
-  .contact-btn.desktop-contact {
-    width: 110px;
-    font-size: 13px;
-    height: 50px;
-  }
-
-  .nav-menu {
-    width: 250px;
-    padding: 60px 12px;
-  }
-
-  .dropdown-menu {
-    padding: 8px;
-    margin: 0 -8px;
-  }
-
-  .product-categories {
-    padding-left: 6px;
-  }
-
-  .product-categories h4 {
-    font-size: 12px;
-  }
-
-  .category-list a {
-    font-size: 10px;
-  }
-
-  .product-items {
-    padding-left: 6px;
-    gap: 5px;
-  }
-
-  .product-card {
-    padding: 5px;
-    min-height: 40px;
-  }
-
-  .product-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-  }
-
-  .product-icon img {
-    width: 12px;
-    height: 12px;
-  }
-
-  .product-info h5 {
-    font-size: 9px;
-  }
-}
-
-/* Existing Mobile Styles (576px – 992px) remain same */
-
-/* Tablet (993px – 1199px) remain same */
-
-/* Large Screens (>=1200px) remain same */
-
-/* Ultra-large screens (>=1600px) → Optional tweak */
-@media (min-width: 1600px) {
-  .nav-container {
-    max-width: 1400px;
-  }
-
-  .dropdown-menu {
-    max-width: 2200px;
-    padding: 35px;
-  }
-
-  .product-items {
-    gap: 25px 35px;
-  }
-
-  .product-card {
-    padding: 16px;
-    min-height: 70px;
-  }
-
-  .product-info h5 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1200px) and (min-width: 992px) {
-  .nav-container {
-    padding: 0 15px;     /* tighter fit */
-  }
-
-  .navbar-nav {
-    gap: 15px;           /* reduce spacing between links */
-  }
-
-  .contact-btn {
-    padding: 8px 16px;   /* shrink slightly if needed */
-    font-size: 14px;
-    max-width: 150px;
-  }
-   .dropdown-menu {
-    max-width: 1080px;
-    padding: 35px;
-     transform: translateX(-35%) !important;
-  }
-}
-
-/* This is closing the dropdown when a category is clicked */
-.dropdown-menu.force-close {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-

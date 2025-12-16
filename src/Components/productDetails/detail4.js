@@ -324,13 +324,14 @@ Easy install, no pipe cutting.</li>
 <p>Each configuration is optimized for <b>non-intrusive installation</b>, offering flexibility for <b>OEM integration, multi-line systems, or redundant measurement setups.</b></p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+         {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 <p>Why Choose the UF-1500 Clamp-On Ultrasonic Flow Meter?</p>
 <p>Boost your system’s efficiency with a <b>maintenance-free, accurate, and cost-effective</b> flow measurement device. This plug-and-play system is the preferred choice for engineers seeking precision, flexibility, and minimal installation overhead</p>
           <p><b>Applications Across Industries</b></p>

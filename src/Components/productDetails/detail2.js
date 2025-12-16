@@ -333,13 +333,14 @@ IP67, 10-year battery, NFC app, LoRa/GSM communication & built-in data logger.
 <p>Struggling with frequent failures in <b>mechanical water meters? </b> Say goodbye to costly downtime, moving part replacements, and clogging issues with the<b> IOTAFLOW Inline Ultrasonic Flow Meter - Robust Series.</b> Designed for <b>precision water flow measurement</b> in harsh and high-demand environments, this smart meter offers long-lasting reliability and <b>superior accuracy</b>, even in <b>low-flow or particle-heavy water lines.</b></p>
 <p> Unlike Woltman or paddle-type meters, this meter uses <b>ultrasonic transit-time technology</b>, ensuring <b>accurate measurement</b> without internal obstructions. It works perfectly with <b>raw water, treated water, DM water, hot water</b>, and condensate up to <b>130°C</b>, even with <b>sand or suspended solids</b> in the flow.</p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 
           <p><b>Applications</b></p>
 <ul>

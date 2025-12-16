@@ -324,13 +324,14 @@ AMR-ready, durable brass body, low start flow.</li>
 <p> The <b>Apator Powogaz Smart D+ Single-Jet Water Meter</b> is a high-accuracy single-jet water meter designed for residential, commercial, and municipal water metering projects in India. It features advanced vane-wheel technology, hermetically sealed counters for fog resistance, and robust tamper protection to ensure long-term reliability in challenging environments. The meter is MID-compliant with an R200 measurement range and supports wired or wireless AMR communication modules. It allows installation in horizontal and vertical positions without requiring straight pipe runs, providing low starting flow sensitivity and resistance to external magnetic fields. The durable brass body and high-quality internal components ensure extended service life. </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
 <ul> <li><b>Residential water metering</b> for single-family and multi-family housing water supply</li> <li><b>Commercial buildings</b> such as hotels, office complexes, and retail facilities</li> <li><b>Industrial utilities</b> including factories and processing plants requiring accurate water tracking</li> <li><b>Municipal water supply networks</b> for cold and hot water distribution systems</li> <li><b>Smart water metering projects</b> integrated with AMR/AMI systems for automated billing</li> </ul>
 

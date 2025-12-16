@@ -295,13 +295,14 @@ Designed for performance in <b>high-temperature environments</b> and challenging
 </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p>
 <b>Applications of EQZ Turbine Gas Meters in India</b><br/>
 <b>Industrial Gas Flow Monitoring:</b> Used for high-accuracy measurement of natural gas consumption in steel plants, refineries, and chemical industries.<br/>

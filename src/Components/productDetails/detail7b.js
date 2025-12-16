@@ -329,13 +329,14 @@ High Accuracy | Oil & Gas.</li>
 <p> Built to comply with <b>CGWA guidelines</b>, the MF-TER is equipped for <b>real-time flow monitoring</b> and <b>data reporting to government portals (CPCB, PCB, NIC)</b> — ensuring legal and environmental accountability.</p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
          <ul>
 <li><b>Hazardous area installations</b> (oil & gas, petrochemicals, solvents)</li>

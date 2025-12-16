@@ -323,13 +323,14 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
 <p> This advanced system utilizes a <b>submerged ultrasonic Doppler sensor</b> to simultaneously measure <b>velocity and level</b>, calculating flow volume in real-time. Ideal for <b>wastewater</b>, <b>industrial effluent</b>, <b>stormwater monitoring</b>, and <b>irrigation flow measurement</b>, the UF AV5500 delivers <b>CE, CSA, and UL-certified reliability</b> in harsh field conditions.</p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
           <p><b>Applications </b></p>
 <ul>
 <li><b>Wastewater flow monitoring</b> in sewer lines and treatment plants </li>

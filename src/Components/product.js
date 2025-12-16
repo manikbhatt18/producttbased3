@@ -285,7 +285,7 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
           </div>
         </div>
         	{/* Sticky tabs */}
-        <div className="container sticky-top bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
+        <div className="container bg-white shadow-sm" style={{ top: "0px", zIndex: 1020 }}>
         <ul className="nav nav-tabs border-0 justify-content-center flex-wrap">
           {["Description", "Features", "Technical data", "Downloads"].map((tab) => (
             <li className="nav-item" key={tab}>
@@ -316,13 +316,14 @@ IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.  
 <p> Built for performance in Indian conditions, Ultrimis meters offer <b>IP68 protection</b>, extended <b>battery life of up to 16 years </b>, and seamless compatibility with<b> NFC, Wireless M-Bus, and LoRaWAN</b> communication protocols. The meter supports all mounting positions without requiring straight pipe sections, making it ideal for space-constrained or retrofit installations. </p>
 <p>Now available in India through <b>IOTAFLOW Systems Pvt. Ltd.</b>, an authorized channel partner of Apator Powogaz.</p>
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
 
           <p><b>Applications</b></p>
 <ul>

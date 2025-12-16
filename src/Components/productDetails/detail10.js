@@ -296,13 +296,14 @@ AMR compatibility & precision for industrial and municipal use.</li>
 <p> The <b>Woltmann Turbine Hot & Cold Mechanical Water Meter</b> is designed for measuring bulk water flow in a variety of industrial, commercial, and waterworks applications. It operates on the Woltmann principle, where a turbine with helical blades rotates inside the pipe as water flows through. The magnetic transmission ensures the register is hermetically sealed and detached from water, enhancing durability and reducing maintenance needs. This meter supports high flow rates, up to 600 m³/h or more, and withstands fluid temperatures up to 130°C for hot water applications. The device is suitable for horizontal, vertical, or inclined installation and features pulse output options for integration with monitoring systems. Certified to international standards such as MID, ISO 4064, and WRAS, it ensures reliable performance in demanding water metering conditions. </p>
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
         <p><b>Application</b></p>
         <p>Apator Turbine flow meter is optimized for applications where accurate volumetric flow measurement and long-life durability are required in commercial, industrial, and municipal systems.</p>
  <ul> <li>Industrial water flow measurement in factories and plants</li> <li>Water distribution monitoring in municipal waterworks</li> <li>Bulk hot and cold water metering in commercial and residential complexes</li> <li>Usage in heating systems for multi-residential and commercial buildings</li> <li>Agricultural water supply flow measurement</li> <li>Integration with remote monitoring systems using pulse output</li> </ul>

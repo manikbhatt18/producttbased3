@@ -298,13 +298,14 @@ Whether you're measuring corrosive gases, hot steam, or low-pressure flows, the 
 
 
 
-          {/* Decorative Separator Line Added Here */}
-         <div style={{
-          height: '4px',
-          width: '700px',
-          background: 'linear-gradient(to right, #eaff00, #ffcc00)',
-          margin: '2rem 0'
-        }} />
+          {/* Responsive Decorative Separator Line */}
+          <div style={{
+            height: '4px',
+            width: '100%',
+            maxWidth: '700px',
+            background: 'linear-gradient(to right, #eaff00, #ffcc00)',
+            margin: '2rem auto'
+          }} />
         <p>Application-Specific Use Cases</p>
         <p>Ideal for <b>industrial flow measurement</b> in both standard and aggressive service environments:</p>
 <table style={{ borderCollapse: "collapse", width: "100%" }}>

@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0;         /* remove extra padding */
-  margin: 0;          /* remove extra margin */
+  padding: 0;
+  margin: 0;
 }
 
 /* ================= Caption Background ================= */
@@ -43,30 +43,72 @@
   font-size: 1.2rem;
 }
 
+
+
 /* ================= Tablet adjustments ================= */
 @media (max-width: 992px) {
   .caption-bg {
     max-width: 85%;
-    padding: 15px;
+    padding: 16px;
   }
 
   .caption-bg h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .caption-bg h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   .caption-bg p {
     font-size: 1rem;
+  }
+
+  /* Move caption up slightly */
+  .carousel-caption {
+    bottom: 40px !important;
+  }
+}
+
+/* ================= Large Phone / Small Tablet ================= */
+@media (max-width: 768px) {
+  .banner-img {
+    max-height: 380px !important;
+  }
+
+  .caption-bg {
+    max-width: 90%;
+    padding: 14px;
+  }
+
+  .caption-bg h1 {
+    font-size: 1.8rem;
+  }
+
+  .caption-bg h2 {
+    font-size: 1.25rem;
+  }
+
+  .caption-bg p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-caption {
+    bottom: 35px !important;
+  }
+
+  /* Controls smaller */
+  .carousel-controls button {
+    padding: 4px 10px !important;
   }
 }
 
 /* ================= Phone adjustments ================= */
 @media (max-width: 576px) {
   .banner-img {
-    max-height: 300px;    
+    max-height: 300px;
     height: auto;
     object-fit: cover;
   }
@@ -77,15 +119,15 @@
   }
 
   .caption-bg h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .caption-bg h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .caption-bg p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   /* Hide button in mobile view */
@@ -93,6 +135,15 @@
   button.btnClass {
     display: none !important;
     visibility: hidden !important;
+  }
+
+  .carousel-caption {
+    bottom: 20px !important;
+    top: auto !important;
+  }
+
+  .carousel-controls {
+    display: none !important;
   }
 }
 
@@ -133,21 +184,13 @@
 }
 
 @keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
 @keyframes slideOutRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
 }
 
 .btnClass span {
@@ -160,16 +203,15 @@
   color: black;
 }
 
-/* ================= Slider Container ================= */
 .slider-container {
   width: 100%;
-  height: auto;   /* let height adjust dynamically */
+  height: auto;
   overflow: hidden;
   position: relative;
 }
 
 .slider-container img {
   width: 100%;
-  height: auto;   
+  height: auto;
   object-fit: cover;
 }
