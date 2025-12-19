@@ -39,6 +39,31 @@ import MID from "../../images/MID Certified.png";
 import Wsonic from "../../images/W Sonic technology.png";
 import iot from "../../images/IOT Ready.png";
 import rohs from "../../images/Rohs compliant.png";
+import deg360 from "../../images/360 Deg Rotatable.png";
+import batteryip66 from "../../images/Battery + IP66 rating.png";
+import ccs from "../../images/CCS Type Approval.png";
+import coldhot from "../../images/Cold + Hot Water.png";
+import dnvgl from "../../images/DNV-GL Type Approval.png";
+import highpt from "../../images/High Pressure & Temperature Capability.png";
+import iacs from "../../images/IACS E10 Compliance.png";
+import inttemp from "../../images/Integrated temp measurement.png";
+import ip66 from "../../images/IP66 Protection.png";
+import iso from "../../images/ISO 17025 Accredited Calibration.png";
+import legalcom from "../../images/Legal & Commercial Use (fiscal approval).png";
+import lsg from "../../images/Liquids • Steam • Gas.png";
+import marine from "../../images/Marine Class Approved.png";
+import nooil from "../../images/No Oil Level Maintenance Required.png";
+import oiml from "../../images/OIML R49.png";
+import pipewprobe from "../../images/Pipe with probe (Insertion symbol).png";
+import propler from "../../images/Propler Icon.png";
+import pulse from "../../images/Pulse & Analog Output.png";
+import realtime from "../../images/Real-Time Display.png";
+import short from "../../images/Short pipe arrows.png";
+import tempsens from "../../images/Temperature Sensor.png";
+import therm from "../../images/Thermometer + gauge.png";
+import water from "../../images/Water meter (N).png";
+import wireless from "../../images/Wireless & Comm module.png";
+
 
 
 
@@ -252,6 +277,27 @@ Ideal for power plants, chemical industries, and utility management.</li>
                   /> 
                 </span>
 Handles harsh conditions with stable signal output and wide media compatibility.</li>
+<li className="tw-flex tw-items-center tw-gap-2 tw-mt-2"> 
+                <span>
+                  <img
+                    src={IBRimg}
+                    alt="IBRimg"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                 <span>
+                  <img
+                    src={Exproofimg}
+                    alt="Exproofimg"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                
+                                 
+
+
+
+              </li>
 
 
             </ul>
