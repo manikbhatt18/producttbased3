@@ -204,7 +204,7 @@ function CustomNavbar() {
             <NavLink to="/services" className="nav-item" onClick={closeMenu}>
               Services
             </NavLink>
-            <NavLink to="/tools" className="nav-item" onClick={closeMenu}>
+            <NavLink to="/iotsense" className="nav-item" onClick={closeMenu}>
               Tools
             </NavLink>
 

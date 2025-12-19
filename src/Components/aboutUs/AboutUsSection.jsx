@@ -29,7 +29,7 @@ function AboutUsSection() {
             </div>
 
             {/* Right Side: Text */}
-            <div className="col-md-7">
+            <div className="col-md-7 mt-5 mt-md-0">
               <h1 className="fw-bold">Welcome to IOTAFLOW !</h1>
               <p className="mt-3">
                 Where the essence of our name reflects our commitment to precision and comprehensive

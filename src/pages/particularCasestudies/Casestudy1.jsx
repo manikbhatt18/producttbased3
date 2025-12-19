@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import caseStudyImg from "../../images/Case_study_Try.png"
+
 function Casestudy1() {
   // Ensure page starts at top when navigating here
   useEffect(() => {
@@ -56,7 +58,7 @@ function Casestudy1() {
             {/* Image Column */}
             <div className="tw-relative tw-h-80 lg:tw-h-[400px] tw-w-full tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-shadow-xl">
               <img 
-                src="https://placehold.co/800x600/f3f4f6/9ca3af?text=Cooling+System+Visual" 
+                src={caseStudyImg}
                 alt="Cooling System Overview" 
                 className="tw-w-full tw-h-full tw-object-cover"
               />

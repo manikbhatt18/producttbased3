@@ -30,7 +30,11 @@ function LeanResourcesPage() {
         {/* What is Lean Section */}
         <section className="py-5 text-center">
           <div className="container">
-            <h2 className="mb-4">What is Lean?</h2>
+            <h2 className="mb-4 tw-text-5xl tw-font-extrabold tw-text-[#ffd200]">
+              What is Lean{" "}
+              <span className="tw-text-[#ffd200] tw-text-6xl tw-align-middle">?</span>
+            </h2>
+
             <p className="lead">
               At IOTAFLOW, Lean is our way of working and living.
               <br />

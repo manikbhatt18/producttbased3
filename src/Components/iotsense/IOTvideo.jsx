@@ -12,20 +12,23 @@ function IOTvideo() {
         loop
         playsInline
       >
+        {/* Replace the src below with your local variable: src={myVideo} */}
         <source src={myVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Removed the global dark overlay div to keep video clear */}
-
       {/* Content Overlay */}
       <div className="tw-relative tw-z-10 tw-container tw-mx-auto tw-px-4">
-        {/* Removed backdrop-blur-sm to prevent blurring the video behind text */}
-        <div className="tw-max-w-3xl tw-bg-black/60 tw-p-8 md:tw-p-10 tw-rounded-xl tw-border-l-4 tw-border-[#ffd700]">
-          <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-6">
+        
+        <div className="tw-max-w-2xl tw-bg-black/20 tw-p-4 md:tw-p-6 tw-rounded-xl tw-border-l-4 tw-border-[#ffd700]">
+          
+          {/* Updated: Smaller Heading Size */}
+          <h2 className="tw-text-2xl md:tw-text-4xl tw-font-bold tw-text-white tw-mb-4">
             <span className="tw-text-[#ffd700]">IOT Sense</span> – Smart Flow Intelligence Platform
           </h2>
-          <p className="tw-text-lg md:tw-text-xl tw-text-gray-100 tw-leading-relaxed">
+          
+          {/* Updated: Smaller Description Size */}
+          <p className="tw-text-sm md:tw-text-lg tw-text-gray-100 tw-leading-relaxed">
             Transform your flow-data into actionable intelligence with IOT Sense: the next-generation IoT & Industry 4.0 platform built specifically for flow measurement, smart water-/utility-metering and remote telemetry systems. Real-time dashboards, cloud connectivity, regulatory compliance (CGWA, CPCB, NIC data-requirements) and full workflow automation — all in one unified solution.
           </p>
         </div>

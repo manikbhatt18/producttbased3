@@ -78,6 +78,7 @@ import Casestudy2 from "./pages/particularCasestudies/Casestudy2";
 import Casestudy3 from "./pages/particularCasestudies/Casestudy3";
 import Casestudy4 from "./pages/particularCasestudies/Casestudy4";
 import Casestudy5 from "./pages/particularCasestudies/Casestudy5";
+import Careers from "./pages/Careers";
 
 
 
@@ -131,6 +132,7 @@ function App() {
           <Route path="/seo" element={<SeoPage />} />
           <Route path="/iotsense" element={<IOTsensePage />} />
           <Route path="/accessories" element={<Accessories />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/case-studies/1" element={<Casestudy1/>} />
           <Route path="/case-studies/2" element={<Casestudy2/>} />

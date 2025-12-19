@@ -3,10 +3,12 @@ import { useLocation, Link } from 'react-router-dom';
 
 // --- Placeholder Images for Preview ---
 import strainerImage from '../../src/images/Strainers___Filters__2_-removebg-preview.png';
+import matchingFlagesImage from '../../src/images/Matching_Flange_Nut_BoltandGasket.png';
 import AirReleaseImage from '../../src/images/Air_Release_Systems-removebg-preview.png';
-import RemoteDisplayImage from '../../src/images/IMG_0488-removebg-preview.png';
+import RemoteDisplayImage from '../../src/images/remoteDisplayUnit.png';
 import telementryImage from '../../src/images/Telemetry_Systems_-_4G_RTU_IOT_Gateways-removebg-preview.png';
 import CustomFlowImage from '../../src/images/Custom_Flow_Straighteners-removebg-preview.png';
+import SolarPowerSystemImage from '../../src/images/solarPowerSystem.png';
 
 const accessoriesData = [
   {
@@ -21,7 +23,8 @@ const accessoriesData = [
           Constructed from MS, Cast Iron, SS304, or SS316 with SS304 baskets rated 150 microns–1.6 mm (40 mesh / 250 µ).
         </p>
         <p>
-           Withstand 10 bar working / 16 bar test pressure, feature neoprene seals, ¼″–1″ drain plugs, and optional butterfly valve isolation on duplex versions.
+           Withstand 10 bar working / 16 bar test pressure, feature neoprene seals, ¼″–1″ drain plugs, and optional 3 way valve and butterfly valve isolation on duplex versions.
+
         </p>
         <p>
           Designed to extend meter life, maintain flow accuracy, and ensure compliance for industrial and utility applications under CGWA / CPCB monitoring frameworks.
@@ -40,7 +43,7 @@ const accessoriesData = [
           Comprehensive installation kits comprising precision-machined mating flanges, nuts, bolts, and gaskets for secure coupling of Woltmann, electromagnetic, ultrasonic, turbine, Vortex and RPD flow meters.
         </p>
         <p className="tw-mb-4">
-          Available for 8 mm–1200 mm line sizes, manufactured in MS, SS304, or SS316, and supplied with flanges drilled to ASME/ANSI B16.5 (Class 150 / 300) and EN 1092-1 PN16 standards for global compatibility.
+          Available for 8 mm–1200 mm line sizes, manufactured in MS, SS304, or SS316, and supplied with flanges drilled to ASME/ANSI B16.5 Table and EN 1092-1 PN Series standards for global compatibility.
         </p>
         <p>
           Suitable for water, oil, air, steam, slurry, and chemical services, the kits ensure accurate alignment, uniform sealing, and correct torque transfer, preventing meter strain and leakage.
@@ -50,7 +53,7 @@ const accessoriesData = [
         </p>
       </>
     ),
-    image: strainerImage
+    image: matchingFlagesImage
   },
   {
     id: 3,
@@ -129,6 +132,7 @@ const accessoriesData = [
       <>
         <p>
           IOTAFLOW Flow Straighteners ensure stable, swirl-free flow for accurate readings in electromagnetic, ultrasonic, and turbine flow meters. Built for DN 8 mm to 1200 mm meter sizes pipelines, featuring an SS bundle core with MS or SS body and supplied with flanges drilled to ASME/ANSI B16.5 Table, they deliver uniform velocity profiles and improved meter precision. Ideal for water, oil, and process lines, these straighteners enhance flow stability, reduce measurement error, and meet CGWA/CPCB compliance for Indian industrial flow systems.
+
         </p>
       </>
     ),
@@ -151,7 +155,7 @@ const accessoriesData = [
       </>
     ),
     // Replace with 'CustomFlowImage'
-    image: CustomFlowImage
+    image: SolarPowerSystemImage
   }
 
 ];
@@ -181,7 +185,7 @@ const AccessoryItem = ({ item, isReversed }) => {
           alt={item.title} 
           // ADDED: Conditional translate class to shift image outside towards the ending (center)
           className={`tw-relative tw-z-10 tw-w-full tw-max-w-xxl tw-h-auto tw-object-contain tw-drop-shadow-xl tw-transition-transform tw-duration-500 hover:tw-scale-105
-            ${isReversed ? 'md:-tw-translate-x-28' : 'md:tw-translate-x-28'}
+            ${isReversed ? 'md:-tw-translate-x-27' : 'md:tw-translate-x-27'}
           `}
         />
       </div>
