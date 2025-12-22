@@ -79,6 +79,8 @@ import Casestudy3 from "./pages/particularCasestudies/Casestudy3";
 import Casestudy4 from "./pages/particularCasestudies/Casestudy4";
 import Casestudy5 from "./pages/particularCasestudies/Casestudy5";
 import Careers from "./pages/Careers";
+import ComplaintForm from "./pages/ComplaintForm";
+import ApplicationForm from "./pages/ApplicationForm";
 
 
 
@@ -133,6 +135,8 @@ function App() {
           <Route path="/iotsense" element={<IOTsensePage />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/complaint" element={<ComplaintForm />} />
+          <Route path="/application" element={<ApplicationForm />} />
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/case-studies/1" element={<Casestudy1/>} />
           <Route path="/case-studies/2" element={<Casestudy2/>} />
