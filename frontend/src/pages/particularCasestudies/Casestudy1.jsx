@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import SteelImg from "../../images/Case_study_images_Steel&Metallurgy_Steel_stock.png"
 import caseStudyImg from "../../images/Case_study_Try.png"
+import img2 from "../../images/Case_study_images_Steel&Metallurgy_Steel(2).png"
 
 function Casestudy1() {
   // Ensure page starts at top when navigating here
@@ -13,24 +15,34 @@ function Casestudy1() {
     <div className="tw-bg-white tw-min-h-screen tw-font-sans">
       
       {/* --- Hero Section --- */}
-      <div className="tw-bg-black tw-text-white tw-py-20 md:tw-py-28">
-        <div className="tw-container tw-mx-auto tw-px-4">
+      <div
+        className="tw-text-white tw-py-20 md:tw-py-28 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-relative"
+        style={{
+          backgroundImage: `url(${SteelImg})`,
+        }}
+      >
+        {/* Dark overlay for readability */}
+        <div className="tw-absolute tw-inset-0 tw-bg-black/70"></div>
+
+        <div className="tw-container tw-mx-auto tw-px-4 tw-relative tw-z-10">
           <div className="tw-max-w-5xl tw-mx-auto text-left">
             <div className="tw-inline-block tw-border-l-4 tw-border-[#ffd700] tw-pl-4 tw-mb-6">
               <h5 className="tw-text-[#ffd700] tw-font-bold tw-uppercase tw-tracking-widest tw-text-sm md:tw-text-base">
                 Steel & Metallurgy Case Study
               </h5>
             </div>
+
             <h1 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-leading-tight tw-mb-8">
               Smart Flow Measurement Prevents Cooling System Failures in a Major Steel Plant
             </h1>
-            {/* Justified text for proper left/right alignment */}
+
             <p className="tw-text-gray-300 tw-text-lg md:tw-text-xl tw-leading-relaxed tw-max-w-4xl tw-text-justify">
               In the demanding world of steel production, where extreme heat and pressure are constant, even a small undetected leak can trigger catastrophic consequences. One of India’s largest steel manufacturers implemented IOTAFLOW’s electromagnetic flow metering and telemetry solution to detect cooling stave failures in real time — preventing accidents, minimizing downtime, and ensuring continuous furnace performance.
             </p>
           </div>
         </div>
       </div>
+
 
       {/* --- Main Content --- */}
       <div className="tw-container tw-mx-auto tw-px-4 tw-py-16 md:tw-py-24">
@@ -112,7 +124,7 @@ function Casestudy1() {
             {/* Image Column */}
             <div className="tw-relative tw-h-80 lg:tw-h-[500px] tw-w-full tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-shadow-xl lg:tw-order-1">
               <img 
-                src="https://placehold.co/800x600/f3f4f6/9ca3af?text=Results+%26+Impact+Visual" 
+                src={img2}
                 alt="Results and Impact Visual" 
                 className="tw-w-full tw-h-full tw-object-cover"
               />

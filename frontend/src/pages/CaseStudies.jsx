@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import SteelImg from "../images/Case_study_images_Steel&Metallurgy_Steel_stock.png"
+import MetroImg from "../images/Case_study_images_DMRC_Metro_DMRCstock.png"
+import WaterImg from "../images/Case_study_images_Water_Water_stock.png"
+import MiningImg from "../images/Case_study_images_Minning_Mining_stock.png"
+import HVACImg from "../images/Case_study_images_Hvac_Hvac_stock.png"
+
 // --- Data: Industries (Sidebar Filters) ---
 const industries = [
   "Steel & Metallurgy",
@@ -26,35 +32,35 @@ const caseStudiesData = [
     category: "Steel & Metallurgy",
     title: "Preventing Blast Furnace Stave Failures with Smart Flow Measurement",
     description: "A leading steel manufacturer faced critical safety and efficiency challenges caused by undetected leaks in blast furnace cooling staves. IOTAFLOW’s intelligent electromagnetic flow metering and telemetry system provided real-time visibility, enabling early leak detection and proactive maintenance. This smart monitoring approach prevented costly unplanned shutdowns and ensured safer, more reliable furnace operations. As part of this project, a total of 143 electromagnetic flow meters were designed, supplied, and commissioned creating one of the most comprehensive flow monitoring networks in the region’s steel industry.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Steel+%26+Metallurgy"
+    image: SteelImg
   },
   {
     id: 2,
     category: "Infrastructure & Urban Utilities",
     title: "Smart Water Management in a Major Metro Rail Network",
     description: "A major metro rail corporation implemented IOTAFLOW’s intelligent flow measurement technology to optimize water conservation and operational efficiency across its extensive transit network. From cooling systems and rainwater harvesting to wastewater treatment and groundwater recharge, IOTAFLOW’s electromagnetic flow meters enabled real-time monitoring, leak detection, and precise reporting. The result improved resource utilization, regulatory compliance, and sustainability for one of the nation’s largest urban transport systems.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Metro+Rail+Network"
+    image: MetroImg
   },
   {
     id: 3,
     category: "Water & Wastewater",
     title: "Precision Flow Monitoring for Urban Water Supply Networks",
     description: "A major municipal water authority in Delhi implemented IOTAFLOW’s 4-Track Insertion Ultrasonic Flow Meter System with an integrated Level measurement to improve flow measurement accuracy and water distribution management. The intelligent multi-probe configuration ensured reliable readings even when pipelines weren’t running full. Combined with real-time data and software integration, the system enhanced operational reliability, reduced measurement errors, and improved water resource efficiency.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Urban+Water+Supply"
+    image: WaterImg
   },
   {
     id: 4,
     category: "Mining & Fertilizer Industry",
     title: "Custom Area Velocity Flow Meter Systems for a Major Phosphate Production Facility",
     description: "IOTAFLOW successfully delivered a complete suite of custom-engineered Area Velocity Flow Meter (AVFM) systems for a leading mining and fertilizer producer in Saudi Arabia. Designed for partially filled process pipelines, these ultrasonic systems ensured high-accuracy flow monitoring and operational reliability across critical phosphate processing units. With meter sizes from DN1000 and DN1400, each unit was built, hydro-tested, and quality-certified to international standards helping optimize process visibility and improve system efficiency.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Mining+%26+Fertilizer"
+    image: MiningImg
   },
   {
     id: 5,
     category: "HVAC & Building Automation",
     title: "Integrated Flow Metering Network Enhances Efficiency in a Luxury Hospitality Project",
     description: "For a prestigious hospitality infrastructure project in Sri Lanka, executed by a leading EPC contractor, IOTAFLOW supplied an integrated flow measurement network combining Electromagnetic, Ultrasonic, and BTU meters. The solution covered multiple utilities chilled water, treated water, wastewater, and domestic water systems providing real-time visibility and efficiency through seamless BMS integration. By delivering precision data across HVAC and water management networks, the system enabled significant energy optimization and long-term operational reliability.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Hospitality+Project"
+    image: HVACImg
   }
 ];
 

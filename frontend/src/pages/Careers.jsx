@@ -6,37 +6,36 @@ import { Link } from 'react-router-dom';
 // import careersBanner from '../../images/careers_banner.jpg';
 const careersBanner = "https://plus.unsplash.com/premium_photo-1661771773771-a093c948ba92?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
+// Placeholders for Vision & Mission Backgrounds - Replace these with your actual images
+const visionBg = "https://placehold.co/800x1000/111111/333333?text=Vision+Image";
+const missionBg = "https://placehold.co/800x1000/222222/444444?text=Mission+Image";
+
+
 // Job Data
 const jobRoles = [
   {
     title: "Sales & Application Engineers",
     description: "Promote flow meters and IoT telemetry systems for industrial water, air, oil, gases & chemical applications. Ideal for engineers in instrumentation and automation sales.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Sales+Engineer"
   },
   {
     title: "Business Development Managers / Public Sector Liaisoning",
     description: "Handle government and PSU projects in smart metering and automation.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Business+Dev"
   },
   {
     title: "Mechanical Design Engineers",
     description: "Design and develop flow meter components, strainers, and assemblies using CAD and 3D modeling. Support lean manufacturing and R&D innovations.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Design+Engineer"
   },
   {
     title: "Field Service & Commissioning Engineers",
     description: "Install, calibrate, and commission flow meters and telemetry systems on-site. Ensure data accuracy and compliance reporting for CGWA/CPCB projects.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Field+Service"
   },
   {
     title: "Automation / IoT Engineers",
     description: "Develop and integrate RTUs, 4G gateways, LoraWan, PLC/SCADA systems for industrial telemetry. Enable real-time IoT-based monitoring and Industry 5.0 automation.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Automation+IoT"
   },
   {
     title: "Production & Quality Control Engineers",
     description: "Manage assembly, testing, and process optimization for flow meters and accessories. Maintain quality, safety, and ISO/CGWA standards across production lines.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Production+Quality"
   }
 ];
 
@@ -97,13 +96,7 @@ const Careers = () => {
               We value work-life balance because great engineers don’t just build machines, they build better lives.
             </p>
 
-            {/* Highlighted Closing Statement */}
-            {/* Updated: Reduced margin and padding */}
-            <div className="tw-mt-6 tw-p-5 tw-border-l-4 tw-border-[#ffd700] tw-bg-white/5 tw-rounded-r-lg tw-text-left md:tw-text-center md:tw-border-l-0 md:tw-border-t-4 md:tw-rounded-none md:tw-rounded-b-lg">
-              <p className="tw-text-[#ffd700] tw-font-medium tw-text-lg md:tw-text-xl">
-                "Our environment encourages open communication, respect, and collaboration between departments, whether you’re in Sales, R&D, production, quality, calibration, IoT software, or field services."
-              </p>
-            </div>
+            
           </div>
 
         </div>
@@ -124,156 +117,105 @@ const Careers = () => {
             </p>
           </div>
 
-          {/* Job Opportunities Grid */}
+          {/* Job Opportunities Grid - Text Only Cards */}
           <div className="tw-grid grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
             {jobRoles.map((role, index) => (
               <div 
                 key={index} 
-                className="tw-group tw-bg-white tw-rounded-xl tw-overflow-hidden tw-shadow-md hover:tw-shadow-2xl tw-transition-all tw-duration-300 tw-border tw-border-gray-100 hover:tw-border-[#ffd700] hover:tw-translate-y-[-5px]"
+                className="tw-group tw-bg-gray-100 tw-rounded-xl tw-overflow-hidden tw-shadow-md hover:tw-shadow-2xl tw-transition-all tw-duration-300 tw-border tw-border-gray-100 hover:tw-border-[#ffd700] hover:tw-translate-y-[-5px] tw-flex tw-flex-col tw-justify-between"
               >
-                {/* Image Wrapper - Reduced Height from h-56 to h-40 */}
-                <div className="tw-h-40 tw-overflow-hidden tw-relative">
-                  <img 
-                    src={role.image} 
-                    alt={role.title} 
-                    className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-110" 
-                  />
-                  <div className="tw-absolute tw-inset-0 tw-bg-black/20 group-hover:tw-bg-black/0 tw-transition-colors tw-duration-300"></div>
-                </div>
-
-                {/* Content - Reduced Padding from p-6 to p-5 */}
-                <div className="tw-p-5">
-                  <h3 className="tw-text-lg tw-font-bold tw-text-black tw-mb-2 group-hover:tw-text-[#e6c200] tw-transition-colors">
+                {/* Content - Increased Padding */}
+                <div className="tw-p-8">
+                  <div className="tw-mb-4 tw-w-10 tw-h-10 tw-bg-gray-600 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-text-lg tw-font-bold tw-text-[#ffd700] group-hover:tw-bg-black group-hover:tw-text-[#ffd700] tw-transition-colors">
+                    {index + 1}
+                  </div>
+                  <h3 className="tw-text-xl tw-font-bold tw-text-black tw-mb-4 group-hover:tw-text-[#e6c200] tw-transition-colors">
                     {role.title}
                   </h3>
-                  <p className="tw-text-gray-600 tw-text-sm tw-leading-relaxed">
+                  <p className="tw-text-gray-600 tw-text-base tw-leading-relaxed">
                     {role.description}
                   </p>
                 </div>
                 
                 {/* Bottom Accent */}
-                <div className="tw-h-1 tw-bg-[#ffd700] tw-w-0 group-hover:tw-w-full tw-transition-all tw-duration-500"></div>
+                <div className="tw-h-1.5 tw-bg-gray-100 tw-w-full">
+                  <div className="tw-h-full tw-bg-[#ffd700] tw-w-0 group-hover:tw-w-full tw-transition-all tw-duration-500"></div>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Closing Text */}
-          <div className="tw-mt-16 tw-text-center tw-max-w-4xl tw-mx-auto tw-bg-white tw-p-8 tw-rounded-xl tw-shadow-sm tw-border-t-4 tw-border-[#ffd700]">
-            <p className="tw-text-gray-700 tw-text-lg tw-leading-relaxed tw-mb-4">
-              We hire both experienced professionals and entry level engineers who are passionate about industrial IoT, flow measurement, and sustainable engineering.
-            </p>
-            <p className="tw-text-black tw-font-bold tw-text-xl">
-              If you’re looking for a place to grow your skills, work on real-world technologies, and be part of a lean, learning-oriented team, <span className="tw-text-[#ffd700] tw-text-2xl">IOTAFLOW</span> is where you belong.
-            </p>
-          </div>
+         
 
         </div>
       </div>
 
 
-      {/* ==================== OUR VISION SECTION ==================== */}
-      <div className="tw-py-16 md:tw-py-24 tw-bg-white">
-        <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-max-w-4xl tw-mx-auto tw-text-center">
-            {/* Header */}
-            <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-8">
+      {/* ==================== VISION & MISSION SECTION ==================== */}
+      <div className="tw-grid md:tw-grid-cols-2 tw-w-full">
+        
+        {/* --- Our Vision Column --- */}
+        <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
+          {/* Vision Background Image */}
+          <div 
+            className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            style={{ backgroundImage: `url(${visionBg})` }}
+          ></div>
+          {/* Overlay */}
+          <div className="tw-absolute tw-inset-0 tw-bg-black/80"></div>
+          
+          <div className="tw-relative tw-z-10 tw-px-8 md:tw-px-16 tw-text-center md:tw-text-left tw-max-w-2xl">
+            <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
               Our Vision
-              <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-3 tw-mx-auto tw-rounded-full"></span>
+              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto md:tw-mx-0"></span>
             </h2>
-            
-            {/* Content */}
-            <div className="tw-space-y-6 tw-text-lg md:tw-text-xl tw-text-gray-700 tw-leading-relaxed">
+            <div className="tw-space-y-6 tw-text-lg tw-text-gray-300 tw-leading-relaxed">
               <p>
-                At <span className="tw-font-bold tw-text-black">IOTAFLOW Systems</span>, our vision is to empower people to build smarter flow meters, stronger IoT solutions, and a sustainable future.
+                At <span className="tw-font-bold tw-text-white">IOTAFLOW Systems</span>, our vision is to empower people to build smarter flow meters, stronger IoT solutions, and a sustainable future.
                 We believe every improvement, reducing waste, saving energy, or refining a process, protects both our planet and our people.
               </p>
-              
               <p>
-                Our <span className="tw-font-bold tw-text-black">Lean culture</span> is people-first. 
+                Our <span className="tw-font-bold tw-text-[#ffd700]">Lean culture</span> is people-first. 
                 When employees are empowered, trusted, and trained to improve continuously, innovation becomes part of everyday work.
               </p>
-
               <p>
                 We focus on growth through learning, by upskilling our engineers, technicians, and field teams through cross-departmental collaboration, technical training, and real project exposure.
               </p>
-
-              {/* Featured Quote Box */}
-              <div className="tw-mt-8 tw-p-6 tw-bg-gray-50 tw-rounded-xl tw-border-l-4 tw-border-[#ffd700] tw-shadow-sm">
-                <p className="tw-font-bold tw-text-black tw-italic">
-                  "We grow when our people grow, that’s what drives precision, reliability, and progress at IOTAFLOW."
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
-      </div>
 
-      {/* ==================== OUR MISSION SECTION ==================== */}
-      <div className="tw-py-16 md:tw-py-24 tw-bg-white">
-        <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-max-w-4xl tw-mx-auto tw-text-center">
-            <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-8">
+        {/* --- Our Mission Column --- */}
+        <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
+          {/* Mission Background Image */}
+          <div 
+            className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            style={{ backgroundImage: `url(${missionBg})` }}
+          ></div>
+          {/* Overlay - Slightly darker or different shade if desired, currently standardized */}
+          <div className="tw-absolute tw-inset-0 tw-bg-black/85"></div>
+
+          <div className="tw-relative tw-z-10 tw-px-8 md:tw-px-16 tw-text-center md:tw-text-left tw-max-w-2xl">
+            <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
               Our Mission
-              <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-3 tw-mx-auto tw-rounded-full"></span>
+              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto md:tw-mx-0"></span>
             </h2>
-            <div className="tw-space-y-6 tw-text-lg md:tw-text-xl tw-text-gray-700 tw-leading-relaxed">
+            <div className="tw-space-y-6 tw-text-lg tw-text-gray-300 tw-leading-relaxed">
               <p>
                 Our mission is to create a respectful, collaborative workplace where everyone can perform to their full potential and contribute to building world-class flow meter and telemetry solutions.
               </p>
               <p>
-                We believe in <span className="tw-font-bold tw-text-black">fixing problems, not finding fault</span>. Teams work together to identify root causes, create shared solutions, and ensure that every product leaving our facility meets the highest standards of quality and compliance.
+                We believe in <span className="tw-font-bold tw-text-white">fixing problems, not finding fault</span>. Teams work together to identify root causes, create shared solutions, and ensure that every product leaving our facility meets the highest standards of quality and compliance.
               </p>
               <p>
-                At <span className="tw-font-bold tw-text-black">IOTAFLOW</span>, Lean is not just a method, it’s our mindset. We empower every individual, whether a mechanical designer, instrumentation engineer, IoT developer, or field service technician — to learn, lead, and innovate within their role.
+                At <span className="tw-font-bold tw-text-[#ffd700]">IOTAFLOW</span>, Lean is not just a method, it’s our mindset. We empower every individual, whether a mechanical designer, instrumentation engineer, IoT developer, or field service technician — to learn, lead, and innovate within their role.
               </p>
-              <div className="tw-mt-6">
-                <span className="tw-inline-block tw-border-b-4 tw-border-[#ffd700] tw-pb-1 tw-font-bold tw-text-black">
-                  Our people-driven mission ensures that we grow smarter, work cleaner, and deliver better every single day.
-                </span>
-              </div>
+              
             </div>
           </div>
         </div>
-      </div>
 
-      {/* ==================== WHY JOIN US SECTION ==================== */}
-      <div className="tw-py-16 md:tw-py-24 tw-bg-black tw-text-white">
-        <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-flex flex-col lg:tw-flex-row tw-gap-12 tw-items-center">
-            
-            {/* Left: Heading & Intro */}
-            <div className="tw-w-full lg:tw-w-1/3 tw-text-center lg:tw-text-left">
-              <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-mb-6">
-                Why Join Us
-                <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto lg:tw-mx-0"></span>
-              </h2>
-              <p className="tw-text-gray-400 tw-text-lg">
-                Be part of a team that values innovation, growth, and people first. Discover the benefits of building a career with IOTAFLOW.
-              </p>
-            </div>
-
-            {/* Right: Benefits List */}
-            <div className="tw-w-full lg:tw-w-2/3">
-              <ul className="tw-grid md:tw-grid-cols-2 tw-gap-6">
-                {[
-                  "Hands-on learning in industrial IoT and smart metering technology",
-                  "Exposure to CGWA, CPCB, and Industry 4.0-compliant systems",
-                  "A culture built on lean principles and continuous improvement",
-                  "Opportunities for cross-team collaboration and leadership growth",
-                  "Balanced work environment focused on innovation and people"
-                ].map((benefit, index) => (
-                  <li key={index} className="tw-flex tw-items-start tw-bg-gray-900 tw-p-5 tw-rounded-xl tw-border tw-border-gray-800 hover:tw-border-[#ffd700] tw-transition-colors">
-                    <span className="tw-flex-shrink-0 tw-w-8 tw-h-8 tw-bg-[#ffd700] tw-rounded-full tw-flex tw-items-center tw-justify-center tw-mr-4 tw-text-black tw-font-bold">
-                      ✓
-                    </span>
-                    <span className="tw-text-gray-200 tw-text-lg">{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-          </div>
-        </div>
       </div>
 
       {/* ==================== HOW TO APPLY SECTION ==================== */}
@@ -290,9 +232,20 @@ const Careers = () => {
               <h2 className="tw-text-4xl md:tw-text-6xl tw-font-bold tw-mb-6 tw-tracking-tight tw-text-black">
                 Ready to Apply ?
               </h2>
-              <p className="tw-text-xl tw-font-medium tw-text-black/80 tw-max-w-2xl tw-mx-auto">
-                Take the next step in your career. Choose your path below.
-              </p>
+              
+            </div>
+
+            {/* Application Form Button */}
+            <div className="tw-text-center tw-mb-16">
+               <Link 
+                  to="/application" 
+                  className="tw-inline-flex tw-items-center tw-justify-center tw-bg-black tw-text-white tw-font-bold tw-py-4 tw-px-12 tw-rounded-full tw-shadow-2xl tw-transition-all tw-duration-300 hover:tw-bg-gray-900 hover:tw-scale-105 hover:tw-shadow-xl tw-no-underline tw-text-lg"
+                >
+                  <span className="tw-mr-3">📝</span> Fill Application Form
+                </Link>
+                <p className="tw-mt-4 tw-text-black/70 tw-font-medium">
+                  Prefer a structured form? Click above to submit your details directly.
+                </p>
             </div>
             
             <div className="tw-grid md:tw-grid-cols-2 tw-gap-8 tw-mb-12">
@@ -339,18 +292,7 @@ const Careers = () => {
 
             </div>
 
-            {/* Application Form Button */}
-            <div className="tw-text-center tw-mb-16">
-               <Link 
-                  to="/application" 
-                  className="tw-inline-flex tw-items-center tw-justify-center tw-bg-black tw-text-white tw-font-bold tw-py-4 tw-px-12 tw-rounded-full tw-shadow-2xl tw-transition-all tw-duration-300 hover:tw-bg-gray-900 hover:tw-scale-105 hover:tw-shadow-xl tw-no-underline tw-text-lg"
-                >
-                  <span className="tw-mr-3">📝</span> Fill Application Form
-                </Link>
-                <p className="tw-mt-4 tw-text-black/70 tw-font-medium">
-                  Prefer a structured form? Click above to submit your details directly.
-                </p>
-            </div>
+            
 
             {/* Tip Box */}
             <div className="tw-bg-white/90 tw-backdrop-blur-sm tw-p-8 tw-rounded-2xl tw-border-l-8 tw-border-black tw-shadow-xl">
@@ -368,6 +310,48 @@ const Careers = () => {
           </div>
         </div>
       </div>
+
+      {/* ==================== WHY JOIN US SECTION ==================== */}
+      <div className="tw-py-16 md:tw-py-24 tw-bg-black tw-text-white">
+        <div className="tw-container tw-mx-auto tw-px-4">
+          <div className="tw-flex flex-col lg:tw-flex-row tw-gap-12 tw-items-center">
+            
+            {/* Left: Heading & Intro */}
+            <div className="tw-w-full lg:tw-w-1/3 tw-text-center lg:tw-text-left">
+              <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-mb-6">
+                Why Join Us
+                <span className="tw-block tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto lg:tw-mx-0"></span>
+              </h2>
+              <p className="tw-text-gray-400 tw-text-lg">
+                Be part of a team that values innovation, growth, and people first. Discover the benefits of building a career with IOTAFLOW.
+              </p>
+            </div>
+
+            {/* Right: Benefits List */}
+            <div className="tw-w-full lg:tw-w-2/3">
+              <ul className="tw-grid md:tw-grid-cols-2 tw-gap-6">
+                {[
+                  "Hands-on learning in industrial IoT and smart metering technology",
+                  "Exposure to CGWA, CPCB, and Industry 4.0-compliant systems",
+                  "A culture built on lean principles and continuous improvement",
+                  "Opportunities for cross-team collaboration and leadership growth",
+                  "Balanced work environment focused on innovation and people"
+                ].map((benefit, index) => (
+                  <li key={index} className="tw-flex tw-items-start tw-bg-gray-900 tw-p-5 tw-rounded-xl tw-border tw-border-gray-800 hover:tw-border-[#ffd700] tw-transition-colors">
+                    <span className="tw-flex-shrink-0 tw-w-8 tw-h-8 tw-bg-[#ffd700] tw-rounded-full tw-flex tw-items-center tw-justify-center tw-mr-4 tw-text-black tw-font-bold">
+                      ✓
+                    </span>
+                    <span className="tw-text-gray-200 tw-text-lg">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
 
     </div>
   )

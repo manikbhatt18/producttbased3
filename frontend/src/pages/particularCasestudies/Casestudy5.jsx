@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import HVACImg from "../../images/Case_study_images_Hvac_Hvac_stock.png"
+import img1 from "../../images/Case_study_images_Hvac_Hvac(1).png"
+import img2 from "../../images/Case_study_images_Hvac_Hvac(2).png"
+
 function Casestudy5() {
   // Ensure page starts at top when navigating here
   useEffect(() => {
@@ -11,18 +15,27 @@ function Casestudy5() {
     <div className="tw-bg-white tw-min-h-screen tw-font-sans">
       
       {/* --- Hero Section --- */}
-      <div className="tw-bg-black tw-text-white tw-py-20 md:tw-py-28">
-        <div className="tw-container tw-mx-auto tw-px-4">
+      <div
+        className="tw-text-white tw-py-20 md:tw-py-28 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-relative"
+        style={{
+          backgroundImage: `url(${HVACImg})`,
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="tw-absolute tw-inset-0 tw-bg-black/70"></div>
+
+        <div className="tw-container tw-mx-auto tw-px-4 tw-relative tw-z-10">
           <div className="tw-max-w-5xl tw-mx-auto text-left">
             <div className="tw-inline-block tw-border-l-4 tw-border-[#ffd700] tw-pl-4 tw-mb-6">
               <h5 className="tw-text-[#ffd700] tw-font-bold tw-uppercase tw-tracking-widest tw-text-sm md:tw-text-base">
                 HVAC & Building Automation Case Study
               </h5>
             </div>
+
             <h1 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-leading-tight tw-mb-8">
               Integrated Flow Metering Solution Enhances Water and Energy Efficiency in a Premier Hospitality Project
             </h1>
-            {/* Justified text for proper left/right alignment */}
+
             <p className="tw-text-gray-300 tw-text-lg md:tw-text-xl tw-leading-relaxed tw-max-w-4xl tw-text-justify">
               Efficient control of water and energy systems is vital for modern high-rise hospitality infrastructure. For a landmark project in Colombo, Sri Lanka, executed by a leading EPC contractor, IOTAFLOW delivered a complete flow metering solution integrating Electromagnetic, Ultrasonic, and BTU meters. Covering multiple service networks from chilled water and wastewater to domestic and process water the system ensured precise monitoring, optimized energy usage, and seamless Building Management System (BMS) integration for real-time control.
             </p>
@@ -56,7 +69,7 @@ function Casestudy5() {
             {/* Image Column */}
             <div className="tw-relative tw-h-80 lg:tw-h-[400px] tw-w-full tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-shadow-xl">
               <img 
-                src="https://placehold.co/800x600/f3f4f6/9ca3af?text=HVAC+%26+BMS+System+Visual" 
+                src={img1} 
                 alt="Complex Hospitality Infrastructure" 
                 className="tw-w-full tw-h-full tw-object-cover"
               />
@@ -118,7 +131,7 @@ function Casestudy5() {
             {/* Image Column */}
             <div className="tw-relative tw-h-80 lg:tw-h-[500px] tw-w-full tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-shadow-xl lg:tw-order-1">
               <img 
-                src="https://placehold.co/800x600/f3f4f6/9ca3af?text=Efficiency+%26+Insight+Visual" 
+                src={img2} 
                 alt="Efficiency and Insight Results" 
                 className="tw-w-full tw-h-full tw-object-cover"
               />
