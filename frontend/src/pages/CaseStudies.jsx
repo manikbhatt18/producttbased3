@@ -61,6 +61,13 @@ const caseStudiesData = [
     title: "Integrated Flow Metering Network Enhances Efficiency in a Luxury Hospitality Project",
     description: "For a prestigious hospitality infrastructure project in Sri Lanka, executed by a leading EPC contractor, IOTAFLOW supplied an integrated flow measurement network combining Electromagnetic, Ultrasonic, and BTU meters. The solution covered multiple utilities chilled water, treated water, wastewater, and domestic water systems providing real-time visibility and efficiency through seamless BMS integration. By delivering precision data across HVAC and water management networks, the system enabled significant energy optimization and long-term operational reliability.",
     image: HVACImg
+  },
+  {
+    id: 6,
+    category: "Add Category Later", // Placeholder category as requested
+    title: "Automated Air–Fuel Control System Boosts Efficiency in an Aluminum Manufacturing Plant",
+    description: "PLC-based closed-loop burner automation enhances combustion stability, reduces fuel costs, and minimizes emissions. A leading aluminum producer in India partnered with IOTAFLOW to modernize its industrial burner systems through a PLC-based combustion automation solution. By integrating flow sensors, modulating control valves, and PID-based logic, the system automatically maintains the optimal air–fuel ratio, eliminating manual tuning errors. This advanced automation achieved 5–12% reduction in fuel consumption, improved combustion stability, and lowered CO and NOx emissions.",
+    image: "https://placehold.co/600x400/1a202c/ffd700?text=Aluminum+Plant" // Placeholder image
   }
 ];
 

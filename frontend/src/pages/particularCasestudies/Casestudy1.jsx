@@ -5,6 +5,20 @@ import SteelImg from "../../images/Case_study_images_Steel&Metallurgy_Steel_stoc
 import caseStudyImg from "../../images/Case_study_Try.png"
 import img2 from "../../images/Case_study_images_Steel&Metallurgy_Steel(2).png"
 
+import product1Img from "../../images/d7aa.png";
+
+
+// Related Products Data
+const relatedProducts = [
+  {
+    id: 1,
+    title: "MF-PRO Electromagnetic Flow Meter",
+    image: product1Img,
+    link: "/product-detail/detail7", // Link to product page
+  }
+  
+];
+
 function Casestudy1() {
   // Ensure page starts at top when navigating here
   useEffect(() => {
@@ -184,6 +198,48 @@ function Casestudy1() {
 
         </div>
       </div>
+
+
+      {/* --- Related Products Section (Example Style) --- */}
+            <div style={{ backgroundColor: "#f6f8fc" }} className="tw-py-16 md:tw-py-24">
+              <div className="tw-container tw-mx-auto tw-px-4">
+                <div className="tw-text-center tw-mb-12">
+                  <h2 className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-black tw-mb-4">
+                    Related Products
+                  </h2>
+                  <div className="tw-w-24 tw-h-1.5 tw-bg-[#ffd700] tw-mx-auto tw-rounded-full"></div>
+                  <p className="tw-text-gray-600 tw-mt-4 tw-text-lg">
+                    Explore the technologies powering this solution.
+                  </p>
+                </div>
+      
+                <div className="tw-flex tw-flex-wrap tw-justify-center tw-gap-8">
+                  {relatedProducts.map((product) => (
+                    <div key={product.id} className="tw-text-center tw-mb-4">
+                      <Link to={product.link} className="tw-no-underline tw-text-black tw-group">
+                        <div
+                          className="tw-bg-white tw-shadow-sm tw-border tw-border-gray-200 tw-rounded-md tw-p-3 tw-mx-auto tw-flex tw-items-center tw-justify-center tw-transition-transform tw-duration-300 group-hover:tw-scale-105 group-hover:tw-shadow-md group-hover:tw-border-[#ffd700]"
+                          style={{
+                            width: "100%",
+                            maxWidth: "200px", 
+                            aspectRatio: "1/1",
+                          }}
+                        >
+                          <img
+                            src={product.image}
+                            alt={product.title}
+                            className="tw-w-full tw-h-full tw-object-contain"
+                          />
+                        </div>
+                        <p className="tw-font-semibold tw-mt-3 tw-text-sm md:tw-text-base group-hover:tw-text-[#d4af37] tw-transition-colors tw-max-w-[200px] tw-mx-auto">
+                          {product.title}
+                        </p>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
 
       {/* --- Call to Action --- */}
       <div className="tw-bg-[#ffd700] tw-py-20">

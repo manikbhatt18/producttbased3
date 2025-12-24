@@ -78,6 +78,7 @@ import Casestudy2 from "./pages/particularCasestudies/Casestudy2";
 import Casestudy3 from "./pages/particularCasestudies/Casestudy3";
 import Casestudy4 from "./pages/particularCasestudies/Casestudy4";
 import Casestudy5 from "./pages/particularCasestudies/Casestudy5";
+import Casestudy6 from "./pages/particularCasestudies/Casestudy6";
 import Careers from "./pages/Careers";
 import ComplaintForm from "./pages/ComplaintForm";
 import ApplicationForm from "./pages/ApplicationForm";
@@ -143,6 +144,7 @@ function App() {
           <Route path="/case-studies/3" element={<Casestudy3/>} />
           <Route path="/case-studies/4" element={<Casestudy4/>} />
           <Route path="/case-studies/5" element={<Casestudy5/>} />
+          <Route path="/case-studies/6" element={<Casestudy6/>} />
 
 
 

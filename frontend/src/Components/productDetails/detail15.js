@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 
+import bannerImg from '../../images/Schimdt_banner.png';
+
 // --- Placeholder Links ---
 // Replace these with your actual destination URLs
 const calculatorLink = "https://www.schmidt-sensors.com/en/service-support/flow-calculator/"; // Example link
 const productLinkPlaceholder = "#"; 
+const heroBgImage = bannerImg; // Placeholder for Hero BG
 
 // --- Application Data ---
 const applicationsData = [
@@ -107,44 +110,55 @@ const Detail15 = () => {
     <div className="tw-bg-gray-50 tw-min-h-screen tw-font-sans">
       
       {/* ==================== HERO: CALCULATOR & INTRO ==================== */}
-      <div className="tw-bg-black tw-text-white tw-py-20">
-        <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-max-w-5xl tw-mx-auto">
-            
-            {/* Calculator Section */}
-            <div className="tw-text-center tw-mb-20">
-              <h5 className="tw-text-[#ffd700] tw-font-bold tw-uppercase tw-tracking-widest tw-mb-6">
-                SCHMIDT Technology
-              </h5>
-              <h1 className="tw-text-4xl md:tw-text-6xl tw-font-bold tw-mb-8">
-                Flow Rate & Velocity Calculator
-              </h1>
-              <p className="tw-text-gray-300 tw-text-lg md:tw-text-xl tw-max-w-3xl tw-mx-auto tw-mb-10 tw-leading-relaxed">
-                Instantly calculate the flow velocity or volume flow of air and industrial gases including compressed air, nitrogen, oxygen, carbon dioxide, argon, methane, natural gas, biogas, helium, and hydrogen with our smart, interactive calculator powered by SCHMIDT Technology, Germany.
-              </p>
-              <a 
-                href={calculatorLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="tw-inline-block tw-bg-[#ffd700] tw-text-black tw-font-bold tw-py-4 tw-px-10 tw-rounded-full tw-shadow-lg tw-transition-transform hover:tw-scale-105 hover:tw-bg-yellow-400 tw-no-underline"
-              >
-                Launch Calculator ↗
-              </a>
-            </div>
+      <div className="tw-relative tw-bg-black tw-text-white tw-overflow-hidden">
+        
+        {/* Background Image with Overlay */}
+        <div 
+          className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center"
+          style={{ backgroundImage: `url(${heroBgImage})` }}
+        ></div>
+        <div className="tw-absolute tw-inset-0 tw-bg-black/85"></div>
 
-            {/* Brand Intro */}
-            <div className="tw-bg-white/5 tw-backdrop-blur-sm tw-p-8 md:tw-p-12 tw-rounded-3xl tw-border-l-8 tw-border-[#ffd700]">
-              <h2 className="tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white tw-mb-6">Precision Engineering by SCHMIDT</h2>
-              <div className="tw-space-y-4 tw-text-gray-300 tw-text-lg tw-leading-relaxed">
-                <p>
-                  SCHMIDT Technology, a globally trusted German brand, is a pioneer in precision-engineered thermal mass flow sensors for the accurate measurement of air and gases across industrial and utility applications.
+        {/* Content Wrapper - Reduced Height via Padding */}
+        <div className="tw-relative tw-z-10 tw-py-12 md:tw-py-16">
+          <div className="tw-container tw-mx-auto tw-px-4">
+            <div className="tw-max-w-5xl tw-mx-auto">
+              
+              {/* Calculator Section */}
+              <div className="tw-text-center tw-mb-16">
+                <h5 className="tw-text-[#ffd700] tw-font-bold tw-uppercase tw-tracking-widest tw-mb-4">
+                  SCHMIDT Technology
+                </h5>
+                <h1 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-mb-6">
+                  Flow Rate & Velocity Calculator
+                </h1>
+                <p className="tw-text-gray-300 tw-text-lg md:tw-text-xl tw-max-w-3xl tw-mx-auto tw-mb-8 tw-leading-relaxed">
+                  Instantly calculate the flow velocity or volume flow of air and industrial gases including compressed air, nitrogen, oxygen, carbon dioxide, argon, methane, natural gas, biogas, helium, and hydrogen with our smart, interactive calculator powered by SCHMIDT Technology, Germany.
                 </p>
-                <p>
-                  With more than 35 years of expertise, SCHMIDT flow sensors deliver unmatched accuracy and long-term stability for compressed air and a wide range of gases. Engineered on the thermal anemometer principle, they directly measure mass flow and velocity without requiring separate pressure or temperature compensation.
-                </p>
+                <a 
+                  href={calculatorLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="tw-inline-block tw-bg-[#ffd700] tw-text-black tw-font-bold tw-py-4 tw-px-10 tw-rounded-full tw-shadow-lg tw-transition-transform hover:tw-scale-105 hover:tw-bg-yellow-400 tw-no-underline"
+                >
+                  Launch Calculator ↗
+                </a>
               </div>
-            </div>
 
+              {/* Brand Intro */}
+              <div className="tw-bg-white/5 tw-backdrop-blur-sm tw-p-8 md:tw-p-10 tw-rounded-3xl tw-border-l-8 tw-border-[#ffd700]">
+                <h2 className="tw-text-2xl md:tw-text-3xl tw-font-bold tw-text-white tw-mb-4">Precision Engineering by SCHMIDT</h2>
+                <div className="tw-space-y-4 tw-text-gray-300 tw-text-lg tw-leading-relaxed">
+                  <p>
+                    SCHMIDT Technology, a globally trusted German brand, is a pioneer in precision-engineered thermal mass flow sensors for the accurate measurement of air and gases across industrial and utility applications.
+                  </p>
+                  <p>
+                    With more than 35 years of expertise, SCHMIDT flow sensors deliver unmatched accuracy and long-term stability for compressed air and a wide range of gases. Engineered on the thermal anemometer principle, they directly measure mass flow and velocity without requiring separate pressure or temperature compensation.
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
