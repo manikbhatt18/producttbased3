@@ -137,7 +137,7 @@ function App() {
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/complaint" element={<ComplaintForm />} />
-          <Route path="/application" element={<ApplicationForm />} />
+          <Route path="/application-form" element={<ApplicationForm />} />
           <Route path="/casestudies" element={<CaseStudies />} />
           <Route path="/case-studies/1" element={<Casestudy1/>} />
           <Route path="/case-studies/2" element={<Casestudy2/>} />

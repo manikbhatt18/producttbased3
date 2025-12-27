@@ -41,7 +41,7 @@
 }
 
 .client-logo img {
-  max-height: 70px;
+  max-height: 220px;
   max-width: 100%;
   filter: grayscale(30%);
   transition: transform 0.3s ease, filter 0.3s ease;
