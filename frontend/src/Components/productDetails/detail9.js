@@ -169,9 +169,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Woltmann Turbine Water Meter", link: "/product-detail/detail10" },
-    { img: related2, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related3, title: "INLINE Ultrasonic ROBUST Series", link: "/product-detail/detail2" },
+    { img: related1, title: "Woltmann Turbine Hot & Cold Mechanical Water Meter", link: "/product-detail/detail10" },
+    { img: related2, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
+    { img: related3, title: "Inline Ultrasonic ROBUST Series Flow Meter", link: "/product-detail/detail2" },
     { img: related4, title: "MF-PRO Electromagnetic Flow Meter", link: "/product-detail/detail7" },
   ];
 

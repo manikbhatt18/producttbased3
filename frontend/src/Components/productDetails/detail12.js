@@ -188,10 +188,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "ContOil / RPD Oil Flow Meters", link: "/product-detail/detail11" },
+    { img: related1, title: "Contoil / RPD Flow Meter", link: "/product-detail/detail11" },
     { img: related2, title: "OFZ Micro Stream Flow Sensor", link: "/product-detail/detail13" },
-    { img: related3, title: "Metal Tube Rotameters", link: "/product-detail/detail24" },
-    { img: related4, title: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
+    { img: related3, title: "Metal Tube Rotameter", link: "/product-detail/detail24" },
+    { img: related4, title: "Acrylic / Glass Tube Rotameter", link: "/product-detail/detail25" },
   ];
 
   return (

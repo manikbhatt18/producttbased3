@@ -162,9 +162,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Conical Shaped Flow Meter (CSF)", link: "/product-detail/detail23" },
-    { img: related2, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related3, title: "VFM Vortex Flow Meter", link: "/product-detail/detail16" },
+    { img: related1, title: "Conical Shaped Flow Meter", link: "/product-detail/detail23" },
+    { img: related2, title: "Conical Shaped Flow Meter", link: "/product" },
+    { img: related3, title: "VFM Inline Vortex Flow Meter", link: "/product-detail/detail16" },
     { img: related4, title: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
   ];
 

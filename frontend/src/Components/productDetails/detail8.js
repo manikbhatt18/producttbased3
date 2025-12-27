@@ -185,8 +185,8 @@ function ProductDetail() {
   const relatedProducts = [
     { img: related1, title: "MF-PRO Electromagnetic Flow Meter", link: "/product-detail/detail7" },
     { img: related2, title: "MF-TER Electromagnetic Flow Meter", link: "/product-detail/detail7b" },
-    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-    { img: related4, title: "INLINE Ultrasonic ROBUST Series", link: "/product-detail/detail2" },
+    { img: related3, title: "Clamp-On Fixed Ultrasonic UF 1500 Series Flow Meter", link: "/product-detail/detail4" },
+    { img: related4, title: "Inline Ultrasonic ROBUST Series Flow Meter", link: "/product-detail/detail2" },
   ];
 
   return (

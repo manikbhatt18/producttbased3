@@ -187,10 +187,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+    { img: related1, title: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
     { img: related2, title: "GasPro RPD Gas Meter", link: "/product-detail/detail21" },
-    { img: related3, title: "Conical Shaped Flow Meter (CSF)", link: "/product-detail/detail23" },
-    { img: related4, title: "VFM Vortex Flow Meter", link: "/product-detail/detail16" },
+    { img: related3, title: "Conical Shaped Flow Meter", link: "/product-detail/detail23" },
+    { img: related4, title: "VFM Inline Vortex Flow Meter", link: "/product-detail/detail16" },
   ];
 
   return (

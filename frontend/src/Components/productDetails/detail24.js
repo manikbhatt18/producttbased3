@@ -161,10 +161,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
+    { img: related1, title: "Acrylic / Glass Tube Rotameter", link: "/product-detail/detail25" },
         { img: related2, title: "OFZ Micro Stream Flow Sensor", link: "/product-detail/detail13" },
 
-    { img: related3, title: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
+    { img: related3, title: "Oval Gear Oil Flow Meter", link: "/product-detail/detail12" },
     // { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     // { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];

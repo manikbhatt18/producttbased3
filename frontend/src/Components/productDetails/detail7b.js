@@ -163,9 +163,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "MF-PRO Electromagnetic Flow Meter", link: "/product-detail/detail7" },
-    { img: related2, title: "CX/VN/VNS Electromagnetic Flow Meters", link: "/product-detail/detail8" },
-    { img: related3, title: "Intrusive Ultrasonic UF 1500 Series", link: "/product-detail/detail3" },
-    { img: related4, title: "Clamp-On Fixed UF 1500 Series", link: "/product-detail/detail4" },
+    { img: related2, title: "CX/VN/VNS Compact & Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
+    { img: related3, title: "Intrusive Ultrasonic UF 1500 Series Flow Meter (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related4, title: "Clamp-On Fixed Ultrasonic UF 1500 Series Flow Meter", link: "/product-detail/detail4" },
   ];
 
   return (

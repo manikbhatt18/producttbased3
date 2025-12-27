@@ -157,9 +157,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "GasPro RPD Gas Meter", link: "/product-detail/detail21" },
-    { img: related2, title: "EQZ Turbine Gas Meter", link: "/product-detail/detail19" },
-    { img: related3, title: "VFM Vortex Flow Meter", link: "/product-detail/detail16" },
-    { img: related4, title: "TRX Compressed Air Flow Meter", link: "/product-detail/detail14" },
+    { img: related2, title: "EQZ/EQZK Turbine Gas Flow Meter", link: "/product-detail/detail19" },
+    { img: related3, title: "VFM Inline Vortex Flow Meter", link: "/product-detail/detail16" },
+    { img: related4, title: "TRX Ultrasonic Air Flow Meter", link: "/product-detail/detail14" },
   ];
 
   return (

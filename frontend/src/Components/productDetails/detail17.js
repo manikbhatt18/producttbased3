@@ -160,10 +160,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related2, title: "INTRUSIVE ULTRASONIC UF 1500 Series (1 - 4 channels)", link: "/product-detail/detail2" },
-    { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
-    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    { img: related1, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
+    { img: related2, title: "Intrusive Ultrasonic UF 1500 Series Flow Meter (1 - 4 channels)", link: "/product-detail/detail2" },
+    { img: related3, title: "Clamp-On Fixed Ultrasonic UF 1500 Series Flow Meter", link: "/product-detail/detail4" },
+    { img: related4, title: "Clamp-On Portable Ultrasonic PF 222/333 Flow Meter", link: "/product-detail/detail5" },
   ];
 
   return (

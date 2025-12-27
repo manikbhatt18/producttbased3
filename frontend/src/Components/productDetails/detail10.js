@@ -193,10 +193,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Smart Single Jet Water Meter (Apator D+)", link: "/product-detail/detail9" },
-    { img: related2, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related3, title: "INLINE Ultrasonic ROBUST Series", link: "/product-detail/detail2" },
-    { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
+    { img: related1, title: "Smart D+ Single-Jet Water Meter", link: "/product-detail/detail9" },
+    { img: related2, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
+    { img: related3, title: "Inline Ultrasonic ROBUST Series Flow Meter", link: "/product-detail/detail2" },
+    { img: related4, title: "Clamp-On Portable Ultrasonic PF 222/333 Flow Meter", link: "/product-detail/detail5" },
   ];
 
   return (

@@ -161,9 +161,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
-    { img: related2, title: "UF-Biosonic (Biogas)", link: "/product-detail/detail22" },
-    { img: related3, title: "EQZ Turbine Gas Meter", link: "/product-detail/detail19" },
+    { img: related1, title: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+    { img: related2, title: "UF-Biosonic Ultrasonic Biogas Flow Meter", link: "/product-detail/detail22" },
+    { img: related3, title: "EQZ/EQZK Turbine Gas Flow Meter", link: "/product-detail/detail19" },
     { img: related4, title: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
   ];
 

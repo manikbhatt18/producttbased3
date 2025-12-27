@@ -195,9 +195,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Oval Gear Flow Meter", link: "/product-detail/detail12" },
-    { img: related2, title: "Metal Tube Rotameters", link: "/product-detail/detail24" },
-    { img: related3, title: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
+    { img: related1, title: "Oval Gear Oil Flow Meter", link: "/product-detail/detail12" },
+    { img: related2, title: "Metal Tube Rotameter", link: "/product-detail/detail24" },
+    { img: related3, title: "Acrylic / Glass Tube Rotameter", link: "/product-detail/detail25" },
     
   ];
 

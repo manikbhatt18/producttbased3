@@ -191,9 +191,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
-    { img: related2, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related3, title: "UF-Biosonic (Biogas)", link: "/product-detail/detail22" },
-    { img: related4, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+    { img: related2, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
+    { img: related3, title: "UF-Biosonic Ultrasonic Biogas Flow Meter", link: "/product-detail/detail22" },
+    { img: related4, title: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
   ];
 
   return (

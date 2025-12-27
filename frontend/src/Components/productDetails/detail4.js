@@ -163,10 +163,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Intrusive Ultrasonic UF 1500 Series", link: "/product-detail/detail3" },
-    { img: related2, title: "INLINE Ultrasonic ROBUST Series", link: "/product-detail/detail2" },
-    { img: related3, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
-    { img: related4, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
+    { img: related1, title: "Intrusive Ultrasonic UF 1500 Series Flow Meter (1 - 4 channels)", link: "/product-detail/detail3" },
+    { img: related2, title: "Inline Ultrasonic ROBUST Series Flow Meter", link: "/product-detail/detail2" },
+    { img: related3, title: "Clamp-On Portable Ultrasonic PF 222/333 Flow Meter", link: "/product-detail/detail5" },
+    { img: related4, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
   ];
 
   return (

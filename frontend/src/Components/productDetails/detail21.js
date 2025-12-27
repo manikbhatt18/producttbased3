@@ -163,10 +163,10 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
-    { img: related2, title: "EQZ Turbine Gas Meter", link: "/product-detail/detail19" },
-    { img: related3, title: "Conical Shaped Flow Meter (CSF)", link: "/product-detail/detail23" },
-    { img: related4, title: "Metal Tube Rotameter (Variable Area Flow Meter)", link: "/product-detail/detail24" },
+    { img: related1, title: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+    { img: related2, title: "EQZ/EQZK Turbine Gas Flow Meter", link: "/product-detail/detail19" },
+    { img: related3, title: "Conical Shaped Flow Meter", link: "/product-detail/detail23" },
+    { img: related4, title: "Metal Tube Rotameter", link: "/product-detail/detail24" },
   ];
 
   return (

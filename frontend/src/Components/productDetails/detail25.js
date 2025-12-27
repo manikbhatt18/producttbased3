@@ -163,9 +163,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Metal Tube Rotameters", link: "/product-detail/detail24" },
+    { img: related1, title: "Metal Tube Rotameter", link: "/product-detail/detail24" },
     { img: related2, title: "OFZ Micro Stream Flow Sensor", link: "/product-detail/detail13" },
-        { img: related3, title: "ContOil / RPD Oil Flow Meters", link: "/product-detail/detail11" }
+        { img: related3, title: "Contoil / RPD Flow Meter", link: "/product-detail/detail11" }
     // { img: related3, title: "Clamp-ON (Fixed) ULTRASONIC UF 1500 Series", link: "/product-detail/detail4" },
     // { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];

@@ -42,6 +42,26 @@ import sterlingWilson from "../../images/sterling-wilson.png";
 import taj from "../../images/Taj.png";
 import ultratech from "../../images/ultratech-cement.png";
 import voltas from "../../images/voltas.png";
+import cl2 from "../../images/Client logo icon_2.png";
+import cl3 from "../../images/Client logo icon_3.png";
+import cl4 from "../../images/Client logo icon_4.png";
+import cl6 from "../../images/Client logo icon_6.png";
+import cl7 from "../../images/Client logo icon_7.png";
+import cl8 from "../../images/Client logo icon_8.png";
+import cl9 from "../../images/Client logo icon_9.png";
+import cl12 from "../../images/Client logo icon_12.png";
+import cl13 from "../../images/Client logo icon_13.png";
+import cl14 from "../../images/Client logo icon_14.png";
+import cl15 from "../../images/Client logo icon_15.png";
+import cl16 from "../../images/Client logo icon_16.png";
+import cl17 from "../../images/Client logo icon_17.png";
+import cl18 from "../../images/Client logo icon_18.png";
+import cl19 from "../../images/Client logo icon_19.png";
+import cl20 from "../../images/Client logo icon_20.png";
+import cl21 from "../../images/Client logo icon_21.png";
+import cl22 from "../../images/Client logo icon_22.png";
+import cl23 from "../../images/Client logo icon_23.png";
+
 
 /* ---------------- HERO ---------------- */
 export function HeroBanner() {
@@ -184,42 +204,8 @@ export function DifferenceBlock() {
 /* ---------------- OUR CLIENTS (SLIDER) ---------------- */
 export function ClientsSection() {
   const logos = [
-    adani,
-    cairn,
-    client2,
-    client3,
-    client4_1,
-    client4_180,
-    client5_180,
-    client5,
-    client6_180,
-    client6,
-    client7_180,
-    client8_180,
-    client8,
-    client9_180,
-    client10_180,
-    client11_180,
-    client12_180,
-    drReddys,
-    essarSteel,
-    gaar,
-    hindustan,
-    itcHotels,
-    jindal,
-    ltLogo,
-    mahindraRise,
-    motherDairy,
-    ntpc,
-    ocmLuxury,
-    oilLtd,
-    roorkee,
-    schneider,
-    smec,
-    sterlingWilson,
-    taj,
-    ultratech,
-    voltas,
+    cl2,cl3,cl4,cl6,cl7,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,cl23,
+
   ];
 
   return (

@@ -67,6 +67,10 @@ import tempsens from "../../images/Temperature Sensor.png";
 import therm from "../../images/Thermometer + gauge.png";
 import water from "../../images/Water meter (N).png";
 import wireless from "../../images/Wireless & Comm module.png";
+import ukca from "../../images/24 dec_UKCA_mark.png";
+import tempp from "../../images/24 dec_also_to_measure_output temp_pressure (1).png";
+import smallflow from "../../images/24 dec_leak_detectable_even_small_flow.png";
+import oilmist from "../../images/24 dec_strong_against_oilmist_and_durable.png";
 
 
 
@@ -197,9 +201,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     // { img: related1, title: "INLINE ULTRASONIC ROBUST Series", link: "/product-detail/detail2" },
-    { img: related2, title: "Ultra-Nxt Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
+    { img: related2, title: "Ultra-NXT Ultrasonic Gas Flow Meter", link: "/product-detail/detail20" },
     { img: related3, title: "IVF Insertion Vortex Flow Meter", link: "/product-detail/detail18" },
-    { img: related4, title: "VFM Vortex Flow Meter", link: "/product-detail/detail16" },
+    { img: related4, title: "VFM Inline Vortex Flow Meter", link: "/product-detail/detail16" },
   ];
 
   return (
@@ -298,6 +302,34 @@ Maintenance-free design with high resistance to oil, moisture, and dust.</li>
                   <img
                     src={rohs}
                     alt="rohs"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={ukca}
+                    alt="ukca"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={tempp}
+                    alt="tempp"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={smallflow}
+                    alt="smallflow"
+                    className="Icon" // Your original class name
+                  /> 
+                </span> 
+                <span>
+                  <img
+                    src={oilmist}
+                    alt="oilmist"
                     className="Icon" // Your original class name
                   /> 
                 </span> 

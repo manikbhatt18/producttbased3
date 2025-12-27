@@ -166,9 +166,9 @@ function ProductDetail() {
 
   const relatedProducts = [
     { img: related1, title: "MF-TER Electromagnetic Flow Meter", link: "/product-detail/detail7b" },
-    { img: related2, title: "CX/VN/VNS Electromagnetic Flow Meters", link: "/product-detail/detail8" },
-    { img: related3, title: "Ultrimis Domestic Ultrasonic Water Meter", link: "/product" },
-    { img: related4, title: "INLINE Ultrasonic ROBUST Series", link: "/product-detail/detail2" },
+    { img: related2, title: "CX/VN/VNS Compact & Micro Electromagnetic Flow Meter", link: "/product-detail/detail8" },
+    { img: related3, title: "Ultrimis™ Domestic Ultrasonic Water Meter ", link: "/product" },
+    { img: related4, title: "Inline Ultrasonic ROBUST Series Flow Meter", link: "/product-detail/detail2" },
   ];
 
   return (

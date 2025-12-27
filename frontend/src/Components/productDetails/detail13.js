@@ -185,9 +185,9 @@ function ProductDetail() {
   };
 
   const relatedProducts = [
-    { img: related1, title: "Oval Gear Flow Meters", link: "/product-detail/detail12" },
-    { img: related2, title: "ContOil / RPD Oil Flow Meters", link: "/product-detail/detail11" },
-    { img: related3, title: "Acrylic / Glass Tube Rotameters", link: "/product-detail/detail25" },
+    { img: related1, title: "Oval Gear Oil Flow Meter", link: "/product-detail/detail12" },
+    { img: related2, title: "Contoil / RPD Flow Meter", link: "/product-detail/detail11" },
+    { img: related3, title: "Acrylic / Glass Tube Rotameter", link: "/product-detail/detail25" },
     // { img: related4, title: "Clamp-ON (Portable) ULTRASONIC PF 222/333", link: "/product-detail/detail5" },
   ];
 
