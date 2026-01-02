@@ -238,7 +238,7 @@ const Careers = () => {
             {/* Application Form Button */}
             <div className="tw-text-center tw-mb-16">
                <Link 
-                  to="/application" 
+                  to="/application-form" 
                   className="tw-inline-flex tw-items-center tw-justify-center tw-bg-black tw-text-white tw-font-bold tw-py-4 tw-px-12 tw-rounded-full tw-shadow-2xl tw-transition-all tw-duration-300 hover:tw-bg-gray-900 hover:tw-scale-105 hover:tw-shadow-xl tw-no-underline tw-text-lg"
                 >
                   <span className="tw-mr-3">📝</span> Fill Application Form

@@ -27,19 +27,32 @@ function Footer() {
         <Row className="gy-5">
           {/* Logo + About */}
           <Col lg={4} md={12}>
+          {/* Logo + Company Name → Home */}
+          <Link
+            to="/"
+            className="text-decoration-none text-reset"
+          >
             <div className="main-con mb-3">
               <div className="footer-logo me-3">
-                <img src={Logo} alt="IOTAFlow Logo" />
+                <img
+                  src={Logo}
+                  alt="IOTAFlow Logo"
+                  style={{ cursor: "pointer" }}
+                />
               </div>
               <div>
                 <h4 className="fw-bold mb-0">IOTAFLOW</h4>
-                <small className="d-block fw-2"><span>SYSTEMS PVT. LTD</span></small>
+                <small className="d-block fw-2">
+                  <span>SYSTEMS PVT. LTD</span>
+                </small>
               </div>
             </div>
+          </Link>
 
-            <p >
-              At IOTAFLOW Systems, we embrace Lean <br /> principles to deliver
-              flow measurement, <br />IOT automation, and calibration solutions <br />
+            <p>
+              At IOTAFLOW Systems, we embrace Lean <br />
+              principles to deliver flow measurement, <br />
+              IOT automation, and calibration solutions <br />
               that drive energy efficiency across industrial utilities.
             </p>
 
