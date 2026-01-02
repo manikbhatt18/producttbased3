@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import bannerImg from '../../images/Schimdt_banner.png';
+import model1Img from '../../images/Flow-Sensor-SS-20-600-1.jpg';
 
 // --- Placeholder Links ---
 // Replace these with your actual destination URLs
-const calculatorLink = "https://www.schmidt-sensors.com/en/service-support/flow-calculator/"; // Example link
+const calculatorLink = "https://apps.schmidttechnology.de/stroemungsrechner/en/volumenstrom-geschwindigkeit.html"; // Example link
 const productLinkPlaceholder = "#"; 
 
 
@@ -37,7 +38,7 @@ const ModelRow = ({ title, description, imagePlaceholder, link }) => (
           <img 
             src={imagePlaceholder || "https://placehold.co/600x400/f3f4f6/1a202c?text=View+Product"} 
             alt={`View ${title}`} 
-            className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-700 group-hover:tw-scale-110" 
+            className="tw-w-full tw-h-full tw-object-contain tw-transition-transform tw-duration-700 group-hover:tw-scale-110" 
           />
         </div>
       </a>
@@ -185,7 +186,7 @@ const Detail15 = () => {
             <ModelRow 
               title="SS 20.600"
               description="High-precision chamber head sensor for measuring air/gas flow velocities from 0.2 to 220 m/s. Built for compressed air systems and industrial processes. Optional ATEX version for Zone 2 environments."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.600"
+              imagePlaceholder={model1Img}
               link="#"
             />
             <ModelRow 
