@@ -61,6 +61,21 @@ import cl20 from "../../images/Client logo icon_20.png";
 import cl21 from "../../images/Client logo icon_21.png";
 import cl22 from "../../images/Client logo icon_22.png";
 import cl23 from "../../images/Client logo icon_23.png";
+import n7 from "../../images/New_7.png";
+import n11 from "../../images/New_11.png";
+import n23 from "../../images/New_23.png";
+import n24 from "../../images/New_24.png";
+import n25 from "../../images/New_25 Hindalco.png";
+import n26 from "../../images/New_26.png";
+import n27 from "../../images/New_27.png";
+import n28 from "../../images/New_28.png";
+import n29 from "../../images/New_29.png";
+import n30 from "../../images/New_30.png";
+import n31 from "../../images/New_31.png";
+import n32 from "../../images/New_32.png";
+import n33 from "../../images/New_33.png";
+import n34 from "../../images/New_34.png";
+
 
 
 /* ---------------- HERO ---------------- */
@@ -204,7 +219,7 @@ export function DifferenceBlock() {
 /* ---------------- OUR CLIENTS (SLIDER) ---------------- */
 export function ClientsSection() {
   const logos = [
-    cl2,cl3,cl4,cl6,cl7,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,cl23,
+    cl2,cl3,cl4,cl6,cl7,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,cl23,n7,n11,n23,n24,n25,n26,n27,n28,n29,n30,n31,n32,n33,n34,
 
   ];
 
