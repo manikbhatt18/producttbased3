@@ -44,9 +44,8 @@ import ultratech from "../../images/ultratech-cement.png";
 import voltas from "../../images/voltas.png";
 import cl2 from "../../images/Client logo icon_2.png";
 import cl3 from "../../images/Client logo icon_3.png";
-import cl4 from "../../images/Client logo icon_4.png";
+
 import cl6 from "../../images/Client logo icon_6.png";
-import cl7 from "../../images/Client logo icon_7.png";
 import cl8 from "../../images/Client logo icon_8.png";
 import cl9 from "../../images/Client logo icon_9.png";
 import cl12 from "../../images/Client logo icon_12.png";
@@ -60,7 +59,6 @@ import cl19 from "../../images/Client logo icon_19.png";
 import cl20 from "../../images/Client logo icon_20.png";
 import cl21 from "../../images/Client logo icon_21.png";
 import cl22 from "../../images/Client logo icon_22.png";
-import cl23 from "../../images/Client logo icon_23.png";
 import n7 from "../../images/New_7.png";
 import n11 from "../../images/New_11.png";
 import n23 from "../../images/New_23.png";
@@ -219,7 +217,7 @@ export function DifferenceBlock() {
 /* ---------------- OUR CLIENTS (SLIDER) ---------------- */
 export function ClientsSection() {
   const logos = [
-    cl2,cl3,cl4,cl6,cl7,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,cl23,n7,n11,n23,n24,n25,n26,n27,n28,n29,n30,n31,n32,n33,n34,
+    cl2,cl3,cl6,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,n7,n11,n23,n24,n25,n26,n27,n28,n29,n30,n31,n32,n33,n34,
 
   ];
 
