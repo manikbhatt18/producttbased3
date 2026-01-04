@@ -6,6 +6,8 @@ import MetroImg from "../images/Case_study_images_DMRC_Metro_DMRCstock.png"
 import WaterImg from "../images/Case_study_images_Water_Water_stock.png"
 import MiningImg from "../images/Case_study_images_Minning_Mining_stock.png"
 import HVACImg from "../images/Case_study_images_Hvac_Hvac_stock.png"
+import SteelImg2 from "../images/Aluminum_Manufacturing_Plant_Aluminum1.png"
+
 
 // --- Data: Industries (Sidebar Filters) ---
 const industries = [
@@ -67,7 +69,7 @@ const caseStudiesData = [
     category: "Add Category Later", // Placeholder category as requested
     title: "Automated Air–Fuel Control System Boosts Efficiency in an Aluminum Manufacturing Plant",
     description: "PLC-based closed-loop burner automation enhances combustion stability, reduces fuel costs, and minimizes emissions. A leading aluminum producer in India partnered with IOTAFLOW to modernize its industrial burner systems through a PLC-based combustion automation solution. By integrating flow sensors, modulating control valves, and PID-based logic, the system automatically maintains the optimal air–fuel ratio, eliminating manual tuning errors. This advanced automation achieved 5–12% reduction in fuel consumption, improved combustion stability, and lowered CO and NOx emissions.",
-    image: "https://placehold.co/600x400/1a202c/ffd700?text=Aluminum+Plant" // Placeholder image
+    image: SteelImg2 // Placeholder image
   }
 ];
 

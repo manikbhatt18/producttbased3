@@ -1,6 +1,13 @@
 import React, { useEffect } from 'react';
 import bannerImg from '../../images/Schimdt_banner.png';
-import model1Img from '../../images/Flow-Sensor-SS-20-600-1.jpg';
+import model20250Img from '../../images/SS_20.250.png';
+import model20261Img from '../../images/SS_20.261.png';
+import model20415Img from '../../images/SS_20.415.png';
+import model20600Img from '../../images/SS_20.600.png';
+import model23400Img from '../../images/SS_23.400.png';
+import model30300Img from '../../images/SS_30.300.png';
+
+
 
 // --- Placeholder Links ---
 // Replace these with your actual destination URLs
@@ -186,7 +193,7 @@ const Detail15 = () => {
             <ModelRow 
               title="SS 20.600"
               description="High-precision chamber head sensor for measuring air/gas flow velocities from 0.2 to 220 m/s. Built for compressed air systems and industrial processes. Optional ATEX version for Zone 2 environments."
-              imagePlaceholder={model1Img}
+              imagePlaceholder={model20600Img}
               link="#"
             />
             <ModelRow 
@@ -198,7 +205,7 @@ const Detail15 = () => {
             <ModelRow 
               title="SS 30.300 / SS 30.302"
               description="Inline flow sensors for direct pipe installation (up to DN 80, 16 bar). Ideal for compressed air distribution and energy monitoring."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+30.300"
+              imagePlaceholder={model30300Img}
               link="#"
             />
           </div>
@@ -229,19 +236,19 @@ const Detail15 = () => {
             <ModelRow 
               title="SS 20.250"
               description="Dumb-bell head sensor for precise laminar flow measurement (0.05 – 20 m/s). Detects airflow direction for cleanroom validation."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.250"
+              imagePlaceholder={model20250Img}
               link="#"
             />
             <ModelRow 
               title="SS 23.400 / SS 23.415"
               description="Thermopile sensors for ultra-sensitive bi-directional flow measurement. Ideal for cleanrooms and critical pharma environments."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+23.400"
+              imagePlaceholder={model23400Img}
               link="#"
             />
             <ModelRow 
               title="SS 20.261"
               description="Compact, direction-sensitive sensor with optional digital outputs for BMS integration."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.261"
+              imagePlaceholder={model20261Img}
               link="#"
             />
           </div>

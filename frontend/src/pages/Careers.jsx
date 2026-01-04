@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import visionImg from "../images/Vission.png";
+import missionImg from "../images/Mission.png";
+
 // Placeholder for the banner image
 // You can replace this with your actual local image import later
 // import careersBanner from '../../images/careers_banner.jpg';
 const careersBanner = "https://plus.unsplash.com/premium_photo-1661771773771-a093c948ba92?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 // Placeholders for Vision & Mission Backgrounds - Replace these with your actual images
-const visionBg = "https://placehold.co/800x1000/111111/333333?text=Vision+Image";
-const missionBg = "https://placehold.co/800x1000/222222/444444?text=Mission+Image";
+const visionBg = visionImg
+const missionBg = missionImg;
 
 
 // Job Data
@@ -158,11 +161,11 @@ const Careers = () => {
         <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
           {/* Vision Background Image */}
           <div 
-            className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            className="tw-absolute tw-inset-0 tw-bg-contain tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
             style={{ backgroundImage: `url(${visionBg})` }}
           ></div>
           {/* Overlay */}
-          <div className="tw-absolute tw-inset-0 tw-bg-black/80"></div>
+          <div className="tw-absolute tw-inset-0 tw-bg-black/85"></div>
           
           <div className="tw-relative tw-z-10 tw-px-8 md:tw-px-16 tw-text-center md:tw-text-left tw-max-w-2xl">
             <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
@@ -190,7 +193,7 @@ const Careers = () => {
         <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
           {/* Mission Background Image */}
           <div 
-            className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            className="tw-absolute tw-inset-0 tw-bg-contain tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
             style={{ backgroundImage: `url(${missionBg})` }}
           ></div>
           {/* Overlay - Slightly darker or different shade if desired, currently standardized */}
