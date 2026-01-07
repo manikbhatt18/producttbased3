@@ -158,19 +158,22 @@ const Careers = () => {
       <div className="tw-grid md:tw-grid-cols-2 tw-w-full">
         
         {/* --- Our Vision Column --- */}
-        <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
-          {/* Vision Background Image */}
+        <div className="tw-flex tw-flex-col md:tw-relative md:tw-min-h-[500px] md:tw-flex-row md:tw-items-center">
+          {/* Mobile Image (Visible only on mobile) */}
+          <div className="md:tw-hidden tw-w-full tw-h-64 tw-bg-cover tw-bg-center" style={{ backgroundImage: `url(${visionBg})` }}></div>
+          
+          {/* Desktop Background Image (Absolute) */}
           <div 
-            className="tw-absolute tw-inset-0 tw-bg-contain tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
             style={{ backgroundImage: `url(${visionBg})` }}
           ></div>
-          {/* Overlay */}
-          <div className="tw-absolute tw-inset-0 tw-bg-black/85"></div>
+          {/* Overlay (Desktop Only) */}
+          <div className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-black/80"></div>
           
-          <div className="tw-relative tw-z-10 tw-px-8 md:tw-px-16 tw-text-center md:tw-text-left tw-max-w-2xl">
+          <div className="tw-relative tw-z-10 tw-bg-black md:tw-bg-transparent tw-p-8 md:tw-px-16 md:tw-py-20 tw-text-left tw-max-w-2xl tw-flex-grow">
             <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
               Our Vision
-              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto md:tw-mx-0"></span>
+              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full"></span>
             </h2>
             <div className="tw-space-y-6 tw-text-lg tw-text-gray-300 tw-leading-relaxed">
               <p>
@@ -190,19 +193,22 @@ const Careers = () => {
         </div>
 
         {/* --- Our Mission Column --- */}
-        <div className="tw-relative tw-py-20 md:tw-py-28 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
-          {/* Mission Background Image */}
+        <div className="tw-flex tw-flex-col md:tw-relative md:tw-min-h-[500px] md:tw-flex-row md:tw-items-center">
+          {/* Mobile Image (Visible only on mobile) */}
+          <div className="md:tw-hidden tw-w-full tw-h-64 tw-bg-cover tw-bg-center" style={{ backgroundImage: `url(${missionBg})` }}></div>
+
+          {/* Desktop Background Image (Absolute) */}
           <div 
-            className="tw-absolute tw-inset-0 tw-bg-contain tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
+            className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-bg-no-repeat tw-transition-transform tw-duration-1000 hover:tw-scale-105"
             style={{ backgroundImage: `url(${missionBg})` }}
           ></div>
-          {/* Overlay - Slightly darker or different shade if desired, currently standardized */}
-          <div className="tw-absolute tw-inset-0 tw-bg-black/85"></div>
+          {/* Overlay (Desktop Only) */}
+          <div className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-black/85"></div>
 
-          <div className="tw-relative tw-z-10 tw-px-8 md:tw-px-16 tw-text-center md:tw-text-left tw-max-w-2xl">
+          <div className="tw-relative tw-z-10 tw-bg-black md:tw-bg-transparent tw-p-8 md:tw-px-16 md:tw-py-20 tw-text-left tw-max-w-2xl tw-flex-grow">
             <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
               Our Mission
-              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full tw-mx-auto md:tw-mx-0"></span>
+              <span className="tw-block tw-h-1.5 tw-w-20 tw-bg-[#ffd700] tw-mt-3 tw-rounded-full"></span>
             </h2>
             <div className="tw-space-y-6 tw-text-lg tw-text-gray-300 tw-leading-relaxed">
               <p>
@@ -284,7 +290,7 @@ const Careers = () => {
                   View our latest openings, company updates, and apply directly through our official LinkedIn page.
                 </p>
                 <a 
-                  href="https://www.linkedin.com" 
+                  href=" https://www.linkedin.com/company/iota-flow-systems-private-limited/?viewAsMember=true" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="tw-inline-block tw-w-full tw-text-center tw-bg-[#0077b5] tw-text-white tw-font-bold tw-py-4 tw-px-8 tw-rounded-xl hover:tw-bg-[#005582] tw-transition-all tw-transform active:tw-scale-95 tw-no-underline tw-shadow-lg"

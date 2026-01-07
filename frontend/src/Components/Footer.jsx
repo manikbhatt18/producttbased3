@@ -57,14 +57,25 @@ function Footer() {
             </p>
 
             <div className="mt-3">
-              <p className="mb-1">Follow us</p>
-              <div className="social-icons">
-                <i className="bi bi-youtube"></i>
-                <i className="bi bi-linkedin"></i>
-                <i className="bi bi-facebook"></i>
-                <i className="bi bi-twitter"></i>
-              </div>
-            </div>
+  <p className="mb-1">Follow us</p>
+  <div className="social-icons">
+    <a href="https://www.youtube.com/@iotaflow7013" target="_blank" rel="noopener noreferrer">
+      <i className="bi bi-youtube"></i>
+    </a>
+
+    <a href=" https://www.linkedin.com/company/iota-flow-systems-private-limited/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
+      <i className="bi bi-linkedin"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <i className="bi bi-facebook"></i>
+    </a>
+
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      <i className="bi bi-twitter"></i>
+    </a>
+  </div>
+</div>
           </Col>
 
           {/* Company Links */}

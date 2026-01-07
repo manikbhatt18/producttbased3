@@ -8,14 +8,13 @@ import model23400Img from '../../images/SS_23.400.png';
 import model30300Img from '../../images/SS_30.300.png';
 
 
-
 // --- Placeholder Links ---
 // Replace these with your actual destination URLs
-const calculatorLink = "https://apps.schmidttechnology.de/stroemungsrechner/en/volumenstrom-geschwindigkeit.html"; // Example link
+const calculatorLink = "https://apps.schmidttechnology.de/stroemungsrechner/en/volumenstrom-geschwindigkeit.html";
 const productLinkPlaceholder = "#"; 
 
 
- // --- Application Data ---
+// --- Application Data ---
 const applicationsData = [
   { title: "Compressed air flow measurement", image: "https://placehold.co/600x400/1a202c/ffd700?text=Compressed+Air" },
   { title: "Industrial gas distribution lines", image: "https://placehold.co/600x400/1a202c/ffd700?text=Gas+Distribution" },
@@ -60,6 +59,16 @@ const ModelRow = ({ title, description, imagePlaceholder, link }) => (
       <p className="tw-text-gray-600 tw-text-base tw-leading-relaxed">
         {description}
       </p>
+
+      {/* Added Arrow Link */}
+      <a 
+        href={link || productLinkPlaceholder}
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="tw-inline-flex tw-items-center tw-text-[#ffd700] hover:tw-text-[#e6c200] tw-font-bold tw-text-sm tw-transition-colors tw-no-underline"
+      >
+        View product <span className="tw-ml-1">→</span>
+      </a>
     </div>
     
   </div>
@@ -168,7 +177,10 @@ const Detail15 = () => {
                   SCHMIDT Technology, a globally trusted German brand, is a pioneer in precision-engineered thermal mass flow sensors for the accurate measurement of air and gases across industrial and utility applications.
                 </p>
                 <p>
-                  With more than 35 years of expertise, SCHMIDT flow sensors deliver unmatched accuracy and long-term stability for compressed air and a wide range of gases. Engineered on the thermal anemometer principle, they directly measure mass flow and velocity without requiring separate pressure or temperature compensation.
+                  With more than 35 years of expertise, SCHMIDT flow sensors deliver unmatched accuracy and long-term stability for compressed air and a wide range of gases, including compressed air, nitrogen, oxygen, argon, carbon dioxide, methane, natural gas, helium, hydrogen, and biogas.
+                </p>
+                <p>
+                  Engineered on the thermal anemometer principle, SCHMIDT sensors directly measure mass flow and velocity without requiring separate pressure or temperature compensation. This makes them ideal for energy monitoring, leak detection, process control, and cleanroom applications, providing reliable performance even in demanding industrial environments.
                 </p>
               </div>
             </div>
@@ -191,36 +203,32 @@ const Detail15 = () => {
           
           <div className="tw-pl-0 md:tw-pl-16 tw-mb-10">
             <ModelRow 
-              title="SS 20.600"
-              description="High-precision chamber head sensor for measuring air/gas flow velocities from 0.2 to 220 m/s. Built for compressed air systems and industrial processes. Optional ATEX version for Zone 2 environments."
+              title="SS 20.600 / SS 20.600 Ex"
+              description="Chamber head sensors with wide measuring range (0.2–220 m/s), withstand up to 40 bar, ideal for compressed air and industrial gas systems."
               imagePlaceholder={model20600Img}
               link="#"
             />
             <ModelRow 
-              title="SS 20.605"
-              description="Compact version with integrated temperature measurement and robust stainless-steel probe. Excellent for space-restricted installations."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.605"
+              title="SS 20.651"
+              description="Chamber head sensor for drying processes and air compressors, up to 350 °C and 16 bar."
+              imagePlaceholder={model20600Img} // Reusing image as placeholder if specific one not available
+              link="#"
+            />
+             <ModelRow 
+              title="SS 20.700 / SS 23.700 Ex"
+              description="Double pin “heavy-duty” sensors for biogas, natural gas, and harsh gas media. Stainless-steel encapsulation for contamination resistance."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.700"
               link="#"
             />
             <ModelRow 
-              title="SS 30.300 / SS 30.302"
-              description="Inline flow sensors for direct pipe installation (up to DN 80, 16 bar). Ideal for compressed air distribution and energy monitoring."
+              title="IL 30.0xx MPM"
+              description="Inline flow sensors with multi-point measurement (MPM) for direct volume flow in compressed air lines up to 16 bar."
               imagePlaceholder={model30300Img}
               link="#"
             />
           </div>
 
-          {/* Key Features */}
-          <div className="tw-pl-0 md:tw-pl-16">
-            <div className="tw-bg-gray-50 tw-p-8 tw-rounded-2xl tw-border-l-4 tw-border-[#ffd700]">
-              <h4 className="tw-font-bold tw-text-xl tw-text-black tw-mb-4">Key Features</h4>
-              <ul className="tw-grid md:tw-grid-cols-3 tw-gap-4 tw-text-gray-700">
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Plug-and-play installation</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> No compensation required</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Highly durable design</li>
-              </ul>
-            </div>
-          </div>
+          
         </section>
 
         {/* --- SECTION 2: Cleanroom & Pharma --- */}
@@ -228,41 +236,38 @@ const Detail15 = () => {
           <SectionHeader 
             number="2"
             title="Cleanroom & Pharmaceutical Applications"
-            idealFor="Laminar flow monitoring, differential pressure validation, airflow direction control, contamination prevention."
+            idealFor="Laminar airflow validation, differential pressure control, contamination prevention, GMP and ISO cleanroom compliance."
             industries="Pharmaceutical manufacturing, biotechnology, life sciences, semiconductor, and healthcare facilities."
           />
           
           <div className="tw-pl-0 md:tw-pl-16 tw-mb-10">
             <ModelRow 
-              title="SS 20.250"
-              description="Dumb-bell head sensor for precise laminar flow measurement (0.05 – 20 m/s). Detects airflow direction for cleanroom validation."
+              title="SS 20.250 / SS 20.250 HD"
+              description="Dumb-bell head sensors for laminar flow from 0.06–20 m/s. Integrated temperature measurement and clean design."
               imagePlaceholder={model20250Img}
               link="#"
             />
             <ModelRow 
-              title="SS 23.400 / SS 23.415"
-              description="Thermopile sensors for ultra-sensitive bi-directional flow measurement. Ideal for cleanrooms and critical pharma environments."
+              title="SS 20.400 / SS 23.400 Ex"
+              description="Thermopile sensors for low-velocity clean gases (0.05–20 m/s), with optional bidirectional flow measurement."
               imagePlaceholder={model23400Img}
               link="#"
             />
             <ModelRow 
-              title="SS 20.261"
-              description="Compact, direction-sensitive sensor with optional digital outputs for BMS integration."
-              imagePlaceholder={model20261Img}
+              title="SS 20.415 / SS 20.515 / SS 20.715"
+              description="Ceiling-mount laminar flow sensors for cleanroom installations; Twin versions (SS 20.415 Twin / SS 20.515 Twin) offer redundant dual sensing."
+              imagePlaceholder={model20415Img}
+              link="#"
+            />
+             <ModelRow 
+              title="SS 20.450"
+              description="Verification probe for on-site validation of other sensors; Bluetooth-enabled."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.450"
               link="#"
             />
           </div>
 
-          <div className="tw-pl-0 md:tw-pl-16">
-            <div className="tw-bg-gray-50 tw-p-8 tw-rounded-2xl tw-border-l-4 tw-border-[#ffd700]">
-              <h4 className="tw-font-bold tw-text-xl tw-text-black tw-mb-4">Key Features</h4>
-              <ul className="tw-grid md:tw-grid-cols-3 tw-gap-4 tw-text-gray-700">
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> High accuracy at low flow</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Stable, drift-free readings</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> GMP & ISO compatible</li>
-              </ul>
-            </div>
-          </div>
+          
         </section>
 
         {/* --- SECTION 3: Ventilation & HVAC --- */}
@@ -270,35 +275,44 @@ const Detail15 = () => {
           <SectionHeader 
             number="3"
             title="Ventilation & HVAC Flow Measurement"
-            idealFor="Air-handling units, duct flow monitoring, ventilation balancing, and HVAC system optimization."
+            idealFor="Air-handling units (AHUs), duct flow monitoring, ventilation balancing, and HVAC system optimization."
             industries="Commercial buildings, factories, infrastructure, data centers."
           />
           
           <div className="tw-pl-0 md:tw-pl-16 tw-mb-10">
-            <ModelRow 
-              title="SS 20.285"
-              description="Chamber head sensor optimized for HVAC ducts; easy calibration and mounting."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.285"
+             <ModelRow 
+              title="HVAC 100"
+              description="Compact immersion-type sensor for building ventilation systems; 0.2–20 m/s; dust-resistant."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=HVAC+100"
               link="#"
             />
             <ModelRow 
-              title="SS 20.250 / SS 20.261"
-              description="Compact flow sensors for airflow direction detection and balancing in ventilation systems."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=HVAC+Flow+Sensors"
+              title="SS 20.260"
+              description="Chamber head sensor for AHU and duct flow measurement up to 60 m/s."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.260"
+              link="#"
+            />
+             <ModelRow 
+              title="SS 20.200"
+              description="Flow switch for airflow monitoring with switching output and LED indication."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.200"
+              link="#"
+            />
+            <ModelRow 
+              title="SS 20.500 / SS 20.500 Ex"
+              description="Dumb-bell head sensor for air conditioning and ventilation systems, up to 50 m/s and ATEX zones 2 & 22."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.500"
+              link="#"
+            />
+            <ModelRow 
+              title="SS 20.250"
+              description="Low-velocity flow sensor for balancing and low-pressure HVAC applications."
+              imagePlaceholder={model20250Img}
               link="#"
             />
           </div>
 
-          <div className="tw-pl-0 md:tw-pl-16">
-            <div className="tw-bg-gray-50 tw-p-8 tw-rounded-2xl tw-border-l-4 tw-border-[#ffd700]">
-              <h4 className="tw-font-bold tw-text-xl tw-text-black tw-mb-4">Key Features</h4>
-              <ul className="tw-grid md:tw-grid-cols-3 tw-gap-4 tw-text-gray-700">
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Energy-saving airflow control</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Reliable in variable conditions</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Fast response time</li>
-              </ul>
-            </div>
-          </div>
+          
         </section>
 
         {/* --- SECTION 4: Energy & Environmental --- */}
@@ -306,34 +320,32 @@ const Detail15 = () => {
           <SectionHeader 
             number="4"
             title="Energy & Environmental Monitoring"
-            idealFor="Measuring exhaust air, biogas flow, and energy optimization projects."
+            idealFor="Sustainability projects, exhaust gas flow monitoring, biogas plants, and energy audits."
             industries="Environmental monitoring, utilities, sustainability audits, energy plants."
           />
           
           <div className="tw-pl-0 md:tw-pl-16 tw-mb-10">
             <ModelRow 
-              title="SS 20.600 / SS 30.303"
-              description="For high-temperature or high-pressure gas flow measurement."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.600+%2F+30.303"
+              title="SS 20.700 / SS 23.700 Ex"
+              description="Double pin stainless steel sensors for biogas and process exhaust gases; resistant to humidity and aggressive media."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.700"
               link="#"
             />
             <ModelRow 
-              title="SS 23.415"
-              description="Thermopile model for bi-directional or low-speed airflows."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+23.415"
+              title="SS 20.600 Ex / SS 20.651"
+              description="Chamber head sensors for energy audits and emission monitoring in high-pressure and high-temperature systems."
+              imagePlaceholder={model20600Img}
+              link="#"
+            />
+             <ModelRow 
+              title="IL 30.0xx MPM"
+              description="Inline version for compressed air energy monitoring with wireless data transfer (Bluetooth)."
+              imagePlaceholder={model30300Img}
               link="#"
             />
           </div>
 
-          <div className="tw-pl-0 md:tw-pl-16">
-            <div className="tw-bg-gray-50 tw-p-8 tw-rounded-2xl tw-border-l-4 tw-border-[#ffd700]">
-              <h4 className="tw-font-bold tw-text-xl tw-text-black tw-mb-4">Key Features</h4>
-              <ul className="tw-grid md:tw-grid-cols-2 tw-gap-4 tw-text-gray-700">
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Enables carbon footprint reduction</li>
-                <li className="tw-flex tw-items-start"><span className="tw-text-[#ffd700] tw-mr-2">✔</span> Proven reliability in harsh conditions</li>
-              </ul>
-            </div>
-          </div>
+          
         </section>
 
         {/* --- SECTION 5: Display & Integration --- */}
@@ -347,15 +359,27 @@ const Detail15 = () => {
           
           <div className="tw-pl-0 md:tw-pl-16 tw-mb-10">
             <ModelRow 
-              title="MD 10.010 / MD 10.020 – LED Measured-Value Displays"
-              description="Digital LED display for real-time flow velocity, temperature, or volume data. Wall or panel mounting options. Configurable alarms and 4–20 mA / relay outputs."
-              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=MD+10.010+%2F+10.020"
+              title="MD 10.010 / MD 10.015"
+              description="LED measured-value displays for flow, volume, or temperature; wall or panel mounting."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=MD+10.010"
+              link="#"
+            />
+             <ModelRow 
+              title="MD 10.020"
+              description="Remote display module for IL 30.0xx MPM sensors; plug-and-play with dual-line readout."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=MD+10.020"
+              link="#"
+            />
+            <ModelRow 
+              title="BT 10.010"
+              description="Bluetooth® module for wireless data transmission and sensor configuration via the SCHMIDT® Sensor App."
+              imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=BT+10.010"
               link="#"
             />
           </div>
         </section>
 
-        {/* --- SECTION 6: Applications --- */}
+        {/* --- SECTION 6: Applications (New) --- */}
         <section className="tw-max-w-6xl tw-mx-auto tw-pb-16">
            <div className="tw-mb-8 tw-text-center">
             <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-4">

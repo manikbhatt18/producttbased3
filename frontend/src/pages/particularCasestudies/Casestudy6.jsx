@@ -210,12 +210,13 @@ function Casestudy6() {
       <div className="tw-bg-[#ffd700] tw-py-20">
         <div className="tw-container tw-mx-auto tw-px-4 tw-text-center">
           <h2 className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-black tw-mb-6">
-            Ready to improve safety and uptime in your steel operations?
+            Looking to automate your combustion or process flow systems?
           </h2>
           <div className="tw-text-black/90 tw-text-lg tw-max-w-3xl tw-mx-auto tw-mb-10 tw-leading-relaxed">
-            <p className="tw-mb-2">Contact IOTAFLOW</p>
+            
             <p>
-              Our experts can design a flow monitoring solution tailored to your blast furnace, cooling system, or process flow network helping you move from reactive maintenance to predictive performance.
+              Our PLC-integrated flow control solutions deliver higher efficiency, cleaner combustion, and measurable sustainability benefits for process industries worldwide.
+
             </p>
           </div>
           <Link 
