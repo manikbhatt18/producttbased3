@@ -271,7 +271,7 @@ export function MoreAboutUs() {
           </Col>
           <Col md={4}>
             <div className="ratio ratio-16x9 video-frame">
-              <iframe src="https://www.youtube.com/embed/-d6Hdr2c4rY" title="video2" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/2PgkpKsiGsY" title="video2" allowFullScreen />
             </div>
           </Col>
           <Col md={4}>
