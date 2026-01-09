@@ -4,6 +4,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Logo from "../images/Iotaf logo icon.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -67,8 +69,8 @@ function Footer() {
       <i className="bi bi-linkedin"></i>
     </a>
 
-    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-      <i className="bi bi-facebook"></i>
+    <a href="https://www.instagram.com/iotaflowsystems?igsh=ejhkMzI4cm53bjFm" target="_blank" rel="noopener noreferrer">
+      <i className="bi bi-instagram"></i>
     </a>
 
     <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
@@ -96,7 +98,7 @@ function Footer() {
             <FooterCol
               title="Support"
               items={[
-                { label: "FAQs", href: "/#faq" },
+                { label: "FAQs", action: "faq" },
                 { label: "Lodge a Complaint", href: "/complaint" },
                 { label: "Feedback", href: "/feedback" },
                 { label: "Downloads", href: "/downloads" }
@@ -122,14 +124,26 @@ function Footer() {
                 <span className="footer-col-underline" />
               </h5>
               <p className="mb-1">
-                <i className="bi bi-telephone me-2"></i> +91-9910693866
+                <i className="bi bi-telephone me-2"></i>
+                <a href="tel:+919910693866" className="text-decoration-none text-reset">
+                  +91-9910693866
+                </a>
               </p>
+
               <p className="mb-1">
-                <i className="bi bi-telephone me-2"></i> +91-9779085987
+                <i className="bi bi-telephone me-2"></i>
+                <a href="tel:+919779085987" className="text-decoration-none text-reset">
+                  +91-9779085987
+                </a>
               </p>
+
               <p className="mb-1">
-                <i className="bi bi-envelope me-2"></i> contact@iotaflow.com
+                <i className="bi bi-envelope me-2"></i>
+                <a href="mailto:contact@iotaflow.com" className="text-decoration-none text-reset">
+                  contact@iotaflow.com
+                </a>
               </p>
+              
               <p className="mb-1">
                 <i className="bi bi-geo-alt me-2"></i> Find Us
               </p>
@@ -167,22 +181,58 @@ function Footer() {
 }
 
 function FooterCol({ title, items }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleFaqClick = () => {
+    // If already on home page → just scroll
+    if (location.pathname === "/") {
+      const faqSection = document.getElementById("faq");
+      if (faqSection) {
+        faqSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } 
+    // If on another page → navigate first, then scroll
+    else {
+      navigate("/");
+
+      // wait for page render
+      setTimeout(() => {
+        const faqSection = document.getElementById("faq");
+        if (faqSection) {
+          faqSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+    }
+  };
+
   return (
     <div className="footer-col">
       <h5 className="fw-bold mb-3 footer-col-title">
         {title}
         <span className="footer-col-underline" />
       </h5>
+
       <ul className="list-unstyled d-grid gap-2 mb-0">
         {items.map((item) => (
           <li key={item.label}>
-            <Link
-              to={item.href}
-              className="text-decoration-none text-light-50"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              {item.label}
-            </Link>
+            {item.action === "faq" ? (
+              <span
+                className="text-decoration-none text-light-50"
+                style={{ cursor: "pointer" }}
+                onClick={handleFaqClick}
+              >
+                {item.label}
+              </span>
+            ) : (
+              <Link
+                to={item.href}
+                className="text-decoration-none text-light-50"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                {item.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
