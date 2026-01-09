@@ -31,7 +31,7 @@ import n30 from "../../images/New_30.png";
 import n31 from "../../images/New_31.png";
 import n32 from "../../images/New_32.png";
 import n33 from "../../images/New_33.png";
-import n34 from "../../images/New_34.png";
+import n34 from "../../images/34.png";
 
 const logos = [    cl2,cl3,cl6,cl8,cl9,cl12,cl13,cl14,cl15,cl16,cl17,cl18,cl19,cl20,cl21,cl22,n7,n11,n23,n24,n25,n26,n27,n28,n29,n30,n31,n32,n33,n34,
 

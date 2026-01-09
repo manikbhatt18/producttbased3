@@ -72,7 +72,7 @@ import n30 from "../../images/New_30.png";
 import n31 from "../../images/New_31.png";
 import n32 from "../../images/New_32.png";
 import n33 from "../../images/New_33.png";
-import n34 from "../../images/New_34.png";
+import n34 from "../../images/34.png";
 
 
 
