@@ -82,6 +82,7 @@ import Casestudy6 from "./pages/particularCasestudies/Casestudy6";
 import Careers from "./pages/Careers";
 import ComplaintForm from "./pages/ComplaintForm";
 import ApplicationForm from "./pages/ApplicationForm";
+import Certification from "./pages/Certification";
 
 
 
@@ -129,6 +130,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUsSection />} />
+          <Route path="/about-us/certification" element={<Certification/>} />
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />

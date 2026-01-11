@@ -198,14 +198,14 @@ function CustomNavbar() {
               )}
             </div>
 
-            <NavLink to="/application" className="nav-item" onClick={closeMenu}>
-              Application
+            <NavLink to="/careers" className="nav-item" onClick={closeMenu}>
+              Careers
             </NavLink>
             <NavLink to="/services" className="nav-item" onClick={closeMenu}>
               Services
             </NavLink>
             <NavLink to="/iotsense" className="nav-item" onClick={closeMenu}>
-              Tools
+              IOT Sense
             </NavLink>
 
             {/* Resources dropdown */}

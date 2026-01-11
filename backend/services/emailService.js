@@ -1,34 +1,29 @@
-const SibApiV3Sdk = require("sib-api-v3-sdk");
+const { Resend } = require("resend");
 
-const client = SibApiV3Sdk.ApiClient.instance;
-const apiKey = client.authentications["api-key"];
-apiKey.apiKey = process.env.BREVO_API_KEY;
-
-const emailApi = new SibApiV3Sdk.TransactionalEmailsApi();
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 exports.sendMail = async ({ to, cc, subject, html, attachments = [] }) => {
-  const emailData = {
-    sender: {
-      name: "IOTAFLOW Website",
-      email: "manikstudy18@gmail.com", // must be verified in Brevo
-    },
-    to: [{ email: to }],
-    subject,
-    htmlContent: html,
-  };
+  try {
+    const data = await resend.emails.send({
+      from: "IOTAFLOW Website <no-reply@errorr.in>",
+      to: Array.isArray(to) ? to : [to],
+      cc: cc
+        ? Array.isArray(cc)
+          ? cc
+          : [cc]
+        : undefined,
+      subject,
+      html,
+      attachments: attachments.map((file) => ({
+        filename: file.filename,
+        content: file.content,
+      })),
+    });
 
-  if (cc) {
-  emailData.cc = Array.isArray(cc)
-    ? cc.map((email) => ({ email }))
-    : [{ email: cc }];
+    console.log("Resend response:", data);
+    return data;
+  } catch (error) {
+    console.error("RESEND ERROR:", error);
+    throw error;
   }
-
-  if (attachments.length > 0) {
-    emailData.attachment = attachments.map((file) => ({
-      name: file.filename,
-      content: file.content.toString("base64"),
-    }));
-  }
-
-  await emailApi.sendTransacEmail(emailData);
 };

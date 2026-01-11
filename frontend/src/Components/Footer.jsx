@@ -86,7 +86,7 @@ function Footer() {
               title="Company"
               items={[
                 { label: "About Us", href: "/about-us" },
-                { label: "Applications", href: "/applications" },
+                { label: "Services", href: "/services" },
                 { label: "Case Studies", href: "/casestudies" },
                 { label: "Lean Resources", href: "/resources" }
               ]}
