@@ -4,23 +4,11 @@ require("dotenv").config();
 
 const app = express();
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://www.iotaflow.com",
-  
-];
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-      return callback(new Error("Not allowed by CORS"));
-    },
-  })
-);
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 app.use(express.json());
 
