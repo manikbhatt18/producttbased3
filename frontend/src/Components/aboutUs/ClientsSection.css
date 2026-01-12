@@ -3,12 +3,15 @@
   overflow: hidden;
 }
 
+/* Title */
 .section-title {
   font-weight: bold;
   font-size: 20px;
   color: #111;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 120px;
 }
 
 .section-title span {
@@ -17,9 +20,9 @@
   height: 20px;
   background-color: #f5c518;
   margin-right: 10px;
-  vertical-align: middle;
 }
 
+/* Slider */
 .slider-wrapper {
   width: 100%;
   overflow: hidden;
@@ -28,21 +31,25 @@
 
 .slider-track {
   display: flex;
-  animation: scrollLogos 20s linear infinite;
+  width: max-content;   /* Important for infinite scroll */
+  animation: scrollLogos 40s linear infinite;
 }
 
+/* Each logo */
 .client-logo {
-  flex: 0 0 auto;
-  width: 180px;
-  margin: 0 15px;
+  flex: 0 0 220px;      /* Fixed width so animation math works */
+  width: 220px;
+  margin: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .client-logo img {
-  max-height: 220px;
+  height: 150px;        /* Control logo height */
+  width: auto;
   max-width: 100%;
+  object-fit: contain;
   filter: grayscale(30%);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -52,14 +59,12 @@
   transform: scale(1.1);
 }
 
+/* Infinite scrolling animation */
 @keyframes scrollLogos {
-  0% {
-    transform: translateX(0%);
+  from {
+    transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
-}
-.clients-section  h5{
-  margin-left: 120px;
 }
