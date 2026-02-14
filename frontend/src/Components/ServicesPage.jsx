@@ -18,14 +18,20 @@ const graphImg2 = "https://placehold.co/800x500/1a202c/ffd700?text=Service+Cases
 // --- Placeholder Image for "Automation Services" section ---
 const automationImg = "https://placehold.co/800x600/1a202c/ffd700?text=Automation+Services";
 
+// --- Placeholder Logos for Testimonials ---
+const logoAmbuja = "https://placehold.co/100x100/f3f4f6/1a202c?text=Ambuja";
+const logoMangalore = "https://placehold.co/100x100/f3f4f6/1a202c?text=MSEZ";
+const logoUltraTech = "https://placehold.co/100x100/f3f4f6/1a202c?text=UltraTech";
+const logoAdani = "https://placehold.co/100x100/f3f4f6/1a202c?text=Adani";
+
 const servicesList = [
   {
-    title: "Installation & commissioning service",
-    description: "Expert installation and commissioning of flow meters and systems to ensure accurate measurement, compliance, and seamless start-up."
+    title: "Installation & Commissioning",
+    description: "Professional installation and commissioning of flow meters and telemetry systems ensuring accurate measurement, process compliance, and seamless integration with existing infrastructure. Expert engineers validate alignment, flow profile, and data connectivity for CGWA - compliant operations."
   },
   {
     title: "AMC / CAMC",
-    description: "Comprehensive annual and comprehensive maintenance contracts to ensure continuous performance, reduced downtime, and extended equipment life."
+    description: "Comprehensive Annual and Comprehensive Maintenance Contracts designed for continuous system uptime, reduced operational risk, and extended instrument life. Includes preventive maintenance, calibration checks, and full system health audits."
   },
   {
     title: "On-site NABL calibration (water, wastewater, fluids, slurries & liquids – ISO 17025)",
@@ -33,15 +39,54 @@ const servicesList = [
   },
   {
     title: "On-site calibration for air & gases (portable thermal mass)",
-    description: "Accurate on-site calibration of air and gas flow using portable thermal mass flow instruments for process reliability and compliance."
+    description: "Precise on-site calibration of air and gas flow meters using portable thermal mass flow meters."
+  },
+  {
+    title: "Factory Calibration – Oil & Air Meters",
+    description: "In-house calibration of oil and air flow meters on dedicated test benches under controlled conditions."
   },
   {
     title: "Site survey & assessment",
-    description: "Detailed site surveys and technical assessments to recommend optimal flow measurement solutions based on process and application requirements."
+    description: "Comprehensive site surveys and hydraulic assessments to identify ideal flow meter sizing, positioning, and integration methods.Optimizes system performance while minimizing pressure loss and maintenance downtime."
   },
   {
     title: "IoT / telemetry integration",
-    description: "Seamless integration of flow systems with IoT and telemetry platforms for real-time monitoring, data analytics, and remote access."
+    description: "Seamless integration of flow metering systems with IOT and telemetry gateways for real-time monitoring, analytics, and remote data visualization. Compatible with IOTAFLOW Cloud (iotaflow.in) and NIC / CGWA / CPCB data compliance frameworks."
+  }
+];
+
+const testimonials = [
+  {
+    company: "Ambuja Cements Ltd",
+    role: "Environmental Head",
+    quote: "The service support was prompt and helped us restore operations quickly.",
+    context: "A CT failed in a magmeter due to lightning, impacting measurement continuity.",
+    outcome: "The failed CT was replaced and the system restored within one week, supporting plant uptime.",
+    logo: logoAmbuja
+  },
+  {
+    company: "Mangalore SEZ Limited",
+    role: "", // No role provided
+    quote: "The team’s on-site support helped us avoid prolonged downtime.",
+    context: "An 800 NB magmeter CT failed, with additional logistics challenges.",
+    outcome: "A service team repaired the meter on-site within 2 days using complete tools and spares.",
+    logo: logoMangalore
+  },
+  {
+    company: "UltraTech Cement – Dalla",
+    role: "Head – Instrumentation & Utilities",
+    quote: "The replacement was handled quickly, allowing us to continue as planned.",
+    context: "Ultrasonic sensors were damaged during transit, delaying site activities.",
+    outcome: "Replacement sensors were dispatched and installed within 3 days.",
+    logo: logoUltraTech
+  },
+  {
+    company: "Adani Natural Resources",
+    role: "Head – Technical Services",
+    quote: "The delivery was completed within the required urgent timeline.",
+    context: "An urgent application required accelerated delivery.",
+    outcome: "Equipment was delivered within one week, acknowledged via a formal performance letter.",
+    logo: logoAdani
   }
 ];
 
@@ -133,38 +178,43 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* ==================== SECTION 2: Inhouse Calibration Lab ==================== */}
       <section className="tw-py-16 md:tw-py-24 tw-bg-gray-50">
         <div className="tw-container tw-mx-auto tw-px-4">
           <div className="tw-text-center tw-mb-12">
             <h2 className="tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-text-black tw-mb-4 tw-max-w-5xl tw-mx-auto tw-leading-tight">
-              Inhouse Calibration Lab as per 17025
+              NABL Traceable Calibration Lab for Water & Oil Flow Meters (ISO 17025 Compliant)
             </h2>
             <div className="tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mx-auto tw-rounded-full"></div>
-            <p className="tw-text-gray-600 tw-text-base md:tw-text-lg tw-leading-relaxed">
+            <p className="tw-text-gray-600 tw-text-base md:tw-text-lg tw-leading-relaxed tw-mt-4 tw-max-w-3xl tw-mx-auto">
               Our in-house calibration lab is ISO 17025 accredited, ensuring precise and reliable calibration services.
             </p>
           </div>
 
           <div className="tw-grid md:tw-grid-cols-2 tw-gap-8 lg:tw-gap-12">
-            {/* Item 1 */}
-            <div className="tw-group">
+            {/* Item 1 - Water */}
+            <div className="tw-group tw-flex tw-flex-col">
               <div className="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-bg-white tw-aspect-video tw-mb-6">
-                <img src={calibImg1} alt="Calibration bench for water, oil and air" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105" />
+                <img src={calibImg1} alt="Water Calibration Bench" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105" />
               </div>
-              <h3 className="tw-text-xl md:tw-text-2xl tw-font-bold tw-text-black tw-text-center">
-                  Calibration bench for water, oil and air
+              <h3 className="tw-text-xl md:tw-text-2xl tw-font-bold tw-text-black tw-text-center tw-mb-3">
+                  Water Calibration Bench
               </h3>
+              <p className="tw-text-gray-600 tw-text-center tw-leading-relaxed tw-px-4 tw-flex-grow">
+                Our NABL-traceable water calibration bench provides high-precision testing for Woltmann, electromagnetic, and ultrasonic flow meters. Each calibration follows ISO 17025 standards, ensuring reliable, repeatable accuracy for CGWA and CPCB-compliant applications.
+              </p>
             </div>
 
-            {/* Item 2 */}
-            <div className="tw-group">
+            {/* Item 2 - Oil */}
+            <div className="tw-group tw-flex tw-flex-col">
               <div className="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-bg-white tw-aspect-video tw-mb-6">
-                <img src={calibImg2} alt="Inhouse repair of flow meters" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105" />
+                <img src={calibImg2} alt="Oil Calibration Bench" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 group-hover:tw-scale-105" />
               </div>
-              <h3 className="tw-text-xl md:tw-text-2xl tw-font-bold tw-text-black tw-text-center">
-                  Inhouse repair of flow meters
+              <h3 className="tw-text-xl md:tw-text-2xl tw-font-bold tw-text-black tw-text-center tw-mb-3">
+                  Oil Calibration Bench
               </h3>
+              <p className="tw-text-gray-600 tw-text-center tw-leading-relaxed tw-px-4 tw-flex-grow">
+                Our dedicated oil flow calibration setup handles RPD, turbine and positive displacement meters under controlled flow and viscosity conditions. Calibrations are traceable to NABL standards, guaranteeing dependable performance for industrial and process applications.
+              </p>
             </div>
           </div>
         </div>
@@ -175,7 +225,7 @@ const ServicesPage = () => {
         <div className="tw-container tw-mx-auto tw-px-4">
             <div className="tw-text-center tw-mb-12">
                  <h2 className="tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-text-black tw-mb-4 tw-max-w-5xl tw-mx-auto tw-leading-tight">
-                    How are service cases has dropped over the last 4 years graphically depcited
+                    How Lean Practices Helped Us Reduce Service Cases Over the Last 4 Years?
                  </h2>
                  <div className="tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mx-auto tw-rounded-full"></div>
             </div>
@@ -188,6 +238,74 @@ const ServicesPage = () => {
                     <img src={graphImg2} alt="Service Cases Graph 2" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 hover:tw-scale-105" />
                 </div>
             </div>
+        </div>
+      </section>
+
+      {/* ==================== SECTION 5: Testimonials / Service Feedback ==================== */}
+      <section className="tw-py-16 md:tw-py-24 tw-bg-white">
+        <div className="tw-container tw-mx-auto tw-px-4">
+          {/* Section Heading */}
+          <div className="tw-text-center tw-mb-16">
+            <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-black tw-mb-4">
+              Testimonials / Service Feedback
+            </h2>
+            <div className="tw-h-1.5 tw-w-24 tw-bg-[#ffd700] tw-mx-auto tw-rounded-full"></div>
+            <p className="tw-text-gray-600 tw-mt-4 tw-text-lg">
+              Hear what our partners have to say about our service excellence.
+            </p>
+          </div>
+
+          {/* Testimonial Cards Grid */}
+          <div className="tw-grid grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index} 
+                className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-border tw-border-gray-100 tw-border-l-4 tw-border-l-[#ffd700] tw-p-6 tw-flex tw-flex-col tw-transition-transform tw-duration-300 hover:tw-translate-y-[-5px]"
+              >
+                {/* Header: Logo & Company */}
+                <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
+                  <div className="tw-w-16 tw-h-16 tw-bg-gray-50 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-mb-3 tw-overflow-hidden">
+                    {/* Placeholder Logo Image */}
+                    <img 
+                      src={testimonial.logo} 
+                      alt={`${testimonial.company} Logo`} 
+                      className="tw-w-full tw-h-full tw-object-contain tw-p-1"
+                    />
+                  </div>
+                  <h3 className="tw-text-lg tw-font-bold tw-text-black tw-leading-tight">
+                    {testimonial.company}
+                  </h3>
+                  {testimonial.role && (
+                    <p className="tw-text-sm tw-text-gray-500 tw-mt-1">{testimonial.role}</p>
+                  )}
+                </div>
+
+                {/* Quote */}
+                <div className="tw-mb-6">
+                   <div className="tw-text-[#ffd700] tw-text-2xl tw-mb-2">
+                     <i className="fas fa-quote-left"></i> {/* Assuming font-awesome is available, or use SVG */}
+                     <span className="tw-sr-only">Quote</span>
+                   </div>
+                   <p className="tw-text-gray-800 tw-italic tw-font-medium">
+                     "{testimonial.quote}"
+                   </p>
+                </div>
+
+                {/* Context & Outcome */}
+                <div className="tw-mt-auto tw-space-y-4 tw-border-t tw-border-gray-100 tw-pt-4">
+                  <div>
+                    <span className="tw-text-xs tw-font-bold tw-text-black tw-uppercase tw-tracking-wide tw-block tw-mb-1">Context</span>
+                    <p className="tw-text-sm tw-text-gray-600">{testimonial.context}</p>
+                  </div>
+                  <div>
+                    <span className="tw-text-xs tw-font-bold tw-text-black tw-uppercase tw-tracking-wide tw-block tw-mb-1">Outcome</span>
+                    <p className="tw-text-sm tw-text-gray-600">{testimonial.outcome}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 

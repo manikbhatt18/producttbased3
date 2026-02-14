@@ -1,6 +1,22 @@
 /* =========================================
    1. GLOBAL NAVBAR STYLES
    ========================================= */
+
+
+.top-bar-link {
+  color: inherit;          /* Keeps original text color */
+  text-decoration: none;   /* Removes underline */
+}
+
+.top-bar-link:hover {
+  color: inherit;          /* Prevents hover blue color */
+  text-decoration: none;
+}
+
+.top-bar-link:visited {
+  color: inherit;          /* Prevents purple visited color */
+}
+
 .top-bar {
   background: #1a1a1a;
   color: white;

@@ -103,8 +103,23 @@ function CustomNavbar() {
     <>
       {/* Top Contact Bar */}
       <div className="top-bar">
-        <span>✉ contact@iotaflow.com</span>
-        <span>📞 +91-9910693866</span>
+        <span>
+          <a
+            href="mailto:contact@iotaflow.com"
+            className="top-bar-link"
+          >
+            ✉ contact@iotaflow.com
+          </a>
+        </span>
+
+        <span>
+          <a
+            href="tel:+919910693866"
+            className="top-bar-link"
+          >
+            📞 +91-9910693866
+          </a>
+        </span>
       </div>
 
       {/* Navbar */}
