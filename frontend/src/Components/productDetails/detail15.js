@@ -254,25 +254,25 @@ const handleSubmit = async (e) => {
               title="SS 20.600 / SS 20.600 Ex"
               description="Chamber head sensors with wide measuring range (0.2–220 m/s), withstand up to 40 bar, ideal for compressed air and industrial gas systems."
               imagePlaceholder={model20600Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-600/?utm_source=chatgpt.com"
             />
             <ModelRow 
               title="SS 20.651"
               description="Chamber head sensor for drying processes and air compressors, up to 350 °C and 16 bar."
               imagePlaceholder={model20600Img} // Reusing image
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-651/"
             />
              <ModelRow 
               title="SS 20.700 / SS 23.700 Ex"
               description="Double pin “heavy-duty” sensors for biogas, natural gas, and harsh gas media. Stainless-steel encapsulation for contamination resistance."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.700"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-700/"
             />
             <ModelRow 
               title="IL 30.0xx MPM"
               description="Inline flow sensors with multi-point measurement (MPM) for direct volume flow in compressed air lines up to 16 bar."
               imagePlaceholder={model30300Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-mass-flow-sensor-il-30-005-il-30-010-mpm-il-30-015-mpm-il-30-020-mpm/"
             />
             <ModelRow 
               title="S 20.500"
@@ -305,19 +305,19 @@ const handleSubmit = async (e) => {
               title="SS 20.250 / SS 20.250 HD"
               description="Dumb-bell head sensors for laminar flow from 0.06–20 m/s. Integrated temperature measurement and clean design."
               imagePlaceholder={model20250Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-250/"
             />
             <ModelRow 
               title="SS 20.400 / SS 23.400 Ex"
               description="Thermopile sensors for low-velocity clean gases (0.05–20 m/s), with optional bidirectional flow measurement."
               imagePlaceholder={model23400Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-400/"
             />
             <ModelRow 
               title="SS 20.415 / SS 20.515 / SS 20.715"
               description="Ceiling-mount laminar flow sensors for cleanroom installations; Twin versions (SS 20.415 Twin / SS 20.515 Twin) offer redundant dual sensing."
               imagePlaceholder={model20415Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-415-led/"
             />
              <ModelRow 
               title="SS 20.450"
@@ -350,31 +350,31 @@ const handleSubmit = async (e) => {
               title="HVAC 100"
               description="Compact immersion-type sensor for building ventilation systems; 0.2–20 m/s; dust-resistant."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=HVAC+100"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-hvac-100/"
             />
             <ModelRow 
               title="SS 20.260"
               description="Chamber head sensor for AHU and duct flow measurement up to 60 m/s."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.260"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-260/"
             />
              <ModelRow 
               title="SS 20.200"
               description="Flow switch for airflow monitoring with switching output and LED indication."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.200"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-switch-ss-20-200/"
             />
             <ModelRow 
               title="SS 20.500 / SS 20.500 Ex"
               description="Dumb-bell head sensor for air conditioning and ventilation systems, up to 50 m/s and ATEX zones 2 & 22."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.500"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-500/"
             />
             <ModelRow 
               title="SS 20.250"
               description="Low-velocity flow sensor for balancing and low-pressure HVAC applications."
               imagePlaceholder={model20250Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-500/"
             />
             <ModelRow 
               title="SS 20.225"
@@ -407,19 +407,19 @@ const handleSubmit = async (e) => {
               title="SS 20.700 / SS 23.700 Ex"
               description="Double pin stainless steel sensors for biogas and process exhaust gases; resistant to humidity and aggressive media."
               imagePlaceholder="https://placehold.co/600x400/f3f4f6/1a202c?text=SS+20.700"
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-23-700-ex/"
             />
             <ModelRow 
               title="SS 20.600 Ex / SS 20.651"
               description="Chamber head sensors for energy audits and emission monitoring in high-pressure and high-temperature systems."
               imagePlaceholder={model20600Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-flow-sensor-ss-20-600/"
             />
              <ModelRow 
               title="IL 30.0xx MPM"
               description="Inline version for compressed air energy monitoring with wireless data transfer (Bluetooth)."
               imagePlaceholder={model30300Img}
-              link="#"
+              link="https://www.schmidttechnology.de/en/produkt/schmidt-mass-flow-sensor-il-30-005-il-30-010-mpm-il-30-015-mpm-il-30-020-mpm/"
             />
           </div>
 
