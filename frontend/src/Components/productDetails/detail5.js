@@ -49,6 +49,7 @@ import rohs from "../../images/Rohs compliant.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1,img3,img4,img2];
@@ -278,9 +279,7 @@ Non-invasive, data-logging, and available in India via IOTAFLOW.</li>
               </li>
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
         	{/* Sticky tabs */}

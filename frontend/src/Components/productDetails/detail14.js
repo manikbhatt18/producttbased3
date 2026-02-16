@@ -83,6 +83,7 @@ import oilmist from "../../images/24 dec_strong_against_oilmist_and_durable.png"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
 import { SiUkca } from "react-icons/si";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1, img2, img3,img4,img5,img6];
@@ -341,9 +342,7 @@ Maintenance-free design with high resistance to oil, moisture, and dust.</li>
               </li>
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
           {/* Sticky tabs */}

@@ -48,6 +48,7 @@ import rohs from "../../images/Rohs compliant.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1, img2, img3];
@@ -286,9 +287,7 @@ Seamless billing-grade metering for heating & cooling networks.</li>
               </li>
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
         	{/* Sticky tabs */}

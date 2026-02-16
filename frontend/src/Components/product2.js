@@ -12,6 +12,7 @@ import related4 from "../images/p5a.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "./Breadcrumbs";
+import EnquiryButton from "./common/EnquiryButton";
 
 function ProductDetail() {
   const images = [ img2];
@@ -124,9 +125,7 @@ function ProductDetail() {
               <li className="mb-2">&#9679;IP68, battery-powered, R800 accuracy, NFC/LoRaWAN/WM-Bus, CE & WRAS certified.</li>
               
             </ul>
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
       </div>

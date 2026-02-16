@@ -51,6 +51,7 @@ import rohs from "../../images/Rohs compliant.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1, img2, img3,img4];
@@ -261,9 +262,7 @@ Made in India.</li>
            
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
           {/* Sticky tabs */}

@@ -73,6 +73,7 @@ import wireless from "../../images/Wireless & Comm module.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1, img2, img3];
@@ -361,9 +362,7 @@ AdBlue & oil flow sensor for Indian OEMs. Aichi OF-Z sensor by IOTAFLOW.</li>
 
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
         	{/* Sticky tabs */}

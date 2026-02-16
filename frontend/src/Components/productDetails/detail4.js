@@ -46,6 +46,7 @@ import iot from "../../images/IOT Ready.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img4, img2, img3];
@@ -274,9 +275,7 @@ Easy install, no pipe cutting.</li>
               </li>
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
         	{/* Sticky tabs */}

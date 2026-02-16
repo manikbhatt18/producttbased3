@@ -50,6 +50,7 @@ import rohs from "../../images/Rohs compliant.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img2,img3, img1];
@@ -288,9 +289,7 @@ Open channel & sewer flow meter for Indian drainage systems.</li>
               </li>
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
         	{/* Sticky tabs */}

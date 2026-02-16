@@ -84,6 +84,7 @@ import ComplaintForm from "./pages/ComplaintForm";
 import ApplicationForm from "./pages/ApplicationForm";
 import Certification from "./pages/Certification";
 import HomePopupForm from "./Components/Home/HomePopupForm";
+import { usePopup } from "./context/PopupContext";
 
 
 
@@ -125,22 +126,14 @@ function ScrollHandler() {
 
 function App() {
 
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsPopupOpen(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const { isPopupOpen, closePopup } = usePopup();
   return (
     <>
       <ScrollHandler />
       {/* GLOBAL POPUP (PORTAL SAFE) */}
       <HomePopupForm
         isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
+        onClose={closePopup}
       />
       <Routes>
         <Route element={<Layout />}>

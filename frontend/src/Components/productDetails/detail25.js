@@ -50,6 +50,7 @@ import rohs from "../../images/Rohs compliant.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Breadcrumbs from "../Breadcrumbs";
+import EnquiryButton from "../common/EnquiryButton";
 
 function ProductDetail() {
   const images = [img1, img2, img3,img4];
@@ -258,9 +259,7 @@ IOTAFLOW acrylic & glass tube rotameters for accurate liquid, gas, and steam flo
 
             </ul>
             
-            <button className="my-2 btn-enquiry">
-              <span>Enquiry Now</span>
-            </button>
+            <EnquiryButton/>
           </div>
         </div>
           {/* Sticky tabs */}

@@ -74,6 +74,7 @@ function BannerSlider() {
                   <Button variant="warning" className="btnClass">
                     <span>Our Products</span>
                   </Button>
+
                 </div>
               </Carousel.Caption>
             </motion.div>
