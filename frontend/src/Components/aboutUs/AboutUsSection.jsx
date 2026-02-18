@@ -3,7 +3,7 @@ import './AboutUsSection.css';
 import teamImage from '../../images/about us website img.jpg';  // Your single team image
 import KPISection from './KPISection';
 
-import AnimatedVideoSection from './AnimatedVideoSection';
+//import AnimatedVideoSection from './AnimatedVideoSection';
 import LeanSection from './LeanSection';
 import ClientsSection from './ClientsSection';
 
@@ -57,10 +57,10 @@ function AboutUsSection() {
           </div>
         </div>
         <KPISection />
-        <div className="animated-image-section-wrapper py-5">
+        {/* <div className="animated-image-section-wrapper py-5">
           <AnimatedVideoSection />
 
-        </div>
+        </div> */}
         <LeanSection />
         <ClientsSection />
         {/* <FooterSection /> */}

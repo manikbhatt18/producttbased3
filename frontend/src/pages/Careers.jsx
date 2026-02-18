@@ -203,7 +203,7 @@ const Careers = () => {
             style={{ backgroundImage: `url(${missionBg})` }}
           ></div>
           {/* Overlay (Desktop Only) */}
-          <div className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-black/85"></div>
+          <div className="tw-hidden md:tw-block tw-absolute tw-inset-0 tw-bg-black/90"></div>
 
           <div className="tw-relative tw-z-10 tw-bg-black md:tw-bg-transparent tw-p-8 md:tw-px-16 md:tw-py-20 tw-text-left tw-max-w-2xl tw-flex-grow">
             <h2 className="tw-text-3xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-8">
