@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { Container, Row, Col, Carousel, Button, Accordion, useAccordionButton, Card } from 'react-bootstrap';
-import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import EnquiryButton from '../Components/common/EnquiryButton';
+import { mumbaiSeoData, delhiSeoData, bengaluruSeoData, hyderabadSeoData, ahmedabadSeoData, chennaiSeoData } from "../data/citySeoData";
 
 // ====================================================================
 // 🟢 IMAGE PLACEHOLDERS (Replace these with your real imports)
@@ -63,58 +66,18 @@ import sappflowmeter from "../images/p23a.png";
 import thermalmassimg from "../images/p15a.png";
 import gasflowmeterimg from "../images/p19a.png";
 import vorteximg from "../images/p16a.jpg";
-// Icons for RightChoiceSeo
-const iconExperience = "https://placehold.co/100x100/ffd700/000?text=Exp";
-const iconCustomize = "https://placehold.co/100x100/ffd700/000?text=Cust";
-const iconShipment = "https://placehold.co/100x100/ffd700/000?text=Ship";
-const iconSatisfaction = "https://placehold.co/100x100/ffd700/000?text=Sat";
-const iconExperts = "https://placehold.co/100x100/ffd700/000?text=Team";
-const iconQuality = "https://placehold.co/100x100/ffd700/000?text=Qual";
-
-// Image for MainContentSeo
-const mainContentImg = "https://placehold.co/600x500/ffd700/000?text=Playschool+Toys";
 
 
+// ================= CITY DATA MAP =================
+const cityDataMap = {
+  mumbai: mumbaiSeoData,
+  delhi: delhiSeoData,
+  bengaluru: bengaluruSeoData,
+  hyderabad: hyderabadSeoData,
+  ahmedabad: ahmedabadSeoData,
+  chennai: chennaiSeoData,
+};
 
-
-// Client Logos (Mock array)
-const clientLogos = Array(15).fill("https://placehold.co/150x80/fff/ccc?text=Client+Logo");
-
-
-// ====================================================================
-// 🔹 DATA CONSTANTS
-// ====================================================================
-
-const featuresData = [
-  { icon: iconExperience, title: 'Years Of Experience', description: 'With 75+ years of experience in this industry, we have established ourselves as a trusted name.' },
-  { icon: iconCustomize, title: 'Customize Collection', description: 'We aim to nurture the needs of our clients by offering tailored and customized solutions.' },
-  { icon: iconShipment, title: 'Worldwide Shipment', description: 'With worldwide reach, we are devoted to delivering undamaged products promptly.' },
-  { icon: iconSatisfaction, title: 'Client Satisfaction', description: 'Since our establishment, we are committed to bringing the utmost satisfaction to our clients.' },
-  { icon: iconExperts, title: 'Team Of Experts', description: 'We have a dedicated team of experts who are committed to offering unparalleled service.' },
-  { icon: iconQuality, title: 'Premium Quality Products', description: 'Experience top-quality products that enhance your operations and provide lasting value.' },
-];
-
-const seoContent = [
-  {
-    image: mainContentImg,
-    sections: [
-      {
-        title: 'Playschool Toys in Ranchi',
-        paragraphs: [
-          'In Ranchi, Maskeen Overseas is one of the leading and most dignified names in the industry related to the manufacturing of playschool toys and school furniture. We are a renowned manufacturer in Ranchi of playschool toys and were founded in 1948 to bring joy and happiness to the fascinating and vibrant world of children. This kid’s brand was incepted under the majestic leadership of CEO Mr. Sahibjeet Singh, who aims to deliver valuable and money-worthy products.',
-          'The nature of our business in Ranchi involves trusted manufacturers, suppliers, and exporters of this industry. The key features of our unmatched services in Ranchi include the best customer care support, fast-paced delivery, high-quality material, undamaged product shipment. In Ranchi, with our years of expertise in this respective domain, we have made momentous growth to understand the need of this sector and are dedicated to serving in Ranchi an exquisite range of safe and durable playschool toys at competitive price rates.',
-          'Introducing Maskeen Overseas - your go-to destination for high-quality toys in Ranchi that inspire imagination and foster creativity. As one of the leading Play School Toys Manufacturers in Ranchi, we take immense pride in crafting a diverse range of toys that cater to the unique needs of young learners. Our commitment to excellence and safety ensures that every toy in Ranchi we create not only entertains but also educates, making playtime an enriching experience for children. You can trust in the power of play and the importance of a conducive learning environment in Ranchi. We are dedicated to providing you with top-notch toys and school furniture in Ranchi. Our products in Ranchi are made to enrich the lives of children and help them grow.',
-        ],
-      },
-      {
-        title: 'School Furniture Suppliers in Ranchi',
-        paragraphs: [
-          'We understand that a conducive learning environment in Ranchi is crucial for students’ growth and development. Therefore, our school furniture in Ranchi is thoughtfully designed to promote comfort and ergonomic support, fostering an ideal atmosphere for learning. Beyond our captivating selection of toys, we extend our expertise as one of the most reliable School Furniture Suppliers in Ranchi. From colourful playroom setups to functional classroom arrangements, we offer durable and aesthetically pleasing furniture solutions in Ranchi to elevate any educational space. As suppliers of school furniture in Ranchi, we are committed to providing affordable and safe products that encourage children to learn and grow in a healthy environment.',
-        ],
-      },
-    ],
-  },
-];
 
 const productData = {
   "Ultrasonic Flow Meters": { name: "Ultrasonic Flow Meters", link: "/product", image: ultrasonicimg },
@@ -129,22 +92,11 @@ const productData = {
 };
 
 const videoData = {
-  mainHeading: "Recognized for Excellence in Play School Toys and Furniture",
-  mainDescription: "Maskeen Overseas proudly stands as an industry leader, recognized for its commitment to quality and innovation. Awarded the prestigious titles of “Best Playschool Toys and Furniture Brand of the Year” and “Most Trusted Play School Toys Manufacturer in India,” we continue to craft toys and furniture that inspire joy, learning, and trust. These accolades reflect our dedication to creating safe, educational, and delightful experiences for children across the nation.",
   videos: [
-    { videoId: '7y3uk_SI-Ys', title: 'Maskeen Overseas Won GEA2022 For Best Playschool Toys and Furniture Brand of the Year' },
-    { videoId: 'Q0HQlCzq0Hs', title: 'Maskeen Overseas won GEA2019 award for Most Trusted Play School Toys Manufacturer in India' },
+    { videoId: "3NVPU0yrmu0" },
+    { videoId: "sORDnJrCrOc" }
   ],
 };
-
-const faqs = [
-    { q: "What types of flow meters are available, and how do they differ?", a: "At IOTAFLOW, we don’t believe in a one-size-fits-all solution. Through partnerships with 8+ global technology leaders across Europe and Japan, we offer a complete portfolio of flow measurement technologies — so you always get the right-fit solution, not a forced one. Our range includes Electromagnetic (Mag) meters, Ultrasonic meters, Thermal Mass meters, Coriolis mass meters, Vortex meters, Positive Displacement & Oval Gear meters, and Rotameters. With 25+ years of engineering expertise, IOTAFLOW delivers solutions that are accurate, efficient, and application-specific — never compromised." },
-    { q: "Which flow meter should I choose for my application?", a: "The best flow meter depends on the type of fluid (liquid, gas, slurry), flow range, accuracy requirements, temperature and pressure conditions, and integration needs (digital output, IoT/LoRaWAN, etc.). Our team at IOTAFLOW works with global partners to recommend the right-fit solution, ensuring accuracy and efficiency without overspending." },
-    { q: "What factors affect accuracy in flow measurement?", a: "Several factors can reduce accuracy: poor installation, air bubbles or solid particles, incorrect meter selection, wear and tear, and lack of regular calibration. At IOTAFLOW, we not only supply the right flow meter but also guide you on proper installation, filtration, and calibration to ensure long-term accuracy and peace of mind." },
-    { q: "Why is proper meter installation and flow conditioning essential?", a: "Proper installation and flow conditioning are critical for accurate measurement. Factors like turbulence, short pipe runs, or incorrect alignment can create distorted flow profiles that lead to errors. Using straight pipe runs, flow conditioners, and correct mounting ensures your flow meter delivers reliable and repeatable data. At IOTAFLOW, we guide customers through best practices in installation and setup to ensure long-term accuracy." },
-    { q: "How do I integrate flow meter data into my control systems?", a: "Most modern flow meters provide outputs such as Analog (4–20mA), Pulse outputs, and Digital protocols (Modbus, Profibus, Ethernet, etc.). At IOTAFLOW, we deliver solutions that integrate seamlessly with your SCADA, PLC, or IoT / LoRaWAN systems, enabling real-time monitoring and control." },
-    { q: "What details should I provide when requesting a flow meter?", a: "To receive the most accurate solution, please provide: fluid type and properties, flow rate and pressure range, temperature conditions, accuracy requirements, pipe size and connection details, preferred signal outputs, and any IoT / LoRaWAN or CGWA Compliance requirements." },
-];
 
 // ====================================================================
 // 🔹 HELPER COMPONENTS
@@ -172,52 +124,117 @@ const YouTubeEmbed = ({ videoId, title }) => (
 
 
 
+
+
 // ====================================================================
 // 🔹 SECTIONS
 // ====================================================================
 
-function BannerSliderSeo() {
+function BannerSliderSeo({ slides }) {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
-  const slides = [
-    { img: slide2, heading: "UTILITIES are most Valuable,", subHeading: "When they stay INVISIBLE.", text: "Un-regulated / Un-Monitored utility expenses are draining your Money." },
-    { img: slide1, heading: "Protecting Your Reputation,", subHeading: "Always.", text: "With IOTAFLOW, you gain a lean, reliable partner ensuring accuracy, efficiency, and peace of mind in flow measurement — year after year." },
-    { img: slide3, heading: "Your Process is Unique,", subHeading: "So Are Our Solutions.", text: "We don’t believe in one-size-fits-all. At IOTAFLOW, every customer gets custom flow measurement solutions designed to fit their unique needs — without compromise." },
-  ];
-  const handleSelect = (selectedIndex) => setIndex(selectedIndex);
-  const handlePrev = () => setIndex(index === 0 ? slides.length - 1 : index - 1);
-  const handleNext = () => setIndex(index === slides.length - 1 ? 0 : index + 1);
+  const [paused, setPaused] = useState(false);
+
+  const handleNext = useCallback(() => {
+    setIndex((i) => (i === slides.length - 1 ? 0 : i + 1));
+  }, []);
+
+  const handlePrev = useCallback(() => {
+    setIndex((i) => (i === 0 ? slides.length - 1 : i - 1));
+  }, []);
+
+  useEffect(() => {
+    if (paused) return;
+    const timer = setInterval(handleNext, 4000);
+    return () => clearInterval(timer);
+  }, [paused, handleNext]);
 
   return (
-    <div className="tw-relative">
-      <Carousel fade controls={false} indicators={false} interval={4000} pause={false} activeIndex={index} onSelect={handleSelect}>
-        {slides.map((slide, idx) => (
-          <Carousel.Item key={idx} className="!tw-h-auto">
-            <motion.div initial={{ scale: 1 }} animate={{ scale: 1.05 }} transition={{ duration: 4, ease: "easeInOut" }}>
-              <img src={slide.img} className="tw-block tw-w-full tw-shadow-lg tw-h-auto tw-max-h-[300px] sm:tw-max-h-[600px] tw-object-cover tw-bg-black" alt={`Slide ${idx}`} />
-              <Carousel.Caption className="!tw-p-6 sm:!tw-p-12 md:!tw-p-24 !tw-top-1/2 !tw-left-0 !tw-right-auto !tw-bottom-auto !-tw-translate-y-1/2 !tw-text-left">
-                <div className="tw-bg-black/50 tw-p-7 tw-ml-10 tw-rounded-lg tw-max-w-md lg:tw-max-w-2xl tw-text-white">
-                  <h1 className="tw-font-bold tw-text-yellow-400 tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl">{slide.heading}</h1>
-                  <h2 className="tw-font-bold tw-text-white tw-text-xl sm:tw-text-2xl lg:tw-text-3xl">{slide.subHeading}</h2>
-                  <p className="tw-text-sm sm:tw-text-base lg:tw-text-lg">{slide.text}</p>
-                  <button className="tw-hidden sm:tw-inline-block tw-relative group tw-overflow-hidden tw-border-none tw-text-lg tw-py-2 tw-px-4 tw-rounded-md tw-cursor-pointer hover:tw-scale-105 tw-transition-transform tw-duration-300 tw-bg-yellow-400 tw-text-black ">
-                    <span className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-white tw-transform tw--translate-x-full group-hover:tw-translate-x-0 tw-transition-transform tw-duration-500 tw-ease-in-out tw-z-10"></span>
-                    <span className="tw-relative tw-z-20 tw-transition-colors tw-duration-300 group-hover:tw-text-yellow-500">Our Products</span>
-                  </button>
-                </div>
-              </Carousel.Caption>
-            </motion.div>
-          </Carousel.Item>
+    <div
+      className="tw-relative tw-w-full tw-overflow-hidden tw-bg-black"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      {/* Slides */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className="tw-relative tw-w-full"
+        >
+          {/* Image with zoom effect */}
+          <motion.img
+            src={slides[index].img}
+            alt={slides[index].heading}
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.05 }}
+            transition={{ duration: 4, ease: "easeInOut" }}
+            className="tw-block tw-w-full tw-object-cover tw-max-h-[300px] sm:tw-max-h-[380px] md:tw-max-h-[600px]"
+          />
+
+          {/* Caption Overlay */}
+          <div className="tw-absolute tw-bottom-5 sm:tw-bottom-[35px] md:tw-bottom-10 tw-left-0 tw-right-0 tw-px-32 tw-text-left">
+            <div className="caption-bg tw-inline-block tw-max-w-[95%] sm:tw-max-w-[90%] md:tw-max-w-[85%] lg:tw-max-w-[650px] tw-bg-black/50 tw-p-3 sm:tw-p-[14px] md:tw-p-5 tw-rounded-lg tw-text-white">
+              <h1 className="tw-font-bold tw-text-yellow-400 tw-text-[1.4rem] sm:tw-text-[1.8rem] md:tw-text-[2rem] lg:tw-text-[2.5rem] tw-leading-tight">
+                {slides[index].heading}
+              </h1>
+              <h2 className="tw-font-bold tw-text-white tw-text-[1.1rem] sm:tw-text-[1.25rem] md:tw-text-[1.4rem] lg:tw-text-[1.8rem] tw-leading-tight">
+                {slides[index].subHeading}
+              </h2>
+              <p className="tw-text-[0.85rem] sm:tw-text-[0.95rem] md:tw-text-[1rem] lg:tw-text-[1.2rem] tw-mb-3">
+                {slides[index].text}
+              </p>
+
+              {/* Button — hidden on mobile (<576px / below sm breakpoint) */}
+              <button onClick={() => navigate("/product")} className="btnClass tw-hidden sm:tw-inline-block tw-bg-yellow-400 tw-text-black tw-font-semibold tw-text-[1.1rem] tw-px-5 tw-py-[10px] tw-rounded-md tw-border-none tw-cursor-pointer tw-overflow-hidden tw-relative">
+                <span>Our Products</span>
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Dot Indicators */}
+      <div className="tw-absolute tw-bottom-3 tw-left-1/2 -tw-translate-x-1/2 tw-flex tw-gap-2 tw-z-10">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`tw-w-2.5 tw-h-2.5 tw-rounded-full tw-border-none tw-cursor-pointer tw-transition-all tw-duration-300 ${
+              i === index
+                ? "tw-bg-yellow-400 tw-scale-125"
+                : "tw-bg-white/60"
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
         ))}
-      </Carousel>
+      </div>
+
+      {/* Prev / Next Controls — hidden on mobile, visible md+ */}
       <div className="tw-hidden md:tw-flex tw-absolute tw-bottom-5 tw-right-5 tw-z-10 tw-gap-2">
-        <Button variant="light" onClick={handlePrev}>&lt;</Button>
-        <Button variant="warning" onClick={handleNext}>&gt;</Button>
+        <button
+          onClick={handlePrev}
+          className="tw-bg-white tw-text-black tw-font-bold tw-px-3 tw-py-1.5 tw-rounded tw-border-none tw-cursor-pointer tw-shadow-md hover:tw-bg-gray-100 tw-transition-colors"
+          aria-label="Previous slide"
+        >
+          &lt;
+        </button>
+        <button
+          onClick={handleNext}
+          className="tw-bg-yellow-400 tw-text-black tw-font-bold tw-px-3 tw-py-1.5 tw-rounded tw-border-none tw-cursor-pointer tw-shadow-md hover:tw-bg-yellow-300 tw-transition-colors"
+          aria-label="Next slide"
+        >
+          &gt;
+        </button>
       </div>
     </div>
   );
 }
 
-function RightChoiceSeo() {
+function RightChoiceSeo({ featuresData }) {
   return (
     <section className="tw-bg-white tw-py-20 tw-text-[#1f1e1d]">
       <Container>
@@ -228,59 +245,106 @@ function RightChoiceSeo() {
           </h2>
         </div>
         <Row className="justify-content-center">
-          {featuresData.map((feature, index) => (
-            <Col key={index} md={6} lg={4} className="mb-4">
-              <div className="group tw-relative tw-bg-white tw-p-6 tw-rounded-lg tw-h-full hover:tw-bg-[#ffcc00] hover:tw--translate-y-2 tw-transition-all tw-duration-300 tw-ease-in-out tw-overflow-hidden">
-                <div className="tw-flex tw-items-start tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                  <div className="tw-mr-5">
-                    <img src={feature.icon} alt={`${feature.title} icon`} className="tw-w-12 tw-h-12" />
+          {featuresData.map((feature, index) => {
+            const IconComponent = feature.icon;
+            return (
+              <Col key={index} md={6} lg={4} className="mb-4">
+                <div className="group tw-relative tw-bg-white tw-p-6 tw-rounded-lg tw-h-full hover:tw-bg-[#ffcc00] hover:tw--translate-y-2 tw-transition-all tw-duration-300 tw-ease-in-out tw-overflow-hidden">
+                  <div className="tw-flex tw-items-start tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
+                    <div className="tw-mr-5 tw-flex-shrink-0">
+                      <IconComponent className="tw-w-12 tw-h-12 tw-text-yellow-500" strokeWidth={1.5} />
+                    </div>
+                    <div className="tw-text-left">
+                      <h5 className="tw-text-yellow-400 tw-font-semibold tw-text-xl tw-mb-2">{feature.title}</h5>
+                      <p className="tw-text-[#1f1e1d] tw-text-base tw-mb-0">{feature.description}</p>
+                    </div>
                   </div>
-                  <div className="tw-text-left">
-                    <h5 className="tw-text-yellow-400 tw-font-semibold tw-text-xl tw-mb-2">{feature.title}</h5>
-                    <p className="tw-text-[#1f1e1d] tw-text-base tw-mb-0">{feature.description}</p>
+                  <div className="tw-absolute tw-inset-0 tw-p-6 tw-flex tw-items-center tw-justify-center tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                    <p className="tw-text-[#1f1e1d] tw-text-base tw-text-center tw-mb-0">{feature.description}</p>
                   </div>
                 </div>
-                <div className="tw-absolute tw-inset-0 tw-p-6 tw-flex tw-items-center tw-justify-center tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
-                  <p className="tw-text-[#1f1e1d] tw-text-base tw-text-center tw-mb-0">{feature.description}</p>
-                </div>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>
   );
 }
 
-function MainContentSeo() {
+function MainContentSeo(  { seoContent, cityName }) {
   const contentBlock = seoContent[0];
   const mainSection = contentBlock.sections[0];
   const otherSections = contentBlock.sections.slice(1);
+
   return (
     <section className="tw-bg-[#ffcc00] tw-py-16">
       <Container>
         <div className="tw-text-center tw-mb-12">
-          <h1 className="tw-font-bold tw-text-4xl tw-text-gray-800">{mainSection.title}</h1>
+          <h2 className="tw-font-bold tw-text-4xl tw-text-gray-800">
+            {mainSection.title}
+          </h2>
           <div className="tw-mt-2 tw-mx-auto tw-w-24 tw-h-1 tw-bg-[#f6e6aa]"></div>
         </div>
+
         <Row className="tw-items-center">
           {contentBlock.image && (
             <Col md={5} className="tw-mb-8 md:tw-mb-0">
-              <img src={contentBlock.image} alt="Promotional collage" className="tw-rounded-lg tw-shadow-lg tw-w-full" />
+              <img
+                src={contentBlock.image}
+                alt={`Industrial Flowmeter Manufacturer in ${cityName}`}
+                loading="lazy"
+                className="tw-rounded-lg tw-shadow-lg tw-w-full"
+              />
             </Col>
           )}
+
           <Col md={contentBlock.image ? 7 : 12}>
+            {/* Paragraphs */}
             <div className="tw-space-y-4">
-              {mainSection.paragraphs.map((paragraph, pIndex) => (
-                <p key={pIndex} className="tw-text-black tw-leading-relaxed">{paragraph}</p>
+              {mainSection.paragraphs?.map((paragraph, pIndex) => (
+                <p key={pIndex} className="tw-text-black tw-leading-relaxed">
+                  {paragraph}
+                </p>
               ))}
             </div>
+
+            {/* Bullet Points (Strengths) */}
+            {mainSection.listItems && mainSection.listItems.length > 0 && (
+              <div className="tw-mt-6">
+                {mainSection.listTitle && (
+                  <h3 className="tw-font-semibold tw-text-xl tw-text-gray-800 tw-mb-3">
+                    {mainSection.listTitle}
+                  </h3>
+                )}
+                <ul className="tw-list-disc tw-pl-6 tw-space-y-2">
+                  {mainSection.listItems.map((item, index) => (
+                    <li key={index} className="tw-text-black">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Closing Paragraph (AFTER points) */}
+            {mainSection.closingParagraph && (
+              <p className="tw-text-black tw-leading-relaxed tw-mt-6">
+                {mainSection.closingParagraph}
+              </p>
+            )}
+
+            {/* Other Sections (if any) */}
             {otherSections.map((section, secIndex) => (
               <div key={secIndex} className="tw-mt-8">
-                <h2 className="tw-font-bold tw-text-3xl tw-text-gray-800 tw-mb-4">{section.title}</h2>
+                <h2 className="tw-font-bold tw-text-3xl tw-text-gray-800 tw-mb-4">
+                  {section.title}
+                </h2>
                 <div className="tw-space-y-4">
-                  {section.paragraphs.map((paragraph, pIndex) => (
-                    <p key={pIndex} className="tw-text-black tw-leading-relaxed">{paragraph}</p>
+                  {section.paragraphs?.map((paragraph, pIndex) => (
+                    <p key={pIndex} className="tw-text-black tw-leading-relaxed">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -308,7 +372,7 @@ function ProductsSeo() {
             <Col key={index} md={6} lg={4} className="tw-mb-8">
               <Link to={product.link} onClick={() => window.scrollTo(0, 0)} className="tw-block tw-group">
                 <div className="tw-relative tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-aspect-video">
-                  <img src={product.image} alt={product.name} className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-ease-in-out group-hover:tw-scale-110 tw-will-change-transform" />
+                  <img src={product.image} alt={product.name} loading="lazy" className="tw-w-full tw-h-full tw-object-cover tw-transition-transform tw-duration-500 tw-ease-in-out group-hover:tw-scale-110 tw-will-change-transform" />
                   <div className="tw-absolute tw-inset-0 tw-bg-black/50 tw-transition-all tw-duration-300 group-hover:tw-bg-black/70"></div>
                   <div className="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-p-4">
                     <h5 className="tw-text-white tw-font-bold tw-text-xl tw-text-center tw-transition-transform tw-duration-300 group-hover:tw-scale-105">{product.name}</h5>
@@ -343,7 +407,7 @@ function OurClients() {
           {clientLogos.map((src, i) => (
             <SwiperSlide key={i}>
               <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-h-[300px] tw-flex tw-items-center tw-justify-center">
-                <img src={src} alt={`client-logo-${i}`} className="tw-max-h-[200px] tw-max-w-[90%] tw-object-contain tw-grayscale-[20%] tw-transition-all tw-duration-300 hover:tw-grayscale-0 hover:tw-scale-105" />
+                <img src={src} alt="Trusted Industrial Clients of IotaFlow" className="tw-max-h-[200px] tw-max-w-[90%] tw-object-contain tw-grayscale-[20%] tw-transition-all tw-duration-300 hover:tw-grayscale-0 hover:tw-scale-105" />
               </div>
             </SwiperSlide>
           ))}
@@ -354,33 +418,43 @@ function OurClients() {
 }
 
 function YtSeo() {
+  // Safety check (prevents crash if videos missing)
+  if (!videoData?.videos || videoData.videos.length === 0) return null;
+
   return (
     <section className="tw-bg-gray-100 tw-py-20">
       <Container>
-        <div className="tw-text-center tw-max-w-4xl tw-mx-auto tw-mb-12">
-          <h2 className="tw-font-bold tw-text-3xl md:tw-text-4xl tw-mb-4">
-            {videoData.mainHeading.split('Play School Toys and Furniture').map((part, index, array) => index < array.length - 1 ? <span key={index}>{part}<span className="tw-text-yellow-500">Play School Toys and Furniture</span></span> : <span key={index}>{part}</span>)}
-          </h2>
-          <p className="tw-text-gray-600 tw-text-base md:tw-text-lg">{videoData.mainDescription}</p>
-        </div>
         <Row className="justify-content-center">
-          {videoData.videos.map((video, index) => (
-            <Col key={index} md={10} lg={6} className="mb-8">
-              <div className="tw-bg-white tw-p-4 tw-rounded-xl tw-shadow-md">
-                <div className="tw-relative tw-w-full tw-overflow-hidden tw-rounded-xl tw-cursor-pointer group" style={{ paddingBottom: '56.25%' }}>
-                    <YouTubeEmbed videoId={video.videoId} title={video.title} />
+          {videoData.videos.map((video, index) => {
+            if (!video.videoId) return null; // prevents blank iframe
+
+            return (
+              <Col key={index} md={10} lg={6} className="mb-4">
+                <div className="tw-bg-white tw-p-3 tw-rounded-xl tw-shadow-md">
+                  <div
+                    className="tw-relative tw-w-full tw-overflow-hidden tw-rounded-xl"
+                    style={{ paddingBottom: "56.25%" }} // 16:9 aspect ratio
+                  >
+                    <iframe
+                      className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-rounded-xl"
+                      src={`https://www.youtube.com/embed/${video.videoId}`}
+                      title={video.title || "Industrial Flowmeter Video"}
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
                 </div>
-                <p className="tw-font-semibold tw-text-center tw-mt-4 tw-px-2">{video.title}</p>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>
   );
 }
-
-function Faqs() {
+function Faqs({ faqs }) {
   const [activeKey, setActiveKey] = useState("-1");
   return (
     <section className="tw-py-20 tw-pb-[140px]">
@@ -409,22 +483,104 @@ function Faqs() {
   );
 }
 
+// 🟢 NEW COMPONENT: Industrial Instrumentation Suppliers
+function InstrumentationSuppliersSeo({ instrumentation, cityName }) {
+  if (!instrumentation) return null;
+
+  return (
+    <section className="tw-bg-black tw-text-white tw-py-20">
+      <Container>
+        <div className="tw-max-w-4xl tw-mx-auto">
+          <div className="tw-text-center tw-mb-10">
+            <h2 className="tw-font-bold tw-text-3xl md:tw-text-4xl tw-mb-4">
+              Industrial Instrumentation Suppliers in {cityName}
+            </h2>
+            <div className="tw-w-24 tw-h-1 tw-bg-yellow-400 tw-mx-auto"></div>
+          </div>
+          
+          <div className="tw-space-y-6 tw-text-gray-300 tw-text-lg tw-leading-relaxed tw-text-center md:tw-text-left">
+            {instrumentation.paragraphs?.map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+            {instrumentation.highlight && (
+              <div className="tw-bg-white/10 tw-p-6 tw-rounded-lg tw-border-l-4 tw-border-yellow-400 tw-mt-8">
+                <p className="tw-font-medium tw-text-white tw-m-0">
+                  {instrumentation.highlight}
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+// 🟢 NEW COMPONENT: Product Categories
+function ProductCategoriesSeo({ categoriesData }) {
+  return (
+    <section className="tw-bg-gray-50 tw-py-20">
+      <Container>
+        <div className="tw-text-center tw-mb-12">
+          <h2 className="tw-font-bold tw-text-4xl tw-relative tw-pb-4 tw-text-gray-900">
+            Product Categories
+            <span className="tw-absolute tw-bottom-0 tw-left-1/2 tw--translate-x-1/2 tw-w-24 tw-h-1 tw-bg-yellow-400"></span>
+          </h2>
+        </div>
+        <Row>
+          {categoriesData.map((cat, idx) => (
+            <Col key={idx} md={6} className="tw-mb-6">
+              <div className="tw-bg-white tw-p-8 tw-rounded-xl tw-shadow-sm tw-border-l-4 tw-border-yellow-400 tw-h-full tw-transition-all tw-duration-300 hover:tw-shadow-xl hover:tw--translate-y-1">
+                <h4 className="tw-font-bold tw-text-xl tw-mb-3 tw-text-black">{cat.title}</h4>
+                <p className="tw-text-gray-600 tw-leading-relaxed tw-text-base m-0">{cat.desc}</p>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
+  );
+}
+
 // ====================================================================
 // 🔹 MAIN COMPONENT
 // ====================================================================
 
 const SeoPage = () => {
+  const { city } = useParams();
+
+  // fallback to mumbai if invalid city
+  const seoData = cityDataMap[city?.toLowerCase()] || mumbaiSeoData;
+
+  const {
+  featuresData,
+  seoContent,
+  categoriesData,
+  faqs,
+  instrumentation,
+  
+} = seoData;
+
+const formattedCityName =
+  (city && city.charAt(0).toUpperCase() + city.slice(1)) || "Mumbai";
+
+const slidesWithImages = (seoData.slides || []).map((slide, index) => ({
+  img: slide.img || [slide2, slide1, slide3][index % 3],
+  ...slide,
+}));
   return (
     <>
-      <BannerSliderSeo />
-      <RightChoiceSeo />
-      <MainContentSeo />
+      <BannerSliderSeo slides={slidesWithImages} />
+      <RightChoiceSeo featuresData={featuresData} />
+      <MainContentSeo seoContent={seoContent} cityName={formattedCityName} />
       <ProductsSeo />
       <OurClients />
+      <InstrumentationSuppliersSeo instrumentation={instrumentation} cityName={formattedCityName } />
+      <ProductCategoriesSeo categoriesData={categoriesData} />
       <YtSeo />
-      <Faqs />
+      <Faqs faqs={faqs} />
     </>
   );
-}
+};
 
 export default SeoPage;

@@ -247,7 +247,7 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Vortex flow meter</p>
-            <h3 className="fw-semibold">IVF Insertion Vortex flow meter</h3>
+            <h1 className="tw-text-3xl tw-font-semibold">IVF Insertion Vortex flow meter</h1>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">

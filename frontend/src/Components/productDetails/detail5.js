@@ -221,7 +221,7 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">Ultrasonic Flow Meter</p>
-            <h3 className="fw-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h3>
+            <h1 className="tw-text-3xl tw-font-semibold"> Clamp-On Portable Ultrasonic PF 222/333 Flow Meter</h1>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">

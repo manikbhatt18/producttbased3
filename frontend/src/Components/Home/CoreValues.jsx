@@ -23,7 +23,7 @@ function CoreValues() {
       {/* Left Section */}
       <div className="left-section text-white py-5 px-4 col-lg-6 col-md-12">
         <div className="content-wrapper">
-          <h1
+          <h2
             ref={headingRef}
             className={`fw-bold animate-heading ${showHeading ? 'show' : ''}`}
           >
@@ -31,7 +31,7 @@ function CoreValues() {
               Core
             </span>{' '}
             <span className="white-text">Values</span>
-          </h1>
+          </h2>
 
           <p className="text-light fs-5">At IOTAFLOW, we believe each of us plays a vital role in shaping a lasting legacy through ownership, learning, and problem-solving, we grow together and create innovations that make a lasting impact.
           </p>

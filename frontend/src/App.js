@@ -143,7 +143,7 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/resources" element={<LeanResourcesPage />} />
-          <Route path="/seo" element={<SeoPage />} />
+          <Route path="/:city" element={<SeoPage />} />
           <Route path="/iotsense" element={<IOTsensePage />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/careers" element={<Careers />} />

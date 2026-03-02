@@ -35,7 +35,7 @@ function WhyChooseUs() {
         </div>
 
         <div className="why-right">
-          <h1
+          <h2
             ref={headingRef}
             className={`why-heading ${isVisible ? 'show' : ''}`}
           >
@@ -43,7 +43,7 @@ function WhyChooseUs() {
             <span className={`iotflow ${isVisible ? 'animate-underline' : ''}`}>
               IOTAFLOW ?
             </span>
-          </h1>
+          </h2>
           <p className="why-text">
             We’re continually working to change the way people think about and engage with our products.
           </p>

@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  aspect-ratio: 16 / 8; /* Keep 16:9 aspect ratio */
+  aspect-ratio: 16 / 8; 
   background-size: cover;
   background-position: center;
   display: flex;

@@ -64,7 +64,7 @@ const Contact = () => {
         <Row>
           {/* Left Info Section */}
           <Col md={6} className="contact-info">
-            <h2 className="mb-3">Get In Touch</h2>
+            <h1 className="mb-3">Get In Touch</h1>
             <p>Here’s how you can reach us,</p>
 
             <h5 className="mt-4">Talk to sales</h5>

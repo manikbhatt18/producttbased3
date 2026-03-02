@@ -248,7 +248,7 @@ function ProductDetail() {
           {/* RIGHT: copy */}
          <div className="col-lg-6 product-detail-right">
             <p className="text-muted">    <p className="text-muted">Positive Displacement Oil Meters</p></p>
-            <h3 className="fw-semibold">Oval Gear Oil Flow Meter (OGM)</h3>
+            <h1 className="tw-text-3xl tw-font-semibold">Oval Gear Oil Flow Meter (OGM)</h1>
             
             {/* Reverted to original Bootstrap-style list with your Icon class */}
             <ul className="list-unstyled mt-3">

@@ -120,8 +120,8 @@ const Careers = () => {
             </p>
           </div>
 
-          {/* Job Opportunities Grid - Text Only Cards */}
-          <div className="tw-grid grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
+          {/* Job Opportunities Grid - Fixed missing tw- prefix on grid-cols-1 */}
+          <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
             {jobRoles.map((role, index) => (
               <div 
                 key={index} 
@@ -147,8 +147,6 @@ const Careers = () => {
               </div>
             ))}
           </div>
-
-         
 
         </div>
       </div>
@@ -257,7 +255,7 @@ const Careers = () => {
                 </p>
             </div>
             
-            <div className="tw-grid md:tw-grid-cols-2 tw-gap-8 tw-mb-12">
+            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8 tw-mb-12">
               
               {/* Email Application Card */}
               <div className="tw-group tw-bg-white tw-p-10 tw-rounded-3xl tw-shadow-2xl tw-transition-all tw-duration-300 hover:-tw-translate-y-2 hover:tw-shadow-black/20">
@@ -280,8 +278,8 @@ const Careers = () => {
                 </div>
               </div>
 
-              {/* LinkedIn Card */}
-              <div className="tw-group tw-bg-black tw-p-10 tw-rounded-3xl tw-shadow-2xl tw-transition-all tw-duration-300 hover:-tw-translate-y-2 hover:tw-shadow-black/20 text-white">
+              {/* LinkedIn Card - Fixed missing tw- prefix on text-white */}
+              <div className="tw-group tw-bg-black tw-p-10 tw-rounded-3xl tw-shadow-2xl tw-transition-all tw-duration-300 hover:-tw-translate-y-2 hover:tw-shadow-black/20 tw-text-white">
                 <div className="tw-w-16 tw-h-16 tw-bg-white tw-text-[#0077b5] tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-text-3xl tw-mb-8 tw-shadow-lg group-hover:tw-scale-110 tw-transition-transform">
                   🔗
                 </div>
@@ -323,7 +321,8 @@ const Careers = () => {
       {/* ==================== WHY JOIN US SECTION ==================== */}
       <div className="tw-py-16 md:tw-py-24 tw-bg-black tw-text-white">
         <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-flex flex-col lg:tw-flex-row tw-gap-12 tw-items-center">
+          {/* Fixed missing tw- prefix on flex-col */}
+          <div className="tw-flex tw-flex-col lg:tw-flex-row tw-gap-12 tw-items-center lg:tw-items-start">
             
             {/* Left: Heading & Intro */}
             <div className="tw-w-full lg:tw-w-1/3 tw-text-center lg:tw-text-left">
@@ -338,7 +337,7 @@ const Careers = () => {
 
             {/* Right: Benefits List */}
             <div className="tw-w-full lg:tw-w-2/3">
-              <ul className="tw-grid md:tw-grid-cols-2 tw-gap-6">
+              <ul className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6">
                 {[
                   "Hands-on learning in industrial IoT and smart metering technology",
                   "Exposure to CGWA, CPCB, and Industry 4.0-compliant systems",
@@ -350,7 +349,7 @@ const Careers = () => {
                     <span className="tw-flex-shrink-0 tw-w-8 tw-h-8 tw-bg-[#ffd700] tw-rounded-full tw-flex tw-items-center tw-justify-center tw-mr-4 tw-text-black tw-font-bold">
                       ✓
                     </span>
-                    <span className="tw-text-gray-200 tw-text-lg">{benefit}</span>
+                    <span className="tw-text-gray-200 tw-text-base md:tw-text-lg">{benefit}</span>
                   </li>
                 ))}
               </ul>
